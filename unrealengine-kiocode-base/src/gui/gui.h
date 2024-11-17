@@ -11,6 +11,8 @@ public:
 		return instance;
 	}
 
+	Present oPresent = NULL;
+
 	static HRESULT __stdcall hkPresentWrapper(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags) {
 		return GetInstance().hkPresent(pSwapChain, SyncInterval, Flags);
 	}
@@ -19,19 +21,23 @@ public:
 		return GetInstance().WndProc(hWnd, uMsg, wParam, lParam);
 	}
 
-	Present oPresent;
-	HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags);
-	LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
-	void InitImGui();
-
 private:
 
 	HWND window = NULL;
-	WNDPROC oWndProc;
+	WNDPROC oWndProc = NULL;
 	ID3D11Device* pDevice = NULL;
 	ID3D11DeviceContext* pContext = NULL;
-	ID3D11RenderTargetView* mainRenderTargetView;
-	bool init = false;
+	ID3D11RenderTargetView* mainRenderTargetView = nullptr;
+	bool HkPresentInitialized = false;
+
+	HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags);
+	LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+	
+	void LoadFonts();
+
+	void InitImGui();
+	void RenderUI();
+	void RenderMouse();
 
 	GUI() = default;
 	~GUI() = default;
