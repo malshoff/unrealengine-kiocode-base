@@ -14,7 +14,7 @@
 void StartBackgroundThreads()
 {
 	std::thread(RainbowCalculator::Update).detach();
-	//std::thread(&MainLoop::FetchEntities, &MainLoop::GetInstance()).detach(); laggy
+	std::thread(&MainLoop::FetchEntities, &MainLoop::GetInstance()).detach();
 }
 
 void InitialSetup()

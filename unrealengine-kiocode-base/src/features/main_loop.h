@@ -2,6 +2,7 @@
 
 #include <vector>
 #include <Windows.h>
+#include <mutex>
 
 #include "../includes.h"
 
@@ -19,12 +20,14 @@ public:
 	void FetchFromActors(std::vector<SDK::AActor*>* list);
 	void FetchFromPlayers(std::vector<SDK::AActor*>* list);
 	void Update(DWORD tick);
+	bool UpdateSDK();
 
 private:
 
 	MainLoop() = default;
 	~MainLoop() = default;
 
+	std::mutex list_mutex;
 
 
 	MainLoop(const MainLoop&) = delete;

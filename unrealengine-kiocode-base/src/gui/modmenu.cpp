@@ -62,7 +62,7 @@ void ModMenu::Window() {
 					ImGui::SliderInt("##PlayersSnaplineType", &Config::PlayersSnaplineType, 0, 2);
 				}
 
-				{ // bot checker
+				/*{ // bot checker
 					ImGui::Checkbox("Bot Checker", &Config::BotChecker);
 					ImGui::SameLine();
 					ImGui::ColorEdit3("##BotCheckerColor", (float*)&Config::BotCheckerColor, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
@@ -73,7 +73,7 @@ void ModMenu::Window() {
 					ImGui::SameLine();
 					ImGui::Checkbox("Show Bot Text", &Config::BotCheckerText);
 					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Show text 'Bot' on the bot checker");
-				}
+				}*/
 
 				{ // Players Box
 					ImGui::Checkbox("Players Box", &Config::PlayersBox);
@@ -99,7 +99,14 @@ void ModMenu::Window() {
 				}
 
 				{ // Charms
-					ImGui::Checkbox("Players Chams", &Config::PlayerChams);
+					ImGui::Checkbox("Targets Chams", &Config::PlayerChams);
+					ImGui::SameLine();
+					ImGui::ColorEdit3("##ChamsColorVisible", (float*)&Config::ChamsColorTargetVisible, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
+					ImGui::ColorEdit3("##ChamsColorHidden", (float*)&Config::ChamsColorTargetHidden, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
+					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Enable Chams");
+					ImGui::SameLine();
+					ImGui::Checkbox("##RGB7", &Config::RainbowPlayerChams);
+					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle rainbow color of chams");
 				}
 
 				/* { // Players Health
@@ -154,6 +161,9 @@ void ModMenu::Window() {
 					ImGui::Text("Time Dilation Value");
 					ImGui::SameLine();
 					ImGui::SliderFloat("##TimeDilation", &Config::TimeScale, 0.1f, 1000.0f);
+					if (ImGui::Button("Reset Time Dilation")) {
+						Config::TimeScale = 1.0f;
+					}
 				}
 
 				/* 

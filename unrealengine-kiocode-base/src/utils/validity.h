@@ -11,4 +11,5 @@ namespace Validity {
     bool IsBadPoint(SDK::AGameStateBase* ptr);
     bool IsBadPoint(SDK::UProjectileMovementComponent* ptr);
     bool IsBadPoint(SDK::AActor* ptr);
+    bool IsBadPoint(SDK::UBFGAnimationInstance_Human* ptr);
 }

@@ -5,6 +5,7 @@
 
 #include "../config.h"
 #include "../utils/validity.h"
+#include "../utils/general.h"
 //#include "../lua/lua.h"
 #include "../../libs/kiero/minhook/include/MinHook.h"
 
@@ -80,6 +81,18 @@ bool Core::InitVars() {
 		return false;
 	}
 	std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::MyPawn) << std::dec << std::endl;
+
+	/*SDK::UMaterialInterface* material = SDK::UObject::FindObject<SDK::UMaterial>("Material WireframeMaterial.WireframeMaterial");
+	if (!material) {
+		std::cerr << "Error: material not found" << std::endl;
+		return false;
+	}
+	Config::ChamsMaterial = SDK::UKismetMaterialLibrary::CreateDynamicMaterialInstance(Config::World, material, Utility::StrToName(L"ChamsVisibleMaterial"));
+	if (!Config::ChamsMaterial) {
+		std::cout << "Error: ChamsMaterial not found" << std::endl;
+	} else {
+		std::cout << "ChamsMaterial Found" << std::endl;
+	}*/
 
 	return true;
 }

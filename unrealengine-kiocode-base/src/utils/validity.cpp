@@ -90,4 +90,15 @@ namespace Validity {
 
 		return false;
 	}
+
+	bool IsBadPoint(SDK::UBFGAnimationInstance_Human* ptr)
+	{
+		std::uintptr_t Pointer = reinterpret_cast<std::uintptr_t>(ptr);
+
+		if ((Pointer < 0xFFFFFFFFFFULL) || (Pointer > 0x2FFFFFFFFFFULL))
+			return true;
+
+		return false;
+	}
+
 }

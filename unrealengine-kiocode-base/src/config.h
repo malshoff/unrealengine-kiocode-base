@@ -123,7 +123,10 @@ public:
 	inline static int PlayersSnaplineType = 2;
 
 	inline static bool PlayerChams = false;
+	inline static ImColor ChamsColorTargetVisible = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static ImColor ChamsColorTargetHidden = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 	inline static bool RainbowPlayerChams = false;
+	inline static SDK::UMaterialInstanceDynamic* ChamsMaterial;
 
 	inline static bool PlayerSkeleton = false;
 	inline static bool RainbowPlayerSkeleton = false;

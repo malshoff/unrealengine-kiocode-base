@@ -2,6 +2,8 @@
 
 #include "../config.h"
 #include "../utils/validity.h"
+#include "../utils/general.h"
+#include "../utils/imgui/imgui_helper.h"
 
 void MainLoop::DrawCrosshair() 
 {
@@ -25,29 +27,40 @@ void MainLoop::FetchFromObjects(std::vector<SDK::AActor*>* list)
 
 	for (int i = 0; i < SDK::UObject::GObjects->Num(); i++)
 	{
-		SDK::UObject* Obj = SDK::UObject::GObjects->GetByIndex(i);
+		SDK::UObject* obj = SDK::UObject::GObjects->GetByIndex(i);
 
-		if (!Obj || Obj->IsDefaultObject())
+		if (!obj || obj->IsDefaultObject())
 			continue;
 
-		//if (!Obj->IsA(SDK::APawn::StaticClass()) && !Obj->HasTypeFlag(SDK::EClassCastFlags::Pawn))
+		//if (!obj->IsA(SDK::APawn::StaticClass()) && !obj->HasTypeFlag(SDK::EClassCastFlags::Pawn))
 		//    continue;
 		
 		// THIS PART CAN BE VARIABLE BELOW
 
 		// Crabs Champions
-		//if (!Obj->IsA(SDK::ACrabEnemyC::StaticClass()))
+		//if (!obj->IsA(SDK::ACrabEnemyC::StaticClass()))
 		//	continue;
 		
 		// Destroy All Humans
-		if (!Obj->IsA(SDK::UBFGAnimationInstance_Human::StaticClass()))
+		if (!obj->IsA(SDK::UBFGAnimationInstance_Human::StaticClass()))
 			continue;
 
-		SDK::UBFGAnimationInstance_Human* npc = static_cast<SDK::UBFGAnimationInstance_Human*>(Obj);
+		SDK::UBFGAnimationInstance_Human* npc = static_cast<SDK::UBFGAnimationInstance_Human*>(obj);
+		//npc->CurrentSkeleton
+		if (!npc || !npc->GetVariables_Npc() ||
+			Validity::IsBadPoint(npc) ||
+			npc->GetVariables_Npc()->M_bDead || 
+			npc->GetVariables_Npc()->M_bIsInCutscene ||
+			npc->GetVariables_Human()->M_bDead || 
+			npc->GetVariables_Human()->M_bIsInCutscene)
+			continue;
+
 		SDK::AActor* actor = npc->GetOwningActor();
-
-		if (!npc || npc->GetVariables_Npc()->M_bDead || !actor)
+		if (!actor || !actor->bCanBeDamaged)
 			continue;
+
+		//if (Config::MyController->GetSquaredDistanceTo(actor) > 5)
+			//continue;
 
 		list->push_back(actor);
 
@@ -95,12 +108,13 @@ void MainLoop::FetchFromPlayers(std::vector<SDK::AActor*>* list)
 	SDK::TArray<SDK::AActor*> PlayerCharacters;
 	SDK::UGameplayStatics::GetAllActorsOfClass(Config::World, PlayerBaseCharacterReference, &PlayerCharacters);
 
-	for (SDK::AActor* Actor : PlayerCharacters)
+	for (SDK::AActor* actor : PlayerCharacters)
 	{
-		if (!Actor || !Actor->IsA(SDK::ACharacter::StaticClass())) continue;
+		if (!actor || Validity::IsBadPoint(actor) || !actor->IsA(PlayerBaseCharacterReference)) continue;
 
-		SDK::ACharacter* PlayerCharacter = reinterpret_cast<SDK::ACharacter*>(Actor);
-		if (!PlayerCharacter || !PlayerCharacter->PlayerState || !PlayerCharacter->PlayerState->GetPlayerName().IsValid()) continue;
+		SDK::ACharacter* PlayerCharacter = reinterpret_cast<SDK::ACharacter*>(actor);
+		if (!PlayerCharacter || !PlayerCharacter->PlayerState || !PlayerCharacter->PlayerState->GetPlayerName() || !PlayerCharacter->PlayerState->GetPlayerName().IsValid())
+			continue;
 
 		list->push_back(PlayerCharacter);
 	}
@@ -108,33 +122,111 @@ void MainLoop::FetchFromPlayers(std::vector<SDK::AActor*>* list)
 
 void MainLoop::FetchEntities()
 {
-	switch (Config::TargetFetch) {
+	while (true) {
 
+		if (!Config::UpdateTargets)
+		{
+			std::lock_guard<std::mutex> lock(list_mutex);
+			if (!Config::TargetsList.empty())
+			{
+				Config::TargetsList.clear();
+			}
+
+			Sleep(10);
+			continue;
+		}
+
+		if (!Config::World || Validity::IsBadPoint(Config::World) || !Config::Engine || Validity::IsBadPoint(Config::Engine) || !Config::MyController || Validity::IsBadPoint(Config::MyController) || !Config::MyPawn || Validity::IsBadPoint(Config::MyPawn))
+		{
+			Sleep(10);
+			continue;
+		}
+
+		if (!Config::World->GameState || Validity::IsBadPoint(Config::World->GameState) || Validity::IsBadPoint(Config::World->OwningGameInstance))
+		{
+			Sleep(10);
+			continue;
+		}
+
+		std::vector<SDK::AActor*> newTargets;
+
+		switch (Config::TargetFetch)
+		{
 		case 0:
-			FetchFromObjects(&Config::TargetsList);
+			FetchFromObjects(&newTargets);
 			break;
 
 		case 1:
-			FetchFromActors(&Config::TargetsList);
+			FetchFromActors(&newTargets);
 			break;
 
 		case 2:
-			FetchFromPlayers(&Config::TargetsList);
+			FetchFromPlayers(&newTargets);
 			break;
+		}
+
+		{
+			std::lock_guard<std::mutex> lock(list_mutex);
+			Config::TargetsList = std::move(newTargets);
+		}
+
+		Sleep(1);
 	}
-}	
+}
+
+bool MainLoop::UpdateSDK() 
+{
+	Config::World = SDK::UWorld::GetWorld();
+	if (Validity::IsBadPoint(Config::World)) 
+	{
+		std::cerr << "Error: World not found" << std::endl;
+		return false;
+	}
+	//std::cout << "World address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::World) << std::dec << std::endl;
+
+	Config::Engine = SDK::UEngine::GetEngine();
+	if (Validity::IsBadPoint(Config::Engine)) 
+	{
+		std::cerr << "Error: Engine not found" << std::endl;
+		return false;
+	}
+	//std::cout << "Engine address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::Engine) << std::dec << std::endl;
+
+	// Init PlayerController
+	if (Validity::IsBadPoint(Config::World->OwningGameInstance)) 
+	{
+		std::cerr << "Error: OwningGameInstance not found" << std::endl;
+		return false;
+	}
+	if (Validity::IsBadPoint(Config::World->OwningGameInstance->LocalPlayers[0])) 
+	{
+		std::cerr << "Error: LocalPlayers[0] not found" << std::endl;
+		return false;
+	}
+	Config::MyController = Config::World->OwningGameInstance->LocalPlayers[0]->PlayerController;
+	if (Validity::IsBadPoint(Config::MyController)) 
+	{
+		std::cerr << "Error: MyController not found" << std::endl;
+		return false;
+	}
+	//std::cout << "PlayerController address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::MyController) << std::dec << std::endl;
+
+	// Init Pawn
+	Config::MyPawn = Config::MyController->AcknowledgedPawn;
+	if (Config::MyPawn == nullptr) 
+	{
+		std::cerr << "Error: MyPawn not found" << std::endl;
+		return false;
+	}
+	//std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::MyPawn) << std::dec << std::endl;
+
+}
 
 void MainLoop::Update(DWORD tick) 
 {
-	if (!Config::World || !Config::Engine) return;
 
-	if (Config::UpdateTargets) {
-		FetchEntities();
-	}
-	else if (!Config::UpdateTargets && Config::TargetsList.size() > 0) {
-		Config::TargetsList.clear();
-	}
-
+	if (!UpdateSDK()) return;
+	
 	if (Config::GodMode) 
 	{
 		Config::MyController->SetLifeSpan(999);
@@ -159,32 +251,55 @@ void MainLoop::Update(DWORD tick)
 		Config::World->K2_GetWorldSettings()->TimeDilation = Config::TimeScale;
 	}
 
-	for (int i = 0; i < Config::TargetsList.size(); i++)
+	std::shared_ptr<std::vector<SDK::AActor*>> currentTargets;
+
 	{
-		SDK::AActor* currTarget = Config::TargetsList[i];
+		std::lock_guard<std::mutex> lock(list_mutex);
+		currentTargets = std::make_shared<std::vector<SDK::AActor*>>(Config::TargetsList);
+	}
 
-		if (!currTarget)
+	for (auto* currTarget : *currentTargets) 
+	{
+
+		if (!currTarget || Validity::IsBadPoint(currTarget) || currTarget == Config::MyController->GetOwner() || currTarget->GetLifeSpan() < 1)
 			continue;
 
-		SDK::FVector origin;
-		SDK::FVector boxExtent;
-		currTarget->GetActorBounds(true, &origin, &boxExtent);
-		SDK::FVector footLocation = origin;
-		SDK::FVector headLocation = origin;
-
-		footLocation.Z -= boxExtent.Z * 0.15f;
-		headLocation.Z += boxExtent.Z * 0.15f;
-
-		SDK::FVector2D footPos{};
-		SDK::FVector2D headPos{};
-		if (!Config::MyController->ProjectWorldLocationToScreen(footLocation, &footPos, false))
-			continue;
-		if (!Config::MyController->ProjectWorldLocationToScreen(headLocation, &headPos, false))
-			continue;
-
-		if (Config::PlayersSnapline) 
+		if (Config::PlayerChams && Config::ChamsMaterial) 
 		{
-			ImGui::GetBackgroundDrawList()->AddLine(ImVec2(Config::System::ScreenSize.x / 2, 0), ImVec2(footPos.X, footPos.Y), ImColor(255, 0, 0));
+			SDK::ASkeletalMeshActor* mesh = reinterpret_cast<SDK::ASkeletalMeshActor*>(currTarget);
+			Utility::ApplyChams(mesh->SkeletalMeshComponent, true);
+		}
+
+		if (Config::PlayersSnapline || Config::PlayersBox) 
+		{
+			SDK::FVector origin;
+			SDK::FVector boxExtent;
+			currTarget->GetActorBounds(true, &origin, &boxExtent);
+			SDK::FVector footLocation = origin;
+			SDK::FVector headLocation = origin;
+
+			footLocation.Z -= boxExtent.Z * 0.15f;
+			headLocation.Z += boxExtent.Z * 0.15f;
+
+			SDK::FVector2D footPos;
+			SDK::FVector2D headPos;
+			if (!Config::MyController->ProjectWorldLocationToScreen(footLocation, &footPos, false))
+				continue;
+			if (!Config::MyController->ProjectWorldLocationToScreen(headLocation, &headPos, false))
+				continue;
+
+			if (Config::PlayersSnapline)
+			{
+				ImGui::GetBackgroundDrawList()->AddLine(ImVec2(Config::System::ScreenSize.x / 2, 0), ImVec2(footPos.X, footPos.Y), ImColor(255, 0, 0));
+			}
+
+			if (Config::PlayersBox) 
+			{
+				ImGui::GetBackgroundDrawList()->AddRect(ImVec2(footPos.X - boxExtent.X, footPos.Y - boxExtent.Y), ImVec2(footPos.X + boxExtent.X, footPos.Y + boxExtent.Y), ImColor(255, 0, 0));
+				
+				float distance = Config::MyController->GetDistanceTo(currTarget);
+				ImGuiHelper::DrawOutlinedText(Config::GameFont, ImVec2(footPos.X, footPos.Y), 13.0f, ImColor(255, 255, 255), true, "%.1f", distance);
+			}
 		}
 	}
 }

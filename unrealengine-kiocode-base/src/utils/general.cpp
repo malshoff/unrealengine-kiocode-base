@@ -16,6 +16,34 @@ namespace Utility
 		freopen_s(&f, "CONOUT$", "w", stdout);
 	}
 
+	SDK::FLinearColor FromImColorToFLinearColor(ImColor color) {
+		return SDK::FLinearColor(color.Value.x, color.Value.y, color.Value.z, color.Value.w);
+	}
+
+	SDK::FName StrToName(const wchar_t* str)
+	{
+		return SDK::UKismetStringLibrary::Conv_StringToName(SDK::FString(TEXT(str)));
+	}
+
+	void ApplyChams(SDK::USkeletalMeshComponent* mesh, bool isVisible) {
+		UC::TArray<SDK::UMaterialInterface*> Mats = mesh->GetMaterials();
+
+		auto ApplyMaterialToAll = [&](SDK::UMaterialInstanceDynamic* mat) 
+		{
+			for (int t = 0; t < Mats.Num(); t++) 
+			{
+				if (Mats[t]) 
+				{
+					mesh->SetMaterial(t, mat);
+				}
+			}
+		};
+
+		ImColor visibilityColor = isVisible ? Config::ChamsColorTargetVisible : Config::ChamsColorTargetHidden;
+		Config::ChamsMaterial->SetVectorParameterValue(StrToName(L"Color"), FromImColorToFLinearColor(visibilityColor));
+		ApplyMaterialToAll(Config::ChamsMaterial);
+	}
+
 	void MouseMove(float tarx, float tary, float X, float Y, int smooth)
 	{
 		float ScreenCenterX = (X / 2);
