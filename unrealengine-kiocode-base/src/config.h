@@ -55,6 +55,7 @@ public:
 	inline static SDK::UWorld* World;
 	inline static SDK::APlayerController* MyController;
 	inline static SDK::APawn* MyPawn;
+	inline static SDK::ACharacter* MyCharacter;
 	//inline static SDK::APlayerCharacter_C* CharacterClass;
 	//inline static SDK::TArray<class SDK::APlayerState*> PlayerArray;
 
@@ -110,6 +111,10 @@ public:
 	inline static bool RainbowMouse = false;
 	inline static ImColor MouseColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 	inline static int MouseType = 0;
+
+	inline static bool Fly = false;
+
+	inline static bool NoGravity = false;
 
 	inline static bool Crosshair = false;
 	inline static bool RainbowCrosshair = false;

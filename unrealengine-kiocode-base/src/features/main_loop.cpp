@@ -217,8 +217,15 @@ bool MainLoop::UpdateSDK()
 	{
 		std::cerr << "Error: MyPawn not found" << std::endl;
 		return false;
+	}	
+	
+	Config::MyCharacter = Config::MyController->Character;
+	if (Config::MyCharacter == nullptr)
+	{
+		std::cerr << "Error: MyCharacter not found" << std::endl;
+		return false;
 	}
-	//std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::MyPawn) << std::dec << std::endl;
+	//std::cout << "MyCharacter address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::MyCharacter) << std::dec << std::endl;
 
 }
 
@@ -230,6 +237,7 @@ void MainLoop::Update(DWORD tick)
 	if (Config::GodMode) 
 	{
 		Config::MyController->SetLifeSpan(999);
+		Config::MyCharacter->Mesh
 	}
 
 	if (Config::NoClip) 
@@ -250,6 +258,37 @@ void MainLoop::Update(DWORD tick)
 	{
 		Config::World->K2_GetWorldSettings()->TimeDilation = Config::TimeScale;
 	}
+
+	if (Config::Fly)
+	{
+		Config::MyCharacter->CharacterMovement->MaxFlySpeed = 20000.f;
+		Config::MyCharacter->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
+		if (GetAsyncKeyState(VK_SPACE))
+		{
+			SDK::FVector posUP = { 0.f, 0.f, 10.f };
+			Config::MyCharacter->CharacterMovement->AddInputVector(posUP, true);
+		}
+		if (GetAsyncKeyState(VK_LCONTROL))
+		{
+			SDK::FVector posDOWN = { 0.f, 0.f, -10.f };
+			Config::MyCharacter->CharacterMovement->AddInputVector(posDOWN, true);
+		}
+	}
+	else if(Config::MyCharacter->CharacterMovement->MovementMode == SDK::EMovementMode::MOVE_Flying)
+	{		
+		Config::MyCharacter->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Falling;
+	}
+
+	if (Config::NoGravity)
+	{
+		Config::MyCharacter->CharacterMovement->GravityScale = 0.2f;
+	}
+	else if (Config::MyCharacter->CharacterMovement->GravityScale != 1.f)
+	{
+		Config::MyCharacter->CharacterMovement->GravityScale = 1.f;
+	}
+
+	// for more specific cheats check 'class UBFGCheatManager final : public UObject'  <-  BFGCore_classes.hpp
 
 	std::shared_ptr<std::vector<SDK::AActor*>> currentTargets;
 

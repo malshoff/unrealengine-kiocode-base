@@ -155,6 +155,14 @@ void ModMenu::Window() {
 				{ // NoClip
 					ImGui::Checkbox("NoClip", &Config::NoClip);
 				}
+				
+				{ // Fly
+					ImGui::Checkbox("Fly", &Config::Fly);
+				}
+				
+				{ // NoGravity
+					ImGui::Checkbox("NoGravity", &Config::NoGravity);
+				}
 
 				{ // Time Scale
 					ImGui::Checkbox("Time Dilation", &Config::TimeScaleChanger);

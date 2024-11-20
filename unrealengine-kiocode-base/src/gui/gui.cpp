@@ -5,6 +5,7 @@
 #include "../includes.h"
 #include "../features/core.h"
 #include "../features/main_loop.h"
+#include "../utils/general.h"
 #include "../utils/imgui/fonts/font.h"
 #include "../utils/imgui/imgui_helper.h"
 
@@ -114,6 +115,19 @@ HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, 
 	Config::System::ScreenCenter = { Config::System::Viewport.Width / 2.0f, Config::System::Viewport.Height / 2.0f };
 
 #pragma region Our context
+
+	SDK::UMaterialInterface* material = SDK::UObject::FindObject<SDK::UMaterial>("Material WireframeMaterial.WireframeMaterial");
+	if (!material) {
+		std::cout << "Error: material not found" << std::endl;
+	}
+	else {
+		Config::ChamsMaterial = SDK::UKismetMaterialLibrary::CreateDynamicMaterialInstance(Config::World, material, Utility::StrToName(L"ChamsVisibleMaterial"));
+		if (!Config::ChamsMaterial) {
+			std::cout << "Error: ChamsMaterial not found" << std::endl;
+		} else {
+			std::cout << "ChamsMaterial Found" << std::endl;
+		}
+	}
 
 	DWORD currentTime = GetTickCount64();
 
