@@ -4,7 +4,7 @@
 #include "../config.h"
 #include "../utils/dumper.h"
 //#include "../lua/lua.h"
-#include "themes.h"
+#include "core/themes.h"
 
 void ModMenu::Window() {
 
@@ -87,6 +87,10 @@ void ModMenu::Window() {
 					ImGui::Checkbox("##Filled", &Config::PlayersBoxFilled);
 					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Fill the players box");
 				}
+				
+				{ // Players Box 3D
+					ImGui::Checkbox("Players Box 3D", &Config::PlayersBox3D);
+				}
 
 				{ // Player Skeleton
 					ImGui::Checkbox("Players Skeleton", &Config::PlayerSkeleton);
@@ -100,10 +104,12 @@ void ModMenu::Window() {
 
 				{ // Charms
 					ImGui::Checkbox("Targets Chams", &Config::PlayerChams);
-					ImGui::SameLine();
-					ImGui::ColorEdit3("##ChamsColorVisible", (float*)&Config::ChamsColorTargetVisible, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
-					ImGui::ColorEdit3("##ChamsColorHidden", (float*)&Config::ChamsColorTargetHidden, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
 					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Enable Chams");
+					ImGui::SameLine();
+					ImGui::Text("Chams Color when target visible");
+					ImGui::ColorEdit3("##ChamsColorVisible", (float*)&Config::ChamsColorTargetVisible, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
+					ImGui::Text("Chams Color when target not visible");
+					ImGui::ColorEdit3("##ChamsColorHidden", (float*)&Config::ChamsColorTargetHidden, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
 					ImGui::SameLine();
 					ImGui::Checkbox("##RGB7", &Config::RainbowPlayerChams);
 					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle rainbow color of chams");
@@ -143,6 +149,16 @@ void ModMenu::Window() {
 					ImGui::SameLine();
 					ImGui::SliderFloat("##Aimbot Smooth", &Config::AimbotSmoothness, 0.0f, 30.0f);
 
+					{ // Player Aimbot
+						ImGui::Text("Aimbot Target Color");
+						ImGui::SameLine();
+						ImGui::ColorEdit3("##PlayerTargetColor", (float*)&Config::AimbotTargetColor, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
+						if (ImGui::IsItemHovered()) ImGui::SetTooltip("Color of the Target");
+						ImGui::SameLine();
+						ImGui::Checkbox("##RGB6", &Config::RainbowAimbotTargetColor);
+						if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle rainbow color on the target");
+					}
+
 				}
 				break;
 			}
@@ -168,7 +184,7 @@ void ModMenu::Window() {
 					ImGui::Checkbox("Time Dilation", &Config::TimeScaleChanger);
 					ImGui::Text("Time Dilation Value");
 					ImGui::SameLine();
-					ImGui::SliderFloat("##TimeDilation", &Config::TimeScale, 0.1f, 1000.0f);
+					ImGui::SliderFloat("##TimeDilation", &Config::TimeScale, 0.1f, 10000.0f);
 					if (ImGui::Button("Reset Time Dilation")) {
 						Config::TimeScale = 1.0f;
 					}
@@ -193,14 +209,14 @@ void ModMenu::Window() {
 
 				{ // Infinite Ammo
 					ImGui::Checkbox("Infinite Ammo", &Config::InfiniteAmmo);
-				}
+				}*/
 
 				{ // Speed Hack
 					ImGui::Checkbox("Speed Hack", &Config::SpeedHack);
 					ImGui::Text("Speed Value");
 					ImGui::SameLine();
-					ImGui::SliderFloat("##Speed", &Config::SpeedValue, 0.1f, 1000.0f);
-				}*/
+					ImGui::SliderFloat("##Speed", &Config::SpeedValue, 0.1f, 10000.0f);
+				}
 				break;
 			}
 			case Config::TAB_MISC: {
@@ -265,7 +281,7 @@ void ModMenu::Window() {
 
 					ImGui::Spacing();
 
-					ImGui::Checkbox("Update Targets", &Config::UpdateTargets);
+					ImGui::Checkbox("Update Targets", &Config::System::UpdateTargets);
 
 					char aBufTargets[256];
 					sprintf_s(aBufTargets, sizeof(aBufTargets), "Targets: %zu", Config::TargetsList.size());
@@ -284,8 +300,24 @@ void ModMenu::Window() {
 						Dumper::DumpUObjects();
 					}
 
+					ImGui::SameLine();
+
 					if (ImGui::Button("Dump scene objects")) {
 						Dumper::DumpUObjects();
+					}
+
+					if (ImGui::Button("Dump scene players")) {
+						Dumper::DumpUPlayers();
+					}
+
+					ImGui::SameLine();
+
+					if (ImGui::Button("Dump scene bones")) {
+						Dumper::DumpUBones();
+					}
+
+					if (ImGui::Button("Dump scene test")) {
+						Dumper::DumpTests();
 					}
 
 					//ImGui::Checkbox("Show Lua Editor", &Lua::ShowEditor);

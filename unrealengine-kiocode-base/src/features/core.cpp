@@ -44,7 +44,7 @@ bool Core::InitVars() {
 	std::cout << "\n*******************************************************************************\n" << std::endl;
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0x0F);
 
-	return MainLoop::GetInstance().UpdateSDK();
+	return MainLoop::GetInstance().UpdateSDK(true);
 }
 
 

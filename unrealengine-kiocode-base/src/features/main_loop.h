@@ -16,11 +16,14 @@ public:
 
 	void DrawCrosshair();
 	void FetchEntities();
-	void FetchFromObjects(std::vector<SDK::AActor*>* list);
-	void FetchFromActors(std::vector<SDK::AActor*>* list);
-	void FetchFromPlayers(std::vector<SDK::AActor*>* list);
+	//void FetchFromObjects(std::vector<SDK::AActor*>* list);
+	//void FetchFromActors(std::vector<SDK::AActor*>* list);
+	//void FetchFromPlayers(std::vector<SDK::AActor*>* list);	
+	void FetchFromObjects(std::vector<SDK::ACharacter*>* list);
+	void FetchFromActors(std::vector<SDK::ACharacter*>* list);
+	void FetchFromPlayers(std::vector<SDK::ACharacter*>* list);
 	void Update(DWORD tick);
-	bool UpdateSDK();
+	bool UpdateSDK(bool log);
 
 private:
 

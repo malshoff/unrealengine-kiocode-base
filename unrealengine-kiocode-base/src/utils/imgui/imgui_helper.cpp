@@ -3,6 +3,67 @@
 #include <sstream>
 #include "../../config.h"
 
+void ImGuiHelper::Draw3DBox(SDK::FVector& center, SDK::FVector& Bounds, SDK::APlayerController* Controller, ImColor color)
+{
+	const float wX = (center.X + Bounds.X) - (center.X - Bounds.X);
+	const float wY = (center.Y + Bounds.Y) - (center.Y - Bounds.Y);
+
+	SDK::FVector Top{ center.X, center.Y, center.Z + Bounds.Z };
+	SDK::FVector Bottom{ center.X, center.Y, center.Z - Bounds.Z };
+
+	SDK::FVector a1 = { center.X - wX / 2, center.Y + wY / 2, Bottom.Z };
+	SDK::FVector a2 = { center.X + wX / 2, center.Y + wY / 2, Bottom.Z };
+	SDK::FVector a3 = { center.X - wX / 2, center.Y - wY / 2, Bottom.Z };
+	SDK::FVector a4 = { center.X + wX / 2, center.Y - wY / 2, Bottom.Z };
+
+	SDK::FVector b1 = { center.X - wX / 2, center.Y + wY / 2, Top.Z };
+	SDK::FVector b2 = { center.X + wX / 2, center.Y + wY / 2, Top.Z };
+	SDK::FVector b3 = { center.X - wX / 2, center.Y - wY / 2, Top.Z };
+	SDK::FVector b4 = { center.X + wX / 2, center.Y - wY / 2, Top.Z };
+
+	SDK::FVector2D a1w2sUE{};
+	SDK::FVector2D a2w2sUE{};
+	SDK::FVector2D a3w2sUE{};
+	SDK::FVector2D a4w2sUE{};
+
+	SDK::FVector2D b1w2sUE{};
+	SDK::FVector2D b2w2sUE{};
+	SDK::FVector2D b3w2sUE{};
+	SDK::FVector2D b4w2sUE{};
+
+	if (Controller->ProjectWorldLocationToScreen(a1, &a1w2sUE, false) && Controller->ProjectWorldLocationToScreen(a2, &a2w2sUE, false)
+		&& Controller->ProjectWorldLocationToScreen(a3, &a3w2sUE, false) && Controller->ProjectWorldLocationToScreen(a4, &a4w2sUE, false)
+		&& Controller->ProjectWorldLocationToScreen(b1, &b1w2sUE, false) && Controller->ProjectWorldLocationToScreen(b2, &b2w2sUE, false)
+		&& Controller->ProjectWorldLocationToScreen(b3, &b3w2sUE, false) && Controller->ProjectWorldLocationToScreen(b4, &b4w2sUE, false))
+	{
+
+		ImVec2 a1w2s = ImVec2(a1w2sUE.X, a1w2sUE.Y);
+		ImVec2 a2w2s = ImVec2(a2w2sUE.X, a2w2sUE.Y);
+		ImVec2 a3w2s = ImVec2(a3w2sUE.X, a3w2sUE.Y);
+		ImVec2 a4w2s = ImVec2(a4w2sUE.X, a4w2sUE.Y);
+
+		ImVec2 b1w2s = ImVec2(b1w2sUE.X, b1w2sUE.Y);
+		ImVec2 b2w2s = ImVec2(b2w2sUE.X, b2w2sUE.Y);
+		ImVec2 b3w2s = ImVec2(b3w2sUE.X, b3w2sUE.Y);
+		ImVec2 b4w2s = ImVec2(b4w2sUE.X, b4w2sUE.Y);
+
+		ImGui::GetBackgroundDrawList()->AddLine(a1w2s, a2w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(a2w2s, a4w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(a4w2s, a3w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(a3w2s, a1w2s, color, 1.f);
+															  
+		ImGui::GetBackgroundDrawList()->AddLine(b1w2s, b2w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(b2w2s, b4w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(b4w2s, b3w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(b3w2s, b1w2s, color, 1.f);
+															  
+		ImGui::GetBackgroundDrawList()->AddLine(a1w2s, b1w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(a2w2s, b2w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(a3w2s, b3w2s, color, 1.f);
+		ImGui::GetBackgroundDrawList()->AddLine(a4w2s, b4w2s, color, 1.f);
+	}
+}
+
 void ImGuiHelper::HelpMarker(const char* desc)
 {
 	ImGui::TextDisabled("[?]");

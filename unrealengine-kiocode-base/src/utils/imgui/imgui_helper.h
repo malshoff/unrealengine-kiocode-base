@@ -4,6 +4,7 @@
 
 namespace ImGuiHelper {
 
+	void Draw3DBox(SDK::FVector& center, SDK::FVector& Bounds, SDK::APlayerController* Controller, ImColor color);
 	void HelpMarker(const char* desc);
 	void AddText(ImVec2 pos, char* text, ImColor color);
 	float DrawOutlinedText(ImFont* pFont, const ImVec2& pos, float size, ImU32 color, bool center, const char* text, ...);

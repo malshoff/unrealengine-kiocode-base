@@ -1,6 +1,7 @@
 #include "dumper.h"
 
 #include "../config.h"
+#include "validity.h"
 
 namespace Dumper {
 
@@ -56,6 +57,71 @@ namespace Dumper {
         }
 
         std::cout << "***END DUMPING ACTORS***" << std::endl;
+        std::cout << "************************\n" << std::endl;
+    }
+
+    void DumpUPlayers()
+    {
+        std::cout << "\n********************" << std::endl;
+        std::cout << "***DUMPING PLAYERS***" << std::endl;
+
+        SDK::TSubclassOf<SDK::ACharacter> PlayerBaseCharacterReference = SDK::ACharacter::StaticClass();
+        SDK::TArray<SDK::AActor*> PlayerCharacters;
+        SDK::UGameplayStatics::GetAllActorsOfClass(Config::World, PlayerBaseCharacterReference, &PlayerCharacters);
+
+        for (SDK::AActor* actor : PlayerCharacters)
+        {
+            if (!actor || Validity::IsBadPoint(actor) || !actor->IsA(PlayerBaseCharacterReference)) continue;
+
+            SDK::ACharacter* PlayerCharacter = reinterpret_cast<SDK::ACharacter*>(actor);
+            if (!PlayerCharacter || !PlayerCharacter->PlayerState || !PlayerCharacter->PlayerState->GetPlayerName() || !PlayerCharacter->PlayerState->GetPlayerName().IsValid())
+                continue;
+
+            std::cout << PlayerCharacter->PlayerState->GetPlayerName().ToString() << "\n";
+        }
+
+        std::cout << "***END DUMPING PLAYERS***" << std::endl;
+        std::cout << "************************\n" << std::endl;
+    }
+
+    void DumpUBones()
+    {
+        if (!Config::MyController || !Config::MyController->Character || !Config::MyController->Character->Mesh) {
+            std::cout << "MyController or Character or Mesh is null" << std::endl;
+			return;
+        }
+
+        std::cout << "\n********************" << std::endl;
+        std::cout << "***DUMPING BONES***" << std::endl;
+
+
+        for (int i = 0; i < 300; i++)
+        {
+            std::cout << "Index: " << i << " - Name: " << Config::MyController->Character->Mesh->GetSocketBoneName(Config::MyController->Character->Mesh->GetBoneName(i)).GetRawString() << std::endl;
+        }
+
+        std::cout << "***END DUMPING BONES***" << std::endl;
+        std::cout << "************************\n" << std::endl;
+    }
+
+
+    void DumpTests()
+    {
+        std::cout << "\n********************" << std::endl;
+        std::cout << "***DUMPING TEST***" << std::endl;
+
+        for (SDK::APlayerState* player : Config::World->GameState->PlayerArray)
+        {
+            if (!player || Validity::IsBadPoint(player)) continue;
+
+            SDK::ACharacter* PlayerCharacter = reinterpret_cast<SDK::ACharacter*>(player);
+            if (!PlayerCharacter || !PlayerCharacter->PlayerState || !PlayerCharacter->PlayerState->GetPlayerName() || !PlayerCharacter->PlayerState->GetPlayerName().IsValid())
+                continue;
+
+            std::cout << PlayerCharacter->PlayerState->GetPlayerName().ToString() << "\n";
+        }
+
+        std::cout << "***END DUMPING TEST***" << std::endl;
         std::cout << "************************\n" << std::endl;
     }
 }

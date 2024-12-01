@@ -3,7 +3,7 @@
 #include <thread>
 
 #include "src/includes.h"
-#include "src/gui/gui.h"
+#include "src/gui/core/gui.h"
 #include "src/utils/rainbow_calculator.hpp"
 #include "src/features/core.h"
 #include "src/utils/general.h"
