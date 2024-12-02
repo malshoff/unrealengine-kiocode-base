@@ -360,33 +360,111 @@ void MainLoop::Update(DWORD tick)
 		if (currTarget->Controller && currTarget->Controller->IsLocalPlayerController())
 			continue;
 
+		bool isVisible = Config::MyController->LineOfSightTo(currTarget, Config::MyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
+
 		if (Config::PlayerChams && Config::ChamsMaterial) 
 		{
 			SDK::ASkeletalMeshActor* mesh = reinterpret_cast<SDK::ASkeletalMeshActor*>(currTarget);
 			Utility::ApplyChams(mesh->SkeletalMeshComponent, true);
 		}
 
+		ImColor color = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+
 		if (Config::PlayersSnapline) 
 		{
-			ESP::GetInstance().RenderSnapline(currTarget, Config::RainbowPlayersSnapline ? Config::RainbowColor : Config::PlayersSnaplineColor);
+
+			if (currTarget == Config::CurrentTarget)
+			{
+				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+			} 
+			else
+			{
+
+				if (isVisible) 
+				{
+					color = Config::RainbowPlayersSnapline ? Config::RainbowColor : Config::PlayersSnaplineColor;
+				}
+				else 
+				{
+					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
+				}
+
+			}
+
+			ESP::GetInstance().RenderSnapline(currTarget, color);
 		}
 		
 		if (Config::PlayerSkeleton) 
 		{
-			ESP::GetInstance().RenderSkeleton(currTarget, Config::RainbowPlayerSkeleton ? Config::RainbowColor : Config::PlayerSkeletonColor);
+
+			if (currTarget == Config::CurrentTarget)
+			{
+				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+			}
+			else
+			{
+
+				if (isVisible)
+				{
+					color = Config::RainbowPlayerSkeleton ? Config::RainbowColor : Config::PlayerSkeletonColor;
+				}
+				else
+				{
+					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
+				}
+
+			}
+
+			ESP::GetInstance().RenderSkeleton(currTarget, color);
 		}
 
 		if (Config::PlayersBox) 
 		{
-			ESP::GetInstance().RenderBox(currTarget, Config::RainbowPlayersBox ? Config::RainbowColor : Config::PlayersBoxColor);
+
+			if (currTarget == Config::CurrentTarget)
+			{
+				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+			}
+			else
+			{
+
+				if (isVisible)
+				{
+					color = Config::RainbowPlayersBox ? Config::RainbowColor : Config::PlayersBoxColor;
+				}
+				else
+				{
+					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
+				}
+			}
+
+			ESP::GetInstance().RenderBox(currTarget, color);
 		}
 
 		if (Config::PlayersBox3D) 
 		{
-			ESP::GetInstance().Render3DBox(currTarget, Config::RainbowPlayersBox ? Config::RainbowColor : Config::PlayersBoxColor);
+
+			if (currTarget == Config::CurrentTarget)
+			{
+				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+			}
+			else
+			{
+
+				if (isVisible)
+				{
+					color = Config::RainbowPlayersBox ? Config::RainbowColor : Config::PlayersBoxColor;
+				}
+				else
+				{
+					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
+				}
+			}
+
+			ESP::GetInstance().Render3DBox(currTarget, color);
 		}
 
-		if (Config::EnableAimbot) 
+		if (Config::EnableAimbot && isVisible)
 		{
 			Aimbot::GetInstance().RegularAimbot(currTarget);
 		}

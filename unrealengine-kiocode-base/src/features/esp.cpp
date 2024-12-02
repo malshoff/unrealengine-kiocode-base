@@ -23,13 +23,12 @@ void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color)
 		SDK::FVector2D boneScreen;
 		SDK::FVector2D prevBoneScreen;
 
-		if (pawn == Config::CurrentTarget) color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
-
 		if (
 			!Config::MyController->ProjectWorldLocationToScreen(boneLoc1, &boneScreen, false) ||
 			!Config::MyController->ProjectWorldLocationToScreen(boneLoc2, &prevBoneScreen, false)
 		) continue;
 
+		if (pawn == Config::CurrentTarget) color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
 
 		ImGui::GetForegroundDrawList()->AddLine(
 			ImVec2(boneScreen.X, boneScreen.Y),
@@ -97,8 +96,6 @@ void ESP::RenderBox(SDK::ACharacter* pawn, ImColor color)
 
 	const float height = feetScreen.Y - headScreen.Y;
 	const float width = height / 3;
-
-	if (pawn == Config::CurrentTarget) color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
 
 	color.Value.w = 0.3f;
 

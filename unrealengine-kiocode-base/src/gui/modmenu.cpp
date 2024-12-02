@@ -99,21 +99,29 @@ void ModMenu::Window() {
 					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Color of the players skeleton");
 					ImGui::SameLine();
 					ImGui::Checkbox("##RGB6", &Config::RainbowPlayerSkeleton);
-					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle rainbow color on the players skeleton");
 				}
 
-				{ // Charms
-					ImGui::Checkbox("Targets Chams", &Config::PlayerChams);
-					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Enable Chams");
+				{ // Target Not Visible Color
+					ImGui::Text("Target Not Visible Color");
+					ImGui::ColorEdit3("##PlayernotvisibleColor", (float*)&Config::TargetNotVisibleColor, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
+					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Color of the not visible target");
 					ImGui::SameLine();
-					ImGui::Text("Chams Color when target visible");
-					ImGui::ColorEdit3("##ChamsColorVisible", (float*)&Config::ChamsColorTargetVisible, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
-					ImGui::Text("Chams Color when target not visible");
-					ImGui::ColorEdit3("##ChamsColorHidden", (float*)&Config::ChamsColorTargetHidden, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
-					ImGui::SameLine();
-					ImGui::Checkbox("##RGB7", &Config::RainbowPlayerChams);
-					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle rainbow color of chams");
+					ImGui::Checkbox("##RGB36", &Config::RainbowTargetNotVisibleColor);
+					if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle rainbow color on the not visible target");
 				}
+
+				//{ // Charms
+				//	ImGui::Checkbox("Targets Chams", &Config::PlayerChams);
+				//	if (ImGui::IsItemHovered()) ImGui::SetTooltip("Enable Chams");
+				//	ImGui::SameLine();
+				//	ImGui::Text("Chams Color when target visible");
+				//	ImGui::ColorEdit3("##ChamsColorVisible", (float*)&Config::ChamsColorTargetVisible, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
+				//	ImGui::Text("Chams Color when target not visible");
+				//	ImGui::ColorEdit3("##ChamsColorHidden", (float*)&Config::ChamsColorTargetHidden, ImGuiColorEditFlags_NoDragDrop | ImGuiColorEditFlags_NoInputs);
+				//	ImGui::SameLine();
+				//	ImGui::Checkbox("##RGB7", &Config::RainbowPlayerChams);
+				//	if (ImGui::IsItemHovered()) ImGui::SetTooltip("Toggle rainbow color of chams");
+				//}
 
 				/* { // Players Health
 					ImGui::Checkbox("Players Health", &Config::PlayersHealth);

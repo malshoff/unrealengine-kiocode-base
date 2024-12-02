@@ -189,6 +189,9 @@ public:
 	inline static bool RainbowAimbotTargetColor = false;
 	inline static ImColor AimbotTargetColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 
+	inline static ImColor TargetNotVisibleColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static bool RainbowTargetNotVisibleColor = false;
+	
 	inline static bool PlayersBox3D = false;
 
 	inline static bool BotChecker = false;
