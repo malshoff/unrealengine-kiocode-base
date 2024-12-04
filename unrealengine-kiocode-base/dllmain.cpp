@@ -14,7 +14,8 @@
 void StartBackgroundThreads()
 {
 	std::thread(RainbowCalculator::Update).detach();
-	std::thread(&MainLoop::FetchEntities, &MainLoop::GetInstance()).detach();
+
+	if(Config::System::UpdateTargetsInDifferentThread) std::thread(&MainLoop::FetchEntities, &MainLoop::GetInstance()).detach();
 }
 
 void InitialSetup()
@@ -26,10 +27,12 @@ void InitialSetup()
 
 	//LuaEditor::GetInstance().Init();
 
+	// main loop
 	kiero::bind(8, (void**)&GUI::GetInstance().oPresent, GUI::hkPresentWrapper);
 
 	StartBackgroundThreads();
 }
+
 DWORD WINAPI MainThread(LPVOID lpReserved)
 {
 

@@ -52,13 +52,13 @@ void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color)
 		ImVec2 origin;
 
 		switch (Config::PlayersSnaplineType) {
-			case 0:
+			case 0: // from top
 				origin = ImVec2(Config::System::ScreenCenter.x, 0);
 				break;
-			case 1:
+			case 1: // from center
 				origin = ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenCenter.y);
 				break;
-			case 2:
+			case 2: // from bottom
 				origin = ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenSize.y);
 				break;
 		}

@@ -67,6 +67,7 @@ public:
 
 	inline static ImColor TargetPlayerColor = ImColor(255, 0, 0);
 
+	// dumped with Dumper::DumpUBones() 
 	inline static std::vector<std::pair<int, int>> BonePairs = {
 		// Spine
 		{1, 2},  // pelvis -> spine_01

@@ -201,9 +201,10 @@ void MainLoop::FetchEntities()
 		{
 			Sleep(10);
 		}
+
+	// if its in a thread run it continuously
 	} while (Config::System::UpdateTargetsInDifferentThread);
 }
-
 
 bool MainLoop::UpdateSDK(bool log) 
 {
@@ -275,38 +276,48 @@ bool MainLoop::UpdateSDK(bool log)
 
 void MainLoop::Update(DWORD tick) 
 {
-
+	// important update of the sdk, bc if we inject the dll in the menu for example, 
+	// after in game we will not have the access to some obejct or the player controller
 	if (!UpdateSDK(false)) return;
 
+	// thats a check because we can start that in a thread to avoid lag, but in some game
+	// it must be in the main loop to avoid game freezing (like in OHD)
 	if (!Config::System::UpdateTargetsInDifferentThread)
 	{
 		FetchEntities();
 	}
 	
-	if (Config::GodMode) 
+#pragma region EXPLOIT CHEATS
+
+	if (Config::GodMode)
 	{
+		// not working in all games
 		Config::MyController->SetLifeSpan(999);
 	}
 
-	if (Config::NoClip) 
+	// seems universal (use it with the fly or you will fall under the map forever :D)
+	if (Config::NoClip)
 	{
 		Config::MyPawn->SetActorEnableCollision(false);
 	}
-	else if (!Config::NoClip && Config::MyPawn->GetActorEnableCollision()) 
+	else if (!Config::NoClip && Config::MyPawn->GetActorEnableCollision())
 	{
 		Config::MyPawn->SetActorEnableCollision(true);
 	}
 
-	if (Config::CameraFovChanger) 
+	// seems universal
+	if (Config::CameraFovChanger)
 	{
 		Config::MyController->FOV(Config::CameraCustomFOV);
 	}
 
-	if (Config::TimeScaleChanger) 
+	// seems universal
+	if (Config::TimeScaleChanger)
 	{
 		Config::World->K2_GetWorldSettings()->TimeDilation = Config::TimeScale;
 	}
 
+	// seems universal (in multiplayer it may not work if player pos is server sided)
 	if (Config::Fly)
 	{
 		Config::MyCharacter->CharacterMovement->MaxFlySpeed = 20000.f;
@@ -322,11 +333,12 @@ void MainLoop::Update(DWORD tick)
 			Config::MyCharacter->CharacterMovement->AddInputVector(posDOWN, true);
 		}
 	}
-	else if(Config::MyCharacter->CharacterMovement->MovementMode == SDK::EMovementMode::MOVE_Flying)
-	{		
+	else if (Config::MyCharacter->CharacterMovement->MovementMode == SDK::EMovementMode::MOVE_Flying)
+	{
 		Config::MyCharacter->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Falling;
 	}
 
+	// seems universal
 	if (Config::NoGravity)
 	{
 		Config::MyCharacter->CharacterMovement->GravityScale = 0.2f;
@@ -335,13 +347,15 @@ void MainLoop::Update(DWORD tick)
 	{
 		Config::MyCharacter->CharacterMovement->GravityScale = 1.f;
 	}
-	
+
+	// seems universal
 	if (Config::SpeedHack)
 	{
 		Config::MyCharacter->CharacterMovement->MaxWalkSpeed = Config::SpeedValue;
 		Config::MyCharacter->CharacterMovement->MaxAcceleration = Config::SpeedValue;
 	}
 
+#pragma endregion
 
 	std::shared_ptr<std::vector<SDK::ACharacter*>> currentTargets;
 
@@ -350,16 +364,18 @@ void MainLoop::Update(DWORD tick)
 		currentTargets = std::make_shared<std::vector<SDK::ACharacter*>>(Config::TargetsList);
 	}
 
+	// looping our targets (in online games it will be prob a ACharacter vector, in offline games for npc can be AActor vector)
 	for (auto* currTarget : *currentTargets) 
 	{
 
 		if (!currTarget || Validity::IsBadPoint(currTarget))
 			continue;
 
-		// if list of characters
+		// skip local player
 		if (currTarget->Controller && currTarget->Controller->IsLocalPlayerController())
 			continue;
 
+		// raycast to check if targets are behind walls
 		bool isVisible = Config::MyController->LineOfSightTo(currTarget, Config::MyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
 
 		if (Config::PlayerChams && Config::ChamsMaterial) 
@@ -370,21 +386,25 @@ void MainLoop::Update(DWORD tick)
 
 		ImColor color = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 
-		if (Config::PlayersSnapline) 
+#pragma region CHEATS FOR TARGETS
+
+		// NOTE: Config::CurrentTarget is a pointer to the current target (of the aimbot)
+
+		if (Config::PlayersSnapline)
 		{
 
 			if (currTarget == Config::CurrentTarget)
 			{
 				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
-			} 
+			}
 			else
 			{
 
-				if (isVisible) 
+				if (isVisible)
 				{
 					color = Config::RainbowPlayersSnapline ? Config::RainbowColor : Config::PlayersSnaplineColor;
 				}
-				else 
+				else
 				{
 					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
 				}
@@ -393,8 +413,8 @@ void MainLoop::Update(DWORD tick)
 
 			ESP::GetInstance().RenderSnapline(currTarget, color);
 		}
-		
-		if (Config::PlayerSkeleton) 
+
+		if (Config::PlayerSkeleton)
 		{
 
 			if (currTarget == Config::CurrentTarget)
@@ -418,7 +438,7 @@ void MainLoop::Update(DWORD tick)
 			ESP::GetInstance().RenderSkeleton(currTarget, color);
 		}
 
-		if (Config::PlayersBox) 
+		if (Config::PlayersBox)
 		{
 
 			if (currTarget == Config::CurrentTarget)
@@ -441,7 +461,7 @@ void MainLoop::Update(DWORD tick)
 			ESP::GetInstance().RenderBox(currTarget, color);
 		}
 
-		if (Config::PlayersBox3D) 
+		if (Config::PlayersBox3D)
 		{
 
 			if (currTarget == Config::CurrentTarget)
@@ -468,5 +488,7 @@ void MainLoop::Update(DWORD tick)
 		{
 			Aimbot::GetInstance().RegularAimbot(currTarget);
 		}
+
+#pragma endregion
 	}
 }

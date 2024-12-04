@@ -104,7 +104,6 @@ namespace Dumper {
         std::cout << "************************\n" << std::endl;
     }
 
-
     void DumpTests()
     {
         std::cout << "\n********************" << std::endl;
