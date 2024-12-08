@@ -16,7 +16,7 @@ public:
 		inline static constexpr const char* c_author = "@kiocode";
 
 		inline static bool Init = false;
-		inline static bool UpdateTargetsInDifferentThread = false;
+		inline static bool UpdateTargetsInDifferentThread = false; // some game is freezing (like OHD, OAR)
 		inline static bool UpdateTargets = false;
 
 		inline static POINT MousePos = { 0, 0 };
@@ -61,13 +61,14 @@ public:
 	//inline static SDK::APlayerCharacter_C* CharacterClass;
 	//inline static SDK::TArray<class SDK::APlayerState*> PlayerArray;
 
-	//inline static std::vector<SDK::AActor*> TargetsList;
+	//inline static std::vector<SDK::AActor*> TargetsList{};
 	inline static std::vector<SDK::ACharacter*> TargetsList{};
 	inline static SDK::AActor* CurrentTarget;
 
 	inline static ImColor TargetPlayerColor = ImColor(255, 0, 0);
 
 	// dumped with Dumper::DumpUBones() 
+	// OHD
 	inline static std::vector<std::pair<int, int>> BonePairs = {
 		// Spine
 		{1, 2},  // pelvis -> spine_01
@@ -186,6 +187,8 @@ public:
 	inline static bool RainbowPlayersBox = false;
 	inline static ImColor PlayersBoxColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 	inline static bool PlayersBoxFilled = false;
+
+	inline static bool KillAll = false;
 
 	inline static bool RainbowAimbotTargetColor = false;
 	inline static ImColor AimbotTargetColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);

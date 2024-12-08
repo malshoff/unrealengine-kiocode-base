@@ -219,6 +219,10 @@ void ModMenu::Window() {
 					ImGui::Checkbox("Infinite Ammo", &Config::InfiniteAmmo);
 				}*/
 
+				{ //Infinite kill all
+					ImGui::Checkbox("Infinite kill all", &Config::KillAll);
+				}
+
 				{ // Speed Hack
 					ImGui::Checkbox("Speed Hack", &Config::SpeedHack);
 					ImGui::Text("Speed Value");

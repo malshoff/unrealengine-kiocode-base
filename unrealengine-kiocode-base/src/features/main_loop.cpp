@@ -22,86 +22,74 @@ void MainLoop::DrawCrosshair()
 	}
 }
 
-//void MainLoop::FetchFromObjects(std::vector<Config::TargetClass>* list)
-//{
-//
-//	list->clear();
-//
-//	for (int i = 0; i < SDK::UObject::GObjects->Num(); i++)
-//	{
-//		SDK::UObject* obj = SDK::UObject::GObjects->GetByIndex(i);
-//
-//		if (!obj || obj->IsDefaultObject())
-//			continue;
-//
-//		//if (!obj->IsA(SDK::APawn::StaticClass()) && !obj->HasTypeFlag(SDK::EClassCastFlags::Pawn))
-//		//    continue;
-//		
-//		// THIS PART CAN BE VARIABLE BELOW
-//
-//		// Crabs Champions
-//		//if (!obj->IsA(SDK::ACrabEnemyC::StaticClass()))
-//		//	continue;
-//		
-//		// Destroy All Humans
-//		//if (!obj->IsA(SDK::UBFGAnimationInstance_Human::StaticClass()))
-//		//	continue;		
-//		
-//		// Doorstop
-//		if (!obj->IsA(SDK::AHDPlayerCharacter::StaticClass()))
-//			continue;
-//
-//		SDK::AHDPlayerCharacter* npc = static_cast<SDK::AHDPlayerCharacter*>(obj);
-//		//npc->CurrentSkeleton
-//		/*if (!npc || !npc->GetVariables_Npc() ||
-//			Validity::IsBadPoint(npc) ||
-//			npc->GetVariables_Npc()->M_bDead || 
-//			npc->GetVariables_Npc()->M_bIsInCutscene ||
-//			npc->GetVariables_Human()->M_bDead || 
-//			npc->GetVariables_Human()->M_bIsInCutscene)
-//			continue;*/
-//
-//		//SDK::AActor* actor = npc->GetOwningActor();
-//		//if (!actor || !actor->bCanBeDamaged)
-//		//	continue;
-//
-//		list->push_back(npc);
-//
-//	}
-//}
-//
-//void MainLoop::FetchFromActors(std::vector<Config::TargetClass>* list)
-//{
-//
-//	if (Config::World->Levels.Num() == 0)
-//		return;
-//
-//	SDK::ULevel* currLevel = Config::World->Levels[0];
-//	if (!currLevel)
-//		return;
-//
-//	list->clear();
-//
-//	for (int j = 0; j < currLevel->Actors.Num(); j++)
-//	{
-//		SDK::AActor* currActor = currLevel->Actors[j];
-//
-//		if (!currActor)
-//			continue;
-//		if (!currActor->RootComponent)
-//			continue;
-//
-//		//const auto location = currActor->K2_GetActorLocation();
-//		//if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f) continue;
-//
-//		//if (currActor->GetFullName().find("YOUR_NPC") != std::string::npos)
-//		if (currActor->GetFullName().find("BP_Enemy") != std::string::npos)
-//		{
-//			list->push_back(currActor);
-//		}
-//
-//	}
-//}
+void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
+{
+
+	list->clear();
+
+	for (int i = 0; i < SDK::UObject::GObjects->Num(); i++)
+	{
+		SDK::UObject* obj = SDK::UObject::GObjects->GetByIndex(i);
+
+		if (!obj || obj->IsDefaultObject())
+			continue;
+				
+		// THIS PART CAN BE VARIABLE BELOW
+
+		// Crabs Champions
+		//if (!obj->IsA(SDK::ACrabEnemyC::StaticClass()))
+		//	continue;
+		
+		// Destroy All Humans
+		//if (!obj->IsA(SDK::UBFGAnimationInstance_Human::StaticClass()))
+		//	continue;		
+		
+		// oar
+		//if (!obj->IsA(SDK::ANPCBase_C::StaticClass()))
+		//	continue;
+
+		//SDK::ANPCBase_C* npc = static_cast<SDK::ANPCBase_C*>(obj);
+
+		//if (!npc || Validity::IsBadPoint(npc) || npc->Health <= 0 || npc->Dead_)
+		//	continue;
+
+		//list->push_back(npc);
+
+	}
+}
+
+/*void MainLoop::FetchFromActors(std::vector<SDK::AActor*>* list)
+{
+
+	if (Config::World->Levels.Num() == 0)
+		return;
+
+	SDK::ULevel* currLevel = Config::World->Levels[0];
+	if (!currLevel)
+		return;
+
+	list->clear();
+
+	for (int j = 0; j < currLevel->Actors.Num(); j++)
+	{
+		SDK::AActor* currActor = currLevel->Actors[j];
+
+		if (!currActor)
+			continue;
+		if (!currActor->RootComponent)
+			continue;
+
+		//const auto location = currActor->K2_GetActorLocation();
+		//if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f) continue;
+
+		//if (currActor->GetFullName().find("YOUR_NPC") != std::string::npos)
+		if (currActor->GetFullName().find("BP_Enemy") != std::string::npos)
+		{
+			list->push_back(currActor);
+		}
+
+	}
+}*/
 
 void MainLoop::FetchFromPlayers(std::vector<SDK::ACharacter*>* list)
 {
@@ -179,17 +167,17 @@ void MainLoop::FetchEntities()
 
 		switch (Config::TargetFetch)
 		{
-			/*case 0:
+			case 0:
 				FetchFromObjects(&newTargets);
 				break;
 
 			case 1:
-				FetchFromActors(&newTargets);
-				break;*/
+				//FetchFromActors(&newTargets);
+				break;
 
-		case 2:
-			FetchFromPlayers(&newTargets);
-			break;
+			case 2:
+				FetchFromPlayers(&newTargets);
+				break;
 		}
 
 		{
@@ -287,7 +275,7 @@ void MainLoop::Update(DWORD tick)
 		FetchEntities();
 	}
 	
-#pragma region EXPLOIT CHEATS
+	#pragma region EXPLOIT CHEATS
 
 	if (Config::GodMode)
 	{
@@ -355,7 +343,7 @@ void MainLoop::Update(DWORD tick)
 		Config::MyCharacter->CharacterMovement->MaxAcceleration = Config::SpeedValue;
 	}
 
-#pragma endregion
+	#pragma endregion
 
 	std::shared_ptr<std::vector<SDK::ACharacter*>> currentTargets;
 
@@ -386,7 +374,7 @@ void MainLoop::Update(DWORD tick)
 
 		ImColor color = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 
-#pragma region CHEATS FOR TARGETS
+		#pragma region CHEATS FOR TARGETS
 
 		// NOTE: Config::CurrentTarget is a pointer to the current target (of the aimbot)
 
@@ -489,6 +477,6 @@ void MainLoop::Update(DWORD tick)
 			Aimbot::GetInstance().RegularAimbot(currTarget);
 		}
 
-#pragma endregion
+		#pragma endregion
 	}
 }

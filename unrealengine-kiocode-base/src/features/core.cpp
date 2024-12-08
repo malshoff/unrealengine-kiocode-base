@@ -85,7 +85,7 @@ LRESULT __stdcall GUI::WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM
 // main hook thread (it's a loop)
 HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
-#pragma region SYSTEM THINGS
+	#pragma region SYSTEM THINGS
 
 	if (!HkPresentInitialized)
 	{
@@ -120,16 +120,16 @@ HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, 
 	ScreenToClient(window, &Config::System::MousePos);
 
 
-#pragma region IMGUI THINGS
+	#pragma region IMGUI THINGS
 	ImGui_ImplDX11_NewFrame();
 	ImGui_ImplWin32_NewFrame();
 	ImGui::NewFrame();
-#pragma endregion
+	#pragma endregion
 
 
-#pragma endregion
+	#pragma endregion
 
-#pragma region Our context
+	#pragma region Our context
 	// can cause crash if you try to get an unexisting material
 	/*SDK::UMaterialInterface* material = SDK::UObject::FindObject<SDK::UMaterial>("Material WireframeMaterial.WireframeMaterial");
 	if (!material) {
@@ -158,15 +158,15 @@ HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, 
 		MessageBoxA(NULL, e.what(), "Error", MB_OK | MB_ICONERROR);
 	}
 
-#pragma endregion
+	#pragma endregion
 
-#pragma region SYSTEM THINGS
+	#pragma region SYSTEM THINGS
 
-#pragma region IMGUI THINGS
+	#pragma region IMGUI THINGS
 
 	ImGui::Render();
 
-#pragma endregion
+	#pragma endregion
 
 	if (currentTime - Config::LastTick > 5)
 	{
@@ -177,7 +177,7 @@ HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, 
 	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
 
 	return oPresent(pSwapChain, SyncInterval, Flags);
-#pragma endregion
+	#pragma endregion
 
 }
 
