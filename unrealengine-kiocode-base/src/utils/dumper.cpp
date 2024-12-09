@@ -86,10 +86,11 @@ namespace Dumper {
 
     void DumpUBones()
     {
-        //auto* target = Config::MyController->Character;
         if (!Config::MyController) return;
 
-        auto* target = Config::TargetsList[0];
+        auto* target = Config::MyController->Character;
+
+        //auto* target = Config::TargetsList[0];
 
         if (!target || !target->Mesh) {
             std::cout << "MyController or Character or Mesh is null" << std::endl;
