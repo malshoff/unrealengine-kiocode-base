@@ -23,21 +23,21 @@ void GUI::LoadFonts()
 	ImGui::GetIO().Fonts->AddFontDefault();
 	ImFontConfig font_cfg;
 	font_cfg.GlyphExtraSpacing.x = 1.2;
-	Config::GameFont = ImGui::GetIO().Fonts->AddFontFromMemoryTTF(TTSquaresCondensedBold, 14, 14, &font_cfg);
+	Config::m_pGameFont = ImGui::GetIO().Fonts->AddFontFromMemoryTTF(TTSquaresCondensedBold, 14, 14, &font_cfg);
 }
 
 void GUI::RenderMouse() 
 {
-	if (!Config::ShowMouse) return;
+	if (!Config::m_bShowMouse) return;
 
-	ImColor color = Config::RainbowMouse ? Config::RainbowColor : Config::MouseColor;
+	ImColor color = Config::m_bRainbowMouse ? Config::m_cRainbow : Config::m_cMouseColor;
 
-	switch (Config::MouseType) {
+	switch (Config::m_nMouseType) {
 	case 0:
 		ImGui::GetForegroundDrawList()->AddCircleFilled(ImGui::GetMousePos(), 4, color);
 		break;
 	case 1:
-		ImGuiHelper::DrawOutlinedTextForeground(Config::GameFont, ImVec2(Config::System::MousePos.x, Config::System::MousePos.y), 13.0f, color, false, "X");
+		ImGuiHelper::DrawOutlinedTextForeground(Config::m_pGameFont, ImVec2(Config::System::m_MousePos.x, Config::System::m_MousePos.y), 13.0f, color, false, "X");
 		break;
 	case 2:
 		if (!ImGui::GetIO().MouseDrawCursor) {
@@ -50,7 +50,7 @@ void GUI::RenderMouse()
 void GUI::RenderUI() 
 {
 
-	if (Config::ShowMenu)
+	if (Config::m_bShowMenu)
 	{
 		RenderMouse();
 
@@ -58,18 +58,18 @@ void GUI::RenderUI()
 		ModMenu::Window();
 	}
 
-	if (Config::Watermark)
+	if (Config::m_bWatermark)
 	{
-		ImGuiHelper::DrawOutlinedText(Config::GameFont, ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenSize.y - 20), 13.0f, Config::RainbowColor, true, Config::System::c_author);
-		ImGuiHelper::DrawOutlinedText(Config::GameFont, ImVec2(Config::System::ScreenCenter.x, 5), 13.0f, Config::RainbowColor, true, "[ %.1f FPS ]", ImGui::GetIO().Framerate);
+		ImGuiHelper::DrawOutlinedText(Config::m_pGameFont, ImVec2(Config::System::m_ScreenCenter.X, Config::System::m_ScreenSize.Y - 20), 13.0f, Config::m_cRainbow, true, Config::System::m_cAuthor);
+		ImGuiHelper::DrawOutlinedText(Config::m_pGameFont, ImVec2(Config::System::m_ScreenCenter.X, 5), 13.0f, Config::m_cRainbow, true, "[ %.1f FPS ]", ImGui::GetIO().Framerate);
 	}
 
-	if (Config::Crosshair) {
+	if (Config::m_bCrosshair) {
 		MainLoop::GetInstance().DrawCrosshair();
 	}
 
-	if (Config::AimbotFOVCheck) {
-		ImGui::GetForegroundDrawList()->AddCircle(ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenCenter.y), Config::AimbotFOV, ImColor(255, 255, 255), 360);
+	if (Config::m_bAimbotFOVCheck) {
+		ImGui::GetForegroundDrawList()->AddCircle(ImVec2(Config::System::m_ScreenCenter.X, Config::System::m_ScreenCenter.Y), Config::m_fAimbotFOV, ImColor(255, 255, 255), 360);
 	}
 
 }

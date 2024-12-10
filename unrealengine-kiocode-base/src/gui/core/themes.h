@@ -2,7 +2,6 @@
 
 // my includes
 #include "../includes.h"
-#include "../utils/vec2.h"
 #include "../config.h"
 
 namespace Themes {
@@ -166,7 +165,7 @@ namespace Themes {
 		colors[ImGuiCol_DragDropTarget] = ImVec4(0.33f, 0.67f, 0.86f, 1.00f);
 
 #if RAINBOW_BORDERS
-		colors[ImGuiCol_Border] = ImVec4(Config::Rainbow.x, Config::Rainbow.y, Config::Rainbow.z, 0.5f);
+		colors[ImGuiCol_Border] = ImVec4(Config::m_v4Rainbow.x, Config::m_v4Rainbow.y, Config::m_v4Rainbow.z, 0.5f);
 #else
 		colors[ImGuiCol_Border] = ImVec4(0.19f, 0.19f, 0.19f, 0.29f);
 #endif

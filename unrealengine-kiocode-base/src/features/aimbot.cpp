@@ -5,48 +5,48 @@
 
 void Aimbot::RegularAimbot(SDK::ACharacter* pawn) 
 {
-	if (!pawn || !Config::MyController || Config::BonePairs.empty())
+	if (!pawn || !Config::m_pMyController || Config::m_BonePairs.empty())
 		return;
 
 	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
 	if (!mesh)
 		return;
 
-	SDK::FVector head = mesh->GetSocketLocation(mesh->GetBoneName(Config::BonePairs[4].second));
+	SDK::FVector head = mesh->GetSocketLocation(mesh->GetBoneName(Config::m_BonePairs[4].second));
 
 	SDK::FVector2D headScreen;
 
 	if (
-		!Config::MyController->ProjectWorldLocationToScreen(head, &headScreen, false)
+		!Config::m_pMyController->ProjectWorldLocationToScreen(head, &headScreen, false)
 	) return;
 
-	if (Config::AimbotFOVCheck)
+	if (Config::m_bAimbotFOVCheck)
 	{
-		if (headScreen.X > (Config::System::ScreenCenter.x + Config::AimbotFOV))
+		if (headScreen.X > (Config::System::m_ScreenCenter.X + Config::m_fAimbotFOV))
 			return;
-		if (headScreen.X < (Config::System::ScreenCenter.x - Config::AimbotFOV))
+		if (headScreen.X < (Config::System::m_ScreenCenter.X - Config::m_fAimbotFOV))
 			return;
-		if (headScreen.Y > (Config::System::ScreenCenter.y + Config::AimbotFOV))
+		if (headScreen.Y > (Config::System::m_ScreenCenter.Y + Config::m_fAimbotFOV))
 			return;
-		if (headScreen.Y < (Config::System::ScreenCenter.y - Config::AimbotFOV))
+		if (headScreen.Y < (Config::System::m_ScreenCenter.Y - Config::m_fAimbotFOV))
 			return;
 	}
 
 	if (GetAsyncKeyState(VK_RBUTTON)) 
 	{
-		if (Config::CurrentTarget == nullptr)
+		if (Config::m_pCurrentTarget == nullptr)
 		{
-			Config::CurrentTarget = pawn;
+			Config::m_pCurrentTarget = pawn;
 		}
 
-		if (Config::CurrentTarget == pawn) 
+		if (Config::m_pCurrentTarget == pawn) 
 		{
-			Utility::MouseMove(headScreen.X, headScreen.Y, Config::System::ScreenSize.x, Config::System::ScreenSize.y, Config::AimbotSmoothness);
+			Utility::MouseMove(headScreen.X, headScreen.Y, Config::System::m_ScreenSize.X, Config::System::m_ScreenSize.Y, Config::m_fAimbotSmoothness);
 		}
 	}
 	else 
 	{
-		Config::CurrentTarget = nullptr;
+		Config::m_pCurrentTarget = nullptr;
 	}
 	
 

@@ -5,14 +5,14 @@
 
 void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color)
 {
-	if (!pawn || !Config::MyController || Validity::IsBadPoint(Config::MyController) || Config::BonePairs.empty())
+	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
 		return;
 
 	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
 	if (!mesh)
 		return;
 
-	for (const std::pair<int, int>& pair : Config::BonePairs)
+	for (const std::pair<int, int>& pair : Config::m_BonePairs)
 	{
 		const int bone1Index = pair.first;
 		const int bone2Index = pair.second;
@@ -24,11 +24,11 @@ void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color)
 		SDK::FVector2D prevBoneScreen;
 
 		if (
-			!Config::MyController->ProjectWorldLocationToScreen(boneLoc1, &boneScreen, false) ||
-			!Config::MyController->ProjectWorldLocationToScreen(boneLoc2, &prevBoneScreen, false)
+			!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc1, &boneScreen, false) ||
+			!Config::m_pMyController->ProjectWorldLocationToScreen(boneLoc2, &prevBoneScreen, false)
 		) continue;
 
-		if (pawn == Config::CurrentTarget) color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+		if (pawn == Config::m_pCurrentTarget) color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 
 		ImGui::GetForegroundDrawList()->AddLine(
 			ImVec2(boneScreen.X, boneScreen.Y),
@@ -41,29 +41,29 @@ void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color)
 
 void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color)
 {
-	if (!pawn || !Config::MyController || Validity::IsBadPoint(Config::MyController))
+	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController))
 		return;
 
 	SDK::FVector pawnLoc = pawn->K2_GetActorLocation();
 	SDK::FVector2D pawnScreen;
 
-	if (Config::MyController->ProjectWorldLocationToScreen(pawnLoc, &pawnScreen, false))
+	if (Config::m_pMyController->ProjectWorldLocationToScreen(pawnLoc, &pawnScreen, false))
 	{
 		ImVec2 origin;
 
-		switch (Config::PlayersSnaplineType) {
+		switch (Config::m_nPlayersSnaplineType) {
 			case 0: // from top
-				origin = ImVec2(Config::System::ScreenCenter.x, 0);
+				origin = ImVec2(Config::System::m_ScreenCenter.X, 0);
 				break;
 			case 1: // from center
-				origin = ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenCenter.y);
+				origin = ImVec2(Config::System::m_ScreenCenter.X, Config::System::m_ScreenCenter.Y);
 				break;
 			case 2: // from bottom
-				origin = ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenSize.y);
+				origin = ImVec2(Config::System::m_ScreenCenter.X, Config::System::m_ScreenSize.Y);
 				break;
 		}
 
-		if (pawn == Config::CurrentTarget) color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+		if (pawn == Config::m_pCurrentTarget) color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 
 		ImGui::GetBackgroundDrawList()->AddLine(
 			origin,
@@ -76,22 +76,22 @@ void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color)
 
 void ESP::RenderBox(SDK::ACharacter* pawn, ImColor color)
 {
-	if (!pawn || !Config::MyController || Validity::IsBadPoint(Config::MyController) || Config::BonePairs.empty())
+	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
 		return;
 
 	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
 	if (!mesh)
 		return;
 
-	SDK::FVector head = mesh->GetSocketLocation(mesh->GetBoneName(Config::BonePairs[4].second));
-	SDK::FVector feet = mesh->GetSocketLocation(mesh->GetBoneName(Config::BonePairs[Config::BonePairs.size()-1].second));
+	SDK::FVector head = mesh->GetSocketLocation(mesh->GetBoneName(Config::m_BonePairs[4].second));
+	SDK::FVector feet = mesh->GetSocketLocation(mesh->GetBoneName(Config::m_BonePairs[Config::m_BonePairs.size()-1].second));
 
 	SDK::FVector2D headScreen;
 	SDK::FVector2D feetScreen;
 
 	if (
-		!Config::MyController->ProjectWorldLocationToScreen(head, &headScreen, false) ||
-		!Config::MyController->ProjectWorldLocationToScreen(feet, &feetScreen, false)
+		!Config::m_pMyController->ProjectWorldLocationToScreen(head, &headScreen, false) ||
+		!Config::m_pMyController->ProjectWorldLocationToScreen(feet, &feetScreen, false)
 	) return;
 
 	const float height = feetScreen.Y - headScreen.Y;
@@ -100,7 +100,7 @@ void ESP::RenderBox(SDK::ACharacter* pawn, ImColor color)
 	color.Value.w = 0.3f;
 
 	// filled
-	if (Config::PlayersBoxFilled) {
+	if (Config::m_bPlayersBoxFilled) {
 		ImGui::GetForegroundDrawList()->AddRectFilled(
 			ImVec2(headScreen.X - width, headScreen.Y),
 			ImVec2(headScreen.X + width, feetScreen.Y),
@@ -125,25 +125,25 @@ void ESP::RenderBox(SDK::ACharacter* pawn, ImColor color)
 
 void ESP::Render3DBox(SDK::ACharacter* pawn, ImColor color)
 {
-	if (!pawn || !Config::MyController || Validity::IsBadPoint(Config::MyController) || Config::BonePairs.empty())
+	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
 		return;
 
 	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
 	if (!mesh)
 		return;
 
-	SDK::FVector head = mesh->GetSocketLocation(mesh->GetBoneName(Config::BonePairs[4].second));
-	SDK::FVector feet = mesh->GetSocketLocation(mesh->GetBoneName(Config::BonePairs[Config::BonePairs.size() - 1].second));
+	SDK::FVector head = mesh->GetSocketLocation(mesh->GetBoneName(Config::m_BonePairs[4].second));
+	SDK::FVector feet = mesh->GetSocketLocation(mesh->GetBoneName(Config::m_BonePairs[Config::m_BonePairs.size() - 1].second));
 
 	SDK::FVector2D headScreen;
 	SDK::FVector2D feetScreen;
 
 	if (
-		!Config::MyController->ProjectWorldLocationToScreen(head, &headScreen, false) ||
-		!Config::MyController->ProjectWorldLocationToScreen(feet, &feetScreen, false)
+		!Config::m_pMyController->ProjectWorldLocationToScreen(head, &headScreen, false) ||
+		!Config::m_pMyController->ProjectWorldLocationToScreen(feet, &feetScreen, false)
 	) return;
 
-	if (pawn == Config::CurrentTarget) color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+	if (pawn == Config::m_pCurrentTarget) color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 
 	SDK::FVector center = pawn->K2_GetActorLocation();
 	const float height = feetScreen.Y - headScreen.Y;
@@ -165,7 +165,7 @@ void ESP::Render3DBox(SDK::ACharacter* pawn, ImColor color)
 	bool isVisible = true;
 
 	for (int i = 0; i < 8; i++) {
-		if (!Config::MyController->ProjectWorldLocationToScreen(corners[i], &screenCorners[i], false)) {
+		if (!Config::m_pMyController->ProjectWorldLocationToScreen(corners[i], &screenCorners[i], false)) {
 			isVisible = false;
 			break;
 		}

@@ -11,7 +11,7 @@ namespace Utility
 	{
 		AllocConsole();
 		AttachConsole(GetCurrentProcessId());
-		SetConsoleTitle(Config::System::c_author);
+		SetConsoleTitle(Config::System::m_cAuthor);
 		FILE* f;
 		freopen_s(&f, "CONOUT$", "w", stdout);
 	}
@@ -39,9 +39,9 @@ namespace Utility
 			}
 		};
 
-		ImColor visibilityColor = isVisible ? Config::ChamsColorTargetVisible : Config::ChamsColorTargetHidden;
-		Config::ChamsMaterial->SetVectorParameterValue(StrToName(L"Color"), FromImColorToFLinearColor(visibilityColor));
-		ApplyMaterialToAll(Config::ChamsMaterial);
+		ImColor visibilityColor = isVisible ? Config::m_cChamsColorTargetVisible : Config::m_cChamsColorTargetHidden;
+		Config::m_pChamsMaterial->SetVectorParameterValue(StrToName(L"Color"), FromImColorToFLinearColor(visibilityColor));
+		ApplyMaterialToAll(Config::m_pChamsMaterial);
 	}
 
 	void MouseMove(float tarx, float tary, float X, float Y, int smooth)

@@ -15,7 +15,7 @@ void StartBackgroundThreads()
 {
 	std::thread(RainbowCalculator::Update).detach();
 
-	if(Config::System::UpdateTargetsInDifferentThread) std::thread(&MainLoop::FetchEntities, &MainLoop::GetInstance()).detach();
+	if(Config::System::m_bUpdateTargetsInDifferentThread) std::thread(&MainLoop::FetchEntities, &MainLoop::GetInstance()).detach();
 }
 
 void InitialSetup()

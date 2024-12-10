@@ -10,7 +10,7 @@ namespace Dumper {
         std::cout << "\n*********************" << std::endl;
         std::cout << "***DUMPING OBJECTS***" << std::endl;
 
-        std::cout << Config::Engine->ConsoleClass->GetFullName() << std::endl;
+        std::cout << Config::m_pEngine->ConsoleClass->GetFullName() << std::endl;
 
         for (int i = 0; i < SDK::UObject::GObjects->Num(); i++)
         {
@@ -37,10 +37,10 @@ namespace Dumper {
         std::cout << "\n********************" << std::endl;
         std::cout << "***DUMPING ACTORS***" << std::endl;
 
-        if (Config::World->Levels.Num() == 0)
+        if (Config::m_pWorld->Levels.Num() == 0)
             return;
 
-        SDK::ULevel* currLevel = Config::World->Levels[0];
+        SDK::ULevel* currLevel = Config::m_pWorld->Levels[0];
         if (!currLevel)
             return;
 
@@ -67,7 +67,7 @@ namespace Dumper {
 
         SDK::TSubclassOf<SDK::ACharacter> PlayerBaseCharacterReference = SDK::ACharacter::StaticClass();
         SDK::TArray<SDK::AActor*> PlayerCharacters;
-        SDK::UGameplayStatics::GetAllActorsOfClass(Config::World, PlayerBaseCharacterReference, &PlayerCharacters);
+        SDK::UGameplayStatics::GetAllActorsOfClass(Config::m_pWorld, PlayerBaseCharacterReference, &PlayerCharacters);
 
         for (SDK::AActor* actor : PlayerCharacters)
         {
@@ -86,9 +86,9 @@ namespace Dumper {
 
     void DumpUBones()
     {
-        if (!Config::MyController) return;
+        if (!Config::m_pMyController) return;
 
-        auto* target = Config::MyController->Character;
+        auto* target = Config::m_pMyController->Character;
 
         //auto* target = Config::TargetsList[0];
 
@@ -103,7 +103,7 @@ namespace Dumper {
 
         for (int i = 0; i < 300; i++)
         {
-            std::cout << "Index: " << i << " - Name: " << Config::MyController->Character->Mesh->GetSocketBoneName(Config::MyController->Character->Mesh->GetBoneName(i)).GetRawString() << std::endl;
+            std::cout << "Index: " << i << " - Name: " << Config::m_pMyController->Character->Mesh->GetSocketBoneName(Config::m_pMyController->Character->Mesh->GetBoneName(i)).GetRawString() << std::endl;
         }
 
         std::cout << "***END DUMPING BONES***" << std::endl;
@@ -115,7 +115,7 @@ namespace Dumper {
         std::cout << "\n********************" << std::endl;
         std::cout << "***DUMPING TEST***" << std::endl;
 
-        for (SDK::APlayerState* player : Config::World->GameState->PlayerArray)
+        for (SDK::APlayerState* player : Config::m_pWorld->GameState->PlayerArray)
         {
             if (!player || Validity::IsBadPoint(player)) continue;
 

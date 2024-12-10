@@ -19,7 +19,7 @@ void LuaEditor::BindLua(lua_State* L)
 		std::cout << "Yoo bro\n" << std::endl;
 			})
 		.fun("test", []() {
-				ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenCenter.y), 50, ImColor(255, 255, 255), 360);
+				ImGui::GetBackgroundDrawList()->AddCircle(ImVec2(Config::System::ScreenCenter.X, Config::System::ScreenCenter.Y), 50, ImColor(255, 255, 255), 360);
 			});
 }
 

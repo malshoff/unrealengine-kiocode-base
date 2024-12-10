@@ -232,16 +232,13 @@
     <ClCompile Include="src\gui\core\gui.cpp" />
     <ClCompile Include="src\gui\core\gui.h" />
     <ClCompile Include="src\gui\modmenu.cpp" />
-    <ClCompile Include="src\sdk\one_armer_robber\SDK\Basic.cpp" />
-    <ClCompile Include="src\sdk\one_armer_robber\SDK\CoreUObject_functions.cpp" />
-    <ClCompile Include="src\sdk\one_armer_robber\SDK\Engine_functions.cpp" />
-    <ClCompile Include="src\sdk\one_armer_robber\SDK\NPCBase_functions.cpp" />
+    <ClCompile Include="src\sdk\one_armed_robber\SDK\Basic.cpp" />
+    <ClCompile Include="src\sdk\one_armed_robber\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="src\sdk\one_armed_robber\SDK\Engine_functions.cpp" />
     <ClCompile Include="tests\main_test.cpp" />
     <ClCompile Include="src\utils\dumper.cpp" />
     <ClCompile Include="src\utils\general.cpp" />
     <ClCompile Include="src\utils\imgui\imgui_helper.cpp" />
-    <ClCompile Include="src\utils\validity.cpp" />
-    <ClCompile Include="src\utils\vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libs\kiero\minhook\dll_resources\MinHook.def" />
@@ -275,7 +272,8 @@
     <ClInclude Include="libs\kiero\minhook\src\hde\table32.h" />
     <ClInclude Include="libs\kiero\minhook\src\hde\table64.h" />
     <ClInclude Include="libs\kiero\minhook\src\trampoline.h" />
-    <ClInclude Include="src\sdk\one_armer_robber\SDK.hpp" />
+    <ClInclude Include="src\sdk\marvel_rivals\SDK.hpp" />
+    <ClInclude Include="src\sdk\one_armed_robber\SDK.hpp" />
     <ClInclude Include="src\utils\dumper.h" />
     <ClInclude Include="src\utils\dump.h" />
     <ClInclude Include="src\utils\general.h" />
@@ -283,8 +281,6 @@
     <ClInclude Include="src\utils\imgui\Imgui_notify.h" />
     <ClInclude Include="src\utils\rainbow_calculator.hpp" />
     <ClInclude Include="src\utils\validity.h" />
-    <ClInclude Include="src\utils\vec.h" />
-    <ClInclude Include="src\utils\vec2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

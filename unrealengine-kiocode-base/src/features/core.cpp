@@ -53,17 +53,17 @@ bool Core::InitVars() {
 void Core::HandleInputs() {
 
 	// open/close menu
-	if (GetAsyncKeyState(Config::Keys::SHOWMENU_KEY) & 1)
+	if (GetAsyncKeyState(Config::Keys::m_cShowMenuKey) & 1)
 	{
-		Config::ShowMenu = !Config::ShowMenu;
+		Config::m_bShowMenu = !Config::m_bShowMenu;
 	}
 
 	// close all hooks (probably you will never use it)
-	if (GetAsyncKeyState(Config::Keys::DEATTACH_KEY) & 1)
+	if (GetAsyncKeyState(Config::Keys::m_cDeAttachKey) & 1)
 	{
 		MH_DisableHook(MH_ALL_HOOKS);
 		MH_Uninitialize();
-		Config::ShowMenu = false;
+		Config::m_bShowMenu = false;
 
 		//if (LuaEditor::GetInstance().LuaState != NULL)
 		//{
@@ -73,10 +73,10 @@ void Core::HandleInputs() {
 }
 
 LRESULT __stdcall GUI::WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
-	if (Config::ShowMenu && ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
+	if (Config::m_bShowMenu && ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
 		return true;
 
-	if (Config::ShowMenu)
+	if (Config::m_bShowMenu)
 		return true;
 
 	return CallWindowProcA(oWndProc, hWnd, uMsg, wParam, lParam);
@@ -109,15 +109,15 @@ HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, 
 		else return oPresent(pSwapChain, SyncInterval, Flags);
 	}
 
-	pContext->RSGetViewports(&Config::System::vps, &Config::System::Viewport);
-	Config::System::ScreenSize = { Config::System::Viewport.Width, Config::System::Viewport.Height };
-	Config::System::ScreenCenter = { Config::System::Viewport.Width / 2.0f, Config::System::Viewport.Height / 2.0f };
+	pContext->RSGetViewports(&Config::System::m_vps, &Config::System::m_Viewport);
+	Config::System::m_ScreenSize = { Config::System::m_Viewport.Width, Config::System::m_Viewport.Height };
+	Config::System::m_ScreenCenter = { Config::System::m_Viewport.Width / 2.0f, Config::System::m_Viewport.Height / 2.0f };
 
 
 	DWORD currentTime = GetTickCount64();
 
-	GetCursorPos(&Config::System::MousePos);
-	ScreenToClient(window, &Config::System::MousePos);
+	GetCursorPos(&Config::System::m_MousePos);
+	ScreenToClient(window, &Config::System::m_MousePos);
 
 
 	#pragma region IMGUI THINGS
@@ -168,9 +168,9 @@ HRESULT __stdcall GUI::hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, 
 
 	#pragma endregion
 
-	if (currentTime - Config::LastTick > 5)
+	if (currentTime - Config::m_nLastTick > 5)
 	{
-		Config::LastTick = currentTime;
+		Config::m_nLastTick = currentTime;
 	}
 
 	pContext->OMSetRenderTargets(1, &mainRenderTargetView, NULL);

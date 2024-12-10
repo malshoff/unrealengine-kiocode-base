@@ -1,7 +1,6 @@
 #pragma once
 
 #include "includes.h"
-#include "utils/vec2.h"
 
 #define RAINBOW_BORDERS TRUE;
 
@@ -12,26 +11,26 @@ public:
 	class System
 	{
 	public:
-		inline static constexpr const char* c_appName = "UnrealBase";
-		inline static constexpr const char* c_author = "@kiocode";
+		inline static constexpr const char* m_cAppName = "UnrealBase";
+		inline static constexpr const char* m_cAuthor = "@kiocode";
 
-		inline static bool Init = false;
-		inline static bool UpdateTargetsInDifferentThread = false; // some game is freezing (like OHD, OAR)
-		inline static bool UpdateTargets = false;
+		inline static bool m_bInit = false;
+		inline static bool m_bUpdateTargetsInDifferentThread = false; // some game is freezing if true
+		inline static bool m_bUpdateTargets = false;
 
-		inline static POINT MousePos = { 0, 0 };
+		inline static POINT m_MousePos = { 0, 0 };
 
-		inline static UINT vps = 1;
-		inline static Vector2 ScreenSize = { 0, 0 };
-		inline static Vector2 ScreenCenter = { 0, 0 };
-		inline static D3D11_VIEWPORT Viewport;
+		inline static UINT m_vps = 1;
+		inline static SDK::FVector2D m_ScreenSize = { 0, 0 };
+		inline static SDK::FVector2D m_ScreenCenter = { 0, 0 };
+		inline static D3D11_VIEWPORT m_Viewport;
 	};
 
 	class Keys
 	{
 	public:
-		inline static int SHOWMENU_KEY = VK_INSERT;
-		inline static int DEATTACH_KEY = VK_F9;
+		inline static constexpr const int m_cShowMenuKey = VK_INSERT;
+		inline static constexpr const int m_cDeAttachKey = VK_F9;
 	};
 
 	class Offsets // get it with https://github.com/Spuckwaffel/UEDumper maybe
@@ -40,7 +39,7 @@ public:
 		//uintptr_t Health__TakeDamage_Offset = 0x0;
 	};
 
-	inline static ImFont* GameFont = NULL;
+	inline static ImFont* m_pGameFont = NULL;
 
 	inline static enum MenuTab
 	{
@@ -51,25 +50,23 @@ public:
 		TAB_DEV
 	};
 
-	inline static int TargetFetch = 2;
+	inline static int m_nTargetFetch = 2;
 	
-	inline static SDK::UEngine* Engine;
-	inline static SDK::UWorld* World;
-	inline static SDK::APlayerController* MyController;
-	inline static SDK::APawn* MyPawn;
-	inline static SDK::ACharacter* MyCharacter;
-	//inline static SDK::APlayerCharacter_C* CharacterClass;
-	//inline static SDK::TArray<class SDK::APlayerState*> PlayerArray;
+	inline static SDK::UEngine* m_pEngine;
+	inline static SDK::UWorld* m_pWorld;
+	inline static SDK::APlayerController* m_pMyController;
+	inline static SDK::APawn* m_pMyPawn;
+	inline static SDK::ACharacter* m_pMyCharacter;
 
 	//inline static std::vector<SDK::AActor*> TargetsList{};
-	inline static std::vector<SDK::ACharacter*> TargetsList{};
-	inline static SDK::AActor* CurrentTarget;
+	inline static std::vector<SDK::ACharacter*> m_TargetsList{};
+	inline static SDK::AActor* m_pCurrentTarget;
 
-	inline static ImColor TargetPlayerColor = ImColor(255, 0, 0);
+	inline static ImColor m_TargetPlayerColor = ImColor(255, 0, 0);
 
 	// dumped with Dumper::DumpUBones() 
 	// OHD
-	inline static std::vector<std::pair<int, int>> BonePairs = {
+	inline static std::vector<std::pair<int, int>> m_BonePairs = {
 		// Spine
 		{1, 2},  // pelvis -> spine_01
 		{2, 3},  // spine_01 -> spine_02
@@ -133,100 +130,100 @@ public:
 	};
 
 // Global rainbow color
-	inline static ImVec4 Rainbow = ImVec4(0.0f, 0.0f, 0.0f, 0.0f); 
+	inline static ImVec4 m_v4Rainbow = ImVec4(0.0f, 0.0f, 0.0f, 0.0f); 
  // Global rainbow color
-	inline static ImColor RainbowColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255); 
+	inline static ImColor m_cRainbow = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255); 
 
-	inline static DWORD LastShotTime = 0;
-	inline static DWORD LastTick = 0;
+	inline static DWORD m_nLastShotTime = 0;
+	inline static DWORD m_nLastTick = 0;
 
-	inline static bool ShowMenu = false;
-	inline static bool Watermark = false;
+	inline static bool m_bShowMenu = false;
+	inline static bool m_bWatermark = false;
 
-	inline static bool CameraFovChanger = false;
-	inline static float CameraCustomFOV = 80.0f;
+	inline static bool m_bCameraFovChanger = false;
+	inline static float m_fCameraCustomFOV = 80.0f;
 
-	inline static bool TimeScaleChanger = false;
-	inline static float TimeScale = 1.0f;
+	inline static bool m_bTimeScaleChanger = false;
+	inline static float m_fTimeScale = 1.0f;
 
-	inline static bool EnableDeveloperOptions = false;
+	inline static bool m_bEnableDeveloperOptions = false;
 
-	inline static bool ShowInspector = false;
+	inline static bool m_bShowInspector = false;
 
-	inline static bool ShowMouse = true;
-	inline static bool RainbowMouse = false;
-	inline static ImColor MouseColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
-	inline static int MouseType = 0;
+	inline static bool m_bShowMouse = true;
+	inline static bool m_bRainbowMouse = false;
+	inline static ImColor m_cMouseColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static int m_nMouseType = 0;
 
-	inline static bool Fly = false;
+	inline static bool m_bFly = false;
 
-	inline static bool NoGravity = false;
+	inline static bool m_bNoGravity = false;
 
-	inline static bool Crosshair = false;
-	inline static bool RainbowCrosshair = false;
-	inline static ImColor CrosshairColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
-	inline static float CrosshairSize = 5.0f;
-	inline static int CrosshairType = 0;
+	inline static bool m_bCrosshair = false;
+	inline static bool m_bRainbowCrosshair = false;
+	inline static ImColor m_cCrosshairColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static float m_fCrosshairSize = 5.0f;
+	inline static int m_nCrosshairType = 0;
 
-	inline static bool PlayersSnapline = false;
-	inline static bool RainbowPlayersSnapline = false;
-	inline static ImColor PlayersSnaplineColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
-	inline static int PlayersSnaplineType = 2;
+	inline static bool m_bPlayersSnapline = false;
+	inline static bool m_bRainbowPlayersSnapline = false;
+	inline static ImColor m_cPlayersSnaplineColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static int m_nPlayersSnaplineType = 2;
 
-	inline static bool PlayerChams = false;
-	inline static ImColor ChamsColorTargetVisible = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
-	inline static ImColor ChamsColorTargetHidden = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
-	inline static bool RainbowPlayerChams = false;
-	inline static SDK::UMaterialInstanceDynamic* ChamsMaterial;
+	inline static bool m_bPlayerChams = false;
+	inline static ImColor m_cChamsColorTargetVisible = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static ImColor m_cChamsColorTargetHidden = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static bool m_bRainbowPlayerChams = false;
+	inline static SDK::UMaterialInstanceDynamic* m_pChamsMaterial;
 
-	inline static bool PlayerSkeleton = false;
-	inline static bool RainbowPlayerSkeleton = false;
-	inline static ImColor PlayerSkeletonColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static bool m_bPlayerSkeleton = false;
+	inline static bool m_bRainbowPlayerSkeleton = false;
+	inline static ImColor m_cPlayerSkeletonColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 
-	inline static bool PlayersBox = false;
-	inline static bool RainbowPlayersBox = false;
-	inline static ImColor PlayersBoxColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
-	inline static bool PlayersBoxFilled = false;
+	inline static bool m_bPlayersBox = false;
+	inline static bool m_bRainbowPlayersBox = false;
+	inline static ImColor m_cPlayersBoxColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static bool m_bPlayersBoxFilled = false;
 
-	inline static bool KillAll = false;
+	inline static bool m_bKillAll = false;
 
-	inline static bool RainbowAimbotTargetColor = false;
-	inline static ImColor AimbotTargetColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static bool m_bRainbowAimbotTargetColor = false;
+	inline static ImColor m_cAimbotTargetColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
 
-	inline static ImColor TargetNotVisibleColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
-	inline static bool RainbowTargetNotVisibleColor = false;
+	inline static ImColor m_cTargetNotVisibleColor = ImColor(255.0f / 255, 255.0f / 255, 255.0f / 255);
+	inline static bool m_bRainbowTargetNotVisibleColor = false;
 	
-	inline static bool PlayersBox3D = false;
+	inline static bool m_bPlayersBox3D = false;
 
-	inline static bool BotChecker = false;
-	inline static bool RainbowBotChecker = false;
-	inline static ImColor BotCheckerColor = ImColor(0, 0, 255);
-	inline static bool BotCheckerText = true;
+	inline static bool m_bBotChecker = false;
+	inline static bool m_bRainbowBotChecker = false;
+	inline static ImColor m_cBotCheckerColor = ImColor(0, 0, 255);
+	inline static bool m_bBotCheckerText = true;
 
-	inline static bool PlayersHealth = false;
+	inline static bool m_bPlayersHealth = false;
 
-	inline static bool GodMode = false;
+	inline static bool m_bGodMode = false;
 
-	inline static bool NoRecoil = false;
+	inline static bool m_bNoRecoil = false;
 
-	inline static bool NoSpread = false;
+	inline static bool m_bNoSpread = false;
 
-	inline static bool RapidFire = false;
+	inline static bool m_bRapidFire = false;
 
-	inline static bool OneShot = false;
+	inline static bool m_bOneShot = false;
 
-	inline static bool InfiniteAmmo = false;
+	inline static bool m_bInfiniteAmmo = false;
 	
-	inline static bool SpeedHack = false;
-	inline static float SpeedValue = 1.0f;
+	inline static bool m_bSpeedHack = false;
+	inline static float m_fSpeedValue = 1.0f;
 
-	inline static bool NoClip = false;
+	inline static bool m_bNoClip = false;
 
-	inline static bool EnableAimbot = false;
-	inline static bool AimbotFOVCheck = false;
-	inline static float AimbotFOV = 80.0f;
-	inline static float AimbotSmoothness = 0.5f;
-	inline static float FakeHeadPosDiff = 2;
-	inline static float FakeFeetPosDiff = 0;
+	inline static bool m_bEnableAimbot = false;
+	inline static bool m_bAimbotFOVCheck = false;
+	inline static float m_fAimbotFOV = 80.0f;
+	inline static float m_fAimbotSmoothness = 0.5f;
+	inline static float m_fHeadPosOffset = 2;
+	inline static float m_fFeetPosOffset = 0;
 
 };

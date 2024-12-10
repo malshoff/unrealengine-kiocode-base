@@ -9,15 +9,15 @@
 
 void MainLoop::DrawCrosshair() 
 {
-	ImColor color = Config::RainbowCrosshair ? Config::RainbowColor : Config::CrosshairColor;
-	switch (Config::CrosshairType)
+	ImColor color = Config::m_bRainbowCrosshair ? Config::m_cRainbow : Config::m_cCrosshairColor;
+	switch (Config::m_nCrosshairType)
 	{
 	case 0:
-		ImGui::GetForegroundDrawList()->AddLine(ImVec2(Config::System::ScreenCenter.x - Config::CrosshairSize, Config::System::ScreenCenter.y), ImVec2((Config::System::ScreenCenter.x - Config::CrosshairSize) + (Config::CrosshairSize * 2), Config::System::ScreenCenter.y), color, 1.2f);
-		ImGui::GetForegroundDrawList()->AddLine(ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenCenter.y - Config::CrosshairSize), ImVec2(Config::System::ScreenCenter.x, (Config::System::ScreenCenter.y - Config::CrosshairSize) + (Config::CrosshairSize * 2)), color, 1.2f);
+		ImGui::GetForegroundDrawList()->AddLine(ImVec2(Config::System::m_ScreenCenter.X - Config::m_fCrosshairSize, Config::System::m_ScreenCenter.Y), ImVec2((Config::System::m_ScreenCenter.X - Config::m_fCrosshairSize) + (Config::m_fCrosshairSize * 2), Config::System::m_ScreenCenter.Y), color, 1.2f);
+		ImGui::GetForegroundDrawList()->AddLine(ImVec2(Config::System::m_ScreenCenter.X, Config::System::m_ScreenCenter.Y - Config::m_fCrosshairSize), ImVec2(Config::System::m_ScreenCenter.X, (Config::System::m_ScreenCenter.Y - Config::m_fCrosshairSize) + (Config::m_fCrosshairSize * 2)), color, 1.2f);
 		break;
 	case 1:
-		ImGui::GetForegroundDrawList()->AddCircle(ImVec2(Config::System::ScreenCenter.x, Config::System::ScreenCenter.y), Config::CrosshairSize, color, 100, 1.2f);
+		ImGui::GetForegroundDrawList()->AddCircle(ImVec2(Config::System::m_ScreenCenter.X, Config::System::m_ScreenCenter.Y), Config::m_fCrosshairSize, color, 100, 1.2f);
 		break;
 	}
 }
@@ -45,15 +45,15 @@ void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 		//	continue;		
 		
 		// oar
-		//if (!obj->IsA(SDK::ANPCBase_C::StaticClass()))
-		//	continue;
+		if (!obj->IsA(SDK::ANPCBase_C::StaticClass()))
+			continue;
 
-		//SDK::ANPCBase_C* npc = static_cast<SDK::ANPCBase_C*>(obj);
+		SDK::ANPCBase_C* npc = static_cast<SDK::ANPCBase_C*>(obj);
 
-		//if (!npc || Validity::IsBadPoint(npc) || npc->Health <= 0 || npc->Dead_)
-		//	continue;
+		if (!npc || Validity::IsBadPoint(npc) || npc->Health <= 0 || npc->Dead_)
+			continue;
 
-		//list->push_back(npc);
+		list->push_back(npc);
 
 	}
 }
@@ -97,7 +97,7 @@ void MainLoop::FetchFromPlayers(std::vector<SDK::ACharacter*>* list)
 
 	SDK::TSubclassOf<SDK::ACharacter> PlayerBaseCharacterReference = SDK::ACharacter::StaticClass();
 	SDK::TArray<SDK::AActor*> PlayerCharacters;
-	SDK::UGameplayStatics::GetAllActorsOfClass(Config::World, PlayerBaseCharacterReference, &PlayerCharacters);
+	SDK::UGameplayStatics::GetAllActorsOfClass(Config::m_pWorld, PlayerBaseCharacterReference, &PlayerCharacters);
 
 	for (SDK::AActor* actor : PlayerCharacters)
 	{
@@ -114,15 +114,15 @@ void MainLoop::FetchFromPlayers(std::vector<SDK::ACharacter*>* list)
 void MainLoop::FetchEntities()
 {
 	do {
-		if (!Config::System::UpdateTargets)
+		if (!Config::System::m_bUpdateTargets)
 		{
 			std::lock_guard<std::mutex> lock(list_mutex);
-			if (!Config::TargetsList.empty())
+			if (!Config::m_TargetsList.empty())
 			{
-				Config::TargetsList.clear();
+				Config::m_TargetsList.clear();
 			}
 
-			if (Config::System::UpdateTargetsInDifferentThread)
+			if (Config::System::m_bUpdateTargetsInDifferentThread)
 			{
 				Sleep(500);
 				continue;
@@ -133,12 +133,12 @@ void MainLoop::FetchEntities()
 			}
 		}
 
-		if (!Config::World || Validity::IsBadPoint(Config::World) ||
-			!Config::Engine || Validity::IsBadPoint(Config::Engine) ||
-			!Config::MyController || Validity::IsBadPoint(Config::MyController) ||
-			!Config::MyPawn || Validity::IsBadPoint(Config::MyPawn))
+		if (!Config::m_pWorld || Validity::IsBadPoint(Config::m_pWorld) ||
+			!Config::m_pEngine || Validity::IsBadPoint(Config::m_pEngine) ||
+			!Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) ||
+			!Config::m_pMyPawn || Validity::IsBadPoint(Config::m_pMyPawn))
 		{
-			if (Config::System::UpdateTargetsInDifferentThread)
+			if (Config::System::m_bUpdateTargetsInDifferentThread)
 			{
 				Sleep(500);
 				continue;
@@ -149,10 +149,10 @@ void MainLoop::FetchEntities()
 			}
 		}
 
-		if (!Config::World->GameState || Validity::IsBadPoint(Config::World->GameState) ||
-			Validity::IsBadPoint(Config::World->OwningGameInstance))
+		if (!Config::m_pWorld->GameState || Validity::IsBadPoint(Config::m_pWorld->GameState) ||
+			Validity::IsBadPoint(Config::m_pWorld->OwningGameInstance))
 		{
-			if (Config::System::UpdateTargetsInDifferentThread)
+			if (Config::System::m_bUpdateTargetsInDifferentThread)
 			{
 				Sleep(500);
 				continue;
@@ -165,7 +165,7 @@ void MainLoop::FetchEntities()
 
 		std::vector<SDK::ACharacter*> newTargets;
 
-		switch (Config::TargetFetch)
+		switch (Config::m_nTargetFetch)
 		{
 			case 0:
 				FetchFromObjects(&newTargets);
@@ -182,80 +182,80 @@ void MainLoop::FetchEntities()
 
 		{
 			std::lock_guard<std::mutex> lock(list_mutex);
-			Config::TargetsList = std::move(newTargets);
+			Config::m_TargetsList = std::move(newTargets);
 		}
 
-		if (Config::System::UpdateTargetsInDifferentThread)
+		if (Config::System::m_bUpdateTargetsInDifferentThread)
 		{
 			Sleep(10);
 		}
 
 	// if its in a thread run it continuously
-	} while (Config::System::UpdateTargetsInDifferentThread);
+	} while (Config::System::m_bUpdateTargetsInDifferentThread);
 }
 
 bool MainLoop::UpdateSDK(bool log) 
 {
-	Config::World = SDK::UWorld::GetWorld();
-	if (Validity::IsBadPoint(Config::World) || Validity::IsBadPoint(Config::World->GameState))
+	Config::m_pWorld = SDK::UWorld::GetWorld();
+	if (Validity::IsBadPoint(Config::m_pWorld) || Validity::IsBadPoint(Config::m_pWorld->GameState))
 	{
 		std::cerr << "Error: World not found" << std::endl;
 		return false;
 	}
 	if (log) {
-		std::cout << "World address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::World) << std::dec << std::endl;
+		std::cout << "World address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pWorld) << std::dec << std::endl;
 	}
 
-	Config::Engine = SDK::UEngine::GetEngine();
-	if (Validity::IsBadPoint(Config::Engine)) 
+	Config::m_pEngine = SDK::UEngine::GetEngine();
+	if (Validity::IsBadPoint(Config::m_pEngine)) 
 	{
 		std::cerr << "Error: Engine not found" << std::endl;
 		return false;
 	}
 	if (log) {
-		std::cout << "Engine address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::Engine) << std::dec << std::endl;
+		std::cout << "Engine address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pEngine) << std::dec << std::endl;
 	}
 
 	// Init PlayerController
-	if (Validity::IsBadPoint(Config::World->OwningGameInstance)) 
+	if (Validity::IsBadPoint(Config::m_pWorld->OwningGameInstance)) 
 	{
 		std::cerr << "Error: OwningGameInstance not found" << std::endl;
 		return false;
 	}
-	if (Validity::IsBadPoint(Config::World->OwningGameInstance->LocalPlayers[0])) 
+	if (Validity::IsBadPoint(Config::m_pWorld->OwningGameInstance->LocalPlayers[0])) 
 	{
 		std::cerr << "Error: LocalPlayers[0] not found" << std::endl;
 		return false;
 	}
-	Config::MyController = Config::World->OwningGameInstance->LocalPlayers[0]->PlayerController;
-	if (Validity::IsBadPoint(Config::MyController)) 
+	Config::m_pMyController = Config::m_pWorld->OwningGameInstance->LocalPlayers[0]->PlayerController;
+	if (Validity::IsBadPoint(Config::m_pMyController)) 
 	{
 		std::cerr << "Error: MyController not found" << std::endl;
 		return false;
 	}
 	if (log) {
-		std::cout << "PlayerController address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::MyController) << std::dec << std::endl;
+		std::cout << "PlayerController address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyController) << std::dec << std::endl;
 	}
 
 	// Init Pawn
-	Config::MyPawn = Config::MyController->AcknowledgedPawn;
-	if (Config::MyPawn == nullptr) 
+	Config::m_pMyPawn = Config::m_pMyController->AcknowledgedPawn;
+	if (Config::m_pMyPawn == nullptr) 
 	{
 		std::cerr << "Error: MyPawn not found" << std::endl;
 		return false;
 	}	
 	if (log) {
-		std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::MyPawn) << std::dec << std::endl;
+		std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyPawn) << std::dec << std::endl;
 	}
 
-	Config::MyCharacter = Config::MyController->Character;
-	if (Config::MyCharacter == nullptr)
+	Config::m_pMyCharacter = Config::m_pMyController->Character;
+	if (Config::m_pMyCharacter == nullptr)
 	{
 		std::cerr << "Error: MyCharacter not found" << std::endl;
 		return false;
 	}
 	if (log) {
-		std::cout << "MyCharacter address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::MyCharacter) << std::dec << std::endl;
+		std::cout << "MyCharacter address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyCharacter) << std::dec << std::endl;
 	}
 
 	return true;
@@ -270,77 +270,77 @@ void MainLoop::Update(DWORD tick)
 
 	// thats a check because we can start that in a thread to avoid lag, but in some game
 	// it must be in the main loop to avoid game freezing (like in OHD)
-	if (!Config::System::UpdateTargetsInDifferentThread)
+	if (!Config::System::m_bUpdateTargetsInDifferentThread)
 	{
 		FetchEntities();
 	}
 	
 	#pragma region EXPLOIT CHEATS
 
-	if (Config::GodMode)
+	if (Config::m_bGodMode)
 	{
 		// not working in all games
-		Config::MyController->SetLifeSpan(999);
+		Config::m_pMyController->SetLifeSpan(999);
 	}
 
 	// seems universal (use it with the fly or you will fall under the map forever :D)
-	if (Config::NoClip)
+	if (Config::m_bNoClip)
 	{
-		Config::MyPawn->SetActorEnableCollision(false);
+		Config::m_pMyPawn->SetActorEnableCollision(false);
 	}
-	else if (!Config::NoClip && Config::MyPawn->GetActorEnableCollision())
+	else if (!Config::m_bNoClip && Config::m_pMyPawn->GetActorEnableCollision())
 	{
-		Config::MyPawn->SetActorEnableCollision(true);
-	}
-
-	// seems universal
-	if (Config::CameraFovChanger)
-	{
-		Config::MyController->FOV(Config::CameraCustomFOV);
+		Config::m_pMyPawn->SetActorEnableCollision(true);
 	}
 
 	// seems universal
-	if (Config::TimeScaleChanger)
+	if (Config::m_bCameraFovChanger)
 	{
-		Config::World->K2_GetWorldSettings()->TimeDilation = Config::TimeScale;
+		Config::m_pMyController->FOV(Config::m_fCameraCustomFOV);
+	}
+
+	// seems universal
+	if (Config::m_bTimeScaleChanger)
+	{
+		Config::m_pWorld->K2_GetWorldSettings()->TimeDilation = Config::m_fTimeScale;
 	}
 
 	// seems universal (in multiplayer it may not work if player pos is server sided)
-	if (Config::Fly)
+	if (Config::m_bFly)
 	{
-		Config::MyCharacter->CharacterMovement->MaxFlySpeed = 20000.f;
-		Config::MyCharacter->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
+		Config::m_pMyCharacter->CharacterMovement->MaxFlySpeed = 20000.f;
+		Config::m_pMyCharacter->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Flying;
 		if (GetAsyncKeyState(VK_SPACE))
 		{
 			SDK::FVector posUP = { 0.f, 0.f, 10.f };
-			Config::MyCharacter->CharacterMovement->AddInputVector(posUP, true);
+			Config::m_pMyCharacter->CharacterMovement->AddInputVector(posUP, true);
 		}
 		if (GetAsyncKeyState(VK_LCONTROL))
 		{
 			SDK::FVector posDOWN = { 0.f, 0.f, -10.f };
-			Config::MyCharacter->CharacterMovement->AddInputVector(posDOWN, true);
+			Config::m_pMyCharacter->CharacterMovement->AddInputVector(posDOWN, true);
 		}
 	}
-	else if (Config::MyCharacter->CharacterMovement->MovementMode == SDK::EMovementMode::MOVE_Flying)
+	else if (Config::m_pMyCharacter->CharacterMovement->MovementMode == SDK::EMovementMode::MOVE_Flying)
 	{
-		Config::MyCharacter->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Falling;
+		Config::m_pMyCharacter->CharacterMovement->MovementMode = SDK::EMovementMode::MOVE_Falling;
 	}
 
 	// seems universal
-	if (Config::NoGravity)
+	if (Config::m_bNoGravity)
 	{
-		Config::MyCharacter->CharacterMovement->GravityScale = 0.2f;
+		Config::m_pMyCharacter->CharacterMovement->GravityScale = 0.2f;
 	}
-	else if (Config::MyCharacter->CharacterMovement->GravityScale != 1.f)
+	else if (Config::m_pMyCharacter->CharacterMovement->GravityScale != 1.f)
 	{
-		Config::MyCharacter->CharacterMovement->GravityScale = 1.f;
+		Config::m_pMyCharacter->CharacterMovement->GravityScale = 1.f;
 	}
 
 	// seems universal
-	if (Config::SpeedHack)
+	if (Config::m_bSpeedHack)
 	{
-		Config::MyCharacter->CharacterMovement->MaxWalkSpeed = Config::SpeedValue;
-		Config::MyCharacter->CharacterMovement->MaxAcceleration = Config::SpeedValue;
+		Config::m_pMyCharacter->CharacterMovement->MaxWalkSpeed = Config::m_fSpeedValue;
+		Config::m_pMyCharacter->CharacterMovement->MaxAcceleration = Config::m_fSpeedValue;
 	}
 
 	#pragma endregion
@@ -349,7 +349,7 @@ void MainLoop::Update(DWORD tick)
 
 	{
 		std::lock_guard<std::mutex> lock(list_mutex);
-		currentTargets = std::make_shared<std::vector<SDK::ACharacter*>>(Config::TargetsList);
+		currentTargets = std::make_shared<std::vector<SDK::ACharacter*>>(Config::m_TargetsList);
 	}
 
 	// looping our targets (in online games it will be prob a ACharacter vector, in offline games for npc can be AActor vector)
@@ -364,9 +364,9 @@ void MainLoop::Update(DWORD tick)
 			continue;
 
 		// raycast to check if targets are behind walls
-		bool isVisible = Config::MyController->LineOfSightTo(currTarget, Config::MyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
+		bool isVisible = Config::m_pMyController->LineOfSightTo(currTarget, Config::m_pMyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
 
-		if (Config::PlayerChams && Config::ChamsMaterial) 
+		if (Config::m_bPlayerChams && Config::m_pChamsMaterial) 
 		{
 			SDK::ASkeletalMeshActor* mesh = reinterpret_cast<SDK::ASkeletalMeshActor*>(currTarget);
 			Utility::ApplyChams(mesh->SkeletalMeshComponent, true);
@@ -378,23 +378,23 @@ void MainLoop::Update(DWORD tick)
 
 		// NOTE: Config::CurrentTarget is a pointer to the current target (of the aimbot)
 
-		if (Config::PlayersSnapline)
+		if (Config::m_bPlayersSnapline)
 		{
 
-			if (currTarget == Config::CurrentTarget)
+			if (currTarget == Config::m_pCurrentTarget)
 			{
-				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 			}
 			else
 			{
 
 				if (isVisible)
 				{
-					color = Config::RainbowPlayersSnapline ? Config::RainbowColor : Config::PlayersSnaplineColor;
+					color = Config::m_bRainbowPlayersSnapline ? Config::m_cRainbow : Config::m_cPlayersSnaplineColor;
 				}
 				else
 				{
-					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
+					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
 				}
 
 			}
@@ -402,23 +402,23 @@ void MainLoop::Update(DWORD tick)
 			ESP::GetInstance().RenderSnapline(currTarget, color);
 		}
 
-		if (Config::PlayerSkeleton)
+		if (Config::m_bPlayerSkeleton)
 		{
 
-			if (currTarget == Config::CurrentTarget)
+			if (currTarget == Config::m_pCurrentTarget)
 			{
-				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 			}
 			else
 			{
 
 				if (isVisible)
 				{
-					color = Config::RainbowPlayerSkeleton ? Config::RainbowColor : Config::PlayerSkeletonColor;
+					color = Config::m_bRainbowPlayerSkeleton ? Config::m_cRainbow : Config::m_cPlayerSkeletonColor;
 				}
 				else
 				{
-					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
+					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
 				}
 
 			}
@@ -426,53 +426,53 @@ void MainLoop::Update(DWORD tick)
 			ESP::GetInstance().RenderSkeleton(currTarget, color);
 		}
 
-		if (Config::PlayersBox)
+		if (Config::m_bPlayersBox)
 		{
 
-			if (currTarget == Config::CurrentTarget)
+			if (currTarget == Config::m_pCurrentTarget)
 			{
-				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 			}
 			else
 			{
 
 				if (isVisible)
 				{
-					color = Config::RainbowPlayersBox ? Config::RainbowColor : Config::PlayersBoxColor;
+					color = Config::m_bRainbowPlayersBox ? Config::m_cRainbow : Config::m_cPlayersBoxColor;
 				}
 				else
 				{
-					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
+					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
 				}
 			}
 
 			ESP::GetInstance().RenderBox(currTarget, color);
 		}
 
-		if (Config::PlayersBox3D)
+		if (Config::m_bPlayersBox3D)
 		{
 
-			if (currTarget == Config::CurrentTarget)
+			if (currTarget == Config::m_pCurrentTarget)
 			{
-				color = Config::RainbowAimbotTargetColor ? Config::RainbowColor : Config::AimbotTargetColor;
+				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 			}
 			else
 			{
 
 				if (isVisible)
 				{
-					color = Config::RainbowPlayersBox ? Config::RainbowColor : Config::PlayersBoxColor;
+					color = Config::m_bRainbowPlayersBox ? Config::m_cRainbow : Config::m_cPlayersBoxColor;
 				}
 				else
 				{
-					color = Config::RainbowTargetNotVisibleColor ? Config::RainbowColor : Config::TargetNotVisibleColor;
+					color = Config::m_bRainbowTargetNotVisibleColor ? Config::m_cRainbow : Config::m_cTargetNotVisibleColor;
 				}
 			}
 
 			ESP::GetInstance().Render3DBox(currTarget, color);
 		}
 
-		if (Config::EnableAimbot && isVisible)
+		if (Config::m_bEnableAimbot && isVisible)
 		{
 			Aimbot::GetInstance().RegularAimbot(currTarget);
 		}
