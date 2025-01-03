@@ -96,7 +96,7 @@ public:
 	EMenuActivationMode                           ActivationMode;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowMouseCursor;                                  // 0x0009(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUIOnlyInput;                                      // 0x000A(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10DD[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMenuManager_ActivateMenu) == 0x000008, "Wrong alignment on DFMenuManager_ActivateMenu");
 static_assert(sizeof(DFMenuManager_ActivateMenu) == 0x000010, "Wrong size on DFMenuManager_ActivateMenu");
@@ -138,7 +138,7 @@ public:
 	EMenuActivationMode                           ActivationMode;                                    // 0x0018(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowMouseCursor;                                  // 0x0019(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUIOnlyInput;                                      // 0x001A(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10DE[0x5];                                     // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFBaseMenu*                            ReturnValue;                                       // 0x0020(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFMenuManagerBlueprintFunctions_CreateAndActivate) == 0x000008, "Wrong alignment on DFMenuManagerBlueprintFunctions_CreateAndActivate");
@@ -196,7 +196,7 @@ public:
 	const class AActor*                           POIActor;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UDFPOIWidget*                           OutFoundPOI;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_FindPOIByActor) == 0x000008, "Wrong alignment on DFMinimap_FindPOIByActor");
 static_assert(sizeof(DFMinimap_FindPOIByActor) == 0x000018, "Wrong size on DFMinimap_FindPOIByActor");
@@ -211,7 +211,7 @@ struct DFMinimap_OnPOISelectionStateChanged final
 public:
 	class UDFPOIWidget*                           POI;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSelected;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_OnPOISelectionStateChanged) == 0x000008, "Wrong alignment on DFMinimap_OnPOISelectionStateChanged");
 static_assert(sizeof(DFMinimap_OnPOISelectionStateChanged) == 0x000010, "Wrong size on DFMinimap_OnPOISelectionStateChanged");
@@ -225,7 +225,7 @@ struct DFMinimap_ReceiveOnPOISelectionStateChanged final
 public:
 	class UDFPOIWidget*                           POI;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSelected;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_ReceiveOnPOISelectionStateChanged) == 0x000008, "Wrong alignment on DFMinimap_ReceiveOnPOISelectionStateChanged");
 static_assert(sizeof(DFMinimap_ReceiveOnPOISelectionStateChanged) == 0x000010, "Wrong size on DFMinimap_ReceiveOnPOISelectionStateChanged");
@@ -239,7 +239,7 @@ struct DFMinimap_RemovePOI final
 public:
 	class UDFPOIWidget*                           POIToRemove;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_RemovePOI) == 0x000008, "Wrong alignment on DFMinimap_RemovePOI");
 static_assert(sizeof(DFMinimap_RemovePOI) == 0x000010, "Wrong size on DFMinimap_RemovePOI");
@@ -251,13 +251,13 @@ static_assert(offsetof(DFMinimap_RemovePOI, ReturnValue) == 0x000008, "Member 'D
 struct DFMinimap_RemovePOIAt final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E4[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_RemovePOIAt) == 0x000004, "Wrong alignment on DFMinimap_RemovePOIAt");
 static_assert(sizeof(DFMinimap_RemovePOIAt) == 0x000008, "Wrong size on DFMinimap_RemovePOIAt");
-static_assert(offsetof(DFMinimap_RemovePOIAt, Param_Index) == 0x000000, "Member 'DFMinimap_RemovePOIAt::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFMinimap_RemovePOIAt, Index_0) == 0x000000, "Member 'DFMinimap_RemovePOIAt::Index_0' has a wrong offset!");
 static_assert(offsetof(DFMinimap_RemovePOIAt, ReturnValue) == 0x000004, "Member 'DFMinimap_RemovePOIAt::ReturnValue' has a wrong offset!");
 
 // Function DonkehFrameworkUI.DFMinimap.RemovePOIByActor
@@ -267,7 +267,7 @@ struct DFMinimap_RemovePOIByActor final
 public:
 	const class AActor*                           POIActorToRemove;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_RemovePOIByActor) == 0x000008, "Wrong alignment on DFMinimap_RemovePOIByActor");
 static_assert(sizeof(DFMinimap_RemovePOIByActor) == 0x000010, "Wrong size on DFMinimap_RemovePOIByActor");
@@ -281,7 +281,7 @@ struct DFMinimap_RemovePOIByActorClass final
 public:
 	TSubclassOf<class AActor>                     POIActorClass;                                     // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_RemovePOIByActorClass) == 0x000008, "Wrong alignment on DFMinimap_RemovePOIByActorClass");
 static_assert(sizeof(DFMinimap_RemovePOIByActorClass) == 0x000010, "Wrong size on DFMinimap_RemovePOIByActorClass");
@@ -318,7 +318,7 @@ public:
 	struct FVector2D                              MapLocation;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              WidgetLocation;                                    // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E7[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_ConvertMapLocationToLocalWidgetLocation) == 0x000004, "Wrong alignment on DFMinimap_ConvertMapLocationToLocalWidgetLocation");
 static_assert(sizeof(DFMinimap_ConvertMapLocationToLocalWidgetLocation) == 0x000014, "Wrong size on DFMinimap_ConvertMapLocationToLocalWidgetLocation");
@@ -334,7 +334,7 @@ public:
 	struct FVector2D                              MapLocation;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                WorldLocation;                                     // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E8[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_DeprojectMapLocationToWorld) == 0x000004, "Wrong alignment on DFMinimap_DeprojectMapLocationToWorld");
 static_assert(sizeof(DFMinimap_DeprojectMapLocationToWorld) == 0x000018, "Wrong size on DFMinimap_DeprojectMapLocationToWorld");
@@ -369,13 +369,13 @@ static_assert(offsetof(DFMinimap_GetMapSizeLocal, ReturnValue) == 0x000000, "Mem
 struct DFMinimap_GetPOIAt final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10E9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFPOIWidget*                           ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFMinimap_GetPOIAt) == 0x000008, "Wrong alignment on DFMinimap_GetPOIAt");
 static_assert(sizeof(DFMinimap_GetPOIAt) == 0x000010, "Wrong size on DFMinimap_GetPOIAt");
-static_assert(offsetof(DFMinimap_GetPOIAt, Param_Index) == 0x000000, "Member 'DFMinimap_GetPOIAt::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFMinimap_GetPOIAt, Index_0) == 0x000000, "Member 'DFMinimap_GetPOIAt::Index_0' has a wrong offset!");
 static_assert(offsetof(DFMinimap_GetPOIAt, ReturnValue) == 0x000008, "Member 'DFMinimap_GetPOIAt::ReturnValue' has a wrong offset!");
 
 // Function DonkehFrameworkUI.DFMinimap.GetPOICount
@@ -396,7 +396,7 @@ struct DFMinimap_GetPOIIndex final
 public:
 	class UDFPOIWidget*                           POI;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10EA[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_GetPOIIndex) == 0x000008, "Wrong alignment on DFMinimap_GetPOIIndex");
 static_assert(sizeof(DFMinimap_GetPOIIndex) == 0x000010, "Wrong size on DFMinimap_GetPOIIndex");
@@ -421,7 +421,7 @@ struct DFMinimap_HasPOI final
 public:
 	class UDFPOIWidget*                           POI;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10EB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_HasPOI) == 0x000008, "Wrong alignment on DFMinimap_HasPOI");
 static_assert(sizeof(DFMinimap_HasPOI) == 0x000010, "Wrong size on DFMinimap_HasPOI");
@@ -436,7 +436,7 @@ public:
 	struct FVector                                WorldLocation;                                     // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              MapLocation;                                       // 0x000C(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10EC[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFMinimap_ProjectWorldLocationToMap) == 0x000004, "Wrong alignment on DFMinimap_ProjectWorldLocationToMap");
 static_assert(sizeof(DFMinimap_ProjectWorldLocationToMap) == 0x000018, "Wrong size on DFMinimap_ProjectWorldLocationToMap");
@@ -521,7 +521,7 @@ struct DFPOIWidget_OnPOIActorEndPlay final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10F2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPOIWidget_OnPOIActorEndPlay) == 0x000008, "Wrong alignment on DFPOIWidget_OnPOIActorEndPlay");
 static_assert(sizeof(DFPOIWidget_OnPOIActorEndPlay) == 0x000010, "Wrong size on DFPOIWidget_OnPOIActorEndPlay");
@@ -535,7 +535,7 @@ struct DFPOIWidget_ReceiveOnPOIActorEndPlay final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10F3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPOIWidget_ReceiveOnPOIActorEndPlay) == 0x000008, "Wrong alignment on DFPOIWidget_ReceiveOnPOIActorEndPlay");
 static_assert(sizeof(DFPOIWidget_ReceiveOnPOIActorEndPlay) == 0x000010, "Wrong size on DFPOIWidget_ReceiveOnPOIActorEndPlay");

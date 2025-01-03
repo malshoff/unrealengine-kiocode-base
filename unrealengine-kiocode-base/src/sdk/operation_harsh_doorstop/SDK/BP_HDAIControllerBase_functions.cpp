@@ -124,11 +124,11 @@ void ABP_HDAIControllerBase_C::ReceivePossess(class APawn* PossessedPawn)
 // Function BP_HDAIControllerBase.BP_HDAIControllerBase_C.OnOwnerPawnEquippedItemChange
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ADFBaseCharacter*                 Param_Character                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ADFBaseCharacter*                 Character_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ADFBaseItem*                      NewEquippedItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ADFBaseItem*                      PrevEquippedItem                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDAIControllerBase_C::OnOwnerPawnEquippedItemChange(class ADFBaseCharacter* Param_Character, class ADFBaseItem* NewEquippedItem, class ADFBaseItem* PrevEquippedItem)
+void ABP_HDAIControllerBase_C::OnOwnerPawnEquippedItemChange(class ADFBaseCharacter* Character_0, class ADFBaseItem* NewEquippedItem, class ADFBaseItem* PrevEquippedItem)
 {
 	static class UFunction* Func = nullptr;
 
@@ -137,7 +137,7 @@ void ABP_HDAIControllerBase_C::OnOwnerPawnEquippedItemChange(class ADFBaseCharac
 
 	Params::BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange Parms{};
 
-	Parms.Param_Character = Param_Character;
+	Parms.Character_0 = Character_0;
 	Parms.NewEquippedItem = NewEquippedItem;
 	Parms.PrevEquippedItem = PrevEquippedItem;
 
@@ -198,9 +198,9 @@ void ABP_HDAIControllerBase_C::WarnOfNoRecoilHandler(class ABP_HDWeaponBase_C* E
 // Function BP_HDAIControllerBase.BP_HDAIControllerBase_C.BindEventsToCharacter
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABP_HDPlayerCharacterBase_C*      Param_Character                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_HDPlayerCharacterBase_C*      Character_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDAIControllerBase_C::BindEventsToCharacter(class ABP_HDPlayerCharacterBase_C* Param_Character)
+void ABP_HDAIControllerBase_C::BindEventsToCharacter(class ABP_HDPlayerCharacterBase_C* Character_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -209,7 +209,7 @@ void ABP_HDAIControllerBase_C::BindEventsToCharacter(class ABP_HDPlayerCharacter
 
 	Params::BP_HDAIControllerBase_C_BindEventsToCharacter Parms{};
 
-	Parms.Param_Character = Param_Character;
+	Parms.Character_0 = Character_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -218,9 +218,9 @@ void ABP_HDAIControllerBase_C::BindEventsToCharacter(class ABP_HDPlayerCharacter
 // Function BP_HDAIControllerBase.BP_HDAIControllerBase_C.UnbindEventsFromCharacter
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABP_HDPlayerCharacterBase_C*      Param_Character                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_HDPlayerCharacterBase_C*      Character_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDAIControllerBase_C::UnbindEventsFromCharacter(class ABP_HDPlayerCharacterBase_C* Param_Character)
+void ABP_HDAIControllerBase_C::UnbindEventsFromCharacter(class ABP_HDPlayerCharacterBase_C* Character_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -229,7 +229,7 @@ void ABP_HDAIControllerBase_C::UnbindEventsFromCharacter(class ABP_HDPlayerChara
 
 	Params::BP_HDAIControllerBase_C_UnbindEventsFromCharacter Parms{};
 
-	Parms.Param_Character = Param_Character;
+	Parms.Character_0 = Character_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -238,9 +238,9 @@ void ABP_HDAIControllerBase_C::UnbindEventsFromCharacter(class ABP_HDPlayerChara
 // Function BP_HDAIControllerBase.BP_HDAIControllerBase_C.CharacterCleanup
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABP_HDPlayerCharacterBase_C*      Param_Character                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_HDPlayerCharacterBase_C*      Character_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDAIControllerBase_C::CharacterCleanup(class ABP_HDPlayerCharacterBase_C* Param_Character)
+void ABP_HDAIControllerBase_C::CharacterCleanup(class ABP_HDPlayerCharacterBase_C* Character_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -249,7 +249,7 @@ void ABP_HDAIControllerBase_C::CharacterCleanup(class ABP_HDPlayerCharacterBase_
 
 	Params::BP_HDAIControllerBase_C_CharacterCleanup Parms{};
 
-	Parms.Param_Character = Param_Character;
+	Parms.Character_0 = Character_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

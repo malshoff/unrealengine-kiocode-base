@@ -21,12 +21,12 @@ namespace SDK::Params
 struct WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature final
 {
 public:
-	class UClass*                                 Param_Rule;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Rule_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHDFilterRuleParams                    RuleParams;                                        // 0x0008(0x0002)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature) == 0x000008, "Wrong alignment on WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature");
 static_assert(sizeof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature) == 0x000010, "Wrong size on WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature");
-static_assert(offsetof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature, Param_Rule) == 0x000000, "Member 'WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature::Param_Rule' has a wrong offset!");
+static_assert(offsetof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature, Rule_0) == 0x000000, "Member 'WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature::Rule_0' has a wrong offset!");
 static_assert(offsetof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature, RuleParams) == 0x000008, "Member 'WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature::RuleParams' has a wrong offset!");
 
 // Function WBP_ServerListModifierSetting_FilterRule_Toggle.WBP_ServerListModifierSetting_FilterRule_Toggle_C.ExecuteUbergraph_WBP_ServerListModifierSetting_FilterRule_Toggle
@@ -93,12 +93,12 @@ static_assert(offsetof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetChec
 struct WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair final
 {
 public:
-	class UClass*                                 Param_Rule;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 Rule_0;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHDFilterRuleParams                    RuleParams;                                        // 0x0008(0x0002)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair) == 0x000008, "Wrong alignment on WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair");
 static_assert(sizeof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair) == 0x000010, "Wrong size on WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair");
-static_assert(offsetof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair, Param_Rule) == 0x000000, "Member 'WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair::Param_Rule' has a wrong offset!");
+static_assert(offsetof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair, Rule_0) == 0x000000, "Member 'WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair::Rule_0' has a wrong offset!");
 static_assert(offsetof(WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair, RuleParams) == 0x000008, "Member 'WBP_ServerListModifierSetting_FilterRule_Toggle_C_GetFilterRulePair::RuleParams' has a wrong offset!");
 
 // Function WBP_ServerListModifierSetting_FilterRule_Toggle.WBP_ServerListModifierSetting_FilterRule_Toggle_C.IsFilterEnabled

@@ -22,7 +22,7 @@ namespace SDK
 class UMovieSceneGeometryCollectionSection final : public UMovieSceneSection
 {
 public:
-	struct FMovieSceneGeometryCollectionParams    Params;                                            // 0x00E0(0x0030)(Edit, NativeAccessSpecifierPublic)
+	struct FMovieSceneGeometryCollectionParams    Params_0;                                          // 0x00E0(0x0030)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -36,7 +36,7 @@ public:
 };
 static_assert(alignof(UMovieSceneGeometryCollectionSection) == 0x000008, "Wrong alignment on UMovieSceneGeometryCollectionSection");
 static_assert(sizeof(UMovieSceneGeometryCollectionSection) == 0x000110, "Wrong size on UMovieSceneGeometryCollectionSection");
-static_assert(offsetof(UMovieSceneGeometryCollectionSection, Params) == 0x0000E0, "Member 'UMovieSceneGeometryCollectionSection::Params' has a wrong offset!");
+static_assert(offsetof(UMovieSceneGeometryCollectionSection, Params_0) == 0x0000E0, "Member 'UMovieSceneGeometryCollectionSection::Params_0' has a wrong offset!");
 
 // Class GeometryCollectionTracks.MovieSceneGeometryCollectionTrack
 // 0x0010 (0x0068 - 0x0058)

@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "FOptionItemSelection_structs.hpp"
+#include "EArrowOptionsPreset_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_classes.hpp"
-#include "EArrowOptionsPreset_structs.hpp"
 
 
 namespace SDK
@@ -34,12 +34,12 @@ public:
 	class FText                                   Text;                                              // 0x0260(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TArray<struct FFOptionItemSelection>          Options;                                           // 0x0278(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         SelectedOptionIndex;                               // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_19AB[0x4];                                     // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSelectionChanged;                                // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                   TextDescription;                                   // 0x02A0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	float                                         TextWidth;                                         // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	EArrowOptionsPreset                           OptionsPreset;                                     // 0x02BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_19AC[0x3];                                     // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2BD[0x3];                                      // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFOptionItemSelection>          ScalabilityOptions;                                // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnSelectionChangedByUser;                          // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
@@ -53,20 +53,20 @@ public:
 	void BndEvt__NextOptionBtn_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__PrevOptionBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void ClearOptions();
-	void INTERNAL_SetSelectedOptionByIndex(int32 Param_Index, ESelectInfo SelectionType);
+	void INTERNAL_SetSelectedOptionByIndex(int32 Index_0, ESelectInfo SelectionType);
 	void GetSelectedOptionValue(class FString* OptionValue);
-	void GetOptionValueAtIndex(int32 Param_Index, class FString* OptionValue);
+	void GetOptionValueAtIndex(int32 Index_0, class FString* OptionValue);
 	void AddOption(struct FFOptionItemSelection& NewOption);
 	void GetOptionCount(int32* OptionCount);
 	void RemoveOptionAtIndex(int32 IndexToRemove, bool* bRemovalSuccess);
 	void INTERNAL_ClearSelection(ESelectInfo DeselectionType);
 	void ClearSelection();
-	void SetSelectedOptionByIndex(int32 Param_Index);
-	void FindOptionValueIndex(const class FString& OptionValue, int32* Param_Index);
+	void SetSelectedOptionByIndex(int32 Index_0);
+	void FindOptionValueIndex(const class FString& OptionValue, int32* Index_0);
 	void PopulateOptionsByPreset(EArrowOptionsPreset Preset);
 	void SetSelectedOptionByValue(const class FString& OptionValue);
 	void SetSelectedOption(const class FText& OptionDisplayName);
-	void FindOptionIndex(const class FText& OptionDisplayName, int32* Param_Index);
+	void FindOptionIndex(const class FText& OptionDisplayName, int32* Index_0);
 
 public:
 	static class UClass* StaticClass()

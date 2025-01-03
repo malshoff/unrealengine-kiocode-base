@@ -38,7 +38,7 @@ public:
 	bool                                          bPreferSteamP2PAddr;                               // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAppendPort;                                       // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0012(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_124C[0x5];                                     // 0x0013(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(TBGameInstance_GetCurrentSessionHostAddressStr) == 0x000008, "Wrong alignment on TBGameInstance_GetCurrentSessionHostAddressStr");
 static_assert(sizeof(TBGameInstance_GetCurrentSessionHostAddressStr) == 0x000018, "Wrong size on TBGameInstance_GetCurrentSessionHostAddressStr");
@@ -67,7 +67,7 @@ public:
 	float                                         CPUMultiplier;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         GPUMultiplier;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1251[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(TBGameUserSettings_FirstRunHardwareBenchmark) == 0x000004, "Wrong alignment on TBGameUserSettings_FirstRunHardwareBenchmark");
 static_assert(sizeof(TBGameUserSettings_FirstRunHardwareBenchmark) == 0x000010, "Wrong size on TBGameUserSettings_FirstRunHardwareBenchmark");

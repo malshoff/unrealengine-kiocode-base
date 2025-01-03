@@ -184,10 +184,10 @@ void UWBP_CreateGameSelectionListEntry_C::IsItemSelected(bool* bSelected)
 // Function WBP_CreateGameSelectionListEntry.WBP_CreateGameSelectionListEntry_C.InternalApplyStyleToText
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTextBlock*                       Param_Text                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTextBlock*                       Text_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFSelectionItemTextStyle         TextStyle                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
-void UWBP_CreateGameSelectionListEntry_C::InternalApplyStyleToText(class UTextBlock* Param_Text, struct FFSelectionItemTextStyle& TextStyle)
+void UWBP_CreateGameSelectionListEntry_C::InternalApplyStyleToText(class UTextBlock* Text_0, struct FFSelectionItemTextStyle& TextStyle)
 {
 	static class UFunction* Func = nullptr;
 
@@ -196,7 +196,7 @@ void UWBP_CreateGameSelectionListEntry_C::InternalApplyStyleToText(class UTextBl
 
 	Params::WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText Parms{};
 
-	Parms.Param_Text = Param_Text;
+	Parms.Text_0 = Text_0;
 	Parms.TextStyle = std::move(TextStyle);
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -308,9 +308,9 @@ void UWBP_CreateGameSelectionListEntry_C::SetItemImage(class UTexture2D* InItemI
 // Function WBP_CreateGameSelectionListEntry.WBP_CreateGameSelectionListEntry_C.GetItemStyle
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FCheckBoxStyle                   Param_ItemStyle                                        (Parm, OutParm)
+// struct FCheckBoxStyle                   ItemStyle_0                                            (Parm, OutParm)
 
-void UWBP_CreateGameSelectionListEntry_C::GetItemStyle(struct FCheckBoxStyle* Param_ItemStyle)
+void UWBP_CreateGameSelectionListEntry_C::GetItemStyle(struct FCheckBoxStyle* ItemStyle_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -321,8 +321,8 @@ void UWBP_CreateGameSelectionListEntry_C::GetItemStyle(struct FCheckBoxStyle* Pa
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_ItemStyle != nullptr)
-		*Param_ItemStyle = std::move(Parms.Param_ItemStyle);
+	if (ItemStyle_0 != nullptr)
+		*ItemStyle_0 = std::move(Parms.ItemStyle_0);
 }
 
 
@@ -411,9 +411,9 @@ void UWBP_CreateGameSelectionListEntry_C::SetItemSubText(const class FText& InTe
 // Function WBP_CreateGameSelectionListEntry.WBP_CreateGameSelectionListEntry_C.GetItemText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Param_Text                                             (Parm, OutParm)
+// class FText                             Text_0                                                 (Parm, OutParm)
 
-void UWBP_CreateGameSelectionListEntry_C::GetItemText(class FText* Param_Text)
+void UWBP_CreateGameSelectionListEntry_C::GetItemText(class FText* Text_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -424,17 +424,17 @@ void UWBP_CreateGameSelectionListEntry_C::GetItemText(class FText* Param_Text)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Text != nullptr)
-		*Param_Text = std::move(Parms.Param_Text);
+	if (Text_0 != nullptr)
+		*Text_0 = std::move(Parms.Text_0);
 }
 
 
 // Function WBP_CreateGameSelectionListEntry.WBP_CreateGameSelectionListEntry_C.GetItemSubText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Param_Text                                             (Parm, OutParm)
+// class FText                             Text_0                                                 (Parm, OutParm)
 
-void UWBP_CreateGameSelectionListEntry_C::GetItemSubText(class FText* Param_Text)
+void UWBP_CreateGameSelectionListEntry_C::GetItemSubText(class FText* Text_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -445,8 +445,8 @@ void UWBP_CreateGameSelectionListEntry_C::GetItemSubText(class FText* Param_Text
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Text != nullptr)
-		*Param_Text = std::move(Parms.Param_Text);
+	if (Text_0 != nullptr)
+		*Text_0 = std::move(Parms.Text_0);
 }
 
 

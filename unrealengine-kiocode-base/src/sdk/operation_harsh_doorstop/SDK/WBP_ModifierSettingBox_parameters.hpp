@@ -23,11 +23,11 @@ struct WBP_ModifierSettingBox_C_ExecuteUbergraph_WBP_ModifierSettingBox final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D83[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D84[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0028(0x0018)()
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0040(0x0018)()
 };
@@ -70,11 +70,11 @@ static_assert(offsetof(WBP_ModifierSettingBox_C_SetSettingText, CallFunc_TextToU
 struct WBP_ModifierSettingBox_C_GetSettingText final
 {
 public:
-	class FText                                   Param_SettingText;                                 // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   SettingText_0;                                     // 0x0000(0x0018)(Parm, OutParm)
 };
 static_assert(alignof(WBP_ModifierSettingBox_C_GetSettingText) == 0x000008, "Wrong alignment on WBP_ModifierSettingBox_C_GetSettingText");
 static_assert(sizeof(WBP_ModifierSettingBox_C_GetSettingText) == 0x000018, "Wrong size on WBP_ModifierSettingBox_C_GetSettingText");
-static_assert(offsetof(WBP_ModifierSettingBox_C_GetSettingText, Param_SettingText) == 0x000000, "Member 'WBP_ModifierSettingBox_C_GetSettingText::Param_SettingText' has a wrong offset!");
+static_assert(offsetof(WBP_ModifierSettingBox_C_GetSettingText, SettingText_0) == 0x000000, "Member 'WBP_ModifierSettingBox_C_GetSettingText::SettingText_0' has a wrong offset!");
 
 // Function WBP_ModifierSettingBox.WBP_ModifierSettingBox_C.SetSettingTextStyle
 // 0x0078 (0x0078 - 0x0000)

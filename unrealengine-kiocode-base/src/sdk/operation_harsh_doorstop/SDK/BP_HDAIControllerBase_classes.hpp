@@ -29,7 +29,7 @@ public:
 	float                                         SavedMinConeOfFireAngleDegrees;                    // 0x037C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSavedInfiniteAmmo;                                // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bSavedInfiniteClipAmmo;                            // 0x0381(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AAA[0x6];                                     // 0x0382(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_382[0x6];                                      // 0x0382(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDataTable*                             DefaultFactionVocalProfiles;                       // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -38,12 +38,12 @@ public:
 	void HitDamageEvent(class ADFBaseProjectile* OtherProjectile, class ADFBasePickup* Pickup);
 	void SuppressionEvent(class ADFBaseProjectile* OtherProjectile, class ADFBasePickup* Pickup);
 	void ReceivePossess(class APawn* PossessedPawn);
-	void OnOwnerPawnEquippedItemChange(class ADFBaseCharacter* Param_Character, class ADFBaseItem* NewEquippedItem, class ADFBaseItem* PrevEquippedItem);
+	void OnOwnerPawnEquippedItemChange(class ADFBaseCharacter* Character_0, class ADFBaseItem* NewEquippedItem, class ADFBaseItem* PrevEquippedItem);
 	void OnOwnerPawnDeath(class APawn* VictimPawn, class AController* VictimController, float KillingDamage, const struct FDamageEvent& DamageEvent, class APawn* InstigatingPawn, class AActor* DamageCauser);
 	void WarnOfNoRecoilHandler(class ABP_HDWeaponBase_C* EquippedWeapon);
-	void BindEventsToCharacter(class ABP_HDPlayerCharacterBase_C* Param_Character);
-	void UnbindEventsFromCharacter(class ABP_HDPlayerCharacterBase_C* Param_Character);
-	void CharacterCleanup(class ABP_HDPlayerCharacterBase_C* Param_Character);
+	void BindEventsToCharacter(class ABP_HDPlayerCharacterBase_C* Character_0);
+	void UnbindEventsFromCharacter(class ABP_HDPlayerCharacterBase_C* Character_0);
+	void CharacterCleanup(class ABP_HDPlayerCharacterBase_C* Character_0);
 	void SetupRecoilHandler(class ABP_HDWeaponBase_C* Weapon);
 	void ResetRecoilHandler(class ABP_HDWeaponBase_C* Weapon);
 	void SaveAndApplyNewValuesToWeapon(class ABP_HDWeaponBase_C* Weapon);

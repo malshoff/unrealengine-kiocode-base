@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "ECaptureUnitType_structs.hpp"
 #include "HDMain_structs.hpp"
 #include "HDMain_classes.hpp"
 #include "Engine_structs.hpp"
+#include "ECaptureUnitType_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
@@ -40,7 +40,7 @@ public:
 	bool                                          bFriendlyUnitsRightToLeft;                         // 0x02B4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bEnemyUnitsRightToLeft;                            // 0x02B5(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bUseFriendlyOwnershipColor;                        // 0x02B6(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F8C[0x1];                                     // 0x02B7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B7[0x1];                                      // 0x02B7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMargin                                UnitPadding;                                       // 0x02B8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FLinearColor                           FriendlyOwnershipColor;                            // 0x02C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           NeutralOwnershipColor;                             // 0x02D8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

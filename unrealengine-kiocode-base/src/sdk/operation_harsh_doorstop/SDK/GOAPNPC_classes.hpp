@@ -45,15 +45,15 @@ static_assert(offsetof(AGOAPAIController, GOAPComponent) == 0x000328, "Member 'A
 class UGOAPAction : public UObject
 {
 public:
-	class FString                                 Name_GOAPAction;                                   // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FString                                 Name_0;                                            // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         Cost;                                              // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_125D[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class AActor>                     TargetClass;                                       // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FAtom>                          Preconditions;                                     // 0x0048(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FAtom>                          Effects;                                           // 0x0058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class AActor*                                 Target;                                            // 0x0068(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bActivated;                                        // 0x0070(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_125E[0x27];                                    // 0x0071(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_71[0x27];                                      // 0x0071(0x0027)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void BeginAction(class APawn* Pawn);
@@ -78,7 +78,7 @@ public:
 };
 static_assert(alignof(UGOAPAction) == 0x000008, "Wrong alignment on UGOAPAction");
 static_assert(sizeof(UGOAPAction) == 0x000098, "Wrong size on UGOAPAction");
-static_assert(offsetof(UGOAPAction, Name_GOAPAction) == 0x000028, "Member 'UGOAPAction::Name_GOAPAction' has a wrong offset!");
+static_assert(offsetof(UGOAPAction, Name_0) == 0x000028, "Member 'UGOAPAction::Name_0' has a wrong offset!");
 static_assert(offsetof(UGOAPAction, Cost) == 0x000038, "Member 'UGOAPAction::Cost' has a wrong offset!");
 static_assert(offsetof(UGOAPAction, TargetClass) == 0x000040, "Member 'UGOAPAction::TargetClass' has a wrong offset!");
 static_assert(offsetof(UGOAPAction, Preconditions) == 0x000048, "Member 'UGOAPAction::Preconditions' has a wrong offset!");
@@ -97,14 +97,14 @@ public:
 	TSoftObjectPtr<class UGOAPGoalSet>            GoalSetInitial;                                    // 0x00D8(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<TSubclassOf<class UGOAPAction>>        ActionClasses;                                     // 0x0100(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         MaxDepth;                                          // 0x0110(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1264[0x4];                                     // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AAIController*                          AIOwner;                                           // 0x0118(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class APawn*                                  AIPawnOwner;                                       // 0x0120(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1265[0x8];                                     // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_128[0x8];                                      // 0x0128(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGOAPGoalManager*                       GoalManager;                                       // 0x0130(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UGOAPAction*>                    AuxActions;                                        // 0x0138(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UGOAPAction*>                    Plan;                                              // 0x0148(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1266[0x10];                                    // 0x0158(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_158[0x10];                                     // 0x0158(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClearPlan();
@@ -153,7 +153,7 @@ static_assert(offsetof(UGOAPComponent, Plan) == 0x000148, "Member 'UGOAPComponen
 class UGOAPGoalSet final : public UPrimaryDataAsset
 {
 public:
-	class FString                                 Name_GOAPGoalSet;                                  // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 Name_0;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSet<TSubclassOf<class UGOAPGoal>>            Goals;                                             // 0x0040(0x0050)(Edit, BlueprintReadOnly, DisableEditOnInstance, UObjectWrapper, NativeAccessSpecifierPrivate)
 
 public:
@@ -168,7 +168,7 @@ public:
 };
 static_assert(alignof(UGOAPGoalSet) == 0x000008, "Wrong alignment on UGOAPGoalSet");
 static_assert(sizeof(UGOAPGoalSet) == 0x000090, "Wrong size on UGOAPGoalSet");
-static_assert(offsetof(UGOAPGoalSet, Name_GOAPGoalSet) == 0x000030, "Member 'UGOAPGoalSet::Name_GOAPGoalSet' has a wrong offset!");
+static_assert(offsetof(UGOAPGoalSet, Name_0) == 0x000030, "Member 'UGOAPGoalSet::Name_0' has a wrong offset!");
 static_assert(offsetof(UGOAPGoalSet, Goals) == 0x000040, "Member 'UGOAPGoalSet::Goals' has a wrong offset!");
 
 // Class GOAPNPC.GOAPGoalManager
@@ -179,7 +179,7 @@ public:
 	class UGOAPGoalSet*                           GoalSet;                                           // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UGOAPGoal*>                      AuxGoals;                                          // 0x0030(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UGOAPGoal*                              CurrentGoal;                                       // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1267[0x18];                                    // 0x0048(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48[0x18];                                      // 0x0048(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UGOAPGoal* AddGoal(const TSubclassOf<class UGOAPGoal>& GoalClass);
@@ -218,7 +218,7 @@ class UGOAPGoal : public UObject
 public:
 	class FString                                 GoalName;                                          // 0x0028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FAtom>                          DesiredWorldInitial;                               // 0x0038(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1269[0x10];                                    // 0x0048(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48[0x10];                                      // 0x0048(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RelevanceWeightBase;                               // 0x0058(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                         RelevanceWeight;                                   // 0x005C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class AAIController*                          AIOwner;                                           // 0x0060(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)

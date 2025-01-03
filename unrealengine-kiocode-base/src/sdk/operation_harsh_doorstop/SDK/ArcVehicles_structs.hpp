@@ -32,7 +32,7 @@ enum class EArcVehicleSeatChangeType : uint8
 struct FArcVehicleSeatChangeEvent final
 {
 public:
-	uint8                                         Pad_126A[0x10];                                    // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerState*                           Player;                                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FArcVehicleSeatChangeEvent) == 0x000008, "Wrong alignment on FArcVehicleSeatChangeEvent");
@@ -44,7 +44,7 @@ static_assert(offsetof(FArcVehicleSeatChangeEvent, Player) == 0x000010, "Member 
 struct FArcVehicleTurretMovementPostPhysicsTickFunction final : public FTickFunction
 {
 public:
-	uint8                                         Pad_126B[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FArcVehicleTurretMovementPostPhysicsTickFunction) == 0x000008, "Wrong alignment on FArcVehicleTurretMovementPostPhysicsTickFunction");
 static_assert(sizeof(FArcVehicleTurretMovementPostPhysicsTickFunction) == 0x000030, "Wrong size on FArcVehicleTurretMovementPostPhysicsTickFunction");
@@ -56,7 +56,7 @@ struct FArcVehicleSeatReference final
 public:
 	class AArcBaseVehicle*                        Vehicle;                                           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SeatID;                                            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126C[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FArcVehicleSeatReference) == 0x000008, "Wrong alignment on FArcVehicleSeatReference");
 static_assert(sizeof(FArcVehicleSeatReference) == 0x000010, "Wrong size on FArcVehicleSeatReference");

@@ -22,7 +22,7 @@ class AArcVehicleSampleCharacter final : public ACharacter
 {
 public:
 	bool                                          bUseAttachedVehicleRelevancy;                      // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_127C[0x7];                                     // 0x04B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B9[0x7];                                      // 0x04B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -46,10 +46,10 @@ public:
 	class UChildActorComponent*                   EditorVehicleMesh;                                 // 0x0220(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSubclassOf<class AArcBaseVehicle>            VehicleClass;                                      // 0x0228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSpawnImmediately;                                 // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_127D[0x3];                                     // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231[0x3];                                      // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RespawnDelay;                                      // 0x0234(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxVehiclesAlive;                                  // 0x0238(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_127E[0x1C];                                    // 0x023C(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C[0x1C];                                     // 0x023C(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnVehicleDestroyed(class AActor* DestroyedActor);

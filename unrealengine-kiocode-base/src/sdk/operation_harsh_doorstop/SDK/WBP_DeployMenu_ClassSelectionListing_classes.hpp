@@ -49,12 +49,12 @@ public:
 	class UButton*                                SelectClassBtn;                                    // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHDKit*                                 Kit;                                               // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bListingInitialized;                               // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2014[0x7];                                     // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E1[0x7];                                      // 0x02E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_HDPlayerControllerBase_C*           HDOwningPlayer;                                    // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnClassSelected;                                   // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bSelected;                                         // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bRestricted;                                       // 0x0301(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2015[0x6];                                     // 0x0302(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_302[0x6];                                      // 0x0302(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnClassDeselected;                                 // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FSlateBrush                            DefaultDisplaySymbolBrush;                         // 0x0318(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FLinearColor                           NoSymbolColor;                                     // 0x03A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,7 +77,7 @@ public:
 	void Construct();
 	void PreConstruct(bool IsDesignTime);
 	void BndEvt__SelectClassBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void Init(class UHDKit* Param_Kit, class ABP_HDPlayerControllerBase_C* OwningPC);
+	void Init(class UHDKit* Kit_0, class ABP_HDPlayerControllerBase_C* OwningPC);
 	void InternalKitDisplaySetup();
 	void UpdateRestrictedState();
 	void InternalSetupPrimaryWeaponIcon();
@@ -85,7 +85,7 @@ public:
 	void DeselectClass();
 	void InternalSetClassSelectionState(bool bNewSelected);
 	void ToggleClassSelection();
-	void SetSelected(bool Param_bSelected);
+	void SetSelected(bool bSelected_0);
 	void InternalSetupKitDisplaySymbol();
 	void InternalSetupKitDisplayName();
 	void InternalSetupKitRestrictionDisplay(bool bKitRestricted, class FText& KitRestrictionReason);

@@ -28,7 +28,7 @@ public:
 	struct FVoiceSettings                         SpatializedSettings;                               // 0x0110(0x0018)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, NoDestructor, ContainsInstancedReference)
 	bool                                          bRegistered;                                       // 0x0128(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bTalking;                                          // 0x0129(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19C0[0x6];                                     // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12A[0x6];                                      // 0x012A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CachedAudioComp;                                   // 0x0130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

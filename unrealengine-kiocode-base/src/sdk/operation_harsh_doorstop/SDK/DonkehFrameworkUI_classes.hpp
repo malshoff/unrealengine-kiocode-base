@@ -29,7 +29,7 @@ public:
 	uint8                                         bMenuConstructedInDesigner : 1;                    // 0x0230(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bMenuPopped : 1;                                   // 0x0230(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bFlushPlayerInputUponConstruction : 1;             // 0x0230(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_10DA[0x7];                                     // 0x0231(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ReceiveOnMenuCovered();
@@ -85,7 +85,7 @@ class UDFContextualWidgetPrerequisiteBase : public UObject
 {
 public:
 	uint8                                         bForceSuccess : 1;                                 // 0x0028(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_10DB[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UDFContextualWidgetBase* GetWidgetOuter() const;
@@ -152,7 +152,7 @@ static_assert(sizeof(UDFGameDialog) == 0x000238, "Wrong size on UDFGameDialog");
 class UDFMenuManager final : public UObject
 {
 public:
-	uint8                                         Pad_10DC[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FMenuStackEntry>                MenuStack;                                         // 0x0030(0x0010)(ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FSoftClassPath                         MenuManagerClassName;                              // 0x0040(0x0018)(Edit, ZeroConstructor, Config, GlobalConfig, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
@@ -206,7 +206,7 @@ class UDFMinimap : public UUserWidget
 {
 public:
 	TArray<class UDFPOIWidget*>                   MapPOIs;                                           // 0x0230(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_10DF[0x18];                                    // 0x0240(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240[0x18];                                     // 0x0240(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CurrentMapPos;                                     // 0x0258(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                         CurrentZoom;                                       // 0x0260(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                         MaxZoom;                                           // 0x0264(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -224,7 +224,7 @@ public:
 	void OnPOISelectionStateChanged(class UDFPOIWidget* POI, bool bSelected);
 	void ReceiveOnPOISelectionStateChanged(class UDFPOIWidget* POI, bool bSelected);
 	bool RemovePOI(class UDFPOIWidget* POIToRemove);
-	bool RemovePOIAt(int32 Param_Index);
+	bool RemovePOIAt(int32 Index_0);
 	bool RemovePOIByActor(const class AActor* POIActorToRemove);
 	bool RemovePOIByActorClass(const TSubclassOf<class AActor>& POIActorClass);
 	void SetMapDirty();
@@ -235,7 +235,7 @@ public:
 	bool DeprojectMapLocationToWorld(const struct FVector2D& MapLocation, struct FVector* WorldLocation) const;
 	struct FVector2D GetMapSizeAbsolute() const;
 	struct FVector2D GetMapSizeLocal() const;
-	class UDFPOIWidget* GetPOIAt(int32 Param_Index) const;
+	class UDFPOIWidget* GetPOIAt(int32 Index_0) const;
 	int32 GetPOICount() const;
 	int32 GetPOIIndex(class UDFPOIWidget* POI) const;
 	bool HasAnyPOIs() const;
@@ -270,9 +270,9 @@ static_assert(offsetof(UDFMinimap, MapImg) == 0x000290, "Member 'UDFMinimap::Map
 class UDFPOIComponent final : public UActorComponent
 {
 public:
-	uint8                                         Pad_10ED[0x14];                                    // 0x00B0(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B0[0x14];                                      // 0x00B0(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bAutoRegisterPOI : 1;                              // 0x00C4(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_10EE[0x3];                                     // 0x00C5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnMinimapLateInit(class UDFMinimap* NewMinimap);
@@ -301,13 +301,13 @@ static_assert(sizeof(UDFPOIComponent) == 0x0000C8, "Wrong size on UDFPOIComponen
 class UDFPOIWidget : public UUserWidget
 {
 public:
-	uint8                                         Pad_10EF[0x10];                                    // 0x0230(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230[0x10];                                     // 0x0230(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 POIActor;                                          // 0x0240(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FMinimapPOITableRow                    POIActorData;                                      // 0x0248(0x0130)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_10F0[0x8];                                     // 0x0378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_378[0x8];                                      // 0x0378(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSelectionStateChanged;                           // 0x0380(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         bSelected : 1;                                     // 0x0390(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_10F1[0x7];                                     // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_391[0x7];                                      // 0x0391(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNamedSlot*                             IconSlot;                                          // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:

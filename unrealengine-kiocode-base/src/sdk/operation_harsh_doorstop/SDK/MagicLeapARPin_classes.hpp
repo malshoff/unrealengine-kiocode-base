@@ -28,17 +28,17 @@ public:
 	int32                                         UserIndex;                                         // 0x0200(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapAutoPinType                         AutoPinType;                                       // 0x0204(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldPinActor;                                   // 0x0205(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1500[0x2];                                     // 0x0206(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_206[0x2];                                      // 0x0206(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UMagicLeapARPinSaveGame>    PinDataClass;                                      // 0x0208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPersistentEntityPinned;                          // 0x0210(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPersistentEntityPinLost;                         // 0x0220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	struct FGuid                                  PinnedCFUID;                                       // 0x0230(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USceneComponent*                        PinnedSceneComponent;                              // 0x0240(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMagicLeapARPinSaveGame*                PinData;                                           // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1501[0xD0];                                    // 0x0250(0x00D0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_250[0xD0];                                     // 0x0250(0x00D0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	class UMagicLeapARPinSaveGame* GetPinData(TSubclassOf<class UMagicLeapARPinSaveGame> Param_PinDataClass);
+	class UMagicLeapARPinSaveGame* GetPinData(TSubclassOf<class UMagicLeapARPinSaveGame> PinDataClass_0);
 	bool GetPinnedPinID(struct FGuid* PinID);
 	void PersistentEntityPinLost__DelegateSignature();
 	void PersistentEntityPinned__DelegateSignature(bool bRestoredOrSynced);
@@ -111,7 +111,7 @@ class UMagicLeapARPinSettings final : public UObject
 public:
 	float                                         UpdateCheckFrequency;                              // 0x0028(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMagicLeapARPinState                   OnUpdatedEventTriggerDelta;                        // 0x002C(0x0010)(Edit, Config, GlobalConfig, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_150D[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -134,7 +134,7 @@ class UMagicLeapARPinSaveGame final : public USaveGame
 {
 public:
 	struct FGuid                                  PinnedID;                                          // 0x0028(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_150E[0x8];                                     // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ComponentWorldTransform;                           // 0x0040(0x0030)(Edit, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FTransform                             PinTransform;                                      // 0x0070(0x0030)(Edit, EditConst, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 

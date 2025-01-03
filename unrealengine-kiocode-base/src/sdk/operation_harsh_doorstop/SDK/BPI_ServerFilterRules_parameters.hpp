@@ -22,7 +22,7 @@ struct BPI_ServerFilterRules_C_GetFilterRules final
 {
 public:
 	bool                                          bActiveOnly;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_199D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class UClass*, struct FHDFilterRuleParams> FilterRules;                                       // 0x0008(0x0050)(Parm, OutParm)
 };
 static_assert(alignof(BPI_ServerFilterRules_C_GetFilterRules) == 0x000008, "Wrong alignment on BPI_ServerFilterRules_C_GetFilterRules");

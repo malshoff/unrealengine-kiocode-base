@@ -51,10 +51,10 @@ struct FConstructionSystemSavePlayerInfo final
 {
 public:
 	bool                                          bRestorePlayerInfo;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12E8[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FRotator                               ControlRotation;                                   // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12E9[0x4];                                     // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FConstructionSystemSavePlayerInfo) == 0x000010, "Wrong alignment on FConstructionSystemSavePlayerInfo");
 static_assert(sizeof(FConstructionSystemSavePlayerInfo) == 0x000050, "Wrong size on FConstructionSystemSavePlayerInfo");
@@ -69,7 +69,7 @@ struct FConstructionSystemSaveConstructedItem final
 public:
 	class UPrefabricatorAssetInterface*           PrefabAsset;                                       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Seed;                                              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12EA[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FConstructionSystemSaveConstructedItem) == 0x000010, "Wrong alignment on FConstructionSystemSaveConstructedItem");

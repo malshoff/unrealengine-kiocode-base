@@ -207,13 +207,13 @@ static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_IsItemSelected, CallFu
 struct WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText final
 {
 public:
-	class UTextBlock*                             Param_Text;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTextBlock*                             Text_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFSelectionItemTextStyle               TextStyle;                                         // 0x0008(0x0130)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0138(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText) == 0x000008, "Wrong alignment on WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText");
 static_assert(sizeof(WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText) == 0x000140, "Wrong size on WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText");
-static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText, Param_Text) == 0x000000, "Member 'WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText::Param_Text' has a wrong offset!");
+static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText, Text_0) == 0x000000, "Member 'WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText::Text_0' has a wrong offset!");
 static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText, TextStyle) == 0x000008, "Member 'WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText::TextStyle' has a wrong offset!");
 static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000138, "Member 'WBP_CreateGameSelectionListEntry_C_InternalApplyStyleToText::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
 
@@ -224,7 +224,7 @@ struct WBP_CreateGameSelectionListEntry_C_InternalUpdateItemBgTintColor final
 public:
 	bool                                          bSelected;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D1A[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0030(0x0028)()
 	struct FSlateColor                            K2Node_Select_Default;                             // 0x0058(0x0028)()
@@ -286,11 +286,11 @@ static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_SetItemImage, InItemIm
 struct WBP_CreateGameSelectionListEntry_C_GetItemStyle final
 {
 public:
-	struct FCheckBoxStyle                         Param_ItemStyle;                                   // 0x0000(0x0580)(Parm, OutParm)
+	struct FCheckBoxStyle                         ItemStyle_0;                                       // 0x0000(0x0580)(Parm, OutParm)
 };
 static_assert(alignof(WBP_CreateGameSelectionListEntry_C_GetItemStyle) == 0x000008, "Wrong alignment on WBP_CreateGameSelectionListEntry_C_GetItemStyle");
 static_assert(sizeof(WBP_CreateGameSelectionListEntry_C_GetItemStyle) == 0x000580, "Wrong size on WBP_CreateGameSelectionListEntry_C_GetItemStyle");
-static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemStyle, Param_ItemStyle) == 0x000000, "Member 'WBP_CreateGameSelectionListEntry_C_GetItemStyle::Param_ItemStyle' has a wrong offset!");
+static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemStyle, ItemStyle_0) == 0x000000, "Member 'WBP_CreateGameSelectionListEntry_C_GetItemStyle::ItemStyle_0' has a wrong offset!");
 
 // Function WBP_CreateGameSelectionListEntry.WBP_CreateGameSelectionListEntry_C.GetItemTextStyle
 // 0x0130 (0x0130 - 0x0000)
@@ -341,12 +341,12 @@ static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_SetItemSubText, InText
 struct WBP_CreateGameSelectionListEntry_C_GetItemText final
 {
 public:
-	class FText                                   Param_Text;                                        // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   Text_0;                                            // 0x0000(0x0018)(Parm, OutParm)
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0018(0x0018)()
 };
 static_assert(alignof(WBP_CreateGameSelectionListEntry_C_GetItemText) == 0x000008, "Wrong alignment on WBP_CreateGameSelectionListEntry_C_GetItemText");
 static_assert(sizeof(WBP_CreateGameSelectionListEntry_C_GetItemText) == 0x000030, "Wrong size on WBP_CreateGameSelectionListEntry_C_GetItemText");
-static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemText, Param_Text) == 0x000000, "Member 'WBP_CreateGameSelectionListEntry_C_GetItemText::Param_Text' has a wrong offset!");
+static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemText, Text_0) == 0x000000, "Member 'WBP_CreateGameSelectionListEntry_C_GetItemText::Text_0' has a wrong offset!");
 static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemText, CallFunc_GetText_ReturnValue) == 0x000018, "Member 'WBP_CreateGameSelectionListEntry_C_GetItemText::CallFunc_GetText_ReturnValue' has a wrong offset!");
 
 // Function WBP_CreateGameSelectionListEntry.WBP_CreateGameSelectionListEntry_C.GetItemSubText
@@ -354,12 +354,12 @@ static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemText, CallFunc_
 struct WBP_CreateGameSelectionListEntry_C_GetItemSubText final
 {
 public:
-	class FText                                   Param_Text;                                        // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   Text_0;                                            // 0x0000(0x0018)(Parm, OutParm)
 	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0018(0x0018)()
 };
 static_assert(alignof(WBP_CreateGameSelectionListEntry_C_GetItemSubText) == 0x000008, "Wrong alignment on WBP_CreateGameSelectionListEntry_C_GetItemSubText");
 static_assert(sizeof(WBP_CreateGameSelectionListEntry_C_GetItemSubText) == 0x000030, "Wrong size on WBP_CreateGameSelectionListEntry_C_GetItemSubText");
-static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemSubText, Param_Text) == 0x000000, "Member 'WBP_CreateGameSelectionListEntry_C_GetItemSubText::Param_Text' has a wrong offset!");
+static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemSubText, Text_0) == 0x000000, "Member 'WBP_CreateGameSelectionListEntry_C_GetItemSubText::Text_0' has a wrong offset!");
 static_assert(offsetof(WBP_CreateGameSelectionListEntry_C_GetItemSubText, CallFunc_GetText_ReturnValue) == 0x000018, "Member 'WBP_CreateGameSelectionListEntry_C_GetItemSubText::CallFunc_GetText_ReturnValue' has a wrong offset!");
 
 // Function WBP_CreateGameSelectionListEntry.WBP_CreateGameSelectionListEntry_C.SetItemMinDimensions

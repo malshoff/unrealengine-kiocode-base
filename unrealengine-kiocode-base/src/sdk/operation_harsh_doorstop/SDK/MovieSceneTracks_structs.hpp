@@ -74,7 +74,7 @@ public:
 	EDetachmentRule                               DetachmentLocationRule;                            // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDetachmentRule                               DetachmentRotationRule;                            // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDetachmentRule                               DetachmentScaleRule;                               // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1715[0x2];                                     // 0x004E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieScene3DAttachSectionTemplate) == 0x000008, "Wrong alignment on FMovieScene3DAttachSectionTemplate");
 static_assert(sizeof(FMovieScene3DAttachSectionTemplate) == 0x000050, "Wrong size on FMovieScene3DAttachSectionTemplate");
@@ -97,11 +97,11 @@ public:
 	struct FMovieSceneFloatChannel                TimingCurve;                                       // 0x0038(0x00A0)(NativeAccessSpecifierPublic)
 	EMovieScene3DPathSection_Axis                 FrontAxisEnum;                                     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMovieScene3DPathSection_Axis                 UpAxisEnum;                                        // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1716[0x2];                                     // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bFollow : 1;                                       // 0x00DC(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bReverse : 1;                                      // 0x00DC(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bForceUpright : 1;                                 // 0x00DC(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1717[0x3];                                     // 0x00DD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieScene3DPathSectionTemplate) == 0x000008, "Wrong alignment on FMovieScene3DPathSectionTemplate");
 static_assert(sizeof(FMovieScene3DPathSectionTemplate) == 0x0000E0, "Wrong size on FMovieScene3DPathSectionTemplate");
@@ -130,7 +130,7 @@ public:
 	struct FRotator                               Rotation;                                          // 0x0014(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                                Scale;                                             // 0x0020(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                           Time;                                              // 0x002C(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1718[0x18];                                    // 0x0030(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x18];                                      // 0x0030(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieScene3DTransformKeyStruct) == 0x000008, "Wrong alignment on FMovieScene3DTransformKeyStruct");
 static_assert(sizeof(FMovieScene3DTransformKeyStruct) == 0x000048, "Wrong size on FMovieScene3DTransformKeyStruct");
@@ -157,7 +157,7 @@ struct FMovieScene3DScaleKeyStruct final : public FMovieSceneKeyStruct
 public:
 	struct FVector                                Scale;                                             // 0x0008(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                           Time;                                              // 0x0014(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1719[0x18];                                    // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieScene3DScaleKeyStruct) == 0x000008, "Wrong alignment on FMovieScene3DScaleKeyStruct");
 static_assert(sizeof(FMovieScene3DScaleKeyStruct) == 0x000030, "Wrong size on FMovieScene3DScaleKeyStruct");
@@ -171,7 +171,7 @@ struct FMovieScene3DRotationKeyStruct final : public FMovieSceneKeyStruct
 public:
 	struct FRotator                               Rotation;                                          // 0x0008(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FFrameNumber                           Time;                                              // 0x0014(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_171A[0x18];                                    // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieScene3DRotationKeyStruct) == 0x000008, "Wrong alignment on FMovieScene3DRotationKeyStruct");
 static_assert(sizeof(FMovieScene3DRotationKeyStruct) == 0x000030, "Wrong size on FMovieScene3DRotationKeyStruct");
@@ -185,7 +185,7 @@ struct FMovieScene3DLocationKeyStruct final : public FMovieSceneKeyStruct
 public:
 	struct FVector                                Location;                                          // 0x0008(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                           Time;                                              // 0x0014(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_171B[0x18];                                    // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieScene3DLocationKeyStruct) == 0x000008, "Wrong alignment on FMovieScene3DLocationKeyStruct");
 static_assert(sizeof(FMovieScene3DLocationKeyStruct) == 0x000030, "Wrong size on FMovieScene3DLocationKeyStruct");
@@ -202,10 +202,10 @@ public:
 	struct FMovieSceneFloatChannel                ScaleCurve[0x3];                                   // 0x03C0(0x00A0)(NativeAccessSpecifierPublic)
 	struct FMovieSceneFloatChannel                ManualWeight;                                      // 0x05A0(0x00A0)(NativeAccessSpecifierPublic)
 	EMovieSceneBlendType                          BlendType;                                         // 0x0640(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_171C[0x3];                                     // 0x0641(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_641[0x3];                                      // 0x0641(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMovieSceneTransformMask               Mask;                                              // 0x0644(0x0004)(NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bUseQuaternionInterpolation;                       // 0x0648(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_171D[0x7];                                     // 0x0649(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_649[0x7];                                      // 0x0649(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieScene3DTransformTemplateData) == 0x000008, "Wrong alignment on FMovieScene3DTransformTemplateData");
 static_assert(sizeof(FMovieScene3DTransformTemplateData) == 0x000650, "Wrong size on FMovieScene3DTransformTemplateData");
@@ -249,9 +249,9 @@ struct FMovieSceneActorReferenceData final : public FMovieSceneChannel
 {
 public:
 	TArray<struct FFrameNumber>                   KeyTimes;                                          // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_171E[0x28];                                    // 0x0018(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x28];                                      // 0x0018(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FMovieSceneActorReferenceKey>   KeyValues;                                         // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_171F[0x60];                                    // 0x0050(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x60];                                      // 0x0050(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneActorReferenceData) == 0x000008, "Wrong alignment on FMovieSceneActorReferenceData");
 static_assert(sizeof(FMovieSceneActorReferenceData) == 0x0000B0, "Wrong size on FMovieSceneActorReferenceData");
@@ -269,16 +269,16 @@ public:
 	struct FFrameNumber                           EndFrameOffset;                                    // 0x0010(0x0004)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PlayRate;                                          // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bReverse : 1;                                      // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1720[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   SlotName;                                          // 0x001C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1721[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMovieSceneFloatChannel                Weight;                                            // 0x0028(0x00A0)(NativeAccessSpecifierPublic)
 	bool                                          bSkipAnimNotifiers;                                // 0x00C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceCustomMode;                                  // 0x00C9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1722[0x2];                                     // 0x00CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_CA[0x2];                                       // 0x00CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         StartOffset;                                       // 0x00CC(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EndOffset;                                         // 0x00D0(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1723[0x4];                                     // 0x00D4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneSkeletalAnimationParams) == 0x000008, "Wrong alignment on FMovieSceneSkeletalAnimationParams");
 static_assert(sizeof(FMovieSceneSkeletalAnimationParams) == 0x0000D8, "Wrong size on FMovieSceneSkeletalAnimationParams");
@@ -353,7 +353,7 @@ public:
 	float                                         BlendInTime;                                       // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         BlendOutTime;                                      // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLooping;                                          // 0x0018(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1724[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneCameraAnimSectionData) == 0x000008, "Wrong alignment on FMovieSceneCameraAnimSectionData");
 static_assert(sizeof(FMovieSceneCameraAnimSectionData) == 0x000020, "Wrong size on FMovieSceneCameraAnimSectionData");
@@ -380,9 +380,9 @@ public:
 	TSubclassOf<class UCameraShake>               ShakeClass;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PlayScale;                                         // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECameraAnimPlaySpace                          PlaySpace;                                         // 0x000C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1725[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               UserDefinedPlaySpace;                              // 0x0010(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1726[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneCameraShakeSectionData) == 0x000008, "Wrong alignment on FMovieSceneCameraShakeSectionData");
 static_assert(sizeof(FMovieSceneCameraShakeSectionData) == 0x000020, "Wrong size on FMovieSceneCameraShakeSectionData");
@@ -398,7 +398,7 @@ struct FMovieSceneCameraShakeSectionTemplate final : public FMovieSceneAdditiveC
 public:
 	struct FMovieSceneCameraShakeSectionData      SourceData;                                        // 0x0020(0x0020)(NoDestructor, NativeAccessSpecifierPrivate)
 	struct FFrameNumber                           SectionStartTime;                                  // 0x0040(0x0004)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1727[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneCameraShakeSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneCameraShakeSectionTemplate");
 static_assert(sizeof(FMovieSceneCameraShakeSectionTemplate) == 0x000048, "Wrong size on FMovieSceneCameraShakeSectionTemplate");
@@ -412,7 +412,7 @@ struct FMovieSceneCameraAnimSectionTemplate final : public FMovieSceneAdditiveCa
 public:
 	struct FMovieSceneCameraAnimSectionData       SourceData;                                        // 0x0020(0x0020)(NoDestructor, NativeAccessSpecifierPrivate)
 	struct FFrameNumber                           SectionStartTime;                                  // 0x0040(0x0004)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1728[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneCameraAnimSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneCameraAnimSectionTemplate");
 static_assert(sizeof(FMovieSceneCameraAnimSectionTemplate) == 0x000048, "Wrong size on FMovieSceneCameraAnimSectionTemplate");
@@ -425,11 +425,11 @@ struct FMovieSceneCameraCutSectionTemplate final : public FMovieSceneEvalTemplat
 {
 public:
 	struct FMovieSceneObjectBindingID             CameraBindingID;                                   // 0x0020(0x0018)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1729[0x8];                                     // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CutTransform;                                      // 0x0040(0x0030)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bHasCutTransform;                                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsFinalSection;                                   // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_172A[0xE];                                     // 0x0072(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_72[0xE];                                       // 0x0072(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneCameraCutSectionTemplate) == 0x000010, "Wrong alignment on FMovieSceneCameraCutSectionTemplate");
 static_assert(sizeof(FMovieSceneCameraCutSectionTemplate) == 0x000080, "Wrong size on FMovieSceneCameraCutSectionTemplate");
@@ -445,7 +445,7 @@ struct FMovieSceneColorKeyStruct final : public FMovieSceneKeyStruct
 public:
 	struct FLinearColor                           Color;                                             // 0x0008(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameNumber                           Time;                                              // 0x0018(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_172B[0x1C];                                    // 0x001C(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x1C];                                      // 0x001C(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneColorKeyStruct) == 0x000008, "Wrong alignment on FMovieSceneColorKeyStruct");
 static_assert(sizeof(FMovieSceneColorKeyStruct) == 0x000038, "Wrong size on FMovieSceneColorKeyStruct");
@@ -459,7 +459,7 @@ struct FMovieSceneColorSectionTemplate final : public FMovieScenePropertySection
 public:
 	struct FMovieSceneFloatChannel                Curves[0x4];                                       // 0x0048(0x00A0)(NativeAccessSpecifierPublic)
 	EMovieSceneBlendType                          BlendType;                                         // 0x02C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_172C[0x7];                                     // 0x02C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneColorSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneColorSectionTemplate");
 static_assert(sizeof(FMovieSceneColorSectionTemplate) == 0x0002D0, "Wrong size on FMovieSceneColorSectionTemplate");
@@ -508,7 +508,7 @@ struct FMovieSceneEventChannel final : public FMovieSceneChannel
 public:
 	TArray<struct FFrameNumber>                   KeyTimes;                                          // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FMovieSceneEvent>               KeyValues;                                         // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_172D[0x60];                                    // 0x0028(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x60];                                      // 0x0028(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneEventChannel) == 0x000008, "Wrong alignment on FMovieSceneEventChannel");
 static_assert(sizeof(FMovieSceneEventChannel) == 0x000088, "Wrong size on FMovieSceneEventChannel");
@@ -520,7 +520,7 @@ static_assert(offsetof(FMovieSceneEventChannel, KeyValues) == 0x000018, "Member 
 struct alignas(0x08) FMovieSceneEventParameters final
 {
 public:
-	uint8                                         Pad_172E[0x28];                                    // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneEventParameters) == 0x000008, "Wrong alignment on FMovieSceneEventParameters");
 static_assert(sizeof(FMovieSceneEventParameters) == 0x000028, "Wrong size on FMovieSceneEventParameters");
@@ -545,7 +545,7 @@ struct FMovieSceneEventSectionData final : public FMovieSceneChannel
 public:
 	TArray<struct FFrameNumber>                   Times;                                             // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FEventPayload>                  KeyValues;                                         // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_172F[0x60];                                    // 0x0028(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x60];                                      // 0x0028(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneEventSectionData) == 0x000008, "Wrong alignment on FMovieSceneEventSectionData");
 static_assert(sizeof(FMovieSceneEventSectionData) == 0x000088, "Wrong size on FMovieSceneEventSectionData");
@@ -560,7 +560,7 @@ public:
 	TArray<struct FMovieSceneObjectBindingID>     EventReceivers;                                    // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bFireEventsWhenForwards : 1;                       // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bFireEventsWhenBackwards : 1;                      // 0x0030(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1730[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneEventTemplateBase) == 0x000008, "Wrong alignment on FMovieSceneEventTemplateBase");
 static_assert(sizeof(FMovieSceneEventTemplateBase) == 0x000038, "Wrong size on FMovieSceneEventTemplateBase");
@@ -609,7 +609,7 @@ public:
 	struct FMovieSceneFloatChannel                FadeCurve;                                         // 0x0020(0x00A0)(NativeAccessSpecifierPrivate)
 	struct FLinearColor                           FadeColor;                                         // 0x00C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bFadeAudio : 1;                                    // 0x00D0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_1731[0x7];                                     // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneFadeSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneFadeSectionTemplate");
 static_assert(sizeof(FMovieSceneFadeSectionTemplate) == 0x0000D8, "Wrong size on FMovieSceneFadeSectionTemplate");
@@ -622,7 +622,7 @@ struct FMovieSceneLevelVisibilitySectionTemplate final : public FMovieSceneEvalT
 {
 public:
 	ELevelVisibility                              Visibility;                                        // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1732[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           LevelNames;                                        // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 static_assert(alignof(FMovieSceneLevelVisibilitySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneLevelVisibilitySectionTemplate");
@@ -773,7 +773,7 @@ struct FMovieSceneComponentMaterialSectionTemplate final : public FMovieScenePar
 {
 public:
 	int32                                         MaterialIndex;                                     // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1733[0x4];                                     // 0x0084(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneComponentMaterialSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneComponentMaterialSectionTemplate");
 static_assert(sizeof(FMovieSceneComponentMaterialSectionTemplate) == 0x000088, "Wrong size on FMovieSceneComponentMaterialSectionTemplate");
@@ -812,7 +812,7 @@ struct FMovieScenePrimitiveMaterialTemplate final : public FMovieSceneEvalTempla
 {
 public:
 	int32                                         MaterialIndex;                                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1734[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMovieSceneObjectPathChannel           MaterialChannel;                                   // 0x0028(0x00C0)(NativeAccessSpecifierPrivate)
 };
 static_assert(alignof(FMovieScenePrimitiveMaterialTemplate) == 0x000008, "Wrong alignment on FMovieScenePrimitiveMaterialTemplate");
@@ -850,7 +850,7 @@ public:
 	struct FMovieSceneFloatChannel                ComponentCurves[0x4];                              // 0x0048(0x00A0)(Protected, NativeAccessSpecifierProtected)
 	int32                                         NumChannelsUsed;                                   // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EMovieSceneBlendType                          BlendType;                                         // 0x02CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1735[0x3];                                     // 0x02CD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2CD[0x3];                                      // 0x02CD(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneVectorPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneVectorPropertySectionTemplate");
 static_assert(sizeof(FMovieSceneVectorPropertySectionTemplate) == 0x0002D0, "Wrong size on FMovieSceneVectorPropertySectionTemplate");
@@ -867,7 +867,7 @@ public:
 	TArray<class FString>                         Values;                                            // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                 DefaultValue;                                      // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bHasDefaultValue;                                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1736[0x67];                                    // 0x0039(0x0067)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x67];                                      // 0x0039(0x0067)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneStringChannel) == 0x000008, "Wrong alignment on FMovieSceneStringChannel");
 static_assert(sizeof(FMovieSceneStringChannel) == 0x0000A0, "Wrong size on FMovieSceneStringChannel");
@@ -894,7 +894,7 @@ struct FMovieSceneIntegerPropertySectionTemplate final : public FMovieScenePrope
 public:
 	struct FMovieSceneIntegerChannel              IntegerCurve;                                      // 0x0048(0x0090)(Protected, NativeAccessSpecifierProtected)
 	EMovieSceneBlendType                          BlendType;                                         // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1737[0x7];                                     // 0x00D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneIntegerPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneIntegerPropertySectionTemplate");
 static_assert(sizeof(FMovieSceneIntegerPropertySectionTemplate) == 0x0000E0, "Wrong size on FMovieSceneIntegerPropertySectionTemplate");
@@ -930,7 +930,7 @@ struct FMovieSceneFloatPropertySectionTemplate final : public FMovieScenePropert
 public:
 	struct FMovieSceneFloatChannel                FloatFunction;                                     // 0x0048(0x00A0)(Protected, NativeAccessSpecifierProtected)
 	EMovieSceneBlendType                          BlendType;                                         // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1738[0x7];                                     // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneFloatPropertySectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneFloatPropertySectionTemplate");
 static_assert(sizeof(FMovieSceneFloatPropertySectionTemplate) == 0x0000F0, "Wrong size on FMovieSceneFloatPropertySectionTemplate");
@@ -965,7 +965,7 @@ struct FMovieSceneVectorKeyStructBase : public FMovieSceneKeyStruct
 {
 public:
 	struct FFrameNumber                           Time;                                              // 0x0008(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1739[0x1C];                                    // 0x000C(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x1C];                                       // 0x000C(0x001C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneVectorKeyStructBase) == 0x000008, "Wrong alignment on FMovieSceneVectorKeyStructBase");
 static_assert(sizeof(FMovieSceneVectorKeyStructBase) == 0x000028, "Wrong size on FMovieSceneVectorKeyStructBase");
@@ -976,7 +976,7 @@ static_assert(offsetof(FMovieSceneVectorKeyStructBase, Time) == 0x000008, "Membe
 struct FMovieSceneVector4KeyStruct final : public FMovieSceneVectorKeyStructBase
 {
 public:
-	uint8                                         Pad_173A[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector4                               Vector;                                            // 0x0030(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FMovieSceneVector4KeyStruct) == 0x000010, "Wrong alignment on FMovieSceneVector4KeyStruct");
@@ -989,7 +989,7 @@ struct FMovieSceneVectorKeyStruct final : public FMovieSceneVectorKeyStructBase
 {
 public:
 	struct FVector                                Vector;                                            // 0x0028(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_173B[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMovieSceneVectorKeyStruct) == 0x000008, "Wrong alignment on FMovieSceneVectorKeyStruct");
 static_assert(sizeof(FMovieSceneVectorKeyStruct) == 0x000038, "Wrong size on FMovieSceneVectorKeyStruct");

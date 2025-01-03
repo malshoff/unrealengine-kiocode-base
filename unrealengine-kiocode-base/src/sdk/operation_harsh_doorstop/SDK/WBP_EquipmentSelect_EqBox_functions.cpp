@@ -82,9 +82,9 @@ void UWBP_EquipmentSelect_EqBox_C::PreConstruct(bool IsDesignTime)
 // Function WBP_EquipmentSelect_EqBox.WBP_EquipmentSelect_EqBox_C.SetHighlight
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bHighlighted                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bHighlighted_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_EquipmentSelect_EqBox_C::SetHighlight(bool Param_bHighlighted)
+void UWBP_EquipmentSelect_EqBox_C::SetHighlight(bool bHighlighted_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -93,7 +93,7 @@ void UWBP_EquipmentSelect_EqBox_C::SetHighlight(bool Param_bHighlighted)
 
 	Params::WBP_EquipmentSelect_EqBox_C_SetHighlight Parms{};
 
-	Parms.Param_bHighlighted = Param_bHighlighted;
+	Parms.bHighlighted_0 = bHighlighted_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -123,9 +123,9 @@ void UWBP_EquipmentSelect_EqBox_C::IsHighlighted(bool* bHighlight)
 // Function WBP_EquipmentSelect_EqBox.WBP_EquipmentSelect_EqBox_C.SetEnabled
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bEnabled                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bEnabled_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_EquipmentSelect_EqBox_C::SetEnabled(bool Param_bEnabled)
+void UWBP_EquipmentSelect_EqBox_C::SetEnabled(bool bEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -134,7 +134,7 @@ void UWBP_EquipmentSelect_EqBox_C::SetEnabled(bool Param_bEnabled)
 
 	Params::WBP_EquipmentSelect_EqBox_C_SetEnabled Parms{};
 
-	Parms.Param_bEnabled = Param_bEnabled;
+	Parms.bEnabled_0 = bEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

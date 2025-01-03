@@ -25,10 +25,10 @@ class UTBButton final : public UButton
 {
 public:
 	FMulticastInlineDelegateProperty_             OnDoubleClicked;                                   // 0x0428(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1284[0x10];                                    // 0x0438(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         BitPad_4A : 2;                                     // 0x0448(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         Pad_438[0x10];                                     // 0x0438(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         BitPad_448_0 : 2;                                  // 0x0448(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
 	uint8                                         bStopDoubleClickPropagation : 1;                   // 0x0448(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_1285[0x17];                                    // 0x0449(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_449[0x17];                                     // 0x0449(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetIsFocusable(bool bInIsFocusable);

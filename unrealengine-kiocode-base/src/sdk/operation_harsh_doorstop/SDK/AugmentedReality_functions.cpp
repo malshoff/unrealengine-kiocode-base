@@ -1720,9 +1720,9 @@ void UARSessionConfig::SetSessionTrackingFeatureToEnable(EARSessionTrackingFeatu
 // Function AugmentedReality.ARSessionConfig.SetWorldMapData
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// TArray<uint8>                           Param_WorldMapData                                     (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<uint8>                           WorldMapData_0                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UARSessionConfig::SetWorldMapData(const TArray<uint8>& Param_WorldMapData)
+void UARSessionConfig::SetWorldMapData(const TArray<uint8>& WorldMapData_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1731,7 +1731,7 @@ void UARSessionConfig::SetWorldMapData(const TArray<uint8>& Param_WorldMapData)
 
 	Params::ARSessionConfig_SetWorldMapData Parms{};
 
-	Parms.Param_WorldMapData = std::move(Param_WorldMapData);
+	Parms.WorldMapData_0 = std::move(WorldMapData_0);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

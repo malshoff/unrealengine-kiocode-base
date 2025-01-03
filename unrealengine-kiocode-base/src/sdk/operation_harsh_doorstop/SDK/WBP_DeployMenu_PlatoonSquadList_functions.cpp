@@ -329,9 +329,9 @@ void UWBP_DeployMenu_PlatoonSquadList_C::HasAnySquads(bool* bValidSquadsPresent)
 // Function WBP_DeployMenu_PlatoonSquadList.WBP_DeployMenu_PlatoonSquadList_C.WasListCollapsedByUser
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_bCollapsedByUser                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bCollapsedByUser_0                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_DeployMenu_PlatoonSquadList_C::WasListCollapsedByUser(bool* Param_bCollapsedByUser)
+void UWBP_DeployMenu_PlatoonSquadList_C::WasListCollapsedByUser(bool* bCollapsedByUser_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -342,8 +342,8 @@ void UWBP_DeployMenu_PlatoonSquadList_C::WasListCollapsedByUser(bool* Param_bCol
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_bCollapsedByUser != nullptr)
-		*Param_bCollapsedByUser = Parms.Param_bCollapsedByUser;
+	if (bCollapsedByUser_0 != nullptr)
+		*bCollapsedByUser_0 = Parms.bCollapsedByUser_0;
 }
 
 

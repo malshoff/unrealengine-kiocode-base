@@ -20,7 +20,7 @@ struct WBP_MobilityStatusBar_C_ExecuteUbergraph_WBP_MobilityStatusBar final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F88[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_MobilityStatusBar_C_ExecuteUbergraph_WBP_MobilityStatusBar) == 0x000008, "Wrong alignment on WBP_MobilityStatusBar_C_ExecuteUbergraph_WBP_MobilityStatusBar");

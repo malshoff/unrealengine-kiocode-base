@@ -35,7 +35,7 @@ struct WBP_OptionsMenuItem_InputKeySelector_C_ExecuteUbergraph_WBP_OptionsMenuIt
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1BBD[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputChord                            K2Node_ComponentBoundEvent_SelectedKey;            // 0x0008(0x0020)(HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_OptionsMenuItem_InputKeySelector_C_ExecuteUbergraph_WBP_OptionsMenuItem_InputKeySelector) == 0x000008, "Wrong alignment on WBP_OptionsMenuItem_InputKeySelector_C_ExecuteUbergraph_WBP_OptionsMenuItem_InputKeySelector");
@@ -99,7 +99,7 @@ public:
 	struct FKey                                   NewKey;                                            // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	bool                                          bIsPlayerChangingKeyBindings;                      // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1BBE[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   CallFunc_GetSelectedKey_SelectedKey;               // 0x0028(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };

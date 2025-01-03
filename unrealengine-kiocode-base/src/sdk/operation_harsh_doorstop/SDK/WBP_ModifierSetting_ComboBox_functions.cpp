@@ -166,9 +166,9 @@ void UWBP_ModifierSetting_ComboBox_C::SetSettingText(const class FText& InSettin
 // Function WBP_ModifierSetting_ComboBox.WBP_ModifierSetting_ComboBox_C.GetSettingText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Param_SettingText                                      (Parm, OutParm)
+// class FText                             SettingText_0                                          (Parm, OutParm)
 
-void UWBP_ModifierSetting_ComboBox_C::GetSettingText(class FText* Param_SettingText)
+void UWBP_ModifierSetting_ComboBox_C::GetSettingText(class FText* SettingText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -179,8 +179,8 @@ void UWBP_ModifierSetting_ComboBox_C::GetSettingText(class FText* Param_SettingT
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_SettingText != nullptr)
-		*Param_SettingText = std::move(Parms.Param_SettingText);
+	if (SettingText_0 != nullptr)
+		*SettingText_0 = std::move(Parms.SettingText_0);
 }
 
 }

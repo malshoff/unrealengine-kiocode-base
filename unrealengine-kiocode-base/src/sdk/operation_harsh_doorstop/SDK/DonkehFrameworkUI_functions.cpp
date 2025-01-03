@@ -614,10 +614,10 @@ bool UDFMinimap::RemovePOI(class UDFPOIWidget* POIToRemove)
 // Function DonkehFrameworkUI.DFMinimap.RemovePOIAt
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UDFMinimap::RemovePOIAt(int32 Param_Index)
+bool UDFMinimap::RemovePOIAt(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -626,7 +626,7 @@ bool UDFMinimap::RemovePOIAt(int32 Param_Index)
 
 	Params::DFMinimap_RemovePOIAt Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -881,10 +881,10 @@ struct FVector2D UDFMinimap::GetMapSizeLocal() const
 // Function DonkehFrameworkUI.DFMinimap.GetPOIAt
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UDFPOIWidget*                     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UDFPOIWidget* UDFMinimap::GetPOIAt(int32 Param_Index) const
+class UDFPOIWidget* UDFMinimap::GetPOIAt(int32 Index_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -893,7 +893,7 @@ class UDFPOIWidget* UDFMinimap::GetPOIAt(int32 Param_Index) const
 
 	Params::DFMinimap_GetPOIAt Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

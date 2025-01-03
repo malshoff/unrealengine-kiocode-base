@@ -22,7 +22,7 @@ struct FFEntitlementDefinition final
 {
 public:
 	EEntitlementType                              AppType_9_59A34CB643EFB5B38A4B959FC285E1FF;        // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_198A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         AppID_5_6EE051BA41BB4AD74980F6A1D69E9ADC;          // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(FFEntitlementDefinition) == 0x000008, "Wrong alignment on FFEntitlementDefinition");

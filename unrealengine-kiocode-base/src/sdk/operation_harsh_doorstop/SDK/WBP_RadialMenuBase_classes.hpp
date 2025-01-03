@@ -29,42 +29,42 @@ public:
 	class UImage*                                 RadiusDebug;                                       // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               RootOverlay;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         Segments;                                          // 0x0250(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1E7F[0x4];                                     // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     MaterialBase;                                      // 0x0258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         IndexRaw;                                          // 0x0260(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Index_WBP_RadialMenuBase_C;                        // 0x0264(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0264(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               DynaMat;                                           // 0x0268(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UUserWidget*>                    Children;                                          // 0x0270(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash)
 	bool                                          AllowResizing;                                     // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E80[0x3];                                     // 0x0281(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_281[0x3];                                      // 0x0281(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ItemOffsetRadius;                                  // 0x0284(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             SelectionChanged;                                  // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class APlayerController*                      InputController;                                   // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EJoystickTypes                                JoystickToUse;                                     // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E81[0x3];                                     // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A1[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MouseDeadzone;                                     // 0x02A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInDeadzone;                                       // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E82[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             EnteredDeadzone;                                   // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             ExitedDeadzone;                                    // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FVector2D                              CurrentInput;                                      // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         JoystickDeadzone;                                  // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          DefaultToMouseIfNoJoystick;                        // 0x02DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E83[0x3];                                     // 0x02DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DD[0x3];                                      // 0x02DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         DefaultPlayerIndex;                                // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                          UseDeadzoneEvents;                                 // 0x02E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E84[0x3];                                     // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E5[0x3];                                      // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             SelectionChangedSound;                             // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          AutoCenterMouse;                                   // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay)
 	bool                                          AutoRotateForUp;                                   // 0x02F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bUseCustomInput;                                   // 0x02F2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E85[0x1];                                     // 0x02F3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F3[0x1];                                      // 0x02F3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CustomInput;                                       // 0x02F4(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseCustomTexture;                                  // 0x02FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E86[0x3];                                     // 0x02FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FD[0x3];                                      // 0x02FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture*                               RadialTexture;                                     // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          UseCustomColors;                                   // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E87[0x3];                                     // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_309[0x3];                                      // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           InnterRingColor;                                   // 0x030C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           OuterRingColor;                                    // 0x031C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           RingMainColor;                                     // 0x032C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,8 +77,8 @@ public:
 	void ExecuteUbergraph_WBP_RadialMenuBase(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void UpdateMaterials();
-	void InDeadzone(bool Param_InDeadzone);
-	void UpdateSegments(int32 Param_Segments);
+	void InDeadzone(bool InDeadzone_0);
+	void UpdateSegments(int32 Segments_0);
 	void Construct();
 	void SetInputDirection(const struct FVector2D& Direction);
 	float GetSectionDegreeSize();
@@ -86,11 +86,11 @@ public:
 	void AddChildToRadialMenu(class UUserWidget* Content, bool* Success);
 	void GetSelectedWidget(class UUserWidget** Output);
 	void ClearChildren();
-	void UpdateChildPosition(int32 Param_Index);
+	void UpdateChildPosition(int32 Index_0);
 	void UpdateAllChildrenPositions();
-	void SetIndex(int32 Param_Index);
-	void GetChild(int32 Param_Index, class UUserWidget** Output, bool* Success);
-	void GetCurrentIndex(int32* Param_Index, bool* Valid);
+	void SetIndex(int32 Index_0);
+	void GetChild(int32 Index_0, class UUserWidget** Output, bool* Success);
+	void GetCurrentIndex(int32* Index_0, bool* Valid);
 	void UpdateDirectionWithJoystick();
 	void RegisterPlayerInput(class APlayerController* Controller, bool* Success);
 	void UpdateInput();
@@ -101,7 +101,7 @@ public:
 	void RemoveChildWidgetFromRadialMenu(const class UUserWidget*& ItemToFind);
 	void RemoveChildIndexFromRadialMenu(int32 IndexToRemove);
 	void UpdateDirectionWithCustomInput();
-	void SetCustomInput(const struct FVector2D& Param_CustomInput);
+	void SetCustomInput(const struct FVector2D& CustomInput_0);
 	void GetCustomInput(struct FVector2D* Input, bool* Valid);
 	void UpdateMaterialVisuals();
 
@@ -124,7 +124,7 @@ static_assert(offsetof(UWBP_RadialMenuBase_C, RootOverlay) == 0x000248, "Member 
 static_assert(offsetof(UWBP_RadialMenuBase_C, Segments) == 0x000250, "Member 'UWBP_RadialMenuBase_C::Segments' has a wrong offset!");
 static_assert(offsetof(UWBP_RadialMenuBase_C, MaterialBase) == 0x000258, "Member 'UWBP_RadialMenuBase_C::MaterialBase' has a wrong offset!");
 static_assert(offsetof(UWBP_RadialMenuBase_C, IndexRaw) == 0x000260, "Member 'UWBP_RadialMenuBase_C::IndexRaw' has a wrong offset!");
-static_assert(offsetof(UWBP_RadialMenuBase_C, Index_WBP_RadialMenuBase_C) == 0x000264, "Member 'UWBP_RadialMenuBase_C::Index_WBP_RadialMenuBase_C' has a wrong offset!");
+static_assert(offsetof(UWBP_RadialMenuBase_C, Index_0) == 0x000264, "Member 'UWBP_RadialMenuBase_C::Index_0' has a wrong offset!");
 static_assert(offsetof(UWBP_RadialMenuBase_C, DynaMat) == 0x000268, "Member 'UWBP_RadialMenuBase_C::DynaMat' has a wrong offset!");
 static_assert(offsetof(UWBP_RadialMenuBase_C, Children) == 0x000270, "Member 'UWBP_RadialMenuBase_C::Children' has a wrong offset!");
 static_assert(offsetof(UWBP_RadialMenuBase_C, AllowResizing) == 0x000280, "Member 'UWBP_RadialMenuBase_C::AllowResizing' has a wrong offset!");

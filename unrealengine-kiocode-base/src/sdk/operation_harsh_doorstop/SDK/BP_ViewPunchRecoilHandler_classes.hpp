@@ -39,7 +39,7 @@ public:
 	float                                         RecoilRestitutionTime;                             // 0x0068(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEasingFunc                                   VerticalRecoilEasingMode;                          // 0x006C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEasingFunc                                   HorizontalRecoilEasingMode;                        // 0x006D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A0B[0x2];                                     // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6E[0x2];                                       // 0x006E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RecoilDT;                                          // 0x0070(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 
 public:

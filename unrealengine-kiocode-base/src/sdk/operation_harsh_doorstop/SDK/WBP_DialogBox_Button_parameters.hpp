@@ -35,7 +35,7 @@ struct WBP_DialogBox_Button_C_ExecuteUbergraph_WBP_DialogBox_Button final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D21[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0008(0x0018)()
 };
 static_assert(alignof(WBP_DialogBox_Button_C_ExecuteUbergraph_WBP_DialogBox_Button) == 0x000008, "Wrong alignment on WBP_DialogBox_Button_C_ExecuteUbergraph_WBP_DialogBox_Button");
@@ -73,9 +73,9 @@ struct WBP_DialogBox_Button_C_UpdateAppearance final
 public:
 	struct FSlateColor                            NewTint;                                           // 0x0000(0x0028)(Edit, BlueprintVisible)
 	bool                                          Temp_bool_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D22[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D23[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0040(0x0028)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0068(0x0088)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush_1;                    // 0x00F0(0x0088)()

@@ -22,12 +22,12 @@ namespace SDK::Params
 struct MagicLeapARPinComponent_GetPinData final
 {
 public:
-	TSubclassOf<class UMagicLeapARPinSaveGame>    Param_PinDataClass;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UMagicLeapARPinSaveGame>    PinDataClass_0;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UMagicLeapARPinSaveGame*                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(MagicLeapARPinComponent_GetPinData) == 0x000008, "Wrong alignment on MagicLeapARPinComponent_GetPinData");
 static_assert(sizeof(MagicLeapARPinComponent_GetPinData) == 0x000010, "Wrong size on MagicLeapARPinComponent_GetPinData");
-static_assert(offsetof(MagicLeapARPinComponent_GetPinData, Param_PinDataClass) == 0x000000, "Member 'MagicLeapARPinComponent_GetPinData::Param_PinDataClass' has a wrong offset!");
+static_assert(offsetof(MagicLeapARPinComponent_GetPinData, PinDataClass_0) == 0x000000, "Member 'MagicLeapARPinComponent_GetPinData::PinDataClass_0' has a wrong offset!");
 static_assert(offsetof(MagicLeapARPinComponent_GetPinData, ReturnValue) == 0x000008, "Member 'MagicLeapARPinComponent_GetPinData::ReturnValue' has a wrong offset!");
 
 // Function MagicLeapARPin.MagicLeapARPinComponent.GetPinnedPinID
@@ -37,7 +37,7 @@ struct MagicLeapARPinComponent_GetPinnedPinID final
 public:
 	struct FGuid                                  PinID;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1502[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinComponent_GetPinnedPinID) == 0x000004, "Wrong alignment on MagicLeapARPinComponent_GetPinnedPinID");
 static_assert(sizeof(MagicLeapARPinComponent_GetPinnedPinID) == 0x000014, "Wrong size on MagicLeapARPinComponent_GetPinnedPinID");
@@ -62,7 +62,7 @@ struct MagicLeapARPinComponent_PinActor final
 public:
 	class AActor*                                 ActorToPin;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1503[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinComponent_PinActor) == 0x000008, "Wrong alignment on MagicLeapARPinComponent_PinActor");
 static_assert(sizeof(MagicLeapARPinComponent_PinActor) == 0x000010, "Wrong size on MagicLeapARPinComponent_PinActor");
@@ -76,7 +76,7 @@ struct MagicLeapARPinComponent_PinSceneComponent final
 public:
 	class USceneComponent*                        ComponentToPin;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1504[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinComponent_PinSceneComponent) == 0x000008, "Wrong alignment on MagicLeapARPinComponent_PinSceneComponent");
 static_assert(sizeof(MagicLeapARPinComponent_PinSceneComponent) == 0x000010, "Wrong size on MagicLeapARPinComponent_PinSceneComponent");
@@ -90,7 +90,7 @@ struct MagicLeapARPinComponent_GetPinState final
 public:
 	struct FMagicLeapARPinState                   State;                                             // 0x0000(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1505[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinComponent_GetPinState) == 0x000004, "Wrong alignment on MagicLeapARPinComponent_GetPinState");
 static_assert(sizeof(MagicLeapARPinComponent_GetPinState) == 0x000014, "Wrong size on MagicLeapARPinComponent_GetPinState");
@@ -162,7 +162,7 @@ public:
 	struct FRotator                               Orientation;                                       // 0x001C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          PinFoundInEnvironment;                             // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0029(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1506[0x2];                                     // 0x002A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation");
 static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation) == 0x00002C, "Wrong size on MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation");
@@ -182,7 +182,7 @@ public:
 	struct FRotator                               Orientation;                                       // 0x001C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          PinFoundInEnvironment;                             // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0029(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1507[0x2];                                     // 0x002A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace");
 static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace) == 0x00002C, "Wrong size on MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace");
@@ -200,7 +200,7 @@ public:
 	struct FGuid                                  PinID;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMagicLeapARPinState                   State;                                             // 0x0010(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1508[0x3];                                     // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinFunctionLibrary_GetARPinState) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetARPinState");
 static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetARPinState) == 0x000024, "Wrong size on MagicLeapARPinFunctionLibrary_GetARPinState");
@@ -227,10 +227,10 @@ struct MagicLeapARPinFunctionLibrary_GetAvailableARPins final
 {
 public:
 	int32                                         NumRequested;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1509[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FGuid>                          Pins;                                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_150A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinFunctionLibrary_GetAvailableARPins) == 0x000008, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetAvailableARPins");
 static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetAvailableARPins) == 0x000020, "Wrong size on MagicLeapARPinFunctionLibrary_GetAvailableARPins");
@@ -246,7 +246,7 @@ public:
 	struct FVector                                SearchPoint;                                       // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                  PinID;                                             // 0x000C(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_150B[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinFunctionLibrary_GetClosestARPin) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetClosestARPin");
 static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetClosestARPin) == 0x000020, "Wrong size on MagicLeapARPinFunctionLibrary_GetClosestARPin");
@@ -261,7 +261,7 @@ struct MagicLeapARPinFunctionLibrary_GetNumAvailableARPins final
 public:
 	int32                                         Count;                                             // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMagicLeapPassableWorldError                  ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_150C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(MagicLeapARPinFunctionLibrary_GetNumAvailableARPins) == 0x000004, "Wrong alignment on MagicLeapARPinFunctionLibrary_GetNumAvailableARPins");
 static_assert(sizeof(MagicLeapARPinFunctionLibrary_GetNumAvailableARPins) == 0x000008, "Wrong size on MagicLeapARPinFunctionLibrary_GetNumAvailableARPins");

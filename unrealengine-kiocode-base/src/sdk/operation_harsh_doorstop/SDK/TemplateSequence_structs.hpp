@@ -24,7 +24,7 @@ struct FTemplateSequenceBindingOverrideData final
 public:
 	TWeakObjectPtr<class UObject>                 Object;                                            // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverridesDefault;                                 // 0x0008(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1521[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTemplateSequenceBindingOverrideData) == 0x000004, "Wrong alignment on FTemplateSequenceBindingOverrideData");
 static_assert(sizeof(FTemplateSequenceBindingOverrideData) == 0x00000C, "Wrong size on FTemplateSequenceBindingOverrideData");
@@ -37,7 +37,7 @@ struct FTemplateSequenceInstanceData final : public FMovieSceneSequenceInstanceD
 {
 public:
 	struct FMovieSceneEvaluationOperand           Operand;                                           // 0x0008(0x0014)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1522[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FTemplateSequenceInstanceData) == 0x000008, "Wrong alignment on FTemplateSequenceInstanceData");
 static_assert(sizeof(FTemplateSequenceInstanceData) == 0x000020, "Wrong size on FTemplateSequenceInstanceData");

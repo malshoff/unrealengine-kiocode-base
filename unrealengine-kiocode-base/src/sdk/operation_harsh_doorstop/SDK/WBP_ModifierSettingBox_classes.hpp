@@ -33,7 +33,7 @@ public:
 	void ExecuteUbergraph_WBP_ModifierSettingBox(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void SetSettingText(const class FText& InSettingText);
-	void GetSettingText(class FText* Param_SettingText);
+	void GetSettingText(class FText* SettingText_0);
 	void SetSettingTextStyle(struct FFModifierTextStyle& InSettingTextStyle);
 
 public:

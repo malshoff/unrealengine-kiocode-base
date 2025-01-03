@@ -28,19 +28,19 @@ public:
 	class UWBP_ModifierSetting_ComboBox_C*        FilterSetting;                                     // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   Text;                                              // 0x0240(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FHDFilterRuleParams                    RuleParams;                                        // 0x0258(0x0002)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1D3F[0x6];                                     // 0x025A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25A[0x6];                                      // 0x025A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Rule;                                              // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnDropdownSettingChanged;                          // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnDropdownSettingChanged__DelegateSignature(class UClass* Param_Rule, const struct FHDFilterRuleParams& Param_RuleParams);
+	void OnDropdownSettingChanged__DelegateSignature(class UClass* Rule_0, const struct FHDFilterRuleParams& RuleParams_0);
 	void ExecuteUbergraph_WBP_ServerListModifierSetting_FilterRule(int32 EntryPoint);
 	void BndEvt__FilterSetting_K2Node_ComponentBoundEvent_0_OnSelectionChanged__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
 	void PreConstruct(bool IsDesignTime);
 	void SetRuleParams(const struct FHDFilterRuleParams& NewParams);
 	void GetRuleParams(struct FHDFilterRuleParams* Params_0);
 
-	void GetFilterRulePair(class UClass** Param_Rule, struct FHDFilterRuleParams* Param_RuleParams) const;
+	void GetFilterRulePair(class UClass** Rule_0, struct FHDFilterRuleParams* RuleParams_0) const;
 	void IsFilterEnabled(bool* bActive) const;
 
 public:

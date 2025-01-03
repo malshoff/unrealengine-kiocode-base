@@ -24,7 +24,7 @@ class ULoadingScreenSettings final : public UDeveloperSettings
 {
 public:
 	uint8                                         bUseStartupScreen : 1;                             // 0x0038(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1283[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLoadingScreenDescription              StartupScreen;                                     // 0x0040(0x0038)(Edit, BlueprintVisible, BlueprintReadOnly, Config, NativeAccessSpecifierPublic)
 	struct FLoadingScreenDescription              DefaultScreen;                                     // 0x0078(0x0038)(Edit, BlueprintVisible, BlueprintReadOnly, Config, NativeAccessSpecifierPublic)
 

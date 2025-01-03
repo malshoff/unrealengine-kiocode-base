@@ -22,10 +22,10 @@ class UBPFL_DebugUtils_C final : public UBlueprintFunctionLibrary
 {
 public:
 	static void PrintProperty(const class FString& PropName, const class FString& Value, const struct FLinearColor& TextColor, class UObject* __WorldContext);
-	static void PrintStr(const class FString& Param_Name, const class FString& Value, const struct FLinearColor& TextColor, class UObject* __WorldContext);
-	static void PrintBool(const class FString& Param_Name, bool bInBool, const struct FLinearColor& TextColor, class UObject* __WorldContext);
-	static void PrintInt(const class FString& Param_Name, int32 InInteger, const struct FLinearColor& TextColor, class UObject* __WorldContext);
-	static void PrintFloat(const class FString& Param_Name, float InFloat, const struct FLinearColor& TextColor, class UObject* __WorldContext);
+	static void PrintStr(const class FString& Name_0, const class FString& Value, const struct FLinearColor& TextColor, class UObject* __WorldContext);
+	static void PrintBool(const class FString& Name_0, bool bInBool, const struct FLinearColor& TextColor, class UObject* __WorldContext);
+	static void PrintInt(const class FString& Name_0, int32 InInteger, const struct FLinearColor& TextColor, class UObject* __WorldContext);
+	static void PrintFloat(const class FString& Name_0, float InFloat, const struct FLinearColor& TextColor, class UObject* __WorldContext);
 
 public:
 	static class UClass* StaticClass()

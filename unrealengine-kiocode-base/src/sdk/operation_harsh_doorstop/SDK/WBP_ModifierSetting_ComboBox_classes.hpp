@@ -32,7 +32,7 @@ public:
 	struct FMargin                                SettingComboBoxPadding;                            // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	TArray<class FString>                         DefaultOptions;                                    // 0x02E8(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         DefaultSelectedOptionIdx;                          // 0x02F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1D8B[0x4];                                     // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FC[0x4];                                      // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSelectionChanged;                                // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnOpening;                                         // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
@@ -45,7 +45,7 @@ public:
 	void BndEvt__ModifierComboBox_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
 	void PreConstruct(bool IsDesignTime);
 	void SetSettingText(const class FText& InSettingText);
-	void GetSettingText(class FText* Param_SettingText);
+	void GetSettingText(class FText* SettingText_0);
 
 public:
 	static class UClass* StaticClass()

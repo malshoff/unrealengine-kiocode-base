@@ -51,9 +51,9 @@ public:
 	void BndEvt__NumericSpinBox_K2Node_ComponentBoundEvent_0_OnSpinBoxValueChangedEvent__DelegateSignature(float InValue);
 	void PreConstruct(bool IsDesignTime);
 	void SetSettingText(const class FText& InSettingText);
-	void GetSettingText(class FText* Param_SettingText);
+	void GetSettingText(class FText* SettingText_0);
 	void SetMagicValueText(const class FText& InMagicValueText);
-	void GetMagicValueText(class FText* Param_MagicValueText);
+	void GetMagicValueText(class FText* MagicValueText_0);
 	void SetValue(float InValue);
 	void GetValue(float* Value);
 	void SetValueSnapDelta(float InDelta);

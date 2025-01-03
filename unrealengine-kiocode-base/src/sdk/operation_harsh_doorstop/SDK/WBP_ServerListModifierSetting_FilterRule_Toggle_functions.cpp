@@ -20,10 +20,10 @@ namespace SDK
 // Function WBP_ServerListModifierSetting_FilterRule_Toggle.WBP_ServerListModifierSetting_FilterRule_Toggle_C.OnBoolSettingChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                           Param_Rule                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           Rule_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHDFilterRuleParams              RuleParams                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_ServerListModifierSetting_FilterRule_Toggle_C::OnBoolSettingChanged__DelegateSignature(class UClass* Param_Rule, const struct FHDFilterRuleParams& RuleParams)
+void UWBP_ServerListModifierSetting_FilterRule_Toggle_C::OnBoolSettingChanged__DelegateSignature(class UClass* Rule_0, const struct FHDFilterRuleParams& RuleParams)
 {
 	static class UFunction* Func = nullptr;
 
@@ -32,7 +32,7 @@ void UWBP_ServerListModifierSetting_FilterRule_Toggle_C::OnBoolSettingChanged__D
 
 	Params::WBP_ServerListModifierSetting_FilterRule_Toggle_C_OnBoolSettingChanged__DelegateSignature Parms{};
 
-	Parms.Param_Rule = Param_Rule;
+	Parms.Rule_0 = Rule_0;
 	Parms.RuleParams = std::move(RuleParams);
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -157,10 +157,10 @@ void UWBP_ServerListModifierSetting_FilterRule_Toggle_C::GetCheckedRuleParams(st
 // Function WBP_ServerListModifierSetting_FilterRule_Toggle.WBP_ServerListModifierSetting_FilterRule_Toggle_C.GetFilterRulePair
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UClass*                           Param_Rule                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           Rule_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHDFilterRuleParams              RuleParams                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_ServerListModifierSetting_FilterRule_Toggle_C::GetFilterRulePair(class UClass** Param_Rule, struct FHDFilterRuleParams* RuleParams) const
+void UWBP_ServerListModifierSetting_FilterRule_Toggle_C::GetFilterRulePair(class UClass** Rule_0, struct FHDFilterRuleParams* RuleParams) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -171,8 +171,8 @@ void UWBP_ServerListModifierSetting_FilterRule_Toggle_C::GetFilterRulePair(class
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Rule != nullptr)
-		*Param_Rule = Parms.Param_Rule;
+	if (Rule_0 != nullptr)
+		*Rule_0 = Parms.Rule_0;
 
 	if (RuleParams != nullptr)
 		*RuleParams = std::move(Parms.RuleParams);

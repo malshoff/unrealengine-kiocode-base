@@ -104,9 +104,9 @@ void UWBP_HUDElement_TextChat_InputHandler_C::InputTextEntered(const class FText
 // Function WBP_HUDElement_TextChat_InputHandler.WBP_HUDElement_TextChat_InputHandler_C.StopTalking
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// class UDFCommChannel*                   Param_CurrentChannel                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UDFCommChannel*                   CurrentChannel_0                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_HUDElement_TextChat_InputHandler_C::StopTalking(class UDFCommChannel* Param_CurrentChannel)
+void UWBP_HUDElement_TextChat_InputHandler_C::StopTalking(class UDFCommChannel* CurrentChannel_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -115,7 +115,7 @@ void UWBP_HUDElement_TextChat_InputHandler_C::StopTalking(class UDFCommChannel* 
 
 	Params::WBP_HUDElement_TextChat_InputHandler_C_StopTalking Parms{};
 
-	Parms.Param_CurrentChannel = Param_CurrentChannel;
+	Parms.CurrentChannel_0 = CurrentChannel_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

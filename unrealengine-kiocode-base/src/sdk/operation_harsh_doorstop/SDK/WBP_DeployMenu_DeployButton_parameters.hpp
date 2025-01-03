@@ -80,14 +80,14 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE2[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EE3[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AHDPlayerController*                    K2Node_DynamicCast_AsHDPlayer_Controller;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE4[0x7];                                     // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_GetUnFreezeTimerHandle_ReturnValue;       // 0x0060(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_IsTimerActiveHandle_ReturnValue;       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -96,11 +96,11 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x006E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE5[0x1];                                     // 0x006F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6F[0x1];                                       // 0x006F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FButtonStyle                           K2Node_Select_Default;                             // 0x0070(0x0278)(ConstParm)
 	int32                                         CallFunc_InternalGetSpawnTimeRemaining_SpawnSeconds; // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x02EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE6[0x3];                                     // 0x02ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2ED[0x3];                                      // 0x02ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_InternalGetSpawnTimeRemaining_SpawnSeconds_1; // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x02F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x02F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -161,15 +161,15 @@ struct WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState final
 public:
 	bool                                          bPlayerAlive;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bDeploymentQueued;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Param_bSpawnPointSelected;                         // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE7[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bSpawnPointSelected_0;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AHDPlayerController*                    K2Node_DynamicCast_AsHDPlayer_Controller;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE8[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_GetUnFreezeTimerHandle_ReturnValue;       // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_IsTimerActiveHandle_ReturnValue;       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE9[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_InternalGetSpawnTimeRemaining_SpawnSeconds; // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -181,7 +181,7 @@ static_assert(alignof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState) == 0x0
 static_assert(sizeof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState) == 0x000038, "Wrong size on WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState");
 static_assert(offsetof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState, bPlayerAlive) == 0x000000, "Member 'WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState::bPlayerAlive' has a wrong offset!");
 static_assert(offsetof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState, bDeploymentQueued) == 0x000001, "Member 'WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState::bDeploymentQueued' has a wrong offset!");
-static_assert(offsetof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState, Param_bSpawnPointSelected) == 0x000002, "Member 'WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState::Param_bSpawnPointSelected' has a wrong offset!");
+static_assert(offsetof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState, bSpawnPointSelected_0) == 0x000002, "Member 'WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState::bSpawnPointSelected_0' has a wrong offset!");
 static_assert(offsetof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState, K2Node_DynamicCast_AsHDPlayer_Controller) == 0x000010, "Member 'WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState::K2Node_DynamicCast_AsHDPlayer_Controller' has a wrong offset!");
 static_assert(offsetof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
@@ -199,22 +199,22 @@ static_assert(offsetof(WBP_DeployMenu_DeployButton_C_UpdateDeployBtnState, CallF
 struct WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText final
 {
 public:
-	bool                                          Param_bDeploying;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Param_bSpawnPointSelected;                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bDeploying_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bSpawnPointSelected_0;                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_2;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_3;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EEA[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_InternalGetSpawnTimeRemaining_SpawnSeconds; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EEB[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm, HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0060(0x0040)(HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A0(0x0018)()
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EEC[0x6];                                     // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BA[0x6];                                       // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x00C0(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0100(0x0010)(ReferenceParm, HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0110(0x0018)()
@@ -226,8 +226,8 @@ public:
 };
 static_assert(alignof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText) == 0x000008, "Wrong alignment on WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText");
 static_assert(sizeof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText) == 0x0001A0, "Wrong size on WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText");
-static_assert(offsetof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText, Param_bDeploying) == 0x000000, "Member 'WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText::Param_bDeploying' has a wrong offset!");
-static_assert(offsetof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText, Param_bSpawnPointSelected) == 0x000001, "Member 'WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText::Param_bSpawnPointSelected' has a wrong offset!");
+static_assert(offsetof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText, bDeploying_0) == 0x000000, "Member 'WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText::bDeploying_0' has a wrong offset!");
+static_assert(offsetof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText, bSpawnPointSelected_0) == 0x000001, "Member 'WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText::bSpawnPointSelected_0' has a wrong offset!");
 static_assert(offsetof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText, Temp_bool_Variable) == 0x000002, "Member 'WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText::Temp_bool_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText, Temp_bool_Variable_1) == 0x000003, "Member 'WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText::Temp_bool_Variable_1' has a wrong offset!");
 static_assert(offsetof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText, Temp_bool_Variable_2) == 0x000004, "Member 'WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText::Temp_bool_Variable_2' has a wrong offset!");
@@ -255,7 +255,7 @@ struct WBP_DeployMenu_DeployButton_C_InternalUpdateBtnStyle final
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EED[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FButtonStyle                           K2Node_Select_Default;                             // 0x0008(0x0278)(ConstParm)
 };
 static_assert(alignof(WBP_DeployMenu_DeployButton_C_InternalUpdateBtnStyle) == 0x000008, "Wrong alignment on WBP_DeployMenu_DeployButton_C_InternalUpdateBtnStyle");
@@ -270,11 +270,11 @@ struct WBP_DeployMenu_DeployButton_C_InternalGetSpawnTimeRemaining final
 {
 public:
 	int32                                         SpawnSeconds;                                      // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1EEE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AHDPlayerController*                    K2Node_DynamicCast_AsHDPlayer_Controller;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EEF[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_GetUnFreezeTimerHandle_ReturnValue;       // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_GetTimerRemainingTimeHandle_ReturnValue; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

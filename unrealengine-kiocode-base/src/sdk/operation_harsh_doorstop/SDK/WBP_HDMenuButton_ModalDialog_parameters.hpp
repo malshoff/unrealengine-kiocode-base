@@ -20,7 +20,7 @@ struct WBP_HDMenuButton_ModalDialog_C_ExecuteUbergraph_WBP_HDMenuButton_ModalDia
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2082[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Event_InText;                               // 0x0008(0x0018)(ConstParm)
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0020(0x0018)()
 };

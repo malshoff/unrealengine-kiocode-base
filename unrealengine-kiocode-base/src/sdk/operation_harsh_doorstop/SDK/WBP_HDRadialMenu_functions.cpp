@@ -182,9 +182,9 @@ void UWBP_HDRadialMenu_C::GetCategories(TArray<class FName>* Categories)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSHDRadialMenu_OptionData        Param_CategoryData                                     (Parm, OutParm, HasGetValueTypeHash)
+// struct FSHDRadialMenu_OptionData        CategoryData_0                                         (Parm, OutParm, HasGetValueTypeHash)
 
-void UWBP_HDRadialMenu_C::GetCategoryData(class FName Category, struct FSHDRadialMenu_OptionData* Param_CategoryData)
+void UWBP_HDRadialMenu_C::GetCategoryData(class FName Category, struct FSHDRadialMenu_OptionData* CategoryData_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -197,8 +197,8 @@ void UWBP_HDRadialMenu_C::GetCategoryData(class FName Category, struct FSHDRadia
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_CategoryData != nullptr)
-		*Param_CategoryData = std::move(Parms.Param_CategoryData);
+	if (CategoryData_0 != nullptr)
+		*CategoryData_0 = std::move(Parms.CategoryData_0);
 }
 
 

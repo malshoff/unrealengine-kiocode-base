@@ -142,9 +142,9 @@ void UWBP_GameModifierSettingsSection_C::SetTitleText(const class FText& InTitle
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.SetExpansionState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bExpanded                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bExpanded_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_GameModifierSettingsSection_C::SetExpansionState(bool Param_bExpanded)
+void UWBP_GameModifierSettingsSection_C::SetExpansionState(bool bExpanded_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -153,7 +153,7 @@ void UWBP_GameModifierSettingsSection_C::SetExpansionState(bool Param_bExpanded)
 
 	Params::WBP_GameModifierSettingsSection_C_SetExpansionState Parms{};
 
-	Parms.Param_bExpanded = Param_bExpanded;
+	Parms.bExpanded_0 = bExpanded_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -162,9 +162,9 @@ void UWBP_GameModifierSettingsSection_C::SetExpansionState(bool Param_bExpanded)
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.SetIsActive
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bActive                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bActive_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_GameModifierSettingsSection_C::SetIsActive(bool Param_bActive)
+void UWBP_GameModifierSettingsSection_C::SetIsActive(bool bActive_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -173,7 +173,7 @@ void UWBP_GameModifierSettingsSection_C::SetIsActive(bool Param_bActive)
 
 	Params::WBP_GameModifierSettingsSection_C_SetIsActive Parms{};
 
-	Parms.Param_bActive = Param_bActive;
+	Parms.bActive_0 = bActive_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -182,9 +182,9 @@ void UWBP_GameModifierSettingsSection_C::SetIsActive(bool Param_bActive)
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.GetTitleText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Param_TitleText                                        (Parm, OutParm)
+// class FText                             TitleText_0                                            (Parm, OutParm)
 
-void UWBP_GameModifierSettingsSection_C::GetTitleText(class FText* Param_TitleText)
+void UWBP_GameModifierSettingsSection_C::GetTitleText(class FText* TitleText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -195,17 +195,17 @@ void UWBP_GameModifierSettingsSection_C::GetTitleText(class FText* Param_TitleTe
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_TitleText != nullptr)
-		*Param_TitleText = std::move(Parms.Param_TitleText);
+	if (TitleText_0 != nullptr)
+		*TitleText_0 = std::move(Parms.TitleText_0);
 }
 
 
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.IsExpanded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_bExpanded                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bExpanded_0                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_GameModifierSettingsSection_C::IsExpanded(bool* Param_bExpanded)
+void UWBP_GameModifierSettingsSection_C::IsExpanded(bool* bExpanded_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -216,17 +216,17 @@ void UWBP_GameModifierSettingsSection_C::IsExpanded(bool* Param_bExpanded)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_bExpanded != nullptr)
-		*Param_bExpanded = Parms.Param_bExpanded;
+	if (bExpanded_0 != nullptr)
+		*bExpanded_0 = Parms.bExpanded_0;
 }
 
 
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.IsActive
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_bActive                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bActive_0                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_GameModifierSettingsSection_C::IsActive(bool* Param_bActive)
+void UWBP_GameModifierSettingsSection_C::IsActive(bool* bActive_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -237,8 +237,8 @@ void UWBP_GameModifierSettingsSection_C::IsActive(bool* Param_bActive)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_bActive != nullptr)
-		*Param_bActive = Parms.Param_bActive;
+	if (bActive_0 != nullptr)
+		*bActive_0 = Parms.bActive_0;
 }
 
 

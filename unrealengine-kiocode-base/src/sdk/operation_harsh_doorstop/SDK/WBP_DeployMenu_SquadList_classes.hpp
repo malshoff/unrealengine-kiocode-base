@@ -42,14 +42,14 @@ public:
 	class UButton*                                ToggleListVisibilityBtn;                           // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 ToggleListVisibilityImg;                           // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bExpanded;                                         // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2048[0x7];                                     // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E9[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   SquadTextFormat;                                   // 0x02F0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly)
 	bool                                          bExpandListInDesigner;                             // 0x0308(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2049[0x3];                                     // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_309[0x3];                                      // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         NumFakeSquadMemberItems;                           // 0x030C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                SquadMemberItemPadding;                            // 0x0310(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bCollapsedByUser;                                  // 0x0320(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_204A[0x7];                                     // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_321[0x7];                                      // 0x0321(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_DeployMenu_PlatoonSquadList_C*     ParentContainerWidget;                             // 0x0328(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FMargin                                OptionPadding;                                     // 0x0330(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -84,7 +84,7 @@ public:
 	void SetupSQOptions();
 	void HasAnySquadMembers(bool* bValidMembersPresent);
 	void UpdateLockUnlockBtnState();
-	void WasListCollapsedByUser(bool* Param_bCollapsedByUser);
+	void WasListCollapsedByUser(bool* bCollapsedByUser_0);
 	void KickSquadMember(class AHDPlayerState* MemberPSToKick);
 	void LockSquad();
 	void UnlockSquad();

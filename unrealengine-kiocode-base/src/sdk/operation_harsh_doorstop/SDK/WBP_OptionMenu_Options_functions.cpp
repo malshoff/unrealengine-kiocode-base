@@ -2736,9 +2736,9 @@ void UWBP_OptionMenu_Options_C::RefreshGameplayOptionUI()
 // Function WBP_OptionMenu_Options.WBP_OptionMenu_Options_C.IsDirty
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Param_bDirty                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bDirty_0                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_OptionMenu_Options_C::IsDirty(bool* Param_bDirty)
+void UWBP_OptionMenu_Options_C::IsDirty(bool* bDirty_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2749,8 +2749,8 @@ void UWBP_OptionMenu_Options_C::IsDirty(bool* Param_bDirty)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_bDirty != nullptr)
-		*Param_bDirty = Parms.Param_bDirty;
+	if (bDirty_0 != nullptr)
+		*bDirty_0 = Parms.bDirty_0;
 }
 
 

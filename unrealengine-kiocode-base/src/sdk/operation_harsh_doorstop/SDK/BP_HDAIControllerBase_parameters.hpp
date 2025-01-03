@@ -23,17 +23,17 @@ struct BP_HDAIControllerBase_C_ExecuteUbergraph_BP_HDAIControllerBase final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AAB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseCharacter*                       K2Node_CustomEvent_Character;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFBaseItem*                            K2Node_CustomEvent_NewEquippedItem;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFBaseItem*                            K2Node_CustomEvent_PrevEquippedItem;               // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_HDWeaponBase_C*                     K2Node_DynamicCast_AsBP_HDWeapon_Base;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AAC[0x6];                                     // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_HDWeaponBase_C*                     K2Node_DynamicCast_AsBP_HDWeapon_Base_1;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AAD[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseProjectile*                      K2Node_CustomEvent_OtherProjectile_1;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFBasePickup*                          K2Node_CustomEvent_Pickup_1;                       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFBaseProjectile*                      K2Node_CustomEvent_OtherProjectile;                // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,16 +42,16 @@ public:
 	class APawn*                                  K2Node_CustomEvent_VictimPawn;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AController*                            K2Node_CustomEvent_VictimController;               // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_KillingDamage;                  // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AAE[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           K2Node_CustomEvent_DamageEvent;                    // 0x0080(0x0010)(ConstParm)
 	class APawn*                                  K2Node_CustomEvent_InstigatingPawn;                // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_CustomEvent_DamageCauser;                   // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_HDPlayerCharacterBase_C*            K2Node_DynamicCast_AsBP_HDPlayer_Character_Base;   // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AAF[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_HDPlayerCharacterBase_C*            K2Node_DynamicCast_AsBP_HDPlayer_Character_Base_1; // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AB0[0x7];                                     // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_PossessedPawn;                        // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_HDPlayerCharacterBase_C*            K2Node_DynamicCast_AsBP_HDPlayer_Character_Base_2; // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -139,13 +139,13 @@ static_assert(offsetof(BP_HDAIControllerBase_C_ReceivePossess, PossessedPawn) ==
 struct BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange final
 {
 public:
-	class ADFBaseCharacter*                       Param_Character;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADFBaseCharacter*                       Character_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFBaseItem*                            NewEquippedItem;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFBaseItem*                            PrevEquippedItem;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange) == 0x000008, "Wrong alignment on BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange");
 static_assert(sizeof(BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange) == 0x000018, "Wrong size on BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange");
-static_assert(offsetof(BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange, Param_Character) == 0x000000, "Member 'BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange::Param_Character' has a wrong offset!");
+static_assert(offsetof(BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange, Character_0) == 0x000000, "Member 'BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange::Character_0' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange, NewEquippedItem) == 0x000008, "Member 'BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange::NewEquippedItem' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange, PrevEquippedItem) == 0x000010, "Member 'BP_HDAIControllerBase_C_OnOwnerPawnEquippedItemChange::PrevEquippedItem' has a wrong offset!");
 
@@ -157,7 +157,7 @@ public:
 	class APawn*                                  VictimPawn;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AController*                            VictimController;                                  // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         KillingDamage;                                     // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AB1[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0018(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	class APawn*                                  InstigatingPawn;                                   // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 DamageCauser;                                      // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -191,7 +191,7 @@ static_assert(offsetof(BP_HDAIControllerBase_C_WarnOfNoRecoilHandler, CallFunc_C
 struct BP_HDAIControllerBase_C_BindEventsToCharacter final
 {
 public:
-	class ABP_HDPlayerCharacterBase_C*            Param_Character;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_HDPlayerCharacterBase_C*            Character_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class ADFBaseCharacter* Character, class ADFBaseItem* NewEquippedItem, class ADFBaseItem* PrevEquippedItem)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class ADFBaseProjectile* OtherProjectile, class ADFBasePickup* Pickup)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class ADFBaseProjectile* OtherProjectile, class ADFBasePickup* Pickup)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
@@ -199,7 +199,7 @@ public:
 };
 static_assert(alignof(BP_HDAIControllerBase_C_BindEventsToCharacter) == 0x000008, "Wrong alignment on BP_HDAIControllerBase_C_BindEventsToCharacter");
 static_assert(sizeof(BP_HDAIControllerBase_C_BindEventsToCharacter) == 0x000048, "Wrong size on BP_HDAIControllerBase_C_BindEventsToCharacter");
-static_assert(offsetof(BP_HDAIControllerBase_C_BindEventsToCharacter, Param_Character) == 0x000000, "Member 'BP_HDAIControllerBase_C_BindEventsToCharacter::Param_Character' has a wrong offset!");
+static_assert(offsetof(BP_HDAIControllerBase_C_BindEventsToCharacter, Character_0) == 0x000000, "Member 'BP_HDAIControllerBase_C_BindEventsToCharacter::Character_0' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_BindEventsToCharacter, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_HDAIControllerBase_C_BindEventsToCharacter::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_BindEventsToCharacter, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'BP_HDAIControllerBase_C_BindEventsToCharacter::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_BindEventsToCharacter, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'BP_HDAIControllerBase_C_BindEventsToCharacter::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
@@ -210,7 +210,7 @@ static_assert(offsetof(BP_HDAIControllerBase_C_BindEventsToCharacter, K2Node_Cre
 struct BP_HDAIControllerBase_C_UnbindEventsFromCharacter final
 {
 public:
-	class ABP_HDPlayerCharacterBase_C*            Param_Character;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_HDPlayerCharacterBase_C*            Character_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class APawn* VictimPawn, class AController* VictimController, float KillingDamage, struct FDamageEvent& DamageEvent, class APawn* InstigatingPawn, class AActor* DamageCauser)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class ADFBaseCharacter* Character, class ADFBaseItem* NewEquippedItem, class ADFBaseItem* PrevEquippedItem)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(class ADFBaseProjectile* OtherProjectile, class ADFBasePickup* Pickup)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
@@ -218,7 +218,7 @@ public:
 };
 static_assert(alignof(BP_HDAIControllerBase_C_UnbindEventsFromCharacter) == 0x000008, "Wrong alignment on BP_HDAIControllerBase_C_UnbindEventsFromCharacter");
 static_assert(sizeof(BP_HDAIControllerBase_C_UnbindEventsFromCharacter) == 0x000048, "Wrong size on BP_HDAIControllerBase_C_UnbindEventsFromCharacter");
-static_assert(offsetof(BP_HDAIControllerBase_C_UnbindEventsFromCharacter, Param_Character) == 0x000000, "Member 'BP_HDAIControllerBase_C_UnbindEventsFromCharacter::Param_Character' has a wrong offset!");
+static_assert(offsetof(BP_HDAIControllerBase_C_UnbindEventsFromCharacter, Character_0) == 0x000000, "Member 'BP_HDAIControllerBase_C_UnbindEventsFromCharacter::Character_0' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_UnbindEventsFromCharacter, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_HDAIControllerBase_C_UnbindEventsFromCharacter::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_UnbindEventsFromCharacter, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'BP_HDAIControllerBase_C_UnbindEventsFromCharacter::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_UnbindEventsFromCharacter, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'BP_HDAIControllerBase_C_UnbindEventsFromCharacter::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
@@ -229,14 +229,14 @@ static_assert(offsetof(BP_HDAIControllerBase_C_UnbindEventsFromCharacter, K2Node
 struct BP_HDAIControllerBase_C_CharacterCleanup final
 {
 public:
-	class ABP_HDPlayerCharacterBase_C*            Param_Character;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_HDPlayerCharacterBase_C*            Character_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFBaseItem*                            CallFunc_GetEquippedItem_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_HDWeaponBase_C*                     K2Node_DynamicCast_AsBP_HDWeapon_Base;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(BP_HDAIControllerBase_C_CharacterCleanup) == 0x000008, "Wrong alignment on BP_HDAIControllerBase_C_CharacterCleanup");
 static_assert(sizeof(BP_HDAIControllerBase_C_CharacterCleanup) == 0x000020, "Wrong size on BP_HDAIControllerBase_C_CharacterCleanup");
-static_assert(offsetof(BP_HDAIControllerBase_C_CharacterCleanup, Param_Character) == 0x000000, "Member 'BP_HDAIControllerBase_C_CharacterCleanup::Param_Character' has a wrong offset!");
+static_assert(offsetof(BP_HDAIControllerBase_C_CharacterCleanup, Character_0) == 0x000000, "Member 'BP_HDAIControllerBase_C_CharacterCleanup::Character_0' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_CharacterCleanup, CallFunc_GetEquippedItem_ReturnValue) == 0x000008, "Member 'BP_HDAIControllerBase_C_CharacterCleanup::CallFunc_GetEquippedItem_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_CharacterCleanup, K2Node_DynamicCast_AsBP_HDWeapon_Base) == 0x000010, "Member 'BP_HDAIControllerBase_C_CharacterCleanup::K2Node_DynamicCast_AsBP_HDWeapon_Base' has a wrong offset!");
 static_assert(offsetof(BP_HDAIControllerBase_C_CharacterCleanup, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_HDAIControllerBase_C_CharacterCleanup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
@@ -335,16 +335,16 @@ public:
 	class UDataTable*                             VocalProfiles;                                     // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                           CallFunc_GetDataTableRowNames_OutRowNames;         // 0x0008(0x0010)(ReferenceParm, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AB2[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_RandomInteger_ReturnValue;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Array_Get_Item;                           // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AB3[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAICharacterVocalProfile               CallFunc_GetDataTableRowFromName_OutRow;           // 0x0030(0x0068)()
 	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         CallFunc_GetTeamNum_ReturnValue;                   // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AB4[0x5];                                     // 0x009B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9B[0x5];                                       // 0x009B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_GetHDFactionInfoForTeam_HDFactionInfoClass; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                             K2Node_DynamicCast_AsData_Table;                   // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -377,7 +377,7 @@ public:
 	class UHDKit*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetTeamNum_ReturnValue;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AB5[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_GetHDFactionInfoForTeam_HDFactionInfoClass; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHDKit*                                 K2Node_DynamicCast_AsHD_Kit;                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -401,7 +401,7 @@ public:
 	class UHDKit*                                 ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetTeamNum_ReturnValue;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AB6[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 CallFunc_GetHDFactionInfoForTeam_HDFactionInfoClass; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHDKit*                                 K2Node_DynamicCast_AsHD_Kit;                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

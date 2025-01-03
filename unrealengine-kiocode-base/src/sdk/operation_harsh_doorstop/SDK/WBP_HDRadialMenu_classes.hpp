@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "SRadialMenuIconSettings_structs.hpp"
 #include "SHDRadialMenu_OptionData_structs.hpp"
-#include "Engine_structs.hpp"
 #include "WBP_HDRadialMenuBase_classes.hpp"
 
 
@@ -36,10 +36,10 @@ public:
 	class FName                                   SelectedMenuOption;                                // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSHDRadialMenu_OptionData              CategoryData;                                      // 0x02C8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          bPickingItem;                                      // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9D[0x7];                                     // 0x02F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F1[0x7];                                      // 0x02F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSHDRadialMenu_OptionData              SelectedItemData;                                  // 0x02F8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	int32                                         SelectedIndex;                                     // 0x0320(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E9E[0x4];                                     // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             CategorySelectSound;                               // 0x0328(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             GoBackSound;                                       // 0x0330(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSRadialMenuIconSettings               IconStyle;                                         // 0x0338(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -60,7 +60,7 @@ public:
 	void BndEvt__categoryRing_K2Node_ComponentBoundEvent_1_SelectionChanged__DelegateSignature(int32 NewSelection, int32 OldSelection);
 	class FText GetCategoryName();
 	void GetCategories(TArray<class FName>* Categories);
-	void GetCategoryData(class FName Category, struct FSHDRadialMenu_OptionData* Param_CategoryData);
+	void GetCategoryData(class FName Category, struct FSHDRadialMenu_OptionData* CategoryData_0);
 	void GetItemNamesForSelectedOption(TArray<class FName>* OutRowNames);
 	void GetItemData(class FName RowName, struct FSHDRadialMenu_OptionData* ItemData);
 	void PopulateMenuOptions(class UDataTable* MenuOptions);

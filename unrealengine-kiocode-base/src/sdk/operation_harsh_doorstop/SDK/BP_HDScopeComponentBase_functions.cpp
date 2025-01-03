@@ -295,11 +295,11 @@ void UBP_HDScopeComponentBase_C::AimOut()
 // class ABP_HDWeaponBase_C*               Parent                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USkeletalMeshComponent*           CharacterMesh                                          (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMeshComponent*                   WeaponMesh                                             (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UBP_HDScopeComponentBase_C*>Param_ParentSightList                                  (Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
+// TArray<class UBP_HDScopeComponentBase_C*>ParentSightList_0                                      (Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
 // TArray<class UMaterialInstanceDynamic*> FirstPersonMatArray                                    (Parm, OutParm, HasGetValueTypeHash)
 // TArray<class UMaterialInstanceDynamic*> ThirdPersonMatArray                                    (Parm, OutParm, HasGetValueTypeHash)
 
-void UBP_HDScopeComponentBase_C::GetData(class ABP_HDPlayerCharacterBase_C** Character, class AHDPlayerController** Controller, class UDFCharacterMovementComponent** Movement, class ADFPlayerCameraManager** Camera, class ABP_HDWeaponBase_C** Parent, class USkeletalMeshComponent** CharacterMesh, class UMeshComponent** WeaponMesh, TArray<class UBP_HDScopeComponentBase_C*>* Param_ParentSightList, TArray<class UMaterialInstanceDynamic*>* FirstPersonMatArray, TArray<class UMaterialInstanceDynamic*>* ThirdPersonMatArray)
+void UBP_HDScopeComponentBase_C::GetData(class ABP_HDPlayerCharacterBase_C** Character, class AHDPlayerController** Controller, class UDFCharacterMovementComponent** Movement, class ADFPlayerCameraManager** Camera, class ABP_HDWeaponBase_C** Parent, class USkeletalMeshComponent** CharacterMesh, class UMeshComponent** WeaponMesh, TArray<class UBP_HDScopeComponentBase_C*>* ParentSightList_0, TArray<class UMaterialInstanceDynamic*>* FirstPersonMatArray, TArray<class UMaterialInstanceDynamic*>* ThirdPersonMatArray)
 {
 	static class UFunction* Func = nullptr;
 
@@ -331,8 +331,8 @@ void UBP_HDScopeComponentBase_C::GetData(class ABP_HDPlayerCharacterBase_C** Cha
 	if (WeaponMesh != nullptr)
 		*WeaponMesh = Parms.WeaponMesh;
 
-	if (Param_ParentSightList != nullptr)
-		*Param_ParentSightList = std::move(Parms.Param_ParentSightList);
+	if (ParentSightList_0 != nullptr)
+		*ParentSightList_0 = std::move(Parms.ParentSightList_0);
 
 	if (FirstPersonMatArray != nullptr)
 		*FirstPersonMatArray = std::move(Parms.FirstPersonMatArray);
@@ -345,9 +345,9 @@ void UBP_HDScopeComponentBase_C::GetData(class ABP_HDPlayerCharacterBase_C** Cha
 // Function BP_HDScopeComponentBase.BP_HDScopeComponentBase_C.CanScope
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_CanScope                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    CanScope_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_HDScopeComponentBase_C::CanScope(bool* Param_CanScope)
+void UBP_HDScopeComponentBase_C::CanScope(bool* CanScope_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -358,8 +358,8 @@ void UBP_HDScopeComponentBase_C::CanScope(bool* Param_CanScope)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_CanScope != nullptr)
-		*Param_CanScope = Parms.Param_CanScope;
+	if (CanScope_0 != nullptr)
+		*CanScope_0 = Parms.CanScope_0;
 }
 
 

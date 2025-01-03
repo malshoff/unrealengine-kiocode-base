@@ -28,10 +28,10 @@ public:
 	bool                                          bDebug;                                            // 0x0360(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bDebugFlagClothLOD;                                // 0x0361(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bOnlyShowDebugIfActive;                            // 0x0362(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F2F[0x5];                                     // 0x0363(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_363[0x5];                                      // 0x0363(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFMinimap*                             Minimap;                                           // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bShowIconWidget;                                   // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F30[0x7];                                     // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnCaptureStatusUpdated;                            // 0x0378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class AHDPlayerController*                    LocalPC;                                           // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNavigationInvokerComponent*            NavInvoker;                                        // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,14 +44,14 @@ public:
 	void ReceiveBeginPlay();
 	void ReceiveOnLocked(bool bNewLocked);
 	void ReceiveOnActive(bool bNewActive);
-	void OnCaptureUpdate(bool Param_bContested, int32 Progress);
+	void OnCaptureUpdate(bool bContested_0, int32 Progress);
 	void ReceiveOnCaptureProgress(bool bNewContested);
 	void ReceiveOnOwningTeamUpdated(EHDTeam LastOwningTeam);
 	void ReceiveTick(float DeltaSeconds);
 	void UserConstructionScript();
 	void UpdateFlagColor(EHDTeam InOwningTeam);
 	void UpdateFlagIcon(EHDTeam InOwningTeam, class AHUD* InLocalPlayerHUD);
-	void InitPOI(class UDFMinimap* Param_Minimap);
+	void InitPOI(class UDFMinimap* Minimap_0);
 	void UpdatePOIState();
 	void RemovePOI();
 	void AddPOI();

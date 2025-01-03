@@ -48,13 +48,13 @@ struct WBP_ModifierSetting_Numeric_C_ExecuteUbergraph_WBP_ModifierSetting_Numeri
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D85[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D86[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0028(0x0018)()
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D87[0x3];                                     // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_ComponentBoundEvent_InValue_1;              // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_ComponentBoundEvent_InValue;                // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETextCommit                                   K2Node_ComponentBoundEvent_CommitMethod;           // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -122,11 +122,11 @@ static_assert(offsetof(WBP_ModifierSetting_Numeric_C_SetSettingText, InSettingTe
 struct WBP_ModifierSetting_Numeric_C_GetSettingText final
 {
 public:
-	class FText                                   Param_SettingText;                                 // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   SettingText_0;                                     // 0x0000(0x0018)(Parm, OutParm)
 };
 static_assert(alignof(WBP_ModifierSetting_Numeric_C_GetSettingText) == 0x000008, "Wrong alignment on WBP_ModifierSetting_Numeric_C_GetSettingText");
 static_assert(sizeof(WBP_ModifierSetting_Numeric_C_GetSettingText) == 0x000018, "Wrong size on WBP_ModifierSetting_Numeric_C_GetSettingText");
-static_assert(offsetof(WBP_ModifierSetting_Numeric_C_GetSettingText, Param_SettingText) == 0x000000, "Member 'WBP_ModifierSetting_Numeric_C_GetSettingText::Param_SettingText' has a wrong offset!");
+static_assert(offsetof(WBP_ModifierSetting_Numeric_C_GetSettingText, SettingText_0) == 0x000000, "Member 'WBP_ModifierSetting_Numeric_C_GetSettingText::SettingText_0' has a wrong offset!");
 
 // Function WBP_ModifierSetting_Numeric.WBP_ModifierSetting_Numeric_C.SetMagicValueText
 // 0x0018 (0x0018 - 0x0000)
@@ -144,11 +144,11 @@ static_assert(offsetof(WBP_ModifierSetting_Numeric_C_SetMagicValueText, InMagicV
 struct WBP_ModifierSetting_Numeric_C_GetMagicValueText final
 {
 public:
-	class FText                                   Param_MagicValueText;                              // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   MagicValueText_0;                                  // 0x0000(0x0018)(Parm, OutParm)
 };
 static_assert(alignof(WBP_ModifierSetting_Numeric_C_GetMagicValueText) == 0x000008, "Wrong alignment on WBP_ModifierSetting_Numeric_C_GetMagicValueText");
 static_assert(sizeof(WBP_ModifierSetting_Numeric_C_GetMagicValueText) == 0x000018, "Wrong size on WBP_ModifierSetting_Numeric_C_GetMagicValueText");
-static_assert(offsetof(WBP_ModifierSetting_Numeric_C_GetMagicValueText, Param_MagicValueText) == 0x000000, "Member 'WBP_ModifierSetting_Numeric_C_GetMagicValueText::Param_MagicValueText' has a wrong offset!");
+static_assert(offsetof(WBP_ModifierSetting_Numeric_C_GetMagicValueText, MagicValueText_0) == 0x000000, "Member 'WBP_ModifierSetting_Numeric_C_GetMagicValueText::MagicValueText_0' has a wrong offset!");
 
 // Function WBP_ModifierSetting_Numeric.WBP_ModifierSetting_Numeric_C.SetValue
 // 0x0004 (0x0004 - 0x0000)
@@ -211,14 +211,14 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D88[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	bool                                          Temp_bool_Variable_2;                              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D89[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetValue_ReturnValue;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Map_Find_Value;                           // 0x0028(0x0018)()
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D8A[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0048(0x0018)()
 	struct FSlateColor                            K2Node_Select_Default_1;                           // 0x0060(0x0028)()
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

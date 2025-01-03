@@ -29,7 +29,7 @@ public:
 	class UWBP_TextChat_MsgPrefix_C*              MsgPrefix;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHDTextChatMsgInfo*                     ChatMsg;                                           // 0x0250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MsgLifeTime;                                       // 0x0258(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2073[0x4];                                     // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            EnemyMsgColor;                                     // 0x0260(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FSlateColor                            FriendlyMsgColor;                                  // 0x0288(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly)
 

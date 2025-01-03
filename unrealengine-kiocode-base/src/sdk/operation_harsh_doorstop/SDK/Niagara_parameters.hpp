@@ -26,7 +26,7 @@ public:
 	class UNiagaraComponent*                      PreviewComponent;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PreviewIndex;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsXAxis;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1496[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 OutLabelText;                                      // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NiagaraPreviewAxis_ApplyToPreview) == 0x000008, "Wrong alignment on NiagaraPreviewAxis_ApplyToPreview");
@@ -100,12 +100,12 @@ static_assert(offsetof(NiagaraComponent_AdvanceSimulationByTime, TickDeltaSecond
 struct NiagaraComponent_GetDataInterface final
 {
 public:
-	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UNiagaraDataInterface*                  ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NiagaraComponent_GetDataInterface) == 0x000008, "Wrong alignment on NiagaraComponent_GetDataInterface");
 static_assert(sizeof(NiagaraComponent_GetDataInterface) == 0x000018, "Wrong size on NiagaraComponent_GetDataInterface");
-static_assert(offsetof(NiagaraComponent_GetDataInterface, Param_Name) == 0x000000, "Member 'NiagaraComponent_GetDataInterface::Param_Name' has a wrong offset!");
+static_assert(offsetof(NiagaraComponent_GetDataInterface, Name_0) == 0x000000, "Member 'NiagaraComponent_GetDataInterface::Name_0' has a wrong offset!");
 static_assert(offsetof(NiagaraComponent_GetDataInterface, ReturnValue) == 0x000010, "Member 'NiagaraComponent_GetDataInterface::ReturnValue' has a wrong offset!");
 
 // Function Niagara.NiagaraComponent.GetNiagaraParticlePositions_DebugOnly
@@ -270,7 +270,7 @@ struct NiagaraComponent_SetNiagaraVariableBool final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InValue;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14A2[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraComponent_SetNiagaraVariableBool) == 0x000008, "Wrong alignment on NiagaraComponent_SetNiagaraVariableBool");
 static_assert(sizeof(NiagaraComponent_SetNiagaraVariableBool) == 0x000018, "Wrong size on NiagaraComponent_SetNiagaraVariableBool");
@@ -284,7 +284,7 @@ struct NiagaraComponent_SetNiagaraVariableFloat final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InValue;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14A3[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraComponent_SetNiagaraVariableFloat) == 0x000008, "Wrong alignment on NiagaraComponent_SetNiagaraVariableFloat");
 static_assert(sizeof(NiagaraComponent_SetNiagaraVariableFloat) == 0x000018, "Wrong size on NiagaraComponent_SetNiagaraVariableFloat");
@@ -298,7 +298,7 @@ struct NiagaraComponent_SetNiagaraVariableInt final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InValue;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14A4[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraComponent_SetNiagaraVariableInt) == 0x000008, "Wrong alignment on NiagaraComponent_SetNiagaraVariableInt");
 static_assert(sizeof(NiagaraComponent_SetNiagaraVariableInt) == 0x000018, "Wrong size on NiagaraComponent_SetNiagaraVariableInt");
@@ -364,7 +364,7 @@ struct NiagaraComponent_SetNiagaraVariableVec3 final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                InValue;                                           // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14A5[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraComponent_SetNiagaraVariableVec3) == 0x000008, "Wrong alignment on NiagaraComponent_SetNiagaraVariableVec3");
 static_assert(sizeof(NiagaraComponent_SetNiagaraVariableVec3) == 0x000020, "Wrong size on NiagaraComponent_SetNiagaraVariableVec3");
@@ -401,7 +401,7 @@ struct NiagaraComponent_SetPreviewLODDistance final
 {
 public:
 	bool                                          bEnablePreviewLODDistance;                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14A6[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PreviewLODDistance;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NiagaraComponent_SetPreviewLODDistance) == 0x000004, "Wrong alignment on NiagaraComponent_SetPreviewLODDistance");
@@ -451,7 +451,7 @@ struct NiagaraComponent_SetVariableBool final
 public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InValue;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14A7[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraComponent_SetVariableBool) == 0x000004, "Wrong alignment on NiagaraComponent_SetVariableBool");
 static_assert(sizeof(NiagaraComponent_SetVariableBool) == 0x00000C, "Wrong size on NiagaraComponent_SetVariableBool");
@@ -529,7 +529,7 @@ struct NiagaraComponent_SetVariableQuat final
 {
 public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14A8[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FQuat                                  InValue;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NiagaraComponent_SetVariableQuat) == 0x000010, "Wrong alignment on NiagaraComponent_SetVariableQuat");
@@ -569,7 +569,7 @@ struct NiagaraComponent_SetVariableVec4 final
 {
 public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14A9[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector4                               InValue;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NiagaraComponent_SetVariableVec4) == 0x000010, "Wrong alignment on NiagaraComponent_SetVariableVec4");
@@ -699,7 +699,7 @@ public:
 	int32                                         TilesX;                                            // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TilesY;                                            // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14B2[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D) == 0x000008, "Wrong alignment on NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D");
 static_assert(sizeof(NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D) == 0x000020, "Wrong size on NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D");
@@ -718,7 +718,7 @@ public:
 	class UTextureRenderTarget2D*                 Dest;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AttributeIndex;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14B3[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraDataInterfaceGrid2DCollection_FillTexture2D) == 0x000008, "Wrong alignment on NiagaraDataInterfaceGrid2DCollection_FillTexture2D");
 static_assert(sizeof(NiagaraDataInterfaceGrid2DCollection_FillTexture2D) == 0x000018, "Wrong size on NiagaraDataInterfaceGrid2DCollection_FillTexture2D");
@@ -891,7 +891,7 @@ public:
 	bool                                          bAutoActivate;                                     // 0x0032(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENCPoolMethod                                 PoolingMethod;                                     // 0x0033(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPreCullCheck;                                     // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14C4[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      ReturnValue;                                       // 0x0038(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NiagaraFunctionLibrary_SpawnSystemAttached) == 0x000008, "Wrong alignment on NiagaraFunctionLibrary_SpawnSystemAttached");
@@ -915,7 +915,7 @@ struct NiagaraParameterCollectionInstance_GetBoolParameter final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14CE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraParameterCollectionInstance_GetBoolParameter) == 0x000008, "Wrong alignment on NiagaraParameterCollectionInstance_GetBoolParameter");
 static_assert(sizeof(NiagaraParameterCollectionInstance_GetBoolParameter) == 0x000018, "Wrong size on NiagaraParameterCollectionInstance_GetBoolParameter");
@@ -942,7 +942,7 @@ struct NiagaraParameterCollectionInstance_GetFloatParameter final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14CF[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraParameterCollectionInstance_GetFloatParameter) == 0x000008, "Wrong alignment on NiagaraParameterCollectionInstance_GetFloatParameter");
 static_assert(sizeof(NiagaraParameterCollectionInstance_GetFloatParameter) == 0x000018, "Wrong size on NiagaraParameterCollectionInstance_GetFloatParameter");
@@ -956,7 +956,7 @@ struct NiagaraParameterCollectionInstance_GetIntParameter final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14D0[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraParameterCollectionInstance_GetIntParameter) == 0x000008, "Wrong alignment on NiagaraParameterCollectionInstance_GetIntParameter");
 static_assert(sizeof(NiagaraParameterCollectionInstance_GetIntParameter) == 0x000018, "Wrong size on NiagaraParameterCollectionInstance_GetIntParameter");
@@ -1009,7 +1009,7 @@ struct NiagaraParameterCollectionInstance_GetVectorParameter final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14D1[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraParameterCollectionInstance_GetVectorParameter) == 0x000008, "Wrong alignment on NiagaraParameterCollectionInstance_GetVectorParameter");
 static_assert(sizeof(NiagaraParameterCollectionInstance_GetVectorParameter) == 0x000020, "Wrong size on NiagaraParameterCollectionInstance_GetVectorParameter");
@@ -1023,7 +1023,7 @@ struct NiagaraParameterCollectionInstance_SetBoolParameter final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InValue;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14D2[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraParameterCollectionInstance_SetBoolParameter) == 0x000008, "Wrong alignment on NiagaraParameterCollectionInstance_SetBoolParameter");
 static_assert(sizeof(NiagaraParameterCollectionInstance_SetBoolParameter) == 0x000018, "Wrong size on NiagaraParameterCollectionInstance_SetBoolParameter");
@@ -1050,7 +1050,7 @@ struct NiagaraParameterCollectionInstance_SetFloatParameter final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         InValue;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14D3[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraParameterCollectionInstance_SetFloatParameter) == 0x000008, "Wrong alignment on NiagaraParameterCollectionInstance_SetFloatParameter");
 static_assert(sizeof(NiagaraParameterCollectionInstance_SetFloatParameter) == 0x000018, "Wrong size on NiagaraParameterCollectionInstance_SetFloatParameter");
@@ -1064,7 +1064,7 @@ struct NiagaraParameterCollectionInstance_SetIntParameter final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InValue;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14D4[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraParameterCollectionInstance_SetIntParameter) == 0x000008, "Wrong alignment on NiagaraParameterCollectionInstance_SetIntParameter");
 static_assert(sizeof(NiagaraParameterCollectionInstance_SetIntParameter) == 0x000018, "Wrong size on NiagaraParameterCollectionInstance_SetIntParameter");
@@ -1117,7 +1117,7 @@ struct NiagaraParameterCollectionInstance_SetVectorParameter final
 public:
 	class FString                                 InVariableName;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                InValue;                                           // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14D5[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NiagaraParameterCollectionInstance_SetVectorParameter) == 0x000008, "Wrong alignment on NiagaraParameterCollectionInstance_SetVectorParameter");
 static_assert(sizeof(NiagaraParameterCollectionInstance_SetVectorParameter) == 0x000020, "Wrong size on NiagaraParameterCollectionInstance_SetVectorParameter");

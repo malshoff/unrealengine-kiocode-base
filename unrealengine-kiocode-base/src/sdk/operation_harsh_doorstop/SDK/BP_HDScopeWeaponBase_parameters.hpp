@@ -25,11 +25,11 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A8F[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A90[0x2];                                     // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFBaseCharacter*                       CallFunc_GetPawnOwner_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,7 +49,7 @@ public:
 	bool                                          CallFunc_HasLocallyPlayerControlledOwner_bLocalPlayerOwner; // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetupOwnerData_bValidOwnerData;           // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasValidOwnerData_bValidOwnerData;        // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A91[0x2];                                     // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseCharacter*                       K2Node_Event_LastOwner;                            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsEquipped_ReturnValue;                   // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsEquipping_ReturnValue_1;                // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -57,7 +57,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsLocallyPlayerControlled_ReturnValue_2;  // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A92[0x2];                                     // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_56[0x2];                                       // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        K2Node_Event_Sight;                                // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShouldUseScope_bUseScope;                 // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ShouldUseScope_bUseScope_1;               // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -66,22 +66,22 @@ public:
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0064(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_ProjectWorldLocationToScreen_ScreenLocation; // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ProjectWorldLocationToScreen_ReturnValue; // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A93[0x3];                                     // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_BreakVector2D_X;                          // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A94[0x2];                                     // 0x0086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_86[0x2];                                       // 0x0086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_ProjectWorldLocationToScreen_ScreenLocation_1; // 0x0094(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ProjectWorldLocationToScreen_ReturnValue_1; // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A95[0x3];                                     // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Distance2D_ReturnValue;                   // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetViewportSize_SizeX;                    // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetViewportSize_SizeY;                    // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A96[0x4];                                     // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UGameUserSettings*                      CallFunc_GetGameUserSettings_ReturnValue;          // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetResolutionScaleInformationEx_CurrentScaleNormalized; // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -156,17 +156,6 @@ static_assert(offsetof(BP_HDScopeWeaponBase_C_ExecuteUbergraph_BP_HDScopeWeaponB
 static_assert(offsetof(BP_HDScopeWeaponBase_C_ExecuteUbergraph_BP_HDScopeWeaponBase, CallFunc_MakeVector_ReturnValue) == 0x0000D8, "Member 'BP_HDScopeWeaponBase_C_ExecuteUbergraph_BP_HDScopeWeaponBase::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_HDScopeWeaponBase_C_ExecuteUbergraph_BP_HDScopeWeaponBase, CallFunc_K2_AddRelativeLocation_SweepHitResult) == 0x0000E4, "Member 'BP_HDScopeWeaponBase_C_ExecuteUbergraph_BP_HDScopeWeaponBase::CallFunc_K2_AddRelativeLocation_SweepHitResult' has a wrong offset!");
 
-// Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.SetCurrentSight
-// 0x0008 (0x0008 - 0x0000)
-struct BP_HDScopeWeaponBase_C_SetCurrentSight final
-{
-public:
-	class USceneComponent*                        Sight;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_HDScopeWeaponBase_C_SetCurrentSight) == 0x000008, "Wrong alignment on BP_HDScopeWeaponBase_C_SetCurrentSight");
-static_assert(sizeof(BP_HDScopeWeaponBase_C_SetCurrentSight) == 0x000008, "Wrong size on BP_HDScopeWeaponBase_C_SetCurrentSight");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_SetCurrentSight, Sight) == 0x000000, "Member 'BP_HDScopeWeaponBase_C_SetCurrentSight::Sight' has a wrong offset!");
-
 // Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.ReceiveOnLeaveInventory
 // 0x0008 (0x0008 - 0x0000)
 struct BP_HDScopeWeaponBase_C_ReceiveOnLeaveInventory final
@@ -202,61 +191,20 @@ static_assert(alignof(BP_HDScopeWeaponBase_C_ReceiveTick) == 0x000004, "Wrong al
 static_assert(sizeof(BP_HDScopeWeaponBase_C_ReceiveTick) == 0x000004, "Wrong size on BP_HDScopeWeaponBase_C_ReceiveTick");
 static_assert(offsetof(BP_HDScopeWeaponBase_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_HDScopeWeaponBase_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
-// Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.UserConstructionScript
-// 0x00E8 (0x00E8 - 0x0000)
-struct BP_HDScopeWeaponBase_C_UserConstructionScript final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A97[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0010(0x0010)(ReferenceParm, HasGetValueTypeHash)
-	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A98[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A99[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterial*                              CallFunc_GetBaseMaterial_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A9A[0x3];                                     // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_AddRelativeLocation_SweepHitResult;    // 0x005C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-static_assert(alignof(BP_HDScopeWeaponBase_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_HDScopeWeaponBase_C_UserConstructionScript");
-static_assert(sizeof(BP_HDScopeWeaponBase_C_UserConstructionScript) == 0x0000E8, "Wrong size on BP_HDScopeWeaponBase_C_UserConstructionScript");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x00000C, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_GetMaterials_ReturnValue) == 0x000010, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000020, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000030, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_GetBaseMaterial_ReturnValue) == 0x000040, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_GetBaseMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000048, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00004C, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000050, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_K2_AddRelativeLocation_SweepHitResult) == 0x00005C, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_K2_AddRelativeLocation_SweepHitResult' has a wrong offset!");
-
 // Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.SetupOwnerData
 // 0x0048 (0x0048 - 0x0000)
 struct BP_HDScopeWeaponBase_C_SetupOwnerData final
 {
 public:
 	bool                                          bValidOwnerData;                                   // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A9B[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADFPlayerCameraManager*                 K2Node_DynamicCast_AsDFPlayer_Camera_Manager;      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A9C[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AHDPlayerController*                    K2Node_DynamicCast_AsHDPlayer_Controller;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A9D[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseCharacter*                       CallFunc_GetPawnOwner_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_HDPlayerCharacterBase_C*            K2Node_DynamicCast_AsBP_HDPlayer_Character_Base;   // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -330,16 +278,16 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FWeightedBlendable                     CallFunc_Array_Get_Item;                           // 0x0008(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A9E[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWeightedBlendables                    K2Node_MakeStruct_WeightedBlendables;              // 0x0020(0x0010)()
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A9F[0xC];                                     // 0x0034(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0xC];                                       // 0x0034(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPostProcessSettings                   K2Node_MakeStruct_PostProcessSettings;             // 0x0040(0x0540)()
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AA0[0x3];                                     // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_581[0x3];                                      // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AA1[0x3];                                     // 0x0589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_589[0x3];                                      // 0x0589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0590(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0591(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -368,16 +316,16 @@ struct BP_HDScopeWeaponBase_C_AimOut final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AA2[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWeightedBlendable                     CallFunc_Array_Get_Item;                           // 0x0008(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AA3[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWeightedBlendables                    K2Node_MakeStruct_WeightedBlendables;              // 0x0020(0x0010)()
 	struct FPostProcessSettings                   K2Node_MakeStruct_PostProcessSettings;             // 0x0030(0x0540)()
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0570(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0574(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AA4[0x3];                                     // 0x0575(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_575[0x3];                                      // 0x0575(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x057C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x057D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -407,21 +355,21 @@ struct BP_HDScopeWeaponBase_C_ScopeEffects final
 public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShouldUseScope_bUseScope;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AA5[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWeightedBlendables                    K2Node_MakeStruct_WeightedBlendables;              // 0x0008(0x0010)()
-	uint8                                         Pad_1AA6[0x8];                                     // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPostProcessSettings                   K2Node_MakeStruct_PostProcessSettings;             // 0x0020(0x0540)()
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0564(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AA7[0x3];                                     // 0x0565(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_565[0x3];                                      // 0x0565(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWeightedBlendable                     CallFunc_Array_Get_Item;                           // 0x0568(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x057C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0580(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AA8[0x3];                                     // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_581[0x3];                                      // 0x0581(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AA9[0x3];                                     // 0x0589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_589[0x3];                                      // 0x0589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x058C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0590(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -490,6 +438,58 @@ static_assert(offsetof(BP_HDScopeWeaponBase_C_ShouldUseScope, CallFunc_Not_PreBo
 static_assert(offsetof(BP_HDScopeWeaponBase_C_ShouldUseScope, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'BP_HDScopeWeaponBase_C_ShouldUseScope::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_HDScopeWeaponBase_C_ShouldUseScope, CallFunc_BooleanAND_ReturnValue_1) == 0x000005, "Member 'BP_HDScopeWeaponBase_C_ShouldUseScope::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_HDScopeWeaponBase_C_ShouldUseScope, CallFunc_BooleanAND_ReturnValue_2) == 0x000006, "Member 'BP_HDScopeWeaponBase_C_ShouldUseScope::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+
+// Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.SetCurrentSight
+// 0x0008 (0x0008 - 0x0000)
+struct BP_HDScopeWeaponBase_C_SetCurrentSight final
+{
+public:
+	class USceneComponent*                        Sight;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_HDScopeWeaponBase_C_SetCurrentSight) == 0x000008, "Wrong alignment on BP_HDScopeWeaponBase_C_SetCurrentSight");
+static_assert(sizeof(BP_HDScopeWeaponBase_C_SetCurrentSight) == 0x000008, "Wrong size on BP_HDScopeWeaponBase_C_SetCurrentSight");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_SetCurrentSight, Sight) == 0x000000, "Member 'BP_HDScopeWeaponBase_C_SetCurrentSight::Sight' has a wrong offset!");
+
+// Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.UserConstructionScript
+// 0x00E8 (0x00E8 - 0x0000)
+struct BP_HDScopeWeaponBase_C_UserConstructionScript final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue;                 // 0x0010(0x0010)(ReferenceParm, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterial*                              CallFunc_GetBaseMaterial_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0050(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_AddRelativeLocation_SweepHitResult;    // 0x005C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(BP_HDScopeWeaponBase_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_HDScopeWeaponBase_C_UserConstructionScript");
+static_assert(sizeof(BP_HDScopeWeaponBase_C_UserConstructionScript) == 0x0000E8, "Wrong size on BP_HDScopeWeaponBase_C_UserConstructionScript");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x00000C, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_GetMaterials_ReturnValue) == 0x000010, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000020, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000030, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_GetBaseMaterial_ReturnValue) == 0x000040, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_GetBaseMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000048, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00004C, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000050, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_HDScopeWeaponBase_C_UserConstructionScript, CallFunc_K2_AddRelativeLocation_SweepHitResult) == 0x00005C, "Member 'BP_HDScopeWeaponBase_C_UserConstructionScript::CallFunc_K2_AddRelativeLocation_SweepHitResult' has a wrong offset!");
 
 }
 

@@ -852,9 +852,9 @@ void ABP_HDPlayerControllerBase_C::SpawnVehicleAtPlayer(class UClass* VehicleCla
 // Function BP_HDPlayerControllerBase.BP_HDPlayerControllerBase_C.GetHDPlayerState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AHDPlayerState*                   Param_PlayerState                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AHDPlayerState*                   PlayerState_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDPlayerControllerBase_C::GetHDPlayerState(class AHDPlayerState** Param_PlayerState)
+void ABP_HDPlayerControllerBase_C::GetHDPlayerState(class AHDPlayerState** PlayerState_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -865,17 +865,17 @@ void ABP_HDPlayerControllerBase_C::GetHDPlayerState(class AHDPlayerState** Param
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_PlayerState != nullptr)
-		*Param_PlayerState = Parms.Param_PlayerState;
+	if (PlayerState_0 != nullptr)
+		*PlayerState_0 = Parms.PlayerState_0;
 }
 
 
 // Function BP_HDPlayerControllerBase.BP_HDPlayerControllerBase_C.GetHDTeamState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AHDTeamState*                     Param_TeamState                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AHDTeamState*                     TeamState_0                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDPlayerControllerBase_C::GetHDTeamState(class AHDTeamState** Param_TeamState)
+void ABP_HDPlayerControllerBase_C::GetHDTeamState(class AHDTeamState** TeamState_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -886,8 +886,8 @@ void ABP_HDPlayerControllerBase_C::GetHDTeamState(class AHDTeamState** Param_Tea
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_TeamState != nullptr)
-		*Param_TeamState = Parms.Param_TeamState;
+	if (TeamState_0 != nullptr)
+		*TeamState_0 = Parms.TeamState_0;
 }
 
 

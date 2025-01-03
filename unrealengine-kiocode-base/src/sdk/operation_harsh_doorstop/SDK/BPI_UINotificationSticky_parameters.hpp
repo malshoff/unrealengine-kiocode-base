@@ -20,7 +20,7 @@ struct BPI_UINotificationSticky_C_Get_Is_Sticky_ final
 {
 public:
 	bool                                          bIsSticky;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FA9[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StickyPriority;                                    // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BPI_UINotificationSticky_C_Get_Is_Sticky_) == 0x000004, "Wrong alignment on BPI_UINotificationSticky_C_Get_Is_Sticky_");

@@ -29,13 +29,13 @@ public:
 	bool                                          bInitialSpawn;                                     // 0x06B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bWantsToOpenDeployMenu;                            // 0x06B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bDeployMenuShown;                                  // 0x06B2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1BBF[0x5];                                     // 0x06B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6B3[0x5];                                      // 0x06B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnRepPlayerState;                                  // 0x06B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bOpenDeployMenuOnBeginPlay;                        // 0x06C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1BC0[0x7];                                     // 0x06C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6C9[0x7];                                      // 0x06C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            DeathScreen;                                       // 0x06D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDeathScreenShown;                                 // 0x06D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1BC1[0x7];                                     // 0x06D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6D9[0x7];                                      // 0x06D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            WatermarkWidget;                                   // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   WatermarkWidgetClass;                              // 0x06E8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, HasGetValueTypeHash)
 
@@ -85,8 +85,8 @@ public:
 	void ShowHUD();
 	void HideHUD();
 	void SpawnVehicleAtPlayer(class UClass* VehicleClass);
-	void GetHDPlayerState(class AHDPlayerState** Param_PlayerState);
-	void GetHDTeamState(class AHDTeamState** Param_TeamState);
+	void GetHDPlayerState(class AHDPlayerState** PlayerState_0);
+	void GetHDTeamState(class AHDTeamState** TeamState_0);
 	void InternalCreateUnnamedSquad(class AHDPlatoonState* ForPlatoon, bool bJoinSquadAfterCreation, bool bStartLocked, bool* bSuccess, class AHDSquadState** NewSquad);
 	void JoinSquad(class AHDSquadState* SquadToJoin, bool* bJoinSuccess);
 	void CanJoinSquad(class AHDSquadState* SquadToJoin, bool* bJoinableSquad);

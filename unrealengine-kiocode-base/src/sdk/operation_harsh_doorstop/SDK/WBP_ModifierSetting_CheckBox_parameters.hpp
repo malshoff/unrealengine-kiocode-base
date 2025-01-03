@@ -31,7 +31,7 @@ struct WBP_ModifierSetting_CheckBox_C_ExecuteUbergraph_WBP_ModifierSetting_Check
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D90[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -39,7 +39,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D91[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0030(0x0018)()
 };
 static_assert(alignof(WBP_ModifierSetting_CheckBox_C_ExecuteUbergraph_WBP_ModifierSetting_CheckBox) == 0x000008, "Wrong alignment on WBP_ModifierSetting_CheckBox_C_ExecuteUbergraph_WBP_ModifierSetting_CheckBox");
@@ -92,11 +92,11 @@ static_assert(offsetof(WBP_ModifierSetting_CheckBox_C_SetSettingText, InSettingT
 struct WBP_ModifierSetting_CheckBox_C_GetSettingText final
 {
 public:
-	class FText                                   Param_SettingText;                                 // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   SettingText_0;                                     // 0x0000(0x0018)(Parm, OutParm)
 };
 static_assert(alignof(WBP_ModifierSetting_CheckBox_C_GetSettingText) == 0x000008, "Wrong alignment on WBP_ModifierSetting_CheckBox_C_GetSettingText");
 static_assert(sizeof(WBP_ModifierSetting_CheckBox_C_GetSettingText) == 0x000018, "Wrong size on WBP_ModifierSetting_CheckBox_C_GetSettingText");
-static_assert(offsetof(WBP_ModifierSetting_CheckBox_C_GetSettingText, Param_SettingText) == 0x000000, "Member 'WBP_ModifierSetting_CheckBox_C_GetSettingText::Param_SettingText' has a wrong offset!");
+static_assert(offsetof(WBP_ModifierSetting_CheckBox_C_GetSettingText, SettingText_0) == 0x000000, "Member 'WBP_ModifierSetting_CheckBox_C_GetSettingText::SettingText_0' has a wrong offset!");
 
 }
 

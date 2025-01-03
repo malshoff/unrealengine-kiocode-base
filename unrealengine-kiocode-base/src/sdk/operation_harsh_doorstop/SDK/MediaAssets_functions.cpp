@@ -497,10 +497,10 @@ bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaPlaylist*                   InPlaylist                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int32 Param_Index)
+bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -510,7 +510,7 @@ bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int32 Par
 	Params::MediaPlayer_OpenPlaylistIndex Parms{};
 
 	Parms.InPlaylist = InPlaylist;
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1008,9 +1008,9 @@ bool UMediaPlayer::SetRate(float Rate)
 // Function MediaAssets.MediaPlayer.SetTimeDelay
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FTimespan                        Param_TimeDelay                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FTimespan                        TimeDelay_0                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UMediaPlayer::SetTimeDelay(const struct FTimespan& Param_TimeDelay)
+void UMediaPlayer::SetTimeDelay(const struct FTimespan& TimeDelay_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1019,7 +1019,7 @@ void UMediaPlayer::SetTimeDelay(const struct FTimespan& Param_TimeDelay)
 
 	Params::MediaPlayer_SetTimeDelay Parms{};
 
-	Parms.Param_TimeDelay = std::move(Param_TimeDelay);
+	Parms.TimeDelay_0 = std::move(TimeDelay_0);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2393,10 +2393,10 @@ bool UMediaPlaylist::AddUrl(const class FString& URL)
 // Function MediaAssets.MediaPlaylist.Get
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UMediaSource*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UMediaSource* UMediaPlaylist::Get(int32 Param_Index)
+class UMediaSource* UMediaPlaylist::Get(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2405,7 +2405,7 @@ class UMediaSource* UMediaPlaylist::Get(int32 Param_Index)
 
 	Params::MediaPlaylist_Get Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2509,9 +2509,9 @@ class UMediaSource* UMediaPlaylist::GetRandom(int32* OutIndex)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSource*                     MediaSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int32 Param_Index)
+void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2521,7 +2521,7 @@ void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int32 Param_Index)
 	Params::MediaPlaylist_Insert Parms{};
 
 	Parms.MediaSource = MediaSource;
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2588,10 +2588,10 @@ bool UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 // Function MediaAssets.MediaPlaylist.RemoveAt
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMediaPlaylist::RemoveAt(int32 Param_Index)
+bool UMediaPlaylist::RemoveAt(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2600,7 +2600,7 @@ bool UMediaPlaylist::RemoveAt(int32 Param_Index)
 
 	Params::MediaPlaylist_RemoveAt Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2616,11 +2616,11 @@ bool UMediaPlaylist::RemoveAt(int32 Param_Index)
 // Function MediaAssets.MediaPlaylist.Replace
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UMediaSource*                     Replacement                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UMediaPlaylist::Replace(int32 Param_Index, class UMediaSource* Replacement)
+bool UMediaPlaylist::Replace(int32 Index_0, class UMediaSource* Replacement)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2629,7 +2629,7 @@ bool UMediaPlaylist::Replace(int32 Param_Index, class UMediaSource* Replacement)
 
 	Params::MediaPlaylist_Replace Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.Replacement = Replacement;
 
 	auto Flgs = Func->FunctionFlags;

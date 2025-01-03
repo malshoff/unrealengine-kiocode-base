@@ -254,9 +254,9 @@ void UWBP_DeployMenu_DeployButton_C::PreConstruct(bool IsDesignTime)
 // Parameters:
 // bool                                    bPlayerAlive                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    bDeploymentQueued                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_bSpawnPointSelected                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bSpawnPointSelected_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_DeployMenu_DeployButton_C::UpdateDeployBtnState(bool bPlayerAlive, bool bDeploymentQueued, bool Param_bSpawnPointSelected)
+void UWBP_DeployMenu_DeployButton_C::UpdateDeployBtnState(bool bPlayerAlive, bool bDeploymentQueued, bool bSpawnPointSelected_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -267,7 +267,7 @@ void UWBP_DeployMenu_DeployButton_C::UpdateDeployBtnState(bool bPlayerAlive, boo
 
 	Parms.bPlayerAlive = bPlayerAlive;
 	Parms.bDeploymentQueued = bDeploymentQueued;
-	Parms.Param_bSpawnPointSelected = Param_bSpawnPointSelected;
+	Parms.bSpawnPointSelected_0 = bSpawnPointSelected_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -276,10 +276,10 @@ void UWBP_DeployMenu_DeployButton_C::UpdateDeployBtnState(bool bPlayerAlive, boo
 // Function WBP_DeployMenu_DeployButton.WBP_DeployMenu_DeployButton_C.InternalUpdateBtnText
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bDeploying                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    Param_bSpawnPointSelected                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bDeploying_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bSpawnPointSelected_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_DeployMenu_DeployButton_C::InternalUpdateBtnText(bool Param_bDeploying, bool Param_bSpawnPointSelected)
+void UWBP_DeployMenu_DeployButton_C::InternalUpdateBtnText(bool bDeploying_0, bool bSpawnPointSelected_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -288,8 +288,8 @@ void UWBP_DeployMenu_DeployButton_C::InternalUpdateBtnText(bool Param_bDeploying
 
 	Params::WBP_DeployMenu_DeployButton_C_InternalUpdateBtnText Parms{};
 
-	Parms.Param_bDeploying = Param_bDeploying;
-	Parms.Param_bSpawnPointSelected = Param_bSpawnPointSelected;
+	Parms.bDeploying_0 = bDeploying_0;
+	Parms.bSpawnPointSelected_0 = bSpawnPointSelected_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

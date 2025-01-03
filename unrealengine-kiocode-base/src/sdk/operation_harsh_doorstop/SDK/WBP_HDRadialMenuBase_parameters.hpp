@@ -71,7 +71,7 @@ public:
 	struct FKey                                   CallFunc_GetKey_ReturnValue;                       // 0x01E0(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x01F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A58[0x6];                                     // 0x01FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FA[0x6];                                      // 0x01FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0200(0x00B8)()
 };
 static_assert(alignof(WBP_HDRadialMenuBase_C_OnKeyDown) == 0x000008, "Wrong alignment on WBP_HDRadialMenuBase_C_OnKeyDown");

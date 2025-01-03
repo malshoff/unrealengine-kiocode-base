@@ -34,7 +34,7 @@ public:
 	void ExecuteUbergraph_WBP_HUDElement_TextChat_InputHandler(int32 EntryPoint);
 	void BndEvt__MsgInputTextBox_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
 	void InputTextEntered(const class FText& Text);
-	void StopTalking(class UDFCommChannel* Param_CurrentChannel);
+	void StopTalking(class UDFCommChannel* CurrentChannel_0);
 	void StartTalking(class UDFCommChannel* NewTalkChannel);
 
 public:

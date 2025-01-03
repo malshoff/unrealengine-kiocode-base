@@ -74,11 +74,11 @@ public:
 	bool                                          bStopOnOverlap;                                    // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUsePathfinding;                                   // 0x000D(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanStrafe;                                        // 0x000E(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9C[0x1];                                      // 0x000F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F[0x1];                                        // 0x000F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UNavigationQueryFilter>     FilterClass;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowPartialPath;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPathFollowingRequestResult                   ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9D[0x6];                                      // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIController_MoveToActor) == 0x000008, "Wrong alignment on AIController_MoveToActor");
 static_assert(sizeof(AIController_MoveToActor) == 0x000020, "Wrong size on AIController_MoveToActor");
@@ -102,11 +102,11 @@ public:
 	bool                                          bUsePathfinding;                                   // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bProjectDestinationToNavigation;                   // 0x0012(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCanStrafe;                                        // 0x0013(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9E[0x4];                                      // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UNavigationQueryFilter>     FilterClass;                                       // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAllowPartialPath;                                 // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPathFollowingRequestResult                   ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9F[0x6];                                      // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIController_MoveToLocation) == 0x000008, "Wrong alignment on AIController_MoveToLocation");
 static_assert(sizeof(AIController_MoveToLocation) == 0x000028, "Wrong size on AIController_MoveToLocation");
@@ -153,7 +153,7 @@ struct AIController_RunBehaviorTree final
 public:
 	class UBehaviorTree*                          BTAsset;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA0[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIController_RunBehaviorTree) == 0x000008, "Wrong alignment on AIController_RunBehaviorTree");
 static_assert(sizeof(AIController_RunBehaviorTree) == 0x000010, "Wrong size on AIController_RunBehaviorTree");
@@ -201,7 +201,7 @@ public:
 	class UBlackboardData*                        BlackboardAsset;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UBlackboardComponent*                   BlackboardComponent;                               // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA1[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIController_UseBlackboard) == 0x000008, "Wrong alignment on AIController_UseBlackboard");
 static_assert(sizeof(AIController_UseBlackboard) == 0x000018, "Wrong size on AIController_UseBlackboard");
@@ -227,7 +227,7 @@ struct AIController_GetFocalPointOnActor final
 public:
 	const class AActor*                           Actor;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA2[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIController_GetFocalPointOnActor) == 0x000008, "Wrong alignment on AIController_GetFocalPointOnActor");
 static_assert(sizeof(AIController_GetFocalPointOnActor) == 0x000018, "Wrong size on AIController_GetFocalPointOnActor");
@@ -296,7 +296,7 @@ struct AIAsyncTaskBlueprintProxy_OnMoveCompleted final
 public:
 	struct FAIRequestID                           RequestID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPathFollowingResult                          MovementResult;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA4[0x3];                                      // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIAsyncTaskBlueprintProxy_OnMoveCompleted) == 0x000004, "Wrong alignment on AIAsyncTaskBlueprintProxy_OnMoveCompleted");
 static_assert(sizeof(AIAsyncTaskBlueprintProxy_OnMoveCompleted) == 0x000008, "Wrong size on AIAsyncTaskBlueprintProxy_OnMoveCompleted");
@@ -311,11 +311,11 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  Pawn;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Destination;                                       // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA5[0x4];                                      // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 TargetActor;                                       // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AcceptanceRadius;                                  // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStopOnOverlap;                                    // 0x002C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA6[0x3];                                      // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAIAsyncTaskBlueprintProxy*             ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AIBlueprintHelperLibrary_CreateMoveToProxyObject) == 0x000008, "Wrong alignment on AIBlueprintHelperLibrary_CreateMoveToProxyObject");
@@ -374,7 +374,7 @@ struct AIBlueprintHelperLibrary_IsValidAIDirection final
 public:
 	struct FVector                                DirectionVector;                                   // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA7[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIBlueprintHelperLibrary_IsValidAIDirection) == 0x000004, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAIDirection");
 static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAIDirection) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_IsValidAIDirection");
@@ -388,7 +388,7 @@ struct AIBlueprintHelperLibrary_IsValidAILocation final
 public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA8[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIBlueprintHelperLibrary_IsValidAILocation) == 0x000004, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAILocation");
 static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAILocation) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_IsValidAILocation");
@@ -402,7 +402,7 @@ struct AIBlueprintHelperLibrary_IsValidAIRotation final
 public:
 	struct FRotator                               Rotation;                                          // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EA9[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIBlueprintHelperLibrary_IsValidAIRotation) == 0x000004, "Wrong alignment on AIBlueprintHelperLibrary_IsValidAIRotation");
 static_assert(sizeof(AIBlueprintHelperLibrary_IsValidAIRotation) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_IsValidAIRotation");
@@ -417,7 +417,7 @@ public:
 	class UAnimInstance*                          AnimInstance;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLockMovement;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          LockAILogic;                                       // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EAA[0x6];                                      // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIBlueprintHelperLibrary_LockAIResourcesWithAnimation) == 0x000008, "Wrong alignment on AIBlueprintHelperLibrary_LockAIResourcesWithAnimation");
 static_assert(sizeof(AIBlueprintHelperLibrary_LockAIResourcesWithAnimation) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_LockAIResourcesWithAnimation");
@@ -434,7 +434,7 @@ public:
 	class FName                                   Message;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                MessageSource;                                     // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSuccess;                                          // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EAB[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIBlueprintHelperLibrary_SendAIMessage) == 0x000008, "Wrong alignment on AIBlueprintHelperLibrary_SendAIMessage");
 static_assert(sizeof(AIBlueprintHelperLibrary_SendAIMessage) == 0x000020, "Wrong size on AIBlueprintHelperLibrary_SendAIMessage");
@@ -463,7 +463,7 @@ struct AIBlueprintHelperLibrary_SimpleMoveToLocation final
 public:
 	class AController*                            Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Goal;                                              // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EAC[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIBlueprintHelperLibrary_SimpleMoveToLocation) == 0x000008, "Wrong alignment on AIBlueprintHelperLibrary_SimpleMoveToLocation");
 static_assert(sizeof(AIBlueprintHelperLibrary_SimpleMoveToLocation) == 0x000018, "Wrong size on AIBlueprintHelperLibrary_SimpleMoveToLocation");
@@ -481,7 +481,7 @@ public:
 	struct FVector                                Location;                                          // 0x0018(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               Rotation;                                          // 0x0024(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bNoCollisionFail;                                  // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EAD[0x7];                                      // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 Owner;                                             // 0x0038(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -504,7 +504,7 @@ public:
 	class UAnimInstance*                          AnimInstance;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUnlockMovement;                                   // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          UnlockAILogic;                                     // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EAE[0x6];                                      // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation) == 0x000008, "Wrong alignment on AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation");
 static_assert(sizeof(AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation) == 0x000010, "Wrong size on AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation");
@@ -520,7 +520,7 @@ public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FActorPerceptionBlueprintInfo          Info;                                              // 0x0008(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EB3[0x7];                                      // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIPerceptionComponent_GetActorsPerception) == 0x000008, "Wrong alignment on AIPerceptionComponent_GetActorsPerception");
 static_assert(sizeof(AIPerceptionComponent_GetActorsPerception) == 0x000030, "Wrong size on AIPerceptionComponent_GetActorsPerception");
@@ -535,7 +535,7 @@ struct AIPerceptionComponent_OnOwnerEndPlay final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EB4[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIPerceptionComponent_OnOwnerEndPlay) == 0x000008, "Wrong alignment on AIPerceptionComponent_OnOwnerEndPlay");
 static_assert(sizeof(AIPerceptionComponent_OnOwnerEndPlay) == 0x000010, "Wrong size on AIPerceptionComponent_OnOwnerEndPlay");
@@ -549,7 +549,7 @@ struct AIPerceptionComponent_SetSenseEnabled final
 public:
 	TSubclassOf<class UAISense>                   SenseClass;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEnable;                                           // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EB5[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIPerceptionComponent_SetSenseEnabled) == 0x000008, "Wrong alignment on AIPerceptionComponent_SetSenseEnabled");
 static_assert(sizeof(AIPerceptionComponent_SetSenseEnabled) == 0x000010, "Wrong size on AIPerceptionComponent_SetSenseEnabled");
@@ -635,7 +635,7 @@ struct AIPerceptionSystem_GetSenseClassForStimulus final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAIStimulus                            Stimulus;                                          // 0x0008(0x003C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EBA[0x4];                                      // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UAISense>                   ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AIPerceptionSystem_GetSenseClassForStimulus) == 0x000008, "Wrong alignment on AIPerceptionSystem_GetSenseClassForStimulus");
@@ -653,7 +653,7 @@ public:
 	TSubclassOf<class UAISense>                   Sense;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 Target;                                            // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EBB[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIPerceptionSystem_RegisterPerceptionStimuliSource) == 0x000008, "Wrong alignment on AIPerceptionSystem_RegisterPerceptionStimuliSource");
 static_assert(sizeof(AIPerceptionSystem_RegisterPerceptionStimuliSource) == 0x000020, "Wrong size on AIPerceptionSystem_RegisterPerceptionStimuliSource");
@@ -682,7 +682,7 @@ struct AIPerceptionSystem_OnPerceptionStimuliSourceEndPlay final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EBC[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AIPerceptionSystem_OnPerceptionStimuliSourceEndPlay) == 0x000008, "Wrong alignment on AIPerceptionSystem_OnPerceptionStimuliSourceEndPlay");
 static_assert(sizeof(AIPerceptionSystem_OnPerceptionStimuliSourceEndPlay) == 0x000010, "Wrong size on AIPerceptionSystem_OnPerceptionStimuliSourceEndPlay");
@@ -757,7 +757,7 @@ struct AISense_Blueprint_OnUpdate final
 public:
 	TArray<class UAISenseEvent*>                  EventsToProcess;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EC0[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AISense_Blueprint_OnUpdate) == 0x000008, "Wrong alignment on AISense_Blueprint_OnUpdate");
 static_assert(sizeof(AISense_Blueprint_OnUpdate) == 0x000018, "Wrong size on AISense_Blueprint_OnUpdate");
@@ -797,7 +797,7 @@ public:
 	float                                         DamageAmount;                                      // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                EventLocation;                                     // 0x001C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                HitLocation;                                       // 0x0028(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EC1[0x4];                                      // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AISense_Damage_ReportDamageEvent) == 0x000008, "Wrong alignment on AISense_Damage_ReportDamageEvent");
 static_assert(sizeof(AISense_Damage_ReportDamageEvent) == 0x000038, "Wrong size on AISense_Damage_ReportDamageEvent");
@@ -819,7 +819,7 @@ public:
 	class AActor*                                 Instigator;                                        // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxRange;                                          // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   Tag;                                               // 0x0024(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EC3[0x4];                                      // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AISense_Hearing_ReportNoiseEvent) == 0x000008, "Wrong alignment on AISense_Hearing_ReportNoiseEvent");
 static_assert(sizeof(AISense_Hearing_ReportNoiseEvent) == 0x000030, "Wrong size on AISense_Hearing_ReportNoiseEvent");
@@ -838,7 +838,7 @@ public:
 	class AAIController*                          Requestor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 PredictedActor;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PredictionTime;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EC4[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AISense_Prediction_RequestControllerPredictionEvent) == 0x000008, "Wrong alignment on AISense_Prediction_RequestControllerPredictionEvent");
 static_assert(sizeof(AISense_Prediction_RequestControllerPredictionEvent) == 0x000018, "Wrong size on AISense_Prediction_RequestControllerPredictionEvent");
@@ -854,7 +854,7 @@ public:
 	class APawn*                                  Requestor;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 PredictedActor;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PredictionTime;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EC5[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AISense_Prediction_RequestPawnPredictionEvent) == 0x000008, "Wrong alignment on AISense_Prediction_RequestPawnPredictionEvent");
 static_assert(sizeof(AISense_Prediction_RequestPawnPredictionEvent) == 0x000018, "Wrong size on AISense_Prediction_RequestPawnPredictionEvent");
@@ -869,7 +869,7 @@ struct AITask_MoveTo_AIMoveTo final
 public:
 	class AAIController*                          Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                GoalLocation;                                      // 0x0008(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ECF[0x4];                                      // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 GoalActor;                                         // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AcceptanceRadius;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAIOptionFlag                                 StopOnOverlap;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -878,7 +878,7 @@ public:
 	bool                                          bLockAILogic;                                      // 0x0027(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseContinuosGoalTracking;                         // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAIOptionFlag                                 ProjectGoalOnNavigation;                           // 0x0029(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED0[0x6];                                      // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAITask_MoveTo*                         ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(AITask_MoveTo_AIMoveTo) == 0x000008, "Wrong alignment on AITask_MoveTo_AIMoveTo");
@@ -902,7 +902,7 @@ struct NavLinkProxy_ReceiveSmartLinkReached final
 public:
 	class AActor*                                 Agent;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Destination;                                       // 0x0008(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED3[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NavLinkProxy_ReceiveSmartLinkReached) == 0x000008, "Wrong alignment on NavLinkProxy_ReceiveSmartLinkReached");
 static_assert(sizeof(NavLinkProxy_ReceiveSmartLinkReached) == 0x000018, "Wrong size on NavLinkProxy_ReceiveSmartLinkReached");
@@ -1090,7 +1090,7 @@ public:
 	struct FGameplayTag                           CooldownTag;                                       // 0x0000(0x0008)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CooldownDuration;                                  // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAddToExistingDuration;                            // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EDC[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BehaviorTreeComponent_AddCooldownTagDuration) == 0x000004, "Wrong alignment on BehaviorTreeComponent_AddCooldownTagDuration");
 static_assert(sizeof(BehaviorTreeComponent_AddCooldownTagDuration) == 0x000010, "Wrong size on BehaviorTreeComponent_AddCooldownTagDuration");
@@ -1168,7 +1168,7 @@ struct PawnAction_BlueprintBase_ActionFinished final
 public:
 	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EDF[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PawnAction_BlueprintBase_ActionFinished) == 0x000008, "Wrong alignment on PawnAction_BlueprintBase_ActionFinished");
 static_assert(sizeof(PawnAction_BlueprintBase_ActionFinished) == 0x000010, "Wrong size on PawnAction_BlueprintBase_ActionFinished");
@@ -1215,7 +1215,7 @@ struct PawnAction_BlueprintBase_ActionTick final
 public:
 	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EE0[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PawnAction_BlueprintBase_ActionTick) == 0x000008, "Wrong alignment on PawnAction_BlueprintBase_ActionTick");
 static_assert(sizeof(PawnAction_BlueprintBase_ActionTick) == 0x000010, "Wrong size on PawnAction_BlueprintBase_ActionTick");
@@ -1231,7 +1231,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                NormalImpulse;                                     // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHitResult                             Hit;                                               // 0x001C(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EE5[0x4];                                      // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PathFollowingComponent_OnActorBump) == 0x000008, "Wrong alignment on PathFollowingComponent_OnActorBump");
 static_assert(sizeof(PathFollowingComponent_OnActorBump) == 0x0000A8, "Wrong size on PathFollowingComponent_OnActorBump");
@@ -1302,7 +1302,7 @@ struct BlackboardComponent_SetValueAsBool final
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          BoolValue;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EE9[0x3];                                      // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BlackboardComponent_SetValueAsBool) == 0x000004, "Wrong alignment on BlackboardComponent_SetValueAsBool");
 static_assert(sizeof(BlackboardComponent_SetValueAsBool) == 0x00000C, "Wrong size on BlackboardComponent_SetValueAsBool");
@@ -1329,7 +1329,7 @@ struct BlackboardComponent_SetValueAsEnum final
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         EnumValue;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EEA[0x3];                                      // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BlackboardComponent_SetValueAsEnum) == 0x000004, "Wrong alignment on BlackboardComponent_SetValueAsEnum");
 static_assert(sizeof(BlackboardComponent_SetValueAsEnum) == 0x00000C, "Wrong size on BlackboardComponent_SetValueAsEnum");
@@ -1435,7 +1435,7 @@ public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ResultLocation;                                    // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EEB[0x3];                                      // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BlackboardComponent_GetLocationFromEntry) == 0x000004, "Wrong alignment on BlackboardComponent_GetLocationFromEntry");
 static_assert(sizeof(BlackboardComponent_GetLocationFromEntry) == 0x000018, "Wrong size on BlackboardComponent_GetLocationFromEntry");
@@ -1451,7 +1451,7 @@ public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               ResultRotation;                                    // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EEC[0x3];                                      // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BlackboardComponent_GetRotationFromEntry) == 0x000004, "Wrong alignment on BlackboardComponent_GetRotationFromEntry");
 static_assert(sizeof(BlackboardComponent_GetRotationFromEntry) == 0x000018, "Wrong size on BlackboardComponent_GetRotationFromEntry");
@@ -1466,7 +1466,7 @@ struct BlackboardComponent_GetValueAsBool final
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EED[0x3];                                      // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BlackboardComponent_GetValueAsBool) == 0x000004, "Wrong alignment on BlackboardComponent_GetValueAsBool");
 static_assert(sizeof(BlackboardComponent_GetValueAsBool) == 0x00000C, "Wrong size on BlackboardComponent_GetValueAsBool");
@@ -1493,7 +1493,7 @@ struct BlackboardComponent_GetValueAsEnum final
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EEE[0x3];                                      // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BlackboardComponent_GetValueAsEnum) == 0x000004, "Wrong alignment on BlackboardComponent_GetValueAsEnum");
 static_assert(sizeof(BlackboardComponent_GetValueAsEnum) == 0x00000C, "Wrong size on BlackboardComponent_GetValueAsEnum");
@@ -1598,7 +1598,7 @@ struct BlackboardComponent_IsVectorValueSet final
 public:
 	class FName                                   KeyName;                                           // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EEF[0x3];                                      // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BlackboardComponent_IsVectorValueSet) == 0x000004, "Wrong alignment on BlackboardComponent_IsVectorValueSet");
 static_assert(sizeof(BlackboardComponent_IsVectorValueSet) == 0x00000C, "Wrong size on BlackboardComponent_IsVectorValueSet");
@@ -1612,7 +1612,7 @@ struct BTDecorator_BlueprintBase_PerformConditionCheck final
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EFC[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTDecorator_BlueprintBase_PerformConditionCheck) == 0x000008, "Wrong alignment on BTDecorator_BlueprintBase_PerformConditionCheck");
 static_assert(sizeof(BTDecorator_BlueprintBase_PerformConditionCheck) == 0x000010, "Wrong size on BTDecorator_BlueprintBase_PerformConditionCheck");
@@ -1627,7 +1627,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EFD[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTDecorator_BlueprintBase_PerformConditionCheckAI) == 0x000008, "Wrong alignment on BTDecorator_BlueprintBase_PerformConditionCheckAI");
 static_assert(sizeof(BTDecorator_BlueprintBase_PerformConditionCheckAI) == 0x000018, "Wrong size on BTDecorator_BlueprintBase_PerformConditionCheckAI");
@@ -1642,7 +1642,7 @@ struct BTDecorator_BlueprintBase_ReceiveExecutionFinish final
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBTNodeResult                                 NodeResult;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EFE[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTDecorator_BlueprintBase_ReceiveExecutionFinish) == 0x000008, "Wrong alignment on BTDecorator_BlueprintBase_ReceiveExecutionFinish");
 static_assert(sizeof(BTDecorator_BlueprintBase_ReceiveExecutionFinish) == 0x000010, "Wrong size on BTDecorator_BlueprintBase_ReceiveExecutionFinish");
@@ -1657,7 +1657,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EBTNodeResult                                 NodeResult;                                        // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_EFF[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTDecorator_BlueprintBase_ReceiveExecutionFinishAI) == 0x000008, "Wrong alignment on BTDecorator_BlueprintBase_ReceiveExecutionFinishAI");
 static_assert(sizeof(BTDecorator_BlueprintBase_ReceiveExecutionFinishAI) == 0x000018, "Wrong size on BTDecorator_BlueprintBase_ReceiveExecutionFinishAI");
@@ -1744,7 +1744,7 @@ struct BTDecorator_BlueprintBase_ReceiveTick final
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F00[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTDecorator_BlueprintBase_ReceiveTick) == 0x000008, "Wrong alignment on BTDecorator_BlueprintBase_ReceiveTick");
 static_assert(sizeof(BTDecorator_BlueprintBase_ReceiveTick) == 0x000010, "Wrong size on BTDecorator_BlueprintBase_ReceiveTick");
@@ -1759,7 +1759,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DeltaSeconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F01[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTDecorator_BlueprintBase_ReceiveTickAI) == 0x000008, "Wrong alignment on BTDecorator_BlueprintBase_ReceiveTickAI");
 static_assert(sizeof(BTDecorator_BlueprintBase_ReceiveTickAI) == 0x000018, "Wrong size on BTDecorator_BlueprintBase_ReceiveTickAI");
@@ -1838,7 +1838,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F13[0x7];                                      // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsBool) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsBool");
 static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsBool) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsBool");
@@ -1869,7 +1869,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	uint8                                         ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F14[0x7];                                      // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsEnum) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsEnum");
 static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsEnum) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsEnum");
@@ -1885,7 +1885,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F15[0x4];                                      // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsFloat) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsFloat");
 static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsFloat) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsFloat");
@@ -1901,7 +1901,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F16[0x4];                                      // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsInt) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsInt");
 static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsInt) == 0x000038, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsInt");
@@ -1947,7 +1947,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRotator                               ReturnValue;                                       // 0x0030(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F17[0x4];                                      // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsRotator) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsRotator");
 static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsRotator) == 0x000040, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsRotator");
@@ -1978,7 +1978,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0030(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F18[0x4];                                      // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_GetBlackboardValueAsVector) == 0x000008, "Wrong alignment on BTFunctionLibrary_GetBlackboardValueAsVector");
 static_assert(sizeof(BTFunctionLibrary_GetBlackboardValueAsVector) == 0x000040, "Wrong size on BTFunctionLibrary_GetBlackboardValueAsVector");
@@ -2020,7 +2020,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          Value;                                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F19[0x7];                                      // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsBool) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsBool");
 static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsBool) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsBool");
@@ -2051,7 +2051,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	uint8                                         Value;                                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F1A[0x7];                                      // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsEnum) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsEnum");
 static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsEnum) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsEnum");
@@ -2067,7 +2067,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F1B[0x4];                                      // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsFloat) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsFloat");
 static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsFloat) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsFloat");
@@ -2083,7 +2083,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F1C[0x4];                                      // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsInt) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsInt");
 static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsInt) == 0x000038, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsInt");
@@ -2129,7 +2129,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FRotator                               Value;                                             // 0x0030(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F1D[0x4];                                      // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsRotator) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsRotator");
 static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsRotator) == 0x000040, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsRotator");
@@ -2160,7 +2160,7 @@ public:
 	class UBTNode*                                NodeOwner;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FBlackboardKeySelector                 Key;                                               // 0x0008(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FVector                                Value;                                             // 0x0030(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F1E[0x4];                                      // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTFunctionLibrary_SetBlackboardValueAsVector) == 0x000008, "Wrong alignment on BTFunctionLibrary_SetBlackboardValueAsVector");
 static_assert(sizeof(BTFunctionLibrary_SetBlackboardValueAsVector) == 0x000040, "Wrong size on BTFunctionLibrary_SetBlackboardValueAsVector");
@@ -2271,7 +2271,7 @@ struct BTService_BlueprintBase_ReceiveTick final
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F21[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTService_BlueprintBase_ReceiveTick) == 0x000008, "Wrong alignment on BTService_BlueprintBase_ReceiveTick");
 static_assert(sizeof(BTService_BlueprintBase_ReceiveTick) == 0x000010, "Wrong size on BTService_BlueprintBase_ReceiveTick");
@@ -2286,7 +2286,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DeltaSeconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F22[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTService_BlueprintBase_ReceiveTickAI) == 0x000008, "Wrong alignment on BTService_BlueprintBase_ReceiveTickAI");
 static_assert(sizeof(BTService_BlueprintBase_ReceiveTickAI) == 0x000018, "Wrong size on BTService_BlueprintBase_ReceiveTickAI");
@@ -2371,7 +2371,7 @@ struct BTTask_BlueprintBase_ReceiveTick final
 public:
 	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F28[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTTask_BlueprintBase_ReceiveTick) == 0x000008, "Wrong alignment on BTTask_BlueprintBase_ReceiveTick");
 static_assert(sizeof(BTTask_BlueprintBase_ReceiveTick) == 0x000010, "Wrong size on BTTask_BlueprintBase_ReceiveTick");
@@ -2386,7 +2386,7 @@ public:
 	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DeltaSeconds;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F29[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(BTTask_BlueprintBase_ReceiveTickAI) == 0x000008, "Wrong alignment on BTTask_BlueprintBase_ReceiveTickAI");
 static_assert(sizeof(BTTask_BlueprintBase_ReceiveTickAI) == 0x000018, "Wrong size on BTTask_BlueprintBase_ReceiveTickAI");
@@ -2504,7 +2504,7 @@ public:
 	class UObject*                                QuerierObject;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 QuerierActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ResultingLocation;                                 // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F3B[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(EnvQueryContext_BlueprintBase_ProvideSingleLocation) == 0x000008, "Wrong alignment on EnvQueryContext_BlueprintBase_ProvideSingleLocation");
 static_assert(sizeof(EnvQueryContext_BlueprintBase_ProvideSingleLocation) == 0x000020, "Wrong size on EnvQueryContext_BlueprintBase_ProvideSingleLocation");
@@ -2563,7 +2563,7 @@ struct EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature
 public:
 	class UEnvQueryInstanceBlueprintWrapper*      QueryInstance;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEnvQueryStatus                               QueryStatus;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4A[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature) == 0x000008, "Wrong alignment on EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature");
 static_assert(sizeof(EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature) == 0x000010, "Wrong size on EnvQueryInstanceBlueprintWrapper_EQSQueryDoneSignature__DelegateSignature");
@@ -2603,7 +2603,7 @@ struct EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsActors final
 public:
 	TArray<class AActor*>                         ResultActors;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4B[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsActors) == 0x000008, "Wrong alignment on EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsActors");
 static_assert(sizeof(EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsActors) == 0x000018, "Wrong size on EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsActors");
@@ -2617,7 +2617,7 @@ struct EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsLocations final
 public:
 	TArray<struct FVector>                        ResultLocations;                                   // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F4C[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsLocations) == 0x000008, "Wrong alignment on EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsLocations");
 static_assert(sizeof(EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsLocations) == 0x000018, "Wrong size on EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsLocations");
@@ -2655,7 +2655,7 @@ public:
 	class UEnvQuery*                              QueryTemplate;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UObject*                                Querier;                                           // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEnvQueryRunMode                              RunMode;                                           // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F51[0x7];                                      // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UEnvQueryInstanceBlueprintWrapper> WrapperClass;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UEnvQueryInstanceBlueprintWrapper*      ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -2680,9 +2680,9 @@ public:
 	int32                                         Radius2D;                                          // 0x002C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Height;                                            // 0x0030(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildGrids;                                     // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F64[0x3];                                      // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F65[0x4];                                      // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForBox) == 0x000008, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForBox");
 static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForBox) == 0x000040, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForBox");
@@ -2707,9 +2707,9 @@ public:
 	int32                                         Radius2D;                                          // 0x001C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Height;                                            // 0x0020(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildGrids;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F66[0x3];                                      // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F67[0x4];                                      // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForCapsule) == 0x000008, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForCapsule");
 static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForCapsule) == 0x000030, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForCapsule");
@@ -2732,9 +2732,9 @@ public:
 	int32                                         Radius2D;                                          // 0x0014(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Height;                                            // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildGrids;                                     // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F68[0x3];                                      // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F69[0x4];                                      // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForPoint) == 0x000008, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForPoint");
 static_assert(sizeof(NavLocalGridManager_AddLocalNavigationGridForPoint) == 0x000028, "Wrong size on NavLocalGridManager_AddLocalNavigationGridForPoint");
@@ -2755,7 +2755,7 @@ public:
 	int32                                         Radius2D;                                          // 0x0018(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Height;                                            // 0x001C(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildGrids;                                     // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6A[0x3];                                      // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(NavLocalGridManager_AddLocalNavigationGridForPoints) == 0x000008, "Wrong alignment on NavLocalGridManager_AddLocalNavigationGridForPoints");
@@ -2777,7 +2777,7 @@ public:
 	struct FVector                                End;                                               // 0x0014(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                        PathPoints;                                        // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6B[0x7];                                      // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NavLocalGridManager_FindLocalNavigationGridPath) == 0x000008, "Wrong alignment on NavLocalGridManager_FindLocalNavigationGridPath");
 static_assert(sizeof(NavLocalGridManager_FindLocalNavigationGridPath) == 0x000038, "Wrong size on NavLocalGridManager_FindLocalNavigationGridPath");
@@ -2795,7 +2795,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GridId;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRebuildGrids;                                     // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6C[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NavLocalGridManager_RemoveLocalNavigationGrid) == 0x000008, "Wrong alignment on NavLocalGridManager_RemoveLocalNavigationGrid");
 static_assert(sizeof(NavLocalGridManager_RemoveLocalNavigationGrid) == 0x000010, "Wrong size on NavLocalGridManager_RemoveLocalNavigationGrid");
@@ -2811,7 +2811,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CellSize;                                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F6D[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(NavLocalGridManager_SetLocalNavigationGridDensity) == 0x000008, "Wrong alignment on NavLocalGridManager_SetLocalNavigationGridDensity");
 static_assert(sizeof(NavLocalGridManager_SetLocalNavigationGridDensity) == 0x000010, "Wrong size on NavLocalGridManager_SetLocalNavigationGridDensity");
@@ -2828,7 +2828,7 @@ public:
 	class UPawnAction*                            Action;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAIRequestPriority                            Priority;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F72[0x6];                                      // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PawnActionsComponent_K2_PerformAction) == 0x000008, "Wrong alignment on PawnActionsComponent_K2_PerformAction");
 static_assert(sizeof(PawnActionsComponent_K2_PerformAction) == 0x000018, "Wrong size on PawnActionsComponent_K2_PerformAction");
@@ -2844,7 +2844,7 @@ struct PawnActionsComponent_K2_AbortAction final
 public:
 	class UPawnAction*                            ActionToAbort;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPawnActionAbortState                         ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F73[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PawnActionsComponent_K2_AbortAction) == 0x000008, "Wrong alignment on PawnActionsComponent_K2_AbortAction");
 static_assert(sizeof(PawnActionsComponent_K2_AbortAction) == 0x000010, "Wrong size on PawnActionsComponent_K2_AbortAction");
@@ -2858,7 +2858,7 @@ struct PawnActionsComponent_K2_ForceAbortAction final
 public:
 	class UPawnAction*                            ActionToAbort;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPawnActionAbortState                         ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F74[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PawnActionsComponent_K2_ForceAbortAction) == 0x000008, "Wrong alignment on PawnActionsComponent_K2_ForceAbortAction");
 static_assert(sizeof(PawnActionsComponent_K2_ForceAbortAction) == 0x000010, "Wrong size on PawnActionsComponent_K2_ForceAbortAction");
@@ -2872,10 +2872,10 @@ struct PawnActionsComponent_K2_PushAction final
 public:
 	class UPawnAction*                            NewAction;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAIRequestPriority                            Priority;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F75[0x7];                                      // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Instigator;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F76[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PawnActionsComponent_K2_PushAction) == 0x000008, "Wrong alignment on PawnActionsComponent_K2_PushAction");
 static_assert(sizeof(PawnActionsComponent_K2_PushAction) == 0x000020, "Wrong size on PawnActionsComponent_K2_PushAction");

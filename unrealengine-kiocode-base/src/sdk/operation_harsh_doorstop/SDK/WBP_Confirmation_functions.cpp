@@ -40,10 +40,10 @@ void UWBP_Confirmation_C::ExecuteUbergraph_WBP_Confirmation(int32 EntryPoint)
 // Function WBP_Confirmation.WBP_Confirmation_C.UpdateDialogText
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             Param_TitleText                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FText                             TitleText_0                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // class FText                             DescriptionText                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_Confirmation_C::UpdateDialogText(const class FText& Param_TitleText, const class FText& DescriptionText)
+void UWBP_Confirmation_C::UpdateDialogText(const class FText& TitleText_0, const class FText& DescriptionText)
 {
 	static class UFunction* Func = nullptr;
 
@@ -52,7 +52,7 @@ void UWBP_Confirmation_C::UpdateDialogText(const class FText& Param_TitleText, c
 
 	Params::WBP_Confirmation_C_UpdateDialogText Parms{};
 
-	Parms.Param_TitleText = std::move(Param_TitleText);
+	Parms.TitleText_0 = std::move(TitleText_0);
 	Parms.DescriptionText = std::move(DescriptionText);
 
 	UObject::ProcessEvent(Func, &Parms);

@@ -96,7 +96,7 @@ public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bActiveAndSpawnedInWorld;                          // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CEA[0x2];                                      // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFHandlerInterface_EventShouldUpdateThisFrame) == 0x000004, "Wrong alignment on DFHandlerInterface_EventShouldUpdateThisFrame");
 static_assert(sizeof(DFHandlerInterface_EventShouldUpdateThisFrame) == 0x000008, "Wrong size on DFHandlerInterface_EventShouldUpdateThisFrame");
@@ -111,7 +111,7 @@ struct DFHandlerInterface_EventUpdate final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMakeDecision;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CEB[0x3];                                      // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFHandlerInterface_EventUpdate) == 0x000004, "Wrong alignment on DFHandlerInterface_EventUpdate");
 static_assert(sizeof(DFHandlerInterface_EventUpdate) == 0x000008, "Wrong size on DFHandlerInterface_EventUpdate");
@@ -417,7 +417,7 @@ struct DFBaseItem_GetItemMeshToUse final
 {
 public:
 	bool                                          bIgnoreLocalControlOnServer;                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CF2[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseItem_GetItemMeshToUse) == 0x000008, "Wrong alignment on DFBaseItem_GetItemMeshToUse");
@@ -442,7 +442,7 @@ struct DFBaseItem_GetLegacyLocomotionAnims final
 {
 public:
 	bool                                          bFPP;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CF3[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FName, class UAnimSequenceBase*>   ReturnValue;                                       // 0x0008(0x0050)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseItem_GetLegacyLocomotionAnims) == 0x000008, "Wrong alignment on DFBaseItem_GetLegacyLocomotionAnims");
@@ -469,7 +469,7 @@ public:
 	struct FVector                                OutViewLoc;                                        // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               OutViewRot;                                        // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CF4[0x3];                                      // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseItem_GetOwnerViewPoint) == 0x000004, "Wrong alignment on DFBaseItem_GetOwnerViewPoint");
 static_assert(sizeof(DFBaseItem_GetOwnerViewPoint) == 0x00001C, "Wrong size on DFBaseItem_GetOwnerViewPoint");
@@ -605,7 +605,7 @@ struct DFIntrinsicCharAnimInstInterface_PlayDeathMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CF5[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFIntrinsicCharAnimInstInterface_PlayDeathMontage) == 0x000008, "Wrong alignment on DFIntrinsicCharAnimInstInterface_PlayDeathMontage");
 static_assert(sizeof(DFIntrinsicCharAnimInstInterface_PlayDeathMontage) == 0x000010, "Wrong size on DFIntrinsicCharAnimInstInterface_PlayDeathMontage");
@@ -619,7 +619,7 @@ struct DFIntrinsicWeapAnimInstInterface_PlayEquipMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CF7[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFIntrinsicWeapAnimInstInterface_PlayEquipMontage) == 0x000008, "Wrong alignment on DFIntrinsicWeapAnimInstInterface_PlayEquipMontage");
 static_assert(sizeof(DFIntrinsicWeapAnimInstInterface_PlayEquipMontage) == 0x000010, "Wrong size on DFIntrinsicWeapAnimInstInterface_PlayEquipMontage");
@@ -634,7 +634,7 @@ public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFireLast;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAiming;                                           // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CF8[0x2];                                      // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFIntrinsicWeapAnimInstInterface_PlayFireMontage) == 0x000008, "Wrong alignment on DFIntrinsicWeapAnimInstInterface_PlayFireMontage");
@@ -651,7 +651,7 @@ struct DFIntrinsicWeapAnimInstInterface_PlayReloadMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFullReload;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CF9[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFIntrinsicWeapAnimInstInterface_PlayReloadMontage) == 0x000008, "Wrong alignment on DFIntrinsicWeapAnimInstInterface_PlayReloadMontage");
@@ -667,7 +667,7 @@ struct DFIntrinsicWeapAnimInstInterface_PlayUnEquipMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CFA[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFIntrinsicWeapAnimInstInterface_PlayUnEquipMontage) == 0x000008, "Wrong alignment on DFIntrinsicWeapAnimInstInterface_PlayUnEquipMontage");
 static_assert(sizeof(DFIntrinsicWeapAnimInstInterface_PlayUnEquipMontage) == 0x000010, "Wrong size on DFIntrinsicWeapAnimInstInterface_PlayUnEquipMontage");
@@ -681,10 +681,10 @@ struct DFBaseAmmoClip_StoreAmmoInInventory final
 public:
 	class UDFInventoryComponent*                  AmmoStore;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AmmoAmt;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CFF[0x4];                                      // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ADFBaseAmmoClip>            AmmoType;                                          // 0x0010(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D00[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseAmmoClip_StoreAmmoInInventory) == 0x000008, "Wrong alignment on DFBaseAmmoClip_StoreAmmoInInventory");
 static_assert(sizeof(DFBaseAmmoClip_StoreAmmoInInventory) == 0x000020, "Wrong size on DFBaseAmmoClip_StoreAmmoInInventory");
@@ -822,13 +822,13 @@ public:
 	float                                         Timestamp;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                NewLoc;                                            // 0x0004(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                NewVel;                                            // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D12[0x4];                                      // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    NewBase;                                           // 0x0020(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   NewBaseBoneName;                                   // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHasBase;                                          // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bBaseRelativePosition;                             // 0x0031(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ServerMovementMode;                                // 0x0032(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D13[0x1];                                      // 0x0033(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33[0x1];                                       // 0x0033(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ServerSprintStamina;                               // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_ClientAdjustPosition_CustomStamina) == 0x000008, "Wrong alignment on DFBaseCharacter_ClientAdjustPosition_CustomStamina");
@@ -853,13 +853,13 @@ public:
 	struct FVector                                ServerLoc;                                         // 0x0008(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector_NetQuantizeNormal              ServerRotation;                                    // 0x0014(0x000C)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ServerVelZ;                                        // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D14[0x4];                                      // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    ServerBase;                                        // 0x0028(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ServerBoneName;                                    // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHasBase;                                          // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bBaseRelativePosition;                             // 0x0039(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ServerMovementMode;                                // 0x003A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D15[0x1];                                      // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B[0x1];                                       // 0x003B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ServerSprintStamina;                               // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_ClientAdjustRootMotionPosition_CustomStamina) == 0x000008, "Wrong alignment on DFBaseCharacter_ClientAdjustRootMotionPosition_CustomStamina");
@@ -882,21 +882,21 @@ struct DFBaseCharacter_ClientAdjustRootMotionSourcePosition_CustomStamina final
 {
 public:
 	float                                         Timestamp;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D16[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRootMotionSourceGroup                 ServerRootMotion;                                  // 0x0008(0x0038)(Parm, NativeAccessSpecifierPublic)
 	bool                                          bHasAnimRootMotion;                                // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D17[0x3];                                      // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ServerMontageTrackPosition;                        // 0x0044(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ServerLoc;                                         // 0x0048(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector_NetQuantizeNormal              ServerRotation;                                    // 0x0054(0x000C)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ServerVelZ;                                        // 0x0060(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D18[0x4];                                      // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPrimitiveComponent*                    ServerBase;                                        // 0x0068(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ServerBoneName;                                    // 0x0070(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHasBase;                                          // 0x0078(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bBaseRelativePosition;                             // 0x0079(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ServerMovementMode;                                // 0x007A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D19[0x1];                                      // 0x007B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7B[0x1];                                       // 0x007B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ServerSprintStamina;                               // 0x007C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_ClientAdjustRootMotionSourcePosition_CustomStamina) == 0x000008, "Wrong alignment on DFBaseCharacter_ClientAdjustRootMotionSourcePosition_CustomStamina");
@@ -927,7 +927,7 @@ public:
 	bool                                          bHasBase;                                          // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bBaseRelativePosition;                             // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ServerMovementMode;                                // 0x0022(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D1A[0x1];                                      // 0x0023(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23[0x1];                                       // 0x0023(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ServerSprintStamina;                               // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_ClientVeryShortAdjustPosition_CustomStamina) == 0x000008, "Wrong alignment on DFBaseCharacter_ClientVeryShortAdjustPosition_CustomStamina");
@@ -947,12 +947,12 @@ struct DFBaseCharacter_Die final
 {
 public:
 	float                                         KillingDamage;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D1B[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class AController*                            Killer;                                            // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D1C[0x7];                                      // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_Die) == 0x000008, "Wrong alignment on DFBaseCharacter_Die");
 static_assert(sizeof(DFBaseCharacter_Die) == 0x000030, "Wrong size on DFBaseCharacter_Die");
@@ -990,7 +990,7 @@ struct DFBaseCharacter_GetNextInventoryItem final
 {
 public:
 	bool                                          bEquippable;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D1D[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseItem*                            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_GetNextInventoryItem) == 0x000008, "Wrong alignment on DFBaseCharacter_GetNextInventoryItem");
@@ -1004,7 +1004,7 @@ struct DFBaseCharacter_GetPreviousInventoryItem final
 {
 public:
 	bool                                          bEquippable;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D1E[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseItem*                            ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_GetPreviousInventoryItem) == 0x000008, "Wrong alignment on DFBaseCharacter_GetPreviousInventoryItem");
@@ -1019,7 +1019,7 @@ struct DFBaseCharacter_GiveLoadout final
 public:
 	class UDFLoadout*                             Loadout;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEquipFirstItem;                                   // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D1F[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_GiveLoadout) == 0x000008, "Wrong alignment on DFBaseCharacter_GiveLoadout");
 static_assert(sizeof(DFBaseCharacter_GiveLoadout) == 0x000010, "Wrong size on DFBaseCharacter_GiveLoadout");
@@ -1100,7 +1100,7 @@ struct DFBaseCharacter_OnDeath final
 {
 public:
 	float                                         KillingDamage;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D20[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class APawn*                                  InstigatingPawn;                                   // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1185,7 +1185,7 @@ struct DFBaseCharacter_PlayCharacterActionMontage final
 public:
 	class UAnimMontage*                           ActionMontageToPlay;                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D21[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterActionMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterActionMontage");
 static_assert(sizeof(DFBaseCharacter_PlayCharacterActionMontage) == 0x000010, "Wrong size on DFBaseCharacter_PlayCharacterActionMontage");
@@ -1199,7 +1199,7 @@ struct DFBaseCharacter_PlayCharacterCockMontage final
 public:
 	class UAnimMontage*                           CockMontageToPlay;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D22[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterCockMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterCockMontage");
 static_assert(sizeof(DFBaseCharacter_PlayCharacterCockMontage) == 0x000010, "Wrong size on DFBaseCharacter_PlayCharacterCockMontage");
@@ -1212,7 +1212,7 @@ struct DFBaseCharacter_PlayCharacterDeathMontage final
 {
 public:
 	bool                                          bDontPlayAndReturnDominantPlayLengthOnly;          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D23[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterDeathMontage) == 0x000004, "Wrong alignment on DFBaseCharacter_PlayCharacterDeathMontage");
@@ -1227,7 +1227,7 @@ struct DFBaseCharacter_PlayCharacterEndReloadMontage final
 public:
 	class UAnimMontage*                           EndReloadMontageToPlay;                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDryReload;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D24[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterEndReloadMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterEndReloadMontage");
@@ -1242,7 +1242,7 @@ struct DFBaseCharacter_PlayCharacterEquipMontage final
 {
 public:
 	bool                                          bDontPlayAndReturnDominantPlayLengthOnly;          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D25[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterEquipMontage) == 0x000004, "Wrong alignment on DFBaseCharacter_PlayCharacterEquipMontage");
@@ -1258,7 +1258,7 @@ public:
 	class UAnimMontage*                           FireMontageToPlay;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFireLast;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFireADS;                                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D26[0x2];                                      // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterFireMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterFireMontage");
@@ -1275,7 +1275,7 @@ struct DFBaseCharacter_PlayCharacterMontage final
 public:
 	class UAnimMontage*                           CharMontage;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceDisableAutoBlendOut;                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D27[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterMontage");
@@ -1291,7 +1291,7 @@ struct DFBaseCharacter_PlayCharacterPerspectiveAnimation final
 public:
 	struct FPerspectiveAnim                       CharAnim;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceDisableAutoBlendOut;                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D28[0x3];                                      // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterPerspectiveAnimation) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterPerspectiveAnimation");
@@ -1306,7 +1306,7 @@ struct DFBaseCharacter_PlayCharacterReloadMontage final
 {
 public:
 	bool                                          bDryReload;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D29[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterReloadMontage) == 0x000004, "Wrong alignment on DFBaseCharacter_PlayCharacterReloadMontage");
@@ -1334,7 +1334,7 @@ struct DFBaseCharacter_PlayCharacterStartReloadMontage final
 public:
 	class UAnimMontage*                           StartReloadMontageToPlay;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDryReload;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D2A[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterStartReloadMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterStartReloadMontage");
@@ -1350,7 +1350,7 @@ struct DFBaseCharacter_PlayCharacterThrowOverhandMontage final
 public:
 	class UAnimMontage*                           ThrowOverhandMontageToPlay;                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D2B[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterThrowOverhandMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterThrowOverhandMontage");
 static_assert(sizeof(DFBaseCharacter_PlayCharacterThrowOverhandMontage) == 0x000010, "Wrong size on DFBaseCharacter_PlayCharacterThrowOverhandMontage");
@@ -1364,7 +1364,7 @@ struct DFBaseCharacter_PlayCharacterThrowUnderhandMontage final
 public:
 	class UAnimMontage*                           ThrowUnderhandMontageToPlay;                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D2C[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterThrowUnderhandMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterThrowUnderhandMontage");
 static_assert(sizeof(DFBaseCharacter_PlayCharacterThrowUnderhandMontage) == 0x000010, "Wrong size on DFBaseCharacter_PlayCharacterThrowUnderhandMontage");
@@ -1378,7 +1378,7 @@ struct DFBaseCharacter_PlayCharacterUnEquipMontage final
 public:
 	class UAnimMontage*                           UnEquipMontageToPlay;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D2D[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_PlayCharacterUnEquipMontage) == 0x000008, "Wrong alignment on DFBaseCharacter_PlayCharacterUnEquipMontage");
 static_assert(sizeof(DFBaseCharacter_PlayCharacterUnEquipMontage) == 0x000010, "Wrong size on DFBaseCharacter_PlayCharacterUnEquipMontage");
@@ -1458,7 +1458,7 @@ public:
 	class ADFTeamState*                           TeamStateBeforeUpdate;                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ADFTeamState*                           NewTeamState;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNewTeamStateInit;                                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D2E[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_ReceivePawnTeamStateUpdated) == 0x000008, "Wrong alignment on DFBaseCharacter_ReceivePawnTeamStateUpdated");
 static_assert(sizeof(DFBaseCharacter_ReceivePawnTeamStateUpdated) == 0x000018, "Wrong size on DFBaseCharacter_ReceivePawnTeamStateUpdated");
@@ -1472,12 +1472,12 @@ struct DFBaseCharacter_ReceivePlayHit final
 {
 public:
 	float                                         DamageTaken;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D2F[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class APawn*                                  PawnInstigator;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bKilled;                                           // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D30[0x7];                                      // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_ReceivePlayHit) == 0x000008, "Wrong alignment on DFBaseCharacter_ReceivePlayHit");
 static_assert(sizeof(DFBaseCharacter_ReceivePlayHit) == 0x000030, "Wrong size on DFBaseCharacter_ReceivePlayHit");
@@ -1537,7 +1537,7 @@ struct DFBaseCharacter_SpawnHitImpactFX final
 {
 public:
 	float                                         DamageTaken;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D31[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class APawn*                                  PawnInstigator;                                    // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1656,12 +1656,12 @@ struct DFBaseCharacter_CanDie final
 {
 public:
 	float                                         KillingDamage;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D32[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class AController*                            Killer;                                            // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D33[0x7];                                      // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_CanDie) == 0x000008, "Wrong alignment on DFBaseCharacter_CanDie");
 static_assert(sizeof(DFBaseCharacter_CanDie) == 0x000030, "Wrong size on DFBaseCharacter_CanDie");
@@ -1761,7 +1761,7 @@ struct DFBaseCharacter_GetCharacterDeathMontageToUse final
 public:
 	class UAnimMontage*                           OutCharDeathMontage;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D34[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_GetCharacterDeathMontageToUse) == 0x000008, "Wrong alignment on DFBaseCharacter_GetCharacterDeathMontageToUse");
 static_assert(sizeof(DFBaseCharacter_GetCharacterDeathMontageToUse) == 0x000010, "Wrong size on DFBaseCharacter_GetCharacterDeathMontageToUse");
@@ -1774,7 +1774,7 @@ struct DFBaseCharacter_GetCharacterMeshToUse final
 {
 public:
 	bool                                          bIgnoreLocalControlOnServer;                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D35[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseCharacter_GetCharacterMeshToUse) == 0x000008, "Wrong alignment on DFBaseCharacter_GetCharacterMeshToUse");
@@ -1790,7 +1790,7 @@ public:
 	class FName                                   BoneName;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DamageMultiplier;                                  // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D36[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_GetDamageMultiplierByBoneName) == 0x000004, "Wrong alignment on DFBaseCharacter_GetDamageMultiplierByBoneName");
 static_assert(sizeof(DFBaseCharacter_GetDamageMultiplierByBoneName) == 0x000010, "Wrong size on DFBaseCharacter_GetDamageMultiplierByBoneName");
@@ -1917,7 +1917,7 @@ struct DFBaseCharacter_IsPerspectiveMesh final
 public:
 	const class USkeletalMeshComponent*           MeshCompToCheck;                                   // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D37[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseCharacter_IsPerspectiveMesh) == 0x000008, "Wrong alignment on DFBaseCharacter_IsPerspectiveMesh");
 static_assert(sizeof(DFBaseCharacter_IsPerspectiveMesh) == 0x000010, "Wrong size on DFBaseCharacter_IsPerspectiveMesh");
@@ -1952,7 +1952,7 @@ struct DFBaseGameMode_AddBot final
 {
 public:
 	uint8                                         PlayerTeamID;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D3C[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PlayerName;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerState*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1990,7 +1990,7 @@ struct DFBaseGameMode_AddTeamBots final
 {
 public:
 	uint8                                         TeamId;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D3D[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Num;                                               // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameMode_AddTeamBots) == 0x000004, "Wrong alignment on DFBaseGameMode_AddTeamBots");
@@ -2005,7 +2005,7 @@ struct DFBaseGameMode_AssignTeam final
 public:
 	class AController*                            ForController;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         AssignedTeam;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D3E[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_AssignTeam) == 0x000008, "Wrong alignment on DFBaseGameMode_AssignTeam");
 static_assert(sizeof(DFBaseGameMode_AssignTeam) == 0x000010, "Wrong size on DFBaseGameMode_AssignTeam");
@@ -2018,11 +2018,11 @@ struct DFBaseGameMode_BanPlayerById final
 {
 public:
 	int32                                         BannedPlayerId;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D3F[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   BanReason;                                         // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         BanDuration;                                       // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D40[0x3];                                      // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_BanPlayerById) == 0x000008, "Wrong alignment on DFBaseGameMode_BanPlayerById");
 static_assert(sizeof(DFBaseGameMode_BanPlayerById) == 0x000028, "Wrong size on DFBaseGameMode_BanPlayerById");
@@ -2040,7 +2040,7 @@ public:
 	class FText                                   BanReason;                                         // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         BanDuration;                                       // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x002C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D41[0x3];                                      // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_BanPlayerByName) == 0x000008, "Wrong alignment on DFBaseGameMode_BanPlayerByName");
 static_assert(sizeof(DFBaseGameMode_BanPlayerByName) == 0x000030, "Wrong size on DFBaseGameMode_BanPlayerByName");
@@ -2081,7 +2081,7 @@ public:
 	struct FSpawnPointDef                         OutChosenSpawnPoint;                               // 0x0010(0x0050)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	ESpawnActorCollisionHandlingMethod            OutCollisionHandlingMethod;                        // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0061(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D42[0xE];                                      // 0x0062(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_62[0xE];                                       // 0x0062(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_ChooseSpawnPointFromPlayerStart) == 0x000010, "Wrong alignment on DFBaseGameMode_ChooseSpawnPointFromPlayerStart");
 static_assert(sizeof(DFBaseGameMode_ChooseSpawnPointFromPlayerStart) == 0x000070, "Wrong size on DFBaseGameMode_ChooseSpawnPointFromPlayerStart");
@@ -2098,7 +2098,7 @@ struct DFBaseGameMode_CreateTeam final
 public:
 	const class UDFTeamDefinition*                NewTeamDef;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         NewTeamIdToUse;                                    // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D43[0x7];                                      // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFTeamState*                           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameMode_CreateTeam) == 0x000008, "Wrong alignment on DFBaseGameMode_CreateTeam");
@@ -2113,11 +2113,11 @@ struct DFBaseGameMode_FindPlayerStartTransform final
 {
 public:
 	class AController*                            Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D44[0x8];                                      // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             OutFoundSpawnTransform;                            // 0x0010(0x0030)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 IncomingName;                                      // 0x0040(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D45[0xF];                                      // 0x0051(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0xF];                                       // 0x0051(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_FindPlayerStartTransform) == 0x000010, "Wrong alignment on DFBaseGameMode_FindPlayerStartTransform");
 static_assert(sizeof(DFBaseGameMode_FindPlayerStartTransform) == 0x000060, "Wrong size on DFBaseGameMode_FindPlayerStartTransform");
@@ -2134,7 +2134,7 @@ public:
 	class FString                                 SwitchedPlayerName;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         TeamIdToAssign;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D46[0x6];                                      // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_ForceTeam) == 0x000008, "Wrong alignment on DFBaseGameMode_ForceTeam");
 static_assert(sizeof(DFBaseGameMode_ForceTeam) == 0x000018, "Wrong size on DFBaseGameMode_ForceTeam");
@@ -2150,7 +2150,7 @@ public:
 	int32                                         SwitchedPlayerId;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         TeamIdToAssign;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D47[0x2];                                      // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_ForceTeamId) == 0x000004, "Wrong alignment on DFBaseGameMode_ForceTeamId");
 static_assert(sizeof(DFBaseGameMode_ForceTeamId) == 0x000008, "Wrong size on DFBaseGameMode_ForceTeamId");
@@ -2164,7 +2164,7 @@ struct DFBaseGameMode_GetTotalNumPlayers final
 {
 public:
 	bool                                          bIncludeTravellingPlayers;                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D48[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameMode_GetTotalNumPlayers) == 0x000004, "Wrong alignment on DFBaseGameMode_GetTotalNumPlayers");
@@ -2178,10 +2178,10 @@ struct DFBaseGameMode_KickPlayerById final
 {
 public:
 	int32                                         KickedPlayerId;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D49[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   KickReason;                                        // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D4A[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_KickPlayerById) == 0x000008, "Wrong alignment on DFBaseGameMode_KickPlayerById");
 static_assert(sizeof(DFBaseGameMode_KickPlayerById) == 0x000028, "Wrong size on DFBaseGameMode_KickPlayerById");
@@ -2197,7 +2197,7 @@ public:
 	class FString                                 KickedPlayerName;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   KickReason;                                        // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D4B[0x7];                                      // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_KickPlayerByName) == 0x000008, "Wrong alignment on DFBaseGameMode_KickPlayerByName");
 static_assert(sizeof(DFBaseGameMode_KickPlayerByName) == 0x000030, "Wrong size on DFBaseGameMode_KickPlayerByName");
@@ -2212,7 +2212,7 @@ struct DFBaseGameMode_PlayerBotCanRestart final
 public:
 	class AAIController*                          Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D4C[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_PlayerBotCanRestart) == 0x000008, "Wrong alignment on DFBaseGameMode_PlayerBotCanRestart");
 static_assert(sizeof(DFBaseGameMode_PlayerBotCanRestart) == 0x000010, "Wrong size on DFBaseGameMode_PlayerBotCanRestart");
@@ -2226,7 +2226,7 @@ struct DFBaseGameMode_PlayerCanRestartGeneric final
 public:
 	class AController*                            Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D4D[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_PlayerCanRestartGeneric) == 0x000008, "Wrong alignment on DFBaseGameMode_PlayerCanRestartGeneric");
 static_assert(sizeof(DFBaseGameMode_PlayerCanRestartGeneric) == 0x000010, "Wrong size on DFBaseGameMode_PlayerCanRestartGeneric");
@@ -2264,7 +2264,7 @@ struct DFBaseGameMode_RemoveBot final
 public:
 	class APlayerState*                           BotPS;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D4E[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_RemoveBot) == 0x000008, "Wrong alignment on DFBaseGameMode_RemoveBot");
 static_assert(sizeof(DFBaseGameMode_RemoveBot) == 0x000010, "Wrong size on DFBaseGameMode_RemoveBot");
@@ -2278,7 +2278,7 @@ struct DFBaseGameMode_RemoveBotByName final
 public:
 	class FString                                 PlayerName;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D4F[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_RemoveBotByName) == 0x000008, "Wrong alignment on DFBaseGameMode_RemoveBotByName");
 static_assert(sizeof(DFBaseGameMode_RemoveBotByName) == 0x000018, "Wrong size on DFBaseGameMode_RemoveBotByName");
@@ -2306,7 +2306,7 @@ struct DFBaseGameMode_RemoveTeamBots final
 {
 public:
 	uint8                                         TeamId;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D50[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Num;                                               // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameMode_RemoveTeamBots) == 0x000004, "Wrong alignment on DFBaseGameMode_RemoveTeamBots");
@@ -2321,7 +2321,7 @@ struct DFBaseGameMode_SignificantActorEndPlay final
 public:
 	class AActor*                                 RemovedActor;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D51[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_SignificantActorEndPlay) == 0x000008, "Wrong alignment on DFBaseGameMode_SignificantActorEndPlay");
 static_assert(sizeof(DFBaseGameMode_SignificantActorEndPlay) == 0x000010, "Wrong size on DFBaseGameMode_SignificantActorEndPlay");
@@ -2358,7 +2358,7 @@ public:
 	TSubclassOf<class UDFGameRulesetBase>         RulesetClassToAdd;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 RulesetDenialReason;                               // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D52[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_CanAddRuleset) == 0x000008, "Wrong alignment on DFBaseGameMode_CanAddRuleset");
 static_assert(sizeof(DFBaseGameMode_CanAddRuleset) == 0x000020, "Wrong size on DFBaseGameMode_CanAddRuleset");
@@ -2374,7 +2374,7 @@ public:
 	class ADFBasePlayerState*                     DamageInstigator;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ADFBasePlayerState*                     DamagedPlayer;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D53[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_CanDealDamage) == 0x000008, "Wrong alignment on DFBaseGameMode_CanDealDamage");
 static_assert(sizeof(DFBaseGameMode_CanDealDamage) == 0x000018, "Wrong size on DFBaseGameMode_CanDealDamage");
@@ -2390,7 +2390,7 @@ public:
 	const class AActor*                           ActorToRegister;                                   // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ActorDenialReason;                                 // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D54[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_CanRegisterSignificantActor) == 0x000008, "Wrong alignment on DFBaseGameMode_CanRegisterSignificantActor");
 static_assert(sizeof(DFBaseGameMode_CanRegisterSignificantActor) == 0x000020, "Wrong size on DFBaseGameMode_CanRegisterSignificantActor");
@@ -2405,7 +2405,7 @@ struct DFBaseGameMode_ChooseTeam final
 public:
 	class ADFBasePlayerState*                     ForPlayerState;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D55[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_ChooseTeam) == 0x000008, "Wrong alignment on DFBaseGameMode_ChooseTeam");
 static_assert(sizeof(DFBaseGameMode_ChooseTeam) == 0x000010, "Wrong size on DFBaseGameMode_ChooseTeam");
@@ -2452,7 +2452,7 @@ struct DFBaseGameMode_GetNumPlayersOnTeam final
 public:
 	uint8                                         TeamId;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EPlayerKind                                   PlayerType;                                        // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D56[0x2];                                      // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameMode_GetNumPlayersOnTeam) == 0x000004, "Wrong alignment on DFBaseGameMode_GetNumPlayersOnTeam");
@@ -2490,7 +2490,7 @@ struct DFBaseGameMode_IsMatchWinner final
 public:
 	class ADFBasePlayerState*                     PlayerStateToCheck;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D57[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_IsMatchWinner) == 0x000008, "Wrong alignment on DFBaseGameMode_IsMatchWinner");
 static_assert(sizeof(DFBaseGameMode_IsMatchWinner) == 0x000010, "Wrong size on DFBaseGameMode_IsMatchWinner");
@@ -2516,13 +2516,13 @@ struct DFBaseGameMode_ModifyDamage final
 {
 public:
 	float                                         Damage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D58[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 DamagedActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDamageEvent                           DamageEvent;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class AController*                            EventInstigator;                                   // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D59[0x4];                                      // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_ModifyDamage) == 0x000008, "Wrong alignment on DFBaseGameMode_ModifyDamage");
 static_assert(sizeof(DFBaseGameMode_ModifyDamage) == 0x000038, "Wrong size on DFBaseGameMode_ModifyDamage");
@@ -2552,7 +2552,7 @@ public:
 	class ADFBasePlayerController*                ForPlayer;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ADFBasePlayerController*                PlayerToCheck;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D5A[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameMode_ShouldGameplayMuteRemotePlayer) == 0x000008, "Wrong alignment on DFBaseGameMode_ShouldGameplayMuteRemotePlayer");
 static_assert(sizeof(DFBaseGameMode_ShouldGameplayMuteRemotePlayer) == 0x000018, "Wrong size on DFBaseGameMode_ShouldGameplayMuteRemotePlayer");
@@ -2613,7 +2613,7 @@ struct DFBaseGameInstance_HostGame final
 public:
 	class FString                                 TravelURL;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLANGame;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D5E[0x3];                                      // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MaxPlayers;                                        // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 HostName;                                          // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Password;                                          // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2632,7 +2632,7 @@ struct DFBaseGameInstance_JoinGame final
 {
 public:
 	int32                                         SearchResultIndex;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D5F[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 JoinPassword;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameInstance_JoinGame) == 0x000008, "Wrong alignment on DFBaseGameInstance_JoinGame");
@@ -2661,7 +2661,7 @@ public:
 	class UWorld*                                 World;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UNetDriver*                             NetDriver;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENetworkFailure                               FailureType;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D60[0x7];                                      // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ErrorString;                                       // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameInstance_OnNetworkFailure) == 0x000008, "Wrong alignment on DFBaseGameInstance_OnNetworkFailure");
@@ -2679,7 +2679,7 @@ public:
 	class UWorld*                                 World;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UNetDriver*                             NetDriver;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ENetworkLagState                              LagType;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D61[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGameInstance_OnNetworkLagStateChanged) == 0x000008, "Wrong alignment on DFBaseGameInstance_OnNetworkLagStateChanged");
 static_assert(sizeof(DFBaseGameInstance_OnNetworkLagStateChanged) == 0x000018, "Wrong size on DFBaseGameInstance_OnNetworkLagStateChanged");
@@ -2694,7 +2694,7 @@ struct DFBaseGameInstance_OnTravelFailure final
 public:
 	class UWorld*                                 World;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ETravelFailure                                FailureType;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D62[0x7];                                      // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ErrorString;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameInstance_OnTravelFailure) == 0x000008, "Wrong alignment on DFBaseGameInstance_OnTravelFailure");
@@ -2753,7 +2753,7 @@ struct DFBaseGameState_GetTeamStateById final
 {
 public:
 	uint8                                         TeamIdNum;                                         // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D66[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFTeamState*                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGameState_GetTeamStateById) == 0x000008, "Wrong alignment on DFBaseGameState_GetTeamStateById");
@@ -2802,7 +2802,7 @@ struct DFBaseWeapon_PlayCockAnimations final
 {
 public:
 	bool                                          bDontPlayAndReturnDominantPlayLengthOnly;          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D70[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseWeapon_PlayCockAnimations) == 0x000004, "Wrong alignment on DFBaseWeapon_PlayCockAnimations");
@@ -2817,7 +2817,7 @@ struct DFBaseWeapon_PlayThrowAnimations final
 public:
 	bool                                          bOverhandThrow;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDontPlayAndReturnDominantPlayLengthOnly;          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D71[0x2];                                      // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseWeapon_PlayThrowAnimations) == 0x000004, "Wrong alignment on DFBaseWeapon_PlayThrowAnimations");
@@ -2833,7 +2833,7 @@ struct DFBaseWeapon_PlayWeaponActionMontage final
 public:
 	class UAnimMontage*                           ActionMontageToPlay;                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D72[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponActionMontage) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponActionMontage");
 static_assert(sizeof(DFBaseWeapon_PlayWeaponActionMontage) == 0x000010, "Wrong size on DFBaseWeapon_PlayWeaponActionMontage");
@@ -2847,7 +2847,7 @@ struct DFBaseWeapon_PlayWeaponCockMontage final
 public:
 	class UAnimMontage*                           CockMontageToPlay;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D73[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponCockMontage) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponCockMontage");
 static_assert(sizeof(DFBaseWeapon_PlayWeaponCockMontage) == 0x000010, "Wrong size on DFBaseWeapon_PlayWeaponCockMontage");
@@ -2861,7 +2861,7 @@ struct DFBaseWeapon_PlayWeaponEquipMontage final
 public:
 	class UAnimMontage*                           EquipMontageToPlay;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D74[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponEquipMontage) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponEquipMontage");
 static_assert(sizeof(DFBaseWeapon_PlayWeaponEquipMontage) == 0x000010, "Wrong size on DFBaseWeapon_PlayWeaponEquipMontage");
@@ -2876,7 +2876,7 @@ public:
 	class UAnimMontage*                           FireMontageToPlay;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFireLast;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFireADS;                                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D75[0x2];                                      // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponFireMontage) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponFireMontage");
@@ -2893,7 +2893,7 @@ struct DFBaseWeapon_PlayWeaponMontage final
 public:
 	class UAnimMontage*                           WeapMontage;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceDisableAutoBlendOut;                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D76[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponMontage) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponMontage");
@@ -2909,7 +2909,7 @@ struct DFBaseWeapon_PlayWeaponPerspectiveAnimation final
 public:
 	struct FPerspectiveAnim                       WeapAnim;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D77[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponPerspectiveAnimation) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponPerspectiveAnimation");
 static_assert(sizeof(DFBaseWeapon_PlayWeaponPerspectiveAnimation) == 0x000018, "Wrong size on DFBaseWeapon_PlayWeaponPerspectiveAnimation");
@@ -2936,7 +2936,7 @@ struct DFBaseWeapon_PlayWeaponThrowOverhandMontage final
 public:
 	class UAnimMontage*                           ThrowOverhandMontageToPlay;                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D78[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponThrowOverhandMontage) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponThrowOverhandMontage");
 static_assert(sizeof(DFBaseWeapon_PlayWeaponThrowOverhandMontage) == 0x000010, "Wrong size on DFBaseWeapon_PlayWeaponThrowOverhandMontage");
@@ -2950,7 +2950,7 @@ struct DFBaseWeapon_PlayWeaponThrowUnderhandMontage final
 public:
 	class UAnimMontage*                           ThrowUnderhandMontageToPlay;                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D79[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponThrowUnderhandMontage) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponThrowUnderhandMontage");
 static_assert(sizeof(DFBaseWeapon_PlayWeaponThrowUnderhandMontage) == 0x000010, "Wrong size on DFBaseWeapon_PlayWeaponThrowUnderhandMontage");
@@ -2964,7 +2964,7 @@ struct DFBaseWeapon_PlayWeaponUnEquipMontage final
 public:
 	class UAnimMontage*                           UnEquipMontageToPlay;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D7A[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_PlayWeaponUnEquipMontage) == 0x000008, "Wrong alignment on DFBaseWeapon_PlayWeaponUnEquipMontage");
 static_assert(sizeof(DFBaseWeapon_PlayWeaponUnEquipMontage) == 0x000010, "Wrong size on DFBaseWeapon_PlayWeaponUnEquipMontage");
@@ -3041,7 +3041,7 @@ struct DFBaseWeapon_GetAnimPlayLengthToUseFromPerspectiveAnimPair final
 public:
 	struct FPerspectiveAnim                       AnimationPair;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D7B[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_GetAnimPlayLengthToUseFromPerspectiveAnimPair) == 0x000008, "Wrong alignment on DFBaseWeapon_GetAnimPlayLengthToUseFromPerspectiveAnimPair");
 static_assert(sizeof(DFBaseWeapon_GetAnimPlayLengthToUseFromPerspectiveAnimPair) == 0x000018, "Wrong size on DFBaseWeapon_GetAnimPlayLengthToUseFromPerspectiveAnimPair");
@@ -3068,7 +3068,7 @@ struct DFBaseWeapon_GetMontagePlayLengthToUseFromPerspectiveAnimPair final
 public:
 	struct FPerspectiveAnim                       AnimationPair;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D7C[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseWeapon_GetMontagePlayLengthToUseFromPerspectiveAnimPair) == 0x000008, "Wrong alignment on DFBaseWeapon_GetMontagePlayLengthToUseFromPerspectiveAnimPair");
 static_assert(sizeof(DFBaseWeapon_GetMontagePlayLengthToUseFromPerspectiveAnimPair) == 0x000018, "Wrong size on DFBaseWeapon_GetMontagePlayLengthToUseFromPerspectiveAnimPair");
@@ -3116,7 +3116,7 @@ struct DFBaseWeapon_GetWeaponMeshToUse final
 {
 public:
 	bool                                          bIgnoreLocalControlOnServer;                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D7D[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseWeapon_GetWeaponMeshToUse) == 0x000008, "Wrong alignment on DFBaseWeapon_GetWeaponMeshToUse");
@@ -3152,10 +3152,10 @@ struct DFBaseGun_ClientRejectFiredShot final
 {
 public:
 	int32                                         ShotID;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D89[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseAmmoClip*                        ShotAmmoClip;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ServerClipAmmo;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D8A[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGun_ClientRejectFiredShot) == 0x000008, "Wrong alignment on DFBaseGun_ClientRejectFiredShot");
 static_assert(sizeof(DFBaseGun_ClientRejectFiredShot) == 0x000018, "Wrong size on DFBaseGun_ClientRejectFiredShot");
@@ -3225,7 +3225,7 @@ struct DFBaseGun_PlayReloadAnimations final
 public:
 	bool                                          bDryReload;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDontPlayAndReturnDominantPlayLengthOnly;          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D8B[0x2];                                      // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_PlayReloadAnimations) == 0x000004, "Wrong alignment on DFBaseGun_PlayReloadAnimations");
@@ -3241,7 +3241,7 @@ struct DFBaseGun_PlayReloadTransitionAnimations final
 public:
 	bool                                          bStartReload;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDontPlayAndReturnDominantPlayLengthOnly;          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D8C[0x2];                                      // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_PlayReloadTransitionAnimations) == 0x000004, "Wrong alignment on DFBaseGun_PlayReloadTransitionAnimations");
@@ -3257,7 +3257,7 @@ struct DFBaseGun_PlayWeaponEndReloadMontage final
 public:
 	class UAnimMontage*                           EndReloadMontageToPlay;                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDryReload;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D8D[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_PlayWeaponEndReloadMontage) == 0x000008, "Wrong alignment on DFBaseGun_PlayWeaponEndReloadMontage");
@@ -3272,7 +3272,7 @@ struct DFBaseGun_PlayWeaponReloadMontage final
 {
 public:
 	bool                                          bDryReload;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D8E[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_PlayWeaponReloadMontage) == 0x000004, "Wrong alignment on DFBaseGun_PlayWeaponReloadMontage");
@@ -3287,7 +3287,7 @@ struct DFBaseGun_PlayWeaponStartReloadMontage final
 public:
 	class UAnimMontage*                           StartReloadMontageToPlay;                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDryReload;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D8F[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_PlayWeaponStartReloadMontage) == 0x000008, "Wrong alignment on DFBaseGun_PlayWeaponStartReloadMontage");
@@ -3400,7 +3400,7 @@ struct DFBaseGun_GetMuzzleAttachComponent final
 {
 public:
 	bool                                          bIgnoreLocalControlOnServer;                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D90[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_GetMuzzleAttachComponent) == 0x000008, "Wrong alignment on DFBaseGun_GetMuzzleAttachComponent");
@@ -3425,7 +3425,7 @@ struct DFBaseGun_GetMuzzleDirection final
 {
 public:
 	bool                                          bIgnoreLocalControlOnServer;                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D91[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0004(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_GetMuzzleDirection) == 0x000004, "Wrong alignment on DFBaseGun_GetMuzzleDirection");
@@ -3439,7 +3439,7 @@ struct DFBaseGun_GetMuzzleLocation final
 {
 public:
 	bool                                          bIgnoreLocalControlOnServer;                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D92[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                ReturnValue;                                       // 0x0004(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_GetMuzzleLocation) == 0x000004, "Wrong alignment on DFBaseGun_GetMuzzleLocation");
@@ -3454,7 +3454,7 @@ struct DFBaseGun_GetNumFreeAmmoClips final
 public:
 	bool                                          bIncludeEmptyMags;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIncludeCurrentMag;                                // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D93[0x2];                                      // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_GetNumFreeAmmoClips) == 0x000004, "Wrong alignment on DFBaseGun_GetNumFreeAmmoClips");
@@ -3535,7 +3535,7 @@ struct DFBaseGun_GetTotalAmmo final
 {
 public:
 	bool                                          bIncludeLoadedMags;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D94[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseGun_GetTotalAmmo) == 0x000004, "Wrong alignment on DFBaseGun_GetTotalAmmo");
@@ -3638,7 +3638,7 @@ struct DFPlayerComponent_ReceiveGameHasEnded final
 public:
 	class AActor*                                 EndGameFocus;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsWinner;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D96[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerComponent_ReceiveGameHasEnded) == 0x000008, "Wrong alignment on DFPlayerComponent_ReceiveGameHasEnded");
 static_assert(sizeof(DFPlayerComponent_ReceiveGameHasEnded) == 0x000010, "Wrong size on DFPlayerComponent_ReceiveGameHasEnded");
@@ -3770,7 +3770,7 @@ public:
 	class ADFBaseProjectile*                      HitProj;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCSHitInfo                             HitInfo;                                           // 0x0008(0x0070)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	int32                                         ShotID;                                            // 0x0078(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D99[0x4];                                      // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseGun_Projectile_ServerNotifyCSHit) == 0x000008, "Wrong alignment on DFBaseGun_Projectile_ServerNotifyCSHit");
 static_assert(sizeof(DFBaseGun_Projectile_ServerNotifyCSHit) == 0x000080, "Wrong size on DFBaseGun_Projectile_ServerNotifyCSHit");
@@ -3810,7 +3810,7 @@ struct DFBaseImpactEffect_GetImpactFX final
 {
 public:
 	EPhysicalSurface                              SurfaceType;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D9B[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystem*                        ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseImpactEffect_GetImpactFX) == 0x000008, "Wrong alignment on DFBaseImpactEffect_GetImpactFX");
@@ -3824,7 +3824,7 @@ struct DFBaseImpactEffect_GetImpactSound final
 {
 public:
 	EPhysicalSurface                              SurfaceType;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D9C[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundCue*                              ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBaseImpactEffect_GetImpactSound) == 0x000008, "Wrong alignment on DFBaseImpactEffect_GetImpactSound");
@@ -3861,7 +3861,7 @@ struct DFBasePickup_CanBePickedUp final
 public:
 	class ADFBaseCharacter*                       Invoker;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DA1[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePickup_CanBePickedUp) == 0x000008, "Wrong alignment on DFBasePickup_CanBePickedUp");
 static_assert(sizeof(DFBasePickup_CanBePickedUp) == 0x000010, "Wrong size on DFBasePickup_CanBePickedUp");
@@ -4111,7 +4111,7 @@ public:
 	int32                                         VoteSelectionIndex;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDFVotingChannel                              VotingChannel;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DAE[0x2];                                      // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerController_CastVote) == 0x000004, "Wrong alignment on DFBasePlayerController_CastVote");
 static_assert(sizeof(DFBasePlayerController_CastVote) == 0x000008, "Wrong size on DFBasePlayerController_CastVote");
@@ -4129,7 +4129,7 @@ public:
 	int32                                         VoteSelectionIndex;                                // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDFVotingChannel                              VotingChannel;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0025(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DAF[0x2];                                      // 0x0026(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerController_InitiateVote) == 0x000008, "Wrong alignment on DFBasePlayerController_InitiateVote");
 static_assert(sizeof(DFBasePlayerController_InitiateVote) == 0x000028, "Wrong size on DFBasePlayerController_InitiateVote");
@@ -4157,7 +4157,7 @@ struct DFBasePlayerController_ReceiveGameHasEnded final
 public:
 	class AActor*                                 EndGameFocus;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsWinner;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB0[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerController_ReceiveGameHasEnded) == 0x000008, "Wrong alignment on DFBasePlayerController_ReceiveGameHasEnded");
 static_assert(sizeof(DFBasePlayerController_ReceiveGameHasEnded) == 0x000010, "Wrong size on DFBasePlayerController_ReceiveGameHasEnded");
@@ -4196,7 +4196,7 @@ public:
 	class ADFTeamState*                           LastTeamState;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ADFTeamState*                           NewTeamState;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNewTeamStateInit;                                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB1[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerController_ReceivePlayerTeamStateUpdated) == 0x000008, "Wrong alignment on DFBasePlayerController_ReceivePlayerTeamStateUpdated");
 static_assert(sizeof(DFBasePlayerController_ReceivePlayerTeamStateUpdated) == 0x000018, "Wrong size on DFBasePlayerController_ReceivePlayerTeamStateUpdated");
@@ -4222,7 +4222,7 @@ struct DFBasePlayerController_ReceivePreClientTravel final
 public:
 	class FString                                 PendingURL;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsSeamlessTravelWithRelativeTravelType;           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB2[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerController_ReceivePreClientTravel) == 0x000008, "Wrong alignment on DFBasePlayerController_ReceivePreClientTravel");
 static_assert(sizeof(DFBasePlayerController_ReceivePreClientTravel) == 0x000018, "Wrong size on DFBasePlayerController_ReceivePreClientTravel");
@@ -4269,7 +4269,7 @@ struct DFBasePlayerController_ServerCastVote final
 public:
 	int32                                         VoteSelectionIndex;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDFVotingChannel                              VotingChannel;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB3[0x3];                                      // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerController_ServerCastVote) == 0x000004, "Wrong alignment on DFBasePlayerController_ServerCastVote");
 static_assert(sizeof(DFBasePlayerController_ServerCastVote) == 0x000008, "Wrong size on DFBasePlayerController_ServerCastVote");
@@ -4285,7 +4285,7 @@ public:
 	struct FDFVoteIssueContext                    IssueContext;                                      // 0x0008(0x0018)(Parm, NativeAccessSpecifierPublic)
 	int32                                         VoteSelectionIndex;                                // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDFVotingChannel                              VotingChannel;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB4[0x3];                                      // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerController_ServerInitiateVote) == 0x000008, "Wrong alignment on DFBasePlayerController_ServerInitiateVote");
 static_assert(sizeof(DFBasePlayerController_ServerInitiateVote) == 0x000028, "Wrong size on DFBasePlayerController_ServerInitiateVote");
@@ -4303,7 +4303,7 @@ public:
 	class APawn*                                  HitProjDamageInstigator;                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCSHitInfo                             HitInfo;                                           // 0x0010(0x0070)(ConstParm, Parm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	int32                                         ShotID;                                            // 0x0080(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB5[0x4];                                      // 0x0084(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerController_ServerNotifyProjCSHit) == 0x000008, "Wrong alignment on DFBasePlayerController_ServerNotifyProjCSHit");
 static_assert(sizeof(DFBasePlayerController_ServerNotifyProjCSHit) == 0x000088, "Wrong size on DFBasePlayerController_ServerNotifyProjCSHit");
@@ -4362,7 +4362,7 @@ struct DFBasePlayerController_GetVotingComponentByChannel final
 {
 public:
 	EDFVotingChannel                              VotingChannel;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB6[0x7];                                      // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFVotingComponent*                     ReturnValue;                                       // 0x0008(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBasePlayerController_GetVotingComponentByChannel) == 0x000008, "Wrong alignment on DFBasePlayerController_GetVotingComponentByChannel");
@@ -4388,7 +4388,7 @@ struct DFSingleActionWeapAnimInstInterface_PlayActionMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DB7[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFSingleActionWeapAnimInstInterface_PlayActionMontage) == 0x000008, "Wrong alignment on DFSingleActionWeapAnimInstInterface_PlayActionMontage");
 static_assert(sizeof(DFSingleActionWeapAnimInstInterface_PlayActionMontage) == 0x000010, "Wrong size on DFSingleActionWeapAnimInstInterface_PlayActionMontage");
@@ -4491,7 +4491,7 @@ public:
 	class ADFBasePlayerState*                     Killer;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ADFBasePlayerState*                     Victim;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Points;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DBC[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerState_ScoreAssistPlayer) == 0x000008, "Wrong alignment on DFBasePlayerState_ScoreAssistPlayer");
 static_assert(sizeof(DFBasePlayerState_ScoreAssistPlayer) == 0x000018, "Wrong size on DFBasePlayerState_ScoreAssistPlayer");
@@ -4506,7 +4506,7 @@ struct DFBasePlayerState_ScoreDeath final
 public:
 	class ADFBasePlayerState*                     KilledBy;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Points;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DBD[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerState_ScoreDeath) == 0x000008, "Wrong alignment on DFBasePlayerState_ScoreDeath");
 static_assert(sizeof(DFBasePlayerState_ScoreDeath) == 0x000010, "Wrong size on DFBasePlayerState_ScoreDeath");
@@ -4520,7 +4520,7 @@ struct DFBasePlayerState_ScoreKillPlayer final
 public:
 	class ADFBasePlayerState*                     Victim;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Points;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DBE[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerState_ScoreKillPlayer) == 0x000008, "Wrong alignment on DFBasePlayerState_ScoreKillPlayer");
 static_assert(sizeof(DFBasePlayerState_ScoreKillPlayer) == 0x000010, "Wrong size on DFBasePlayerState_ScoreKillPlayer");
@@ -4534,7 +4534,7 @@ struct DFBasePlayerState_ScorePoints final
 public:
 	float                                         Points;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceNetUpdate;                                   // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DBF[0x3];                                      // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBasePlayerState_ScorePoints) == 0x000004, "Wrong alignment on DFBasePlayerState_ScorePoints");
 static_assert(sizeof(DFBasePlayerState_ScorePoints) == 0x000008, "Wrong size on DFBasePlayerState_ScorePoints");
@@ -4627,7 +4627,7 @@ struct DFSingleLoadWeapAnimInstInterface_PlayEndReloadMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFullReload;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DC0[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFSingleLoadWeapAnimInstInterface_PlayEndReloadMontage) == 0x000008, "Wrong alignment on DFSingleLoadWeapAnimInstInterface_PlayEndReloadMontage");
@@ -4643,7 +4643,7 @@ struct DFSingleLoadWeapAnimInstInterface_PlayStartReloadMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFullReload;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DC1[0x3];                                      // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFSingleLoadWeapAnimInstInterface_PlayStartReloadMontage) == 0x000008, "Wrong alignment on DFSingleLoadWeapAnimInstInterface_PlayStartReloadMontage");
@@ -4663,7 +4663,7 @@ public:
 	struct FVector                                HitNormal;                                         // 0x001C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHitResult                             HitResult;                                         // 0x0028(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x00B0(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DC9[0x4];                                      // 0x00B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseProjectile_ApplyDamageToImpactedActor) == 0x000008, "Wrong alignment on DFBaseProjectile_ApplyDamageToImpactedActor");
 static_assert(sizeof(DFBaseProjectile_ApplyDamageToImpactedActor) == 0x0000B8, "Wrong size on DFBaseProjectile_ApplyDamageToImpactedActor");
@@ -4698,7 +4698,7 @@ public:
 	struct FVector                                HitNormal;                                         // 0x001C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHitResult                             HitResult;                                         // 0x0028(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          bFromCSHitNotify;                                  // 0x00B0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DCA[0x7];                                      // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseProjectile_K2_PostProcessValidHit) == 0x000008, "Wrong alignment on DFBaseProjectile_K2_PostProcessValidHit");
 static_assert(sizeof(DFBaseProjectile_K2_PostProcessValidHit) == 0x0000B8, "Wrong size on DFBaseProjectile_K2_PostProcessValidHit");
@@ -4773,7 +4773,7 @@ struct DFBaseProjectile_TriggerPayload final
 public:
 	struct FHitResult                             ImpactHitResult;                                   // 0x0000(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          bFromTearOff;                                      // 0x0088(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DCB[0x3];                                      // 0x0089(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseProjectile_TriggerPayload) == 0x000004, "Wrong alignment on DFBaseProjectile_TriggerPayload");
 static_assert(sizeof(DFBaseProjectile_TriggerPayload) == 0x00008C, "Wrong size on DFBaseProjectile_TriggerPayload");
@@ -4859,7 +4859,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FHitResult                             HitResult;                                         // 0x0010(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0098(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DCC[0x7];                                      // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBaseProjectile_K2_ShouldIgnoreHit) == 0x000008, "Wrong alignment on DFBaseProjectile_K2_ShouldIgnoreHit");
 static_assert(sizeof(DFBaseProjectile_K2_ShouldIgnoreHit) == 0x0000A0, "Wrong size on DFBaseProjectile_K2_ShouldIgnoreHit");
@@ -4873,13 +4873,13 @@ static_assert(offsetof(DFBaseProjectile_K2_ShouldIgnoreHit, ReturnValue) == 0x00
 struct DFTableLibrary_GetColumnFromIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TableWidth;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFTableLibrary_GetColumnFromIndex) == 0x000004, "Wrong alignment on DFTableLibrary_GetColumnFromIndex");
 static_assert(sizeof(DFTableLibrary_GetColumnFromIndex) == 0x00000C, "Wrong size on DFTableLibrary_GetColumnFromIndex");
-static_assert(offsetof(DFTableLibrary_GetColumnFromIndex, Param_Index) == 0x000000, "Member 'DFTableLibrary_GetColumnFromIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFTableLibrary_GetColumnFromIndex, Index_0) == 0x000000, "Member 'DFTableLibrary_GetColumnFromIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(DFTableLibrary_GetColumnFromIndex, TableWidth) == 0x000004, "Member 'DFTableLibrary_GetColumnFromIndex::TableWidth' has a wrong offset!");
 static_assert(offsetof(DFTableLibrary_GetColumnFromIndex, ReturnValue) == 0x000008, "Member 'DFTableLibrary_GetColumnFromIndex::ReturnValue' has a wrong offset!");
 
@@ -4888,13 +4888,13 @@ static_assert(offsetof(DFTableLibrary_GetColumnFromIndex, ReturnValue) == 0x0000
 struct DFTableLibrary_GetColumnInvFromIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TableHeight;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFTableLibrary_GetColumnInvFromIndex) == 0x000004, "Wrong alignment on DFTableLibrary_GetColumnInvFromIndex");
 static_assert(sizeof(DFTableLibrary_GetColumnInvFromIndex) == 0x00000C, "Wrong size on DFTableLibrary_GetColumnInvFromIndex");
-static_assert(offsetof(DFTableLibrary_GetColumnInvFromIndex, Param_Index) == 0x000000, "Member 'DFTableLibrary_GetColumnInvFromIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFTableLibrary_GetColumnInvFromIndex, Index_0) == 0x000000, "Member 'DFTableLibrary_GetColumnInvFromIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(DFTableLibrary_GetColumnInvFromIndex, TableHeight) == 0x000004, "Member 'DFTableLibrary_GetColumnInvFromIndex::TableHeight' has a wrong offset!");
 static_assert(offsetof(DFTableLibrary_GetColumnInvFromIndex, ReturnValue) == 0x000008, "Member 'DFTableLibrary_GetColumnInvFromIndex::ReturnValue' has a wrong offset!");
 
@@ -4937,13 +4937,13 @@ static_assert(offsetof(DFTableLibrary_GetIndexFromRowColumnPair, ReturnValue) ==
 struct DFTableLibrary_GetRowFromIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TableWidth;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFTableLibrary_GetRowFromIndex) == 0x000004, "Wrong alignment on DFTableLibrary_GetRowFromIndex");
 static_assert(sizeof(DFTableLibrary_GetRowFromIndex) == 0x00000C, "Wrong size on DFTableLibrary_GetRowFromIndex");
-static_assert(offsetof(DFTableLibrary_GetRowFromIndex, Param_Index) == 0x000000, "Member 'DFTableLibrary_GetRowFromIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFTableLibrary_GetRowFromIndex, Index_0) == 0x000000, "Member 'DFTableLibrary_GetRowFromIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(DFTableLibrary_GetRowFromIndex, TableWidth) == 0x000004, "Member 'DFTableLibrary_GetRowFromIndex::TableWidth' has a wrong offset!");
 static_assert(offsetof(DFTableLibrary_GetRowFromIndex, ReturnValue) == 0x000008, "Member 'DFTableLibrary_GetRowFromIndex::ReturnValue' has a wrong offset!");
 
@@ -4952,13 +4952,13 @@ static_assert(offsetof(DFTableLibrary_GetRowFromIndex, ReturnValue) == 0x000008,
 struct DFTableLibrary_GetRowInvFromIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TableHeight;                                       // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFTableLibrary_GetRowInvFromIndex) == 0x000004, "Wrong alignment on DFTableLibrary_GetRowInvFromIndex");
 static_assert(sizeof(DFTableLibrary_GetRowInvFromIndex) == 0x00000C, "Wrong size on DFTableLibrary_GetRowInvFromIndex");
-static_assert(offsetof(DFTableLibrary_GetRowInvFromIndex, Param_Index) == 0x000000, "Member 'DFTableLibrary_GetRowInvFromIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFTableLibrary_GetRowInvFromIndex, Index_0) == 0x000000, "Member 'DFTableLibrary_GetRowInvFromIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(DFTableLibrary_GetRowInvFromIndex, TableHeight) == 0x000004, "Member 'DFTableLibrary_GetRowInvFromIndex::TableHeight' has a wrong offset!");
 static_assert(offsetof(DFTableLibrary_GetRowInvFromIndex, ReturnValue) == 0x000008, "Member 'DFTableLibrary_GetRowInvFromIndex::ReturnValue' has a wrong offset!");
 
@@ -5038,7 +5038,7 @@ public:
 	TArray<struct FAssetDescriptor>               ArrayToSort;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDescending;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCompareDisplayText;                               // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DD7[0x6];                                      // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_Array_AssetDescriptorSort) == 0x000008, "Wrong alignment on DFBlueprintFunctions_Array_AssetDescriptorSort");
 static_assert(sizeof(DFBlueprintFunctions_Array_AssetDescriptorSort) == 0x000018, "Wrong size on DFBlueprintFunctions_Array_AssetDescriptorSort");
@@ -5053,7 +5053,7 @@ struct DFBlueprintFunctions_Array_FloatSort final
 public:
 	TArray<float>                                 ArrayToSort;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDescending;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DD8[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_Array_FloatSort) == 0x000008, "Wrong alignment on DFBlueprintFunctions_Array_FloatSort");
 static_assert(sizeof(DFBlueprintFunctions_Array_FloatSort) == 0x000018, "Wrong size on DFBlueprintFunctions_Array_FloatSort");
@@ -5067,7 +5067,7 @@ struct DFBlueprintFunctions_Array_Int32Sort final
 public:
 	TArray<int32>                                 ArrayToSort;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDescending;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DD9[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_Array_Int32Sort) == 0x000008, "Wrong alignment on DFBlueprintFunctions_Array_Int32Sort");
 static_assert(sizeof(DFBlueprintFunctions_Array_Int32Sort) == 0x000018, "Wrong size on DFBlueprintFunctions_Array_Int32Sort");
@@ -5081,7 +5081,7 @@ struct DFBlueprintFunctions_Array_Int64Sort final
 public:
 	TArray<int64>                                 ArrayToSort;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDescending;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DDA[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_Array_Int64Sort) == 0x000008, "Wrong alignment on DFBlueprintFunctions_Array_Int64Sort");
 static_assert(sizeof(DFBlueprintFunctions_Array_Int64Sort) == 0x000018, "Wrong size on DFBlueprintFunctions_Array_Int64Sort");
@@ -5095,7 +5095,7 @@ struct DFBlueprintFunctions_Array_NameSort final
 public:
 	TArray<class FName>                           ArrayToSort;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDescending;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DDB[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_Array_NameSort) == 0x000008, "Wrong alignment on DFBlueprintFunctions_Array_NameSort");
 static_assert(sizeof(DFBlueprintFunctions_Array_NameSort) == 0x000018, "Wrong size on DFBlueprintFunctions_Array_NameSort");
@@ -5120,7 +5120,7 @@ struct DFBlueprintFunctions_Array_StringSort final
 public:
 	TArray<class FString>                         ArrayToSort;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDescending;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DDC[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_Array_StringSort) == 0x000008, "Wrong alignment on DFBlueprintFunctions_Array_StringSort");
 static_assert(sizeof(DFBlueprintFunctions_Array_StringSort) == 0x000018, "Wrong size on DFBlueprintFunctions_Array_StringSort");
@@ -5134,7 +5134,7 @@ struct DFBlueprintFunctions_Array_TextSort final
 public:
 	TArray<class FText>                           ArrayToSort;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDescending;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DDD[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_Array_TextSort) == 0x000008, "Wrong alignment on DFBlueprintFunctions_Array_TextSort");
 static_assert(sizeof(DFBlueprintFunctions_Array_TextSort) == 0x000018, "Wrong size on DFBlueprintFunctions_Array_TextSort");
@@ -5148,7 +5148,7 @@ struct DFBlueprintFunctions_Array_UInt8Sort final
 public:
 	TArray<uint8>                                 ArrayToSort;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDescending;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DDE[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_Array_UInt8Sort) == 0x000008, "Wrong alignment on DFBlueprintFunctions_Array_UInt8Sort");
 static_assert(sizeof(DFBlueprintFunctions_Array_UInt8Sort) == 0x000018, "Wrong size on DFBlueprintFunctions_Array_UInt8Sort");
@@ -5190,7 +5190,7 @@ struct DFBlueprintFunctions_CharacterVariationIsValid final
 public:
 	struct FDFCharacterVariationDataHandle        VariationData;                                     // 0x0000(0x0018)(Parm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DDF[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_CharacterVariationIsValid) == 0x000008, "Wrong alignment on DFBlueprintFunctions_CharacterVariationIsValid");
 static_assert(sizeof(DFBlueprintFunctions_CharacterVariationIsValid) == 0x000020, "Wrong size on DFBlueprintFunctions_CharacterVariationIsValid");
@@ -5205,7 +5205,7 @@ public:
 	struct FPrimaryAssetId                        MapId;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class UDFGameModeDefinition*            GMDef;                                             // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE0[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_DoesMapIDSupportGMDefinition) == 0x000008, "Wrong alignment on DFBlueprintFunctions_DoesMapIDSupportGMDefinition");
 static_assert(sizeof(DFBlueprintFunctions_DoesMapIDSupportGMDefinition) == 0x000020, "Wrong size on DFBlueprintFunctions_DoesMapIDSupportGMDefinition");
@@ -5221,7 +5221,7 @@ public:
 	struct FCharacterAnimCollection               A;                                                 // 0x0000(0x0128)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FCharacterAnimCollection               B;                                                 // 0x0128(0x0128)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0250(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE1[0x7];                                      // 0x0251(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_CharacterAnimCollection) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_CharacterAnimCollection");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_CharacterAnimCollection) == 0x000258, "Wrong size on DFBlueprintFunctions_EqualEqual_CharacterAnimCollection");
@@ -5237,7 +5237,7 @@ public:
 	struct FCharacterSoundCollection              A;                                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FCharacterSoundCollection              B;                                                 // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE2[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_CharacterSoundCollection) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_CharacterSoundCollection");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_CharacterSoundCollection) == 0x000028, "Wrong size on DFBlueprintFunctions_EqualEqual_CharacterSoundCollection");
@@ -5253,7 +5253,7 @@ public:
 	struct FPerspectiveAnim                       A;                                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPerspectiveAnim                       B;                                                 // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE3[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_PerspectiveAnim) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_PerspectiveAnim");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_PerspectiveAnim) == 0x000028, "Wrong size on DFBlueprintFunctions_EqualEqual_PerspectiveAnim");
@@ -5269,7 +5269,7 @@ public:
 	struct FPerspectiveAnimSequence               A;                                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPerspectiveAnimSequence               B;                                                 // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE4[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_PerspectiveAnimSequence) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_PerspectiveAnimSequence");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_PerspectiveAnimSequence) == 0x000028, "Wrong size on DFBlueprintFunctions_EqualEqual_PerspectiveAnimSequence");
@@ -5285,7 +5285,7 @@ public:
 	struct FPerspectiveSound                      A;                                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPerspectiveSound                      B;                                                 // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE5[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_PerspectiveSound) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_PerspectiveSound");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_PerspectiveSound) == 0x000028, "Wrong size on DFBlueprintFunctions_EqualEqual_PerspectiveSound");
@@ -5301,7 +5301,7 @@ public:
 	struct FWeaponAnim                            A;                                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FWeaponAnim                            B;                                                 // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE6[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_WeaponAnim) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_WeaponAnim");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_WeaponAnim) == 0x000028, "Wrong size on DFBlueprintFunctions_EqualEqual_WeaponAnim");
@@ -5317,7 +5317,7 @@ public:
 	struct FWeaponAnimCollection                  A;                                                 // 0x0000(0x00F0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FWeaponAnimCollection                  B;                                                 // 0x00F0(0x00F0)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x01E0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE7[0x7];                                      // 0x01E1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1E1[0x7];                                      // 0x01E1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_WeaponAnimCollection) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_WeaponAnimCollection");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_WeaponAnimCollection) == 0x0001E8, "Wrong size on DFBlueprintFunctions_EqualEqual_WeaponAnimCollection");
@@ -5333,7 +5333,7 @@ public:
 	struct FWeaponAnimMontage                     A;                                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FWeaponAnimMontage                     B;                                                 // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE8[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_WeaponAnimMontage) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_WeaponAnimMontage");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_WeaponAnimMontage) == 0x000028, "Wrong size on DFBlueprintFunctions_EqualEqual_WeaponAnimMontage");
@@ -5349,7 +5349,7 @@ public:
 	struct FWeaponAnimSequence                    A;                                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FWeaponAnimSequence                    B;                                                 // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DE9[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_WeaponAnimSequence) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_WeaponAnimSequence");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_WeaponAnimSequence) == 0x000028, "Wrong size on DFBlueprintFunctions_EqualEqual_WeaponAnimSequence");
@@ -5365,7 +5365,7 @@ public:
 	struct FWeaponSoundCollection                 A;                                                 // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FWeaponSoundCollection                 B;                                                 // 0x0080(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0100(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DEA[0x7];                                      // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_EqualEqual_WeaponSoundCollection) == 0x000008, "Wrong alignment on DFBlueprintFunctions_EqualEqual_WeaponSoundCollection");
 static_assert(sizeof(DFBlueprintFunctions_EqualEqual_WeaponSoundCollection) == 0x000108, "Wrong size on DFBlueprintFunctions_EqualEqual_WeaponSoundCollection");
@@ -5407,7 +5407,7 @@ public:
 	class AController*                            Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 EndGameFocus;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsWinner;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DEB[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GameHasEnded) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GameHasEnded");
 static_assert(sizeof(DFBlueprintFunctions_GameHasEnded) == 0x000018, "Wrong size on DFBlueprintFunctions_GameHasEnded");
@@ -5459,7 +5459,7 @@ struct DFBlueprintFunctions_GetFocalPoint final
 public:
 	const class AActor*                           Actor;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DEC[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetFocalPoint) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetFocalPoint");
 static_assert(sizeof(DFBlueprintFunctions_GetFocalPoint) == 0x000018, "Wrong size on DFBlueprintFunctions_GetFocalPoint");
@@ -5557,7 +5557,7 @@ public:
 	struct FAssetData                             WorldAsset;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftClassPtr<class UClass>                   OutDefaultGameModeRef;                             // 0x0050(0x0028)(Parm, OutParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0078(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DED[0x7];                                      // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDataDefaultGameMode) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDataDefaultGameMode");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDataDefaultGameMode) == 0x000080, "Wrong size on DFBlueprintFunctions_GetMapAssetDataDefaultGameMode");
@@ -5573,7 +5573,7 @@ public:
 	struct FAssetData                             WorldAsset;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 OutMapDescription;                                 // 0x0050(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DEE[0x7];                                      // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDataDescription) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDataDescription");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDataDescription) == 0x000068, "Wrong size on DFBlueprintFunctions_GetMapAssetDataDescription");
@@ -5589,7 +5589,7 @@ public:
 	struct FAssetData                             WorldAsset;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   OutMapDisplayName;                                 // 0x0050(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DEF[0x7];                                      // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDataDisplayName) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDataDisplayName");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDataDisplayName) == 0x000070, "Wrong size on DFBlueprintFunctions_GetMapAssetDataDisplayName");
@@ -5605,7 +5605,7 @@ public:
 	struct FAssetData                             WorldAsset;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<TSoftClassPtr<class UClass>>             OutGameRulesetClasses;                             // 0x0050(0x0050)(Parm, OutParm, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF0[0x7];                                      // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDataGameRulesetClasses) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDataGameRulesetClasses");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDataGameRulesetClasses) == 0x0000A8, "Wrong size on DFBlueprintFunctions_GetMapAssetDataGameRulesetClasses");
@@ -5634,7 +5634,7 @@ public:
 	struct FAssetData                             WorldAsset;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>              OutMapPreviewBannerImgRef;                         // 0x0050(0x0028)(Parm, OutParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0078(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF1[0x7];                                      // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDataPreviewBannerImg) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDataPreviewBannerImg");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDataPreviewBannerImg) == 0x000080, "Wrong size on DFBlueprintFunctions_GetMapAssetDataPreviewBannerImg");
@@ -5650,7 +5650,7 @@ public:
 	struct FAssetData                             WorldAsset;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>              OutMapPreviewImgRef;                               // 0x0050(0x0028)(Parm, OutParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0078(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF2[0x7];                                      // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDataPreviewImg) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDataPreviewImg");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDataPreviewImg) == 0x000080, "Wrong size on DFBlueprintFunctions_GetMapAssetDataPreviewImg");
@@ -5666,7 +5666,7 @@ public:
 	struct FAssetData                             WorldAsset;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<TSoftClassPtr<class UClass>>             OutSupportedGameModes;                             // 0x0050(0x0050)(Parm, OutParm, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF3[0x7];                                      // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDataSupportedGameModes) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDataSupportedGameModes");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDataSupportedGameModes) == 0x0000A8, "Wrong size on DFBlueprintFunctions_GetMapAssetDataSupportedGameModes");
@@ -5682,7 +5682,7 @@ public:
 	struct FPrimaryAssetId                        WorldAssetId;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftClassPtr<class UClass>                   OutDefaultGameModeRef;                             // 0x0010(0x0028)(Parm, OutParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF4[0x7];                                      // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDefaultGameMode) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDefaultGameMode");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDefaultGameMode) == 0x000040, "Wrong size on DFBlueprintFunctions_GetMapAssetDefaultGameMode");
@@ -5698,7 +5698,7 @@ public:
 	struct FPrimaryAssetId                        WorldAssetId;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 OutMapDescription;                                 // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF5[0x7];                                      // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetDescription) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetDescription");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetDescription) == 0x000028, "Wrong size on DFBlueprintFunctions_GetMapAssetDescription");
@@ -5714,7 +5714,7 @@ public:
 	struct FPrimaryAssetId                        WorldAssetId;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<TSoftClassPtr<class UClass>>             OutGameRulesetClasses;                             // 0x0010(0x0050)(Parm, OutParm, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF6[0x7];                                      // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetGameRulesetClasses) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetGameRulesetClasses");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetGameRulesetClasses) == 0x000068, "Wrong size on DFBlueprintFunctions_GetMapAssetGameRulesetClasses");
@@ -5743,7 +5743,7 @@ public:
 	struct FPrimaryAssetId                        WorldAssetId;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>              OutMapPreviewBannerImgRef;                         // 0x0010(0x0028)(Parm, OutParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF7[0x7];                                      // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetPreviewBannerImg) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetPreviewBannerImg");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetPreviewBannerImg) == 0x000040, "Wrong size on DFBlueprintFunctions_GetMapAssetPreviewBannerImg");
@@ -5759,7 +5759,7 @@ public:
 	struct FPrimaryAssetId                        WorldAssetId;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>              OutMapPreviewImgRef;                               // 0x0010(0x0028)(Parm, OutParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF8[0x7];                                      // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetPreviewImg) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetPreviewImg");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetPreviewImg) == 0x000040, "Wrong size on DFBlueprintFunctions_GetMapAssetPreviewImg");
@@ -5775,7 +5775,7 @@ public:
 	struct FPrimaryAssetId                        WorldAssetId;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<TSoftClassPtr<class UClass>>             OutSupportedGameModes;                             // 0x0010(0x0050)(Parm, OutParm, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DF9[0x7];                                      // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetSupportedGameModes) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetMapAssetSupportedGameModes");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetSupportedGameModes) == 0x000068, "Wrong size on DFBlueprintFunctions_GetMapAssetSupportedGameModes");
@@ -5791,7 +5791,7 @@ public:
 	struct FPrimaryAssetId                        WorldAssetId;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOutVisibleInMapSelectUI;                          // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DFA[0x2];                                      // 0x0012(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetMapAssetVisibleInMapSelectUI) == 0x000004, "Wrong alignment on DFBlueprintFunctions_GetMapAssetVisibleInMapSelectUI");
 static_assert(sizeof(DFBlueprintFunctions_GetMapAssetVisibleInMapSelectUI) == 0x000014, "Wrong size on DFBlueprintFunctions_GetMapAssetVisibleInMapSelectUI");
@@ -5885,7 +5885,7 @@ struct DFBlueprintFunctions_GetSurfaceName final
 {
 public:
 	EPhysicalSurface                              SurfaceType;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DFB[0x3];                                      // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ReturnValue;                                       // 0x0004(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBlueprintFunctions_GetSurfaceName) == 0x000004, "Wrong alignment on DFBlueprintFunctions_GetSurfaceName");
@@ -5901,7 +5901,7 @@ public:
 	const class AActor*                           Actor;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 RequestedBy;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                ReturnValue;                                       // 0x0010(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DFC[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetTargetLocation) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetTargetLocation");
 static_assert(sizeof(DFBlueprintFunctions_GetTargetLocation) == 0x000020, "Wrong size on DFBlueprintFunctions_GetTargetLocation");
@@ -5916,7 +5916,7 @@ struct DFBlueprintFunctions_GetTeamNum final
 public:
 	const class AActor*                           Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DFD[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetTeamNum) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetTeamNum");
 static_assert(sizeof(DFBlueprintFunctions_GetTeamNum) == 0x000010, "Wrong size on DFBlueprintFunctions_GetTeamNum");
@@ -5930,7 +5930,7 @@ struct DFBlueprintFunctions_GetTeamStateFromTeamId final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         TeamIdNum;                                         // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DFE[0x7];                                      // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFTeamState*                           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFBlueprintFunctions_GetTeamStateFromTeamId) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetTeamStateFromTeamId");
@@ -5946,7 +5946,7 @@ struct DFBlueprintFunctions_GetVisibilityDefault final
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESlateVisibility                              ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DFF[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_GetVisibilityDefault) == 0x000008, "Wrong alignment on DFBlueprintFunctions_GetVisibilityDefault");
 static_assert(sizeof(DFBlueprintFunctions_GetVisibilityDefault) == 0x000010, "Wrong size on DFBlueprintFunctions_GetVisibilityDefault");
@@ -5986,7 +5986,7 @@ struct DFBlueprintFunctions_HasFiringStopped final
 public:
 	struct FRepShotInfo                           Counter;                                           // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E00[0x1];                                      // 0x0005(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x1];                                        // 0x0005(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_HasFiringStopped) == 0x000002, "Wrong alignment on DFBlueprintFunctions_HasFiringStopped");
 static_assert(sizeof(DFBlueprintFunctions_HasFiringStopped) == 0x000006, "Wrong size on DFBlueprintFunctions_HasFiringStopped");
@@ -6002,7 +6002,7 @@ public:
 	TArray<class FString>                         Keys;                                              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMatchAll;                                         // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E01[0x6];                                      // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_HasOptions) == 0x000008, "Wrong alignment on DFBlueprintFunctions_HasOptions");
 static_assert(sizeof(DFBlueprintFunctions_HasOptions) == 0x000028, "Wrong size on DFBlueprintFunctions_HasOptions");
@@ -6018,7 +6018,7 @@ struct DFBlueprintFunctions_IsEmptyOrWhitespace final
 public:
 	class FString                                 InString;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E02[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_IsEmptyOrWhitespace) == 0x000008, "Wrong alignment on DFBlueprintFunctions_IsEmptyOrWhitespace");
 static_assert(sizeof(DFBlueprintFunctions_IsEmptyOrWhitespace) == 0x000018, "Wrong size on DFBlueprintFunctions_IsEmptyOrWhitespace");
@@ -6032,7 +6032,7 @@ struct DFBlueprintFunctions_IsLocallyPlayerControlled final
 public:
 	const class APawn*                            Pawn;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E03[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_IsLocallyPlayerControlled) == 0x000008, "Wrong alignment on DFBlueprintFunctions_IsLocallyPlayerControlled");
 static_assert(sizeof(DFBlueprintFunctions_IsLocallyPlayerControlled) == 0x000010, "Wrong size on DFBlueprintFunctions_IsLocallyPlayerControlled");
@@ -6046,7 +6046,7 @@ struct DFBlueprintFunctions_IsPendingKillPending final
 public:
 	const class AActor*                           Actor;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E04[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_IsPendingKillPending) == 0x000008, "Wrong alignment on DFBlueprintFunctions_IsPendingKillPending");
 static_assert(sizeof(DFBlueprintFunctions_IsPendingKillPending) == 0x000010, "Wrong size on DFBlueprintFunctions_IsPendingKillPending");
@@ -6061,7 +6061,7 @@ public:
 	class APlayerController*                      PC;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerState*                           PSToCheck;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E05[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_IsPlayerMuted) == 0x000008, "Wrong alignment on DFBlueprintFunctions_IsPlayerMuted");
 static_assert(sizeof(DFBlueprintFunctions_IsPlayerMuted) == 0x000018, "Wrong size on DFBlueprintFunctions_IsPlayerMuted");
@@ -6076,7 +6076,7 @@ struct DFBlueprintFunctions_IsPlayerTalking final
 public:
 	class APlayerState*                           PlayerPS;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E06[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_IsPlayerTalking) == 0x000008, "Wrong alignment on DFBlueprintFunctions_IsPlayerTalking");
 static_assert(sizeof(DFBlueprintFunctions_IsPlayerTalking) == 0x000010, "Wrong size on DFBlueprintFunctions_IsPlayerTalking");
@@ -6090,7 +6090,7 @@ struct DFBlueprintFunctions_IsPlayInEditor final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E07[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_IsPlayInEditor) == 0x000008, "Wrong alignment on DFBlueprintFunctions_IsPlayInEditor");
 static_assert(sizeof(DFBlueprintFunctions_IsPlayInEditor) == 0x000010, "Wrong size on DFBlueprintFunctions_IsPlayInEditor");
@@ -6104,7 +6104,7 @@ struct DFBlueprintFunctions_IsValidActor final
 public:
 	const class AActor*                           Actor;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E08[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_IsValidActor) == 0x000008, "Wrong alignment on DFBlueprintFunctions_IsValidActor");
 static_assert(sizeof(DFBlueprintFunctions_IsValidActor) == 0x000010, "Wrong size on DFBlueprintFunctions_IsValidActor");
@@ -6118,7 +6118,7 @@ struct DFBlueprintFunctions_IsVOIPTalkerStillAlive final
 public:
 	class UVOIPTalker*                            InTalker;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E09[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_IsVOIPTalkerStillAlive) == 0x000008, "Wrong alignment on DFBlueprintFunctions_IsVOIPTalkerStillAlive");
 static_assert(sizeof(DFBlueprintFunctions_IsVOIPTalkerStillAlive) == 0x000010, "Wrong size on DFBlueprintFunctions_IsVOIPTalkerStillAlive");
@@ -6134,7 +6134,7 @@ public:
 	class FString                                 InString;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELogVerbosityBP                               InLogVerbosity;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPrintStackTrace;                                  // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E0A[0x6];                                      // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_PrintStringToLog) == 0x000008, "Wrong alignment on DFBlueprintFunctions_PrintStringToLog");
 static_assert(sizeof(DFBlueprintFunctions_PrintStringToLog) == 0x000020, "Wrong size on DFBlueprintFunctions_PrintStringToLog");
@@ -6152,7 +6152,7 @@ public:
 	class FText                                   InText;                                            // 0x0008(0x0018)(ConstParm, Parm, NativeAccessSpecifierPublic)
 	ELogVerbosityBP                               InLogVerbosity;                                    // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPrintStackTrace;                                  // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E0B[0x6];                                      // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_PrintTextToLog) == 0x000008, "Wrong alignment on DFBlueprintFunctions_PrintTextToLog");
 static_assert(sizeof(DFBlueprintFunctions_PrintTextToLog) == 0x000028, "Wrong size on DFBlueprintFunctions_PrintTextToLog");
@@ -6179,7 +6179,7 @@ struct DFBlueprintFunctions_SetCastStaticShadow final
 public:
 	class UPrimitiveComponent*                    PrimitiveComponent;                                // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCastStaticShadow;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E0C[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_SetCastStaticShadow) == 0x000008, "Wrong alignment on DFBlueprintFunctions_SetCastStaticShadow");
 static_assert(sizeof(DFBlueprintFunctions_SetCastStaticShadow) == 0x000010, "Wrong size on DFBlueprintFunctions_SetCastStaticShadow");
@@ -6217,7 +6217,7 @@ struct DFBlueprintFunctions_SetTeamNum final
 public:
 	class AActor*                                 Target;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         NewTeamNum;                                        // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E0D[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_SetTeamNum) == 0x000008, "Wrong alignment on DFBlueprintFunctions_SetTeamNum");
 static_assert(sizeof(DFBlueprintFunctions_SetTeamNum) == 0x000010, "Wrong size on DFBlueprintFunctions_SetTeamNum");
@@ -6232,7 +6232,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class ADFBaseImpactEffect>        ImpactClass;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DamageTaken;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E0E[0x4];                                      // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	const class AActor*                           HitActor;                                          // 0x0028(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class AActor*                           HitInstigator;                                     // 0x0030(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6274,7 +6274,7 @@ struct DFBlueprintFunctions_TextIsEmptyOrWhitespace final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E0F[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_TextIsEmptyOrWhitespace) == 0x000008, "Wrong alignment on DFBlueprintFunctions_TextIsEmptyOrWhitespace");
 static_assert(sizeof(DFBlueprintFunctions_TextIsEmptyOrWhitespace) == 0x000020, "Wrong size on DFBlueprintFunctions_TextIsEmptyOrWhitespace");
@@ -6289,7 +6289,7 @@ public:
 	class UDFInventoryComponent*                  FromInv;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UDFInventoryComponent*                  ToInv;                                             // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bKeepLoadedAmmo;                                   // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E10[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_TransferInventoryItems) == 0x000008, "Wrong alignment on DFBlueprintFunctions_TransferInventoryItems");
 static_assert(sizeof(DFBlueprintFunctions_TransferInventoryItems) == 0x000018, "Wrong size on DFBlueprintFunctions_TransferInventoryItems");
@@ -6305,7 +6305,7 @@ public:
 	struct FRepShotInfo                           Counter;                                           // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FRepShotInfo                           OtherCounter;                                      // 0x0004(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E11[0x1];                                      // 0x0009(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x1];                                        // 0x0009(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFBlueprintFunctions_WasShotFired) == 0x000002, "Wrong alignment on DFBlueprintFunctions_WasShotFired");
 static_assert(sizeof(DFBlueprintFunctions_WasShotFired) == 0x00000A, "Wrong size on DFBlueprintFunctions_WasShotFired");
@@ -6364,7 +6364,7 @@ struct DFCharacterLeanHandler_DetermineLeanTargetAmount final
 public:
 	ELeanDirection                                DesiredLeanDir;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMoving;                                           // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E15[0x2];                                      // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFCharacterLeanHandler_DetermineLeanTargetAmount) == 0x000004, "Wrong alignment on DFCharacterLeanHandler_DetermineLeanTargetAmount");
@@ -6420,7 +6420,7 @@ public:
 	ELeanDirection                                NewLeanDir;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ECharacterStance                              LeanStance;                                        // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMoving;                                           // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E16[0x1];                                      // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3[0x1];                                        // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DFCharacterLeanHandler_GetMaxLeanXOffset) == 0x000004, "Wrong alignment on DFCharacterLeanHandler_GetMaxLeanXOffset");
@@ -6683,7 +6683,7 @@ struct DFCharacterMovementComponent_IsStrafing final
 public:
 	float                                         Threshold;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E23[0x3];                                      // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCharacterMovementComponent_IsStrafing) == 0x000004, "Wrong alignment on DFCharacterMovementComponent_IsStrafing");
 static_assert(sizeof(DFCharacterMovementComponent_IsStrafing) == 0x000008, "Wrong size on DFCharacterMovementComponent_IsStrafing");
@@ -6731,7 +6731,7 @@ public:
 	const class UAnimMontage*                     AnimMontage;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class USkeletalMeshComponent*           AnimSourceMesh;                                    // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNewEnableAutoBlendOut;                            // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E25[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFFunctionLibrary_SetEnableAutoBlendOutForActiveMontage) == 0x000008, "Wrong alignment on DFFunctionLibrary_SetEnableAutoBlendOutForActiveMontage");
 static_assert(sizeof(DFFunctionLibrary_SetEnableAutoBlendOutForActiveMontage) == 0x000018, "Wrong size on DFFunctionLibrary_SetEnableAutoBlendOutForActiveMontage");
@@ -6768,7 +6768,7 @@ struct DFGameRulesetBase_PlayerJoinedTeam final
 public:
 	class AController*                            JoiningPlayer;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         TeamNum;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E2B[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFGameRulesetBase_PlayerJoinedTeam) == 0x000008, "Wrong alignment on DFGameRulesetBase_PlayerJoinedTeam");
 static_assert(sizeof(DFGameRulesetBase_PlayerJoinedTeam) == 0x000010, "Wrong size on DFGameRulesetBase_PlayerJoinedTeam");
@@ -6841,7 +6841,7 @@ struct DFGameRulesetBase_PlayerWounded final
 public:
 	class AController*                            Victim;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DamageAmount;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E2C[0x4];                                      // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UDamageType*                      DamageType;                                        // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AController*                            InstigatedBy;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6916,7 +6916,7 @@ struct DFInventoryComponent_Add final
 public:
 	const class ADFBaseItem*                      Item;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E2F[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFInventoryComponent_Add) == 0x000008, "Wrong alignment on DFInventoryComponent_Add");
 static_assert(sizeof(DFInventoryComponent_Add) == 0x000010, "Wrong size on DFInventoryComponent_Add");
@@ -6942,7 +6942,7 @@ public:
 	const class ADFBaseItem*                      Item;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDestroyItem;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E30[0x6];                                      // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFInventoryComponent_Remove) == 0x000008, "Wrong alignment on DFInventoryComponent_Remove");
 static_assert(sizeof(DFInventoryComponent_Remove) == 0x000010, "Wrong size on DFInventoryComponent_Remove");
@@ -6955,16 +6955,16 @@ static_assert(offsetof(DFInventoryComponent_Remove, ReturnValue) == 0x000009, "M
 struct DFInventoryComponent_RemoveItemAt final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E31[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseItem*                            OutRemovedItem;                                    // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDestroyItem;                                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E32[0x6];                                      // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFInventoryComponent_RemoveItemAt) == 0x000008, "Wrong alignment on DFInventoryComponent_RemoveItemAt");
 static_assert(sizeof(DFInventoryComponent_RemoveItemAt) == 0x000018, "Wrong size on DFInventoryComponent_RemoveItemAt");
-static_assert(offsetof(DFInventoryComponent_RemoveItemAt, Param_Index) == 0x000000, "Member 'DFInventoryComponent_RemoveItemAt::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFInventoryComponent_RemoveItemAt, Index_0) == 0x000000, "Member 'DFInventoryComponent_RemoveItemAt::Index_0' has a wrong offset!");
 static_assert(offsetof(DFInventoryComponent_RemoveItemAt, OutRemovedItem) == 0x000008, "Member 'DFInventoryComponent_RemoveItemAt::OutRemovedItem' has a wrong offset!");
 static_assert(offsetof(DFInventoryComponent_RemoveItemAt, bDestroyItem) == 0x000010, "Member 'DFInventoryComponent_RemoveItemAt::bDestroyItem' has a wrong offset!");
 static_assert(offsetof(DFInventoryComponent_RemoveItemAt, ReturnValue) == 0x000011, "Member 'DFInventoryComponent_RemoveItemAt::ReturnValue' has a wrong offset!");
@@ -6977,7 +6977,7 @@ public:
 	const class ADFBaseItem*                      ItemToCompare;                                     // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OutIndex;                                          // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E33[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFInventoryComponent_Find) == 0x000008, "Wrong alignment on DFInventoryComponent_Find");
 static_assert(sizeof(DFInventoryComponent_Find) == 0x000010, "Wrong size on DFInventoryComponent_Find");
@@ -6993,7 +6993,7 @@ public:
 	TSubclassOf<class ADFBaseItem>                ItemClass;                                         // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ADFBaseItem*                            OutItem;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E34[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFInventoryComponent_FindItemByClass) == 0x000008, "Wrong alignment on DFInventoryComponent_FindItemByClass");
 static_assert(sizeof(DFInventoryComponent_FindItemByClass) == 0x000018, "Wrong size on DFInventoryComponent_FindItemByClass");
@@ -7006,15 +7006,15 @@ static_assert(offsetof(DFInventoryComponent_FindItemByClass, ReturnValue) == 0x0
 struct DFInventoryComponent_GetItem final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E35[0x4];                                      // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseItem*                            OutItem;                                           // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E36[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFInventoryComponent_GetItem) == 0x000008, "Wrong alignment on DFInventoryComponent_GetItem");
 static_assert(sizeof(DFInventoryComponent_GetItem) == 0x000018, "Wrong size on DFInventoryComponent_GetItem");
-static_assert(offsetof(DFInventoryComponent_GetItem, Param_Index) == 0x000000, "Member 'DFInventoryComponent_GetItem::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFInventoryComponent_GetItem, Index_0) == 0x000000, "Member 'DFInventoryComponent_GetItem::Index_0' has a wrong offset!");
 static_assert(offsetof(DFInventoryComponent_GetItem, OutItem) == 0x000008, "Member 'DFInventoryComponent_GetItem::OutItem' has a wrong offset!");
 static_assert(offsetof(DFInventoryComponent_GetItem, ReturnValue) == 0x000010, "Member 'DFInventoryComponent_GetItem::ReturnValue' has a wrong offset!");
 
@@ -7023,13 +7023,13 @@ static_assert(offsetof(DFInventoryComponent_GetItem, ReturnValue) == 0x000010, "
 struct DFInventoryComponent_IsValidIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E37[0x3];                                      // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFInventoryComponent_IsValidIndex) == 0x000004, "Wrong alignment on DFInventoryComponent_IsValidIndex");
 static_assert(sizeof(DFInventoryComponent_IsValidIndex) == 0x000008, "Wrong size on DFInventoryComponent_IsValidIndex");
-static_assert(offsetof(DFInventoryComponent_IsValidIndex, Param_Index) == 0x000000, "Member 'DFInventoryComponent_IsValidIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(DFInventoryComponent_IsValidIndex, Index_0) == 0x000000, "Member 'DFInventoryComponent_IsValidIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(DFInventoryComponent_IsValidIndex, ReturnValue) == 0x000004, "Member 'DFInventoryComponent_IsValidIndex::ReturnValue' has a wrong offset!");
 
 // Function DonkehFramework.DFInventoryComponent.Size
@@ -7094,7 +7094,7 @@ struct DFThrowableWeapAnimInstInterface_PlayCockMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E3E[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFThrowableWeapAnimInstInterface_PlayCockMontage) == 0x000008, "Wrong alignment on DFThrowableWeapAnimInstInterface_PlayCockMontage");
 static_assert(sizeof(DFThrowableWeapAnimInstInterface_PlayCockMontage) == 0x000010, "Wrong size on DFThrowableWeapAnimInstInterface_PlayCockMontage");
@@ -7108,7 +7108,7 @@ struct DFThrowableWeapAnimInstInterface_PlayThrowOverhandMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E3F[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFThrowableWeapAnimInstInterface_PlayThrowOverhandMontage) == 0x000008, "Wrong alignment on DFThrowableWeapAnimInstInterface_PlayThrowOverhandMontage");
 static_assert(sizeof(DFThrowableWeapAnimInstInterface_PlayThrowOverhandMontage) == 0x000010, "Wrong size on DFThrowableWeapAnimInstInterface_PlayThrowOverhandMontage");
@@ -7122,7 +7122,7 @@ struct DFThrowableWeapAnimInstInterface_PlayThrowUnderhandMontage final
 public:
 	class UAnimMontage*                           MontageToPlay;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E40[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFThrowableWeapAnimInstInterface_PlayThrowUnderhandMontage) == 0x000008, "Wrong alignment on DFThrowableWeapAnimInstInterface_PlayThrowUnderhandMontage");
 static_assert(sizeof(DFThrowableWeapAnimInstInterface_PlayThrowUnderhandMontage) == 0x000010, "Wrong size on DFThrowableWeapAnimInstInterface_PlayThrowUnderhandMontage");
@@ -7147,7 +7147,7 @@ struct DFVoteIssue_AllowsStartVoteBy final
 public:
 	class APlayerState*                           InvokingPlayer;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E46[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVoteIssue_AllowsStartVoteBy) == 0x000008, "Wrong alignment on DFVoteIssue_AllowsStartVoteBy");
 static_assert(sizeof(DFVoteIssue_AllowsStartVoteBy) == 0x000010, "Wrong size on DFVoteIssue_AllowsStartVoteBy");
@@ -7161,7 +7161,7 @@ struct DFVoteIssue_AllowsVoteFrom final
 public:
 	class APlayerState*                           VoterPS;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E47[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVoteIssue_AllowsVoteFrom) == 0x000008, "Wrong alignment on DFVoteIssue_AllowsVoteFrom");
 static_assert(sizeof(DFVoteIssue_AllowsVoteFrom) == 0x000010, "Wrong size on DFVoteIssue_AllowsVoteFrom");
@@ -7175,7 +7175,7 @@ struct DFVoteIssue_CanStartVote final
 public:
 	class APlayerState*                           InvokingPlayer;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E48[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVoteIssue_CanStartVote) == 0x000008, "Wrong alignment on DFVoteIssue_CanStartVote");
 static_assert(sizeof(DFVoteIssue_CanStartVote) == 0x000010, "Wrong size on DFVoteIssue_CanStartVote");
@@ -7189,7 +7189,7 @@ struct DFVoteIssue_CanVoteOn final
 public:
 	class APlayerState*                           VoterPS;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E49[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVoteIssue_CanVoteOn) == 0x000008, "Wrong alignment on DFVoteIssue_CanVoteOn");
 static_assert(sizeof(DFVoteIssue_CanVoteOn) == 0x000010, "Wrong size on DFVoteIssue_CanVoteOn");
@@ -7271,7 +7271,7 @@ struct DFVoteIssuePlayer_CanInitiateVoteWithTarget final
 public:
 	class APlayerState*                           TargetPS;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E4B[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVoteIssuePlayer_CanInitiateVoteWithTarget) == 0x000008, "Wrong alignment on DFVoteIssuePlayer_CanInitiateVoteWithTarget");
 static_assert(sizeof(DFVoteIssuePlayer_CanInitiateVoteWithTarget) == 0x000010, "Wrong size on DFVoteIssuePlayer_CanInitiateVoteWithTarget");
@@ -7286,7 +7286,7 @@ public:
 	class APlayerState*                           InvokingPlayer;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         VoteSelectionID;                                   // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E4F[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVotingComponent_CastVote) == 0x000008, "Wrong alignment on DFVotingComponent_CastVote");
 static_assert(sizeof(DFVotingComponent_CastVote) == 0x000010, "Wrong size on DFVotingComponent_CastVote");
@@ -7303,7 +7303,7 @@ public:
 	TSubclassOf<class UDFVoteIssue>               IssueClass;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDFVoteIssueContext                    IssueContext;                                      // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E50[0x7];                                      // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVotingComponent_InitiateVote) == 0x000008, "Wrong alignment on DFVotingComponent_InitiateVote");
 static_assert(sizeof(DFVotingComponent_InitiateVote) == 0x000030, "Wrong size on DFVotingComponent_InitiateVote");
@@ -7342,7 +7342,7 @@ public:
 	class APlayerState*                           VotingPlayer;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         VoteSelectionID;                                   // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E51[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVotingComponent_CanCastVote) == 0x000008, "Wrong alignment on DFVotingComponent_CanCastVote");
 static_assert(sizeof(DFVotingComponent_CanCastVote) == 0x000010, "Wrong size on DFVotingComponent_CanCastVote");
@@ -7358,7 +7358,7 @@ public:
 	class APlayerState*                           InvokingPlayer;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class UDFVoteIssue>               IssueClass;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E52[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVotingComponent_CanInitiateVote) == 0x000008, "Wrong alignment on DFVotingComponent_CanInitiateVote");
 static_assert(sizeof(DFVotingComponent_CanInitiateVote) == 0x000018, "Wrong size on DFVotingComponent_CanInitiateVote");
@@ -7374,7 +7374,7 @@ public:
 	class APlayerState*                           TargetPS;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class UDFVoteIssue>               IssueClass;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E53[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVotingComponent_CanVoteTargetPlayer) == 0x000008, "Wrong alignment on DFVotingComponent_CanVoteTargetPlayer");
 static_assert(sizeof(DFVotingComponent_CanVoteTargetPlayer) == 0x000018, "Wrong size on DFVotingComponent_CanVoteTargetPlayer");
@@ -7390,7 +7390,7 @@ public:
 	TSubclassOf<class UDFVoteIssue>               IssueClass;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDFVoteIssueDefinition                 OutIssueDefinition;                                // 0x0008(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E54[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVotingComponent_GetVoteIssueDefinitionForClass) == 0x000008, "Wrong alignment on DFVotingComponent_GetVoteIssueDefinitionForClass");
 static_assert(sizeof(DFVotingComponent_GetVoteIssueDefinitionForClass) == 0x000020, "Wrong size on DFVotingComponent_GetVoteIssueDefinitionForClass");
@@ -7442,7 +7442,7 @@ struct DFVotingStatics_IsValidVotingPlayer final
 public:
 	class APlayerState*                           PlayerState;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E55[0x7];                                      // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVotingStatics_IsValidVotingPlayer) == 0x000008, "Wrong alignment on DFVotingStatics_IsValidVotingPlayer");
 static_assert(sizeof(DFVotingStatics_IsValidVotingPlayer) == 0x000010, "Wrong size on DFVotingStatics_IsValidVotingPlayer");
@@ -7495,7 +7495,7 @@ struct GameSessionBlueprintLibrary_GetMaxPlayers final
 public:
 	class UObject*                                WorldContextObj;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E57[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameSessionBlueprintLibrary_GetMaxPlayers) == 0x000008, "Wrong alignment on GameSessionBlueprintLibrary_GetMaxPlayers");
 static_assert(sizeof(GameSessionBlueprintLibrary_GetMaxPlayers) == 0x000010, "Wrong size on GameSessionBlueprintLibrary_GetMaxPlayers");
@@ -7509,7 +7509,7 @@ struct GameSessionBlueprintLibrary_GetMaxSpectators final
 public:
 	class UObject*                                WorldContextObj;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E58[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameSessionBlueprintLibrary_GetMaxSpectators) == 0x000008, "Wrong alignment on GameSessionBlueprintLibrary_GetMaxSpectators");
 static_assert(sizeof(GameSessionBlueprintLibrary_GetMaxSpectators) == 0x000010, "Wrong size on GameSessionBlueprintLibrary_GetMaxSpectators");
@@ -7523,7 +7523,7 @@ struct GameSessionBlueprintLibrary_GetMinPlayers final
 public:
 	class UObject*                                WorldContextObj;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E59[0x4];                                      // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GameSessionBlueprintLibrary_GetMinPlayers) == 0x000008, "Wrong alignment on GameSessionBlueprintLibrary_GetMinPlayers");
 static_assert(sizeof(GameSessionBlueprintLibrary_GetMinPlayers) == 0x000010, "Wrong size on GameSessionBlueprintLibrary_GetMinPlayers");
@@ -7552,7 +7552,7 @@ public:
 	class AController*                            Player;                                            // 0x0050(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class APawn>                      PlayerPawnClass;                                   // 0x0058(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E5A[0xF];                                      // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0xF];                                       // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointProviderInterface_CanRestartPlayerFromSpawnPointBP) == 0x000010, "Wrong alignment on SpawnPointProviderInterface_CanRestartPlayerFromSpawnPointBP");
 static_assert(sizeof(SpawnPointProviderInterface_CanRestartPlayerFromSpawnPointBP) == 0x000070, "Wrong size on SpawnPointProviderInterface_CanRestartPlayerFromSpawnPointBP");
@@ -7569,7 +7569,7 @@ public:
 	struct FSpawnPointDef                         SpawnPoint;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TSubclassOf<class AActor>                     SpawnActorClass;                                   // 0x0050(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0058(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E5B[0x7];                                      // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointProviderInterface_CanSpawnActorFromSpawnPointBP) == 0x000010, "Wrong alignment on SpawnPointProviderInterface_CanSpawnActorFromSpawnPointBP");
 static_assert(sizeof(SpawnPointProviderInterface_CanSpawnActorFromSpawnPointBP) == 0x000060, "Wrong size on SpawnPointProviderInterface_CanSpawnActorFromSpawnPointBP");
@@ -7583,10 +7583,10 @@ struct SpawnPointProviderInterface_FindSpawnPointBP final
 {
 public:
 	int32                                         SpawnPointID;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E5C[0xC];                                      // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0xC];                                        // 0x0004(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSpawnPointDef                         FoundSpawnPoint;                                   // 0x0010(0x0050)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E5D[0xF];                                      // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0xF];                                       // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointProviderInterface_FindSpawnPointBP) == 0x000010, "Wrong alignment on SpawnPointProviderInterface_FindSpawnPointBP");
 static_assert(sizeof(SpawnPointProviderInterface_FindSpawnPointBP) == 0x000070, "Wrong size on SpawnPointProviderInterface_FindSpawnPointBP");
@@ -7601,7 +7601,7 @@ struct SpawnPointProviderInterface_GetAllSpawnPointsBP final
 public:
 	TArray<struct FSpawnPointDef>                 SpawnPoints;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E5E[0x4];                                      // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointProviderInterface_GetAllSpawnPointsBP) == 0x000008, "Wrong alignment on SpawnPointProviderInterface_GetAllSpawnPointsBP");
 static_assert(sizeof(SpawnPointProviderInterface_GetAllSpawnPointsBP) == 0x000018, "Wrong size on SpawnPointProviderInterface_GetAllSpawnPointsBP");
@@ -7616,7 +7616,7 @@ public:
 	struct FSpawnPointDef                         SpawnPoint;                                        // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	ESpawnActorCollisionHandlingMethod            OutSpawnCollisionMethod;                           // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0051(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E5F[0xE];                                      // 0x0052(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_52[0xE];                                       // 0x0052(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointProviderInterface_GetSpawnPointCollisionHandlingOverrideBP) == 0x000010, "Wrong alignment on SpawnPointProviderInterface_GetSpawnPointCollisionHandlingOverrideBP");
 static_assert(sizeof(SpawnPointProviderInterface_GetSpawnPointCollisionHandlingOverrideBP) == 0x000060, "Wrong size on SpawnPointProviderInterface_GetSpawnPointCollisionHandlingOverrideBP");
@@ -7633,7 +7633,7 @@ public:
 	class AController*                            Player;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class APawn>                      PlayerPawnClass;                                   // 0x0010(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E60[0x7];                                      // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_CanRestartPlayerFromAnySpawnPoint) == 0x000008, "Wrong alignment on SpawnPointStatics_CanRestartPlayerFromAnySpawnPoint");
 static_assert(sizeof(SpawnPointStatics_CanRestartPlayerFromAnySpawnPoint) == 0x000020, "Wrong size on SpawnPointStatics_CanRestartPlayerFromAnySpawnPoint");
@@ -7648,12 +7648,12 @@ struct SpawnPointStatics_CanRestartPlayerFromSpawnPoint final
 {
 public:
 	const class UObject*                          Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E61[0x8];                                      // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSpawnPointDef                         SpawnPoint;                                        // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	class AController*                            Player;                                            // 0x0060(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class APawn>                      PlayerPawnClass;                                   // 0x0068(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E62[0xF];                                      // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_71[0xF];                                       // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_CanRestartPlayerFromSpawnPoint) == 0x000010, "Wrong alignment on SpawnPointStatics_CanRestartPlayerFromSpawnPoint");
 static_assert(sizeof(SpawnPointStatics_CanRestartPlayerFromSpawnPoint) == 0x000080, "Wrong size on SpawnPointStatics_CanRestartPlayerFromSpawnPoint");
@@ -7671,7 +7671,7 @@ public:
 	const class UObject*                          Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class AActor>                     SpawnActorClass;                                   // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E63[0x7];                                      // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_CanSpawnActorFromAnySpawnPoint) == 0x000008, "Wrong alignment on SpawnPointStatics_CanSpawnActorFromAnySpawnPoint");
 static_assert(sizeof(SpawnPointStatics_CanSpawnActorFromAnySpawnPoint) == 0x000018, "Wrong size on SpawnPointStatics_CanSpawnActorFromAnySpawnPoint");
@@ -7685,11 +7685,11 @@ struct SpawnPointStatics_CanSpawnActorFromSpawnPoint final
 {
 public:
 	const class UObject*                          Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E64[0x8];                                      // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSpawnPointDef                         SpawnPoint;                                        // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	TSubclassOf<class AActor>                     SpawnActorClass;                                   // 0x0060(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0068(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E65[0x7];                                      // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_CanSpawnActorFromSpawnPoint) == 0x000010, "Wrong alignment on SpawnPointStatics_CanSpawnActorFromSpawnPoint");
 static_assert(sizeof(SpawnPointStatics_CanSpawnActorFromSpawnPoint) == 0x000070, "Wrong size on SpawnPointStatics_CanSpawnActorFromSpawnPoint");
@@ -7705,10 +7705,10 @@ struct SpawnPointStatics_FindSpawnPoint final
 public:
 	const class UObject*                          Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SpawnPointID;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E66[0x4];                                      // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSpawnPointDef                         FoundSpawnPoint;                                   // 0x0010(0x0050)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E67[0xF];                                      // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0xF];                                       // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_FindSpawnPoint) == 0x000010, "Wrong alignment on SpawnPointStatics_FindSpawnPoint");
 static_assert(sizeof(SpawnPointStatics_FindSpawnPoint) == 0x000070, "Wrong size on SpawnPointStatics_FindSpawnPoint");
@@ -7725,7 +7725,7 @@ public:
 	const class UObject*                          Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSpawnPointDef>                 SpawnPoints;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E68[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_GetAllSpawnPoints) == 0x000008, "Wrong alignment on SpawnPointStatics_GetAllSpawnPoints");
 static_assert(sizeof(SpawnPointStatics_GetAllSpawnPoints) == 0x000020, "Wrong size on SpawnPointStatics_GetAllSpawnPoints");
@@ -7741,7 +7741,7 @@ public:
 	const class UObject*                          Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FTransform>                     SpawnPointTransforms;                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E69[0x4];                                      // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_GetAllSpawnPointTransforms) == 0x000008, "Wrong alignment on SpawnPointStatics_GetAllSpawnPointTransforms");
 static_assert(sizeof(SpawnPointStatics_GetAllSpawnPointTransforms) == 0x000020, "Wrong size on SpawnPointStatics_GetAllSpawnPointTransforms");
@@ -7755,11 +7755,11 @@ struct SpawnPointStatics_GetSpawnPointCollisionHandlingOverride final
 {
 public:
 	const class UObject*                          Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E6A[0x8];                                      // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSpawnPointDef                         SpawnPoint;                                        // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	ESpawnActorCollisionHandlingMethod            OutSpawnCollisionMethod;                           // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0061(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E6B[0xE];                                      // 0x0062(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_62[0xE];                                       // 0x0062(0x000E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_GetSpawnPointCollisionHandlingOverride) == 0x000010, "Wrong alignment on SpawnPointStatics_GetSpawnPointCollisionHandlingOverride");
 static_assert(sizeof(SpawnPointStatics_GetSpawnPointCollisionHandlingOverride) == 0x000070, "Wrong size on SpawnPointStatics_GetSpawnPointCollisionHandlingOverride");
@@ -7776,7 +7776,7 @@ public:
 	const class UObject*                          Target;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SpawnPointID;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E6C[0x3];                                      // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SpawnPointStatics_SpawnPointExists) == 0x000008, "Wrong alignment on SpawnPointStatics_SpawnPointExists");
 static_assert(sizeof(SpawnPointStatics_SpawnPointExists) == 0x000010, "Wrong size on SpawnPointStatics_SpawnPointExists");

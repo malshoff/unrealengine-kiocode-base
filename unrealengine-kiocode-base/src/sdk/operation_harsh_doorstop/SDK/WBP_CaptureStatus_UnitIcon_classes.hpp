@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "ECaptureUnitType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "ECaptureUnitType_structs.hpp"
 
 
 namespace SDK
@@ -28,19 +28,19 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UImage*                                 UnitIcon;                                          // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	ECaptureUnitType                              UnitType;                                          // 0x0240(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1F50[0x7];                                     // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            UnoccupiedUnitImage;                               // 0x0248(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FSlateBrush                            FriendlyUnitImage;                                 // 0x02D0(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FSlateBrush                            EnemyUnitImage;                                    // 0x0358(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FSlateBrush                            MultipleUnitImage;                                 // 0x03E0(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly)
 	bool                                          bUseFriendlyUnitColor;                             // 0x0468(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F51[0x3];                                     // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_469[0x3];                                      // 0x0469(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           UnoccupiedUnitColor;                               // 0x046C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           FriendlyUnitColor;                                 // 0x047C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           EnemyUnitColor;                                    // 0x048C(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bUnitMultiple;                                     // 0x049C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bIsDesignTime;                                     // 0x049D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F52[0x2];                                     // 0x049E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49E[0x2];                                      // 0x049E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           LocalUnitColorToUse;                               // 0x04A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

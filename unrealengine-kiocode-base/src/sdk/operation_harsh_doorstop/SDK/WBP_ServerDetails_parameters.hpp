@@ -49,7 +49,7 @@ public:
 	class FString                                 CallFunc_Split_LeftS;                              // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Split_RightS;                             // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Split_ReturnValue;                        // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10D5[0x7];                                     // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00D8(0x0018)()
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00F0(0x0018)()
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0108(0x0040)(HasGetValueTypeHash)

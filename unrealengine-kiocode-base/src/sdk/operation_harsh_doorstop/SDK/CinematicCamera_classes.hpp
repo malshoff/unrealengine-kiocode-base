@@ -27,7 +27,7 @@ public:
 	float                                         CraneArmLength;                                    // 0x0228(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLockMountPitch;                                   // 0x022C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLockMountYaw;                                     // 0x022D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175D[0x2];                                     // 0x022E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E[0x2];                                      // 0x022E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        TransformComponent;                                // 0x0230(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USceneComponent*                        CraneYawControl;                                   // 0x0238(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USceneComponent*                        CranePitchControl;                                 // 0x0240(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -62,7 +62,7 @@ class ACameraRig_Rail final : public AActor
 public:
 	float                                         CurrentPositionOnRail;                             // 0x0220(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLockOrientationToRail;                            // 0x0224(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175E[0x3];                                     // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225[0x3];                                      // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        TransformComponent;                                // 0x0228(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USplineComponent*                       RailSplineComponent;                               // 0x0230(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USceneComponent*                        RailCameraMount;                                   // 0x0238(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -94,7 +94,7 @@ class ACineCameraActor final : public ACameraActor
 {
 public:
 	struct FCameraLookatTrackingSettings          LookatTrackingSettings;                            // 0x0790(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175F[0x10];                                    // 0x07E0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7E0[0x10];                                     // 0x07E0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class UCineCameraComponent* GetCineCameraComponent() const;
@@ -125,7 +125,7 @@ public:
 	float                                         CurrentFocalLength;                                // 0x0838(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CurrentAperture;                                   // 0x083C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CurrentFocusDistance;                              // 0x0840(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1760[0xC];                                     // 0x0844(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_844[0xC];                                      // 0x0844(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FNamedFilmbackPreset>           FilmbackPresets;                                   // 0x0850(0x0010)(ZeroConstructor, Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FNamedLensPreset>               LensPresets;                                       // 0x0860(0x0010)(ZeroConstructor, Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FString                                 DefaultFilmbackPresetName;                         // 0x0870(0x0010)(ZeroConstructor, Config, Deprecated, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -133,7 +133,7 @@ public:
 	class FString                                 DefaultLensPresetName;                             // 0x0890(0x0010)(ZeroConstructor, Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         DefaultLensFocalLength;                            // 0x08A0(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         DefaultLensFStop;                                  // 0x08A4(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1761[0x8];                                     // 0x08A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8A8[0x8];                                      // 0x08A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static TArray<struct FNamedLensPreset> GetLensPresetsCopy();

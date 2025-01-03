@@ -49,15 +49,15 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2016[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0008(0x0018)()
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_1;                              // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2017[0x6];                                     // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0028(0x0018)()
 	struct FButtonStyle                           K2Node_Select_Default;                             // 0x0040(0x0278)()
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2018[0x7];                                     // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FButtonStyle                           K2Node_Select_Default_1;                           // 0x02C0(0x0278)()
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_ExecuteUbergraph_WBP_DeployMenu_ClassSelectionListing) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_ExecuteUbergraph_WBP_DeployMenu_ClassSelectionListing");
@@ -89,12 +89,12 @@ static_assert(offsetof(WBP_DeployMenu_ClassSelectionListing_C_PreConstruct, IsDe
 struct WBP_DeployMenu_ClassSelectionListing_C_Init final
 {
 public:
-	class UHDKit*                                 Param_Kit;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UHDKit*                                 Kit_0;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_HDPlayerControllerBase_C*           OwningPC;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_Init) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_Init");
 static_assert(sizeof(WBP_DeployMenu_ClassSelectionListing_C_Init) == 0x000010, "Wrong size on WBP_DeployMenu_ClassSelectionListing_C_Init");
-static_assert(offsetof(WBP_DeployMenu_ClassSelectionListing_C_Init, Param_Kit) == 0x000000, "Member 'WBP_DeployMenu_ClassSelectionListing_C_Init::Param_Kit' has a wrong offset!");
+static_assert(offsetof(WBP_DeployMenu_ClassSelectionListing_C_Init, Kit_0) == 0x000000, "Member 'WBP_DeployMenu_ClassSelectionListing_C_Init::Kit_0' has a wrong offset!");
 static_assert(offsetof(WBP_DeployMenu_ClassSelectionListing_C_Init, OwningPC) == 0x000008, "Member 'WBP_DeployMenu_ClassSelectionListing_C_Init::OwningPC' has a wrong offset!");
 
 // Function WBP_DeployMenu_ClassSelectionListing.WBP_DeployMenu_ClassSelectionListing_C.InternalKitDisplaySetup
@@ -103,7 +103,7 @@ struct WBP_DeployMenu_ClassSelectionListing_C_InternalKitDisplaySetup final
 {
 public:
 	bool                                          CallFunc_InternalIsKitRestricted_bKitRestricted;   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2019[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_InternalIsKitRestricted_KitRestrictionReason; // 0x0008(0x0018)()
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_InternalKitDisplaySetup) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_InternalKitDisplaySetup");
@@ -117,7 +117,7 @@ struct WBP_DeployMenu_ClassSelectionListing_C_UpdateRestrictedState final
 {
 public:
 	bool                                          CallFunc_InternalIsKitRestricted_bKitRestricted;   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_InternalIsKitRestricted_KitRestrictionReason; // 0x0008(0x0018)()
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -149,7 +149,7 @@ public:
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FButtonStyle                           K2Node_Select_Default;                             // 0x0008(0x0278)()
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_InternalSetClassSelectionState) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_InternalSetClassSelectionState");
@@ -176,11 +176,11 @@ static_assert(offsetof(WBP_DeployMenu_ClassSelectionListing_C_ToggleClassSelecti
 struct WBP_DeployMenu_ClassSelectionListing_C_SetSelected final
 {
 public:
-	bool                                          Param_bSelected;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bSelected_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_SetSelected) == 0x000001, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_SetSelected");
 static_assert(sizeof(WBP_DeployMenu_ClassSelectionListing_C_SetSelected) == 0x000001, "Wrong size on WBP_DeployMenu_ClassSelectionListing_C_SetSelected");
-static_assert(offsetof(WBP_DeployMenu_ClassSelectionListing_C_SetSelected, Param_bSelected) == 0x000000, "Member 'WBP_DeployMenu_ClassSelectionListing_C_SetSelected::Param_bSelected' has a wrong offset!");
+static_assert(offsetof(WBP_DeployMenu_ClassSelectionListing_C_SetSelected, bSelected_0) == 0x000000, "Member 'WBP_DeployMenu_ClassSelectionListing_C_SetSelected::bSelected_0' has a wrong offset!");
 
 // Function WBP_DeployMenu_ClassSelectionListing.WBP_DeployMenu_ClassSelectionListing_C.InternalSetupKitDisplaySymbol
 // 0x0030 (0x0030 - 0x0000)
@@ -190,7 +190,7 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201C[0x5];                                     // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_Select_Default;                             // 0x0008(0x0028)()
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_InternalSetupKitDisplaySymbol) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_InternalSetupKitDisplaySymbol");
@@ -209,7 +209,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0008(0x0018)()
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0020(0x0018)()
 };
@@ -228,7 +228,7 @@ struct WBP_DeployMenu_ClassSelectionListing_C_InternalSetupKitRestrictionDisplay
 {
 public:
 	bool                                          bKitRestricted;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   KitRestrictionReason;                              // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -250,15 +250,15 @@ struct WBP_DeployMenu_ClassSelectionListing_C_InternalUpdateClassRestrictedText 
 {
 public:
 	bool                                          bKitRestricted;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   KitRestrictionReason;                              // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2020[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0028(0x0018)()
 	bool                                          Temp_bool_Variable_1;                              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_2;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasKitRequirements_ReturnValue;           // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2021[0x5];                                     // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0048(0x0018)()
 	class FText                                   K2Node_Select_Default_1;                           // 0x0060(0x0018)()
 	struct FSlateColor                            K2Node_Select_Default_2;                           // 0x0078(0x0028)()
@@ -282,7 +282,7 @@ struct WBP_DeployMenu_ClassSelectionListing_C_InternalSetClassRestrictedState fi
 {
 public:
 	bool                                          bNewRestricted;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2022[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   NewRestrictionReason;                              // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -299,13 +299,13 @@ struct WBP_DeployMenu_ClassSelectionListing_C_InternalSetupKitDisplayEqpSlots fi
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2023[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHDItemEntry                           CallFunc_Array_Get_Item;                           // 0x0008(0x0010)(NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2024[0x3];                                     // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_InternalSetupKitDisplayEqpSlots) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_InternalSetupKitDisplayEqpSlots");
@@ -325,15 +325,15 @@ struct WBP_DeployMenu_ClassSelectionListing_C_InternalSetEqpDisplaySymbolBySlotN
 {
 public:
 	int32                                         SlotNum;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2025[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             SlotSymbolToUse;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDesignTime;                                       // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2026[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImage*                                 CallFunc_InternalGetEqpSlotImageWidgetByNum_EqpSlotImage; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelWidget*                           CallFunc_GetParent_ReturnValue;                    // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2027[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_InternalSetEqpDisplaySymbolBySlotNum) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_InternalSetEqpDisplaySymbolBySlotNum");
@@ -354,18 +354,18 @@ struct WBP_DeployMenu_ClassSelectionListing_C_SortItemEntriesInPlaceBySlotNum fi
 public:
 	TArray<struct FHDItemEntry>                   EntriesToSort;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 	bool                                          bSwapped;                                          // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2028[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FHDItemEntry>                   SortedEntries;                                     // 0x0018(0x0010)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2029[0x3];                                     // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_202A[0x3];                                     // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable_1;                               // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -403,20 +403,20 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_202B[0x2];                                     // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_202C[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImage*                                 CallFunc_InternalGetEqpSlotImageWidgetByNum_EqpSlotImage; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_AreColorsNearlyEqual_bEqual;              // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_202D[0x1];                                     // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_27[0x1];                                       // 0x0027(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_202E[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHDItemEntry                           CallFunc_Array_Get_Item;                           // 0x0030(0x0010)(NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_202F[0x7];                                     // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CallFunc_GetItemEntryDisplayEquipmentSymbol_OutDisplayEquipmentSymbol; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetItemEntryDisplayEquipmentSymbol_ReturnValue; // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -447,16 +447,16 @@ struct WBP_DeployMenu_ClassSelectionListing_C_InternalIsKitRestricted final
 {
 public:
 	bool                                          bKitRestricted;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2030[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   KitRestrictionReason;                              // 0x0008(0x0018)(Parm, OutParm)
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2031[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0028(0x0018)()
 	class FText                                   CallFunc_PlayerCanStartWithKit_OutKitDenialReason; // 0x0040(0x0018)()
 	bool                                          CallFunc_PlayerCanStartWithKit_ReturnValue;        // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2032[0x5];                                     // 0x005B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5B[0x5];                                       // 0x005B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0060(0x0018)()
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_InternalIsKitRestricted) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_InternalIsKitRestricted");
@@ -477,12 +477,12 @@ struct WBP_DeployMenu_ClassSelectionListing_C_InternalGetEqpSlotImageWidgetByNum
 {
 public:
 	int32                                         SlotNum;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2033[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImage*                                 EqpSlotImage;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2034[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UImage*                                 K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DeployMenu_ClassSelectionListing_C_InternalGetEqpSlotImageWidgetByNum) == 0x000008, "Wrong alignment on WBP_DeployMenu_ClassSelectionListing_C_InternalGetEqpSlotImageWidgetByNum");

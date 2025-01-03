@@ -57,7 +57,7 @@ static_assert(sizeof(UDFGunRecoilHandler) == 0x000028, "Wrong size on UDFGunReco
 class UDFCfgDataManager : public UObject
 {
 public:
-	uint8                                         Pad_CE9[0x50];                                     // 0x0028(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x50];                                      // 0x0028(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -102,7 +102,7 @@ static_assert(sizeof(IDFHandlerInterface) == 0x000028, "Wrong size on IDFHandler
 class UDFMapRotationManager final : public UDFCfgDataManager
 {
 public:
-	uint8                                         Pad_CEC[0x18];                                     // 0x0078(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x18];                                      // 0x0078(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -139,7 +139,7 @@ static_assert(sizeof(UDFLocalPlayer) == 0x000258, "Wrong size on UDFLocalPlayer"
 class ADFBaseAIController : public AAIController
 {
 public:
-	uint8                                         Pad_CED[0x8];                                      // 0x0328(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_328[0x8];                                      // 0x0328(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool CanRestartPlayer();
@@ -179,7 +179,7 @@ static_assert(sizeof(ADFInfo) == 0x000220, "Wrong size on ADFInfo");
 class UDFPlayerAdminList final : public UDFCfgDataManager
 {
 public:
-	uint8                                         Pad_CEE[0x50];                                     // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x50];                                      // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -215,11 +215,11 @@ public:
 	uint8                                         bPendingEquip : 1;                                 // 0x0262(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bPendingUnEquip : 1;                               // 0x0262(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bWantsToFire : 1;                                  // 0x0262(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_CEF[0x1];                                      // 0x0263(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_263[0x1];                                      // 0x0263(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         LastFiredShotID;                                   // 0x0264(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_CF0[0x10];                                     // 0x0268(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_268[0x10];                                     // 0x0268(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bDebug : 1;                                        // 0x0278(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_CF1[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCharacterAnimCollection               CharacterAnimCollection;                           // 0x0280(0x0128)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -323,7 +323,7 @@ static_assert(sizeof(IDFIntrinsicCharAnimInstInterface) == 0x000028, "Wrong size
 class UDFPlayerBanList final : public UDFCfgDataManager
 {
 public:
-	uint8                                         Pad_CF6[0x50];                                     // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x50];                                      // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -366,7 +366,7 @@ static_assert(sizeof(IDFIntrinsicWeapAnimInstInterface) == 0x000028, "Wrong size
 class UDFPlayerWhitelist final : public UDFCfgDataManager
 {
 public:
-	uint8                                         Pad_CFB[0x50];                                     // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x50];                                      // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -386,7 +386,7 @@ static_assert(sizeof(UDFPlayerWhitelist) == 0x0000C8, "Wrong size on UDFPlayerWh
 class UDFAssetManager : public UAssetManager
 {
 public:
-	uint8                                         Pad_CFC[0x8];                                      // 0x0438(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_438[0x8];                                      // 0x0438(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -409,9 +409,9 @@ public:
 	class ADFBaseGun*                             GunOwner;                                          // 0x03A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         CurrentClipAmmo;                                   // 0x03B0(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         ReloadCounter;                                     // 0x03B4(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_CFD[0x3];                                      // 0x03B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B5[0x3];                                      // 0x03B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SimulatedCurrentClipAmmo;                          // 0x03B8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_CFE[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StartingClipAmmo;                                  // 0x03C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         MaxClipAmmo;                                       // 0x03C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -473,16 +473,16 @@ static_assert(sizeof(UDFNavigationSystem) == 0x000538, "Wrong size on UDFNavigat
 class alignas(0x10) ADFBaseCharacter : public ACharacter
 {
 public:
-	uint8                                         Pad_D01[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B8[0x8];                                      // 0x04B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         RemoteViewYaw;                                     // 0x04C0(0x0001)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D02[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bClientResimulateSprintStamina : 1;                // 0x04C8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D03[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCharacterAnimCollection               DefaultPawnAnimCollection;                         // 0x04D0(0x0128)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bPlayFootstepFXWithPerspMeshOnly : 1;              // 0x05F8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bTickAllAnimationOnDedicatedServer : 1;            // 0x05F8(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bOnlyTickAnimMontagesOnDedicatedServer : 1;        // 0x05F8(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D04[0x7];                                      // 0x05F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5F9[0x7];                                      // 0x05F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCharacterSoundCollection              DefaultPawnSoundCollection;                        // 0x0600(0x0010)(Edit, BlueprintVisible, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	class ADFBaseItem*                            EquippedItem;                                      // 0x0610(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class ADFBaseItem*                            LastEquippedItem;                                  // 0x0618(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -491,24 +491,24 @@ public:
 	class UDFInventoryComponent*                  Inventory;                                         // 0x0638(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UDFLoadout*                             DefaultLoadout;                                    // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EDFItemEnabledMode                            ItemEnabledMode;                                   // 0x0648(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D05[0x3];                                      // 0x0649(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_649[0x3];                                      // 0x0649(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ShotIDCounter;                                     // 0x064C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bAllowWeaponFireWhileCrawling : 1;                 // 0x0650(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bDying : 1;                                        // 0x0650(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D06[0x7];                                      // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_651[0x7];                                      // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnHealthChanged;                                   // 0x0658(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	float                                         Health;                                            // 0x0668(0x0004)(Edit, BlueprintVisible, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_D07[0x14];                                     // 0x066C(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_66C[0x14];                                     // 0x066C(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RagdollLifeSpan;                                   // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_D08[0x4];                                      // 0x0684(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_684[0x4];                                      // 0x0684(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnCharacterDeath;                                  // 0x0688(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	float                                         MaxHealth;                                         // 0x0698(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D09[0x4];                                      // 0x069C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_69C[0x4];                                      // 0x069C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTakeHitInfo                           LastTakeHitInfo;                                   // 0x06A0(0x0120)(Edit, Net, Transient, EditConst, RepNotify, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D0A[0x8];                                      // 0x07C0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7C0[0x8];                                      // 0x07C0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FName, float>                      BoneDamageMultipliers;                             // 0x07C8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bApplyDamageMomentumOnHit : 1;                     // 0x0818(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D0B[0x7];                                      // 0x0819(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_819[0x7];                                      // 0x0819(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSprintTransition;                                // 0x0820(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnAimTransition;                                   // 0x0830(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnLeanTransition;                                  // 0x0840(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -521,28 +521,28 @@ public:
 	uint8                                         bIsProne : 1;                                      // 0x0862(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bVaulting : 1;                                     // 0x0862(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bWasVaulting : 1;                                  // 0x0862(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D0C[0x1];                                      // 0x0863(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_863[0x1];                                      // 0x0863(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDFVaultTraceResult                    PendingVaultTraceResult;                           // 0x0864(0x001C)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	struct FDFVaultTraceData                      VaultParams;                                       // 0x0880(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, Net, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	float                                         ReplicatedLeanAmount;                              // 0x0898(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D0D[0x4];                                      // 0x089C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_89C[0x4];                                      // 0x089C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFCharacterLeanHandler*                LeanHandler;                                       // 0x08A0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoClear, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UDFCharacterMovementComponent*          DFCharacterMovement;                               // 0x08A8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TargetEyeHeight;                                   // 0x08B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         BitPad_3D : 1;                                     // 0x08B4(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         BitPad_8B4_0 : 1;                                  // 0x08B4(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
 	uint8                                         bInterpCrouchedEyeHeight : 1;                      // 0x08B4(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D0E[0x3];                                      // 0x08B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8B5[0x3];                                      // 0x08B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CrouchedTransitionInterpSpeed;                     // 0x08B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bInterpProneEyeHeight : 1;                         // 0x08BC(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D0F[0x3];                                      // 0x08BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8BD[0x3];                                      // 0x08BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ProneTransitionInterpSpeed;                        // 0x08C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ProneEyeHeight;                                    // 0x08C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         TeamNum;                                           // 0x08C8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D10[0x7];                                      // 0x08C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C9[0x7];                                      // 0x08C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFTeamState*                           TeamState;                                         // 0x08D0(0x0008)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class ADFTeamState*                           PrevTeamState;                                     // 0x08D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bAllowTeamIdOverride : 1;                          // 0x08E0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D11[0x7];                                      // 0x08E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8E1[0x7];                                      // 0x08E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPawnTeamNumUpdated;                              // 0x08E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPawnTeamStateUpdated;                            // 0x08F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
@@ -720,7 +720,7 @@ class ADFBaseGameMode : public AGameMode
 {
 public:
 	class ADFGameSession*                         DFGameSession;                                     // 0x0308(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_D38[0x8];                                      // 0x0310(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_310[0x8];                                      // 0x0310(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class ADFTeamState>               TeamStateClass;                                    // 0x0318(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoClear, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSubclassOf<class AAIController>              AIControllerClass;                                 // 0x0320(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoClear, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<uint8>                                 WinningTeams;                                      // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -730,11 +730,11 @@ public:
 	int32                                         RoundScoreLimit;                                   // 0x0348(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         TimeBetweenMatches;                                // 0x034C(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bBalanceTeams : 1;                                 // 0x0350(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, Config, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D39[0x3];                                      // 0x0351(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_351[0x3];                                      // 0x0351(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BalanceTimerInterval;                              // 0x0354(0x0004)(Edit, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         AutoAssignHumanTeam;                               // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bBotAutofill : 1;                                  // 0x0359(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, Config, GlobalConfig, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D3A[0x6];                                      // 0x035A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35A[0x6];                                      // 0x035A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   GameDisplayName;                                   // 0x0360(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	int32                                         NumTeams;                                          // 0x0378(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bAllowUnassignedTeams : 1;                         // 0x037C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -756,7 +756,7 @@ public:
 	TArray<class UDFGameRulesetBase*>             GameRulesets;                                      // 0x03E8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bAllowVoting : 1;                                  // 0x03F8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bAllowPlayerToChangeVote : 1;                      // 0x03F8(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Config, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D3B[0x7];                                      // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F9[0x7];                                      // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSoftClassPtr<class UClass>>           AllowedVoteIssues;                                 // 0x0400(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class UDFVotingComponent>         PlayerVotingGameStateComponentClass;               // 0x0410(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoClear, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -883,7 +883,7 @@ class UDFNetworkEventSubsystem final : public UWorldSubsystem
 public:
 	FMulticastInlineDelegateProperty_             OnPlayersUpdatedDynamic;                           // 0x0030(0x0010)(ZeroConstructor, Transient, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 	FMulticastInlineDelegateProperty_             OnTeamsUpdatedDynamic;                             // 0x0040(0x0010)(ZeroConstructor, Transient, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D5B[0x50];                                     // 0x0050(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_50[0x50];                                      // 0x0050(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UDFNetworkEventSubsystem* Get(const class UObject* WorldContextObject);
@@ -927,9 +927,9 @@ static_assert(sizeof(ADFBaseGame_TeamDeathMatch) == 0x000418, "Wrong size on ADF
 class UDFBaseGameInstance : public UGameInstance
 {
 public:
-	uint8                                         Pad_D5C[0x70];                                     // 0x0198(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_198[0x70];                                     // 0x0198(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFGameDialogDescriptor*                PendingReturnToMainMenuMessage;                    // 0x0208(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D5D[0x68];                                     // 0x0210(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_210[0x68];                                     // 0x0210(0x0068)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPlayerStateTalkingStateChanged;                  // 0x0278(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -985,10 +985,10 @@ class ADFBaseGameState : public AGameState
 public:
 	uint8                                         NumTeams;                                          // 0x0290(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bTimerPaused;                                      // 0x0291(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_D63[0x2];                                      // 0x0292(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_292[0x2];                                      // 0x0292(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RemainingTime;                                     // 0x0294(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         ReplicatedRemainingTime;                           // 0x0298(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D64[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 TeamScores;                                        // 0x02A0(0x0010)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class ADFTeamState*>                   TeamArray;                                         // 0x02B0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnTeamStateAdded;                                  // 0x02C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -997,7 +997,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnPlayerStateRemoved;                              // 0x02F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         bAllowVoting : 1;                                  // 0x0300(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Net, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bAllowPlayerToChangeVote : 1;                      // 0x0300(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, Net, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D65[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFVotingComponent*                     GameStateVotingComponent;                          // 0x0308(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -1041,40 +1041,40 @@ class ADFBaseWeapon : public ADFBaseItem
 public:
 	FMulticastInlineDelegateProperty_             OnFire;                                            // 0x03A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         bFiring : 1;                                       // 0x03B8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         BitPad_3E : 5;                                     // 0x03B8(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         BitPad_3B8_1 : 5;                                  // 0x03B8(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
 	uint8                                         bReadyToFirePendingRelease : 1;                    // 0x03B8(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bFireOnRelease : 1;                                // 0x03B8(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D67[0x3];                                      // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B9[0x3];                                      // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PrefireDelayMin;                                   // 0x03BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bPrefiring : 1;                                    // 0x03C0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Net, Transient, EditConst, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         BitPad_3F : 7;                                     // 0x00C0(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
-	uint8                                         Pad_D68[0x3F];                                     // 0x03C1(0x003F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         BitPad_3C0_1 : 7;                                  // 0x03C0(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
+	uint8                                         Pad_3C1[0x3F];                                     // 0x03C1(0x003F)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bADSFireOnly : 1;                                  // 0x0400(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bLastShotFired : 1;                                // 0x0400(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Net, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bRepCounterPending : 1;                            // 0x0400(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D69[0x1];                                      // 0x0401(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_401[0x1];                                      // 0x0401(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRepShotInfo                           FireCounter;                                       // 0x0402(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, Net, DisableEditOnInstance, RepNotify, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
 	struct FRepShotInfo                           PreviousRepFireCounter;                            // 0x0406(0x0004)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	struct FRepShotInfo                           PostStoppedFireCounter;                            // 0x040A(0x0004)(BlueprintVisible, BlueprintReadOnly, Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D6A[0x2];                                      // 0x040E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40E[0x2];                                      // 0x040E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LastFireTime;                                      // 0x0410(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         LastShotFireTime;                                  // 0x0414(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D6B[0x4];                                      // 0x0418(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_418[0x4];                                      // 0x0418(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bUseServerSideFiringLogic : 1;                     // 0x041C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bSimulateWeaponFireOnDedicatedServer : 1;          // 0x041C(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D6C[0x3];                                      // 0x041D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41D[0x3];                                      // 0x041D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWeaponAnimCollection                  WeaponAnimCollection;                              // 0x0420(0x00F0)(Edit, BlueprintVisible, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bStopAllFireAnimsAfterFireRateDelay : 1;           // 0x0510(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bSimulate1PWeaponFireOnPawnOwner1PMesh : 1;        // 0x0510(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D6D[0x7];                                      // 0x0511(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_511[0x7];                                      // 0x0511(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWeaponSoundCollection                 WeaponSoundCollection;                             // 0x0518(0x0080)(Edit, BlueprintVisible, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bSingleAction : 1;                                 // 0x0598(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bSingleLoad : 1;                                   // 0x0598(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_D6E[0x7];                                      // 0x0599(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_599[0x7];                                      // 0x0599(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 WeaponMesh;                                        // 0x05A0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class USkeletalMeshComponent*                 WeaponMesh1P;                                      // 0x05A8(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bCanSprintWhilePrefiring : 1;                      // 0x05B0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D6F[0x7];                                      // 0x05B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5B1[0x7];                                      // 0x05B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRuntimeFloatCurve                     DamageFalloffCurve;                                // 0x05B8(0x0088)(Edit, Protected, NativeAccessSpecifierProtected)
 	TSubclassOf<class UDamageType>                DamageTypeClass;                                   // 0x0640(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoClear, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -1175,27 +1175,27 @@ class ADFBaseGun : public ADFBaseWeapon
 {
 public:
 	FMulticastInlineDelegateProperty_             OnFireModeChanged;                                 // 0x0648(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D7E[0x10];                                     // 0x0658(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_658[0x10];                                     // 0x0658(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TimerIntervalAdjustment;                           // 0x0668(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bAllowAutomaticWeaponCatchup;                      // 0x066C(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D7F[0x3];                                      // 0x066D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_66D[0x3];                                      // 0x066D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         FireRate;                                          // 0x0670(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         ShotsPerBurst;                                     // 0x0674(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         SupportedFireModes;                                // 0x0678(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EFireMode                                     SelectedFireMode;                                  // 0x0679(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D80[0x6];                                      // 0x067A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_67A[0x6];                                      // 0x067A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFGunRecoilHandler*                    RecoilHandler;                                     // 0x0680(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnReloadStarted;                                   // 0x0688(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnReloadFinished;                                  // 0x0698(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	EGunReloadState                               PendingReloadState;                                // 0x06A8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EGunReloadState                               PreviousReloadState;                               // 0x06A9(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bKeepLoadedAmmoOnLeaveInventory : 1;               // 0x06AA(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         BitPad_40 : 2;                                     // 0x06AA(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         BitPad_6AA_1 : 2;                                  // 0x06AA(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
 	uint8                                         bUsesAmmo : 1;                                     // 0x06AA(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bExhaustible : 1;                                  // 0x06AA(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bCanSprintWhileReloading : 1;                      // 0x06AA(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         BitPad_41 : 2;                                     // 0x00AA(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
-	uint8                                         Pad_D81[0x4D];                                     // 0x06AB(0x004D)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         BitPad_6AA_6 : 2;                                  // 0x06AA(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
+	uint8                                         Pad_6AB[0x4D];                                     // 0x06AB(0x004D)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bReloadOnEquip : 1;                                // 0x06F8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bInstantReloadOnEquip : 1;                         // 0x06F8(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bInstantReloadOnInitialEquip : 1;                  // 0x06F8(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
@@ -1204,14 +1204,14 @@ public:
 	uint8                                         bReloadOnStopFire : 1;                             // 0x06F8(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bSimulateGunReloadOnDedicatedServer : 1;           // 0x06F8(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	EAmmoClipReloadBehavior                       AmmoClipReloadBehavior;                            // 0x06F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D82[0x6];                                      // 0x06FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6FA[0x6];                                      // 0x06FA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<TSubclassOf<class ADFBaseAmmoClip>>      SupportedAmmoClips;                                // 0x0700(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	int32                                         StartingAmmoClips;                                 // 0x0750(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bDispensedStartingAmmoClips : 1;                   // 0x0754(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D83[0x3];                                      // 0x0755(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_755[0x3];                                      // 0x0755(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseAmmoClip*                        CurrentAmmoClip;                                   // 0x0758(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         CurrentAmmoClipInvIndex;                           // 0x0760(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D84[0x4];                                      // 0x0764(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_764[0x4];                                      // 0x0764(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseAmmoClip*                        PreviousAmmoClip;                                  // 0x0768(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         CurrentAmmoInClipBeforeReload;                     // 0x0770(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         TotalAvailableAmmoBeforeReload;                    // 0x0774(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -1219,7 +1219,7 @@ public:
 	uint8                                         bInfiniteClipAmmo : 1;                             // 0x077C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bInfiniteAmmo : 1;                                 // 0x077C(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bNoRecoil : 1;                                     // 0x077C(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D85[0x3];                                      // 0x077D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_77D[0x3];                                      // 0x077D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FComponentReference                    CustomMuzzleAttachComponentToUse;                  // 0x0780(0x0028)(Edit, DisableEditOnTemplate, EditConst, AdvancedDisplay, NativeAccessSpecifierPrivate)
 	class FName                                   MuzzleAttachComponentName;                         // 0x07A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FName                                   MuzzleAttachPoint;                                 // 0x07B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -1227,7 +1227,7 @@ public:
 	struct FVector                                MuzzleLocationOffset;                              // 0x07C0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FRotator                               MuzzleRotationOffset;                              // 0x07CC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bLoopedMuzzleFX : 1;                               // 0x07D8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D86[0x7];                                      // 0x07D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7D9[0x7];                                      // 0x07D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               MuzzlePSC;                                         // 0x07E0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FName                                   ShellEjectAttachPoint;                             // 0x07E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UParticleSystem*                        ShellEjectFX;                                      // 0x07F0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -1235,10 +1235,10 @@ public:
 	struct FRotator                               ShellEjectRotationOffset;                          // 0x0804(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         bLoopedShellEjectFX : 1;                           // 0x0810(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bPlayShellEjectFXOnFireLast : 1;                   // 0x0810(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D87[0x3];                                      // 0x0811(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_811[0x3];                                      // 0x0811(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ShellEjectDelay;                                   // 0x0814(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UParticleSystemComponent*               ShellEjectPSC;                                     // 0x0818(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D88[0x10];                                     // 0x0820(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_820[0x10];                                     // 0x0820(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientRejectFiredShot(int32 ShotID, class ADFBaseAmmoClip* ShotAmmoClip, int32 ServerClipAmmo);
@@ -1343,7 +1343,7 @@ class UDFPlayerComponent : public UActorComponent
 public:
 	class AController*                            ControllerOwner;                                   // 0x00B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bWantsToRestart : 1;                               // 0x00B8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_D95[0xF];                                      // 0x00B9(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B9[0xF];                                       // 0x00B9(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool CanRestartPlayer();
@@ -1382,10 +1382,10 @@ public:
 	float                                         ProjectileSpawnDistance;                           // 0x0838(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         TargetTraceDistance;                               // 0x083C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUseMuzzleAsTrace;                                 // 0x0840(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D97[0x3];                                      // 0x0841(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_841[0x3];                                      // 0x0841(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                MuzzleSightOffset;                                 // 0x0844(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	FMulticastSparseDelegateProperty_             OnProcessValidProjCSHit;                           // 0x0850(0x0001)(InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D98[0x7];                                      // 0x0851(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_851[0x7];                                      // 0x0851(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientDrawDebugFireCone(const struct FVector& ConeOrig, const struct FVector_NetQuantizeNormal& ConeDir);
@@ -1422,7 +1422,7 @@ class UDFProjectileSubsystem final : public UWorldSubsystem
 public:
 	TArray<class ADFBaseProjectile*>              PredictedProjectiles;                              // 0x0030(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxFiredShots;                                     // 0x0040(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D9A[0x14];                                     // 0x0044(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x14];                                      // 0x0044(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1585,15 +1585,15 @@ static_assert(offsetof(ADFBaseImpactEffect, SurfaceHit) == 0x000460, "Member 'AD
 class ADFBasePickup : public AActor
 {
 public:
-	uint8                                         Pad_D9D[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   Mesh;                                              // 0x0228(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bActive : 1;                                       // 0x0230(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, Net, Transient, EditConst, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_D9E[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseCharacter*                       InvokingPawn;                                      // 0x0238(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D9F[0x8];                                      // 0x0240(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240[0x8];                                      // 0x0240(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bUseable : 1;                                      // 0x0248(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bOverlap : 1;                                      // 0x0248(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DA0[0x3];                                      // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_249[0x3];                                      // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RespawnDelay;                                      // 0x024C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class USoundCue*                              PickupSound;                                       // 0x0250(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
@@ -1631,7 +1631,7 @@ class ADFBasePickup_Health final : public ADFBasePickup
 {
 public:
 	float                                         Health;                                            // 0x0258(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DA2[0x4];                                      // 0x025C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1709,10 +1709,10 @@ class ADFBasePlayerCharacter : public ADFBaseCharacter
 public:
 	float                                         BaseTurnRate;                                      // 0x0908(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         BaseLookUpRate;                                    // 0x090C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DA3[0x8];                                      // 0x0910(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_910[0x8];                                      // 0x0910(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         InteractionDistance;                               // 0x0918(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bFirstPerson : 1;                                  // 0x091C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DA4[0x3];                                      // 0x091D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91D[0x3];                                      // 0x091D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCameraComponent*                       Camera;                                            // 0x0920(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class USpringArmComponent*                    CameraBoom;                                        // 0x0928(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCameraComponent*                       Camera1P;                                          // 0x0930(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -1720,14 +1720,14 @@ public:
 	uint8                                         bTrueFirstPerson : 1;                              // 0x0938(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bDisableOrientationOfRotationToMovementInFirstPerson : 1; // 0x0938(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bDisableUsageOfControllerRotationYawInThirdPerson : 1; // 0x0938(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DA5[0x7];                                      // 0x0939(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_939[0x7];                                      // 0x0939(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 Mesh1P;                                            // 0x0940(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bUseFirstPersonMesh : 1;                           // 0x0948(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DA6[0x3];                                      // 0x0949(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_949[0x3];                                      // 0x0949(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ItemAttachPoint1P;                                 // 0x094C(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DA7[0x4];                                      // 0x0954(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_954[0x4];                                      // 0x0954(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPlayerToggleFirstPerson;                         // 0x0958(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DA8[0x8];                                      // 0x0968(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_968[0x8];                                      // 0x0968(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void JumpVaultPressed();
@@ -1784,19 +1784,19 @@ static_assert(offsetof(ADFBasePlayerCharacter, OnPlayerToggleFirstPerson) == 0x0
 class ADFBasePlayerController : public APlayerController
 {
 public:
-	uint8                                         Pad_DA9[0x8];                                      // 0x0570(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_570[0x8];                                      // 0x0570(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPossessPawn;                                     // 0x0578(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnUnpossessPawn;                                   // 0x0588(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DAA[0x8];                                      // 0x0598(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_598[0x8];                                      // 0x0598(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseCharacter*                       DFCharacter;                                       // 0x05A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_DAB[0x18];                                     // 0x05A8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5A8[0x18];                                     // 0x05A8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bSetGameOnlyInputOnBeginPlay : 1;                  // 0x05C0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DAC[0x7];                                      // 0x05C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C1[0x7];                                      // 0x05C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPlayerTeamNumUpdated;                            // 0x05C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPlayerTeamStateUpdated;                          // 0x05D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class ADFTeamState*                           TeamState;                                         // 0x05E8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         MaxChatMsgLen;                                     // 0x05F0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DAD[0x4];                                      // 0x05F4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5F4[0x4];                                      // 0x05F4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Admin(const class FString& Cmd);
@@ -1873,21 +1873,21 @@ static_assert(sizeof(IDFSingleActionWeapAnimInstInterface) == 0x000028, "Wrong s
 class ADFBasePlayerState : public APlayerState
 {
 public:
-	uint8                                         Pad_DB8[0x8];                                      // 0x0320(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_320[0x8];                                      // 0x0320(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnRepPlayerName;                                   // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	FMulticastInlineDelegateProperty_             OnPlayerTeamNumUpdated;                            // 0x0338(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         TeamNum;                                           // 0x0348(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         PrevTeamNum;                                       // 0x0349(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DB9[0x6];                                      // 0x034A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34A[0x6];                                      // 0x034A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFTeamState*                           TeamState;                                         // 0x0350(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class ADFTeamState*                           PrevTeamState;                                     // 0x0358(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bAdmin : 1;                                        // 0x0360(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Net, DisableEditOnTemplate, Transient, EditConst, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DBA[0x3];                                      // 0x0361(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_361[0x3];                                      // 0x0361(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         NumKills;                                          // 0x0364(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         NumAssists;                                        // 0x0368(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         NumDeaths;                                         // 0x036C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         TeamStartTime;                                     // 0x0370(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_DBB[0x4];                                      // 0x0374(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_374[0x4];                                      // 0x0374(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRep_bAdmin(bool bAdminStatusBeforeUpdate);
@@ -1971,7 +1971,7 @@ public:
 	uint8                                         bAlwaysShootable : 1;                              // 0x0270(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bIgnoreInstigator : 1;                             // 0x0270(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bIgnoreInstigatorOnPayloadActivation : 1;          // 0x0270(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DC2[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            InstigatingController;                             // 0x0278(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bDebug : 1;                                        // 0x0280(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	FMulticastSparseDelegateProperty_             OnProcessValidHit;                                 // 0x0281(0x0001)(InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic)
@@ -1981,14 +1981,14 @@ public:
 	uint8                                         bClientSideHitDamageEnabled : 1;                   // 0x0282(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bNotifyOfPredictedProjectileHits : 1;              // 0x0282(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bOnlyNotifyOfPredictedProjectileHits : 1;          // 0x0282(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DC3[0x1];                                      // 0x0283(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_283[0x1];                                      // 0x0283(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCSHitInfo                             PendingHitInfo;                                    // 0x0284(0x0070)(Transient, IsPlainOldData, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DC4[0x4];                                      // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F4[0x4];                                      // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 ImpactedActor;                                     // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bApplyDamageOnImpact : 1;                          // 0x0300(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bApplyDamageOnBounceImpact : 1;                    // 0x0300(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bApplyDamageToInstigator : 1;                      // 0x0300(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DC5[0x3];                                      // 0x0301(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_301[0x3];                                      // 0x0301(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDFDamageParams                        BaseDamageParams;                                  // 0x0304(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	TSubclassOf<class UDamageType>                WeaponDamageTypeClass;                             // 0x0318(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector                                RadialDamageOriginOffset;                          // 0x0320(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -1996,16 +1996,16 @@ public:
 	uint8                                         bWantsToUseClientSidePrediction : 1;               // 0x032D(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bReconcilePredictedProjWithServerProj : 1;         // 0x032D(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bPredictedClientProjectile : 1;                    // 0x032D(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DC6[0x2];                                      // 0x032E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32E[0x2];                                      // 0x032E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class ADFBaseProjectile*                      MyPredictedClientProjectile;                       // 0x0330(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class ADFBaseProjectile*                      ServerAuthoritativeProjectile;                     // 0x0338(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DC7[0x31];                                     // 0x0340(0x0031)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_340[0x31];                                     // 0x0340(0x0031)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastSparseDelegateProperty_             OnTriggerPayload;                                  // 0x0371(0x0001)(InstancedReference, BlueprintAssignable, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         bPayloadTriggered : 1;                             // 0x0372(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bTriggerPayloadWhenStopped : 1;                    // 0x0372(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bTearOffOnPayloadActivation : 1;                   // 0x0372(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bDisableOnPayloadActivation : 1;                   // 0x0372(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DC8[0x5];                                      // 0x0373(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_373[0x5];                                      // 0x0373(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float ApplyDamageToImpactedActor(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FHitResult& HitResult);
@@ -2062,12 +2062,12 @@ static_assert(offsetof(ADFBaseProjectile, OnTriggerPayload) == 0x000371, "Member
 class UDFTableLibrary final : public UBlueprintFunctionLibrary
 {
 public:
-	static int32 GetColumnFromIndex(int32 Param_Index, int32 TableWidth);
-	static int32 GetColumnInvFromIndex(int32 Param_Index, int32 TableHeight);
+	static int32 GetColumnFromIndex(int32 Index_0, int32 TableWidth);
+	static int32 GetColumnInvFromIndex(int32 Index_0, int32 TableHeight);
 	static int32 GetIndexFromColumnRowPair(int32 Column, int32 Row, int32 TableHeight);
 	static int32 GetIndexFromRowColumnPair(int32 Row, int32 Column, int32 TableWidth);
-	static int32 GetRowFromIndex(int32 Param_Index, int32 TableWidth);
-	static int32 GetRowInvFromIndex(int32 Param_Index, int32 TableHeight);
+	static int32 GetRowFromIndex(int32 Index_0, int32 TableWidth);
+	static int32 GetRowInvFromIndex(int32 Index_0, int32 TableHeight);
 
 public:
 	static class UClass* StaticClass()
@@ -2090,40 +2090,40 @@ public:
 	class UPrimitiveComponent*                    ProjectileCollision;                               // 0x0220(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UProjectileMovementComponent*           ProjectileMovement;                                // 0x0228(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSubclassOf<class ADFBaseImpactEffect>        ProjectileImpactFXClass;                           // 0x0230(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DCD[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_238[0x8];                                      // 0x0238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             SpawnTransform;                                    // 0x0240(0x0030)(Edit, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	struct FVector                                LastLoc;                                           // 0x0270(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bListenForImpactEvents : 1;                        // 0x027C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bIgnoreInstigator : 1;                             // 0x027C(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DCE[0x3];                                      // 0x027D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_27D[0x3];                                      // 0x027D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            InstigatingController;                             // 0x0280(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         ActiveLifeSpan;                                    // 0x0288(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DCF[0xC];                                      // 0x028C(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28C[0xC];                                      // 0x028C(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UDamageType>                WeaponDamageTypeClass;                             // 0x0298(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bDebug : 1;                                        // 0x02A0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bApplyDamageFromPayload : 1;                       // 0x02A0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DD0[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A1[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HitDamage;                                         // 0x02A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bApplyRadialDamage : 1;                            // 0x02A8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DD1[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                RadialDamageLocOffset;                             // 0x02AC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	ECollisionChannel                             RadialDamagePreventionChannel;                     // 0x02B8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DD2[0x3];                                      // 0x02B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B9[0x3];                                      // 0x02B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DamageRadius;                                      // 0x02BC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bPayloadTriggered : 1;                             // 0x02C0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, Net, DisableEditOnTemplate, Transient, EditConst, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bTriggerPayloadWhenStopped : 1;                    // 0x02C0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bTriggerPayloadOnDelay : 1;                        // 0x02C0(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DD3[0x3];                                      // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C1[0x3];                                      // 0x02C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PayloadTriggerDelay;                               // 0x02C4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UParticleSystem*                        PayloadTriggerFX;                                  // 0x02C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bAttachTriggerFXToRoot : 1;                        // 0x02D0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DD4[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               TriggerFXPSC;                                      // 0x02D8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class USoundBase*                             PayloadTriggerSnd;                                 // 0x02E0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bAttachTriggerSndToRoot : 1;                       // 0x02E8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_DD5[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E9[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        TriggerSnd;                                        // 0x02F0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DD6[0x48];                                     // 0x02F8(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F8[0x48];                                     // 0x02F8(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRep_bPayloadTriggered();
@@ -2314,12 +2314,12 @@ public:
 	float                                         CrouchLeanInYOffset;                               // 0x0250(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         LeanRollAmount;                                    // 0x0254(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	ELeanDirection                                LeanDirection;                                     // 0x0258(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E12[0x3];                                      // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_259[0x3];                                      // 0x0259(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LeanTarget;                                        // 0x025C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bAtFullLeanTarget : 1;                             // 0x0260(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_E13[0x3];                                      // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_261[0x3];                                      // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LeanAmount;                                        // 0x0264(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E14[0x18];                                     // 0x0268(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_268[0x18];                                     // 0x0268(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ReceiveReset();
@@ -2370,17 +2370,17 @@ public:
 	class ADFBaseCharacter*                       DFCharacterOwner;                                  // 0x0610(0x0008)(ZeroConstructor, Transient, DuplicateTransient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EMovementMode                                 LastMovementMode;                                  // 0x0618(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         LastCustomMovementMode;                            // 0x0619(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E17[0x2];                                      // 0x061A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61A[0x2];                                      // 0x061A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFloatRange                            StandWalkSpeedMultiplierRange;                     // 0x061C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFloatRange                            CrouchedWalkSpeedMultiplierRange;                  // 0x062C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFloatRange                            ProneWalkSpeedMultiplierRange;                     // 0x063C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LeanSpeedMultiplier;                               // 0x064C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bUseLeanSpeedMultiplierWhileAiming : 1;            // 0x0650(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCanCrouchWhileFalling : 1;                        // 0x0650(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         BitPad_42 : 6;                                     // 0x0050(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
-	uint8                                         Pad_E18[0x3];                                      // 0x0651(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         BitPad_650_2 : 6;                                  // 0x0650(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
+	uint8                                         Pad_651[0x3];                                      // 0x0651(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bUseJumpStamina : 1;                               // 0x0654(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E19[0x3];                                      // 0x0655(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_655[0x3];                                      // 0x0655(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         JumpMaxStamina;                                    // 0x0658(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         JumpStaminaCost;                                   // 0x065C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         JumpStaminaRecoveryRate;                           // 0x0660(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2406,42 +2406,42 @@ public:
 	float                                         MinClimbOntoLedgeHeight;                           // 0x06C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxClimbOntoLedgeHeight;                           // 0x06C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bWantsToSprint : 1;                                // 0x06C8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E1A[0x3];                                      // 0x06C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6C9[0x3];                                      // 0x06C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SprintSpeedMultiplier;                             // 0x06CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SprintAccelerationMultiplier;                      // 0x06D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SprintStrafingThreshold;                           // 0x06D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bUseSprintStamina : 1;                             // 0x06D8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E1B[0x3];                                      // 0x06D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6D9[0x3];                                      // 0x06D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SprintMaxStamina;                                  // 0x06DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SprintStaminaDelta;                                // 0x06E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SprintStaminaThreshold;                            // 0x06E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bWantsToAim : 1;                                   // 0x06E8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E1C[0x3];                                      // 0x06E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6E9[0x3];                                      // 0x06E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         AimSpeedMultiplier;                                // 0x06EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bWantsToLeanLeft : 1;                              // 0x06F0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bWantsToLeanRight : 1;                             // 0x06F0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E1D[0x3];                                      // 0x06F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6F1[0x3];                                      // 0x06F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ProneHalfHeight;                                   // 0x06F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bCanWalkOffLedgesWhenProne : 1;                    // 0x06F8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCanAimWhileCrawling : 1;                          // 0x06F8(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bProneMaintainsBaseLocation : 1;                   // 0x06F8(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, DisableEditOnTemplate, EditConst, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E1E[0x3];                                      // 0x06F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6F9[0x3];                                      // 0x06F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxWalkSpeedProne;                                 // 0x06FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bWantsToBeProne : 1;                               // 0x0700(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCanSwimUnderwater : 1;                            // 0x0700(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E1F[0x3];                                      // 0x0701(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_701[0x3];                                      // 0x0701(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         JumpStamina;                                       // 0x0704(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bCanSprint : 1;                                    // 0x0708(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E20[0x3];                                      // 0x0709(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_709[0x3];                                      // 0x0709(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         SprintStamina;                                     // 0x070C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         bCanAim : 1;                                       // 0x0710(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCanLean : 1;                                      // 0x0710(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCanBeProne : 1;                                   // 0x0710(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bCanVault : 1;                                     // 0x0710(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         BitPad_43 : 4;                                     // 0x0010(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
-	uint8                                         Pad_E21[0x2F];                                     // 0x0711(0x002F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         BitPad_710_4 : 4;                                  // 0x0710(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
+	uint8                                         Pad_711[0x2F];                                     // 0x0711(0x002F)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bJustLeftWater : 1;                                // 0x0740(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_E22[0xF];                                      // 0x0741(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_741[0xF];                                      // 0x0741(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float ClampSpeedMultiplier(float MultValue) const;
@@ -2588,7 +2588,7 @@ public:
 	struct FPrimaryAssetType                      FactionType;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FName                                   FactionName;                                       // 0x0038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bVisibleInFactionSelectUI : 1;                     // 0x0040(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_E24[0x7];                                      // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   DisplayName;                                       // 0x0048(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	class FText                                   DisplayNameShort;                                  // 0x0060(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	class FText                                   DisplayNameAcronym;                                // 0x0078(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -2655,10 +2655,10 @@ class UDFGameModeDefinition : public UPrimaryDataAsset
 {
 public:
 	bool                                          bSupportsAllMaps;                                  // 0x0030(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E26[0x7];                                      // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<struct FPrimaryAssetId>                  SpecificMapsToSupport;                             // 0x0038(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, AssetRegistrySearchable, NativeAccessSpecifierPublic)
 	bool                                          bShowInFrontEnd;                                   // 0x0088(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E27[0x7];                                      // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Title;                                             // 0x0090(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, AssetRegistrySearchable, NativeAccessSpecifierPublic)
 	class FText                                   Description;                                       // 0x00A8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, AssetRegistrySearchable, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UTexture2D>              PreviewBannerImg;                                  // 0x00C0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2687,12 +2687,12 @@ static_assert(offsetof(UDFGameModeDefinition, PreviewBannerImg) == 0x0000C0, "Me
 class UDFGameRulesetBase : public UObject
 {
 public:
-	uint8                                         Pad_E28[0x8];                                      // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bTickable : 1;                                     // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_E29[0x7];                                      // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   DisplayName;                                       // 0x0038(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	int32                                         Priority;                                          // 0x0050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E2A[0x4];                                      // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Init();
@@ -2734,9 +2734,9 @@ class ADFGameSession : public AGameSession
 {
 public:
 	class FString                                 ServerName;                                        // 0x0238(0x0010)(ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E2D[0x10];                                     // 0x0248(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_248[0x10];                                     // 0x0248(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MinPlayers;                                        // 0x0258(0x0004)(ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E2E[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25C[0x4];                                      // 0x025C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Password;                                          // 0x0260(0x0010)(ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -2770,12 +2770,12 @@ public:
 	void AddDefaultInventoryItems();
 	void Clear(bool bDestroyItems);
 	bool Remove(const class ADFBaseItem* Item, bool bDestroyItem);
-	bool RemoveItemAt(const int32 Param_Index, class ADFBaseItem** OutRemovedItem, bool bDestroyItem);
+	bool RemoveItemAt(const int32 Index_0, class ADFBaseItem** OutRemovedItem, bool bDestroyItem);
 
 	bool Find(const class ADFBaseItem* ItemToCompare, int32* OutIndex) const;
 	bool FindItemByClass(const TSubclassOf<class ADFBaseItem>& ItemClass, class ADFBaseItem** OutItem) const;
-	bool GetItem(const int32 Param_Index, class ADFBaseItem** OutItem) const;
-	bool IsValidIndex(int32 Param_Index) const;
+	bool GetItem(const int32 Index_0, class ADFBaseItem** OutItem) const;
+	bool IsValidIndex(int32 Index_0) const;
 	int32 Size() const;
 
 public:
@@ -2839,7 +2839,7 @@ class UDFNavigationSystemConfig : public UNavigationSystemModuleConfig
 {
 public:
 	uint8                                         bGenerateNavigationOnlyAroundNavigationInvokers : 1; // 0x0058(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_E38[0x7];                                      // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2859,7 +2859,7 @@ static_assert(sizeof(UDFNavigationSystemConfig) == 0x000060, "Wrong size on UDFN
 class UDFOnlineSessionClient : public UOnlineSessionClient
 {
 public:
-	uint8                                         Pad_E39[0x18];                                     // 0x0190(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_190[0x18];                                     // 0x0190(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2903,7 +2903,7 @@ class UDFServerAdminSubsystem final : public UEngineSubsystem
 {
 public:
 	TArray<class UDFCfgDataManager*>              DataMgrs;                                          // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E3A[0x10];                                     // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_40[0x10];                                      // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2947,12 +2947,12 @@ static_assert(offsetof(UDFTeamDefinition, FactionInfoClass) == 0x000030, "Member
 class ADFTeamState : public AInfo
 {
 public:
-	uint8                                         Pad_E3B[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bInitialized : 1;                                  // 0x0228(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_E3C[0x7];                                      // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UDFFactionInfo>             FactionInfoClass;                                  // 0x0230(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         TeamNum;                                           // 0x0238(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_E3D[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPostInitTeam;                                    // 0x0240(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 public:
@@ -3006,7 +3006,7 @@ static_assert(sizeof(IDFThrowableWeapAnimInstInterface) == 0x000028, "Wrong size
 class UDFTokenStore final : public UDFCfgDataManager
 {
 public:
-	uint8                                         Pad_E41[0x50];                                     // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x50];                                      // 0x0078(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3033,19 +3033,19 @@ public:
 	bool                                          bDenyVACBannedUsersFromVoting;                     // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bDisableVACBanCheckWhileAdminIsOnline;             // 0x0039(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bOnlyAdminsCanInitiateVote;                        // 0x003A(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E42[0x5];                                      // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   IssueDisplayNameText;                              // 0x0040(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	class FText                                   VotePromptFormatText;                              // 0x0058(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	int32                                         NumEligibleVoters;                                 // 0x0070(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E43[0x4];                                      // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDFPlayerVote>                  Votes;                                             // 0x0078(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         VoteStartTime;                                     // 0x0088(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         VoteEndTime;                                       // 0x008C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EDFVoteStatus                                 VoteEndStatus;                                     // 0x0090(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E44[0x7];                                      // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerState*                           VoteOwner;                                         // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FDFVoteIssueContext                    IssueContext;                                      // 0x00A0(0x0018)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E45[0x10];                                     // 0x00B8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B8[0x10];                                      // 0x00B8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetVoteSelections(TArray<struct FDFPlayerVoteSelection>* OutVoteSelections);
@@ -3101,7 +3101,7 @@ class UDFVoteIssuePlayer : public UDFVoteIssue
 {
 public:
 	bool                                          bAllowAdminTargets;                                // 0x00C8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E4A[0x7];                                      // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool CanInitiateVoteWithTarget(class APlayerState* TargetPS) const;
@@ -3126,7 +3126,7 @@ class UDFVoteIssuePlayerKick final : public UDFVoteIssuePlayer
 {
 public:
 	float                                         BanDuration;                                       // 0x00D0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E4C[0x4];                                      // 0x00D4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -3147,7 +3147,7 @@ static_assert(offsetof(UDFVoteIssuePlayerKick, BanDuration) == 0x0000D0, "Member
 class UDFVotingComponent final : public UActorComponent
 {
 public:
-	uint8                                         Pad_E4D[0x48];                                     // 0x00B0(0x0048)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B0[0x48];                                      // 0x00B0(0x0048)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnPlayerVoteInitiatedDynamic;                      // 0x00F8(0x0010)(ZeroConstructor, Transient, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 	FMulticastInlineDelegateProperty_             OnPlayerVoteEndedDynamic;                          // 0x0108(0x0010)(ZeroConstructor, Transient, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
 	FMulticastInlineDelegateProperty_             OnPlayerVoteStateUpdatedDynamic;                   // 0x0118(0x0010)(ZeroConstructor, Transient, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
@@ -3155,7 +3155,7 @@ public:
 	class UDFVoteIssue*                           ActiveVoteIssue;                                   // 0x0170(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class UDFVoteIssue*>                   VoteIssues;                                        // 0x0178(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FDFVoteIssueDefinition>         VoteIssueDefinitions;                              // 0x0188(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E4E[0x18];                                     // 0x0198(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_198[0x18];                                     // 0x0198(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool CastVote(class APlayerState* InvokingPlayer, int32 VoteSelectionID);
@@ -3219,7 +3219,7 @@ class ADFWorldSettings : public AWorldSettings
 {
 public:
 	uint8                                         bVisibleInMapSelectUI : 1;                         // 0x03A0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, AssetRegistrySearchable, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_E56[0x7];                                      // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A1[0x7];                                      // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   MapDisplayName;                                    // 0x03A8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, AssetRegistrySearchable, Protected, NativeAccessSpecifierProtected)
 	class FText                                   MapDescription;                                    // 0x03C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, AssetRegistrySearchable, Protected, NativeAccessSpecifierProtected)
 	TSoftObjectPtr<class UTexture2D>              MapPreviewImg;                                     // 0x03D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, AssetRegistrySearchable, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)

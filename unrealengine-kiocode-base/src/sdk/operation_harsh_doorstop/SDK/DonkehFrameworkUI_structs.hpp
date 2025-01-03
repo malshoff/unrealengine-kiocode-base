@@ -45,7 +45,7 @@ struct FDFConfirmationDialogAction final
 {
 public:
 	EDFUIMessagingResult                          Result;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10D6[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   OptionalDisplayText;                               // 0x0008(0x0018)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FDFConfirmationDialogAction) == 0x000008, "Wrong alignment on FDFConfirmationDialogAction");
@@ -62,7 +62,7 @@ public:
 	EMenuActivationMode                           ActivationMode;                                    // 0x0008(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowMouseCursor;                                  // 0x0009(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUIOnlyInput;                                      // 0x000A(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10D7[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMenuStackEntry) == 0x000008, "Wrong alignment on FMenuStackEntry");
 static_assert(sizeof(FMenuStackEntry) == 0x000010, "Wrong size on FMenuStackEntry");
@@ -78,7 +78,7 @@ struct FMinimapPOITableRow final : public FTableRowBase
 public:
 	TSoftClassPtr<class UClass>                   ActorClass;                                        // 0x0008(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, NoClear, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bMatchChildClasses : 1;                            // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_10D8[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   ToolTipWidgetClass;                                // 0x0038(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftClassPtr<class UClass>                   WidgetClass;                                       // 0x0060(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, NoClear, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            IconBrush;                                         // 0x0088(0x0088)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
@@ -86,7 +86,7 @@ public:
 	uint8                                         bSelectable : 1;                                   // 0x0128(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bDynamic : 1;                                      // 0x0128(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bFixedRotation : 1;                                // 0x0128(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_10D9[0x7];                                     // 0x0129(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FMinimapPOITableRow) == 0x000008, "Wrong alignment on FMinimapPOITableRow");
 static_assert(sizeof(FMinimapPOITableRow) == 0x000130, "Wrong size on FMinimapPOITableRow");

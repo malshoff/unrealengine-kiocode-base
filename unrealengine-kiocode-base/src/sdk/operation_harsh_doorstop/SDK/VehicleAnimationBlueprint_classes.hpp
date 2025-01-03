@@ -33,7 +33,7 @@ public:
 	struct FAnimNode_CopyBone                     AnimGraphNode_CopyBone_18;                         // 0x0BB8(0x00F0)()
 	struct FAnimNode_CopyBone                     AnimGraphNode_CopyBone_17;                         // 0x0CA8(0x00F0)()
 	struct FAnimNode_CopyBone                     AnimGraphNode_CopyBone_16;                         // 0x0D98(0x00F0)()
-	uint8                                         Pad_1EBF[0x8];                                     // 0x0E88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E88[0x8];                                      // 0x0E88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_15;                           // 0x0E90(0x01B0)()
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_14;                           // 0x1040(0x01B0)()
 	struct FAnimNode_LookAt                       AnimGraphNode_LookAt_13;                           // 0x11F0(0x01B0)()
@@ -69,7 +69,7 @@ public:
 
 public:
 	void ExecuteUbergraph_VehicleAnimationBlueprint(int32 EntryPoint);
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

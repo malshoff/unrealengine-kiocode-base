@@ -27,7 +27,7 @@ public:
 	class UImage*                                 PlayerIcon;                                        // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             SquadNumberText;                                   // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          POIWidgetInitialized;                              // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A56[0x7];                                     // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B9[0x7];                                      // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            SelectedTintColor;                                 // 0x03C0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                            DeselectedTintColor;                               // 0x03E8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 

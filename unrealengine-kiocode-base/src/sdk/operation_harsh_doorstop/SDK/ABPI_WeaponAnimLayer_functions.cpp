@@ -21,9 +21,9 @@ namespace SDK
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FPoseLink                        UpperBody                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink                        Param_WeaponUpperBody                                  (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        WeaponUpperBody_0                                      (Parm, OutParm, NoDestructor)
 
-void IABPI_WeaponAnimLayer_C::WeaponUpperBody(const struct FPoseLink& UpperBody, struct FPoseLink* Param_WeaponUpperBody)
+void IABPI_WeaponAnimLayer_C::WeaponUpperBody(const struct FPoseLink& UpperBody, struct FPoseLink* WeaponUpperBody_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -36,17 +36,17 @@ void IABPI_WeaponAnimLayer_C::WeaponUpperBody(const struct FPoseLink& UpperBody,
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_WeaponUpperBody != nullptr)
-		*Param_WeaponUpperBody = std::move(Parms.Param_WeaponUpperBody);
+	if (WeaponUpperBody_0 != nullptr)
+		*WeaponUpperBody_0 = std::move(Parms.WeaponUpperBody_0);
 }
 
 
 // Function ABPI_WeaponAnimLayer.ABPI_WeaponAnimLayer_C.WeaponAdditive
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        Param_WeaponAdditive                                   (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        WeaponAdditive_0                                       (Parm, OutParm, NoDestructor)
 
-void IABPI_WeaponAnimLayer_C::WeaponAdditive(struct FPoseLink* Param_WeaponAdditive)
+void IABPI_WeaponAnimLayer_C::WeaponAdditive(struct FPoseLink* WeaponAdditive_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -57,18 +57,18 @@ void IABPI_WeaponAnimLayer_C::WeaponAdditive(struct FPoseLink* Param_WeaponAddit
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_WeaponAdditive != nullptr)
-		*Param_WeaponAdditive = std::move(Parms.Param_WeaponAdditive);
+	if (WeaponAdditive_0 != nullptr)
+		*WeaponAdditive_0 = std::move(Parms.WeaponAdditive_0);
 }
 
 
 // Function ABPI_WeaponAnimLayer.ABPI_WeaponAnimLayer_C.Move
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink                        Param_Move                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink                        Param_Move_0                                           (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        Move_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink                        Move_1                                                 (Parm, OutParm, NoDestructor)
 
-void IABPI_WeaponAnimLayer_C::Move(const struct FPoseLink& Param_Move, struct FPoseLink* Param_Move_0)
+void IABPI_WeaponAnimLayer_C::Move(const struct FPoseLink& Move_0, struct FPoseLink* Move_1)
 {
 	static class UFunction* Func = nullptr;
 
@@ -77,12 +77,12 @@ void IABPI_WeaponAnimLayer_C::Move(const struct FPoseLink& Param_Move, struct FP
 
 	Params::ABPI_WeaponAnimLayer_C_Move Parms{};
 
-	Parms.Param_Move = std::move(Param_Move);
+	Parms.Move_0 = std::move(Move_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Move_0 != nullptr)
-		*Param_Move_0 = std::move(Parms.Param_Move_0);
+	if (Move_1 != nullptr)
+		*Move_1 = std::move(Parms.Move_1);
 }
 
 
@@ -90,9 +90,9 @@ void IABPI_WeaponAnimLayer_C::Move(const struct FPoseLink& Param_Move, struct FP
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FPoseLink                        LowerJumpLoop                                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink                        Param_WeaponJumpLoop                                   (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        WeaponJumpLoop_0                                       (Parm, OutParm, NoDestructor)
 
-void IABPI_WeaponAnimLayer_C::WeaponJumpLoop(const struct FPoseLink& LowerJumpLoop, struct FPoseLink* Param_WeaponJumpLoop)
+void IABPI_WeaponAnimLayer_C::WeaponJumpLoop(const struct FPoseLink& LowerJumpLoop, struct FPoseLink* WeaponJumpLoop_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -105,8 +105,8 @@ void IABPI_WeaponAnimLayer_C::WeaponJumpLoop(const struct FPoseLink& LowerJumpLo
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_WeaponJumpLoop != nullptr)
-		*Param_WeaponJumpLoop = std::move(Parms.Param_WeaponJumpLoop);
+	if (WeaponJumpLoop_0 != nullptr)
+		*WeaponJumpLoop_0 = std::move(Parms.WeaponJumpLoop_0);
 }
 
 }

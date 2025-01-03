@@ -80,9 +80,9 @@ void UWBP_ModifierSettingBox_C::SetSettingText(const class FText& InSettingText)
 // Function WBP_ModifierSettingBox.WBP_ModifierSettingBox_C.GetSettingText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Param_SettingText                                      (Parm, OutParm)
+// class FText                             SettingText_0                                          (Parm, OutParm)
 
-void UWBP_ModifierSettingBox_C::GetSettingText(class FText* Param_SettingText)
+void UWBP_ModifierSettingBox_C::GetSettingText(class FText* SettingText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -93,8 +93,8 @@ void UWBP_ModifierSettingBox_C::GetSettingText(class FText* Param_SettingText)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_SettingText != nullptr)
-		*Param_SettingText = std::move(Parms.Param_SettingText);
+	if (SettingText_0 != nullptr)
+		*SettingText_0 = std::move(Parms.SettingText_0);
 }
 
 

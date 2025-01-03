@@ -21,8 +21,8 @@ namespace SDK
 class IABPI_VehicleAnimLayer_C final : public IAnimLayerInterface
 {
 public:
-	void VehicleLowerBody(const struct FPoseLink& LowerBody, struct FPoseLink* Param_VehicleLowerBody);
-	void VehicleFullBody(const struct FPoseLink& FullBody, struct FPoseLink* Param_VehicleFullBody);
+	void VehicleLowerBody(const struct FPoseLink& LowerBody, struct FPoseLink* VehicleLowerBody_0);
+	void VehicleFullBody(const struct FPoseLink& FullBody, struct FPoseLink* VehicleFullBody_0);
 
 public:
 	static class UClass* StaticClass()

@@ -27,7 +27,7 @@ public:
 	class UMaterialInstanceDynamic*               MapMI;                                             // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UTexture2D>              MapTexture;                                        // 0x02A8(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         InitialZoom;                                       // 0x02D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1ECE[0x4];                                     // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D4[0x4];                                      // 0x02D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     MapMaterial;                                       // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PanSpeedFactor;                                    // 0x02E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ZoomDivisor;                                       // 0x02E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,7 +35,7 @@ public:
 	struct FLinearColor                           MapTint;                                           // 0x02EC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDonePreloading;                                   // 0x02FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bMenuInitialized;                                  // 0x02FD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1ECF[0x2];                                     // 0x02FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FE[0x2];                                      // 0x02FE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             CurrentMapTexture;                                 // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumContentToLoad;                                  // 0x0308(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumLoadedContent;                                  // 0x030C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -58,7 +58,7 @@ public:
 	void Construct();
 	void OnLoaded_BB8D079144A98AFE7BD3849D43A40947(class UClass* Loaded);
 	void OnLoaded_BACDC4954F814289E55DD7AAEBE3E34E(class UObject* Loaded);
-	void InitMapBg(class UTexture2D* Param_MapTexture);
+	void InitMapBg(class UTexture2D* MapTexture_0);
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void GetLocalCursorDelta(struct FGeometry& Geometry, struct FPointerEvent& MouseEvent, struct FVector2D* LocalDelta);

@@ -24,7 +24,7 @@ struct WBP_NotificationType1_C_ExecuteUbergraph_WBP_NotificationType1 final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FDE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0030(0x0028)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x0058(0x0028)()
@@ -32,20 +32,20 @@ public:
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable; // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FDF[0x1];                                     // 0x00AB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AB[0x1];                                       // 0x00AB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x00AC(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE0[0x3];                                     // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetRemainingTime_Float;                   // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0108(0x0040)(HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE1[0x7];                                     // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0150(0x0010)(ReferenceParm, HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0160(0x0018)()
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -55,34 +55,34 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0191(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE2[0x6];                                     // 0x0192(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_192[0x6];                                      // 0x0192(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_4;                    // 0x0198(0x0028)()
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x01C0(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue_1;       // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_GetDesiredSize_ReturnValue;               // 0x01D4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FE3[0x4];                                     // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1DC[0x4];                                      // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x01E0(0x0018)()
 	float                                         CallFunc_BreakVector2D_X;                          // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable_1;                     // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE4[0x3];                                     // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_209[0x3];                                      // 0x0209(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x020C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bTop;                                 // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE5[0x3];                                     // 0x0215(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_215[0x3];                                      // 0x0215(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_NotificationTray_C*                K2Node_Event_Notification_Tray;                    // 0x0218(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable_1;               // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1; // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable_2;               // 0x0222(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE6[0x1];                                     // 0x0223(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_223[0x1];                                      // 0x0223(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_Threshold;                      // 0x0224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable_3;               // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable_2;                     // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE7[0x2];                                     // 0x022A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A[0x2];                                      // 0x022A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x022C(0x0010)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_1FE8[0x4];                                     // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0240(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0248(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0260(0x0018)()
@@ -92,7 +92,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0310(0x0010)(ReferenceParm, HasGetValueTypeHash)
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0320(0x0018)()
 	bool                                          Temp_bool_IsClosed_Variable_3;                     // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FE9[0x7];                                     // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_5;                    // 0x0340(0x0028)()
 	int32                                         K2Node_CustomEvent_VotesInFavor;                   // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_VotesAgainst;                   // 0x036C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -168,24 +168,24 @@ static_assert(offsetof(WBP_NotificationType1_C_ExecuteUbergraph_WBP_Notification
 struct WBP_NotificationType1_C_Set_Vote_Tally final
 {
 public:
-	int32                                         Param_VotesInFavor;                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Param_VotesAgainst;                                // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         VotesInFavor_0;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         VotesAgainst_0;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_NotificationType1_C_Set_Vote_Tally) == 0x000004, "Wrong alignment on WBP_NotificationType1_C_Set_Vote_Tally");
 static_assert(sizeof(WBP_NotificationType1_C_Set_Vote_Tally) == 0x000008, "Wrong size on WBP_NotificationType1_C_Set_Vote_Tally");
-static_assert(offsetof(WBP_NotificationType1_C_Set_Vote_Tally, Param_VotesInFavor) == 0x000000, "Member 'WBP_NotificationType1_C_Set_Vote_Tally::Param_VotesInFavor' has a wrong offset!");
-static_assert(offsetof(WBP_NotificationType1_C_Set_Vote_Tally, Param_VotesAgainst) == 0x000004, "Member 'WBP_NotificationType1_C_Set_Vote_Tally::Param_VotesAgainst' has a wrong offset!");
+static_assert(offsetof(WBP_NotificationType1_C_Set_Vote_Tally, VotesInFavor_0) == 0x000000, "Member 'WBP_NotificationType1_C_Set_Vote_Tally::VotesInFavor_0' has a wrong offset!");
+static_assert(offsetof(WBP_NotificationType1_C_Set_Vote_Tally, VotesAgainst_0) == 0x000004, "Member 'WBP_NotificationType1_C_Set_Vote_Tally::VotesAgainst_0' has a wrong offset!");
 
 // Function WBP_NotificationType1.WBP_NotificationType1_C.Set Threshold
 // 0x0004 (0x0004 - 0x0000)
 struct WBP_NotificationType1_C_Set_Threshold final
 {
 public:
-	int32                                         Param_Threshold;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Threshold_0;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_NotificationType1_C_Set_Threshold) == 0x000004, "Wrong alignment on WBP_NotificationType1_C_Set_Threshold");
 static_assert(sizeof(WBP_NotificationType1_C_Set_Threshold) == 0x000004, "Wrong size on WBP_NotificationType1_C_Set_Threshold");
-static_assert(offsetof(WBP_NotificationType1_C_Set_Threshold, Param_Threshold) == 0x000000, "Member 'WBP_NotificationType1_C_Set_Threshold::Param_Threshold' has a wrong offset!");
+static_assert(offsetof(WBP_NotificationType1_C_Set_Threshold, Threshold_0) == 0x000000, "Member 'WBP_NotificationType1_C_Set_Threshold::Threshold_0' has a wrong offset!");
 
 // Function WBP_NotificationType1.WBP_NotificationType1_C.Set Tray
 // 0x0008 (0x0008 - 0x0000)
@@ -269,13 +269,13 @@ struct WBP_NotificationType1_C_Get_Is_Sticky_ final
 {
 public:
 	bool                                          bIsSticky;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FEA[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Param_StickyPriority;                              // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         StickyPriority_0;                                  // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_NotificationType1_C_Get_Is_Sticky_) == 0x000004, "Wrong alignment on WBP_NotificationType1_C_Get_Is_Sticky_");
 static_assert(sizeof(WBP_NotificationType1_C_Get_Is_Sticky_) == 0x000008, "Wrong size on WBP_NotificationType1_C_Get_Is_Sticky_");
 static_assert(offsetof(WBP_NotificationType1_C_Get_Is_Sticky_, bIsSticky) == 0x000000, "Member 'WBP_NotificationType1_C_Get_Is_Sticky_::bIsSticky' has a wrong offset!");
-static_assert(offsetof(WBP_NotificationType1_C_Get_Is_Sticky_, Param_StickyPriority) == 0x000004, "Member 'WBP_NotificationType1_C_Get_Is_Sticky_::Param_StickyPriority' has a wrong offset!");
+static_assert(offsetof(WBP_NotificationType1_C_Get_Is_Sticky_, StickyPriority_0) == 0x000004, "Member 'WBP_NotificationType1_C_Get_Is_Sticky_::StickyPriority_0' has a wrong offset!");
 
 }
 

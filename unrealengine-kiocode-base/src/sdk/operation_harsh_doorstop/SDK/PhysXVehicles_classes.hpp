@@ -48,19 +48,19 @@ static_assert(offsetof(AWheeledVehicle, VehicleMovement) == 0x000288, "Member 'A
 class UWheeledVehicleMovementComponent : public UPawnMovementComponent
 {
 public:
-	uint8                                         Pad_12BA[0x8];                                     // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_138[0x8];                                      // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bDeprecatedSpringOffsetMode : 1;                   // 0x0140(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bReverseAsBrake : 1;                               // 0x0140(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bUseRVOAvoidance : 1;                              // 0x0140(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bRawHandbrakeInput : 1;                            // 0x0140(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bRawGearUpInput : 1;                               // 0x0140(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bRawGearDownInput : 1;                             // 0x0140(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         BitPad_4B : 2;                                     // 0x0040(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
-	uint8                                         Pad_12BB[0x3];                                     // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         BitPad_140_6 : 2;                                  // 0x0140(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
+	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bWasAvoidanceUpdated : 1;                          // 0x0144(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_12BC[0x3];                                     // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_145[0x3];                                      // 0x0145(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Mass;                                              // 0x0148(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12BD[0x4];                                     // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14C[0x4];                                      // 0x014C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FWheelSetup>                    WheelSetups;                                       // 0x0150(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DragCoefficient;                                   // 0x0160(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ChassisWidth;                                      // 0x0164(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -77,9 +77,9 @@ public:
 	float                                         ThresholdLongitudinalSpeed;                        // 0x0198(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LowForwardSpeedSubStepCount;                       // 0x019C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         HighForwardSpeedSubStepCount;                      // 0x01A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12BE[0x4];                                     // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4[0x4];                                      // 0x01A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UVehicleWheel*>                  Wheels;                                            // 0x01A8(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, DuplicateTransient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12BF[0x18];                                    // 0x01B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8[0x18];                                     // 0x01B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RVOAvoidanceRadius;                                // 0x01D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         RVOAvoidanceHeight;                                // 0x01D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AvoidanceConsiderationRadius;                      // 0x01D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -92,7 +92,7 @@ public:
 	float                                         AvoidanceWeight;                                   // 0x01F4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                PendingLaunchVelocity;                             // 0x01F8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FReplicatedVehicleState                ReplicatedState;                                   // 0x0204(0x0014)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12C0[0x4];                                     // 0x0218(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_218[0x4];                                      // 0x0218(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RawSteeringInput;                                  // 0x021C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         RawThrottleInput;                                  // 0x0220(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         RawBrakeInput;                                     // 0x0224(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -107,7 +107,7 @@ public:
 	struct FVehicleInputRate                      BrakeInputRate;                                    // 0x024C(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
 	struct FVehicleInputRate                      HandbrakeInputRate;                                // 0x0254(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
 	struct FVehicleInputRate                      SteeringInputRate;                                 // 0x025C(0x0008)(Edit, NoDestructor, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12C1[0x24];                                    // 0x0264(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_264[0x24];                                     // 0x0264(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            OverrideController;                                // 0x0288(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -230,7 +230,7 @@ public:
 	class UStaticMesh*                            CollisionMesh;                                     // 0x0028(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDontCreateShape;                                  // 0x0030(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAutoAdjustCollisionSize;                          // 0x0031(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12C3[0x2];                                     // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32[0x2];                                       // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                Offset;                                            // 0x0034(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ShapeRadius;                                       // 0x0040(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ShapeWidth;                                        // 0x0044(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -238,7 +238,7 @@ public:
 	float                                         DampingRate;                                       // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SteerAngle;                                        // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAffectedByHandbrake;                              // 0x0054(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12C4[0x3];                                     // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTireType*                              TireType;                                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTireConfig*                            TireConfig;                                        // 0x0060(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LatStiffMaxLoad;                                   // 0x0068(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -250,23 +250,23 @@ public:
 	float                                         SuspensionNaturalFrequency;                        // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SuspensionDampingRatio;                            // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EWheelSweepType                               SweepType;                                         // 0x0088(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12C5[0x3];                                     // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxBrakeTorque;                                    // 0x008C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxHandBrakeTorque;                                // 0x0090(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12C6[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWheeledVehicleMovementComponent*       VehicleSim;                                        // 0x0098(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         WheelIndex;                                        // 0x00A0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DebugLongSlip;                                     // 0x00A4(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DebugLatSlip;                                      // 0x00A8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DebugNormalizedTireLoad;                           // 0x00AC(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12C7[0x4];                                     // 0x00B0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B0[0x4];                                       // 0x00B0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DebugWheelTorque;                                  // 0x00B4(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DebugLongForce;                                    // 0x00B8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DebugLatForce;                                     // 0x00BC(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Location;                                          // 0x00C0(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OldLocation;                                       // 0x00CC(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Velocity;                                          // 0x00D8(0x000C)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12C8[0xC];                                     // 0x00E4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E4[0xC];                                       // 0x00E4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetRotationAngle() const;
@@ -349,9 +349,9 @@ class UTireConfig final : public UDataAsset
 {
 public:
 	float                                         FrictionScale;                                     // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12C9[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FTireConfigMaterialFriction>    TireFrictionScales;                                // 0x0038(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12CA[0x8];                                     // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -373,9 +373,9 @@ static_assert(offsetof(UTireConfig, TireFrictionScales) == 0x000038, "Member 'UT
 class UVehicleAnimInstance : public UAnimInstance
 {
 public:
-	uint8                                         Pad_12CB[0x708];                                   // 0x0268(0x0708)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_268[0x708];                                    // 0x0268(0x0708)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWheeledVehicleMovementComponent*       WheeledVehicleMovementComponent;                   // 0x0970(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_12CC[0x8];                                     // 0x0978(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_978[0x8];                                      // 0x0978(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	class AWheeledVehicle* GetVehicle();

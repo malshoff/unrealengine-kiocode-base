@@ -770,9 +770,9 @@ void ABP_HDPlayerCharacterBase_C::OnPCFireReleased()
 // Function BP_HDPlayerCharacterBase.BP_HDPlayerCharacterBase_C.FirstPersonToggled
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bFirstPerson                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bFirstPerson_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_HDPlayerCharacterBase_C::FirstPersonToggled(bool Param_bFirstPerson)
+void ABP_HDPlayerCharacterBase_C::FirstPersonToggled(bool bFirstPerson_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -781,7 +781,7 @@ void ABP_HDPlayerCharacterBase_C::FirstPersonToggled(bool Param_bFirstPerson)
 
 	Params::BP_HDPlayerCharacterBase_C_FirstPersonToggled Parms{};
 
-	Parms.Param_bFirstPerson = Param_bFirstPerson;
+	Parms.bFirstPerson_0 = bFirstPerson_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -1816,10 +1816,10 @@ void ABP_HDPlayerCharacterBase_C::UpdateCharMeshes(class USkeletalMesh* MeshFPP,
 // Function BP_HDPlayerCharacterBase.BP_HDPlayerCharacterBase_C.ApplyCharacterVariation
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDFCharacterVariationDataHandle  Param_VariationHandle                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FDFCharacterVariationDataHandle  VariationHandle_0                                      (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                                    bApplyToFPP                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_HDPlayerCharacterBase_C::ApplyCharacterVariation(const struct FDFCharacterVariationDataHandle& Param_VariationHandle, bool bApplyToFPP)
+void ABP_HDPlayerCharacterBase_C::ApplyCharacterVariation(const struct FDFCharacterVariationDataHandle& VariationHandle_0, bool bApplyToFPP)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1828,7 +1828,7 @@ void ABP_HDPlayerCharacterBase_C::ApplyCharacterVariation(const struct FDFCharac
 
 	Params::BP_HDPlayerCharacterBase_C_ApplyCharacterVariation Parms{};
 
-	Parms.Param_VariationHandle = std::move(Param_VariationHandle);
+	Parms.VariationHandle_0 = std::move(VariationHandle_0);
 	Parms.bApplyToFPP = bApplyToFPP;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1866,9 +1866,9 @@ void ABP_HDPlayerCharacterBase_C::UpdateEquipmentItems()
 // Function BP_HDPlayerCharacterBase.BP_HDPlayerCharacterBase_C.GetMostValidPlayerState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class APlayerState*                     Param_PlayerState                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APlayerState*                     PlayerState_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDPlayerCharacterBase_C::GetMostValidPlayerState(class APlayerState** Param_PlayerState)
+void ABP_HDPlayerCharacterBase_C::GetMostValidPlayerState(class APlayerState** PlayerState_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1879,17 +1879,17 @@ void ABP_HDPlayerCharacterBase_C::GetMostValidPlayerState(class APlayerState** P
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_PlayerState != nullptr)
-		*Param_PlayerState = Parms.Param_PlayerState;
+	if (PlayerState_0 != nullptr)
+		*PlayerState_0 = Parms.PlayerState_0;
 }
 
 
 // Function BP_HDPlayerCharacterBase.BP_HDPlayerCharacterBase_C.GetMostValidTeamState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class ADFTeamState*                     Param_TeamState                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ADFTeamState*                     TeamState_0                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDPlayerCharacterBase_C::GetMostValidTeamState(class ADFTeamState** Param_TeamState)
+void ABP_HDPlayerCharacterBase_C::GetMostValidTeamState(class ADFTeamState** TeamState_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1900,8 +1900,8 @@ void ABP_HDPlayerCharacterBase_C::GetMostValidTeamState(class ADFTeamState** Par
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_TeamState != nullptr)
-		*Param_TeamState = Parms.Param_TeamState;
+	if (TeamState_0 != nullptr)
+		*TeamState_0 = Parms.TeamState_0;
 }
 
 
@@ -2387,9 +2387,9 @@ void ABP_HDPlayerCharacterBase_C::AlignSights(float MinSightDistance)
 // float                                   MinHeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   MinSpace                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bCouldMount                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                          Param_MountPosition                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          MountPosition_0                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDPlayerCharacterBase_C::GetProneMountPosition(const struct FVector& BoxSize, float Distance, float MaxHeight, float MinHeight, float MinSpace, bool* bCouldMount, struct FVector* Param_MountPosition)
+void ABP_HDPlayerCharacterBase_C::GetProneMountPosition(const struct FVector& BoxSize, float Distance, float MaxHeight, float MinHeight, float MinSpace, bool* bCouldMount, struct FVector* MountPosition_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2409,8 +2409,8 @@ void ABP_HDPlayerCharacterBase_C::GetProneMountPosition(const struct FVector& Bo
 	if (bCouldMount != nullptr)
 		*bCouldMount = Parms.bCouldMount;
 
-	if (Param_MountPosition != nullptr)
-		*Param_MountPosition = std::move(Parms.Param_MountPosition);
+	if (MountPosition_0 != nullptr)
+		*MountPosition_0 = std::move(Parms.MountPosition_0);
 }
 
 
@@ -2755,9 +2755,9 @@ void ABP_HDPlayerCharacterBase_C::SetSpringArmOffset(float CurveZ)
 // Function BP_HDPlayerCharacterBase.BP_HDPlayerCharacterBase_C.GetEyeHeightAdjustment
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// float                                   Param_EyeHeightAdjust                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   EyeHeightAdjust_0                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDPlayerCharacterBase_C::GetEyeHeightAdjustment(float* Param_EyeHeightAdjust)
+void ABP_HDPlayerCharacterBase_C::GetEyeHeightAdjustment(float* EyeHeightAdjust_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2768,8 +2768,8 @@ void ABP_HDPlayerCharacterBase_C::GetEyeHeightAdjustment(float* Param_EyeHeightA
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_EyeHeightAdjust != nullptr)
-		*Param_EyeHeightAdjust = Parms.Param_EyeHeightAdjust;
+	if (EyeHeightAdjust_0 != nullptr)
+		*EyeHeightAdjust_0 = Parms.EyeHeightAdjust_0;
 }
 
 
@@ -2804,10 +2804,10 @@ void ABP_HDPlayerCharacterBase_C::WeaponCollision()
 // Function BP_HDPlayerCharacterBase.BP_HDPlayerCharacterBase_C.GetMinimapWidget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class AController*                      Param_Controller                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AController*                      Controller_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UDFMinimap*                       MinimapWidget                                          (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDPlayerCharacterBase_C::GetMinimapWidget(class AController* Param_Controller, class UDFMinimap** MinimapWidget) const
+void ABP_HDPlayerCharacterBase_C::GetMinimapWidget(class AController* Controller_0, class UDFMinimap** MinimapWidget) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -2816,7 +2816,7 @@ void ABP_HDPlayerCharacterBase_C::GetMinimapWidget(class AController* Param_Cont
 
 	Params::BP_HDPlayerCharacterBase_C_GetMinimapWidget Parms{};
 
-	Parms.Param_Controller = Param_Controller;
+	Parms.Controller_0 = Controller_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

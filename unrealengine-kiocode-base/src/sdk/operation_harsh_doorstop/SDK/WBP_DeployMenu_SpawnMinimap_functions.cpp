@@ -284,9 +284,9 @@ void UWBP_DeployMenu_SpawnMinimap_C::OnLoaded_BACDC4954F814289E55DD7AAEBE3E34E(c
 // Function WBP_DeployMenu_SpawnMinimap.WBP_DeployMenu_SpawnMinimap_C.InitMapBg
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       Param_MapTexture                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D*                       MapTexture_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DeployMenu_SpawnMinimap_C::InitMapBg(class UTexture2D* Param_MapTexture)
+void UWBP_DeployMenu_SpawnMinimap_C::InitMapBg(class UTexture2D* MapTexture_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -295,7 +295,7 @@ void UWBP_DeployMenu_SpawnMinimap_C::InitMapBg(class UTexture2D* Param_MapTextur
 
 	Params::WBP_DeployMenu_SpawnMinimap_C_InitMapBg Parms{};
 
-	Parms.Param_MapTexture = Param_MapTexture;
+	Parms.MapTexture_0 = MapTexture_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

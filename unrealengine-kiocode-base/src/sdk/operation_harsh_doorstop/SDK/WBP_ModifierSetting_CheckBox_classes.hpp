@@ -29,7 +29,7 @@ public:
 	class USizeBox*                               ModifierSBox;                                      // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_ModifierSettingBox_C*              ModifierSetting;                                   // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bDefaultIsChecked;                                 // 0x0250(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1D8F[0x7];                                     // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   SettingText;                                       // 0x0258(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	FMulticastInlineDelegateProperty_             OnCheckStateChanged;                               // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FFModifierTextStyle                    SettingTextStyle;                                  // 0x0280(0x0078)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
@@ -42,7 +42,7 @@ public:
 	void BndEvt__ModifierCheckBox_K2Node_ComponentBoundEvent_2_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
 	void PreConstruct(bool IsDesignTime);
 	void SetSettingText(const class FText& InSettingText);
-	void GetSettingText(class FText* Param_SettingText);
+	void GetSettingText(class FText* SettingText_0);
 
 public:
 	static class UClass* StaticClass()

@@ -41,9 +41,9 @@ static_assert(sizeof(UHDCoreUGCProjectPolicies) == 0x000028, "Wrong size on UHDC
 class UHDCoreUGCPluginStateMachine final : public UObject
 {
 public:
-	uint8                                         Pad_1255[0x20];                                    // 0x0028(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x20];                                      // 0x0028(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHDCoreUGCPluginStateMachineProperties StateProperties;                                   // 0x0048(0x00F8)(Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1256[0xD8];                                    // 0x0140(0x00D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_140[0xD8];                                     // 0x0140(0x00D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -64,7 +64,7 @@ static_assert(offsetof(UHDCoreUGCPluginStateMachine, StateProperties) == 0x00004
 class UHDCoreDefaultUGCProjectPolicies : public UHDCoreUGCProjectPolicies
 {
 public:
-	uint8                                         Pad_1257[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -101,11 +101,11 @@ static_assert(sizeof(UHDCoreUGCData) == 0x000030, "Wrong size on UHDCoreUGCData"
 class UHDCoreUGCSubsystem final : public UEngineSubsystem
 {
 public:
-	uint8                                         Pad_1258[0x30];                                    // 0x0030(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x30];                                      // 0x0030(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, class UHDCoreUGCPluginStateMachine*> UGCPluginStateMachines;                            // 0x0060(0x0050)(Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1259[0xA0];                                    // 0x00B0(0x00A0)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B0[0xA0];                                      // 0x00B0(0x00A0)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHDCoreUGCProjectPolicies*              GameSpecificPolicies;                              // 0x0150(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_125A[0x8];                                     // 0x0158(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_158[0x8];                                      // 0x0158(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -130,7 +130,7 @@ public:
 	struct FSoftClassPath                         UGCManagerClassName;                               // 0x0038(0x0018)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         DisabledPlugins;                                   // 0x0050(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         AdditionalPluginMetadataKeys;                      // 0x0060(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_125B[0x10];                                    // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_70[0x10];                                      // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -22,10 +22,10 @@ namespace SDK
 class AFantasticPerspectiveActor final : public AActor
 {
 public:
-	uint8                                         Pad_1374[0x60];                                    // 0x0220(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220[0x60];                                     // 0x0220(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFantasticPerspectiveSettings          Settings;                                          // 0x0280(0x00E4)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          Cache;                                             // 0x0364(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1375[0x3];                                     // 0x0365(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_365[0x3];                                      // 0x0365(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool Apply(class APlayerController* PlayerController, const EFantasticPerspectiveStereoscopicPass StereoPass, const struct FVector& ViewOrigin, const struct FMatrix& ViewRotationMatrix, const struct FMatrix& ProjectionMatrix, struct FVector* OutViewOrigin, struct FMatrix* OutViewRotationMatrix, struct FMatrix* OutProjectionMatrix);
@@ -50,10 +50,10 @@ static_assert(offsetof(AFantasticPerspectiveActor, Cache) == 0x000364, "Member '
 class UFantasticPerspectiveComponent final : public UActorComponent
 {
 public:
-	uint8                                         Pad_137A[0x60];                                    // 0x00B0(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B0[0x60];                                      // 0x00B0(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFantasticPerspectiveSettings          Settings;                                          // 0x0110(0x00E4)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          Cache;                                             // 0x01F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_137B[0x3];                                     // 0x01F5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F5[0x3];                                      // 0x01F5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool Apply(class APlayerController* PlayerController, const EFantasticPerspectiveStereoscopicPass StereoPass, const struct FVector& ViewOrigin, const struct FMatrix& ViewRotationMatrix, const struct FMatrix& ProjectionMatrix, struct FVector* OutViewOrigin, struct FMatrix* OutViewRotationMatrix, struct FMatrix* OutProjectionMatrix);

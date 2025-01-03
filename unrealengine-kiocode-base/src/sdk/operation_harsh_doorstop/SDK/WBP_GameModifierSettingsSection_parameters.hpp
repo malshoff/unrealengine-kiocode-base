@@ -22,7 +22,7 @@ struct WBP_GameModifierSettingsSection_C_ExecuteUbergraph_WBP_GameModifierSettin
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D6E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
 	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,7 +33,7 @@ public:
 	bool                                          K2Node_ComponentBoundEvent_bIsChecked;             // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_1;                              // 0x0027(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D6F[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default_1;                           // 0x0030(0x0018)()
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0048(0x0018)()
 };
@@ -93,8 +93,8 @@ static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetTitleText, CallFunc_
 struct WBP_GameModifierSettingsSection_C_SetExpansionState final
 {
 public:
-	bool                                          Param_bExpanded;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D70[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bExpanded_0;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Temp_float_Variable;                               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable_1;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -102,12 +102,12 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_1;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D71[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default_1;                           // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_GameModifierSettingsSection_C_SetExpansionState) == 0x000004, "Wrong alignment on WBP_GameModifierSettingsSection_C_SetExpansionState");
 static_assert(sizeof(WBP_GameModifierSettingsSection_C_SetExpansionState) == 0x000018, "Wrong size on WBP_GameModifierSettingsSection_C_SetExpansionState");
-static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetExpansionState, Param_bExpanded) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_SetExpansionState::Param_bExpanded' has a wrong offset!");
+static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetExpansionState, bExpanded_0) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_SetExpansionState::bExpanded_0' has a wrong offset!");
 static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetExpansionState, Temp_float_Variable) == 0x000004, "Member 'WBP_GameModifierSettingsSection_C_SetExpansionState::Temp_float_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetExpansionState, Temp_float_Variable_1) == 0x000008, "Member 'WBP_GameModifierSettingsSection_C_SetExpansionState::Temp_float_Variable_1' has a wrong offset!");
 static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetExpansionState, Temp_bool_Variable) == 0x00000C, "Member 'WBP_GameModifierSettingsSection_C_SetExpansionState::Temp_bool_Variable' has a wrong offset!");
@@ -122,44 +122,44 @@ static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetExpansionState, K2No
 struct WBP_GameModifierSettingsSection_C_SetIsActive final
 {
 public:
-	bool                                          Param_bActive;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bActive_0;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_GameModifierSettingsSection_C_SetIsActive) == 0x000001, "Wrong alignment on WBP_GameModifierSettingsSection_C_SetIsActive");
 static_assert(sizeof(WBP_GameModifierSettingsSection_C_SetIsActive) == 0x000001, "Wrong size on WBP_GameModifierSettingsSection_C_SetIsActive");
-static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetIsActive, Param_bActive) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_SetIsActive::Param_bActive' has a wrong offset!");
+static_assert(offsetof(WBP_GameModifierSettingsSection_C_SetIsActive, bActive_0) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_SetIsActive::bActive_0' has a wrong offset!");
 
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.GetTitleText
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_GameModifierSettingsSection_C_GetTitleText final
 {
 public:
-	class FText                                   Param_TitleText;                                   // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   TitleText_0;                                       // 0x0000(0x0018)(Parm, OutParm)
 };
 static_assert(alignof(WBP_GameModifierSettingsSection_C_GetTitleText) == 0x000008, "Wrong alignment on WBP_GameModifierSettingsSection_C_GetTitleText");
 static_assert(sizeof(WBP_GameModifierSettingsSection_C_GetTitleText) == 0x000018, "Wrong size on WBP_GameModifierSettingsSection_C_GetTitleText");
-static_assert(offsetof(WBP_GameModifierSettingsSection_C_GetTitleText, Param_TitleText) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_GetTitleText::Param_TitleText' has a wrong offset!");
+static_assert(offsetof(WBP_GameModifierSettingsSection_C_GetTitleText, TitleText_0) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_GetTitleText::TitleText_0' has a wrong offset!");
 
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.IsExpanded
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_GameModifierSettingsSection_C_IsExpanded final
 {
 public:
-	bool                                          Param_bExpanded;                                   // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bExpanded_0;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_GameModifierSettingsSection_C_IsExpanded) == 0x000001, "Wrong alignment on WBP_GameModifierSettingsSection_C_IsExpanded");
 static_assert(sizeof(WBP_GameModifierSettingsSection_C_IsExpanded) == 0x000001, "Wrong size on WBP_GameModifierSettingsSection_C_IsExpanded");
-static_assert(offsetof(WBP_GameModifierSettingsSection_C_IsExpanded, Param_bExpanded) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_IsExpanded::Param_bExpanded' has a wrong offset!");
+static_assert(offsetof(WBP_GameModifierSettingsSection_C_IsExpanded, bExpanded_0) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_IsExpanded::bExpanded_0' has a wrong offset!");
 
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.IsActive
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_GameModifierSettingsSection_C_IsActive final
 {
 public:
-	bool                                          Param_bActive;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bActive_0;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_GameModifierSettingsSection_C_IsActive) == 0x000001, "Wrong alignment on WBP_GameModifierSettingsSection_C_IsActive");
 static_assert(sizeof(WBP_GameModifierSettingsSection_C_IsActive) == 0x000001, "Wrong size on WBP_GameModifierSettingsSection_C_IsActive");
-static_assert(offsetof(WBP_GameModifierSettingsSection_C_IsActive, Param_bActive) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_IsActive::Param_bActive' has a wrong offset!");
+static_assert(offsetof(WBP_GameModifierSettingsSection_C_IsActive, bActive_0) == 0x000000, "Member 'WBP_GameModifierSettingsSection_C_IsActive::bActive_0' has a wrong offset!");
 
 // Function WBP_GameModifierSettingsSection.WBP_GameModifierSettingsSection_C.InternalRecursiveSetContentIsEnabled
 // 0x0030 (0x0030 - 0x0000)
@@ -167,10 +167,10 @@ struct WBP_GameModifierSettingsSection_C_InternalRecursiveSetContentIsEnabled fi
 {
 public:
 	bool                                          bInIsEnabled;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D72[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CurWidget;                                         // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D73[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelWidget*                           CallFunc_GetParent_ReturnValue;                    // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetContent_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelWidget*                           CallFunc_GetParent_ReturnValue_1;                  // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

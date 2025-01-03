@@ -48,7 +48,7 @@ public:
 	class UArcVehicleSeatConfig*                  ToSeat;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UArcVehicleSeatConfig*                  FromSeat;                                          // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EArcVehicleSeatChangeType                     SeatChangeEvent;                                   // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ArcVehiclePawn_NotifyPlayerSeatChangeEvent) == 0x000008, "Wrong alignment on ArcVehiclePawn_NotifyPlayerSeatChangeEvent");
 static_assert(sizeof(ArcVehiclePawn_NotifyPlayerSeatChangeEvent) == 0x000020, "Wrong size on ArcVehiclePawn_NotifyPlayerSeatChangeEvent");
@@ -155,7 +155,7 @@ public:
 	class APlayerState*                           InPlayerState;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         RequestedSeatIndex;                                // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreRestrictions;                               // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1270[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ArcBaseVehicle_RequestEnterSeat) == 0x000008, "Wrong alignment on ArcBaseVehicle_RequestEnterSeat");
 static_assert(sizeof(ArcBaseVehicle_RequestEnterSeat) == 0x000010, "Wrong size on ArcBaseVehicle_RequestEnterSeat");
@@ -205,7 +205,7 @@ struct ArcBaseVehicle_IsValidSeatIndex final
 public:
 	int32                                         InSeatIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1271[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ArcBaseVehicle_IsValidSeatIndex) == 0x000004, "Wrong alignment on ArcBaseVehicle_IsValidSeatIndex");
 static_assert(sizeof(ArcBaseVehicle_IsValidSeatIndex) == 0x000008, "Wrong size on ArcBaseVehicle_IsValidSeatIndex");
@@ -245,7 +245,7 @@ struct ArcVehicleBPFunctionLibrary_IsSeatRefValid final
 public:
 	struct FArcVehicleSeatReference               SeatRef;                                           // 0x0000(0x0010)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1272[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ArcVehicleBPFunctionLibrary_IsSeatRefValid) == 0x000008, "Wrong alignment on ArcVehicleBPFunctionLibrary_IsSeatRefValid");
 static_assert(sizeof(ArcVehicleBPFunctionLibrary_IsSeatRefValid) == 0x000018, "Wrong size on ArcVehicleBPFunctionLibrary_IsSeatRefValid");

@@ -28,7 +28,7 @@ public:
 
 public:
 	void ExecuteUbergraph_WBP_Confirmation(int32 EntryPoint);
-	void UpdateDialogText(const class FText& Param_TitleText, const class FText& DescriptionText);
+	void UpdateDialogText(const class FText& TitleText_0, const class FText& DescriptionText);
 
 public:
 	static class UClass* StaticClass()

@@ -39,7 +39,7 @@ public:
 	struct FButtonStyle                           BtnStyle;                                          // 0x0338(0x0278)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateFontInfo                         TextFont;                                          // 0x05B0(0x0050)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bUppercaseText;                                    // 0x0600(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1BB9[0x7];                                     // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_601[0x7];                                      // 0x0601(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            TextColorCustom;                                   // 0x0608(0x0028)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          bUseCustomTextColor;                               // 0x0630(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 

@@ -28,7 +28,7 @@ public:
 	class UImage*                                 PlayerClassIcon;                                   // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             PlayerName;                                        // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bTintClassSymbolOnly;                              // 0x0258(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1982[0x7];                                     // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            LocalChannelColor;                                 // 0x0260(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FSlateColor                            SquadChannelColor;                                 // 0x0288(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FSlateColor                            CommandChannelColor;                               // 0x02B0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly)

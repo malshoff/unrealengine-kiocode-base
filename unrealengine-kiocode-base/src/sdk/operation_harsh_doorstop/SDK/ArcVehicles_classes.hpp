@@ -49,9 +49,9 @@ public:
 	struct FArcVehicleSeatReference               CurrentSeatConfig;                                 // 0x00B0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, Net, DisableEditOnInstance, EditConst, RepNotify, NoDestructor, NativeAccessSpecifierPublic)
 	struct FArcVehicleSeatReference               PreviousSeatConfig;                                // 0x00C0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 	class APlayerState*                           StoredPlayerState;                                 // 0x00D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126E[0x58];                                    // 0x00D8(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D8[0x58];                                      // 0x00D8(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         ServerDebugStrings;                                // 0x0130(0x0010)(Net, ZeroConstructor, RepNotify, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_126F[0x8];                                     // 0x0140(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_140[0x8];                                      // 0x0140(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class UPrimitiveComponent*, ECollisionResponse> PreviousVehicleCollisionResponses;                 // 0x0148(0x0050)(ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -173,7 +173,7 @@ static_assert(offsetof(UArcVehicleDeveloperSettings, PlayerStateComponentClass) 
 class UArcVehicleEngineSubsystem final : public UEngineSubsystem
 {
 public:
-	uint8                                         Pad_1273[0x10];                                    // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -256,7 +256,7 @@ public:
 	class APlayerState*                           PlayerInSeat;                                      // 0x00C0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UArcVehiclePlayerSeatComponent*         PlayerSeatComponent;                               // 0x00C8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPlayerVisible;                                    // 0x00D0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1274[0x7];                                     // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AttachPlayerToSeat(class APlayerState* Player);
@@ -311,7 +311,7 @@ public:
 	TSubclassOf<class AArcVehicleSeat>            SeatPawnClass;                                     // 0x00D8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FArcOwnerAttachmentReference           PlayerCharacterAttachToComponent;                  // 0x00E0(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bResetControlRotationOnEnter;                      // 0x00F0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1275[0x7];                                     // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AArcVehiclePawn*                        SeatPawn;                                          // 0x00F8(0x0008)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -343,13 +343,13 @@ public:
 	bool                                          bIgnorePitch;                                      // 0x0139(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreYaw;                                        // 0x013A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreRoll;                                       // 0x013B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1276[0x4];                                     // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        UpdatedPitchComponent;                             // 0x0140(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                               RotationRate;                                      // 0x0148(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1277[0x2C];                                    // 0x0154(0x002C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_154[0x2C];                                     // 0x0154(0x002C)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        CurrentBase;                                       // 0x0180(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FArcVehicleTurretMovementPostPhysicsTickFunction PostPhysicsTickFunction;                           // 0x0188(0x0030)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1278[0x8];                                     // 0x01B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B8[0x8];                                      // 0x01B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Server_ServerMove(const struct FRotator& FullRotation);

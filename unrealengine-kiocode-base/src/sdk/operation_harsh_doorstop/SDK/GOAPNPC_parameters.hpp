@@ -35,7 +35,7 @@ public:
 	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 FailureReason;                                     // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_125F[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GOAPAction_DoAction) == 0x000008, "Wrong alignment on GOAPAction_DoAction");
 static_assert(sizeof(GOAPAction_DoAction) == 0x000020, "Wrong size on GOAPAction_DoAction");
@@ -62,7 +62,7 @@ public:
 	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPlanning;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1260[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GOAPAction_CheckProceduralPrecondition) == 0x000008, "Wrong alignment on GOAPAction_CheckProceduralPrecondition");
 static_assert(sizeof(GOAPAction_CheckProceduralPrecondition) == 0x000010, "Wrong size on GOAPAction_CheckProceduralPrecondition");
@@ -90,7 +90,7 @@ struct GOAPAction_HasCompleted final
 public:
 	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1261[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GOAPAction_HasCompleted) == 0x000008, "Wrong alignment on GOAPAction_HasCompleted");
 static_assert(sizeof(GOAPAction_HasCompleted) == 0x000010, "Wrong size on GOAPAction_HasCompleted");
@@ -104,7 +104,7 @@ struct GOAPAction_ReceiveIsActionInvalid final
 public:
 	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1262[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GOAPAction_ReceiveIsActionInvalid) == 0x000008, "Wrong alignment on GOAPAction_ReceiveIsActionInvalid");
 static_assert(sizeof(GOAPAction_ReceiveIsActionInvalid) == 0x000010, "Wrong size on GOAPAction_ReceiveIsActionInvalid");
@@ -118,7 +118,7 @@ struct GOAPAction_Validate final
 public:
 	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1263[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GOAPAction_Validate) == 0x000008, "Wrong alignment on GOAPAction_Validate");
 static_assert(sizeof(GOAPAction_Validate) == 0x000010, "Wrong size on GOAPAction_Validate");
@@ -283,7 +283,7 @@ struct GOAPGoalManager_SetCurrentGoal final
 public:
 	class UGOAPGoal*                              NewGoal;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDeactivatePreviousGoal;                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1268[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(GOAPGoalManager_SetCurrentGoal) == 0x000008, "Wrong alignment on GOAPGoalManager_SetCurrentGoal");
 static_assert(sizeof(GOAPGoalManager_SetCurrentGoal) == 0x000010, "Wrong size on GOAPGoalManager_SetCurrentGoal");

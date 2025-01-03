@@ -33,7 +33,7 @@ public:
 	class FText                                   DefaultHintText;                                   // 0x02F0(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	TArray<class FString>                         DefaultOptions;                                    // 0x0308(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         DefaultSelectedOptionIdx;                          // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1D4A[0x4];                                     // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31C[0x4];                                      // 0x031C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnTextChanged;                                     // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnTextCommitted;                                   // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 

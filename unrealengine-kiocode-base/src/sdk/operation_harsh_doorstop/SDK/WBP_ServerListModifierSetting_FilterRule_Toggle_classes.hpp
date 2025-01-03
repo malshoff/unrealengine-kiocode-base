@@ -28,12 +28,12 @@ public:
 	class FText                                   Text;                                              // 0x0240(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          bDefaultIsCheckedOverride;                         // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	struct FHDFilterRuleParams                    CheckedRuleParams;                                 // 0x0259(0x0002)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1D3E[0x5];                                     // 0x025B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25B[0x5];                                      // 0x025B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Rule;                                              // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnBoolSettingChanged;                              // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void OnBoolSettingChanged__DelegateSignature(class UClass* Param_Rule, const struct FHDFilterRuleParams& RuleParams);
+	void OnBoolSettingChanged__DelegateSignature(class UClass* Rule_0, const struct FHDFilterRuleParams& RuleParams);
 	void ExecuteUbergraph_WBP_ServerListModifierSetting_FilterRule_Toggle(int32 EntryPoint);
 	void OnInitialized();
 	void BndEvt__FilterSetting_K2Node_ComponentBoundEvent_0_OnCheckStateChanged__DelegateSignature(bool bIsChecked);
@@ -41,7 +41,7 @@ public:
 	void SetCheckedRuleParams(const struct FHDFilterRuleParams& NewParams);
 	void GetCheckedRuleParams(struct FHDFilterRuleParams* Params_0);
 
-	void GetFilterRulePair(class UClass** Param_Rule, struct FHDFilterRuleParams* RuleParams) const;
+	void GetFilterRulePair(class UClass** Rule_0, struct FHDFilterRuleParams* RuleParams) const;
 	void IsFilterEnabled(bool* bActive) const;
 
 public:

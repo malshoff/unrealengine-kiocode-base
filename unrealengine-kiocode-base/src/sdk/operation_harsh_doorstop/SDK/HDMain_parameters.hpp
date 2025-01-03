@@ -28,7 +28,7 @@ struct HDServerListFilterRule_MatchesServer final
 public:
 	const class UHDServerListItemData*            ListItem;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1145[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDServerListFilterRule_MatchesServer) == 0x000008, "Wrong alignment on HDServerListFilterRule_MatchesServer");
 static_assert(sizeof(HDServerListFilterRule_MatchesServer) == 0x000010, "Wrong size on HDServerListFilterRule_MatchesServer");
@@ -42,7 +42,7 @@ struct DeployMenu_PlatoonSquadListBase_DeconstructSquad final
 public:
 	class USquadListEntry*                        RemovedSquadData;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         RemovedSquadIdx;                                   // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1147[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DeployMenu_PlatoonSquadListBase_DeconstructSquad) == 0x000008, "Wrong alignment on DeployMenu_PlatoonSquadListBase_DeconstructSquad");
 static_assert(sizeof(DeployMenu_PlatoonSquadListBase_DeconstructSquad) == 0x000010, "Wrong size on DeployMenu_PlatoonSquadListBase_DeconstructSquad");
@@ -241,7 +241,7 @@ struct DeployMenu_SquadListBase_SquadLockStateUpdated final
 public:
 	class AHDSquadState*                          SourceSquad;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNewLocked;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1149[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DeployMenu_SquadListBase_SquadLockStateUpdated) == 0x000008, "Wrong alignment on DeployMenu_SquadListBase_SquadLockStateUpdated");
 static_assert(sizeof(DeployMenu_SquadListBase_SquadLockStateUpdated) == 0x000010, "Wrong size on DeployMenu_SquadListBase_SquadLockStateUpdated");
@@ -361,7 +361,7 @@ public:
 	class UHDScoreboardBase*                      InParentMenu;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ADFBasePlayerState*                     InPlayerState;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInRefreshListingOnTick;                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_114D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDScoreboardListingRowBase_Init) == 0x000008, "Wrong alignment on HDScoreboardListingRowBase_Init");
 static_assert(sizeof(HDScoreboardListingRowBase_Init) == 0x000018, "Wrong size on HDScoreboardListingRowBase_Init");
@@ -408,7 +408,7 @@ struct HDScoreboardListingRowBase_GetIconForVoiceState final
 {
 public:
 	EPlayerVoiceState                             VoiceState;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_114E[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              ReturnValue;                                       // 0x0008(0x0028)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDScoreboardListingRowBase_GetIconForVoiceState) == 0x000008, "Wrong alignment on HDScoreboardListingRowBase_GetIconForVoiceState");
@@ -434,7 +434,7 @@ struct DeployMenu_SquadSelectionWidgetBase_DeconstructPlatoon final
 public:
 	class UPlatoonListEntry*                      RemovedPlatoonData;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         RemovedPlatoonIdx;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1150[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DeployMenu_SquadSelectionWidgetBase_DeconstructPlatoon) == 0x000008, "Wrong alignment on DeployMenu_SquadSelectionWidgetBase_DeconstructPlatoon");
 static_assert(sizeof(DeployMenu_SquadSelectionWidgetBase_DeconstructPlatoon) == 0x000010, "Wrong size on DeployMenu_SquadSelectionWidgetBase_DeconstructPlatoon");
@@ -550,7 +550,7 @@ struct HDAICaptureHandler_FindAvailableControlPointsOfType final
 {
 public:
 	EHDAICaptureMode                              InCaptureMode;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1155[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AHDBaseCapturePoint*>            ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDAICaptureHandler_FindAvailableControlPointsOfType) == 0x000008, "Wrong alignment on HDAICaptureHandler_FindAvailableControlPointsOfType");
@@ -564,7 +564,7 @@ struct HDAICaptureHandler_FindAvailableControlPointsOfTypeV1 final
 {
 public:
 	EHDAICaptureMode                              InCaptureMode;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1156[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AHDBaseCapturePoint*>            ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDAICaptureHandler_FindAvailableControlPointsOfTypeV1) == 0x000008, "Wrong alignment on HDAICaptureHandler_FindAvailableControlPointsOfTypeV1");
@@ -578,7 +578,7 @@ struct HDAICaptureHandler_FindAvailableControlPointsOfTypeV2 final
 {
 public:
 	EHDAICaptureMode                              InCaptureMode;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1157[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AHDBaseCapturePoint*>            ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDAICaptureHandler_FindAvailableControlPointsOfTypeV2) == 0x000008, "Wrong alignment on HDAICaptureHandler_FindAvailableControlPointsOfTypeV2");
@@ -592,7 +592,7 @@ struct HDAICaptureHandler_FindAvailableControlPointsOfTypeV3 final
 {
 public:
 	EHDAICaptureMode                              InCaptureMode;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1158[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AHDBaseCapturePoint*>            ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDAICaptureHandler_FindAvailableControlPointsOfTypeV3) == 0x000008, "Wrong alignment on HDAICaptureHandler_FindAvailableControlPointsOfTypeV3");
@@ -633,7 +633,7 @@ struct HDAICaptureHandler_FindControlPointToCapture final
 public:
 	class AHDBaseCapturePoint*                    OutFoundCP;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1159[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAICaptureHandler_FindControlPointToCapture) == 0x000008, "Wrong alignment on HDAICaptureHandler_FindControlPointToCapture");
 static_assert(sizeof(HDAICaptureHandler_FindControlPointToCapture) == 0x000010, "Wrong size on HDAICaptureHandler_FindControlPointToCapture");
@@ -696,7 +696,7 @@ public:
 	class AActor*                                 TargetActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAIStimulus                            Stimulus;                                          // 0x0008(0x003C)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0044(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1161[0x3];                                     // 0x0045(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIAimingHandler_CheckForTarget) == 0x000008, "Wrong alignment on HDAIAimingHandler_CheckForTarget");
 static_assert(sizeof(HDAIAimingHandler_CheckForTarget) == 0x000048, "Wrong size on HDAIAimingHandler_CheckForTarget");
@@ -747,7 +747,7 @@ public:
 	struct FVector                                EndLocation;                                       // 0x0018(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TossSpeed;                                         // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1162[0x3];                                     // 0x0029(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIAimingHandler_SuggestProjectileVelocity) == 0x000004, "Wrong alignment on HDAIAimingHandler_SuggestProjectileVelocity");
 static_assert(sizeof(HDAIAimingHandler_SuggestProjectileVelocity) == 0x00002C, "Wrong size on HDAIAimingHandler_SuggestProjectileVelocity");
@@ -766,7 +766,7 @@ public:
 	struct FVector                                OutLocation;                                       // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OutStrength;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OutAge;                                            // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1163[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIAimingHandler_GetActorStimulusData) == 0x000008, "Wrong alignment on HDAIAimingHandler_GetActorStimulusData");
 static_assert(sizeof(HDAIAimingHandler_GetActorStimulusData) == 0x000020, "Wrong size on HDAIAimingHandler_GetActorStimulusData");
@@ -794,7 +794,7 @@ public:
 	float                                         OldTargetStrength;                                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NewTargetStrength;                                 // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1164[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIAimingHandler_GetIsNewTargetMoreRelevant) == 0x000004, "Wrong alignment on HDAIAimingHandler_GetIsNewTargetMoreRelevant");
 static_assert(sizeof(HDAIAimingHandler_GetIsNewTargetMoreRelevant) == 0x00000C, "Wrong size on HDAIAimingHandler_GetIsNewTargetMoreRelevant");
@@ -842,7 +842,7 @@ struct HDAIAimingHandler_IsCandidateTarget final
 public:
 	const class AActor*                           ActorToCheck;                                      // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1165[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIAimingHandler_IsCandidateTarget) == 0x000008, "Wrong alignment on HDAIAimingHandler_IsCandidateTarget");
 static_assert(sizeof(HDAIAimingHandler_IsCandidateTarget) == 0x000010, "Wrong size on HDAIAimingHandler_IsCandidateTarget");
@@ -878,7 +878,7 @@ struct HDAIBehaviorStateBase_CanUpdateState final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1168[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIBehaviorStateBase_CanUpdateState) == 0x000004, "Wrong alignment on HDAIBehaviorStateBase_CanUpdateState");
 static_assert(sizeof(HDAIBehaviorStateBase_CanUpdateState) == 0x000008, "Wrong size on HDAIBehaviorStateBase_CanUpdateState");
@@ -929,7 +929,7 @@ struct HDAIBehaviorStateBase_SwitchToSubState final
 public:
 	class UHDAIBehaviorStateBase*                 InNewState;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1169[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIBehaviorStateBase_SwitchToSubState) == 0x000008, "Wrong alignment on HDAIBehaviorStateBase_SwitchToSubState");
 static_assert(sizeof(HDAIBehaviorStateBase_SwitchToSubState) == 0x000010, "Wrong size on HDAIBehaviorStateBase_SwitchToSubState");
@@ -943,7 +943,7 @@ struct HDAIBehaviorStateBase_UpdateCurrentSubState final
 public:
 	float                                         DeltaTime;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_116A[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIBehaviorStateBase_UpdateCurrentSubState) == 0x000004, "Wrong alignment on HDAIBehaviorStateBase_UpdateCurrentSubState");
 static_assert(sizeof(HDAIBehaviorStateBase_UpdateCurrentSubState) == 0x000008, "Wrong size on HDAIBehaviorStateBase_UpdateCurrentSubState");
@@ -979,7 +979,7 @@ struct HDAIBehState_BasicAASCombat_IsValidAttackSpot final
 public:
 	struct FVector                                InAttackSpot;                                      // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_116D[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIBehState_BasicAASCombat_IsValidAttackSpot) == 0x000004, "Wrong alignment on HDAIBehState_BasicAASCombat_IsValidAttackSpot");
 static_assert(sizeof(HDAIBehState_BasicAASCombat_IsValidAttackSpot) == 0x000010, "Wrong size on HDAIBehState_BasicAASCombat_IsValidAttackSpot");
@@ -993,7 +993,7 @@ struct HDAIBehState_BasicAASCombat_IsValidSafeSpot final
 public:
 	struct FVector                                InSafeSpot;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_116E[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIBehState_BasicAASCombat_IsValidSafeSpot) == 0x000004, "Wrong alignment on HDAIBehState_BasicAASCombat_IsValidSafeSpot");
 static_assert(sizeof(HDAIBehState_BasicAASCombat_IsValidSafeSpot) == 0x000010, "Wrong size on HDAIBehState_BasicAASCombat_IsValidSafeSpot");
@@ -1028,7 +1028,7 @@ struct HDURLStatics_GetFactionOptionName final
 {
 public:
 	EHDTeam                                       Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_116F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDURLStatics_GetFactionOptionName) == 0x000008, "Wrong alignment on HDURLStatics_GetFactionOptionName");
@@ -1042,7 +1042,7 @@ struct HDURLStatics_GetNumBotsOptionName final
 {
 public:
 	EHDTeam                                       Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1170[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDURLStatics_GetNumBotsOptionName) == 0x000008, "Wrong alignment on HDURLStatics_GetNumBotsOptionName");
@@ -1056,7 +1056,7 @@ struct HDURLStatics_GetNumTicketsOptionName final
 {
 public:
 	EHDTeam                                       Team;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1171[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDURLStatics_GetNumTicketsOptionName) == 0x000008, "Wrong alignment on HDURLStatics_GetNumTicketsOptionName");
@@ -1083,7 +1083,7 @@ public:
 	class APawn*                                  VictimPawn;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AController*                            VictimController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         KillingDamage;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1175[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class APawn*                                  InstigatingPawn;                                   // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1207,7 +1207,7 @@ struct HDServerListView_DoesFilterExcludeListItem final
 public:
 	const class UObject*                          Item;                                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1178[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDServerListView_DoesFilterExcludeListItem) == 0x000008, "Wrong alignment on HDServerListView_DoesFilterExcludeListItem");
 static_assert(sizeof(HDServerListView_DoesFilterExcludeListItem) == 0x000010, "Wrong size on HDServerListView_DoesFilterExcludeListItem");
@@ -1596,7 +1596,7 @@ public:
 	class APawn*                                  VictimPawn;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AController*                            VictimController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         KillingDamage;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1194[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class APawn*                                  InstigatingPawn;                                   // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1663,7 +1663,7 @@ public:
 	struct FVector                                Vector2;                                           // 0x000C(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Tolerance;                                         // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_119D[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAINavigationHandler_PointsAreEqualXY) == 0x000004, "Wrong alignment on HDAINavigationHandler_PointsAreEqualXY");
 static_assert(sizeof(HDAINavigationHandler_PointsAreEqualXY) == 0x000020, "Wrong size on HDAINavigationHandler_PointsAreEqualXY");
@@ -1715,7 +1715,7 @@ public:
 	struct FVector                                InStart;                                           // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                InDestination;                                     // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_119E[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAINavigationHandler_MakeNewMasterNavPath) == 0x000004, "Wrong alignment on HDAINavigationHandler_MakeNewMasterNavPath");
 static_assert(sizeof(HDAINavigationHandler_MakeNewMasterNavPath) == 0x00001C, "Wrong size on HDAINavigationHandler_MakeNewMasterNavPath");
@@ -1753,7 +1753,7 @@ public:
 	class AHDBaseCapturePoint*                    CP;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                OutNavLoc;                                         // 0x0008(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_119F[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAINavigationHandler_FindNavLocationInsideControlPoint) == 0x000008, "Wrong alignment on HDAINavigationHandler_FindNavLocationInsideControlPoint");
 static_assert(sizeof(HDAINavigationHandler_FindNavLocationInsideControlPoint) == 0x000018, "Wrong size on HDAINavigationHandler_FindNavLocationInsideControlPoint");
@@ -1768,7 +1768,7 @@ struct HDAINavigationHandler_FixVectorValuesNaN final
 public:
 	struct FVector                                InVector;                                          // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bRandomize;                                        // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11A0[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAINavigationHandler_FixVectorValuesNaN) == 0x000004, "Wrong alignment on HDAINavigationHandler_FixVectorValuesNaN");
 static_assert(sizeof(HDAINavigationHandler_FixVectorValuesNaN) == 0x000010, "Wrong size on HDAINavigationHandler_FixVectorValuesNaN");
@@ -1843,7 +1843,7 @@ public:
 	float                                         OutSightStrength;                                  // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class AActor*                           IgnoreActor;                                       // 0x0020(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11A3[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDAIPerceptionComponent_CanBeSeenFrom) == 0x000008, "Wrong alignment on HDAIPerceptionComponent_CanBeSeenFrom");
 static_assert(sizeof(HDAIPerceptionComponent_CanBeSeenFrom) == 0x000030, "Wrong size on HDAIPerceptionComponent_CanBeSeenFrom");
@@ -1943,7 +1943,7 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromSweep;                                        // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11AF[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDBaseCapturePoint_OnBeginOverlap) == 0x000008, "Wrong alignment on HDBaseCapturePoint_OnBeginOverlap");
@@ -1964,7 +1964,7 @@ public:
 	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B0[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDBaseCapturePoint_OnEndOverlap) == 0x000008, "Wrong alignment on HDBaseCapturePoint_OnEndOverlap");
 static_assert(sizeof(HDBaseCapturePoint_OnEndOverlap) == 0x000020, "Wrong size on HDBaseCapturePoint_OnEndOverlap");
@@ -2079,7 +2079,7 @@ struct HDBaseCapturePoint_CanRestartPlayer final
 public:
 	class AController*                            Player;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDBaseCapturePoint_CanRestartPlayer) == 0x000008, "Wrong alignment on HDBaseCapturePoint_CanRestartPlayer");
 static_assert(sizeof(HDBaseCapturePoint_CanRestartPlayer) == 0x000010, "Wrong size on HDBaseCapturePoint_CanRestartPlayer");
@@ -2092,7 +2092,7 @@ struct HDBaseCapturePoint_GetMinPlayersRequiredForCaptureTeam final
 {
 public:
 	EHDTeam                                       CaptureTeam;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B2[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDBaseCapturePoint_GetMinPlayersRequiredForCaptureTeam) == 0x000004, "Wrong alignment on HDBaseCapturePoint_GetMinPlayersRequiredForCaptureTeam");
@@ -2170,7 +2170,7 @@ public:
 	class AActor*                                 StartSpot;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UDFLoadout*                             StartLoadout;                                      // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11B5[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDBaseGameMode_PlayerCanRestartAtPlayerStart) == 0x000008, "Wrong alignment on HDBaseGameMode_PlayerCanRestartAtPlayerStart");
 static_assert(sizeof(HDBaseGameMode_PlayerCanRestartAtPlayerStart) == 0x000020, "Wrong size on HDBaseGameMode_PlayerCanRestartAtPlayerStart");
@@ -2241,7 +2241,7 @@ struct HDPlayerController_CanTalkOverChannel final
 public:
 	class FName                                   TalkChannelName;                                   // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BB[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlayerController_CanTalkOverChannel) == 0x000004, "Wrong alignment on HDPlayerController_CanTalkOverChannel");
 static_assert(sizeof(HDPlayerController_CanTalkOverChannel) == 0x00000C, "Wrong size on HDPlayerController_CanTalkOverChannel");
@@ -2277,7 +2277,7 @@ struct HDPlayerController_ClientRoundEnd final
 public:
 	struct FHDGameRoundEndEventDetails            RoundDetails;                                      // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bIsWinner;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BC[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlayerController_ClientRoundEnd) == 0x000004, "Wrong alignment on HDPlayerController_ClientRoundEnd");
 static_assert(sizeof(HDPlayerController_ClientRoundEnd) == 0x000014, "Wrong size on HDPlayerController_ClientRoundEnd");
@@ -2313,7 +2313,7 @@ struct HDPlayerController_IsTalkingOverChannel final
 public:
 	const class UDFCommChannel*                   TalkChannel;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BD[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlayerController_IsTalkingOverChannel) == 0x000008, "Wrong alignment on HDPlayerController_IsTalkingOverChannel");
 static_assert(sizeof(HDPlayerController_IsTalkingOverChannel) == 0x000010, "Wrong size on HDPlayerController_IsTalkingOverChannel");
@@ -2327,7 +2327,7 @@ struct HDPlayerController_IsTalkingOverChannelGroup final
 public:
 	class FName                                   TalkGroupName;                                     // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BE[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlayerController_IsTalkingOverChannelGroup) == 0x000004, "Wrong alignment on HDPlayerController_IsTalkingOverChannelGroup");
 static_assert(sizeof(HDPlayerController_IsTalkingOverChannelGroup) == 0x00000C, "Wrong size on HDPlayerController_IsTalkingOverChannelGroup");
@@ -2341,7 +2341,7 @@ struct HDPlayerController_IsTalkingOverChannelName final
 public:
 	class FName                                   TalkChannelName;                                   // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11BF[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlayerController_IsTalkingOverChannelName) == 0x000004, "Wrong alignment on HDPlayerController_IsTalkingOverChannelName");
 static_assert(sizeof(HDPlayerController_IsTalkingOverChannelName) == 0x00000C, "Wrong size on HDPlayerController_IsTalkingOverChannelName");
@@ -2355,7 +2355,7 @@ struct HDPlayerController_LoadVictoryMenu final
 public:
 	struct FHDGameRoundEndEventDetails            RoundDetails;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWinner;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C0[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlayerController_LoadVictoryMenu) == 0x000004, "Wrong alignment on HDPlayerController_LoadVictoryMenu");
 static_assert(sizeof(HDPlayerController_LoadVictoryMenu) == 0x000014, "Wrong size on HDPlayerController_LoadVictoryMenu");
@@ -2370,7 +2370,7 @@ public:
 	class UDFCommChannel*                         MsgTalkerChannel;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerState*                           MsgTalkerPS;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMsgIsTalking;                                     // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlayerController_ReceiveVoipTalkerMsgReceived) == 0x000008, "Wrong alignment on HDPlayerController_ReceiveVoipTalkerMsgReceived");
 static_assert(sizeof(HDPlayerController_ReceiveVoipTalkerMsgReceived) == 0x000018, "Wrong size on HDPlayerController_ReceiveVoipTalkerMsgReceived");
@@ -2600,7 +2600,7 @@ struct HDGameInstance_HasDLCBP final
 public:
 	int64                                         DLCAppID;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDGameInstance_HasDLCBP) == 0x000008, "Wrong alignment on HDGameInstance_HasDLCBP");
 static_assert(sizeof(HDGameInstance_HasDLCBP) == 0x000010, "Wrong size on HDGameInstance_HasDLCBP");
@@ -2625,7 +2625,7 @@ struct HDGameInstance_OwnsAppBP final
 public:
 	int64                                         AppID;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDGameInstance_OwnsAppBP) == 0x000008, "Wrong alignment on HDGameInstance_OwnsAppBP");
 static_assert(sizeof(HDGameInstance_OwnsAppBP) == 0x000010, "Wrong size on HDGameInstance_OwnsAppBP");
@@ -2675,7 +2675,7 @@ struct HDGameRulesetBase_GiveTicketsToTeam final
 {
 public:
 	EHDTeam                                       TicketTeam;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11C9[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TicketsToAdd;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDGameRulesetBase_GiveTicketsToTeam) == 0x000004, "Wrong alignment on HDGameRulesetBase_GiveTicketsToTeam");
@@ -2689,7 +2689,7 @@ struct HDGameRulesetBase_RevokeTicketsFromTeam final
 {
 public:
 	EHDTeam                                       TicketTeam;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11CA[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TicketsToRemove;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDGameRulesetBase_RevokeTicketsFromTeam) == 0x000004, "Wrong alignment on HDGameRulesetBase_RevokeTicketsFromTeam");
@@ -2725,7 +2725,7 @@ struct HDGameState_GiveTicketsToTeam final
 {
 public:
 	EHDTeam                                       TicketTeam;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11CD[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TicketsToAdd;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDGameState_GiveTicketsToTeam) == 0x000004, "Wrong alignment on HDGameState_GiveTicketsToTeam");
@@ -2739,7 +2739,7 @@ struct HDGameState_RevokeTicketsFromTeam final
 {
 public:
 	EHDTeam                                       TicketTeam;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11CE[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TicketsToRemove;                                   // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDGameState_RevokeTicketsFromTeam) == 0x000004, "Wrong alignment on HDGameState_RevokeTicketsFromTeam");
@@ -2753,7 +2753,7 @@ struct HDGameState_GetNumPlayersOnTeam final
 {
 public:
 	EHDTeam                                       TeamToCheck;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11CF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDGameState_GetNumPlayersOnTeam) == 0x000004, "Wrong alignment on HDGameState_GetNumPlayersOnTeam");
@@ -2768,7 +2768,7 @@ struct HDGameState_IsGameUsingPlayerSpawnKitRestrictions final
 public:
 	const class AController*                      Controller;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11D0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDGameState_IsGameUsingPlayerSpawnKitRestrictions) == 0x000008, "Wrong alignment on HDGameState_IsGameUsingPlayerSpawnKitRestrictions");
 static_assert(sizeof(HDGameState_IsGameUsingPlayerSpawnKitRestrictions) == 0x000010, "Wrong size on HDGameState_IsGameUsingPlayerSpawnKitRestrictions");
@@ -2793,7 +2793,7 @@ struct HDGOAPComponent_TargetPerceptionUpdated final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAIStimulus                            Stimulus;                                          // 0x0008(0x003C)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11D3[0x4];                                     // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDGOAPComponent_TargetPerceptionUpdated) == 0x000008, "Wrong alignment on HDGOAPComponent_TargetPerceptionUpdated");
 static_assert(sizeof(HDGOAPComponent_TargetPerceptionUpdated) == 0x000048, "Wrong size on HDGOAPComponent_TargetPerceptionUpdated");
@@ -2893,7 +2893,7 @@ public:
 	struct FHDItemEntry                           ItemEntry;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	class UTexture2D*                             OutDisplayEquipmentSymbol;                         // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11D7[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDKit_GetItemEntryDisplayEquipmentSymbol) == 0x000008, "Wrong alignment on HDKit_GetItemEntryDisplayEquipmentSymbol");
 static_assert(sizeof(HDKit_GetItemEntryDisplayEquipmentSymbol) == 0x000020, "Wrong size on HDKit_GetItemEntryDisplayEquipmentSymbol");
@@ -2909,7 +2909,7 @@ public:
 	struct FHDItemEntry                           ItemEntry;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	class UTexture2D*                             OutDisplayIcon;                                    // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11D8[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDKit_GetItemEntryDisplayIcon) == 0x000008, "Wrong alignment on HDKit_GetItemEntryDisplayIcon");
 static_assert(sizeof(HDKit_GetItemEntryDisplayIcon) == 0x000020, "Wrong size on HDKit_GetItemEntryDisplayIcon");
@@ -2923,10 +2923,10 @@ struct HDKit_GetItemEntryBySlotNum final
 {
 public:
 	int32                                         SlotNum;                                           // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11D9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHDItemEntry                           OutEntry;                                          // 0x0008(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11DA[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDKit_GetItemEntryBySlotNum) == 0x000008, "Wrong alignment on HDKit_GetItemEntryBySlotNum");
 static_assert(sizeof(HDKit_GetItemEntryBySlotNum) == 0x000020, "Wrong size on HDKit_GetItemEntryBySlotNum");
@@ -2941,7 +2941,7 @@ struct HDKit_GetNumPlayersUsingKit final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11DB[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDKit_GetNumPlayersUsingKit) == 0x000008, "Wrong alignment on HDKit_GetNumPlayersUsingKit");
 static_assert(sizeof(HDKit_GetNumPlayersUsingKit) == 0x000010, "Wrong size on HDKit_GetNumPlayersUsingKit");
@@ -2956,7 +2956,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class AHDPlayerState*>                 OutPSArray;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11DC[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDKit_GetPlayersUsingKit) == 0x000008, "Wrong alignment on HDKit_GetPlayersUsingKit");
 static_assert(sizeof(HDKit_GetPlayersUsingKit) == 0x000020, "Wrong size on HDKit_GetPlayersUsingKit");
@@ -2971,7 +2971,7 @@ struct HDKit_GetPrimaryItemEntry final
 public:
 	struct FHDItemEntry                           OutPrimaryEntry;                                   // 0x0000(0x0010)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11DD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDKit_GetPrimaryItemEntry) == 0x000008, "Wrong alignment on HDKit_GetPrimaryItemEntry");
 static_assert(sizeof(HDKit_GetPrimaryItemEntry) == 0x000018, "Wrong size on HDKit_GetPrimaryItemEntry");
@@ -2985,7 +2985,7 @@ struct HDKit_GetPrimaryItemEntryDisplayIcon final
 public:
 	class UTexture2D*                             OutDisplayIcon;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11DE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDKit_GetPrimaryItemEntryDisplayIcon) == 0x000008, "Wrong alignment on HDKit_GetPrimaryItemEntryDisplayIcon");
 static_assert(sizeof(HDKit_GetPrimaryItemEntryDisplayIcon) == 0x000010, "Wrong size on HDKit_GetPrimaryItemEntryDisplayIcon");
@@ -3011,7 +3011,7 @@ public:
 	const class AController*                      Player;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   OutKitDenialReason;                                // 0x0008(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11DF[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDKit_PlayerCanStartWithKit) == 0x000008, "Wrong alignment on HDKit_PlayerCanStartWithKit");
 static_assert(sizeof(HDKit_PlayerCanStartWithKit) == 0x000028, "Wrong size on HDKit_PlayerCanStartWithKit");
@@ -3037,7 +3037,7 @@ struct HDModData_DoesModPluginUseLegacyMapScanning final
 public:
 	class FString                                 PluginName;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11E6[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDModData_DoesModPluginUseLegacyMapScanning) == 0x000008, "Wrong alignment on HDModData_DoesModPluginUseLegacyMapScanning");
 static_assert(sizeof(HDModData_DoesModPluginUseLegacyMapScanning) == 0x000018, "Wrong size on HDModData_DoesModPluginUseLegacyMapScanning");
@@ -3051,7 +3051,7 @@ struct HDPlatoonCreationRuleBase_SatisfiesRule final
 public:
 	const class UHDTeamDefinition*                TeamDef;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11E7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlatoonCreationRuleBase_SatisfiesRule) == 0x000008, "Wrong alignment on HDPlatoonCreationRuleBase_SatisfiesRule");
 static_assert(sizeof(HDPlatoonCreationRuleBase_SatisfiesRule) == 0x000010, "Wrong size on HDPlatoonCreationRuleBase_SatisfiesRule");
@@ -3065,7 +3065,7 @@ struct HDPlatoonInfo_ShouldCreateForTeam final
 public:
 	const class UHDTeamDefinition*                TeamDef;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11E9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlatoonInfo_ShouldCreateForTeam) == 0x000008, "Wrong alignment on HDPlatoonInfo_ShouldCreateForTeam");
 static_assert(sizeof(HDPlatoonInfo_ShouldCreateForTeam) == 0x000010, "Wrong size on HDPlatoonInfo_ShouldCreateForTeam");
@@ -3080,7 +3080,7 @@ public:
 	class FText                                   SquadDisplayName;                                  // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class AHDPlayerState*                         SquadLeader;                                       // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bStartLocked;                                      // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11ED[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AHDSquadState*                          ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDPlatoonState_AddSquad) == 0x000008, "Wrong alignment on HDPlatoonState_AddSquad");
@@ -3098,7 +3098,7 @@ public:
 	class FText                                   SquadDisplayName;                                  // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class AHDSquadState*                          OutFoundSquad;                                     // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11EE[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlatoonState_FindSquadByName) == 0x000008, "Wrong alignment on HDPlatoonState_FindSquadByName");
 static_assert(sizeof(HDPlatoonState_FindSquadByName) == 0x000028, "Wrong size on HDPlatoonState_FindSquadByName");
@@ -3167,7 +3167,7 @@ struct HDPlatoonState_GetNumSquads final
 {
 public:
 	bool                                          bValidSquadsOnly;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11EF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDPlatoonState_GetNumSquads) == 0x000004, "Wrong alignment on HDPlatoonState_GetNumSquads");
@@ -3180,14 +3180,14 @@ static_assert(offsetof(HDPlatoonState_GetNumSquads, ReturnValue) == 0x000004, "M
 struct HDPlatoonState_GetSquadAt final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePendingRemoval;                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11F0[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AHDSquadState*                          ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDPlatoonState_GetSquadAt) == 0x000008, "Wrong alignment on HDPlatoonState_GetSquadAt");
 static_assert(sizeof(HDPlatoonState_GetSquadAt) == 0x000010, "Wrong size on HDPlatoonState_GetSquadAt");
-static_assert(offsetof(HDPlatoonState_GetSquadAt, Param_Index) == 0x000000, "Member 'HDPlatoonState_GetSquadAt::Param_Index' has a wrong offset!");
+static_assert(offsetof(HDPlatoonState_GetSquadAt, Index_0) == 0x000000, "Member 'HDPlatoonState_GetSquadAt::Index_0' has a wrong offset!");
 static_assert(offsetof(HDPlatoonState_GetSquadAt, bIgnorePendingRemoval) == 0x000004, "Member 'HDPlatoonState_GetSquadAt::bIgnorePendingRemoval' has a wrong offset!");
 static_assert(offsetof(HDPlatoonState_GetSquadAt, ReturnValue) == 0x000008, "Member 'HDPlatoonState_GetSquadAt::ReturnValue' has a wrong offset!");
 
@@ -3209,7 +3209,7 @@ struct HDPlatoonState_IsSquadPendingRemovalFromPlatoon final
 public:
 	const class AHDSquadState*                    Squad;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11F1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlatoonState_IsSquadPendingRemovalFromPlatoon) == 0x000008, "Wrong alignment on HDPlatoonState_IsSquadPendingRemovalFromPlatoon");
 static_assert(sizeof(HDPlatoonState_IsSquadPendingRemovalFromPlatoon) == 0x000010, "Wrong size on HDPlatoonState_IsSquadPendingRemovalFromPlatoon");
@@ -3224,7 +3224,7 @@ public:
 	const class AHDSquadState*                    Squad;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePendingRemoval;                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11F2[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlatoonState_SquadExists) == 0x000008, "Wrong alignment on HDPlatoonState_SquadExists");
 static_assert(sizeof(HDPlatoonState_SquadExists) == 0x000010, "Wrong size on HDPlatoonState_SquadExists");
@@ -3285,7 +3285,7 @@ struct HDPlayerCharacter_PlayVocalSoundAI final
 public:
 	class USoundBase*                             SoundToUse;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHDAIVocalizationType                         VocalType;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11FA[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PitchMultiplier;                                   // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDPlayerCharacter_PlayVocalSoundAI) == 0x000008, "Wrong alignment on HDPlayerCharacter_PlayVocalSoundAI");
@@ -3341,7 +3341,7 @@ public:
 	class UDFCommChannel*                         MsgTalkerChannel;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerState*                           MsgTalkerPS;                                       // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bMsgIsTalking;                                     // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11FB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDPlayerCharacter_ReceiveVoipTalkerMsgReceived) == 0x000008, "Wrong alignment on HDPlayerCharacter_ReceiveVoipTalkerMsgReceived");
 static_assert(sizeof(HDPlayerCharacter_ReceiveVoipTalkerMsgReceived) == 0x000018, "Wrong size on HDPlayerCharacter_ReceiveVoipTalkerMsgReceived");
@@ -3613,7 +3613,7 @@ struct HDRuleset_ControlPoint_ControlPointCaptureProgressUpdated final
 public:
 	class AHDBaseCapturePoint*                    ControlPoint;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bContested;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11FF[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Progress;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDRuleset_ControlPoint_ControlPointCaptureProgressUpdated) == 0x000008, "Wrong alignment on HDRuleset_ControlPoint_ControlPointCaptureProgressUpdated");
@@ -3631,7 +3631,7 @@ public:
 	EHDTeam                                       PrevTeam;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHDTeam                                       NewTeam;                                           // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCaptured;                                         // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1200[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDRuleset_ControlPoint_ControlPointTeamUpdated) == 0x000008, "Wrong alignment on HDRuleset_ControlPoint_ControlPointTeamUpdated");
 static_assert(sizeof(HDRuleset_ControlPoint_ControlPointTeamUpdated) == 0x000010, "Wrong size on HDRuleset_ControlPoint_ControlPointTeamUpdated");
@@ -3646,7 +3646,7 @@ struct HDRuleset_ControlPoint_GetControlPointSettingsForTeam final
 {
 public:
 	EHDTeam                                       ControlPointTeam;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1201[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FControlPointRulesetSettings           ReturnValue;                                       // 0x0004(0x0020)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDRuleset_ControlPoint_GetControlPointSettingsForTeam) == 0x000004, "Wrong alignment on HDRuleset_ControlPoint_GetControlPointSettingsForTeam");
@@ -3673,7 +3673,7 @@ struct HDRuleset_KillDeath_GetKillDeathSettingsForTeam final
 {
 public:
 	EHDTeam                                       KillDeathTeam;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1202[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKillDeathRulesetSettings              ReturnValue;                                       // 0x0004(0x0028)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDRuleset_KillDeath_GetKillDeathSettingsForTeam) == 0x000004, "Wrong alignment on HDRuleset_KillDeath_GetKillDeathSettingsForTeam");
@@ -3687,10 +3687,10 @@ struct HDRuleset_TicketBleed_ApplyTicketBleed final
 {
 public:
 	EHDTeam                                       BleedTeam;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1204[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TicketBleedMultiplier;                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseMercyTicketBleed;                              // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1205[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDRuleset_TicketBleed_ApplyTicketBleed) == 0x000004, "Wrong alignment on HDRuleset_TicketBleed_ApplyTicketBleed");
 static_assert(sizeof(HDRuleset_TicketBleed_ApplyTicketBleed) == 0x00000C, "Wrong size on HDRuleset_TicketBleed_ApplyTicketBleed");
@@ -3707,7 +3707,7 @@ public:
 	EHDTeam                                       PrevTeam;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHDTeam                                       NewTeam;                                           // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCaptured;                                         // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1206[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDRuleset_TicketBleed_ControlPointTeamUpdated) == 0x000008, "Wrong alignment on HDRuleset_TicketBleed_ControlPointTeamUpdated");
 static_assert(sizeof(HDRuleset_TicketBleed_ControlPointTeamUpdated) == 0x000010, "Wrong size on HDRuleset_TicketBleed_ControlPointTeamUpdated");
@@ -3722,7 +3722,7 @@ struct HDRuleset_TicketBleed_GetTicketBleedSettingsForTeam final
 {
 public:
 	EHDTeam                                       TicketBleedTeam;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1207[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTicketBleedRulesetSettings            ReturnValue;                                       // 0x0004(0x000C)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDRuleset_TicketBleed_GetTicketBleedSettingsForTeam) == 0x000004, "Wrong alignment on HDRuleset_TicketBleed_GetTicketBleedSettingsForTeam");
@@ -3770,7 +3770,7 @@ struct HDSquadState_AssignSquadLeader final
 public:
 	class AHDPlayerState*                         NewLeaderPS;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_120F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_AssignSquadLeader) == 0x000008, "Wrong alignment on HDSquadState_AssignSquadLeader");
 static_assert(sizeof(HDSquadState_AssignSquadLeader) == 0x000010, "Wrong size on HDSquadState_AssignSquadLeader");
@@ -3865,7 +3865,7 @@ struct HDSquadState_RegisterPlayerSquadMember final
 public:
 	const class AHDPlayerController*              NewMemberPC;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1210[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_RegisterPlayerSquadMember) == 0x000008, "Wrong alignment on HDSquadState_RegisterPlayerSquadMember");
 static_assert(sizeof(HDSquadState_RegisterPlayerSquadMember) == 0x000010, "Wrong size on HDSquadState_RegisterPlayerSquadMember");
@@ -3879,7 +3879,7 @@ struct HDSquadState_RegisterSquadMember final
 public:
 	class AHDPlayerState*                         NewMemberPS;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1211[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_RegisterSquadMember) == 0x000008, "Wrong alignment on HDSquadState_RegisterSquadMember");
 static_assert(sizeof(HDSquadState_RegisterSquadMember) == 0x000010, "Wrong size on HDSquadState_RegisterSquadMember");
@@ -3904,7 +3904,7 @@ struct HDSquadState_SquadMemberPSEndPlay final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EEndPlayReason                                EndPlayReason;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1212[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_SquadMemberPSEndPlay) == 0x000008, "Wrong alignment on HDSquadState_SquadMemberPSEndPlay");
 static_assert(sizeof(HDSquadState_SquadMemberPSEndPlay) == 0x000010, "Wrong size on HDSquadState_SquadMemberPSEndPlay");
@@ -3932,7 +3932,7 @@ public:
 	class APlayerState*                           MemberPS;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         LastTeamNum;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         NewTeamNum;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1213[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_SquadMemberPSTeamUpdated) == 0x000008, "Wrong alignment on HDSquadState_SquadMemberPSTeamUpdated");
 static_assert(sizeof(HDSquadState_SquadMemberPSTeamUpdated) == 0x000010, "Wrong size on HDSquadState_SquadMemberPSTeamUpdated");
@@ -3947,7 +3947,7 @@ struct HDSquadState_UnregisterPlayerSquadMember final
 public:
 	const class AHDPlayerController*              MemberPCToRemove;                                  // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1214[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_UnregisterPlayerSquadMember) == 0x000008, "Wrong alignment on HDSquadState_UnregisterPlayerSquadMember");
 static_assert(sizeof(HDSquadState_UnregisterPlayerSquadMember) == 0x000010, "Wrong size on HDSquadState_UnregisterPlayerSquadMember");
@@ -3961,7 +3961,7 @@ struct HDSquadState_UnregisterSquadMember final
 public:
 	class AHDPlayerState*                         MemberPSToRemove;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1215[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_UnregisterSquadMember) == 0x000008, "Wrong alignment on HDSquadState_UnregisterSquadMember");
 static_assert(sizeof(HDSquadState_UnregisterSquadMember) == 0x000010, "Wrong size on HDSquadState_UnregisterSquadMember");
@@ -3975,7 +3975,7 @@ struct HDSquadState_UnregisterSquadMemberAt final
 public:
 	int32                                         RemoveIdx;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1216[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_UnregisterSquadMemberAt) == 0x000004, "Wrong alignment on HDSquadState_UnregisterSquadMemberAt");
 static_assert(sizeof(HDSquadState_UnregisterSquadMemberAt) == 0x000008, "Wrong size on HDSquadState_UnregisterSquadMemberAt");
@@ -3989,7 +3989,7 @@ struct HDSquadState_CanRegisterPlayerSquadMember final
 public:
 	const class AHDPlayerController*              NewMemberPC;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1217[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_CanRegisterPlayerSquadMember) == 0x000008, "Wrong alignment on HDSquadState_CanRegisterPlayerSquadMember");
 static_assert(sizeof(HDSquadState_CanRegisterPlayerSquadMember) == 0x000010, "Wrong size on HDSquadState_CanRegisterPlayerSquadMember");
@@ -4003,7 +4003,7 @@ struct HDSquadState_CanRegisterSquadMember final
 public:
 	const class AHDPlayerState*                   NewMemberPS;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1218[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_CanRegisterSquadMember) == 0x000008, "Wrong alignment on HDSquadState_CanRegisterSquadMember");
 static_assert(sizeof(HDSquadState_CanRegisterSquadMember) == 0x000010, "Wrong size on HDSquadState_CanRegisterSquadMember");
@@ -4016,7 +4016,7 @@ struct HDSquadState_GetNumSquadMembers final
 {
 public:
 	bool                                          bValidMembersOnly;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1219[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDSquadState_GetNumSquadMembers) == 0x000004, "Wrong alignment on HDSquadState_GetNumSquadMembers");
@@ -4030,7 +4030,7 @@ struct HDSquadState_GetNumSquadMembersBots final
 {
 public:
 	bool                                          bValidMembersOnly;                                 // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121A[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDSquadState_GetNumSquadMembersBots) == 0x000004, "Wrong alignment on HDSquadState_GetNumSquadMembersBots");
@@ -4043,14 +4043,14 @@ static_assert(offsetof(HDSquadState_GetNumSquadMembersBots, ReturnValue) == 0x00
 struct HDSquadState_GetSquadMemberAt final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePendingRemoval;                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121B[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AHDPlayerState*                         ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDSquadState_GetSquadMemberAt) == 0x000008, "Wrong alignment on HDSquadState_GetSquadMemberAt");
 static_assert(sizeof(HDSquadState_GetSquadMemberAt) == 0x000010, "Wrong size on HDSquadState_GetSquadMemberAt");
-static_assert(offsetof(HDSquadState_GetSquadMemberAt, Param_Index) == 0x000000, "Member 'HDSquadState_GetSquadMemberAt::Param_Index' has a wrong offset!");
+static_assert(offsetof(HDSquadState_GetSquadMemberAt, Index_0) == 0x000000, "Member 'HDSquadState_GetSquadMemberAt::Index_0' has a wrong offset!");
 static_assert(offsetof(HDSquadState_GetSquadMemberAt, bIgnorePendingRemoval) == 0x000004, "Member 'HDSquadState_GetSquadMemberAt::bIgnorePendingRemoval' has a wrong offset!");
 static_assert(offsetof(HDSquadState_GetSquadMemberAt, ReturnValue) == 0x000008, "Member 'HDSquadState_GetSquadMemberAt::ReturnValue' has a wrong offset!");
 
@@ -4072,7 +4072,7 @@ struct HDSquadState_IsPendingRemovalFromSquad final
 public:
 	const class AHDPlayerState*                   PS;                                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_IsPendingRemovalFromSquad) == 0x000008, "Wrong alignment on HDSquadState_IsPendingRemovalFromSquad");
 static_assert(sizeof(HDSquadState_IsPendingRemovalFromSquad) == 0x000010, "Wrong size on HDSquadState_IsPendingRemovalFromSquad");
@@ -4086,7 +4086,7 @@ struct HDSquadState_IsPlayerPendingRemovalFromSquad final
 public:
 	const class AHDPlayerController*              PC;                                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_IsPlayerPendingRemovalFromSquad) == 0x000008, "Wrong alignment on HDSquadState_IsPlayerPendingRemovalFromSquad");
 static_assert(sizeof(HDSquadState_IsPlayerPendingRemovalFromSquad) == 0x000010, "Wrong size on HDSquadState_IsPlayerPendingRemovalFromSquad");
@@ -4101,7 +4101,7 @@ public:
 	const class AHDPlayerController*              PC;                                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePendingRemoval;                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121E[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_IsPlayerRegisteredSquadMember) == 0x000008, "Wrong alignment on HDSquadState_IsPlayerRegisteredSquadMember");
 static_assert(sizeof(HDSquadState_IsPlayerRegisteredSquadMember) == 0x000010, "Wrong size on HDSquadState_IsPlayerRegisteredSquadMember");
@@ -4117,7 +4117,7 @@ public:
 	const class AHDPlayerState*                   PS;                                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePendingRemoval;                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_121F[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDSquadState_IsRegisteredSquadMember) == 0x000008, "Wrong alignment on HDSquadState_IsRegisteredSquadMember");
 static_assert(sizeof(HDSquadState_IsRegisteredSquadMember) == 0x000010, "Wrong size on HDSquadState_IsRegisteredSquadMember");
@@ -4146,7 +4146,7 @@ public:
 	const class UHDPlatoonInfo*                   PlatoonDef;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AHDPlatoonState*                        OutFoundPlatoon;                                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1222[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDTeamState_FindPlatoonByDefinition) == 0x000008, "Wrong alignment on HDTeamState_FindPlatoonByDefinition");
 static_assert(sizeof(HDTeamState_FindPlatoonByDefinition) == 0x000018, "Wrong size on HDTeamState_FindPlatoonByDefinition");
@@ -4162,7 +4162,7 @@ public:
 	class FText                                   PlatoonDisplayName;                                // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class AHDPlatoonState*                        OutFoundPlatoon;                                   // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1223[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDTeamState_FindPlatoonByName) == 0x000008, "Wrong alignment on HDTeamState_FindPlatoonByName");
 static_assert(sizeof(HDTeamState_FindPlatoonByName) == 0x000028, "Wrong size on HDTeamState_FindPlatoonByName");
@@ -4220,7 +4220,7 @@ struct HDTeamState_GetNumPlatoons final
 {
 public:
 	bool                                          bValidPlatoonsOnly;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1224[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDTeamState_GetNumPlatoons) == 0x000004, "Wrong alignment on HDTeamState_GetNumPlatoons");
@@ -4233,14 +4233,14 @@ static_assert(offsetof(HDTeamState_GetNumPlatoons, ReturnValue) == 0x000004, "Me
 struct HDTeamState_GetPlatoonAt final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePendingRemoval;                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1225[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AHDPlatoonState*                        ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDTeamState_GetPlatoonAt) == 0x000008, "Wrong alignment on HDTeamState_GetPlatoonAt");
 static_assert(sizeof(HDTeamState_GetPlatoonAt) == 0x000010, "Wrong size on HDTeamState_GetPlatoonAt");
-static_assert(offsetof(HDTeamState_GetPlatoonAt, Param_Index) == 0x000000, "Member 'HDTeamState_GetPlatoonAt::Param_Index' has a wrong offset!");
+static_assert(offsetof(HDTeamState_GetPlatoonAt, Index_0) == 0x000000, "Member 'HDTeamState_GetPlatoonAt::Index_0' has a wrong offset!");
 static_assert(offsetof(HDTeamState_GetPlatoonAt, bIgnorePendingRemoval) == 0x000004, "Member 'HDTeamState_GetPlatoonAt::bIgnorePendingRemoval' has a wrong offset!");
 static_assert(offsetof(HDTeamState_GetPlatoonAt, ReturnValue) == 0x000008, "Member 'HDTeamState_GetPlatoonAt::ReturnValue' has a wrong offset!");
 
@@ -4273,7 +4273,7 @@ struct HDTeamState_IsPlatoonPendingRemovalFromTeam final
 public:
 	const class AHDPlatoonState*                  Platoon;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1226[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDTeamState_IsPlatoonPendingRemovalFromTeam) == 0x000008, "Wrong alignment on HDTeamState_IsPlatoonPendingRemovalFromTeam");
 static_assert(sizeof(HDTeamState_IsPlatoonPendingRemovalFromTeam) == 0x000010, "Wrong size on HDTeamState_IsPlatoonPendingRemovalFromTeam");
@@ -4288,7 +4288,7 @@ public:
 	const class AHDPlatoonState*                  Platoon;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnorePendingRemoval;                             // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1227[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDTeamState_PlatoonExists) == 0x000008, "Wrong alignment on HDTeamState_PlatoonExists");
 static_assert(sizeof(HDTeamState_PlatoonExists) == 0x000010, "Wrong size on HDTeamState_PlatoonExists");
@@ -4368,10 +4368,10 @@ struct HDTextChatWidgetBase_GetCachedChatMsgAt final
 {
 public:
 	int32                                         MsgIndex;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHDTextChatMsgInfo*                     OutFoundMsg;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDTextChatWidgetBase_GetCachedChatMsgAt) == 0x000008, "Wrong alignment on HDTextChatWidgetBase_GetCachedChatMsgAt");
 static_assert(sizeof(HDTextChatWidgetBase_GetCachedChatMsgAt) == 0x000018, "Wrong size on HDTextChatWidgetBase_GetCachedChatMsgAt");
@@ -4467,7 +4467,7 @@ struct HDUIStatics_GetServerPort final
 public:
 	struct FHDServerInfo                          InServerInfo;                                      // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x00A0(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122C[0x4];                                     // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A4[0x4];                                       // 0x00A4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIStatics_GetServerPort) == 0x000008, "Wrong alignment on HDUIStatics_GetServerPort");
 static_assert(sizeof(HDUIStatics_GetServerPort) == 0x0000A8, "Wrong size on HDUIStatics_GetServerPort");
@@ -4526,7 +4526,7 @@ public:
 	class APawn*                                  VictimPawn;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AController*                            VictimController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         KillingDamage;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122E[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class APawn*                                  InstigatingPawn;                                   // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4583,7 +4583,7 @@ public:
 	class APawn*                                  VictimPawn;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AController*                            VictimController;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         KillingDamage;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_122F[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDamageEvent                           DamageEvent;                                       // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class APawn*                                  InstigatingPawn;                                   // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                 DamageCauser;                                      // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4706,11 +4706,11 @@ struct HDUIUWCaptureStatus_ControlPointSetCaptureProgress final
 {
 public:
 	bool                                          bContested;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1231[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         NewValueNorm;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OldValueNorm;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInitial;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1232[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWCaptureStatus_ControlPointSetCaptureProgress) == 0x000004, "Wrong alignment on HDUIUWCaptureStatus_ControlPointSetCaptureProgress");
 static_assert(sizeof(HDUIUWCaptureStatus_ControlPointSetCaptureProgress) == 0x000010, "Wrong size on HDUIUWCaptureStatus_ControlPointSetCaptureProgress");
@@ -4728,7 +4728,7 @@ public:
 	int32                                         NumEnemies;                                        // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MinNumRequiredForCapture;                          // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInitial;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1233[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWCaptureStatus_ControlPointSetGarrisonedPlayerCount) == 0x000004, "Wrong alignment on HDUIUWCaptureStatus_ControlPointSetGarrisonedPlayerCount");
 static_assert(sizeof(HDUIUWCaptureStatus_ControlPointSetGarrisonedPlayerCount) == 0x000010, "Wrong size on HDUIUWCaptureStatus_ControlPointSetGarrisonedPlayerCount");
@@ -4774,7 +4774,7 @@ struct HDUIUWCaptureStatus_CPCaptureProgressUpdate final
 public:
 	class AHDBaseCapturePoint*                    ControlPoint;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInCaptureContested;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1234[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InCaptureProgress;                                 // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(HDUIUWCaptureStatus_CPCaptureProgressUpdate) == 0x000008, "Wrong alignment on HDUIUWCaptureStatus_CPCaptureProgressUpdate");
@@ -4792,7 +4792,7 @@ public:
 	EHDTeam                                       PrevOwningTeam;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHDTeam                                       NewOwningTeam;                                     // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCaptured;                                         // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1235[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWCaptureStatus_CPOwnershipUpdate) == 0x000008, "Wrong alignment on HDUIUWCaptureStatus_CPOwnershipUpdate");
 static_assert(sizeof(HDUIUWCaptureStatus_CPOwnershipUpdate) == 0x000010, "Wrong size on HDUIUWCaptureStatus_CPOwnershipUpdate");
@@ -4834,7 +4834,7 @@ struct HDUIUWCaptureStatus_OwnerTouchingControlPoint final
 public:
 	class AHDBaseCapturePoint*                    OverlappingCP;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInitial;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1236[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWCaptureStatus_OwnerTouchingControlPoint) == 0x000008, "Wrong alignment on HDUIUWCaptureStatus_OwnerTouchingControlPoint");
 static_assert(sizeof(HDUIUWCaptureStatus_OwnerTouchingControlPoint) == 0x000010, "Wrong size on HDUIUWCaptureStatus_OwnerTouchingControlPoint");
@@ -4875,7 +4875,7 @@ public:
 	float                                         NewValueNorm;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OldValueNorm;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInitial;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1238[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWPlayerStatus_OwnerSetHealth) == 0x000004, "Wrong alignment on HDUIUWPlayerStatus_OwnerSetHealth");
 static_assert(sizeof(HDUIUWPlayerStatus_OwnerSetHealth) == 0x00000C, "Wrong size on HDUIUWPlayerStatus_OwnerSetHealth");
@@ -4891,7 +4891,7 @@ public:
 	float                                         NewValueNorm;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OldValueNorm;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInitial;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1239[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWPlayerStatus_OwnerSetJumpStamina) == 0x000004, "Wrong alignment on HDUIUWPlayerStatus_OwnerSetJumpStamina");
 static_assert(sizeof(HDUIUWPlayerStatus_OwnerSetJumpStamina) == 0x00000C, "Wrong size on HDUIUWPlayerStatus_OwnerSetJumpStamina");
@@ -4907,7 +4907,7 @@ public:
 	float                                         NewValueNorm;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OldValueNorm;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInitial;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123A[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWPlayerStatus_OwnerSetSprintStamina) == 0x000004, "Wrong alignment on HDUIUWPlayerStatus_OwnerSetSprintStamina");
 static_assert(sizeof(HDUIUWPlayerStatus_OwnerSetSprintStamina) == 0x00000C, "Wrong size on HDUIUWPlayerStatus_OwnerSetSprintStamina");
@@ -4964,7 +4964,7 @@ public:
 	float                                         SprintValueNorm;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         JumpValueNorm;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bInitial;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123B[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWPlayerStatus_OwnerUpdateStamina) == 0x000004, "Wrong alignment on HDUIUWPlayerStatus_OwnerUpdateStamina");
 static_assert(sizeof(HDUIUWPlayerStatus_OwnerUpdateStamina) == 0x00000C, "Wrong size on HDUIUWPlayerStatus_OwnerUpdateStamina");
@@ -4981,7 +4981,7 @@ public:
 	bool                                          bFromReload;                                       // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTotalFreeAmmoUpdated;                             // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNumFreeAmmoClipsUpdated;                          // 0x001A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123D[0x5];                                     // 0x001B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWWeaponStatus_BPOwnerWeaponAmmoUpdated) == 0x000008, "Wrong alignment on HDUIUWWeaponStatus_BPOwnerWeaponAmmoUpdated");
 static_assert(sizeof(HDUIUWWeaponStatus_BPOwnerWeaponAmmoUpdated) == 0x000020, "Wrong size on HDUIUWWeaponStatus_BPOwnerWeaponAmmoUpdated");
@@ -5014,7 +5014,7 @@ public:
 	EHDWeaponAimStyle                             NewAimStyle;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHDWeaponAimStyle                             PrevAimStyle;                                      // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromPlayerInput;                                  // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123E[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWWeaponStatus_OwnerAimStyleChanged) == 0x000008, "Wrong alignment on HDUIUWWeaponStatus_OwnerAimStyleChanged");
 static_assert(sizeof(HDUIUWWeaponStatus_OwnerAimStyleChanged) == 0x000010, "Wrong size on HDUIUWWeaponStatus_OwnerAimStyleChanged");
@@ -5047,7 +5047,7 @@ public:
 	EFireMode                                     NewFireMode;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFireMode                                     PrevFireMode;                                      // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFromPlayerInput;                                  // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_123F[0x5];                                     // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(HDUIUWWeaponStatus_OwnerWeaponFireModeChanged) == 0x000008, "Wrong alignment on HDUIUWWeaponStatus_OwnerWeaponFireModeChanged");
 static_assert(sizeof(HDUIUWWeaponStatus_OwnerWeaponFireModeChanged) == 0x000010, "Wrong size on HDUIUWWeaponStatus_OwnerWeaponFireModeChanged");
@@ -5162,7 +5162,7 @@ struct VictoryMenu_Init final
 public:
 	struct FHDGameRoundEndEventDetails            InRoundDetails;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bInWinner;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1247[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(VictoryMenu_Init) == 0x000004, "Wrong alignment on VictoryMenu_Init");
 static_assert(sizeof(VictoryMenu_Init) == 0x000014, "Wrong size on VictoryMenu_Init");

@@ -40,48 +40,48 @@ public:
 	class UDFPOIComponent*                        POI;                                               // 0x0AA0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CameraAnimationSlot2_CameraCurve_24954BCF4915EDB59EB9158824582DBB; // 0x0AA8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            CameraAnimationSlot2__Direction_24954BCF4915EDB59EB9158824582DBB; // 0x0AB4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C11[0x3];                                     // 0x0AB5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AB5[0x3];                                      // 0x0AB5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     CameraAnimationSlot2;                              // 0x0AB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CameraAnimationSlot1_CameraCurve_78B6BF4045FC86DC6E1F7DACE85CA8B3; // 0x0AC0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            CameraAnimationSlot1__Direction_78B6BF4045FC86DC6E1F7DACE85CA8B3; // 0x0ACC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C12[0x3];                                     // 0x0ACD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_ACD[0x3];                                      // 0x0ACD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     CameraAnimationSlot1;                              // 0x0AD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CameraAnimationSlot0_CameraCurve_FCA6C1774AD24955E6AD27B43792174B; // 0x0AD8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            CameraAnimationSlot0__Direction_FCA6C1774AD24955E6AD27B43792174B; // 0x0AE4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C13[0x3];                                     // 0x0AE5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AE5[0x3];                                      // 0x0AE5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     CameraAnimationSlot0;                              // 0x0AE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CrouchExitSpringArmTranslation_CameraVector_E70B91E543398207A70C939B80788F86; // 0x0AF0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            CrouchExitSpringArmTranslation__Direction_E70B91E543398207A70C939B80788F86; // 0x0AFC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C14[0x3];                                     // 0x0AFD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AFD[0x3];                                      // 0x0AFD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     CrouchExitSpringArmTranslation;                    // 0x0B00(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CrouchSpringArmTranslation_CameraCurve_C4C40FDD4BBC021213AF31AA7F3DBF4B; // 0x0B08(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            CrouchSpringArmTranslation__Direction_C4C40FDD4BBC021213AF31AA7F3DBF4B; // 0x0B14(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C15[0x3];                                     // 0x0B15(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B15[0x3];                                      // 0x0B15(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     CrouchSpringArmTranslation;                        // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ProneExitSpringArmTranslation_CurveVector_CEF9B5C9468424E977B84F9F84E59E08; // 0x0B20(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            ProneExitSpringArmTranslation__Direction_CEF9B5C9468424E977B84F9F84E59E08; // 0x0B2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C16[0x3];                                     // 0x0B2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B2D[0x3];                                      // 0x0B2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     ProneExitSpringArmTranslation;                     // 0x0B30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ProneSpringArmTranslation_CurveVector_B542793B44FD44A9C91CC7B34C17770E; // 0x0B38(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            ProneSpringArmTranslation__Direction_B542793B44FD44A9C91CC7B34C17770E; // 0x0B44(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C17[0x3];                                     // 0x0B45(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B45[0x3];                                      // 0x0B45(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     ProneSpringArmTranslation;                         // 0x0B48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                VaultCameraTimeline_Rotation_22F2E311466556389CC02182AEE99CCA; // 0x0B50(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                VaultCameraTimeline_VaultCamera_22F2E311466556389CC02182AEE99CCA; // 0x0B5C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            VaultCameraTimeline__Direction_22F2E311466556389CC02182AEE99CCA; // 0x0B68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C18[0x7];                                     // 0x0B69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B69[0x7];                                      // 0x0B69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     VaultCameraTimeline;                               // 0x0B70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LerpTimeline_Lerp_5E919E724A951192A68B8180576AB695; // 0x0B78(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            LerpTimeline__Direction_5E919E724A951192A68B8180576AB695; // 0x0B7C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C19[0x3];                                     // 0x0B7D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B7D[0x3];                                      // 0x0B7D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     LerpTimeline;                                      // 0x0B80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                DamageEffectTimeline_DamageEffect_BEBC6E9841C4A26EF0A22DA008BD6CA4; // 0x0B88(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            DamageEffectTimeline__Direction_BEBC6E9841C4A26EF0A22DA008BD6CA4; // 0x0B94(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C1A[0x3];                                     // 0x0B95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B95[0x3];                                      // 0x0B95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     DamageEffectTimeline;                              // 0x0B98(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                SuppressionTimeline_SuppressionCurve_83869DB54889A3FECCAF0E83EA19C04B; // 0x0BA0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            SuppressionTimeline__Direction_83869DB54889A3FECCAF0E83EA19C04B; // 0x0BAC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C1B[0x3];                                     // 0x0BAD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BAD[0x3];                                      // 0x0BAD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     SuppressionTimeline;                               // 0x0BB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FallDamageDivisor;                                 // 0x0BB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FallDamageThreshold;                               // 0x0BBC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,17 +89,17 @@ public:
 	bool                                          bEquipmentKeyPressed;                              // 0x0BC4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bSelectingEquipmentBySlot;                         // 0x0BC5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bNextItem;                                         // 0x0BC6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C1C[0x1];                                     // 0x0BC7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC7[0x1];                                      // 0x0BC7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerState*                           LastValidPlayerState;                              // 0x0BC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bTintTeamColorForPlayerPOIs;                       // 0x0BD0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bUseSpecialSymbolForLocalPlayerPOIs;               // 0x0BD1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C1D[0x6];                                     // 0x0BD2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BD2[0x6];                                      // 0x0BD2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             LocalPlayerPOISymbol;                              // 0x0BD8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundAttenuation*                      VOIPSpatializedAttenuation;                        // 0x0BE0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundEffectSourcePresetChain*          VOIPSpatializedSrcEffectChain;                     // 0x0BE8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           HealthRegenTimer;                                  // 0x0BF0(0x0008)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                          bHealthRegenEnabled;                               // 0x0BF8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C1E[0x3];                                     // 0x0BF9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BF9[0x3];                                      // 0x0BF9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HealthRegenAmount;                                 // 0x0BFC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HealthRegenTimerInterval;                          // 0x0C00(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           LocalPlayerPOITint;                                // 0x0C04(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -107,26 +107,26 @@ public:
 	struct FColor                                 BlueTeamColor;                                     // 0x0C18(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                 NoTeamColor;                                       // 0x0C1C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bRadialMenuEnabled;                                // 0x0C20(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C1F[0x7];                                     // 0x0C21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C21[0x7];                                      // 0x0C21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_HDRadialMenu_C*                    RadialMenu;                                        // 0x0C28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             RadialMenuExitSnd;                                 // 0x0C30(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDataTable*                             RadialMenuOptions;                                 // 0x0C38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bRallypointsEnabled;                               // 0x0C40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C20[0x3];                                     // 0x0C41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C41[0x3];                                      // 0x0C41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RadialMenuRallypointTimeDeployed;                  // 0x0C44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSpatializedVOIPTalker;                            // 0x0C48(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 	bool                                          bOutpostsEnabled;                                  // 0x0C49(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C21[0x2];                                     // 0x0C4A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C4A[0x2];                                      // 0x0C4A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         RadialMenuOutpostTimeDeployed;                     // 0x0C4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             SuppressionSound;                                  // 0x0C50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         SuppressionSoundVolume;                            // 0x0C58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bBracedAim;                                        // 0x0C5C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor)
 	bool                                          bWantsMount;                                       // 0x0C5D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor)
 	bool                                          bMounted;                                          // 0x0C5E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C22[0x1];                                     // 0x0C5F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C5F[0x1];                                      // 0x0C5F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                MountDirection;                                    // 0x0C60(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                MountPosition;                                     // 0x0C6C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C23[0x8];                                     // 0x0C78(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C78[0x8];                                      // 0x0C78(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             MountTransform;                                    // 0x0C80(0x0030)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FVector                                SmoothSightDirection;                              // 0x0CB0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                SmoothSightOffset;                                 // 0x0CBC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -142,7 +142,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnSuppression;                                     // 0x0CF8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnHitDamage;                                       // 0x0D08(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bSpottingEnabled;                                  // 0x0D18(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C24[0x7];                                     // 0x0D19(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D19[0x7];                                      // 0x0D19(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCurveVector*                           SuppressionCurve;                                  // 0x0D20(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveVector*                           HitDamageCurve;                                    // 0x0D28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 SuppressionCameraShake;                            // 0x0D30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -151,7 +151,7 @@ public:
 	struct FLinearColor                           BleedingEffectValues;                              // 0x0D50(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DamageEffectStartPercent;                          // 0x0D60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bVariationDataSet;                                 // 0x0D64(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C25[0x3];                                     // 0x0D65(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_D65[0x3];                                      // 0x0D65(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MinVaultViewYaw;                                   // 0x0D68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MaxVaultViewYaw;                                   // 0x0D6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveVector*                           VaultOverCameraCurve;                              // 0x0D70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -165,13 +165,13 @@ public:
 	TArray<class UMaterialInstanceDynamic*>       ThirdPersonCharMatArray;                           // 0x0DC8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>       FirstPersonCharMatArray;                           // 0x0DD8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          bUseSpecialSymbolForSquadMatePOIs;                 // 0x0DE8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C26[0x7];                                     // 0x0DE9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_DE9[0x7];                                      // 0x0DE9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             SquadMatePOISymbol;                                // 0x0DF0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           SquadMatePOITint;                                  // 0x0DF8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             NonSquadMatePOISymbol;                             // 0x0E08(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           NonSquadMatePOITint;                               // 0x0E10(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bUseSpecialSymbolForSquadLeaderPOIs;               // 0x0E20(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C27[0x7];                                     // 0x0E21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E21[0x7];                                      // 0x0E21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             SquadLeaderPOISymbol;                              // 0x0E28(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           SquadLeaderPOITint;                                // 0x0E30(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           SquadLeaderPOITextColor;                           // 0x0E40(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -179,16 +179,16 @@ public:
 	struct FLinearColor                           NonSquadLeaderPOITint;                             // 0x0E58(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           NonSquadLeaderPOITextColor;                        // 0x0E68(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         BracedAimAlpha;                                    // 0x0E78(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C28[0x4];                                     // 0x0E7C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E7C[0x4];                                      // 0x0E7C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     CameraCurveVectorTimeline;                         // 0x0E80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bReloadPressed;                                    // 0x0E88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C29[0x3];                                     // 0x0E89(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E89[0x3];                                      // 0x0E89(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReloadAlpha;                                       // 0x0E8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         UnequipAlpha;                                      // 0x0E90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               LeanCompRotation;                                  // 0x0E94(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         LeanMovementAlpha;                                 // 0x0EA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsInAir;                                           // 0x0EA4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C2A[0x3];                                     // 0x0EA5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EA5[0x3];                                      // 0x0EA5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LeanAlpha;                                         // 0x0EA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CrouchAlpha;                                       // 0x0EAC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                SpringArmLocationCache;                            // 0x0EB0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -202,27 +202,27 @@ public:
 	float                                         EyeHeightAdjust;                                   // 0x0ECC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MoveInputAxis;                                     // 0x0ED0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPlayCameraAnimation_0;                            // 0x0ED4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C2B[0x3];                                     // 0x0ED5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_ED5[0x3];                                      // 0x0ED5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CameraAnimationAlpha_0;                            // 0x0ED8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C2C[0x4];                                     // 0x0EDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EDC[0x4];                                      // 0x0EDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCurveVector*                           CameraAnimationCurve_0;                            // 0x0EE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C2D[0x8];                                     // 0x0EE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_EE8[0x8];                                      // 0x0EE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CameraAnimationTransform_0;                        // 0x0EF0(0x0030)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         CameraAnimationSmoothingSpeed_0;                   // 0x0F20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CameraAnimationTransitionSpeed_0;                  // 0x0F24(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPlayCameraAnimation_1;                            // 0x0F28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C2E[0x3];                                     // 0x0F29(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F29[0x3];                                      // 0x0F29(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CameraAnimationAlpha_1;                            // 0x0F2C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveVector*                           CameraAnimationCurve_1;                            // 0x0F30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C2F[0x8];                                     // 0x0F38(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F38[0x8];                                      // 0x0F38(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CameraAnimationTransform_1;                        // 0x0F40(0x0030)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         CameraAnimationSmoothingSpeed_1;                   // 0x0F70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CameraAnimationTransitionSpeed_1;                  // 0x0F74(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPlayCameraAnimation_2;                            // 0x0F78(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1C30[0x3];                                     // 0x0F79(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F79[0x3];                                      // 0x0F79(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CameraAnimationAlpha_2;                            // 0x0F7C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveVector*                           CameraAnimationCurve_2;                            // 0x0F80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C31[0x8];                                     // 0x0F88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F88[0x8];                                      // 0x0F88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CameraAnimationTransform_2;                        // 0x0F90(0x0030)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                         CameraAnimationSmoothingSpeed_2;                   // 0x0FC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CameraAnimationTransitionSpeed_2;                  // 0x0FC4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -271,7 +271,7 @@ public:
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void PlayerNameChanged(class APlayerState* PS, const class FString& NewPlayerName);
 	void OnPCFireReleased();
-	void FirstPersonToggled(bool Param_bFirstPerson);
+	void FirstPersonToggled(bool bFirstPerson_0);
 	void ReceiveBeginPlay();
 	void NotifyPlayerStateChanged(class APlayerState* NewPlayerState, class APlayerState* OldPlayerState);
 	void ReceiveFreeAim(float DeltaSeconds);
@@ -333,11 +333,11 @@ public:
 	void SelectEquipmentBySlotNum(int32 EquipSlotNum, bool bEquipImmediately, bool bFromInput);
 	void UpdateCharMeshesFromFaction();
 	void UpdateCharMeshes(class USkeletalMesh* MeshFPP, class USkeletalMesh* MeshTPP);
-	void ApplyCharacterVariation(const struct FDFCharacterVariationDataHandle& Param_VariationHandle, bool bApplyToFPP);
+	void ApplyCharacterVariation(const struct FDFCharacterVariationDataHandle& VariationHandle_0, bool bApplyToFPP);
 	void UpdatePOIState();
 	void UpdateEquipmentItems();
-	void GetMostValidPlayerState(class APlayerState** Param_PlayerState);
-	void GetMostValidTeamState(class ADFTeamState** Param_TeamState);
+	void GetMostValidPlayerState(class APlayerState** PlayerState_0);
+	void GetMostValidTeamState(class ADFTeamState** TeamState_0);
 	void GetMostValidTeamFactionInfo(class UClass** FactionInfoClass);
 	void GetMostValidLoadout(class UHDKit** PlayerLoadout);
 	void EquipSelectedItemFromInventory(bool bSwitchFireModeForSelected);
@@ -362,7 +362,7 @@ public:
 	void OnRep_bSpatializedVOIPTalker();
 	void GetMountPosition(const struct FVector& Direction, float WallDistance, float TraceRadius, float CornerDistance, float CapsuleHeight, bool* bCouldMount, struct FVector* Position, struct FTransform* Transform);
 	void AlignSights(float MinSightDistance);
-	void GetProneMountPosition(const struct FVector& BoxSize, float Distance, float MaxHeight, float MinHeight, float MinSpace, bool* bCouldMount, struct FVector* Param_MountPosition);
+	void GetProneMountPosition(const struct FVector& BoxSize, float Distance, float MaxHeight, float MinHeight, float MinSpace, bool* bCouldMount, struct FVector* MountPosition_0);
 	void GetIsSpawnedOutpostValid(bool* bIsSpawnedOutpostValid);
 	void GetIsSpawnedRallypointValid(bool* bIsSpawnedRallypointValid);
 	void CalcRallypointDistanceRestriction(bool* bIsRallypointDistanceRestricted);
@@ -379,11 +379,11 @@ public:
 	void GetVaultCameraCurveForBehavior(EVaultBehavior VaultBehavior, class UCurveVector** CameraCurve);
 	void IsSameSquad(class ABP_HDPlayerControllerBase_C* LocalController, bool* bSameSquad);
 	void SetSpringArmOffset(float CurveZ);
-	void GetEyeHeightAdjustment(float* Param_EyeHeightAdjust);
+	void GetEyeHeightAdjustment(float* EyeHeightAdjust_0);
 	void LeanRotation();
 	void WeaponCollision();
 
-	void GetMinimapWidget(class AController* Param_Controller, class UDFMinimap** MinimapWidget) const;
+	void GetMinimapWidget(class AController* Controller_0, class UDFMinimap** MinimapWidget) const;
 	class USkeletalMesh* ReceiveGetDefaultPawnMesh1P() const;
 	void GetPlayerFactionInfoClass(EHDTeam PlayerTeam, class UClass** FactionInfoClass) const;
 	void IsMatchingTeam(class AController* LocalController, bool* bMatchingTeam) const;

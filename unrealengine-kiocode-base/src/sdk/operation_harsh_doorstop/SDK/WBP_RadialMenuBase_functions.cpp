@@ -124,9 +124,9 @@ void UWBP_RadialMenuBase_C::UpdateMaterials()
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.InDeadzone
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_InDeadzone                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InDeadzone_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_RadialMenuBase_C::InDeadzone(bool Param_InDeadzone)
+void UWBP_RadialMenuBase_C::InDeadzone(bool InDeadzone_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -135,7 +135,7 @@ void UWBP_RadialMenuBase_C::InDeadzone(bool Param_InDeadzone)
 
 	Params::WBP_RadialMenuBase_C_InDeadzone Parms{};
 
-	Parms.Param_InDeadzone = Param_InDeadzone;
+	Parms.InDeadzone_0 = InDeadzone_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -144,9 +144,9 @@ void UWBP_RadialMenuBase_C::InDeadzone(bool Param_InDeadzone)
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.UpdateSegments
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Segments                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Segments_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RadialMenuBase_C::UpdateSegments(int32 Param_Segments)
+void UWBP_RadialMenuBase_C::UpdateSegments(int32 Segments_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -155,7 +155,7 @@ void UWBP_RadialMenuBase_C::UpdateSegments(int32 Param_Segments)
 
 	Params::WBP_RadialMenuBase_C_UpdateSegments Parms{};
 
-	Parms.Param_Segments = Param_Segments;
+	Parms.Segments_0 = Segments_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -291,9 +291,9 @@ void UWBP_RadialMenuBase_C::ClearChildren()
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.UpdateChildPosition
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RadialMenuBase_C::UpdateChildPosition(int32 Param_Index)
+void UWBP_RadialMenuBase_C::UpdateChildPosition(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -302,7 +302,7 @@ void UWBP_RadialMenuBase_C::UpdateChildPosition(int32 Param_Index)
 
 	Params::WBP_RadialMenuBase_C_UpdateChildPosition Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -325,9 +325,9 @@ void UWBP_RadialMenuBase_C::UpdateAllChildrenPositions()
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.SetIndex
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RadialMenuBase_C::SetIndex(int32 Param_Index)
+void UWBP_RadialMenuBase_C::SetIndex(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -336,7 +336,7 @@ void UWBP_RadialMenuBase_C::SetIndex(int32 Param_Index)
 
 	Params::WBP_RadialMenuBase_C_SetIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -345,11 +345,11 @@ void UWBP_RadialMenuBase_C::SetIndex(int32 Param_Index)
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.GetChild
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_RadialMenuBase_C::GetChild(int32 Param_Index, class UUserWidget** Output, bool* Success)
+void UWBP_RadialMenuBase_C::GetChild(int32 Index_0, class UUserWidget** Output, bool* Success)
 {
 	static class UFunction* Func = nullptr;
 
@@ -358,7 +358,7 @@ void UWBP_RadialMenuBase_C::GetChild(int32 Param_Index, class UUserWidget** Outp
 
 	Params::WBP_RadialMenuBase_C_GetChild Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -373,10 +373,10 @@ void UWBP_RadialMenuBase_C::GetChild(int32 Param_Index, class UUserWidget** Outp
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.GetCurrentIndex
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Valid                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_RadialMenuBase_C::GetCurrentIndex(int32* Param_Index, bool* Valid)
+void UWBP_RadialMenuBase_C::GetCurrentIndex(int32* Index_0, bool* Valid)
 {
 	static class UFunction* Func = nullptr;
 
@@ -387,8 +387,8 @@ void UWBP_RadialMenuBase_C::GetCurrentIndex(int32* Param_Index, bool* Valid)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_Index != nullptr)
-		*Param_Index = Parms.Param_Index;
+	if (Index_0 != nullptr)
+		*Index_0 = Parms.Index_0;
 
 	if (Valid != nullptr)
 		*Valid = Parms.Valid;
@@ -575,9 +575,9 @@ void UWBP_RadialMenuBase_C::UpdateDirectionWithCustomInput()
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.SetCustomInput
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        Param_CustomInput                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                        CustomInput_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RadialMenuBase_C::SetCustomInput(const struct FVector2D& Param_CustomInput)
+void UWBP_RadialMenuBase_C::SetCustomInput(const struct FVector2D& CustomInput_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -586,7 +586,7 @@ void UWBP_RadialMenuBase_C::SetCustomInput(const struct FVector2D& Param_CustomI
 
 	Params::WBP_RadialMenuBase_C_SetCustomInput Parms{};
 
-	Parms.Param_CustomInput = std::move(Param_CustomInput);
+	Parms.CustomInput_0 = std::move(CustomInput_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

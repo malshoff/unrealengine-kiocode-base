@@ -36,10 +36,10 @@ public:
 	struct FMargin                                ChatMsgPadding;                                    // 0x02F0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         ChatHistoryFadeOutDelay;                           // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bChatHistoryVisible;                               // 0x0304(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F6C[0x3];                                     // 0x0305(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_305[0x3];                                      // 0x0305(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           ChatHistoryTimeoutHandle;                          // 0x0308(0x0008)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          bWantsScrollToEnd;                                 // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F6D[0x7];                                     // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_311[0x7];                                      // 0x0311(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ScrollToWidget;                                    // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

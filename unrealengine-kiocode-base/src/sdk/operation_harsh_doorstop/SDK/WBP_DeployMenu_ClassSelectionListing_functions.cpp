@@ -128,10 +128,10 @@ void UWBP_DeployMenu_ClassSelectionListing_C::BndEvt__SelectClassBtn_K2Node_Comp
 // Function WBP_DeployMenu_ClassSelectionListing.WBP_DeployMenu_ClassSelectionListing_C.Init
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UHDKit*                           Param_Kit                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UHDKit*                           Kit_0                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABP_HDPlayerControllerBase_C*     OwningPC                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DeployMenu_ClassSelectionListing_C::Init(class UHDKit* Param_Kit, class ABP_HDPlayerControllerBase_C* OwningPC)
+void UWBP_DeployMenu_ClassSelectionListing_C::Init(class UHDKit* Kit_0, class ABP_HDPlayerControllerBase_C* OwningPC)
 {
 	static class UFunction* Func = nullptr;
 
@@ -140,7 +140,7 @@ void UWBP_DeployMenu_ClassSelectionListing_C::Init(class UHDKit* Param_Kit, clas
 
 	Params::WBP_DeployMenu_ClassSelectionListing_C_Init Parms{};
 
-	Parms.Param_Kit = Param_Kit;
+	Parms.Kit_0 = Kit_0;
 	Parms.OwningPC = OwningPC;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -254,9 +254,9 @@ void UWBP_DeployMenu_ClassSelectionListing_C::ToggleClassSelection()
 // Function WBP_DeployMenu_ClassSelectionListing.WBP_DeployMenu_ClassSelectionListing_C.SetSelected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bSelected                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bSelected_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_DeployMenu_ClassSelectionListing_C::SetSelected(bool Param_bSelected)
+void UWBP_DeployMenu_ClassSelectionListing_C::SetSelected(bool bSelected_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -265,7 +265,7 @@ void UWBP_DeployMenu_ClassSelectionListing_C::SetSelected(bool Param_bSelected)
 
 	Params::WBP_DeployMenu_ClassSelectionListing_C_SetSelected Parms{};
 
-	Parms.Param_bSelected = Param_bSelected;
+	Parms.bSelected_0 = bSelected_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

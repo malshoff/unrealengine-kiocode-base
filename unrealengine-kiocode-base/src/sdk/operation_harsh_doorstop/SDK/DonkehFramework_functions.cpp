@@ -11712,11 +11712,11 @@ bool ADFBaseProjectile::K2_ShouldIgnoreHit(class AActor* OtherActor, class UPrim
 // Function DonkehFramework.DFTableLibrary.GetColumnFromIndex
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   TableWidth                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UDFTableLibrary::GetColumnFromIndex(int32 Param_Index, int32 TableWidth)
+int32 UDFTableLibrary::GetColumnFromIndex(int32 Index_0, int32 TableWidth)
 {
 	static class UFunction* Func = nullptr;
 
@@ -11725,7 +11725,7 @@ int32 UDFTableLibrary::GetColumnFromIndex(int32 Param_Index, int32 TableWidth)
 
 	Params::DFTableLibrary_GetColumnFromIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.TableWidth = TableWidth;
 
 	auto Flgs = Func->FunctionFlags;
@@ -11742,11 +11742,11 @@ int32 UDFTableLibrary::GetColumnFromIndex(int32 Param_Index, int32 TableWidth)
 // Function DonkehFramework.DFTableLibrary.GetColumnInvFromIndex
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   TableHeight                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UDFTableLibrary::GetColumnInvFromIndex(int32 Param_Index, int32 TableHeight)
+int32 UDFTableLibrary::GetColumnInvFromIndex(int32 Index_0, int32 TableHeight)
 {
 	static class UFunction* Func = nullptr;
 
@@ -11755,7 +11755,7 @@ int32 UDFTableLibrary::GetColumnInvFromIndex(int32 Param_Index, int32 TableHeigh
 
 	Params::DFTableLibrary_GetColumnInvFromIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.TableHeight = TableHeight;
 
 	auto Flgs = Func->FunctionFlags;
@@ -11836,11 +11836,11 @@ int32 UDFTableLibrary::GetIndexFromRowColumnPair(int32 Row, int32 Column, int32 
 // Function DonkehFramework.DFTableLibrary.GetRowFromIndex
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   TableWidth                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UDFTableLibrary::GetRowFromIndex(int32 Param_Index, int32 TableWidth)
+int32 UDFTableLibrary::GetRowFromIndex(int32 Index_0, int32 TableWidth)
 {
 	static class UFunction* Func = nullptr;
 
@@ -11849,7 +11849,7 @@ int32 UDFTableLibrary::GetRowFromIndex(int32 Param_Index, int32 TableWidth)
 
 	Params::DFTableLibrary_GetRowFromIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.TableWidth = TableWidth;
 
 	auto Flgs = Func->FunctionFlags;
@@ -11866,11 +11866,11 @@ int32 UDFTableLibrary::GetRowFromIndex(int32 Param_Index, int32 TableWidth)
 // Function DonkehFramework.DFTableLibrary.GetRowInvFromIndex
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   TableHeight                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UDFTableLibrary::GetRowInvFromIndex(int32 Param_Index, int32 TableHeight)
+int32 UDFTableLibrary::GetRowInvFromIndex(int32 Index_0, int32 TableHeight)
 {
 	static class UFunction* Func = nullptr;
 
@@ -11879,7 +11879,7 @@ int32 UDFTableLibrary::GetRowInvFromIndex(int32 Param_Index, int32 TableHeight)
 
 	Params::DFTableLibrary_GetRowInvFromIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.TableHeight = TableHeight;
 
 	auto Flgs = Func->FunctionFlags;
@@ -16225,12 +16225,12 @@ bool UDFInventoryComponent::Remove(const class ADFBaseItem* Item, bool bDestroyI
 // Function DonkehFramework.DFInventoryComponent.RemoveItemAt
 // (BlueprintAuthorityOnly, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// int32                                   Param_Index                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class ADFBaseItem*                      OutRemovedItem                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bDestroyItem                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UDFInventoryComponent::RemoveItemAt(const int32 Param_Index, class ADFBaseItem** OutRemovedItem, bool bDestroyItem)
+bool UDFInventoryComponent::RemoveItemAt(const int32 Index_0, class ADFBaseItem** OutRemovedItem, bool bDestroyItem)
 {
 	static class UFunction* Func = nullptr;
 
@@ -16239,7 +16239,7 @@ bool UDFInventoryComponent::RemoveItemAt(const int32 Param_Index, class ADFBaseI
 
 	Params::DFInventoryComponent_RemoveItemAt Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.bDestroyItem = bDestroyItem;
 
 	auto Flgs = Func->FunctionFlags;
@@ -16323,11 +16323,11 @@ bool UDFInventoryComponent::FindItemByClass(const TSubclassOf<class ADFBaseItem>
 // Function DonkehFramework.DFInventoryComponent.GetItem
 // (Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class ADFBaseItem*                      OutItem                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UDFInventoryComponent::GetItem(const int32 Param_Index, class ADFBaseItem** OutItem) const
+bool UDFInventoryComponent::GetItem(const int32 Index_0, class ADFBaseItem** OutItem) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -16336,7 +16336,7 @@ bool UDFInventoryComponent::GetItem(const int32 Param_Index, class ADFBaseItem**
 
 	Params::DFInventoryComponent_GetItem Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -16355,10 +16355,10 @@ bool UDFInventoryComponent::GetItem(const int32 Param_Index, class ADFBaseItem**
 // Function DonkehFramework.DFInventoryComponent.IsValidIndex
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UDFInventoryComponent::IsValidIndex(int32 Param_Index) const
+bool UDFInventoryComponent::IsValidIndex(int32 Index_0) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -16367,7 +16367,7 @@ bool UDFInventoryComponent::IsValidIndex(int32 Param_Index) const
 
 	Params::DFInventoryComponent_IsValidIndex Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

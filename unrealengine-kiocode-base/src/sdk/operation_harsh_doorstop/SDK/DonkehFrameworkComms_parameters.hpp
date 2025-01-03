@@ -95,7 +95,7 @@ struct DFCommChannel_HasFormat final
 public:
 	const class UDFCommsFormatBase*               Format;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_110C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommChannel_HasFormat) == 0x000008, "Wrong alignment on DFCommChannel_HasFormat");
 static_assert(sizeof(DFCommChannel_HasFormat) == 0x000010, "Wrong size on DFCommChannel_HasFormat");
@@ -155,7 +155,7 @@ struct DFCommChannelStateLibrary_IsChannelStatePrepared final
 public:
 	TScriptInterface<class IDFCommChannelStateInterface> ChannelState;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_110F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommChannelStateLibrary_IsChannelStatePrepared) == 0x000008, "Wrong alignment on DFCommChannelStateLibrary_IsChannelStatePrepared");
 static_assert(sizeof(DFCommChannelStateLibrary_IsChannelStatePrepared) == 0x000018, "Wrong size on DFCommChannelStateLibrary_IsChannelStatePrepared");
@@ -180,7 +180,7 @@ struct DFCommsFormatBase_CanReadFromChannel final
 public:
 	class FName                                   ChannelName;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1112[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommsFormatBase_CanReadFromChannel) == 0x000004, "Wrong alignment on DFCommsFormatBase_CanReadFromChannel");
 static_assert(sizeof(DFCommsFormatBase_CanReadFromChannel) == 0x00000C, "Wrong size on DFCommsFormatBase_CanReadFromChannel");
@@ -194,7 +194,7 @@ struct DFCommsFormatBase_CanWriteToChannel final
 public:
 	class FName                                   ChannelName;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1113[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommsFormatBase_CanWriteToChannel) == 0x000004, "Wrong alignment on DFCommsFormatBase_CanWriteToChannel");
 static_assert(sizeof(DFCommsFormatBase_CanWriteToChannel) == 0x00000C, "Wrong size on DFCommsFormatBase_CanWriteToChannel");
@@ -209,7 +209,7 @@ public:
 	class FName                                   ChannelName;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDFCommsFormatAccessRule                      AccessRulesToCheck;                                // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1114[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommsFormatBase_HasAccessToChannel) == 0x000004, "Wrong alignment on DFCommsFormatBase_HasAccessToChannel");
 static_assert(sizeof(DFCommsFormatBase_HasAccessToChannel) == 0x00000C, "Wrong size on DFCommsFormatBase_HasAccessToChannel");
@@ -278,7 +278,7 @@ struct DFCommStatics_CommsFormatHasExclusiveChannel final
 public:
 	const class UDFCommsFormatBase*               Format;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1115[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_CommsFormatHasExclusiveChannel) == 0x000008, "Wrong alignment on DFCommStatics_CommsFormatHasExclusiveChannel");
 static_assert(sizeof(DFCommStatics_CommsFormatHasExclusiveChannel) == 0x000010, "Wrong size on DFCommStatics_CommsFormatHasExclusiveChannel");
@@ -293,7 +293,7 @@ public:
 	const class APlayerController*                PlayerFormatOwner;                                 // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   FormatName;                                        // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1116[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_CommsFormatHasExclusiveChannelByName) == 0x000008, "Wrong alignment on DFCommStatics_CommsFormatHasExclusiveChannelByName");
 static_assert(sizeof(DFCommStatics_CommsFormatHasExclusiveChannelByName) == 0x000018, "Wrong size on DFCommStatics_CommsFormatHasExclusiveChannelByName");
@@ -310,7 +310,7 @@ public:
 	const class UDFCommsFormatBase*               Format;                                            // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class UDFCommChannel*                   ChannelToCheck;                                    // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1117[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_CommsFormatUsesChannel) == 0x000008, "Wrong alignment on DFCommStatics_CommsFormatUsesChannel");
 static_assert(sizeof(DFCommStatics_CommsFormatUsesChannel) == 0x000020, "Wrong size on DFCommStatics_CommsFormatUsesChannel");
@@ -328,7 +328,7 @@ public:
 	class FName                                   FormatName;                                        // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ChannelNameToCheck;                                // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1118[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_CommsFormatUsesChannelByName) == 0x000008, "Wrong alignment on DFCommStatics_CommsFormatUsesChannelByName");
 static_assert(sizeof(DFCommStatics_CommsFormatUsesChannelByName) == 0x000020, "Wrong size on DFCommStatics_CommsFormatUsesChannelByName");
@@ -345,7 +345,7 @@ public:
 	const class APlayerController*                Player;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UDFPlayerCommsComponent*                OutPlayerCommsComp;                                // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1119[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_FindCommsComponentByPlayer) == 0x000008, "Wrong alignment on DFCommStatics_FindCommsComponentByPlayer");
 static_assert(sizeof(DFCommStatics_FindCommsComponentByPlayer) == 0x000018, "Wrong size on DFCommStatics_FindCommsComponentByPlayer");
@@ -361,7 +361,7 @@ public:
 	const class APlayerController*                Player;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class UDFCommChannel*                   Channel;                                           // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_111A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_PlayerHasCommChannel) == 0x000008, "Wrong alignment on DFCommStatics_PlayerHasCommChannel");
 static_assert(sizeof(DFCommStatics_PlayerHasCommChannel) == 0x000018, "Wrong size on DFCommStatics_PlayerHasCommChannel");
@@ -377,7 +377,7 @@ public:
 	const class APlayerController*                Player;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ChannelName;                                       // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_111B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_PlayerHasCommChannelByName) == 0x000008, "Wrong alignment on DFCommStatics_PlayerHasCommChannelByName");
 static_assert(sizeof(DFCommStatics_PlayerHasCommChannelByName) == 0x000018, "Wrong size on DFCommStatics_PlayerHasCommChannelByName");
@@ -395,7 +395,7 @@ public:
 	class UDFCommChannel*                         ReceivingChannel;                                  // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDFGenericChannelMsg                   MsgToSend;                                         // 0x0018(0x0038)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          bUseChannelAsNewExclusive;                         // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_111C[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_SendCommsViaChannel) == 0x000008, "Wrong alignment on DFCommStatics_SendCommsViaChannel");
 static_assert(sizeof(DFCommStatics_SendCommsViaChannel) == 0x000058, "Wrong size on DFCommStatics_SendCommsViaChannel");
@@ -415,7 +415,7 @@ public:
 	class FName                                   ReceivingChannelName;                              // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDFGenericChannelMsg                   MsgToSend;                                         // 0x0018(0x0038)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          bUseChannelAsNewExclusive;                         // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_111D[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFCommStatics_SendCommsViaChannelByName) == 0x000008, "Wrong alignment on DFCommStatics_SendCommsViaChannelByName");
 static_assert(sizeof(DFCommStatics_SendCommsViaChannelByName) == 0x000058, "Wrong size on DFCommStatics_SendCommsViaChannelByName");
@@ -606,7 +606,7 @@ public:
 	class UDFCommChannel*                         ReceivingChannel;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDFGenericChannelMsg                   CommMsgToSend;                                     // 0x0010(0x0038)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          bUseChannelAsNewExclusive;                         // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_111E[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_SendCommMsgViaChannel) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_SendCommMsgViaChannel");
 static_assert(sizeof(DFPlayerCommsComponent_SendCommMsgViaChannel) == 0x000050, "Wrong size on DFPlayerCommsComponent_SendCommMsgViaChannel");
@@ -624,7 +624,7 @@ public:
 	class FName                                   ReceivingChannelName;                              // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDFGenericChannelMsg                   CommMsgToSend;                                     // 0x0010(0x0038)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          bUseChannelAsNewExclusive;                         // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_111F[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_SendCommMsgViaChannelByName) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_SendCommMsgViaChannelByName");
 static_assert(sizeof(DFPlayerCommsComponent_SendCommMsgViaChannelByName) == 0x000050, "Wrong size on DFPlayerCommsComponent_SendCommMsgViaChannelByName");
@@ -744,7 +744,7 @@ public:
 	class FName                                   SourceChannelName;                                 // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDFGenericChannelMsg                   CommMsgToReceive;                                  // 0x0010(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1120[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_CanRecvCommMsgViaChannel) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_CanRecvCommMsgViaChannel");
 static_assert(sizeof(DFPlayerCommsComponent_CanRecvCommMsgViaChannel) == 0x000050, "Wrong size on DFPlayerCommsComponent_CanRecvCommMsgViaChannel");
@@ -762,7 +762,7 @@ public:
 	class FName                                   ChannelName;                                       // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDFGenericChannelMsg                   CommMsg;                                           // 0x0010(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1121[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_CanSendAndRecvCommMsgViaChannel) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_CanSendAndRecvCommMsgViaChannel");
 static_assert(sizeof(DFPlayerCommsComponent_CanSendAndRecvCommMsgViaChannel) == 0x000050, "Wrong size on DFPlayerCommsComponent_CanSendAndRecvCommMsgViaChannel");
@@ -781,7 +781,7 @@ public:
 	struct FDFGenericChannelMsg                   CommMsgToSend;                                     // 0x0010(0x0038)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bUseChannelAsNewExclusive;                         // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0049(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1122[0x6];                                     // 0x004A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_CanSendCommMsgViaChannel) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_CanSendCommMsgViaChannel");
 static_assert(sizeof(DFPlayerCommsComponent_CanSendCommMsgViaChannel) == 0x000050, "Wrong size on DFPlayerCommsComponent_CanSendCommMsgViaChannel");
@@ -798,7 +798,7 @@ struct DFPlayerCommsComponent_ContainsAssociatedCommsFormat final
 public:
 	class FName                                   FormatName;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1123[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_ContainsAssociatedCommsFormat) == 0x000004, "Wrong alignment on DFPlayerCommsComponent_ContainsAssociatedCommsFormat");
 static_assert(sizeof(DFPlayerCommsComponent_ContainsAssociatedCommsFormat) == 0x00000C, "Wrong size on DFPlayerCommsComponent_ContainsAssociatedCommsFormat");
@@ -812,7 +812,7 @@ struct DFPlayerCommsComponent_ContainsCommChannel final
 public:
 	const class UDFCommChannel*                   ChannelToCheck;                                    // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1124[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_ContainsCommChannel) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_ContainsCommChannel");
 static_assert(sizeof(DFPlayerCommsComponent_ContainsCommChannel) == 0x000010, "Wrong size on DFPlayerCommsComponent_ContainsCommChannel");
@@ -826,7 +826,7 @@ struct DFPlayerCommsComponent_ContainsCommChannelByName final
 public:
 	class FName                                   ChannelNameToCheck;                                // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1125[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_ContainsCommChannelByName) == 0x000004, "Wrong alignment on DFPlayerCommsComponent_ContainsCommChannelByName");
 static_assert(sizeof(DFPlayerCommsComponent_ContainsCommChannelByName) == 0x00000C, "Wrong size on DFPlayerCommsComponent_ContainsCommChannelByName");
@@ -841,7 +841,7 @@ public:
 	class FName                                   FormatName;                                        // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UDFCommsFormatBase*                     OutFormatFound;                                    // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1126[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_FindAssociatedCommsFormat) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_FindAssociatedCommsFormat");
 static_assert(sizeof(DFPlayerCommsComponent_FindAssociatedCommsFormat) == 0x000018, "Wrong size on DFPlayerCommsComponent_FindAssociatedCommsFormat");
@@ -857,7 +857,7 @@ public:
 	class FName                                   ChannelName;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UDFCommChannel*                         OutChannelFound;                                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1127[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_FindCommChannel) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_FindCommChannel");
 static_assert(sizeof(DFPlayerCommsComponent_FindCommChannel) == 0x000018, "Wrong size on DFPlayerCommsComponent_FindCommChannel");
@@ -872,7 +872,7 @@ struct DFPlayerCommsComponent_FormatHasExclusiveChannel final
 public:
 	const class UDFCommsFormatBase*               Format;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1128[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_FormatHasExclusiveChannel) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_FormatHasExclusiveChannel");
 static_assert(sizeof(DFPlayerCommsComponent_FormatHasExclusiveChannel) == 0x000010, "Wrong size on DFPlayerCommsComponent_FormatHasExclusiveChannel");
@@ -886,7 +886,7 @@ struct DFPlayerCommsComponent_FormatHasExclusiveChannelByName final
 public:
 	class FName                                   FormatName;                                        // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1129[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_FormatHasExclusiveChannelByName) == 0x000004, "Wrong alignment on DFPlayerCommsComponent_FormatHasExclusiveChannelByName");
 static_assert(sizeof(DFPlayerCommsComponent_FormatHasExclusiveChannelByName) == 0x00000C, "Wrong size on DFPlayerCommsComponent_FormatHasExclusiveChannelByName");
@@ -901,7 +901,7 @@ public:
 	const class UDFCommsFormatBase*               Format;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class UDFCommChannel*                   ChannelToCheck;                                    // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_112A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_FormatUsesChannel) == 0x000008, "Wrong alignment on DFPlayerCommsComponent_FormatUsesChannel");
 static_assert(sizeof(DFPlayerCommsComponent_FormatUsesChannel) == 0x000018, "Wrong size on DFPlayerCommsComponent_FormatUsesChannel");
@@ -917,7 +917,7 @@ public:
 	class FName                                   FormatName;                                        // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ChannelNameToCheck;                                // 0x0008(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_112B[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFPlayerCommsComponent_FormatUsesChannelByName) == 0x000004, "Wrong alignment on DFPlayerCommsComponent_FormatUsesChannelByName");
 static_assert(sizeof(DFPlayerCommsComponent_FormatUsesChannelByName) == 0x000014, "Wrong size on DFPlayerCommsComponent_FormatUsesChannelByName");
@@ -943,7 +943,7 @@ struct DFVOIPCommStatics_ApplyVOIPTalkerSettingsForPlayer final
 public:
 	const class APlayerState*                     TalkerPlayerState;                                 // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ListenerLocalUserNum;                              // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_112D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVOIPCommStatics_ApplyVOIPTalkerSettingsForPlayer) == 0x000008, "Wrong alignment on DFVOIPCommStatics_ApplyVOIPTalkerSettingsForPlayer");
 static_assert(sizeof(DFVOIPCommStatics_ApplyVOIPTalkerSettingsForPlayer) == 0x000010, "Wrong size on DFVOIPCommStatics_ApplyVOIPTalkerSettingsForPlayer");
@@ -996,7 +996,7 @@ struct DFVOIPCommStatics_IsPlayerTalkerPendingReset final
 public:
 	const class APlayerState*                     PlayerState;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_112E[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVOIPCommStatics_IsPlayerTalkerPendingReset) == 0x000008, "Wrong alignment on DFVOIPCommStatics_IsPlayerTalkerPendingReset");
 static_assert(sizeof(DFVOIPCommStatics_IsPlayerTalkerPendingReset) == 0x000010, "Wrong size on DFVOIPCommStatics_IsPlayerTalkerPendingReset");
@@ -1010,7 +1010,7 @@ struct DFVOIPCommStatics_IsPlayerTalking final
 public:
 	const class APlayerState*                     PlayerState;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_112F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVOIPCommStatics_IsPlayerTalking) == 0x000008, "Wrong alignment on DFVOIPCommStatics_IsPlayerTalking");
 static_assert(sizeof(DFVOIPCommStatics_IsPlayerTalking) == 0x000010, "Wrong size on DFVOIPCommStatics_IsPlayerTalking");
@@ -1025,7 +1025,7 @@ public:
 	const class APlayerState*                     PlayerState;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class UDFCommChannel*                   TalkChannel;                                       // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1130[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVOIPCommStatics_IsPlayerTalkingOverChannel) == 0x000008, "Wrong alignment on DFVOIPCommStatics_IsPlayerTalkingOverChannel");
 static_assert(sizeof(DFVOIPCommStatics_IsPlayerTalkingOverChannel) == 0x000018, "Wrong size on DFVOIPCommStatics_IsPlayerTalkingOverChannel");
@@ -1040,7 +1040,7 @@ struct DFVOIPCommStatics_WasPlayerTalking final
 public:
 	const class APlayerState*                     PlayerState;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1131[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DFVOIPCommStatics_WasPlayerTalking) == 0x000008, "Wrong alignment on DFVOIPCommStatics_WasPlayerTalking");
 static_assert(sizeof(DFVOIPCommStatics_WasPlayerTalking) == 0x000010, "Wrong size on DFVOIPCommStatics_WasPlayerTalking");

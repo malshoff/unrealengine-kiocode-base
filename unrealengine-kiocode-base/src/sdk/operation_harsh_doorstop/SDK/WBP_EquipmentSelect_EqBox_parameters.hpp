@@ -29,10 +29,10 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSelectableEquipment_ReturnValue;        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F65[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0018)()
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F66[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x002C(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -79,13 +79,13 @@ static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_PreConstruct, IsDesignTime) =
 struct WBP_EquipmentSelect_EqBox_C_SetHighlight final
 {
 public:
-	bool                                          Param_bHighlighted;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F67[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bHighlighted_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_EquipmentSelect_EqBox_C_SetHighlight) == 0x000004, "Wrong alignment on WBP_EquipmentSelect_EqBox_C_SetHighlight");
 static_assert(sizeof(WBP_EquipmentSelect_EqBox_C_SetHighlight) == 0x000008, "Wrong size on WBP_EquipmentSelect_EqBox_C_SetHighlight");
-static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_SetHighlight, Param_bHighlighted) == 0x000000, "Member 'WBP_EquipmentSelect_EqBox_C_SetHighlight::Param_bHighlighted' has a wrong offset!");
+static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_SetHighlight, bHighlighted_0) == 0x000000, "Member 'WBP_EquipmentSelect_EqBox_C_SetHighlight::bHighlighted_0' has a wrong offset!");
 static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_SetHighlight, CallFunc_SelectFloat_ReturnValue) == 0x000004, "Member 'WBP_EquipmentSelect_EqBox_C_SetHighlight::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
 
 // Function WBP_EquipmentSelect_EqBox.WBP_EquipmentSelect_EqBox_C.IsHighlighted
@@ -104,7 +104,7 @@ static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_IsHighlighted, bHighlight) ==
 struct WBP_EquipmentSelect_EqBox_C_SetEnabled final
 {
 public:
-	bool                                          Param_bEnabled;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bEnabled_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -113,7 +113,7 @@ public:
 };
 static_assert(alignof(WBP_EquipmentSelect_EqBox_C_SetEnabled) == 0x000001, "Wrong alignment on WBP_EquipmentSelect_EqBox_C_SetEnabled");
 static_assert(sizeof(WBP_EquipmentSelect_EqBox_C_SetEnabled) == 0x000006, "Wrong size on WBP_EquipmentSelect_EqBox_C_SetEnabled");
-static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_SetEnabled, Param_bEnabled) == 0x000000, "Member 'WBP_EquipmentSelect_EqBox_C_SetEnabled::Param_bEnabled' has a wrong offset!");
+static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_SetEnabled, bEnabled_0) == 0x000000, "Member 'WBP_EquipmentSelect_EqBox_C_SetEnabled::bEnabled_0' has a wrong offset!");
 static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_SetEnabled, Temp_byte_Variable) == 0x000001, "Member 'WBP_EquipmentSelect_EqBox_C_SetEnabled::Temp_byte_Variable' has a wrong offset!");
 static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_SetEnabled, Temp_byte_Variable_1) == 0x000002, "Member 'WBP_EquipmentSelect_EqBox_C_SetEnabled::Temp_byte_Variable_1' has a wrong offset!");
 static_assert(offsetof(WBP_EquipmentSelect_EqBox_C_SetEnabled, Temp_bool_Variable) == 0x000003, "Member 'WBP_EquipmentSelect_EqBox_C_SetEnabled::Temp_bool_Variable' has a wrong offset!");

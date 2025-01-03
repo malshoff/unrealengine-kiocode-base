@@ -58,9 +58,9 @@ public:
 	struct FSoftClassPath                         MenuGameMode;                                      // 0x0298(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, NoClear, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         bHidePlayerHUDInMainMenu : 1;                      // 0x02B0(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bUseMenuBackgroundMaps : 1;                        // 0x02B0(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_124A[0x7];                                     // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2B1[0x7];                                      // 0x02B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSoftObjectPath>                MenuBackgroundMaps;                                // 0x02B8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_124B[0x8];                                     // 0x02C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C8[0x8];                                      // 0x02C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class URCONServerSystem*                      RCONServerSystem;                                  // 0x02D0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
@@ -120,11 +120,11 @@ class UTBGameUserSettings final : public UGameUserSettings
 public:
 	uint32                                        CustomVersion;                                     // 0x0120(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUseSmoothFrameRate;                               // 0x0124(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_124D[0x3];                                     // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DesiredDisplayGamma;                               // 0x0128(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         DesiredFOV;                                        // 0x012C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUseMotionBlur;                                    // 0x0130(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_124E[0x3];                                     // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DesiredMouseSensitivityX;                          // 0x0134(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         DesiredMouseSensitivityY;                          // 0x0138(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bInvertMousePitch;                                 // 0x013C(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -133,7 +133,7 @@ public:
 	bool                                          LastConfirmedSwitchFireModeOnReselect;             // 0x013F(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUseHeadphoneMode;                                 // 0x0140(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bAllowSoundInBackground;                           // 0x0141(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_124F[0x2];                                     // 0x0142(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_142[0x2];                                      // 0x0142(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DesiredMasterVolumeLevel;                          // 0x0144(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         LastConfirmedMasterVolumeLevel;                    // 0x0148(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         DesiredSFXVolumeLevel;                             // 0x014C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -145,7 +145,7 @@ public:
 	float                                         DesiredVoiPVolumeLevel;                            // 0x0164(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         LastConfirmedVoiPVolumeLevel;                      // 0x0168(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bPlayerIsChangingKeyBindings;                      // 0x016C(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1250[0x3];                                     // 0x016D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_16D[0x3];                                      // 0x016D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   DesiredMoveForwardKey;                             // 0x0170(0x0018)(Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FKey                                   LastConfirmedMoveForwardKey;                       // 0x0188(0x0018)(Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FKey                                   DesiredMoveBackwardKey;                            // 0x01A0(0x0018)(Config, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -611,7 +611,7 @@ class UTBVoiceIndicatorListing final : public UUserWidget
 public:
 	class UTextBlock*                             PlayerName;                                        // 0x0230(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UTBVoiceIndicator*                      ParentMenu;                                        // 0x0238(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1252[0x18];                                    // 0x0240(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240[0x18];                                     // 0x0240(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Init(class UTBVoiceIndicator* InParentMenu, const struct FUniqueNetIdRepl& InUniqueNetId, class FString* InPlayerName);

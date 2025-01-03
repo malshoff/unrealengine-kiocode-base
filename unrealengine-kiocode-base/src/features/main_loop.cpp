@@ -45,15 +45,17 @@ void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 		//	continue;		
 		
 		// oar
-		if (!obj->IsA(SDK::ANPCBase_C::StaticClass()))
+		/*if (!obj->IsA(SDK::ANPCBase_C::StaticClass()))
 			continue;
 
 		SDK::ANPCBase_C* npc = static_cast<SDK::ANPCBase_C*>(obj);
 
 		if (!npc || Validity::IsBadPoint(npc) || npc->Health <= 0 || npc->Dead_)
-			continue;
+			continue;*/
 
-		list->push_back(npc);
+		//if(Config::m_bKillAll) npc->TakeDamage(999, npc);
+
+		//list->push_back(npc);
 
 	}
 }

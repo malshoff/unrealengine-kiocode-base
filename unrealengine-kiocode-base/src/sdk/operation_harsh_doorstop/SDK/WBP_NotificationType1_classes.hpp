@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EUINotificationType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "EUINotificationType_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -49,34 +49,34 @@ public:
 	class UCanvasPanel*                           ThresholdVote;                                     // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UProgressBar*                           TimerBar;                                          // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                         Display_Time;                                      // 0x02F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1FDA[0x4];                                     // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2FC[0x4];                                      // 0x02FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Text;                                              // 0x0300(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                   TimerStyle;                                        // 0x0318(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	float                                         CreationTime;                                      // 0x0330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUINotificationType                           NotificationType;                                  // 0x0334(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bUseRichText;                                      // 0x0335(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1FDB[0x2];                                     // 0x0336(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_336[0x2];                                      // 0x0336(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             No_Image;                                          // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Yes_Image;                                         // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         VotesInFavor;                                      // 0x0348(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         VotesAgainst;                                      // 0x034C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsTopOfEvents;                                    // 0x0350(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FDC[0x7];                                     // 0x0351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_351[0x7];                                      // 0x0351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_NotificationTray_C*                Tray_Ref__Automated_;                              // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         SquashLerp;                                        // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDestroying;                                       // 0x0364(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bSticky;                                           // 0x0365(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1FDD[0x2];                                     // 0x0366(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_366[0x2];                                      // 0x0366(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StickyPriority;                                    // 0x0368(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         Threshold;                                         // 0x036C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bShrinking;                                        // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_WBP_NotificationType1(int32 EntryPoint);
-	void Set_Vote_Tally(int32 Param_VotesInFavor, int32 Param_VotesAgainst);
+	void Set_Vote_Tally(int32 VotesInFavor_0, int32 VotesAgainst_0);
 	void Begin_Shrink();
 	void Shrink();
-	void Set_Threshold(int32 Param_Threshold);
+	void Set_Threshold(int32 Threshold_0);
 	void Negative_Vote();
 	void Positive_Vote();
 	void Set_Tray(class UWBP_NotificationTray_C* Notification_Tray);
@@ -89,7 +89,7 @@ public:
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void Construct();
 	void GetRemainingTime(float* Float);
-	void Get_Is_Sticky_(bool* bIsSticky, int32* Param_StickyPriority);
+	void Get_Is_Sticky_(bool* bIsSticky, int32* StickyPriority_0);
 
 public:
 	static class UClass* StaticClass()

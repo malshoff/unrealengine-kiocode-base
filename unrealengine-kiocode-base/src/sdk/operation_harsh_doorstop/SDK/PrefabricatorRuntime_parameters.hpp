@@ -45,7 +45,7 @@ struct PrefabActor_RandomizeSeed final
 public:
 	struct FRandomStream                          InRandom;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bRecursive;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12D7[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PrefabActor_RandomizeSeed) == 0x000004, "Wrong alignment on PrefabActor_RandomizeSeed");
 static_assert(sizeof(PrefabActor_RandomizeSeed) == 0x00000C, "Wrong size on PrefabActor_RandomizeSeed");
@@ -121,7 +121,7 @@ public:
 	class APrefabActor*                           PrefabActor;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPrefabricatorAssetInterface*           Prefab;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bReloadPrefab;                                     // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12E4[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(PrefabricatorBlueprintLibrary_SetPrefabAsset) == 0x000008, "Wrong alignment on PrefabricatorBlueprintLibrary_SetPrefabAsset");
 static_assert(sizeof(PrefabricatorBlueprintLibrary_SetPrefabAsset) == 0x000018, "Wrong size on PrefabricatorBlueprintLibrary_SetPrefabAsset");
@@ -138,7 +138,7 @@ public:
 	class UPrefabricatorAssetInterface*           Prefab;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTransform                             Transform;                                         // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Seed;                                              // 0x0040(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12E5[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APrefabActor*                           ReturnValue;                                       // 0x0048(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(PrefabricatorBlueprintLibrary_SpawnPrefab) == 0x000010, "Wrong alignment on PrefabricatorBlueprintLibrary_SpawnPrefab");

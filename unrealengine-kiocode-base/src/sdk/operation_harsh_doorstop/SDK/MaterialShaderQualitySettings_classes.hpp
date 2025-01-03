@@ -44,7 +44,7 @@ class UShaderPlatformQualitySettings final : public UObject
 {
 public:
 	struct FMaterialQualityOverrides              QualityOverrides[0x3];                             // 0x0028(0x0009)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_159B[0x15];                                    // 0x0043(0x0015)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_43[0x15];                                      // 0x0043(0x0015)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

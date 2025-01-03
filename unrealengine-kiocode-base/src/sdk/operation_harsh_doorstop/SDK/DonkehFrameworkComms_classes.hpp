@@ -29,7 +29,7 @@ public:
 	FMulticastInlineDelegateProperty_             OnFailure;                                         // 0x0050(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class APlayerController*                      CreateChannelOwnerPC;                              // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UDFCommChannelDefinition*               CreateChannelDef;                                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1107[0x18];                                    // 0x0070(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_70[0x18];                                      // 0x0070(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UCreateCommChannelCallbackProxy* CreateCommChannelFor(class APlayerController* Player, const class UDFCommChannelDefinition* ChannelDef, const class FName ChannelNameOverride);
@@ -57,18 +57,18 @@ static_assert(offsetof(UCreateCommChannelCallbackProxy, CreateChannelDef) == 0x0
 class UDFCommChannel final : public UObject
 {
 public:
-	uint8                                         Pad_1108[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bChannelPreInitialized : 1;                        // 0x0030(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bChannelClosed : 1;                                // 0x0030(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bCompletedSetup : 1;                               // 0x0030(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bChannelOpenOnClient : 1;                          // 0x0030(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_1109[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ChannelName;                                       // 0x0034(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_110A[0x4];                                     // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFCommChannelDefinition*               ChannelDefinition;                                 // 0x0040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UObject*                                ChannelState;                                      // 0x0048(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UDFCommsFormatBase*>             AssociatedCommsFormats;                            // 0x0050(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_110B[0x30];                                    // 0x0060(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x30];                                      // 0x0060(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetChannelState(class UObject* NewChannelState);
@@ -105,9 +105,9 @@ public:
 	class FName                                   ChannelName;                                       // 0x0030(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FText                                   ChannelDisplayName;                                // 0x0038(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPrivate)
 	uint8                                         bInstanceChannelWithGroup : 1;                     // 0x0050(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_110D[0x3];                                     // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ChannelGroupName;                                  // 0x0054(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_110E[0x4];                                     // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 ChannelStateClass;                                 // 0x0060(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TMap<TSubclassOf<class UDFCommsFormatBase>, EDFCommsFormatAccessRule> FormatAccessRules;                                 // 0x0068(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPrivate)
 
@@ -206,9 +206,9 @@ class UDFCommsFormatBase : public UObject
 public:
 	uint8                                         bSingleChannelUsageOnly : 1;                       // 0x0028(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bRequiresValidSingleChannelAssignment : 1;         // 0x0028(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_1110[0x17];                                    // 0x0029(0x0017)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29[0x17];                                      // 0x0029(0x0017)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDFGenericChannelMsg                   LastReceivedCommMsg;                               // 0x0040(0x0038)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1111[0x50];                                    // 0x0078(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_78[0x50];                                      // 0x0078(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   FormatName;                                        // 0x00C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
@@ -379,7 +379,7 @@ class UDFVOIPCommsFormat final : public UDFCommsFormatBase
 {
 public:
 	FMulticastInlineDelegateProperty_             OnPlayerTalkingStateChangedOnChannel;              // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_112C[0x20];                                    // 0x00E0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_E0[0x20];                                      // 0x00E0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnTalkerPSDestroyed(class AActor* DestroyedPS);

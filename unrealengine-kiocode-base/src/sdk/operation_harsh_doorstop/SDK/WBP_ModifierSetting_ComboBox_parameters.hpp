@@ -40,16 +40,16 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D8C[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Array_Get_Item;                           // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D8D[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0030(0x0018)()
 	class FString                                 K2Node_ComponentBoundEvent_SelectedItem;           // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	ESelectInfo                                   K2Node_ComponentBoundEvent_SelectionType;          // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D8E[0x6];                                     // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0060(0x0018)()
 	class USizeBoxSlot*                           CallFunc_SlotAsSizeBoxSlot_ReturnValue;            // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -111,11 +111,11 @@ static_assert(offsetof(WBP_ModifierSetting_ComboBox_C_SetSettingText, InSettingT
 struct WBP_ModifierSetting_ComboBox_C_GetSettingText final
 {
 public:
-	class FText                                   Param_SettingText;                                 // 0x0000(0x0018)(Parm, OutParm)
+	class FText                                   SettingText_0;                                     // 0x0000(0x0018)(Parm, OutParm)
 };
 static_assert(alignof(WBP_ModifierSetting_ComboBox_C_GetSettingText) == 0x000008, "Wrong alignment on WBP_ModifierSetting_ComboBox_C_GetSettingText");
 static_assert(sizeof(WBP_ModifierSetting_ComboBox_C_GetSettingText) == 0x000018, "Wrong size on WBP_ModifierSetting_ComboBox_C_GetSettingText");
-static_assert(offsetof(WBP_ModifierSetting_ComboBox_C_GetSettingText, Param_SettingText) == 0x000000, "Member 'WBP_ModifierSetting_ComboBox_C_GetSettingText::Param_SettingText' has a wrong offset!");
+static_assert(offsetof(WBP_ModifierSetting_ComboBox_C_GetSettingText, SettingText_0) == 0x000000, "Member 'WBP_ModifierSetting_ComboBox_C_GetSettingText::SettingText_0' has a wrong offset!");
 
 }
 

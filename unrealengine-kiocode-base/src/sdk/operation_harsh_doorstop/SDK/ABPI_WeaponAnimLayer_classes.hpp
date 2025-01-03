@@ -21,10 +21,10 @@ namespace SDK
 class IABPI_WeaponAnimLayer_C final : public IAnimLayerInterface
 {
 public:
-	void WeaponUpperBody(const struct FPoseLink& UpperBody, struct FPoseLink* Param_WeaponUpperBody);
-	void WeaponAdditive(struct FPoseLink* Param_WeaponAdditive);
-	void Move(const struct FPoseLink& Param_Move, struct FPoseLink* Param_Move_0);
-	void WeaponJumpLoop(const struct FPoseLink& LowerJumpLoop, struct FPoseLink* Param_WeaponJumpLoop);
+	void WeaponUpperBody(const struct FPoseLink& UpperBody, struct FPoseLink* WeaponUpperBody_0);
+	void WeaponAdditive(struct FPoseLink* WeaponAdditive_0);
+	void Move(const struct FPoseLink& Move_0, struct FPoseLink* Move_1);
+	void WeaponJumpLoop(const struct FPoseLink& LowerJumpLoop, struct FPoseLink* WeaponJumpLoop_0);
 
 public:
 	static class UClass* StaticClass()

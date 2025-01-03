@@ -40,10 +40,10 @@ void UWBP_NotificationType1_C::ExecuteUbergraph_WBP_NotificationType1(int32 Entr
 // Function WBP_NotificationType1.WBP_NotificationType1_C.Set Vote Tally
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_VotesInFavor                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Param_VotesAgainst                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   VotesInFavor_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   VotesAgainst_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NotificationType1_C::Set_Vote_Tally(int32 Param_VotesInFavor, int32 Param_VotesAgainst)
+void UWBP_NotificationType1_C::Set_Vote_Tally(int32 VotesInFavor_0, int32 VotesAgainst_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -52,8 +52,8 @@ void UWBP_NotificationType1_C::Set_Vote_Tally(int32 Param_VotesInFavor, int32 Pa
 
 	Params::WBP_NotificationType1_C_Set_Vote_Tally Parms{};
 
-	Parms.Param_VotesInFavor = Param_VotesInFavor;
-	Parms.Param_VotesAgainst = Param_VotesAgainst;
+	Parms.VotesInFavor_0 = VotesInFavor_0;
+	Parms.VotesAgainst_0 = VotesAgainst_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -90,9 +90,9 @@ void UWBP_NotificationType1_C::Shrink()
 // Function WBP_NotificationType1.WBP_NotificationType1_C.Set Threshold
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Param_Threshold                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Threshold_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NotificationType1_C::Set_Threshold(int32 Param_Threshold)
+void UWBP_NotificationType1_C::Set_Threshold(int32 Threshold_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -101,7 +101,7 @@ void UWBP_NotificationType1_C::Set_Threshold(int32 Param_Threshold)
 
 	Params::WBP_NotificationType1_C_Set_Threshold Parms{};
 
-	Parms.Param_Threshold = Param_Threshold;
+	Parms.Threshold_0 = Threshold_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -320,9 +320,9 @@ void UWBP_NotificationType1_C::GetRemainingTime(float* Float)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    bIsSticky                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Param_StickyPriority                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   StickyPriority_0                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NotificationType1_C::Get_Is_Sticky_(bool* bIsSticky, int32* Param_StickyPriority)
+void UWBP_NotificationType1_C::Get_Is_Sticky_(bool* bIsSticky, int32* StickyPriority_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -336,8 +336,8 @@ void UWBP_NotificationType1_C::Get_Is_Sticky_(bool* bIsSticky, int32* Param_Stic
 	if (bIsSticky != nullptr)
 		*bIsSticky = Parms.bIsSticky;
 
-	if (Param_StickyPriority != nullptr)
-		*Param_StickyPriority = Parms.Param_StickyPriority;
+	if (StickyPriority_0 != nullptr)
+		*StickyPriority_0 = Parms.StickyPriority_0;
 }
 
 }

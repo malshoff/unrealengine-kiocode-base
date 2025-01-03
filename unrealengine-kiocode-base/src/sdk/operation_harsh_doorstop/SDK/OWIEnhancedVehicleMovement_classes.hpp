@@ -59,7 +59,7 @@ class UVehicleMovementWheelTracked final : public UVehicleWheel
 {
 public:
 	struct FVector                                SuspensionDirection;                               // 0x00F0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12D1[0x4];                                     // 0x00FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -119,7 +119,7 @@ public:
 	TArray<float>                                 WheelAngles;                                       // 0x0398(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         LeftTrackSpeed;                                    // 0x03A8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         RightTrackSpeed;                                   // 0x03AC(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12D2[0x8];                                     // 0x03B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3B0[0x8];                                      // 0x03B0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetBothTracksThrottleInput(float InThrottle);

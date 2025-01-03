@@ -27,7 +27,7 @@ public:
 	class UButton*                                DeployBtn;                                         // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             DeployBtnText;                                     // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bCloseBtnBehavior;                                 // 0x0248(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EDF[0x7];                                     // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_249[0x7];                                      // 0x0249(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   DeployText;                                        // 0x0250(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly)
 	class FText                                   CloseMenuText;                                     // 0x0268(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly)
 	FMulticastInlineDelegateProperty_             OnClicked;                                         // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -37,11 +37,11 @@ public:
 	FMulticastInlineDelegateProperty_             OnUnhovered;                                       // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                   SelectSpawnText;                                   // 0x02D0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly)
 	bool                                          bDeploying;                                        // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE0[0x7];                                     // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E9[0x7];                                      // 0x02E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FButtonStyle                           DeployBtnStyle;                                    // 0x02F0(0x0278)(Edit, BlueprintVisible, BlueprintReadOnly)
 	struct FButtonStyle                           CancelBtnStyle;                                    // 0x0568(0x0278)(Edit, BlueprintVisible, BlueprintReadOnly)
 	bool                                          bDesignPreviewCancelBtn;                           // 0x07E0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EE1[0x7];                                     // 0x07E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_7E1[0x7];                                      // 0x07E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CancelDeploymentText;                              // 0x07E8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly)
 	bool                                          bSpawnPointSelected;                               // 0x0800(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bUseCancelBehavior;                                // 0x0801(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -60,8 +60,8 @@ public:
 	void BndEvt__DeployBtn_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature();
 	void BndEvt__DeployBtn_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void PreConstruct(bool IsDesignTime);
-	void UpdateDeployBtnState(bool bPlayerAlive, bool bDeploymentQueued, bool Param_bSpawnPointSelected);
-	void InternalUpdateBtnText(bool Param_bDeploying, bool Param_bSpawnPointSelected);
+	void UpdateDeployBtnState(bool bPlayerAlive, bool bDeploymentQueued, bool bSpawnPointSelected_0);
+	void InternalUpdateBtnText(bool bDeploying_0, bool bSpawnPointSelected_0);
 	void InternalUpdateBtnStyle();
 	void InternalGetSpawnTimeRemaining(int32* SpawnSeconds);
 

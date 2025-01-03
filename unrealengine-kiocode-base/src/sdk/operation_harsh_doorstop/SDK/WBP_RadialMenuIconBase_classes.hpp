@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "SRadialMenuIconSettings_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
+#include "SRadialMenuIconSettings_structs.hpp"
 #include "EIconAnimationStyles_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 namespace SDK
@@ -35,7 +35,7 @@ public:
 	struct FSRadialMenuIconSettings               Settings;                                          // 0x0264(0x0028)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FLinearColor                           CurrentColor;                                      // 0x028C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Highlighted;                                       // 0x029C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1EBB[0x3];                                     // 0x029D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_29D[0x3];                                      // 0x029D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Alpha;                                             // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

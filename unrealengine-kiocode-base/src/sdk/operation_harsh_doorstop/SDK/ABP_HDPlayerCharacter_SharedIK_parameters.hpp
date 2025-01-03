@@ -33,12 +33,12 @@ struct ABP_HDPlayerCharacter_SharedIK_C_AnimGraph final
 {
 public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              Param_AnimGraph;                                   // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(ABP_HDPlayerCharacter_SharedIK_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_HDPlayerCharacter_SharedIK_C_AnimGraph");
 static_assert(sizeof(ABP_HDPlayerCharacter_SharedIK_C_AnimGraph) == 0x000020, "Wrong size on ABP_HDPlayerCharacter_SharedIK_C_AnimGraph");
 static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_AnimGraph, InPose) == 0x000000, "Member 'ABP_HDPlayerCharacter_SharedIK_C_AnimGraph::InPose' has a wrong offset!");
-static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_AnimGraph, Param_AnimGraph) == 0x000010, "Member 'ABP_HDPlayerCharacter_SharedIK_C_AnimGraph::Param_AnimGraph' has a wrong offset!");
+static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_AnimGraph, AnimGraph_0) == 0x000010, "Member 'ABP_HDPlayerCharacter_SharedIK_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 // Function ABP_HDPlayerCharacter_SharedIK.ABP_HDPlayerCharacter_SharedIK_C.HandIK
 // 0x0020 (0x0020 - 0x0000)
@@ -46,12 +46,12 @@ struct ABP_HDPlayerCharacter_SharedIK_C_HandIK final
 {
 public:
 	struct FPoseLink                              InLocoPose;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              Param_HandIK;                                      // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              HandIK_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(ABP_HDPlayerCharacter_SharedIK_C_HandIK) == 0x000008, "Wrong alignment on ABP_HDPlayerCharacter_SharedIK_C_HandIK");
 static_assert(sizeof(ABP_HDPlayerCharacter_SharedIK_C_HandIK) == 0x000020, "Wrong size on ABP_HDPlayerCharacter_SharedIK_C_HandIK");
 static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_HandIK, InLocoPose) == 0x000000, "Member 'ABP_HDPlayerCharacter_SharedIK_C_HandIK::InLocoPose' has a wrong offset!");
-static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_HandIK, Param_HandIK) == 0x000010, "Member 'ABP_HDPlayerCharacter_SharedIK_C_HandIK::Param_HandIK' has a wrong offset!");
+static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_HandIK, HandIK_0) == 0x000010, "Member 'ABP_HDPlayerCharacter_SharedIK_C_HandIK::HandIK_0' has a wrong offset!");
 
 // Function ABP_HDPlayerCharacter_SharedIK.ABP_HDPlayerCharacter_SharedIK_C.FootIK
 // 0x0020 (0x0020 - 0x0000)
@@ -59,12 +59,12 @@ struct ABP_HDPlayerCharacter_SharedIK_C_FootIK final
 {
 public:
 	struct FPoseLink                              InLocoPose;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              Param_FootIK;                                      // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              FootIK_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
 static_assert(alignof(ABP_HDPlayerCharacter_SharedIK_C_FootIK) == 0x000008, "Wrong alignment on ABP_HDPlayerCharacter_SharedIK_C_FootIK");
 static_assert(sizeof(ABP_HDPlayerCharacter_SharedIK_C_FootIK) == 0x000020, "Wrong size on ABP_HDPlayerCharacter_SharedIK_C_FootIK");
 static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_FootIK, InLocoPose) == 0x000000, "Member 'ABP_HDPlayerCharacter_SharedIK_C_FootIK::InLocoPose' has a wrong offset!");
-static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_FootIK, Param_FootIK) == 0x000010, "Member 'ABP_HDPlayerCharacter_SharedIK_C_FootIK::Param_FootIK' has a wrong offset!");
+static_assert(offsetof(ABP_HDPlayerCharacter_SharedIK_C_FootIK, FootIK_0) == 0x000010, "Member 'ABP_HDPlayerCharacter_SharedIK_C_FootIK::FootIK_0' has a wrong offset!");
 
 }
 

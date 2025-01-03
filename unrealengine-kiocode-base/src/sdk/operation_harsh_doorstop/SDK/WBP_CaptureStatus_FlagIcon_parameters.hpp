@@ -81,15 +81,15 @@ static_assert(offsetof(WBP_CaptureStatus_FlagIcon_C_OnUpdateIcon, ObjType) == 0x
 struct WBP_CaptureStatus_FlagIcon_C_SetBrushes final
 {
 public:
-	struct FSlateBrush                            Param_IconFrame;                                   // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FSlateBrush                            Param_BG;                                          // 0x0088(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FSlateBrush                            Param_Icon;                                        // 0x0110(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FSlateBrush                            IconFrame_0;                                       // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FSlateBrush                            Bg_0;                                              // 0x0088(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FSlateBrush                            Icon_0;                                            // 0x0110(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 static_assert(alignof(WBP_CaptureStatus_FlagIcon_C_SetBrushes) == 0x000008, "Wrong alignment on WBP_CaptureStatus_FlagIcon_C_SetBrushes");
 static_assert(sizeof(WBP_CaptureStatus_FlagIcon_C_SetBrushes) == 0x000198, "Wrong size on WBP_CaptureStatus_FlagIcon_C_SetBrushes");
-static_assert(offsetof(WBP_CaptureStatus_FlagIcon_C_SetBrushes, Param_IconFrame) == 0x000000, "Member 'WBP_CaptureStatus_FlagIcon_C_SetBrushes::Param_IconFrame' has a wrong offset!");
-static_assert(offsetof(WBP_CaptureStatus_FlagIcon_C_SetBrushes, Param_BG) == 0x000088, "Member 'WBP_CaptureStatus_FlagIcon_C_SetBrushes::Param_BG' has a wrong offset!");
-static_assert(offsetof(WBP_CaptureStatus_FlagIcon_C_SetBrushes, Param_Icon) == 0x000110, "Member 'WBP_CaptureStatus_FlagIcon_C_SetBrushes::Param_Icon' has a wrong offset!");
+static_assert(offsetof(WBP_CaptureStatus_FlagIcon_C_SetBrushes, IconFrame_0) == 0x000000, "Member 'WBP_CaptureStatus_FlagIcon_C_SetBrushes::IconFrame_0' has a wrong offset!");
+static_assert(offsetof(WBP_CaptureStatus_FlagIcon_C_SetBrushes, Bg_0) == 0x000088, "Member 'WBP_CaptureStatus_FlagIcon_C_SetBrushes::Bg_0' has a wrong offset!");
+static_assert(offsetof(WBP_CaptureStatus_FlagIcon_C_SetBrushes, Icon_0) == 0x000110, "Member 'WBP_CaptureStatus_FlagIcon_C_SetBrushes::Icon_0' has a wrong offset!");
 
 // Function WBP_CaptureStatus_FlagIcon.WBP_CaptureStatus_FlagIcon_C.UpdateBrushesByTeam
 // 0x00B8 (0x00B8 - 0x0000)
@@ -100,13 +100,13 @@ public:
 	EHDTeam                                       Team;                                              // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EHDControlPointObjectiveType                  ObjType;                                           // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInLocked;                                         // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1510[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            IconToUse;                                         // 0x0008(0x0088)(Edit, BlueprintVisible)
 	class UTexture2D*                             Temp_object_Variable;                              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             Temp_object_Variable_2;                            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EHDControlPointObjectiveType                  Temp_byte_Variable;                                // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1511[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_CaptureStatus_FlagIcon_C_UpdateBrushesByTeam) == 0x000008, "Wrong alignment on WBP_CaptureStatus_FlagIcon_C_UpdateBrushesByTeam");
@@ -129,11 +129,11 @@ struct WBP_CaptureStatus_FlagIcon_C_TintBrushByTeam final
 public:
 	struct FSlateBrush                            BrushToTint;                                       // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	EHDTeam                                       Team;                                              // 0x0088(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1512[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            NewBrush;                                          // 0x0090(0x0088)(Parm, OutParm)
 	struct FSlateColor                            TintColor;                                         // 0x0118(0x0028)(Edit, BlueprintVisible)
 	EHDTeam                                       Temp_byte_Variable;                                // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1513[0x7];                                     // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0148(0x0088)()
 	struct FSlateColor                            K2Node_Select_Default;                             // 0x01D0(0x0028)()
 };
@@ -155,12 +155,12 @@ public:
 	struct FSlateBrush                            BrushToUpdate;                                     // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bLocked;                                           // 0x0088(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EHDControlPointObjectiveType                  ObjType;                                           // 0x0089(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1514[0x6];                                     // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            NewBrush;                                          // 0x0090(0x0088)(Parm, OutParm)
 	float                                         OpacityToUse;                                      // 0x0118(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x011C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EHDControlPointObjectiveType                  Temp_byte_Variable;                                // 0x011D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1515[0x2];                                     // 0x011E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11E[0x2];                                      // 0x011E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0120(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0130(0x0028)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0158(0x0088)()

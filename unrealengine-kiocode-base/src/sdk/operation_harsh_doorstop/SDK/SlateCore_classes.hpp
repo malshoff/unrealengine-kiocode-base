@@ -38,7 +38,7 @@ static_assert(sizeof(IFontProviderInterface) == 0x000028, "Wrong size on IFontPr
 class USlateWidgetStyleContainerBase : public UObject
 {
 public:
-	uint8                                         Pad_12A1[0x8];                                     // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -58,7 +58,7 @@ static_assert(sizeof(USlateWidgetStyleContainerBase) == 0x000030, "Wrong size on
 class UFontBulkData final : public UObject
 {
 public:
-	uint8                                         Pad_12A2[0x48];                                    // 0x0028(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_28[0x48];                                      // 0x0028(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

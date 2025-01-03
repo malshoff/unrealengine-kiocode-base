@@ -86,11 +86,11 @@ void UWBP_CaptureStatus_FlagIcon_C::OnUpdateIcon(bool bActive, EHDTeam Team, boo
 // Function WBP_CaptureStatus_FlagIcon.WBP_CaptureStatus_FlagIcon_C.SetBrushes
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      Param_IconFrame                                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FSlateBrush                      Param_BG                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FSlateBrush                      Param_Icon                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FSlateBrush                      IconFrame_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FSlateBrush                      Bg_0                                                   (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FSlateBrush                      Icon_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_CaptureStatus_FlagIcon_C::SetBrushes(struct FSlateBrush& Param_IconFrame, struct FSlateBrush& Param_BG, struct FSlateBrush& Param_Icon)
+void UWBP_CaptureStatus_FlagIcon_C::SetBrushes(struct FSlateBrush& IconFrame_0, struct FSlateBrush& Bg_0, struct FSlateBrush& Icon_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -99,15 +99,15 @@ void UWBP_CaptureStatus_FlagIcon_C::SetBrushes(struct FSlateBrush& Param_IconFra
 
 	Params::WBP_CaptureStatus_FlagIcon_C_SetBrushes Parms{};
 
-	Parms.Param_IconFrame = std::move(Param_IconFrame);
-	Parms.Param_BG = std::move(Param_BG);
-	Parms.Param_Icon = std::move(Param_Icon);
+	Parms.IconFrame_0 = std::move(IconFrame_0);
+	Parms.Bg_0 = std::move(Bg_0);
+	Parms.Icon_0 = std::move(Icon_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Param_IconFrame = std::move(Parms.Param_IconFrame);
-	Param_BG = std::move(Parms.Param_BG);
-	Param_Icon = std::move(Parms.Param_Icon);
+	IconFrame_0 = std::move(Parms.IconFrame_0);
+	Bg_0 = std::move(Parms.Bg_0);
+	Icon_0 = std::move(Parms.Icon_0);
 }
 
 

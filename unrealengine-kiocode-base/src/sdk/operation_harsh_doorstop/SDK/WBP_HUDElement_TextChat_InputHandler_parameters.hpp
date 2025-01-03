@@ -36,13 +36,13 @@ struct WBP_HUDElement_TextChat_InputHandler_C_ExecuteUbergraph_WBP_HUDElement_Te
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F69[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x0008(0x0018)(ConstParm)
 	ETextCommit                                   K2Node_ComponentBoundEvent_CommitMethod;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F6A[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFCommChannel*                         K2Node_Event_CurrentChannel;                       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1F6B[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFCommChannel*                         K2Node_Event_NewTalkChannel;                       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetChannelDisplayName_ReturnValue;        // 0x0040(0x0018)()
 	class FText                                   K2Node_CustomEvent_Text;                           // 0x0058(0x0018)()
@@ -103,11 +103,11 @@ static_assert(offsetof(WBP_HUDElement_TextChat_InputHandler_C_InputTextEntered, 
 struct WBP_HUDElement_TextChat_InputHandler_C_StopTalking final
 {
 public:
-	class UDFCommChannel*                         Param_CurrentChannel;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UDFCommChannel*                         CurrentChannel_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_HUDElement_TextChat_InputHandler_C_StopTalking) == 0x000008, "Wrong alignment on WBP_HUDElement_TextChat_InputHandler_C_StopTalking");
 static_assert(sizeof(WBP_HUDElement_TextChat_InputHandler_C_StopTalking) == 0x000008, "Wrong size on WBP_HUDElement_TextChat_InputHandler_C_StopTalking");
-static_assert(offsetof(WBP_HUDElement_TextChat_InputHandler_C_StopTalking, Param_CurrentChannel) == 0x000000, "Member 'WBP_HUDElement_TextChat_InputHandler_C_StopTalking::Param_CurrentChannel' has a wrong offset!");
+static_assert(offsetof(WBP_HUDElement_TextChat_InputHandler_C_StopTalking, CurrentChannel_0) == 0x000000, "Member 'WBP_HUDElement_TextChat_InputHandler_C_StopTalking::CurrentChannel_0' has a wrong offset!");
 
 // Function WBP_HUDElement_TextChat_InputHandler.WBP_HUDElement_TextChat_InputHandler_C.StartTalking
 // 0x0008 (0x0008 - 0x0000)

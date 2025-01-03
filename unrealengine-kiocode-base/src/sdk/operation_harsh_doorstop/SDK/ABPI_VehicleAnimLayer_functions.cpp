@@ -21,9 +21,9 @@ namespace SDK
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FPoseLink                        LowerBody                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink                        Param_VehicleLowerBody                                 (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        VehicleLowerBody_0                                     (Parm, OutParm, NoDestructor)
 
-void IABPI_VehicleAnimLayer_C::VehicleLowerBody(const struct FPoseLink& LowerBody, struct FPoseLink* Param_VehicleLowerBody)
+void IABPI_VehicleAnimLayer_C::VehicleLowerBody(const struct FPoseLink& LowerBody, struct FPoseLink* VehicleLowerBody_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -36,8 +36,8 @@ void IABPI_VehicleAnimLayer_C::VehicleLowerBody(const struct FPoseLink& LowerBod
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_VehicleLowerBody != nullptr)
-		*Param_VehicleLowerBody = std::move(Parms.Param_VehicleLowerBody);
+	if (VehicleLowerBody_0 != nullptr)
+		*VehicleLowerBody_0 = std::move(Parms.VehicleLowerBody_0);
 }
 
 
@@ -45,9 +45,9 @@ void IABPI_VehicleAnimLayer_C::VehicleLowerBody(const struct FPoseLink& LowerBod
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FPoseLink                        FullBody                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink                        Param_VehicleFullBody                                  (Parm, OutParm, NoDestructor)
+// struct FPoseLink                        VehicleFullBody_0                                      (Parm, OutParm, NoDestructor)
 
-void IABPI_VehicleAnimLayer_C::VehicleFullBody(const struct FPoseLink& FullBody, struct FPoseLink* Param_VehicleFullBody)
+void IABPI_VehicleAnimLayer_C::VehicleFullBody(const struct FPoseLink& FullBody, struct FPoseLink* VehicleFullBody_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -60,8 +60,8 @@ void IABPI_VehicleAnimLayer_C::VehicleFullBody(const struct FPoseLink& FullBody,
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_VehicleFullBody != nullptr)
-		*Param_VehicleFullBody = std::move(Parms.Param_VehicleFullBody);
+	if (VehicleFullBody_0 != nullptr)
+		*VehicleFullBody_0 = std::move(Parms.VehicleFullBody_0);
 }
 
 }

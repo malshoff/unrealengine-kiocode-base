@@ -23,7 +23,7 @@ struct FFServerBadgeUIDefinition final
 {
 public:
 	EServerBadgeType                              Type_11_EDB490C54973A52E253141B62C748510;          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D4D[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            Icon_3_FCCFEB524CD1FF61B4B6B8AB1739316E;           // 0x0008(0x0088)(Edit, BlueprintVisible)
 	int32                                         OrderingIdx_8_900B3535409A63FA032C5D866D3A48AF;    // 0x0090(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

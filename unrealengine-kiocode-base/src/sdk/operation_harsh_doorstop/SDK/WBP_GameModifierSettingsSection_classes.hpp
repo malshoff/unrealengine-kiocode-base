@@ -33,7 +33,7 @@ public:
 	bool                                          bShowToggleBtn;                                    // 0x0278(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bExpanded;                                         // 0x0279(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                          bActive;                                           // 0x027A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1D6D[0x5];                                     // 0x027B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_27B[0x5];                                      // 0x027B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnActivated;                                       // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnDeactivated;                                     // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
@@ -45,11 +45,11 @@ public:
 	void BndEvt__SectionExpansionToggleBtn_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
 	void PreConstruct(bool IsDesignTime);
 	void SetTitleText(const class FText& InTitleText);
-	void SetExpansionState(bool Param_bExpanded);
-	void SetIsActive(bool Param_bActive);
-	void GetTitleText(class FText* Param_TitleText);
-	void IsExpanded(bool* Param_bExpanded);
-	void IsActive(bool* Param_bActive);
+	void SetExpansionState(bool bExpanded_0);
+	void SetIsActive(bool bActive_0);
+	void GetTitleText(class FText* TitleText_0);
+	void IsExpanded(bool* bExpanded_0);
+	void IsActive(bool* bActive_0);
 	void InternalRecursiveSetContentIsEnabled(bool bInIsEnabled);
 
 public:

@@ -45,9 +45,9 @@ static_assert(offsetof(FUGCPrimaryAssetSearchInfo, Directory) == 0x000008, "Memb
 struct FHDCoreUGCPluginStateMachineProperties final
 {
 public:
-	uint8                                         Pad_1253[0x90];                                    // 0x0000(0x0090)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x90];                                       // 0x0000(0x0090)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHDCoreUGCData*                         UGCData;                                           // 0x0090(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1254[0x60];                                    // 0x0098(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_98[0x60];                                      // 0x0098(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHDCoreUGCPluginStateMachineProperties) == 0x000008, "Wrong alignment on FHDCoreUGCPluginStateMachineProperties");
 static_assert(sizeof(FHDCoreUGCPluginStateMachineProperties) == 0x0000F8, "Wrong size on FHDCoreUGCPluginStateMachineProperties");

@@ -164,9 +164,9 @@ void UWBP_ModifierSetting_Numeric_C::SetSettingText(const class FText& InSetting
 // Function WBP_ModifierSetting_Numeric.WBP_ModifierSetting_Numeric_C.GetSettingText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Param_SettingText                                      (Parm, OutParm)
+// class FText                             SettingText_0                                          (Parm, OutParm)
 
-void UWBP_ModifierSetting_Numeric_C::GetSettingText(class FText* Param_SettingText)
+void UWBP_ModifierSetting_Numeric_C::GetSettingText(class FText* SettingText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -177,8 +177,8 @@ void UWBP_ModifierSetting_Numeric_C::GetSettingText(class FText* Param_SettingTe
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_SettingText != nullptr)
-		*Param_SettingText = std::move(Parms.Param_SettingText);
+	if (SettingText_0 != nullptr)
+		*SettingText_0 = std::move(Parms.SettingText_0);
 }
 
 
@@ -205,9 +205,9 @@ void UWBP_ModifierSetting_Numeric_C::SetMagicValueText(const class FText& InMagi
 // Function WBP_ModifierSetting_Numeric.WBP_ModifierSetting_Numeric_C.GetMagicValueText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Param_MagicValueText                                   (Parm, OutParm)
+// class FText                             MagicValueText_0                                       (Parm, OutParm)
 
-void UWBP_ModifierSetting_Numeric_C::GetMagicValueText(class FText* Param_MagicValueText)
+void UWBP_ModifierSetting_Numeric_C::GetMagicValueText(class FText* MagicValueText_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -218,8 +218,8 @@ void UWBP_ModifierSetting_Numeric_C::GetMagicValueText(class FText* Param_MagicV
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_MagicValueText != nullptr)
-		*Param_MagicValueText = std::move(Parms.Param_MagicValueText);
+	if (MagicValueText_0 != nullptr)
+		*MagicValueText_0 = std::move(Parms.MagicValueText_0);
 }
 
 

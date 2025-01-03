@@ -25,7 +25,7 @@ public:
 	struct FVector                                Location;                                          // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                Extent;                                            // 0x000C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B3[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ARBlueprintLibrary_AddManualEnvironmentCaptureProbe) == 0x000004, "Wrong alignment on ARBlueprintLibrary_AddManualEnvironmentCaptureProbe");
 static_assert(sizeof(ARBlueprintLibrary_AddManualEnvironmentCaptureProbe) == 0x00001C, "Wrong size on ARBlueprintLibrary_AddManualEnvironmentCaptureProbe");
@@ -42,7 +42,7 @@ public:
 	class UTexture2D*                             CandidateTexture;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 FriendlyName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PhysicalWidth;                                     // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B4[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UARCandidateImage*                      ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARBlueprintLibrary_AddRuntimeCandidateImage) == 0x000008, "Wrong alignment on ARBlueprintLibrary_AddRuntimeCandidateImage");
@@ -273,7 +273,7 @@ struct ARBlueprintLibrary_GetSupportedVideoFormats final
 {
 public:
 	EARSessionType                                SessionType;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B5[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FARVideoFormat>                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARBlueprintLibrary_GetSupportedVideoFormats) == 0x000008, "Wrong alignment on ARBlueprintLibrary_GetSupportedVideoFormats");
@@ -363,7 +363,7 @@ public:
 	bool                                          bTestGroundPlane;                                  // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTestPlaneExtents;                                 // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTestPlaneBoundaryPolygon;                         // 0x000B(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B6[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FARTraceResult>                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARBlueprintLibrary_LineTraceTrackedObjects) == 0x000008, "Wrong alignment on ARBlueprintLibrary_LineTraceTrackedObjects");
@@ -386,7 +386,7 @@ public:
 	bool                                          bTestGroundPlane;                                  // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTestPlaneExtents;                                 // 0x001A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bTestPlaneBoundaryPolygon;                         // 0x001B(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B7[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FARTraceResult>                 ReturnValue;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARBlueprintLibrary_LineTraceTrackedObjects3D) == 0x000008, "Wrong alignment on ARBlueprintLibrary_LineTraceTrackedObjects3D");
@@ -405,12 +405,12 @@ struct ARBlueprintLibrary_PinComponent final
 {
 public:
 	class USceneComponent*                        ComponentToPin;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B8[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             PinToWorldTransform;                               // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class UARTrackedGeometry*                     TrackedGeometry;                                   // 0x0040(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x0048(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UARPin*                                 ReturnValue;                                       // 0x0050(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15B9[0x8];                                     // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_58[0x8];                                       // 0x0058(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ARBlueprintLibrary_PinComponent) == 0x000010, "Wrong alignment on ARBlueprintLibrary_PinComponent");
 static_assert(sizeof(ARBlueprintLibrary_PinComponent) == 0x000060, "Wrong size on ARBlueprintLibrary_PinComponent");
@@ -426,7 +426,7 @@ struct ARBlueprintLibrary_PinComponentToTraceResult final
 {
 public:
 	class USceneComponent*                        ComponentToPin;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BA[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FARTraceResult                         TraceResult;                                       // 0x0010(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FName                                   DebugName;                                         // 0x0070(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UARPin*                                 ReturnValue;                                       // 0x0078(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -489,7 +489,7 @@ struct ARTraceResultLibrary_GetDistanceFromCamera final
 public:
 	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0060(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BB[0xC];                                     // 0x0064(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_64[0xC];                                       // 0x0064(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ARTraceResultLibrary_GetDistanceFromCamera) == 0x000010, "Wrong alignment on ARTraceResultLibrary_GetDistanceFromCamera");
 static_assert(sizeof(ARTraceResultLibrary_GetDistanceFromCamera) == 0x000070, "Wrong size on ARTraceResultLibrary_GetDistanceFromCamera");
@@ -529,7 +529,7 @@ struct ARTraceResultLibrary_GetTraceChannel final
 public:
 	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EARLineTraceChannels                          ReturnValue;                                       // 0x0060(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BC[0xF];                                     // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_61[0xF];                                       // 0x0061(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ARTraceResultLibrary_GetTraceChannel) == 0x000010, "Wrong alignment on ARTraceResultLibrary_GetTraceChannel");
 static_assert(sizeof(ARTraceResultLibrary_GetTraceChannel) == 0x000070, "Wrong size on ARTraceResultLibrary_GetTraceChannel");
@@ -543,7 +543,7 @@ struct ARTraceResultLibrary_GetTrackedGeometry final
 public:
 	struct FARTraceResult                         TraceResult;                                       // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class UARTrackedGeometry*                     ReturnValue;                                       // 0x0060(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15BD[0x8];                                     // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(ARTraceResultLibrary_GetTrackedGeometry) == 0x000010, "Wrong alignment on ARTraceResultLibrary_GetTrackedGeometry");
 static_assert(sizeof(ARTraceResultLibrary_GetTrackedGeometry) == 0x000070, "Wrong size on ARTraceResultLibrary_GetTrackedGeometry");
@@ -811,11 +811,11 @@ static_assert(offsetof(ARSessionConfig_SetSessionTrackingFeatureToEnable, InSess
 struct ARSessionConfig_SetWorldMapData final
 {
 public:
-	TArray<uint8>                                 Param_WorldMapData;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<uint8>                                 WorldMapData_0;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARSessionConfig_SetWorldMapData) == 0x000008, "Wrong alignment on ARSessionConfig_SetWorldMapData");
 static_assert(sizeof(ARSessionConfig_SetWorldMapData) == 0x000010, "Wrong size on ARSessionConfig_SetWorldMapData");
-static_assert(offsetof(ARSessionConfig_SetWorldMapData, Param_WorldMapData) == 0x000000, "Member 'ARSessionConfig_SetWorldMapData::Param_WorldMapData' has a wrong offset!");
+static_assert(offsetof(ARSessionConfig_SetWorldMapData, WorldMapData_0) == 0x000000, "Member 'ARSessionConfig_SetWorldMapData::WorldMapData_0' has a wrong offset!");
 
 // Function AugmentedReality.ARSessionConfig.GetCandidateImageList
 // 0x0010 (0x0010 - 0x0000)
@@ -1078,7 +1078,7 @@ struct ARSharedWorldPlayerController_ClientUpdateARWorldData final
 {
 public:
 	int32                                         Offset;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 Buffer;                                            // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARSharedWorldPlayerController_ClientUpdateARWorldData) == 0x000008, "Wrong alignment on ARSharedWorldPlayerController_ClientUpdateARWorldData");
@@ -1092,7 +1092,7 @@ struct ARSharedWorldPlayerController_ClientUpdatePreviewImageData final
 {
 public:
 	int32                                         Offset;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15CC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 Buffer;                                            // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARSharedWorldPlayerController_ClientUpdatePreviewImageData) == 0x000008, "Wrong alignment on ARSharedWorldPlayerController_ClientUpdatePreviewImageData");
@@ -1304,7 +1304,7 @@ struct ARFaceGeometry_GetBlendShapeValue final
 {
 public:
 	EARFaceBlendShape                             BlendShape;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15DA[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARFaceGeometry_GetBlendShapeValue) == 0x000004, "Wrong alignment on ARFaceGeometry_GetBlendShapeValue");
@@ -1318,7 +1318,7 @@ struct ARFaceGeometry_GetLocalSpaceEyeTransform final
 {
 public:
 	EAREye                                        Eye;                                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15DB[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARFaceGeometry_GetLocalSpaceEyeTransform) == 0x000010, "Wrong alignment on ARFaceGeometry_GetLocalSpaceEyeTransform");
@@ -1332,7 +1332,7 @@ struct ARFaceGeometry_GetWorldSpaceEyeTransform final
 {
 public:
 	EAREye                                        Eye;                                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15DC[0xF];                                     // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             ReturnValue;                                       // 0x0010(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(ARFaceGeometry_GetWorldSpaceEyeTransform) == 0x000010, "Wrong alignment on ARFaceGeometry_GetWorldSpaceEyeTransform");

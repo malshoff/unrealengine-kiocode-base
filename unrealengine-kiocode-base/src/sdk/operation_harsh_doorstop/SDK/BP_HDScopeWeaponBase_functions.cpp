@@ -51,26 +51,6 @@ void ABP_HDScopeWeaponBase_C::OnBraceAimEnd()
 }
 
 
-// Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.SetCurrentSight
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent*                  Sight                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HDScopeWeaponBase_C::SetCurrentSight(class USceneComponent* Sight)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HDScopeWeaponBase_C", "SetCurrentSight");
-
-	Params::BP_HDScopeWeaponBase_C_SetCurrentSight Parms{};
-
-	Parms.Sight = Sight;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.ReceiveOnLeaveInventory
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -184,20 +164,6 @@ void ABP_HDScopeWeaponBase_C::StartAimInScope()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_HDScopeWeaponBase_C", "StartAimInScope");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_HDScopeWeaponBase_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HDScopeWeaponBase_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -385,6 +351,40 @@ void ABP_HDScopeWeaponBase_C::ShouldUseScope(bool* bUseScope)
 
 	if (bUseScope != nullptr)
 		*bUseScope = Parms.bUseScope;
+}
+
+
+// Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.SetCurrentSight
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USceneComponent*                  Sight                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HDScopeWeaponBase_C::SetCurrentSight(class USceneComponent* Sight)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HDScopeWeaponBase_C", "SetCurrentSight");
+
+	Params::BP_HDScopeWeaponBase_C_SetCurrentSight Parms{};
+
+	Parms.Sight = Sight;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HDScopeWeaponBase.BP_HDScopeWeaponBase_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_HDScopeWeaponBase_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HDScopeWeaponBase_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

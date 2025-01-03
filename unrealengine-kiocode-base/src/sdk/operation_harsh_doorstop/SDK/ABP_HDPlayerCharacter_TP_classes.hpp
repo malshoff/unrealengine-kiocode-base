@@ -13,9 +13,9 @@
 #include "HDMain_classes.hpp"
 #include "DonkehFramework_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ECharacterMoveState_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "ECharacterMoveState_structs.hpp"
 
 
 namespace SDK
@@ -81,7 +81,7 @@ public:
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_16;                       // 0x2460(0x0108)()
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_3;             // 0x2568(0x0020)()
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace_3;             // 0x2588(0x0020)()
-	uint8                                         Pad_1AB7[0x8];                                     // 0x25A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25A8[0x8];                                     // 0x25A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_1;                         // 0x25B0(0x01E0)()
 	struct FAnimNode_CopyBone                     AnimGraphNode_CopyBone_9;                          // 0x2790(0x00F0)()
 	struct FAnimNode_CopyBone                     AnimGraphNode_CopyBone_8;                          // 0x2880(0x00F0)()
@@ -444,22 +444,22 @@ public:
 	struct FAnimNode_LinkedAnimLayer              AnimGraphNode_LinkedAnimLayer;                     // 0xB5B8(0x00B0)()
 	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_2;                     // 0xB668(0x0028)()
 	bool                                          __CustomProperty_DoPelvisDisplacement_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB690(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AB8[0x3];                                     // 0xB691(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B691[0x3];                                     // 0xB691(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                __CustomProperty_PelvisIK_Displacement_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB694(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          __CustomProperty_bDoFootIK_R_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          __CustomProperty_bDoFootIK_L_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AB9[0x2];                                     // 0xB6A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B6A2[0x2];                                     // 0xB6A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               __CustomProperty_FootIK_L_Rotation_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6A4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FRotator                               __CustomProperty_FootIK_R_Rotation_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                __CustomProperty_FootIK_L_Displacement_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                __CustomProperty_FootIK_R_Displacement_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          __CustomProperty_bPreventAOHandDriftFromWeapon_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1ABA[0x3];                                     // 0xB6D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B6D5[0x3];                                     // 0xB6D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         __CustomProperty_HandFKWeight_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          __CustomProperty_bUseHandIKRetargeting_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          __CustomProperty_bUseRightHandIK_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          __CustomProperty_bUseLeftHandIK_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1ABB[0x1];                                     // 0xB6DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B6DF[0x1];                                     // 0xB6DF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             __CustomProperty_RightHandIKTransform_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB6E0(0x0030)(IsPlainOldData, NoDestructor)
 	struct FTransform                             __CustomProperty_LeftHandIKTransform_E656822F4F77DD47557E8BA0FC4D0E5E; // 0xB710(0x0030)(IsPlainOldData, NoDestructor)
 	struct FAnimNode_LinkedAnimGraph              AnimGraphNode_LinkedAnimGraph;                     // 0xB740(0x00A0)()
@@ -489,10 +489,10 @@ public:
 	bool                                          bPrefiring;                                        // 0xB9DB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bReadyToThrow;                                     // 0xB9DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bUseLeftHandIK;                                    // 0xB9DD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1ABC[0x2];                                     // 0xB9DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B9DE[0x2];                                     // 0xB9DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             LeftHandIKTransform;                               // 0xB9E0(0x0030)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bUseRightHandIK;                                   // 0xBA10(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1ABD[0xF];                                     // 0xBA11(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BA11[0xF];                                     // 0xBA11(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             RightHandIKTransform;                              // 0xBA20(0x0030)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UAnimSequenceBase*                      RifleLeanInAnim;                                   // 0xBA50(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimSequenceBase*                      RifleLeanOutAnim;                                  // 0xBA58(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -522,31 +522,31 @@ public:
 	class UAnimSequenceBase*                      IdleLowerBodyAnim;                                 // 0xBBB8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USkeletalMeshComponent*                 SourceMesh;                                        // 0xBBC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bValidProneUpperAnims;                             // 0xBBC8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1ABE[0x3];                                     // 0xBBC9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BBC9[0x3];                                     // 0xBBC9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         IdleUpperBodyAnimPlayRateToUse;                    // 0xBBCC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bUseMirroredLowerBodyLocomotion;                   // 0xBBD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1ABF[0x3];                                     // 0xBBD1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BBD1[0x3];                                     // 0xBBD1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LowerBodyBSPlayRateToUse;                          // 0xBBD4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         HandFKWeightToUse;                                 // 0xBBD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDebugAnimMontagePlayback;                         // 0xBBDC(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AC0[0x3];                                     // 0xBBDD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BBDD[0x3];                                     // 0xBBDD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           CharAnimMontageToPlay;                             // 0xBBE0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 WeapAnimInstanceToUse;                             // 0xBBE8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           WeapAnimMontageToPlay;                             // 0xBBF0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         RifleHandFKWeight;                                 // 0xBBF8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PistolHandFKWeight;                                // 0xBBFC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETraceTypeQuery                               FootIKTraceChannel;                                // 0xBC00(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC1[0x3];                                     // 0xBC01(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC01[0x3];                                     // 0xBC01(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         PawnScale;                                         // 0xBC04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FootIKTraceDist;                                   // 0xBC08(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                LeftFootIKOffset;                                  // 0xBC0C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                RightFootIKOffset;                                 // 0xBC18(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC2[0x4];                                     // 0xBC24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC24[0x4];                                     // 0xBC24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      ThrowReadyBasePoseUpperAnim;                       // 0xBC28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LeanAmount;                                        // 0xBC30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LeanAlpha;                                         // 0xBC34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bRifleLean;                                        // 0xBC38(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AC3[0x3];                                     // 0xBC39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC39[0x3];                                     // 0xBC39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LeanLeftInAnimTime;                                // 0xBC3C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LeanLeftOutAnimTime;                               // 0xBC40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         LeanRightInAnimTime;                               // 0xBC44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -558,13 +558,13 @@ public:
 	bool                                          bStandToCrouch;                                    // 0xBC53(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bStandToProne;                                     // 0xBC54(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bCrouchToProne;                                    // 0xBC55(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AC4[0x2];                                     // 0xBC56(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC56[0x2];                                     // 0xBC56(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         WeaponUpperBodyAlpha;                              // 0xBC58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MovementAlpha;                                     // 0xBC5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MovementAmount;                                    // 0xBC60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                ItemPositionOffset;                                // 0xBC64(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ElbowIKWeight;                                     // 0xBC70(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC5[0x4];                                     // 0xBC74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BC74[0x4];                                     // 0xBC74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCharacterAnimCollection               WeapArmsTPPAnims;                                  // 0xBC78(0x0128)(Edit, BlueprintVisible, Transient, DisableEditOnInstance, NoDestructor)
 	float                                         AimPitchAlpha;                                     // 0xBDA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                AimingOffset;                                      // 0xBDA4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -577,18 +577,18 @@ public:
 	bool                                          bSprintVault;                                      // 0xBDC7(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bVaultOver;                                        // 0xBDC8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bClimbOnto;                                        // 0xBDC9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AC6[0x2];                                     // 0xBDCA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BDCA[0x2];                                     // 0xBDCA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                VaultPelvisOffset;                                 // 0xBDCC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         VaultPelvisOffsetAlpha;                            // 0xBDD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         VaultingAlpha;                                     // 0xBDDC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInsideVaultState;                                 // 0xBDE0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AC7[0x3];                                     // 0xBDE1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BDE1[0x3];                                     // 0xBDE1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LowReadyOffset;                                    // 0xBDE4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               LowReadyRotation;                                  // 0xBDF0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bADSFireOnly;                                      // 0xBDFC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bPistolEquipped;                                   // 0xBDFD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bLowReady;                                         // 0xBDFE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AC8[0x1];                                     // 0xBDFF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BDFF[0x1];                                     // 0xBDFF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               SpineLowerAimPitch;                                // 0xBE00(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FRotator                               SpineUpperAimPitch;                                // 0xBE0C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FRotator                               NeckAimPitch;                                      // 0xBE18(0x000C)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -611,7 +611,7 @@ public:
 	struct FRotator                               Foot_IK_L_Rotation;                                // 0xBE8C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bDoFootIK_L;                                       // 0xBE98(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bDoFootIK_R;                                       // 0xBE99(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1AC9[0x2];                                     // 0xBE9A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_BE9A[0x2];                                     // 0xBE9A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                PelvisIK_Displacement;                             // 0xBE9C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDoPelvisDisplacement;                             // 0xBEA8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bSingleAction;                                     // 0xBEA9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -633,7 +633,7 @@ public:
 	void BlueprintUpdatePawnOwnerRefs(class APawn* NewPawn);
 	void EquippedItemChanged(class ADFBaseCharacter* Character, class ADFBaseItem* NewEquippedItem, class ADFBaseItem* PrevEquippedItem);
 	void BlueprintInitializeAnimation();
-	void BlueprintUpdateAnimation(float Param_DeltaTimeX);
+	void BlueprintUpdateAnimation(float DeltaTimeX_0);
 	void AnimNotify_LeftVaultState();
 	void AnimNotify_EnterVaultState();
 	void AnimNotify_LeftProneState();
@@ -651,7 +651,7 @@ public:
 	void OnInterrupted_03E0282943B466F95A9987B1825BCF44(class FName NotifyName);
 	void OnNotifyBegin_03E0282943B466F95A9987B1825BCF44(class FName NotifyName);
 	void OnNotifyEnd_03E0282943B466F95A9987B1825BCF44(class FName NotifyName);
-	void AssignWeaponTPPLocomotionAnims(struct FCharacterAnimCollection& AnimCollection, bool Param_bReadyToThrow);
+	void AssignWeaponTPPLocomotionAnims(struct FCharacterAnimCollection& AnimCollection, bool bReadyToThrow_0);
 	void AssignLegacyWeaponTPPLocomotionAnims(const TMap<class FName, class UAnimSequenceBase*>& WeaponAnimSetTPP);
 	void PlayCharacterTPPMontage(class UAnimMontage* MontageToPlay, bool bForceDisableAutoBlendOut, float* PlayDuration);
 	void SetupFootIK(class ACharacter* CharOwner);
@@ -660,19 +660,19 @@ public:
 	void UpdateIKTraceDataForFoot(bool bForRightFoot);
 	void GetCapsuleQuarterHeight(class ACharacter* Char);
 	void IKFootTraceSetup(class FName SocketName, struct FVector* TraceStart, struct FVector* TraceEnd);
-	void AnimGraph(struct FPoseLink* Param_AnimGraph);
-	void BaseLocoLayer(struct FPoseLink* Param_BaseLocoLayer);
-	void OverlayLocoLayer(struct FPoseLink* Param_OverlayLocoLayer);
-	void LayeredLoco(const struct FPoseLink& InBaseLayer, const struct FPoseLink& InOverlayLayer, const struct FPoseLink& InFullBodyAdditive, struct FPoseLink* Param_LayeredLoco);
-	void VehicleLowerBody(const struct FPoseLink& LowerBody, struct FPoseLink* Param_VehicleLowerBody);
-	void VehicleFullBody(const struct FPoseLink& FullBody, struct FPoseLink* Param_VehicleFullBody);
-	void WeaponJumpLoop(const struct FPoseLink& LowerJumpLoop, struct FPoseLink* Param_WeaponJumpLoop);
-	void Move(const struct FPoseLink& Param_Move, struct FPoseLink* Param_Move_0);
-	void WeaponAdditive(struct FPoseLink* Param_WeaponAdditive);
-	void WeaponUpperBody(const struct FPoseLink& UpperBody, struct FPoseLink* Param_WeaponUpperBody);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void BaseLocoLayer(struct FPoseLink* BaseLocoLayer_0);
+	void OverlayLocoLayer(struct FPoseLink* OverlayLocoLayer_0);
+	void LayeredLoco(const struct FPoseLink& InBaseLayer, const struct FPoseLink& InOverlayLayer, const struct FPoseLink& InFullBodyAdditive, struct FPoseLink* LayeredLoco_0);
+	void VehicleLowerBody(const struct FPoseLink& LowerBody, struct FPoseLink* VehicleLowerBody_0);
+	void VehicleFullBody(const struct FPoseLink& FullBody, struct FPoseLink* VehicleFullBody_0);
+	void WeaponJumpLoop(const struct FPoseLink& LowerJumpLoop, struct FPoseLink* WeaponJumpLoop_0);
+	void Move(const struct FPoseLink& Move_0, struct FPoseLink* Move_1);
+	void WeaponAdditive(struct FPoseLink* WeaponAdditive_0);
+	void WeaponUpperBody(const struct FPoseLink& UpperBody, struct FPoseLink* WeaponUpperBody_0);
 	float PlayUnEquipMontage(class UAnimMontage* MontageToPlay);
 	float PlayReloadMontage(class UAnimMontage* MontageToPlay, bool bFullReload);
-	float PlayFireMontage(class UAnimMontage* MontageToPlay, bool bFireLast, bool Param_bAiming);
+	float PlayFireMontage(class UAnimMontage* MontageToPlay, bool bFireLast, bool bAiming_0);
 	float PlayEquipMontage(class UAnimMontage* MontageToPlay);
 
 	void GetDefaultLeftHandIKTransformByItemType(EItemType ItemType, struct FTransform* LeftTransform) const;

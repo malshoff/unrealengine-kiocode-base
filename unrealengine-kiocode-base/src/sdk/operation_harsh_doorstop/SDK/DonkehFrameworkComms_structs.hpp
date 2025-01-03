@@ -50,11 +50,11 @@ struct FDFGenericChannelMsg final
 public:
 	class FString                                 ChatMsgContent;                                    // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         bSenderIsTalking : 1;                              // 0x0010(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1101[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         OptionalMsgData;                                   // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, RepSkip, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerState*                           SenderPS;                                          // 0x0028(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         MsgID;                                             // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1102[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDFGenericChannelMsg) == 0x000008, "Wrong alignment on FDFGenericChannelMsg");
 static_assert(sizeof(FDFGenericChannelMsg) == 0x000038, "Wrong size on FDFGenericChannelMsg");
@@ -84,9 +84,9 @@ struct FDFCommChannelMapItemEntry final : public FFastArraySerializerItem
 {
 public:
 	class FName                                   Key;                                               // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1103[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFCommChannel*                         Value;                                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1104[0x8];                                     // 0x0020(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20[0x8];                                       // 0x0020(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDFCommChannelMapItemEntry) == 0x000008, "Wrong alignment on FDFCommChannelMapItemEntry");
 static_assert(sizeof(FDFCommChannelMapItemEntry) == 0x000028, "Wrong size on FDFCommChannelMapItemEntry");
@@ -100,7 +100,7 @@ struct FDFCommChannelMap final : public FFastArraySerializer
 public:
 	TArray<struct FDFCommChannelMapItemEntry>     ChannelEntries;                                    // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FName, class UDFCommChannel*>      ChannelMap;                                        // 0x0118(0x0050)(NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1105[0x8];                                     // 0x0168(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_168[0x8];                                      // 0x0168(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDFCommChannelMap) == 0x000008, "Wrong alignment on FDFCommChannelMap");
 static_assert(sizeof(FDFCommChannelMap) == 0x000170, "Wrong size on FDFCommChannelMap");
@@ -139,7 +139,7 @@ public:
 	uint8                                         bWasTalking : 1;                                   // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bIsTalking : 1;                                    // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bPendingTalkerReset : 1;                           // 0x0000(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1106[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDFCommChannel*                         TalkerChannel;                                     // 0x0008(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FDFPlayerVOIPTalkingState) == 0x000008, "Wrong alignment on FDFPlayerVOIPTalkingState");

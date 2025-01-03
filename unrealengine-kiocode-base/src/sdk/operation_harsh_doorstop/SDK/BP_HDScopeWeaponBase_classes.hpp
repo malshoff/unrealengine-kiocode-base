@@ -34,12 +34,12 @@ public:
 	float                                         DefaultAimInterpSpeed;                             // 0x0A98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DefaultFreeAimPitch;                               // 0x0A9C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         DefaultFreeAimYaw;                                 // 0x0AA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A8C[0xC];                                     // 0x0AA4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_AA4[0xC];                                      // 0x0AA4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPostProcessSettings                   DefaultCameraPostProcess;                          // 0x0AB0(0x0540)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
 	class UMaterialInstanceDynamic*               ScopeMID;                                          // 0x0FF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               ScopeMIDGlass;                                     // 0x0FF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bUseOverlay;                                       // 0x1000(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A8D[0x3];                                     // 0x1001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1001[0x3];                                     // 0x1001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         AimingFOV;                                         // 0x1004(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AimInterpSpeed;                                    // 0x1008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AimInDelay;                                        // 0x100C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,7 +48,7 @@ public:
 	float                                         FreeAimMaxPitch;                                   // 0x1018(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         FreeAimMaxYaw;                                     // 0x101C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ScopeMaterialIndex;                                // 0x1020(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A8E[0x4];                                     // 0x1024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1024[0x4];                                     // 0x1024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FWeightedBlendable>             PostProcessMaterial;                               // 0x1028(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash)
 	class UMaterialInterface*                     ScopeGlassMaterial;                                // 0x1038(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     ScopeOpticMaterial;                                // 0x1040(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,7 +61,6 @@ public:
 public:
 	void ExecuteUbergraph_BP_HDScopeWeaponBase(int32 EntryPoint);
 	void OnBraceAimEnd();
-	void SetCurrentSight(class USceneComponent* Sight);
 	void ReceiveOnLeaveInventory(class ADFBaseCharacter* LastOwner);
 	void ResetAimOutGate();
 	void ReceiveOnUnEquip(bool bPlayAnimAndWait, bool bLeavingPawnInventory);
@@ -69,7 +68,6 @@ public:
 	void ReceiveTick(float DeltaSeconds);
 	void StartAimOutScope();
 	void StartAimInScope();
-	void UserConstructionScript();
 	void SetupOwnerData(bool* bValidOwnerData);
 	void CleanupOwnerData();
 	void ResetDefaultValues();
@@ -81,6 +79,8 @@ public:
 	void RestoreOwnerDefaultValues();
 	void SaveOwnerDefaultValues();
 	void ShouldUseScope(bool* bUseScope);
+	void SetCurrentSight(class USceneComponent* Sight);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

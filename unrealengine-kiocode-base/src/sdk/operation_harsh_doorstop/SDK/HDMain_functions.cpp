@@ -8527,11 +8527,11 @@ int32 AHDPlatoonState::GetNumSquads(bool bValidSquadsOnly) const
 // Function HDMain.HDPlatoonState.GetSquadAt
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bIgnorePendingRemoval                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class AHDSquadState*                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class AHDSquadState* AHDPlatoonState::GetSquadAt(int32 Param_Index, bool bIgnorePendingRemoval) const
+class AHDSquadState* AHDPlatoonState::GetSquadAt(int32 Index_0, bool bIgnorePendingRemoval) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -8540,7 +8540,7 @@ class AHDSquadState* AHDPlatoonState::GetSquadAt(int32 Param_Index, bool bIgnore
 
 	Params::HDPlatoonState_GetSquadAt Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.bIgnorePendingRemoval = bIgnorePendingRemoval;
 
 	auto Flgs = Func->FunctionFlags;
@@ -10586,11 +10586,11 @@ int32 AHDSquadState::GetNumSquadMembersBots(bool bValidMembersOnly) const
 // Function HDMain.HDSquadState.GetSquadMemberAt
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bIgnorePendingRemoval                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class AHDPlayerState*                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class AHDPlayerState* AHDSquadState::GetSquadMemberAt(int32 Param_Index, bool bIgnorePendingRemoval) const
+class AHDPlayerState* AHDSquadState::GetSquadMemberAt(int32 Index_0, bool bIgnorePendingRemoval) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -10599,7 +10599,7 @@ class AHDPlayerState* AHDSquadState::GetSquadMemberAt(int32 Param_Index, bool bI
 
 	Params::HDSquadState_GetSquadMemberAt Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.bIgnorePendingRemoval = bIgnorePendingRemoval;
 
 	auto Flgs = Func->FunctionFlags;
@@ -10986,11 +10986,11 @@ int32 AHDTeamState::GetNumPlatoons(bool bValidPlatoonsOnly) const
 // Function HDMain.HDTeamState.GetPlatoonAt
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// int32                                   Param_Index                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bIgnorePendingRemoval                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class AHDPlatoonState*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class AHDPlatoonState* AHDTeamState::GetPlatoonAt(int32 Param_Index, bool bIgnorePendingRemoval) const
+class AHDPlatoonState* AHDTeamState::GetPlatoonAt(int32 Index_0, bool bIgnorePendingRemoval) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -10999,7 +10999,7 @@ class AHDPlatoonState* AHDTeamState::GetPlatoonAt(int32 Param_Index, bool bIgnor
 
 	Params::HDTeamState_GetPlatoonAt Parms{};
 
-	Parms.Param_Index = Param_Index;
+	Parms.Index_0 = Index_0;
 	Parms.bIgnorePendingRemoval = bIgnorePendingRemoval;
 
 	auto Flgs = Func->FunctionFlags;

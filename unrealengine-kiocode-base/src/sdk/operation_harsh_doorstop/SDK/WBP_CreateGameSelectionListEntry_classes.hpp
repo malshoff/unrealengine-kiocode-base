@@ -37,7 +37,7 @@ public:
 	struct FFSelectionItemTextStyle               ItemTextStyle;                                     // 0x07F8(0x0130)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FFSelectionItemTextStyle               ItemSubTextStyle;                                  // 0x0928(0x0130)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         ItemMinWidth;                                      // 0x0A58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_1D19[0x4];                                     // 0x0A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A5C[0x4];                                      // 0x0A5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Text;                                              // 0x0A60(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                   SubText;                                           // 0x0A78(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	int32                                         ItemMinHeight;                                     // 0x0A90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -52,19 +52,19 @@ public:
 	void SetItemIsSelected(bool bSelected);
 	void GetItemSelectionState(ECheckBoxState* SelectionState);
 	void IsItemSelected(bool* bSelected);
-	void InternalApplyStyleToText(class UTextBlock* Param_Text, struct FFSelectionItemTextStyle& TextStyle);
+	void InternalApplyStyleToText(class UTextBlock* Text_0, struct FFSelectionItemTextStyle& TextStyle);
 	void InternalUpdateItemBgTintColor(bool bSelected);
 	void SetItemStyle(const struct FCheckBoxStyle& InItemStyle);
 	void SetItemTextStyle(const struct FFSelectionItemTextStyle& InItemTextStyle);
 	void SetItemSubTextStyle(const struct FFSelectionItemTextStyle& InItemSubTextStyle);
 	void SetItemImage(class UTexture2D* InItemImg);
-	void GetItemStyle(struct FCheckBoxStyle* Param_ItemStyle);
+	void GetItemStyle(struct FCheckBoxStyle* ItemStyle_0);
 	void GetItemTextStyle(struct FFSelectionItemTextStyle* TextStyle);
 	void GetItemSubTextStyle(struct FFSelectionItemTextStyle* TextStyle);
 	void SetItemText(const class FText& InText);
 	void SetItemSubText(const class FText& InText);
-	void GetItemText(class FText* Param_Text);
-	void GetItemSubText(class FText* Param_Text);
+	void GetItemText(class FText* Text_0);
+	void GetItemSubText(class FText* Text_0);
 	void SetItemMinDimensions(int32 InMinWidth, int32 InMinHeight);
 	void GetItemMinWidth(int32* MinWidth);
 	void GetItemMinHeight(int32* MinHeight);

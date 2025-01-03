@@ -33,7 +33,7 @@ struct FPrefabricatorAssetCollectionItem final
 public:
 	TSoftObjectPtr<class UPrefabricatorAsset>     PrefabAsset;                                       // 0x0000(0x0028)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Weight;                                            // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12D3[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPrefabricatorAssetCollectionItem) == 0x000008, "Wrong alignment on FPrefabricatorAssetCollectionItem");
 static_assert(sizeof(FPrefabricatorAssetCollectionItem) == 0x000030, "Wrong size on FPrefabricatorAssetCollectionItem");
@@ -66,7 +66,7 @@ public:
 	struct FSoftClassPath                         ClassPathRef;                                      // 0x0050(0x0018)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UPrefabricatorProperty*>         Properties;                                        // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPrefabricatorComponentData>    Components;                                        // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12D4[0x8];                                     // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_88[0x8];                                       // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPrefabricatorActorData) == 0x000010, "Wrong alignment on FPrefabricatorActorData");
 static_assert(sizeof(FPrefabricatorActorData) == 0x000090, "Wrong size on FPrefabricatorActorData");
@@ -86,7 +86,7 @@ public:
 	class FString                                 AssetClassName;                                    // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   AssetObjectPath;                                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseQuotes;                                        // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12D5[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FPrefabricatorPropertyAssetMapping) == 0x000008, "Wrong alignment on FPrefabricatorPropertyAssetMapping");
 static_assert(sizeof(FPrefabricatorPropertyAssetMapping) == 0x000038, "Wrong size on FPrefabricatorPropertyAssetMapping");

@@ -42,14 +42,14 @@ static_assert(offsetof(BPFL_DebugUtils_C_PrintProperty, CallFunc_Concat_StrStr_R
 struct BPFL_DebugUtils_C_PrintStr final
 {
 public:
-	class FString                                 Param_Name;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 Value;                                             // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	struct FLinearColor                           TextColor;                                         // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                                __WorldContext;                                    // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BPFL_DebugUtils_C_PrintStr) == 0x000008, "Wrong alignment on BPFL_DebugUtils_C_PrintStr");
 static_assert(sizeof(BPFL_DebugUtils_C_PrintStr) == 0x000038, "Wrong size on BPFL_DebugUtils_C_PrintStr");
-static_assert(offsetof(BPFL_DebugUtils_C_PrintStr, Param_Name) == 0x000000, "Member 'BPFL_DebugUtils_C_PrintStr::Param_Name' has a wrong offset!");
+static_assert(offsetof(BPFL_DebugUtils_C_PrintStr, Name_0) == 0x000000, "Member 'BPFL_DebugUtils_C_PrintStr::Name_0' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintStr, Value) == 0x000010, "Member 'BPFL_DebugUtils_C_PrintStr::Value' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintStr, TextColor) == 0x000020, "Member 'BPFL_DebugUtils_C_PrintStr::TextColor' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintStr, __WorldContext) == 0x000030, "Member 'BPFL_DebugUtils_C_PrintStr::__WorldContext' has a wrong offset!");
@@ -59,17 +59,17 @@ static_assert(offsetof(BPFL_DebugUtils_C_PrintStr, __WorldContext) == 0x000030, 
 struct BPFL_DebugUtils_C_PrintBool final
 {
 public:
-	class FString                                 Param_Name;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          bInBool;                                           // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19F9[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           TextColor;                                         // 0x0014(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19FA[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_BoolToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BPFL_DebugUtils_C_PrintBool) == 0x000008, "Wrong alignment on BPFL_DebugUtils_C_PrintBool");
 static_assert(sizeof(BPFL_DebugUtils_C_PrintBool) == 0x000040, "Wrong size on BPFL_DebugUtils_C_PrintBool");
-static_assert(offsetof(BPFL_DebugUtils_C_PrintBool, Param_Name) == 0x000000, "Member 'BPFL_DebugUtils_C_PrintBool::Param_Name' has a wrong offset!");
+static_assert(offsetof(BPFL_DebugUtils_C_PrintBool, Name_0) == 0x000000, "Member 'BPFL_DebugUtils_C_PrintBool::Name_0' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintBool, bInBool) == 0x000010, "Member 'BPFL_DebugUtils_C_PrintBool::bInBool' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintBool, TextColor) == 0x000014, "Member 'BPFL_DebugUtils_C_PrintBool::TextColor' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintBool, __WorldContext) == 0x000028, "Member 'BPFL_DebugUtils_C_PrintBool::__WorldContext' has a wrong offset!");
@@ -80,16 +80,16 @@ static_assert(offsetof(BPFL_DebugUtils_C_PrintBool, CallFunc_Conv_BoolToString_R
 struct BPFL_DebugUtils_C_PrintInt final
 {
 public:
-	class FString                                 Param_Name;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         InInteger;                                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           TextColor;                                         // 0x0014(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19FB[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BPFL_DebugUtils_C_PrintInt) == 0x000008, "Wrong alignment on BPFL_DebugUtils_C_PrintInt");
 static_assert(sizeof(BPFL_DebugUtils_C_PrintInt) == 0x000040, "Wrong size on BPFL_DebugUtils_C_PrintInt");
-static_assert(offsetof(BPFL_DebugUtils_C_PrintInt, Param_Name) == 0x000000, "Member 'BPFL_DebugUtils_C_PrintInt::Param_Name' has a wrong offset!");
+static_assert(offsetof(BPFL_DebugUtils_C_PrintInt, Name_0) == 0x000000, "Member 'BPFL_DebugUtils_C_PrintInt::Name_0' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintInt, InInteger) == 0x000010, "Member 'BPFL_DebugUtils_C_PrintInt::InInteger' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintInt, TextColor) == 0x000014, "Member 'BPFL_DebugUtils_C_PrintInt::TextColor' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintInt, __WorldContext) == 0x000028, "Member 'BPFL_DebugUtils_C_PrintInt::__WorldContext' has a wrong offset!");
@@ -100,16 +100,16 @@ static_assert(offsetof(BPFL_DebugUtils_C_PrintInt, CallFunc_Conv_IntToString_Ret
 struct BPFL_DebugUtils_C_PrintFloat final
 {
 public:
-	class FString                                 Param_Name;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         InFloat;                                           // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           TextColor;                                         // 0x0014(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19FC[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                __WorldContext;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Conv_FloatToString_ReturnValue;           // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 static_assert(alignof(BPFL_DebugUtils_C_PrintFloat) == 0x000008, "Wrong alignment on BPFL_DebugUtils_C_PrintFloat");
 static_assert(sizeof(BPFL_DebugUtils_C_PrintFloat) == 0x000040, "Wrong size on BPFL_DebugUtils_C_PrintFloat");
-static_assert(offsetof(BPFL_DebugUtils_C_PrintFloat, Param_Name) == 0x000000, "Member 'BPFL_DebugUtils_C_PrintFloat::Param_Name' has a wrong offset!");
+static_assert(offsetof(BPFL_DebugUtils_C_PrintFloat, Name_0) == 0x000000, "Member 'BPFL_DebugUtils_C_PrintFloat::Name_0' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintFloat, InFloat) == 0x000010, "Member 'BPFL_DebugUtils_C_PrintFloat::InFloat' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintFloat, TextColor) == 0x000014, "Member 'BPFL_DebugUtils_C_PrintFloat::TextColor' has a wrong offset!");
 static_assert(offsetof(BPFL_DebugUtils_C_PrintFloat, __WorldContext) == 0x000028, "Member 'BPFL_DebugUtils_C_PrintFloat::__WorldContext' has a wrong offset!");

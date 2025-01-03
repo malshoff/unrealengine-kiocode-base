@@ -35,7 +35,7 @@ public:
 	class UTexture2D*                             Icon;                                              // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         SlotNum;                                           // 0x0280(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bEnabled;                                          // 0x0284(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1F64[0x3];                                     // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_285[0x3];                                      // 0x0285(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AHDBaseWeapon*                          EqpItem;                                           // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bHighlighted;                                      // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
@@ -43,9 +43,9 @@ public:
 	void ExecuteUbergraph_WBP_EquipmentSelect_EqBox(int32 EntryPoint);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void PreConstruct(bool IsDesignTime);
-	void SetHighlight(bool Param_bHighlighted);
+	void SetHighlight(bool bHighlighted_0);
 	void IsHighlighted(bool* bHighlight);
-	void SetEnabled(bool Param_bEnabled);
+	void SetEnabled(bool bEnabled_0);
 
 public:
 	static class UClass* StaticClass()

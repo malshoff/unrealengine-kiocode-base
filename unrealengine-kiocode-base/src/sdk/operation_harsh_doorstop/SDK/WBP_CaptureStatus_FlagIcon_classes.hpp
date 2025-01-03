@@ -26,7 +26,7 @@ class UWBP_CaptureStatus_FlagIcon_C final : public UUserWidget
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 BG;                                                // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Bg;                                                // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Icon;                                              // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 IconFrame;                                         // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FSlateBrush                            IconFrameNoTeam;                                   // 0x0250(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -37,7 +37,7 @@ public:
 	float                                         IconOpacityCapturable;                             // 0x04F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         IconOpacityUncapturable;                           // 0x04FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         IconOpacityOffensive;                              // 0x0500(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_150F[0x4];                                     // 0x0504(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_504[0x4];                                      // 0x0504(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            IconFrameFriendly;                                 // 0x0508(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                            BgEnemy;                                           // 0x0590(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                            BgFriendly;                                        // 0x0618(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -49,7 +49,7 @@ public:
 	void ExecuteUbergraph_WBP_CaptureStatus_FlagIcon(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void OnUpdateIcon(bool bActive, EHDTeam Team, bool bLocked, EHDControlPointObjectiveType ObjType);
-	void SetBrushes(struct FSlateBrush& Param_IconFrame, struct FSlateBrush& Param_BG, struct FSlateBrush& Param_Icon);
+	void SetBrushes(struct FSlateBrush& IconFrame_0, struct FSlateBrush& Bg_0, struct FSlateBrush& Icon_0);
 	void UpdateBrushesByTeam(bool bLocked, EHDTeam Team, EHDControlPointObjectiveType ObjType);
 	void TintBrushByTeam(struct FSlateBrush& BrushToTint, EHDTeam Team, struct FSlateBrush* NewBrush);
 	void SetBrushOpacityByCaptureStatus(struct FSlateBrush& BrushToUpdate, bool bLocked, EHDControlPointObjectiveType ObjType, struct FSlateBrush* NewBrush);
@@ -67,7 +67,7 @@ public:
 static_assert(alignof(UWBP_CaptureStatus_FlagIcon_C) == 0x000008, "Wrong alignment on UWBP_CaptureStatus_FlagIcon_C");
 static_assert(sizeof(UWBP_CaptureStatus_FlagIcon_C) == 0x000718, "Wrong size on UWBP_CaptureStatus_FlagIcon_C");
 static_assert(offsetof(UWBP_CaptureStatus_FlagIcon_C, UberGraphFrame) == 0x000230, "Member 'UWBP_CaptureStatus_FlagIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_CaptureStatus_FlagIcon_C, BG) == 0x000238, "Member 'UWBP_CaptureStatus_FlagIcon_C::BG' has a wrong offset!");
+static_assert(offsetof(UWBP_CaptureStatus_FlagIcon_C, Bg) == 0x000238, "Member 'UWBP_CaptureStatus_FlagIcon_C::Bg' has a wrong offset!");
 static_assert(offsetof(UWBP_CaptureStatus_FlagIcon_C, Icon) == 0x000240, "Member 'UWBP_CaptureStatus_FlagIcon_C::Icon' has a wrong offset!");
 static_assert(offsetof(UWBP_CaptureStatus_FlagIcon_C, IconFrame) == 0x000248, "Member 'UWBP_CaptureStatus_FlagIcon_C::IconFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_CaptureStatus_FlagIcon_C, IconFrameNoTeam) == 0x000250, "Member 'UWBP_CaptureStatus_FlagIcon_C::IconFrameNoTeam' has a wrong offset!");

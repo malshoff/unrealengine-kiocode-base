@@ -41,7 +41,7 @@ public:
 	struct FMargin                                BadgePadding;                                      // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	struct FCheckBoxStyle                         ItemStyle;                                         // 0x02F8(0x0580)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                          bSelectionToggle;                                  // 0x0878(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                         Pad_1D24[0x3];                                     // 0x0879(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_879[0x3];                                      // 0x0879(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ItemMinWidth;                                      // 0x087C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	int32                                         ItemMinHeight;                                     // 0x0880(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bBadgesInitialized;                                // 0x0884(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -64,7 +64,7 @@ public:
 	void InternalUpdateItemBgTintColor(bool bSelected);
 	void SetItemStyle(const struct FCheckBoxStyle& InItemStyle);
 	void SetItemImage(class UTexture2D* InItemImg);
-	void GetItemStyle(struct FCheckBoxStyle* Param_ItemStyle);
+	void GetItemStyle(struct FCheckBoxStyle* ItemStyle_0);
 	void SetItemMinDimensions(int32 InMinWidth, int32 InMinHeight);
 	void GetItemMinWidth(int32* MinWidth);
 	void GetItemMinHeight(int32* MinHeight);

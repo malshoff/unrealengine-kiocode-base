@@ -24,7 +24,7 @@ public:
 	struct FFootstepFXSettings                    Props;                                             // 0x0000(0x00F8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FFootstepFXSettings                    OtherProps;                                        // 0x00F8(0x00F8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x01F0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10FD[0x7];                                     // 0x01F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(AnimNotify_PlayFootstepFX_EqualProps) == 0x000008, "Wrong alignment on AnimNotify_PlayFootstepFX_EqualProps");
 static_assert(sizeof(AnimNotify_PlayFootstepFX_EqualProps) == 0x0001F8, "Wrong size on AnimNotify_PlayFootstepFX_EqualProps");

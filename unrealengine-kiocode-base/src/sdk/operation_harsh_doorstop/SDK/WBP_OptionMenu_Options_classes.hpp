@@ -228,16 +228,16 @@ public:
 	class UWBP_OptionsMenuItem_InputKeySelector_C* WeaponSlot8_IKS;                                   // 0x0878(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_OptionsMenuItem_InputKeySelector_C* WeaponSlot9_IKS;                                   // 0x0880(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                         MenuIndex;                                         // 0x0888(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D9C[0x4];                                     // 0x088C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_88C[0x4];                                      // 0x088C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTBGameUserSettings*                    GameUserSettings;                                  // 0x0890(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDirty;                                            // 0x0898(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9D[0x7];                                     // 0x0899(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_899[0x7];                                      // 0x0899(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFSubMenuOption>                SubMenuOptions;                                    // 0x08A0(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bBalanceVolumeLevels;                              // 0x08B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9E[0x7];                                     // 0x08B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8B1[0x7];                                      // 0x08B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_OptionsMenuItem_InputKeySelector_C* CurrentIKS;                                        // 0x08B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CurrentScrollOffset;                               // 0x08C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D9F[0x4];                                     // 0x08C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_8C4[0x4];                                      // 0x08C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_MouseInputCatcherOverlay_C*        MouseInputCatcher;                                 // 0x08C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -396,7 +396,7 @@ public:
 	void SetupAllOptionUI();
 	void SetupGameplayOptionUI();
 	void RefreshGameplayOptionUI();
-	void IsDirty(bool* Param_bDirty);
+	void IsDirty(bool* bDirty_0);
 	void RefreshVideoOptionUI();
 	void PopulateScreenResolutionOption();
 	void SetupVideoOptionUI();

@@ -117,7 +117,7 @@ public:
 	TArray<struct FSolverBreakingData>            Breakings;                                         // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<struct FSolverTrailingData>              Trailings;                                         // 0x0060(0x0050)(NativeAccessSpecifierPublic)
 	float                                         Timestamp;                                         // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_191F[0x4];                                     // 0x00B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRecordedFrame) == 0x000008, "Wrong alignment on FRecordedFrame");
 static_assert(sizeof(FRecordedFrame) == 0x0000B8, "Wrong size on FRecordedFrame");

@@ -33,10 +33,10 @@ struct WBP_DeployMenu_SpawnMapView_C_ExecuteUbergraph_WBP_DeployMenu_SpawnMapVie
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1594[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_ComponentBoundEvent_POISpawnPointActor;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1595[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_ComponentBoundEvent_POISpawnPointActor_1;   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DeployMenu_SpawnMapView_C_ExecuteUbergraph_WBP_DeployMenu_SpawnMapView) == 0x000008, "Wrong alignment on WBP_DeployMenu_SpawnMapView_C_ExecuteUbergraph_WBP_DeployMenu_SpawnMapView");
@@ -74,7 +74,7 @@ struct WBP_DeployMenu_SpawnMapView_C_PreloadContent final
 {
 public:
 	bool                                          CallFunc_GetMinimapData_bSuccess;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1596[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              CallFunc_GetMinimapData_MinimapImg;                // 0x0008(0x0028)(HasGetValueTypeHash)
 	struct FMinimapGenerationSettings             CallFunc_GetMinimapData_MinimapSettings;           // 0x0030(0x0028)(NoDestructor)
 	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -92,7 +92,7 @@ struct WBP_DeployMenu_SpawnMapView_C_GetMinimapData final
 {
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1597[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              MinimapImg;                                        // 0x0008(0x0028)(Parm, OutParm, HasGetValueTypeHash)
 	struct FMinimapGenerationSettings             MinimapSettings;                                   // 0x0030(0x0028)(Parm, OutParm, NoDestructor)
 	class AWorldSettings*                         CallFunc_GetWorldSettings_ReturnValue;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

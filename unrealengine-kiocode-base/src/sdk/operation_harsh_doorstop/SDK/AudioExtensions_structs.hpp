@@ -21,7 +21,7 @@ struct FSoundModulationParameter final
 public:
 	class FName                                   Control;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1537[0x8];                                     // 0x000C(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x8];                                        // 0x000C(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FSoundModulationParameter) == 0x000004, "Wrong alignment on FSoundModulationParameter");
 static_assert(sizeof(FSoundModulationParameter) == 0x000014, "Wrong size on FSoundModulationParameter");

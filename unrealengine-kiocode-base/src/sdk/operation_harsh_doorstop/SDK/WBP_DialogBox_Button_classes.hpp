@@ -29,7 +29,7 @@ public:
 	class FText                                   BtnText;                                           // 0x0248(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	FMulticastInlineDelegateProperty_             ButtonClicked;                                     // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bActive;                                           // 0x0270(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D20[0x7];                                     // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            TextColor;                                         // 0x0278(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                            TextColorActive;                                   // 0x02A0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                            BtnTint;                                           // 0x02C8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)

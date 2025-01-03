@@ -148,10 +148,10 @@ void ABP_HDCapturePointBase_C::ReceiveOnActive(bool bNewActive)
 // Function BP_HDCapturePointBase.BP_HDCapturePointBase_C.OnCaptureUpdate
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Param_bContested                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bContested_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDCapturePointBase_C::OnCaptureUpdate(bool Param_bContested, int32 Progress)
+void ABP_HDCapturePointBase_C::OnCaptureUpdate(bool bContested_0, int32 Progress)
 {
 	static class UFunction* Func = nullptr;
 
@@ -160,7 +160,7 @@ void ABP_HDCapturePointBase_C::OnCaptureUpdate(bool Param_bContested, int32 Prog
 
 	Params::BP_HDCapturePointBase_C_OnCaptureUpdate Parms{};
 
-	Parms.Param_bContested = Param_bContested;
+	Parms.bContested_0 = bContested_0;
 	Parms.Progress = Progress;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -286,9 +286,9 @@ void ABP_HDCapturePointBase_C::UpdateFlagIcon(EHDTeam InOwningTeam, class AHUD* 
 // Function BP_HDCapturePointBase.BP_HDCapturePointBase_C.InitPOI
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UDFMinimap*                       Param_Minimap                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UDFMinimap*                       Minimap_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HDCapturePointBase_C::InitPOI(class UDFMinimap* Param_Minimap)
+void ABP_HDCapturePointBase_C::InitPOI(class UDFMinimap* Minimap_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -297,7 +297,7 @@ void ABP_HDCapturePointBase_C::InitPOI(class UDFMinimap* Param_Minimap)
 
 	Params::BP_HDCapturePointBase_C_InitPOI Parms{};
 
-	Parms.Param_Minimap = Param_Minimap;
+	Parms.Minimap_0 = Minimap_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

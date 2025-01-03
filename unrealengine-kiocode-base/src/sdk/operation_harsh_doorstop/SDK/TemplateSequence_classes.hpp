@@ -69,13 +69,13 @@ static_assert(sizeof(UCameraAnimationSequence) == 0x0003F0, "Wrong size on UCame
 class ATemplateSequenceActor final : public AActor
 {
 public:
-	uint8                                         Pad_1523[0x8];                                     // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMovieSceneSequencePlaybackSettings    PlaybackSettings;                                  // 0x0228(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1524[0x4];                                     // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTemplateSequencePlayer*                SequencePlayer;                                    // 0x0240(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, Net, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSoftObjectPath                        TemplateSequence;                                  // 0x0248(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTemplateSequenceBindingOverrideData   BindingOverride;                                   // 0x0260(0x000C)(BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1525[0x4];                                     // 0x026C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void SetBinding(class AActor* Actor);
@@ -107,7 +107,7 @@ static_assert(offsetof(ATemplateSequenceActor, BindingOverride) == 0x000260, "Me
 class UTemplateSequencePlayer final : public UMovieSceneSequencePlayer
 {
 public:
-	uint8                                         Pad_1526[0x8];                                     // 0x0888(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_888[0x8];                                      // 0x0888(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UTemplateSequencePlayer* CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ATemplateSequenceActor** OutActor);

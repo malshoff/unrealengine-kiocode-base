@@ -358,9 +358,9 @@ void UWBP_JoinServerListEntry_C::SetItemImage(class UTexture2D* InItemImg)
 // Function WBP_JoinServerListEntry.WBP_JoinServerListEntry_C.GetItemStyle
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FCheckBoxStyle                   Param_ItemStyle                                        (Parm, OutParm)
+// struct FCheckBoxStyle                   ItemStyle_0                                            (Parm, OutParm)
 
-void UWBP_JoinServerListEntry_C::GetItemStyle(struct FCheckBoxStyle* Param_ItemStyle)
+void UWBP_JoinServerListEntry_C::GetItemStyle(struct FCheckBoxStyle* ItemStyle_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -371,8 +371,8 @@ void UWBP_JoinServerListEntry_C::GetItemStyle(struct FCheckBoxStyle* Param_ItemS
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Param_ItemStyle != nullptr)
-		*Param_ItemStyle = std::move(Parms.Param_ItemStyle);
+	if (ItemStyle_0 != nullptr)
+		*ItemStyle_0 = std::move(Parms.ItemStyle_0);
 }
 
 

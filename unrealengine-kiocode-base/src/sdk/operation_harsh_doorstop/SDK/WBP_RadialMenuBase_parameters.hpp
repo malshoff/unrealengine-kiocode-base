@@ -37,14 +37,14 @@ struct WBP_RadialMenuBase_C_ExecuteUbergraph_WBP_RadialMenuBase final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E88[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              K2Node_CustomEvent_Direction;                      // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_FixInputRotation_ReturnValue;             // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_Segments;                       // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetSectionDegreeSize_ReturnValue;         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E89[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_InDeadzone;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -52,7 +52,7 @@ public:
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector2D                              CallFunc_Normal2D_ReturnValue;                     // 0x0044(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E8A[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,11 +62,11 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E8B[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_75[0x3];                                       // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_GetSelectedWidget_Output;                 // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select_Default;                             // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E8C[0x2];                                     // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_82[0x2];                                       // 0x0082(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_ExecuteUbergraph_WBP_RadialMenuBase) == 0x000008, "Wrong alignment on WBP_RadialMenuBase_C_ExecuteUbergraph_WBP_RadialMenuBase");
@@ -116,22 +116,22 @@ static_assert(offsetof(WBP_RadialMenuBase_C_PreConstruct, IsDesignTime) == 0x000
 struct WBP_RadialMenuBase_C_InDeadzone final
 {
 public:
-	bool                                          Param_InDeadzone;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          InDeadzone_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_InDeadzone) == 0x000001, "Wrong alignment on WBP_RadialMenuBase_C_InDeadzone");
 static_assert(sizeof(WBP_RadialMenuBase_C_InDeadzone) == 0x000001, "Wrong size on WBP_RadialMenuBase_C_InDeadzone");
-static_assert(offsetof(WBP_RadialMenuBase_C_InDeadzone, Param_InDeadzone) == 0x000000, "Member 'WBP_RadialMenuBase_C_InDeadzone::Param_InDeadzone' has a wrong offset!");
+static_assert(offsetof(WBP_RadialMenuBase_C_InDeadzone, InDeadzone_0) == 0x000000, "Member 'WBP_RadialMenuBase_C_InDeadzone::InDeadzone_0' has a wrong offset!");
 
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.UpdateSegments
 // 0x0004 (0x0004 - 0x0000)
 struct WBP_RadialMenuBase_C_UpdateSegments final
 {
 public:
-	int32                                         Param_Segments;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Segments_0;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_UpdateSegments) == 0x000004, "Wrong alignment on WBP_RadialMenuBase_C_UpdateSegments");
 static_assert(sizeof(WBP_RadialMenuBase_C_UpdateSegments) == 0x000004, "Wrong size on WBP_RadialMenuBase_C_UpdateSegments");
-static_assert(offsetof(WBP_RadialMenuBase_C_UpdateSegments, Param_Segments) == 0x000000, "Member 'WBP_RadialMenuBase_C_UpdateSegments::Param_Segments' has a wrong offset!");
+static_assert(offsetof(WBP_RadialMenuBase_C_UpdateSegments, Segments_0) == 0x000000, "Member 'WBP_RadialMenuBase_C_UpdateSegments::Segments_0' has a wrong offset!");
 
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.SetInputDirection
 // 0x0008 (0x0008 - 0x0000)
@@ -212,10 +212,10 @@ public:
 	class UUserWidget*                            Content;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Success;                                           // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E8D[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E8E[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOverlaySlot*                           CallFunc_AddChildToOverlay_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -238,7 +238,7 @@ struct WBP_RadialMenuBase_C_GetSelectedWidget final
 public:
 	class UUserWidget*                            Output;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E8F[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_GetSelectedWidget) == 0x000008, "Wrong alignment on WBP_RadialMenuBase_C_GetSelectedWidget");
@@ -255,7 +255,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E90[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -274,7 +274,7 @@ static_assert(offsetof(WBP_RadialMenuBase_C_ClearChildren, CallFunc_Less_IntInt_
 struct WBP_RadialMenuBase_C_UpdateChildPosition final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Out_dir;                                           // 0x0004(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -288,14 +288,14 @@ public:
 	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue_1;            // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E91[0x4];                                     // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_UpdateChildPosition) == 0x000008, "Wrong alignment on WBP_RadialMenuBase_C_UpdateChildPosition");
 static_assert(sizeof(WBP_RadialMenuBase_C_UpdateChildPosition) == 0x000078, "Wrong size on WBP_RadialMenuBase_C_UpdateChildPosition");
-static_assert(offsetof(WBP_RadialMenuBase_C_UpdateChildPosition, Param_Index) == 0x000000, "Member 'WBP_RadialMenuBase_C_UpdateChildPosition::Param_Index' has a wrong offset!");
+static_assert(offsetof(WBP_RadialMenuBase_C_UpdateChildPosition, Index_0) == 0x000000, "Member 'WBP_RadialMenuBase_C_UpdateChildPosition::Index_0' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_UpdateChildPosition, Out_dir) == 0x000004, "Member 'WBP_RadialMenuBase_C_UpdateChildPosition::Out_dir' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_UpdateChildPosition, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000010, "Member 'WBP_RadialMenuBase_C_UpdateChildPosition::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_UpdateChildPosition, CallFunc_Add_FloatFloat_ReturnValue) == 0x000014, "Member 'WBP_RadialMenuBase_C_UpdateChildPosition::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
@@ -337,15 +337,15 @@ static_assert(offsetof(WBP_RadialMenuBase_C_UpdateAllChildrenPositions, CallFunc
 struct WBP_RadialMenuBase_C_SetIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NewIndex;                                          // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E92[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_GetSelectedWidget_Output;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_GetSelectedWidget_Output_1;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TScriptInterface<class IBPI_RadialSlot_C>     K2Node_DynamicCast_AsBPI_Radial_Slot;              // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E93[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IBPI_RadialSlot_C>     K2Node_DynamicCast_AsBPI_Radial_Slot_1;            // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -354,7 +354,7 @@ public:
 };
 static_assert(alignof(WBP_RadialMenuBase_C_SetIndex) == 0x000008, "Wrong alignment on WBP_RadialMenuBase_C_SetIndex");
 static_assert(sizeof(WBP_RadialMenuBase_C_SetIndex) == 0x000050, "Wrong size on WBP_RadialMenuBase_C_SetIndex");
-static_assert(offsetof(WBP_RadialMenuBase_C_SetIndex, Param_Index) == 0x000000, "Member 'WBP_RadialMenuBase_C_SetIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(WBP_RadialMenuBase_C_SetIndex, Index_0) == 0x000000, "Member 'WBP_RadialMenuBase_C_SetIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_SetIndex, NewIndex) == 0x000004, "Member 'WBP_RadialMenuBase_C_SetIndex::NewIndex' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_SetIndex, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'WBP_RadialMenuBase_C_SetIndex::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_SetIndex, CallFunc_GetSelectedWidget_Output) == 0x000010, "Member 'WBP_RadialMenuBase_C_SetIndex::CallFunc_GetSelectedWidget_Output' has a wrong offset!");
@@ -372,17 +372,17 @@ static_assert(offsetof(WBP_RadialMenuBase_C_SetIndex, CallFunc_NotEqual_IntInt_R
 struct WBP_RadialMenuBase_C_GetChild final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E94[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            Output;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Success;                                           // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E95[0x6];                                     // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_GetChild) == 0x000008, "Wrong alignment on WBP_RadialMenuBase_C_GetChild");
 static_assert(sizeof(WBP_RadialMenuBase_C_GetChild) == 0x000020, "Wrong size on WBP_RadialMenuBase_C_GetChild");
-static_assert(offsetof(WBP_RadialMenuBase_C_GetChild, Param_Index) == 0x000000, "Member 'WBP_RadialMenuBase_C_GetChild::Param_Index' has a wrong offset!");
+static_assert(offsetof(WBP_RadialMenuBase_C_GetChild, Index_0) == 0x000000, "Member 'WBP_RadialMenuBase_C_GetChild::Index_0' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_GetChild, Output) == 0x000008, "Member 'WBP_RadialMenuBase_C_GetChild::Output' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_GetChild, Success) == 0x000010, "Member 'WBP_RadialMenuBase_C_GetChild::Success' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_GetChild, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000011, "Member 'WBP_RadialMenuBase_C_GetChild::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
@@ -393,13 +393,13 @@ static_assert(offsetof(WBP_RadialMenuBase_C_GetChild, CallFunc_Array_Get_Item) =
 struct WBP_RadialMenuBase_C_GetCurrentIndex final
 {
 public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Valid;                                             // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_GetCurrentIndex) == 0x000004, "Wrong alignment on WBP_RadialMenuBase_C_GetCurrentIndex");
 static_assert(sizeof(WBP_RadialMenuBase_C_GetCurrentIndex) == 0x000008, "Wrong size on WBP_RadialMenuBase_C_GetCurrentIndex");
-static_assert(offsetof(WBP_RadialMenuBase_C_GetCurrentIndex, Param_Index) == 0x000000, "Member 'WBP_RadialMenuBase_C_GetCurrentIndex::Param_Index' has a wrong offset!");
+static_assert(offsetof(WBP_RadialMenuBase_C_GetCurrentIndex, Index_0) == 0x000000, "Member 'WBP_RadialMenuBase_C_GetCurrentIndex::Index_0' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_GetCurrentIndex, Valid) == 0x000004, "Member 'WBP_RadialMenuBase_C_GetCurrentIndex::Valid' has a wrong offset!");
 static_assert(offsetof(WBP_RadialMenuBase_C_GetCurrentIndex, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000005, "Member 'WBP_RadialMenuBase_C_GetCurrentIndex::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
@@ -410,7 +410,7 @@ struct WBP_RadialMenuBase_C_UpdateDirectionWithJoystick final
 public:
 	TScriptInterface<class IBPI_RadialInput_C>    K2Node_DynamicCast_AsBPI_Radial_Input;             // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E96[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CallFunc_GetJoystickDirection_StickInput;          // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_VSize2D_ReturnValue;                      // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -430,7 +430,7 @@ struct WBP_RadialMenuBase_C_RegisterPlayerInput final
 public:
 	class APlayerController*                      Controller;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Success;                                           // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E97[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IBPI_RadialInput_C>    K2Node_DynamicCast_AsBPI_Radial_Input;             // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -448,7 +448,7 @@ struct WBP_RadialMenuBase_C_UpdateInput final
 public:
 	float                                         CallFunc_VSize2D_ReturnValue;                      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E98[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_VSize2D_ReturnValue_1;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue_1;       // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -465,11 +465,11 @@ struct WBP_RadialMenuBase_C_AutoRegisterToInput final
 {
 public:
 	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E99[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9A[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RegisterPlayerInput_Success;              // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -563,7 +563,7 @@ struct WBP_RadialMenuBase_C_RemoveChildIndexFromRadialMenu final
 public:
 	int32                                         IndexToRemove;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9B[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_RemoveChildIndexFromRadialMenu) == 0x000008, "Wrong alignment on WBP_RadialMenuBase_C_RemoveChildIndexFromRadialMenu");
@@ -577,11 +577,11 @@ static_assert(offsetof(WBP_RadialMenuBase_C_RemoveChildIndexFromRadialMenu, Call
 struct WBP_RadialMenuBase_C_SetCustomInput final
 {
 public:
-	struct FVector2D                              Param_CustomInput;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CustomInput_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_RadialMenuBase_C_SetCustomInput) == 0x000004, "Wrong alignment on WBP_RadialMenuBase_C_SetCustomInput");
 static_assert(sizeof(WBP_RadialMenuBase_C_SetCustomInput) == 0x000008, "Wrong size on WBP_RadialMenuBase_C_SetCustomInput");
-static_assert(offsetof(WBP_RadialMenuBase_C_SetCustomInput, Param_CustomInput) == 0x000000, "Member 'WBP_RadialMenuBase_C_SetCustomInput::Param_CustomInput' has a wrong offset!");
+static_assert(offsetof(WBP_RadialMenuBase_C_SetCustomInput, CustomInput_0) == 0x000000, "Member 'WBP_RadialMenuBase_C_SetCustomInput::CustomInput_0' has a wrong offset!");
 
 // Function WBP_RadialMenuBase.WBP_RadialMenuBase_C.GetCustomInput
 // 0x0014 (0x0014 - 0x0000)
@@ -590,7 +590,7 @@ struct WBP_RadialMenuBase_C_GetCustomInput final
 public:
 	struct FVector2D                              Input;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Valid;                                             // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E9C[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_VSize2D_ReturnValue;                      // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
