@@ -1,2 +1,4 @@
 /.vs
 /build
+/unrealengine-kiocode-base/x64
+/unrealengine-kiocode-base/src/sdk

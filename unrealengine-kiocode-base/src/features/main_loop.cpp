@@ -22,8 +22,9 @@ void MainLoop::DrawCrosshair()
 	}
 }
 
-void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
+void MainLoop::FetchFromObjects(std::vector<SDK::AActor*>* list)
 {
+	std::cout << "Fetching from objects..." << std::endl;
 
 	list->clear();
 
@@ -60,13 +61,13 @@ void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 	}
 }
 
-/*void MainLoop::FetchFromActors(std::vector<SDK::AActor*>* list)
+void MainLoop::FetchFromActors(std::vector<SDK::AActor*>* list)
 {
 
-	if (Config::World->Levels.Num() == 0)
+	if (Config::m_pWorld->Levels.Num() == 0)
 		return;
 
-	SDK::ULevel* currLevel = Config::World->Levels[0];
+	SDK::ULevel* currLevel = Config::m_pWorld->Levels[0];
 	if (!currLevel)
 		return;
 
@@ -81,19 +82,19 @@ void MainLoop::FetchFromObjects(std::vector<SDK::ACharacter*>* list)
 		if (!currActor->RootComponent)
 			continue;
 
-		//const auto location = currActor->K2_GetActorLocation();
-		//if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f) continue;
+		const auto location = currActor->K2_GetActorLocation();
+		if (location.X == 0.f || location.Y == 0.f || location.Z == 0.f) continue;
 
 		//if (currActor->GetFullName().find("YOUR_NPC") != std::string::npos)
-		if (currActor->GetFullName().find("BP_Enemy") != std::string::npos)
+		if (currActor->IsA(SDK::AREnemyPawnBase::StaticClass()))
 		{
 			list->push_back(currActor);
 		}
 
 	}
-}*/
+}
 
-void MainLoop::FetchFromPlayers(std::vector<SDK::ACharacter*>* list)
+void MainLoop::FetchFromPlayers(std::vector<SDK::AActor*>* list)
 {
 	list->clear();
 
@@ -165,7 +166,7 @@ void MainLoop::FetchEntities()
 			}
 		}
 
-		std::vector<SDK::ACharacter*> newTargets;
+		std::vector<SDK::AActor*> newTargets;
 
 		switch (Config::m_nTargetFetch)
 		{
@@ -174,7 +175,7 @@ void MainLoop::FetchEntities()
 				break;
 
 			case 1:
-				//FetchFromActors(&newTargets);
+				FetchFromActors(&newTargets);
 				break;
 
 			case 2:
@@ -249,8 +250,10 @@ bool MainLoop::UpdateSDK(bool log)
 	if (log) {
 		std::cout << "MyPawn address: 0x" << std::hex << reinterpret_cast<uintptr_t>(Config::m_pMyPawn) << std::dec << std::endl;
 	}
+	std::cout << "MyPawn name: " << Config::m_pMyPawn->GetName() << std::endl;
 
-	Config::m_pMyCharacter = Config::m_pMyController->Character;
+	Config::m_pMyCharacter = static_cast<SDK::ACharacter*>(Config::m_pMyPawn);
+	std::cout << "MyCharacter value: " << Config::m_pMyCharacter << std::endl;
 	if (Config::m_pMyCharacter == nullptr)
 	{
 		std::cerr << "Error: MyCharacter not found" << std::endl;
@@ -266,10 +269,11 @@ bool MainLoop::UpdateSDK(bool log)
 
 void MainLoop::Update(DWORD tick) 
 {
+	printf("MainLoop::Update called at tick %lu\n", tick);
 	// important update of the sdk, bc if we inject the dll in the menu for example, 
 	// after in game we will not have the access to some obejct or the player controller
 	if (!UpdateSDK(false)) return;
-
+	printf("SDK Updated\n");
 	// thats a check because we can start that in a thread to avoid lag, but in some game
 	// it must be in the main loop to avoid game freezing (like in OHD)
 	if (!Config::System::m_bUpdateTargetsInDifferentThread)
@@ -347,11 +351,11 @@ void MainLoop::Update(DWORD tick)
 
 	#pragma endregion
 
-	std::shared_ptr<std::vector<SDK::ACharacter*>> currentTargets;
+	std::shared_ptr<std::vector<SDK::AActor*>> currentTargets;
 
 	{
 		std::lock_guard<std::mutex> lock(list_mutex);
-		currentTargets = std::make_shared<std::vector<SDK::ACharacter*>>(Config::m_TargetsList);
+		currentTargets = std::make_shared<std::vector<SDK::AActor*>>(Config::m_TargetsList);
 	}
 
 	// looping our targets (in online games it will be prob a ACharacter vector, in offline games for npc can be AActor vector)
@@ -362,15 +366,16 @@ void MainLoop::Update(DWORD tick)
 			continue;
 
 		// skip local player
-		if (currTarget->Controller && currTarget->Controller->IsLocalPlayerController())
+		if (currTarget && !currTarget->IsA(SDK::AREnemyPawnBase::StaticClass()))
 			continue;
 
+		auto enemyPawn = reinterpret_cast<SDK::AREnemyPawnBase*>(currTarget);
 		// raycast to check if targets are behind walls
-		bool isVisible = Config::m_pMyController->LineOfSightTo(currTarget, Config::m_pMyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
+		bool isVisible = Config::m_pMyController->LineOfSightTo(enemyPawn, Config::m_pMyController->PlayerCameraManager->CameraCachePrivate.POV.Location, false);
 
 		if (Config::m_bPlayerChams && Config::m_pChamsMaterial) 
 		{
-			SDK::ASkeletalMeshActor* mesh = reinterpret_cast<SDK::ASkeletalMeshActor*>(currTarget);
+			SDK::ASkeletalMeshActor* mesh = reinterpret_cast<SDK::ASkeletalMeshActor*>(enemyPawn);
 			Utility::ApplyChams(mesh->SkeletalMeshComponent, true);
 		}
 
@@ -383,7 +388,7 @@ void MainLoop::Update(DWORD tick)
 		if (Config::m_bPlayersSnapline)
 		{
 
-			if (currTarget == Config::m_pCurrentTarget)
+			if (enemyPawn == Config::m_pCurrentTarget)
 			{
 				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 			}
@@ -401,13 +406,13 @@ void MainLoop::Update(DWORD tick)
 
 			}
 
-			ESP::GetInstance().RenderSnapline(currTarget, color);
+			ESP::GetInstance().RenderSnapline(enemyPawn, color);
 		}
 
 		if (Config::m_bPlayerSkeleton)
 		{
 
-			if (currTarget == Config::m_pCurrentTarget)
+			if (enemyPawn == Config::m_pCurrentTarget)
 			{
 				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 			}
@@ -425,13 +430,13 @@ void MainLoop::Update(DWORD tick)
 
 			}
 
-			ESP::GetInstance().RenderSkeleton(currTarget, color);
+			ESP::GetInstance().RenderSkeleton(enemyPawn, color);
 		}
 
 		if (Config::m_bPlayersBox)
 		{
 
-			if (currTarget == Config::m_pCurrentTarget)
+			if (enemyPawn == Config::m_pCurrentTarget)
 			{
 				color = Config::m_bRainbowAimbotTargetColor ? Config::m_cRainbow : Config::m_cAimbotTargetColor;
 			}
@@ -448,7 +453,7 @@ void MainLoop::Update(DWORD tick)
 				}
 			}
 
-			ESP::GetInstance().RenderBox(currTarget, color);
+			ESP::GetInstance().RenderBox(enemyPawn, color);
 		}
 
 		if (Config::m_bPlayersBox3D)
@@ -471,12 +476,12 @@ void MainLoop::Update(DWORD tick)
 				}
 			}
 
-			ESP::GetInstance().Render3DBox(currTarget, color);
+			ESP::GetInstance().Render3DBox(enemyPawn, color);
 		}
 
 		if (Config::m_bEnableAimbot && isVisible)
 		{
-			Aimbot::GetInstance().RegularAimbot(currTarget);
+			Aimbot::GetInstance().RegularAimbot(enemyPawn);
 		}
 
 		#pragma endregion

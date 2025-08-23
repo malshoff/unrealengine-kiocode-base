@@ -122,6 +122,26 @@ void ABP_Turret_C::BP_Turret_AutoGenFunc(bool* RetValue)
 }
 
 
+// Function BP_Turret.BP_Turret_C.BroadcastOnProjectileFired
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ARProjectile*                     Projectile                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Turret_C::BroadcastOnProjectileFired(class ARProjectile* Projectile)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Turret_C", "BroadcastOnProjectileFired");
+
+	Params::BP_Turret_C_BroadcastOnProjectileFired Parms{};
+
+	Parms.Projectile = Projectile;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Turret.BP_Turret_C.CutoutTimeline__FinishedFunc
 // (BlueprintEvent)
 

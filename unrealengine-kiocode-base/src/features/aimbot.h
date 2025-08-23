@@ -9,7 +9,7 @@ public:
 		return instance;
 	}
 
-	void RegularAimbot(SDK::ACharacter* pawn);
+	void RegularAimbot(SDK::AREnemyPawnBase* pawn);
 
 private:
 	Aimbot() = default;

@@ -3,12 +3,12 @@
 #include "../config.h"
 #include "../utils/validity.h"
 
-void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color)
+void ESP::RenderSkeleton(SDK::AREnemyPawnBase* pawn, ImColor color)
 {
 	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
 		return;
 
-	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
+	SDK::USkeletalMeshComponent* mesh = pawn->GetSkeletalMeshComponent();
 	if (!mesh)
 		return;
 
@@ -17,8 +17,8 @@ void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color)
 		const int bone1Index = pair.first;
 		const int bone2Index = pair.second;
 
-		const SDK::FVector boneLoc1 = pawn->Mesh->GetSocketLocation(pawn->Mesh->GetBoneName(bone1Index));
-		const SDK::FVector boneLoc2 = pawn->Mesh->GetSocketLocation(pawn->Mesh->GetBoneName(bone2Index));
+		const SDK::FVector boneLoc1 = pawn->GetSkeletalMeshComponent()->GetSocketLocation(pawn->GetSkeletalMeshComponent()->GetBoneName(bone1Index));
+		const SDK::FVector boneLoc2 = pawn->GetSkeletalMeshComponent()->GetSocketLocation(pawn->GetSkeletalMeshComponent()->GetBoneName(bone2Index));
 
 		SDK::FVector2D boneScreen;
 		SDK::FVector2D prevBoneScreen;
@@ -39,7 +39,7 @@ void ESP::RenderSkeleton(SDK::ACharacter* pawn, ImColor color)
 	}
 }
 
-void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color)
+void ESP::RenderSnapline(SDK::AREnemyPawnBase* pawn, ImColor color)
 {
 	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController))
 		return;
@@ -74,12 +74,12 @@ void ESP::RenderSnapline(SDK::ACharacter* pawn, ImColor color)
 	}
 }	
 
-void ESP::RenderBox(SDK::ACharacter* pawn, ImColor color)
+void ESP::RenderBox(SDK::AREnemyPawnBase* pawn, ImColor color)
 {
 	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
 		return;
 
-	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
+	SDK::USkeletalMeshComponent* mesh = pawn->GetSkeletalMeshComponent();
 	if (!mesh)
 		return;
 
@@ -123,12 +123,12 @@ void ESP::RenderBox(SDK::ACharacter* pawn, ImColor color)
 	
 }
 
-void ESP::Render3DBox(SDK::ACharacter* pawn, ImColor color)
+void ESP::Render3DBox(SDK::AREnemyPawnBase* pawn, ImColor color)
 {
 	if (!pawn || !Config::m_pMyController || Validity::IsBadPoint(Config::m_pMyController) || Config::m_BonePairs.empty())
 		return;
 
-	SDK::USkeletalMeshComponent* mesh = pawn->Mesh;
+	SDK::USkeletalMeshComponent* mesh = pawn->GetSkeletalMeshComponent();
 	if (!mesh)
 		return;
 

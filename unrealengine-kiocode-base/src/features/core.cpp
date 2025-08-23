@@ -19,6 +19,7 @@ void Core::Setup()
 
 void Core::EnableHooks() // if needed hooks are avaiable
 {
+	std::cout << "Enabling hooks..." << std::endl;
 	// EXAMPLE
 	//// Health__TakeDamage
 	//if (MH_CreateHook(reinterpret_cast<LPVOID*>(

@@ -73,6 +73,7 @@ public:
 	void AddMoraleBoostMulti();
 	void BndEvt__BP_Turret_RHealth_K2Node_ComponentBoundEvent_0_OnHealthDepleted__DelegateSignature(class URHealthComponent* Component, const struct FDamageCombatEvent& DamageEventData);
 	void BP_Turret_AutoGenFunc(bool* RetValue);
+	void BroadcastOnProjectileFired(class ARProjectile* Projectile);
 	void CutoutTimeline__FinishedFunc();
 	void CutoutTimeline__UpdateFunc();
 	void DisableSharingIsCaringBuff();

@@ -16,6 +16,7 @@ void StartBackgroundThreads()
 	std::thread(RainbowCalculator::Update).detach();
 
 	if(Config::System::m_bUpdateTargetsInDifferentThread) std::thread(&MainLoop::FetchEntities, &MainLoop::GetInstance()).detach();
+	std::cout << "Background threads started." << std::endl;
 }
 
 void InitialSetup()
@@ -30,6 +31,7 @@ void InitialSetup()
 	// main loop
 	kiero::bind(8, (void**)&GUI::GetInstance().oPresent, GUI::hkPresentWrapper);
 
+	std::cout << "Kiero initialized successfully." << std::endl;
 	StartBackgroundThreads();
 }
 
@@ -39,7 +41,7 @@ DWORD WINAPI MainThread(LPVOID lpReserved)
 	bool mainHkInitialized = false;
 	do
 	{
-		if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
+		if (kiero::init(kiero::RenderType::Auto) == kiero::Status::Success)
 		{
 			InitialSetup();
 			mainHkInitialized = true;
@@ -49,6 +51,7 @@ DWORD WINAPI MainThread(LPVOID lpReserved)
 			MessageBoxA(NULL, "Kiero initialization failed", "Debug", MB_OK);
 		}
 	} while (!mainHkInitialized);
+	std::cout << "Main thread started." << std::endl;
 	return TRUE;
 }
 

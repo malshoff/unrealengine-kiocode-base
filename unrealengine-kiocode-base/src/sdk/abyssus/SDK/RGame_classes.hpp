@@ -1154,7 +1154,7 @@ static_assert(sizeof(URGWeaponMutatorScript) == 0x0000D0, "Wrong size on URGWeap
 
 // Class RGame.RGWeaponCosmeticScript
 // 0x0010 (0x00E0 - 0x00D0)
-class URGWeaponCosmeticScript final : public URGWeaponMutatorScript
+class URGWeaponCosmeticScript : public URGWeaponMutatorScript
 {
 public:
 	class URWeaponModPrimaryAsset*                WeaponModPrimaryAsset;                             // 0x00D0(0x0008)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1268,7 +1268,7 @@ static_assert(offsetof(ARAIController, MaximumFlightHeightName) == 0x000448, "Me
 
 // Class RGame.RChallengeLogEntryWidget
 // 0x0028 (0x02F8 - 0x02D0)
-class URChallengeLogEntryWidget final : public UUserWidget
+class URChallengeLogEntryWidget : public UUserWidget
 {
 public:
 	uint8                                         Pad_2D0[0x8];                                      // 0x02D0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1603,7 +1603,7 @@ static_assert(offsetof(ARAreaEffect, AvatarActor) == 0x000448, "Member 'ARAreaEf
 
 // Class RGame.RChallengeLogWidget
 // 0x0010 (0x02E0 - 0x02D0)
-class URChallengeLogWidget final : public UUserWidget
+class URChallengeLogWidget : public UUserWidget
 {
 public:
 	class UTileView*                              ChallengeGrid;                                     // 0x02D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3191,8 +3191,8 @@ public:
 
 	void AddGoldToPlayer(class APlayerController* PlayerController, const int32 Delta);
 	void AddPortalChoiceNodeId(const int32 NodeID);
-	void ApplyPlayerCosmetics(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class URWeaponCosmeticPrimaryAsset* RWeaponCosmeticPA);
-	void ApplyPlayerCosmetics_Multicast(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class URWeaponCosmeticPrimaryAsset* RWeaponCosmeticPA);
+	void ApplyPlayerCosmetics(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class FString& RWeaponCosmeticPath);
+	void ApplyPlayerCosmetics_Multicast(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class FString& RWeaponCosmeticPath);
 	void BroadcastOnFinalBossKilled();
 	void BroadcastOnKeyUsed_Multicast(class AActor* ActorUsedOn);
 	void BroadcastOnLoadingScreenPushed();
@@ -3405,7 +3405,7 @@ static_assert(offsetof(URGTask_CanFire, OnFail) == 0x000088, "Member 'URGTask_Ca
 
 // Class RGame.RBreakableActor
 // 0x0048 (0x02F0 - 0x02A8)
-class ARBreakableActor final : public AActor
+class ARBreakableActor : public AActor
 {
 public:
 	class USceneComponent*                        SceneRoot;                                         // 0x02A8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4355,7 +4355,7 @@ static_assert(offsetof(URDifficultyPrimaryAsset, DifficultyIdName) == 0x0000C8, 
 
 // Class RGame.RDifficultyTree
 // 0x0008 (0x02B0 - 0x02A8)
-class ARDifficultyTree final : public AActor
+class ARDifficultyTree : public AActor
 {
 public:
 	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -4483,7 +4483,7 @@ static_assert(offsetof(ARDummy, HealthComponent) == 0x0002B0, "Member 'ARDummy::
 
 // Class RGame.RDummyTotem
 // 0x0010 (0x02C8 - 0x02B8)
-class ARDummyTotem final : public ARDummy
+class ARDummyTotem : public ARDummy
 {
 public:
 	class ARAreaEffect*                           AttachedAreaEffect;                                // 0x02B8(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4566,7 +4566,7 @@ static_assert(offsetof(ARGameGameMode, OnAllPlayerControllersDead) == 0x000388, 
 
 // Class RGame.RDungeonGameMode
 // 0x0070 (0x0408 - 0x0398)
-class ARDungeonGameMode final : public ARGameGameMode
+class ARDungeonGameMode : public ARGameGameMode
 {
 public:
 	uint8                                         Pad_398[0x11];                                     // 0x0398(0x0011)(Fixing Size After Last Property [ Dumper-7 ])
@@ -6094,7 +6094,7 @@ static_assert(offsetof(ARPlayerController, OnPlayerSkillTreeUpdated) == 0x0008E8
 
 // Class RGame.RGamePlayerController
 // 0x0358 (0x0C50 - 0x08F8)
-class ARGamePlayerController final : public ARPlayerController
+class ARGamePlayerController : public ARPlayerController
 {
 public:
 	uint8                                         Pad_8F8[0x28];                                     // 0x08F8(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
@@ -6159,7 +6159,7 @@ public:
 	void AddHealthBonus_Server(class URPlayerGScriptComponent* GScriptComponent, const class URCharacterMutatorPrimaryAsset* HealthBonusMutatorPA);
 	void ApplyCorruptedNodeDifficultyEffect_Server();
 	void ApplyPlayerCosmetics(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const int32 EmoteSlot, const class URWeaponCosmeticPrimaryAsset* RWeaponCosmeticPA);
-	void ApplyPlayerCosmetics_Server(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class URWeaponCosmeticPrimaryAsset* RWeaponCosmeticPA);
+	void ApplyPlayerCosmetics_Server(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class FString& RWeaponCosmeticPath);
 	void AttachWeaponToController(class URWeaponPrimaryAsset* WeaponClass, const TArray<class URWeaponModPrimaryAsset*>& WeaponMods, const bool bSaveToLoadout);
 	void BroadcastOnCloseLogbook();
 	void BroadcastOnEnemyExecutionActivate();
@@ -6401,7 +6401,9 @@ public:
 	float                                         ControllerYSensitivity;                            // 0x0194(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         ControllerScopedXSensitivity;                      // 0x0198(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         ControllerScopedYSensitivity;                      // 0x019C(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1A0[0x4];                                      // 0x01A0(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bInvertYAxisAiming;                                // 0x01A0(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bInvertXAxisAiming;                                // 0x01A1(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1A2[0x2];                                      // 0x01A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         FieldOfView;                                       // 0x01A4(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EDamageNumbersOption                          DamageNumbersOption;                               // 0x01A8(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	ECrosshairAlignmentOption                     CrosshairAlignmentOption;                          // 0x01A9(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -6588,6 +6590,8 @@ static_assert(offsetof(URGameUserSettings, ControllerXSensitivity) == 0x000190, 
 static_assert(offsetof(URGameUserSettings, ControllerYSensitivity) == 0x000194, "Member 'URGameUserSettings::ControllerYSensitivity' has a wrong offset!");
 static_assert(offsetof(URGameUserSettings, ControllerScopedXSensitivity) == 0x000198, "Member 'URGameUserSettings::ControllerScopedXSensitivity' has a wrong offset!");
 static_assert(offsetof(URGameUserSettings, ControllerScopedYSensitivity) == 0x00019C, "Member 'URGameUserSettings::ControllerScopedYSensitivity' has a wrong offset!");
+static_assert(offsetof(URGameUserSettings, bInvertYAxisAiming) == 0x0001A0, "Member 'URGameUserSettings::bInvertYAxisAiming' has a wrong offset!");
+static_assert(offsetof(URGameUserSettings, bInvertXAxisAiming) == 0x0001A1, "Member 'URGameUserSettings::bInvertXAxisAiming' has a wrong offset!");
 static_assert(offsetof(URGameUserSettings, FieldOfView) == 0x0001A4, "Member 'URGameUserSettings::FieldOfView' has a wrong offset!");
 static_assert(offsetof(URGameUserSettings, DamageNumbersOption) == 0x0001A8, "Member 'URGameUserSettings::DamageNumbersOption' has a wrong offset!");
 static_assert(offsetof(URGameUserSettings, CrosshairAlignmentOption) == 0x0001A9, "Member 'URGameUserSettings::CrosshairAlignmentOption' has a wrong offset!");
@@ -6786,7 +6790,7 @@ static_assert(offsetof(URGDefaultProjectileScript, DamageSourceBitmask) == 0x000
 
 // Class RGame.RGEnemyAttackScript
 // 0x0050 (0x0110 - 0x00C0)
-class URGEnemyAttackScript final : public URGScript
+class URGEnemyAttackScript : public URGScript
 {
 public:
 	uint8                                         Pad_C0[0x8];                                       // 0x00C0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8605,7 +8609,7 @@ static_assert(offsetof(URHealthComponent, OnPredictedHealthReconciled) == 0x000E
 
 // Class RGame.RHiddenCoin
 // 0x0008 (0x02B0 - 0x02A8)
-class ARHiddenCoin final : public AActor
+class ARHiddenCoin : public AActor
 {
 public:
 	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -9334,7 +9338,7 @@ static_assert(sizeof(URMutatorEntryWidget) == 0x0002D0, "Wrong size on URMutator
 
 // Class RGame.RMutatorLog
 // 0x0000 (0x02D0 - 0x02D0)
-class URMutatorLog final : public UUserWidget
+class URMutatorLog : public UUserWidget
 {
 public:
 	class UTileView* GetMutatorTiles();
@@ -10532,7 +10536,7 @@ static_assert(offsetof(URPickupNotificationWidget, Amount) == 0x0002F8, "Member 
 
 // Class RGame.RPingableActor
 // 0x0008 (0x02B0 - 0x02A8)
-class ARPingableActor final : public AActor
+class ARPingableActor : public AActor
 {
 public:
 	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -11066,9 +11070,8 @@ public:
 	void OnDamageDealt(class ARPawnBase* InstigatorPawn, const struct FDamageCombatEvent& DamageEventData);
 	void OnDamageTaken(class URHealthComponent* Component, const struct FDamageCombatEvent& DamageData);
 	void OnFinishRun(bool RunFailed);
-	void OnGoldCollected(float Delta, float NewTotal);
 	void OnGoldCollected_Multicast(float Delta, float NewTotal);
-	void OnGoldCollected_Server(float Delta, float NewTotal);
+	void OnGoldCollected_Server(float Delta);
 	void OnHealthDepleted(class URHealthComponent* Component, const struct FDamageCombatEvent& DamageEventData);
 	void OnKeyCollected(int32 Delta, int32 NewTotal);
 	void OnKeyCollected_Multicast(int32 Delta, int32 NewTotal);
@@ -12385,7 +12388,7 @@ static_assert(offsetof(URSkillTreeCategoryPrimaryAsset, SlotPosition) == 0x00008
 
 // Class RGame.RSouvenirBase
 // 0x0008 (0x02B0 - 0x02A8)
-class ARSouvenirBase final : public AActor
+class ARSouvenirBase : public AActor
 {
 public:
 	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -12432,7 +12435,7 @@ static_assert(offsetof(URSpacerCrosshair, Right) == 0x000338, "Member 'URSpacerC
 
 // Class RGame.RSpectateHud
 // 0x0018 (0x02E8 - 0x02D0)
-class URSpectateHud final : public UUserWidget
+class URSpectateHud : public UUserWidget
 {
 public:
 	class UCanvasPanel*                           Canvas;                                            // 0x02D0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -12621,7 +12624,7 @@ static_assert(offsetof(ARTargetDummy, OnTestCompleted) == 0x0002B8, "Member 'ART
 
 // Class RGame.RTelemetryManager
 // 0x01C0 (0x0468 - 0x02A8)
-class ARTelemetryManager final : public AActor
+class ARTelemetryManager : public AActor
 {
 public:
 	class FString                                 TitleId;                                           // 0x02A8(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -12829,7 +12832,7 @@ static_assert(offsetof(URTotemTablePrimaryAsset, TotemTable) == 0x000070, "Membe
 
 // Class RGame.RTriggerMutatorScript
 // 0x0048 (0x0150 - 0x0108)
-class URTriggerMutatorScript final : public URGCharacterMutatorScript
+class URTriggerMutatorScript : public URGCharacterMutatorScript
 {
 public:
 	TSoftObjectPtr<class URCharacterMutatorPrimaryAsset> SoftMutatorPA;                              // 0x0108(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -13448,7 +13451,7 @@ static_assert(offsetof(URMutableWeaponSettings, MaxSpreadMultiplier) == 0x000DA8
 
 // Class RGame.RWeaponWorkbench
 // 0x0048 (0x02F0 - 0x02A8)
-class ARWeaponWorkbench final : public AActor
+class ARWeaponWorkbench : public AActor
 {
 public:
 	uint8                                         Pad_2A8[0x8];                                      // 0x02A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])

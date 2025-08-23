@@ -184,7 +184,7 @@ void UBP_UnstablePowerCores_CharacterMutator_C::OnTurretSpawned(class ABP_Turret
 
 
 // Function BP_UnstablePowerCores_CharacterMutator.BP_UnstablePowerCores_CharacterMutator_C.PlayExplosionVFX
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   ExplosionRadius                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -206,7 +206,7 @@ void UBP_UnstablePowerCores_CharacterMutator_C::PlayExplosionVFX(const struct FV
 
 
 // Function BP_UnstablePowerCores_CharacterMutator.BP_UnstablePowerCores_CharacterMutator_C.SpawnBuildupVFXMulticast
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Duration                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

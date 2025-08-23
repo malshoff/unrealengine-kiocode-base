@@ -42,6 +42,7 @@ public:
 	double                                        ThrowingVelocity;                                  // 0x1018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void BroadcastOnTurretSpawned(class ABP_Turret_C* SpawnedTurret);
 	void DestroyIndicatorMesh();
 	void ExecuteUbergraph_BP_Turret_CharacterMutator(int32 EntryPoint);
 	void FireAbility();

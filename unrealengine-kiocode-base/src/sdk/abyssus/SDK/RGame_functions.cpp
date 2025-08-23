@@ -12772,9 +12772,9 @@ void ARGameState::AddPortalChoiceNodeId(const int32 NodeID)
 // Parameters:
 // class ARPlayerPawn*                     RPlayerPawn                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FPlayerCosmeticOption&     CosmeticOptionData                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// const class URWeaponCosmeticPrimaryAsset*RWeaponCosmeticPA                                      (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    RWeaponCosmeticPath                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ARGameState::ApplyPlayerCosmetics(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class URWeaponCosmeticPrimaryAsset* RWeaponCosmeticPA)
+void ARGameState::ApplyPlayerCosmetics(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class FString& RWeaponCosmeticPath)
 {
 	static class UFunction* Func = nullptr;
 
@@ -12785,7 +12785,7 @@ void ARGameState::ApplyPlayerCosmetics(class ARPlayerPawn* RPlayerPawn, const st
 
 	Parms.RPlayerPawn = RPlayerPawn;
 	Parms.CosmeticOptionData = std::move(CosmeticOptionData);
-	Parms.RWeaponCosmeticPA = RWeaponCosmeticPA;
+	Parms.RWeaponCosmeticPath = std::move(RWeaponCosmeticPath);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -12801,9 +12801,9 @@ void ARGameState::ApplyPlayerCosmetics(class ARPlayerPawn* RPlayerPawn, const st
 // Parameters:
 // class ARPlayerPawn*                     RPlayerPawn                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FPlayerCosmeticOption&     CosmeticOptionData                                     (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-// const class URWeaponCosmeticPrimaryAsset*RWeaponCosmeticPA                                      (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    RWeaponCosmeticPath                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ARGameState::ApplyPlayerCosmetics_Multicast(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class URWeaponCosmeticPrimaryAsset* RWeaponCosmeticPA)
+void ARGameState::ApplyPlayerCosmetics_Multicast(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class FString& RWeaponCosmeticPath)
 {
 	static class UFunction* Func = nullptr;
 
@@ -12814,7 +12814,7 @@ void ARGameState::ApplyPlayerCosmetics_Multicast(class ARPlayerPawn* RPlayerPawn
 
 	Parms.RPlayerPawn = RPlayerPawn;
 	Parms.CosmeticOptionData = std::move(CosmeticOptionData);
-	Parms.RWeaponCosmeticPA = RWeaponCosmeticPA;
+	Parms.RWeaponCosmeticPath = std::move(RWeaponCosmeticPath);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -27868,9 +27868,9 @@ void ARGamePlayerController::ApplyPlayerCosmetics(class ARPlayerPawn* RPlayerPaw
 // Parameters:
 // class ARPlayerPawn*                     RPlayerPawn                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FPlayerCosmeticOption&     CosmeticOptionData                                     (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-// const class URWeaponCosmeticPrimaryAsset*RWeaponCosmeticPA                                      (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    RWeaponCosmeticPath                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ARGamePlayerController::ApplyPlayerCosmetics_Server(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class URWeaponCosmeticPrimaryAsset* RWeaponCosmeticPA)
+void ARGamePlayerController::ApplyPlayerCosmetics_Server(class ARPlayerPawn* RPlayerPawn, const struct FPlayerCosmeticOption& CosmeticOptionData, const class FString& RWeaponCosmeticPath)
 {
 	static class UFunction* Func = nullptr;
 
@@ -27881,7 +27881,7 @@ void ARGamePlayerController::ApplyPlayerCosmetics_Server(class ARPlayerPawn* RPl
 
 	Parms.RPlayerPawn = RPlayerPawn;
 	Parms.CosmeticOptionData = std::move(CosmeticOptionData);
-	Parms.RWeaponCosmeticPA = RWeaponCosmeticPA;
+	Parms.RWeaponCosmeticPath = std::move(RWeaponCosmeticPath);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -51401,33 +51401,6 @@ void ARPlayerState::OnFinishRun(bool RunFailed)
 }
 
 
-// Function RGame.RPlayerState.OnGoldCollected
-// (Final, Native, Protected)
-// Parameters:
-// float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NewTotal                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void ARPlayerState::OnGoldCollected(float Delta, float NewTotal)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RPlayerState", "OnGoldCollected");
-
-	Params::RPlayerState_OnGoldCollected Parms{};
-
-	Parms.Delta = Delta;
-	Parms.NewTotal = NewTotal;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function RGame.RPlayerState.OnGoldCollected_Multicast
 // (Net, NetReliable, Native, Event, NetMulticast, Public)
 // Parameters:
@@ -51459,9 +51432,8 @@ void ARPlayerState::OnGoldCollected_Multicast(float Delta, float NewTotal)
 // (Net, NetReliable, Native, Event, Public, NetServer)
 // Parameters:
 // float                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NewTotal                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ARPlayerState::OnGoldCollected_Server(float Delta, float NewTotal)
+void ARPlayerState::OnGoldCollected_Server(float Delta)
 {
 	static class UFunction* Func = nullptr;
 
@@ -51471,7 +51443,6 @@ void ARPlayerState::OnGoldCollected_Server(float Delta, float NewTotal)
 	Params::RPlayerState_OnGoldCollected_Server Parms{};
 
 	Parms.Delta = Delta;
-	Parms.NewTotal = NewTotal;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

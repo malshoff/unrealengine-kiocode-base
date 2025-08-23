@@ -50,7 +50,7 @@ public:
 		TAB_DEV
 	};
 
-	inline static int m_nTargetFetch = 2;
+	inline static int m_nTargetFetch = 1;
 	
 	inline static SDK::UEngine* m_pEngine;
 	inline static SDK::UWorld* m_pWorld;
@@ -59,7 +59,7 @@ public:
 	inline static SDK::ACharacter* m_pMyCharacter;
 
 	//inline static std::vector<SDK::AActor*> TargetsList{};
-	inline static std::vector<SDK::ACharacter*> m_TargetsList{};
+	inline static std::vector<SDK::AActor*> m_TargetsList{};
 	inline static SDK::AActor* m_pCurrentTarget;
 
 	inline static ImColor m_TargetPlayerColor = ImColor(255, 0, 0);
@@ -137,7 +137,7 @@ public:
 	inline static DWORD m_nLastShotTime = 0;
 	inline static DWORD m_nLastTick = 0;
 
-	inline static bool m_bShowMenu = false;
+	inline static bool m_bShowMenu = true;
 	inline static bool m_bWatermark = false;
 
 	inline static bool m_bCameraFovChanger = false;

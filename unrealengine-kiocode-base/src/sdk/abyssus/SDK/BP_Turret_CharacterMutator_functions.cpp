@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BP_Turret_CharacterMutator.BP_Turret_CharacterMutator_C.BroadcastOnTurretSpawned
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ABP_Turret_C*                     SpawnedTurret                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Turret_CharacterMutator_C::BroadcastOnTurretSpawned(class ABP_Turret_C* SpawnedTurret)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Turret_CharacterMutator_C", "BroadcastOnTurretSpawned");
+
+	Params::BP_Turret_CharacterMutator_C_BroadcastOnTurretSpawned Parms{};
+
+	Parms.SpawnedTurret = SpawnedTurret;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Turret_CharacterMutator.BP_Turret_CharacterMutator_C.DestroyIndicatorMesh
 // (BlueprintCallable, BlueprintEvent)
 

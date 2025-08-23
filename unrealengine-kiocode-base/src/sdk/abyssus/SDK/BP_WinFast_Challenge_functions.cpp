@@ -51,20 +51,6 @@ void UBP_WinFast_Challenge_C::FinalBossKilled()
 }
 
 
-// Function BP_WinFast_Challenge.BP_WinFast_Challenge_C.OnCombatEntered
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_WinFast_Challenge_C::OnCombatEntered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinFast_Challenge_C", "OnCombatEntered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_WinFast_Challenge.BP_WinFast_Challenge_C.OnPlayerRegistered
 // (Event, Public, BlueprintEvent)
 
@@ -74,20 +60,6 @@ void UBP_WinFast_Challenge_C::OnPlayerRegistered()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_WinFast_Challenge_C", "OnPlayerRegistered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_WinFast_Challenge.BP_WinFast_Challenge_C.OnRunStarted
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_WinFast_Challenge_C::OnRunStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinFast_Challenge_C", "OnRunStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

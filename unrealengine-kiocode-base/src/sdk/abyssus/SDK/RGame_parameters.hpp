@@ -4348,34 +4348,34 @@ static_assert(sizeof(RGameState_AddPortalChoiceNodeId) == 0x000004, "Wrong size 
 static_assert(offsetof(RGameState_AddPortalChoiceNodeId, NodeID) == 0x000000, "Member 'RGameState_AddPortalChoiceNodeId::NodeID' has a wrong offset!");
 
 // Function RGame.RGameState.ApplyPlayerCosmetics
-// 0x00E0 (0x00E0 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct RGameState_ApplyPlayerCosmetics final
 {
 public:
 	class ARPlayerPawn*                           RPlayerPawn;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPlayerCosmeticOption                  CosmeticOptionData;                                // 0x0008(0x00D0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	const class URWeaponCosmeticPrimaryAsset*     RWeaponCosmeticPA;                                 // 0x00D8(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 RWeaponCosmeticPath;                               // 0x00D8(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RGameState_ApplyPlayerCosmetics) == 0x000008, "Wrong alignment on RGameState_ApplyPlayerCosmetics");
-static_assert(sizeof(RGameState_ApplyPlayerCosmetics) == 0x0000E0, "Wrong size on RGameState_ApplyPlayerCosmetics");
+static_assert(sizeof(RGameState_ApplyPlayerCosmetics) == 0x0000E8, "Wrong size on RGameState_ApplyPlayerCosmetics");
 static_assert(offsetof(RGameState_ApplyPlayerCosmetics, RPlayerPawn) == 0x000000, "Member 'RGameState_ApplyPlayerCosmetics::RPlayerPawn' has a wrong offset!");
 static_assert(offsetof(RGameState_ApplyPlayerCosmetics, CosmeticOptionData) == 0x000008, "Member 'RGameState_ApplyPlayerCosmetics::CosmeticOptionData' has a wrong offset!");
-static_assert(offsetof(RGameState_ApplyPlayerCosmetics, RWeaponCosmeticPA) == 0x0000D8, "Member 'RGameState_ApplyPlayerCosmetics::RWeaponCosmeticPA' has a wrong offset!");
+static_assert(offsetof(RGameState_ApplyPlayerCosmetics, RWeaponCosmeticPath) == 0x0000D8, "Member 'RGameState_ApplyPlayerCosmetics::RWeaponCosmeticPath' has a wrong offset!");
 
 // Function RGame.RGameState.ApplyPlayerCosmetics_Multicast
-// 0x00E0 (0x00E0 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct RGameState_ApplyPlayerCosmetics_Multicast final
 {
 public:
 	class ARPlayerPawn*                           RPlayerPawn;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPlayerCosmeticOption                  CosmeticOptionData;                                // 0x0008(0x00D0)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-	const class URWeaponCosmeticPrimaryAsset*     RWeaponCosmeticPA;                                 // 0x00D8(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 RWeaponCosmeticPath;                               // 0x00D8(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RGameState_ApplyPlayerCosmetics_Multicast) == 0x000008, "Wrong alignment on RGameState_ApplyPlayerCosmetics_Multicast");
-static_assert(sizeof(RGameState_ApplyPlayerCosmetics_Multicast) == 0x0000E0, "Wrong size on RGameState_ApplyPlayerCosmetics_Multicast");
+static_assert(sizeof(RGameState_ApplyPlayerCosmetics_Multicast) == 0x0000E8, "Wrong size on RGameState_ApplyPlayerCosmetics_Multicast");
 static_assert(offsetof(RGameState_ApplyPlayerCosmetics_Multicast, RPlayerPawn) == 0x000000, "Member 'RGameState_ApplyPlayerCosmetics_Multicast::RPlayerPawn' has a wrong offset!");
 static_assert(offsetof(RGameState_ApplyPlayerCosmetics_Multicast, CosmeticOptionData) == 0x000008, "Member 'RGameState_ApplyPlayerCosmetics_Multicast::CosmeticOptionData' has a wrong offset!");
-static_assert(offsetof(RGameState_ApplyPlayerCosmetics_Multicast, RWeaponCosmeticPA) == 0x0000D8, "Member 'RGameState_ApplyPlayerCosmetics_Multicast::RWeaponCosmeticPA' has a wrong offset!");
+static_assert(offsetof(RGameState_ApplyPlayerCosmetics_Multicast, RWeaponCosmeticPath) == 0x0000D8, "Member 'RGameState_ApplyPlayerCosmetics_Multicast::RWeaponCosmeticPath' has a wrong offset!");
 
 // Function RGame.RGameState.BroadcastOnKeyUsed_Multicast
 // 0x0008 (0x0008 - 0x0000)
@@ -11085,19 +11085,19 @@ static_assert(offsetof(RGamePlayerController_ApplyPlayerCosmetics, EmoteSlot) ==
 static_assert(offsetof(RGamePlayerController_ApplyPlayerCosmetics, RWeaponCosmeticPA) == 0x0000E0, "Member 'RGamePlayerController_ApplyPlayerCosmetics::RWeaponCosmeticPA' has a wrong offset!");
 
 // Function RGame.RGamePlayerController.ApplyPlayerCosmetics_Server
-// 0x00E0 (0x00E0 - 0x0000)
+// 0x00E8 (0x00E8 - 0x0000)
 struct RGamePlayerController_ApplyPlayerCosmetics_Server final
 {
 public:
 	class ARPlayerPawn*                           RPlayerPawn;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPlayerCosmeticOption                  CosmeticOptionData;                                // 0x0008(0x00D0)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-	const class URWeaponCosmeticPrimaryAsset*     RWeaponCosmeticPA;                                 // 0x00D8(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 RWeaponCosmeticPath;                               // 0x00D8(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RGamePlayerController_ApplyPlayerCosmetics_Server) == 0x000008, "Wrong alignment on RGamePlayerController_ApplyPlayerCosmetics_Server");
-static_assert(sizeof(RGamePlayerController_ApplyPlayerCosmetics_Server) == 0x0000E0, "Wrong size on RGamePlayerController_ApplyPlayerCosmetics_Server");
+static_assert(sizeof(RGamePlayerController_ApplyPlayerCosmetics_Server) == 0x0000E8, "Wrong size on RGamePlayerController_ApplyPlayerCosmetics_Server");
 static_assert(offsetof(RGamePlayerController_ApplyPlayerCosmetics_Server, RPlayerPawn) == 0x000000, "Member 'RGamePlayerController_ApplyPlayerCosmetics_Server::RPlayerPawn' has a wrong offset!");
 static_assert(offsetof(RGamePlayerController_ApplyPlayerCosmetics_Server, CosmeticOptionData) == 0x000008, "Member 'RGamePlayerController_ApplyPlayerCosmetics_Server::CosmeticOptionData' has a wrong offset!");
-static_assert(offsetof(RGamePlayerController_ApplyPlayerCosmetics_Server, RWeaponCosmeticPA) == 0x0000D8, "Member 'RGamePlayerController_ApplyPlayerCosmetics_Server::RWeaponCosmeticPA' has a wrong offset!");
+static_assert(offsetof(RGamePlayerController_ApplyPlayerCosmetics_Server, RWeaponCosmeticPath) == 0x0000D8, "Member 'RGamePlayerController_ApplyPlayerCosmetics_Server::RWeaponCosmeticPath' has a wrong offset!");
 
 // Function RGame.RGamePlayerController.AttachWeaponToController
 // 0x0020 (0x0020 - 0x0000)
@@ -20548,19 +20548,6 @@ static_assert(alignof(RPlayerState_OnFinishRun) == 0x000001, "Wrong alignment on
 static_assert(sizeof(RPlayerState_OnFinishRun) == 0x000001, "Wrong size on RPlayerState_OnFinishRun");
 static_assert(offsetof(RPlayerState_OnFinishRun, RunFailed) == 0x000000, "Member 'RPlayerState_OnFinishRun::RunFailed' has a wrong offset!");
 
-// Function RGame.RPlayerState.OnGoldCollected
-// 0x0008 (0x0008 - 0x0000)
-struct RPlayerState_OnGoldCollected final
-{
-public:
-	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NewTotal;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(RPlayerState_OnGoldCollected) == 0x000004, "Wrong alignment on RPlayerState_OnGoldCollected");
-static_assert(sizeof(RPlayerState_OnGoldCollected) == 0x000008, "Wrong size on RPlayerState_OnGoldCollected");
-static_assert(offsetof(RPlayerState_OnGoldCollected, Delta) == 0x000000, "Member 'RPlayerState_OnGoldCollected::Delta' has a wrong offset!");
-static_assert(offsetof(RPlayerState_OnGoldCollected, NewTotal) == 0x000004, "Member 'RPlayerState_OnGoldCollected::NewTotal' has a wrong offset!");
-
 // Function RGame.RPlayerState.OnGoldCollected_Multicast
 // 0x0008 (0x0008 - 0x0000)
 struct RPlayerState_OnGoldCollected_Multicast final
@@ -20575,17 +20562,15 @@ static_assert(offsetof(RPlayerState_OnGoldCollected_Multicast, Delta) == 0x00000
 static_assert(offsetof(RPlayerState_OnGoldCollected_Multicast, NewTotal) == 0x000004, "Member 'RPlayerState_OnGoldCollected_Multicast::NewTotal' has a wrong offset!");
 
 // Function RGame.RPlayerState.OnGoldCollected_Server
-// 0x0008 (0x0008 - 0x0000)
+// 0x0004 (0x0004 - 0x0000)
 struct RPlayerState_OnGoldCollected_Server final
 {
 public:
 	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         NewTotal;                                          // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(RPlayerState_OnGoldCollected_Server) == 0x000004, "Wrong alignment on RPlayerState_OnGoldCollected_Server");
-static_assert(sizeof(RPlayerState_OnGoldCollected_Server) == 0x000008, "Wrong size on RPlayerState_OnGoldCollected_Server");
+static_assert(sizeof(RPlayerState_OnGoldCollected_Server) == 0x000004, "Wrong size on RPlayerState_OnGoldCollected_Server");
 static_assert(offsetof(RPlayerState_OnGoldCollected_Server, Delta) == 0x000000, "Member 'RPlayerState_OnGoldCollected_Server::Delta' has a wrong offset!");
-static_assert(offsetof(RPlayerState_OnGoldCollected_Server, NewTotal) == 0x000004, "Member 'RPlayerState_OnGoldCollected_Server::NewTotal' has a wrong offset!");
 
 // Function RGame.RPlayerState.OnHealthDepleted
 // 0x00C8 (0x00C8 - 0x0000)

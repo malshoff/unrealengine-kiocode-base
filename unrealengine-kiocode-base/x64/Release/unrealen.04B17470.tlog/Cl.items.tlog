@@ -21,6 +21,7 @@ D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\src\gui\modmenu.cp
 D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\src\sdk\abyssus\SDK\Basic.cpp;D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\x64\Release\Basic.obj
 D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\src\sdk\abyssus\SDK\CoreUObject_functions.cpp;D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\x64\Release\CoreUObject_functions.obj
 D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\src\sdk\abyssus\SDK\Engine_functions.cpp;D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\x64\Release\Engine_functions.obj
+D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\src\sdk\abyssus\SDK\RGame_functions.cpp;D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\x64\Release\RGame_functions.obj
 D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\src\sdk\abyssus\SDK\USDClasses_functions.cpp;D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\x64\Release\USDClasses_functions.obj
 D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\tests\main_test.cpp;D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\x64\Release\main_test.obj
 D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\src\utils\dumper.cpp;D:\Dev\RE\unrealengine-kiocode-base\unrealengine-kiocode-base\x64\Release\dumper.obj

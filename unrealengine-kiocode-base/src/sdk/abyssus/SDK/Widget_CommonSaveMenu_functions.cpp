@@ -17,125 +17,93 @@
 namespace SDK
 {
 
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.AcceptEvent_Event
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.ValidateProfileNameInput
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const class FString&                    Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool*                                   Valid                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_CommonSaveMenu_C::ValidateProfileNameInput(const class FString& Name_0, bool* Valid)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "ValidateProfileNameInput");
+
+	Params::Widget_CommonSaveMenu_C_ValidateProfileNameInput Parms{};
+
+	Parms.Name_0 = std::move(Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Valid != nullptr)
+		*Valid = Parms.Valid;
+}
+
+
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.UpdateDeleteButtonStatus
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ECommonInputType                        Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_CommonSaveMenu_C::UpdateDeleteButtonStatus(ECommonInputType Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "UpdateDeleteButtonStatus");
+
+	Params::Widget_CommonSaveMenu_C_UpdateDeleteButtonStatus Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.OnSaveSlotSelected
+// (BlueprintCallable, BlueprintEvent)
+
+void UWidget_CommonSaveMenu_C::OnSaveSlotSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "OnSaveSlotSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.OnInputMethodChanged_Event
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      Input                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// ECommonInputType                        bNewInputType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidget_CommonSaveMenu_C::AcceptEvent_Event(const class FText& Input)
+void UWidget_CommonSaveMenu_C::OnInputMethodChanged_Event(ECommonInputType bNewInputType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "AcceptEvent_Event");
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "OnInputMethodChanged_Event");
 
-	Params::Widget_CommonSaveMenu_C_AcceptEvent_Event Parms{};
+	Params::Widget_CommonSaveMenu_C_OnInputMethodChanged_Event Parms{};
 
-	Parms.Input = std::move(Input);
+	Parms.bNewInputType = bNewInputType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.BndEvt__Widget_CommonSaveMenu_W_AddBTN_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_CommonSaveMenu_C::BndEvt__Widget_CommonSaveMenu_W_AddBTN_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "BndEvt__Widget_CommonSaveMenu_W_AddBTN_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::Widget_CommonSaveMenu_C_BndEvt__Widget_CommonSaveMenu_W_AddBTN_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.BndEvt__Widget_CommonSaveMenu_W_BackBTN_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_CommonSaveMenu_C::BndEvt__Widget_CommonSaveMenu_W_BackBTN_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "BndEvt__Widget_CommonSaveMenu_W_BackBTN_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::Widget_CommonSaveMenu_C_BndEvt__Widget_CommonSaveMenu_W_BackBTN_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.BndEvt__Widget_SaveMenu_SlotWidgetList_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_CommonSaveMenu_C::BndEvt__Widget_SaveMenu_SlotWidgetList_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "BndEvt__Widget_SaveMenu_SlotWidgetList_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature");
-
-	Params::Widget_CommonSaveMenu_C_BndEvt__Widget_SaveMenu_SlotWidgetList_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.Construct
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWidget_CommonSaveMenu_C::Construct()
+void UWidget_CommonSaveMenu_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.ConstructSaveSlotWidgets
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWidget_CommonSaveMenu_C::ConstructSaveSlotWidgets()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "ConstructSaveSlotWidgets");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.DeletedSaveSlot
-// (BlueprintCallable, BlueprintEvent)
-
-void UWidget_CommonSaveMenu_C::DeletedSaveSlot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "DeletedSaveSlot");
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,41 +129,127 @@ void UWidget_CommonSaveMenu_C::ExecuteUbergraph_Widget_CommonSaveMenu(int32 Entr
 }
 
 
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.OnSaveSlotSelected
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.DeletedSaveSlot
 // (BlueprintCallable, BlueprintEvent)
 
-void UWidget_CommonSaveMenu_C::OnSaveSlotSelected()
+void UWidget_CommonSaveMenu_C::DeletedSaveSlot()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "OnSaveSlotSelected");
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "DeletedSaveSlot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.ValidateProfileNameInput
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const class FString&                    Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool*                                   Valid                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.ConstructSaveSlotWidgets
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWidget_CommonSaveMenu_C::ValidateProfileNameInput(const class FString& Name_0, bool* Valid)
+void UWidget_CommonSaveMenu_C::ConstructSaveSlotWidgets()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "ValidateProfileNameInput");
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "ConstructSaveSlotWidgets");
 
-	Params::Widget_CommonSaveMenu_C_ValidateProfileNameInput Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Name_0 = std::move(Name_0);
+
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWidget_CommonSaveMenu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.BndEvt__Widget_SaveMenu_SlotWidgetList_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_CommonSaveMenu_C::BndEvt__Widget_SaveMenu_SlotWidgetList_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "BndEvt__Widget_SaveMenu_SlotWidgetList_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature");
+
+	Params::Widget_CommonSaveMenu_C_BndEvt__Widget_SaveMenu_SlotWidgetList_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (Valid != nullptr)
-		*Valid = Parms.Valid;
+
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.BndEvt__Widget_CommonSaveMenu_W_BackBTN_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_CommonSaveMenu_C::BndEvt__Widget_CommonSaveMenu_W_BackBTN_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "BndEvt__Widget_CommonSaveMenu_W_BackBTN_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::Widget_CommonSaveMenu_C_BndEvt__Widget_CommonSaveMenu_W_BackBTN_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.BndEvt__Widget_CommonSaveMenu_W_AddBTN_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_CommonSaveMenu_C::BndEvt__Widget_CommonSaveMenu_W_AddBTN_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "BndEvt__Widget_CommonSaveMenu_W_AddBTN_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::Widget_CommonSaveMenu_C_BndEvt__Widget_CommonSaveMenu_W_AddBTN_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_CommonSaveMenu.Widget_CommonSaveMenu_C.AcceptEvent_Event
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Input                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWidget_CommonSaveMenu_C::AcceptEvent_Event(const class FText& Input)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_CommonSaveMenu_C", "AcceptEvent_Event");
+
+	Params::Widget_CommonSaveMenu_C_AcceptEvent_Event Parms{};
+
+	Parms.Input = std::move(Input);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

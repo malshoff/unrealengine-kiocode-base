@@ -10,6 +10,7 @@
 
 #include "Basic.hpp"
 
+#include "CommonInput_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -17,35 +18,43 @@ namespace SDK::Params
 {
 
 // Function W_Button_SimpleText.W_Button_SimpleText_C.ExecuteUbergraph_W_Button_SimpleText
-// 0x0058 (0x0058 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0004(0x0014)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0018(0x0014)()
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_BreakVector2D_X;                          // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector2D_Y;                          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_VSize2D_ReturnValue;                      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x2];                                       // 0x004A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast; // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13[0x1];                                       // 0x0013(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0028(0x0014)()
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_BreakVector2D_X;                          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y;                          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_VSize2D_ReturnValue;                      // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast; // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText) == 0x000008, "Wrong alignment on W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText");
-static_assert(sizeof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText) == 0x000058, "Wrong size on W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText");
+static_assert(sizeof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText) == 0x000068, "Wrong size on W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText");
 static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, EntryPoint) == 0x000000, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::EntryPoint' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, K2Node_MakeStruct_SlateColor) == 0x000004, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, K2Node_MakeStruct_SlateColor_1) == 0x000018, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_BreakVector2D_X) == 0x000030, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_BreakVector2D_Y) == 0x000038, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_VSize2D_ReturnValue) == 0x000040, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_VSize2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000048, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, K2Node_Event_IsDesignTime) == 0x000049, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast) == 0x00004C, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast) == 0x000050, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000008, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, K2Node_Event_IsDesignTime) == 0x000011, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000012, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, K2Node_MakeStruct_SlateColor) == 0x000014, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::K2Node_MakeStruct_SlateColor' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, K2Node_MakeStruct_SlateColor_1) == 0x000028, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_BreakVector2D_X) == 0x000040, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_BreakVector2D_X' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_BreakVector2D_Y) == 0x000048, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_BreakVector2D_Y' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_VSize2D_ReturnValue) == 0x000050, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_VSize2D_ReturnValue' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_Greater_DoubleDouble_ReturnValue) == 0x000058, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_Greater_DoubleDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast) == 0x00005C, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_SetWidthOverride_InWidthOverride_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText, CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast) == 0x000060, "Member 'W_Button_SimpleText_C_ExecuteUbergraph_W_Button_SimpleText::CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast' has a wrong offset!");
 
 // Function W_Button_SimpleText.W_Button_SimpleText_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)

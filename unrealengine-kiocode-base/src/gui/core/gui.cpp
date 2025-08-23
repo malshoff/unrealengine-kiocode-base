@@ -53,9 +53,10 @@ void GUI::RenderUI()
 	if (Config::m_bShowMenu)
 	{
 		RenderMouse();
-
+		printf("Rendering menu\n");
 		// our menu
 		ModMenu::Window();
+		printf("Menu rendered\n");
 	}
 
 	if (Config::m_bWatermark)

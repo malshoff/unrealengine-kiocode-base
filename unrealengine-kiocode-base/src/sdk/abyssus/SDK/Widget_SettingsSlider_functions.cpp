@@ -17,221 +17,31 @@
 namespace SDK
 {
 
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BndEvt__Widget_SettingsSlider_Slider_277_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_SettingsSlider_C::BndEvt__Widget_SettingsSlider_Slider_277_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "BndEvt__Widget_SettingsSlider_Slider_277_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature");
-
-	Params::Widget_SettingsSlider_C_BndEvt__Widget_SettingsSlider_Slider_277_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BndEvt__Widget_SettingsSlider_W_Button_Left_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_SettingsSlider_C::BndEvt__Widget_SettingsSlider_W_Button_Left_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "BndEvt__Widget_SettingsSlider_W_Button_Left_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::Widget_SettingsSlider_C_BndEvt__Widget_SettingsSlider_W_Button_Left_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BndEvt__Widget_SettingsSlider_W_Button_Right_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_SettingsSlider_C::BndEvt__Widget_SettingsSlider_W_Button_Right_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "BndEvt__Widget_SettingsSlider_W_Button_Right_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::Widget_SettingsSlider_C_BndEvt__Widget_SettingsSlider_W_Button_Right_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BP_DecreaseSettingValue
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.UpdateProgressbarPercentage
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWidget_SettingsSlider_C::BP_DecreaseSettingValue()
+void UWidget_SettingsSlider_C::UpdateProgressbarPercentage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "BP_DecreaseSettingValue");
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "UpdateProgressbarPercentage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BP_IncreaseSettingValue
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.ToggleHighlight
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWidget_SettingsSlider_C::BP_IncreaseSettingValue()
+void UWidget_SettingsSlider_C::ToggleHighlight()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "BP_IncreaseSettingValue");
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "ToggleHighlight");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.ChangeValueWithNavigation
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Delta                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_SettingsSlider_C::ChangeValueWithNavigation(double Delta)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "ChangeValueWithNavigation");
-
-	Params::Widget_SettingsSlider_C_ChangeValueWithNavigation Parms{};
-
-	Parms.Delta = Delta;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWidget_SettingsSlider_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.ExecuteUbergraph_Widget_SettingsSlider
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_SettingsSlider_C::ExecuteUbergraph_Widget_SettingsSlider(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "ExecuteUbergraph_Widget_SettingsSlider");
-
-	Params::Widget_SettingsSlider_C_ExecuteUbergraph_Widget_SettingsSlider Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_SettingsSlider_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "PreConstruct");
-
-	Params::Widget_SettingsSlider_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.Set Value Text Value
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWidget_SettingsSlider_C::Set_Value_Text_Value()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "Set Value Text Value");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.SetValue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  InValue                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bBroadcastValueChanged_0                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_SettingsSlider_C::SetValue(double InValue, bool bBroadcastValueChanged_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "SetValue");
-
-	Params::Widget_SettingsSlider_C_SetValue Parms{};
-
-	Parms.InValue = InValue;
-	Parms.bBroadcastValueChanged_0 = bBroadcastValueChanged_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.SetValuePercentage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  InPercentage                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_SettingsSlider_C::SetValuePercentage(double InPercentage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "SetValuePercentage");
-
-	Params::Widget_SettingsSlider_C_SetValuePercentage Parms{};
-
-	Parms.InPercentage = InPercentage;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -257,31 +67,221 @@ void UWidget_SettingsSlider_C::Tick(const struct FGeometry& MyGeometry, float In
 }
 
 
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.ToggleHighlight
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.SetValuePercentage
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  InPercentage                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidget_SettingsSlider_C::ToggleHighlight()
+void UWidget_SettingsSlider_C::SetValuePercentage(double InPercentage)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "ToggleHighlight");
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "SetValuePercentage");
+
+	Params::Widget_SettingsSlider_C_SetValuePercentage Parms{};
+
+	Parms.InPercentage = InPercentage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.SetValue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  InValue                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bBroadcastValueChanged_0                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_SettingsSlider_C::SetValue(double InValue, bool bBroadcastValueChanged_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "SetValue");
+
+	Params::Widget_SettingsSlider_C_SetValue Parms{};
+
+	Parms.InValue = InValue;
+	Parms.bBroadcastValueChanged_0 = bBroadcastValueChanged_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.Set Value Text Value
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWidget_SettingsSlider_C::Set_Value_Text_Value()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "Set Value Text Value");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Widget_SettingsSlider.Widget_SettingsSlider_C.UpdateProgressbarPercentage
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidget_SettingsSlider_C::UpdateProgressbarPercentage()
+void UWidget_SettingsSlider_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_SettingsSlider_C", "UpdateProgressbarPercentage");
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "PreConstruct");
+
+	Params::Widget_SettingsSlider_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.ExecuteUbergraph_Widget_SettingsSlider
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_SettingsSlider_C::ExecuteUbergraph_Widget_SettingsSlider(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "ExecuteUbergraph_Widget_SettingsSlider");
+
+	Params::Widget_SettingsSlider_C_ExecuteUbergraph_Widget_SettingsSlider Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWidget_SettingsSlider_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.ChangeValueWithNavigation
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Delta                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_SettingsSlider_C::ChangeValueWithNavigation(double Delta)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "ChangeValueWithNavigation");
+
+	Params::Widget_SettingsSlider_C_ChangeValueWithNavigation Parms{};
+
+	Parms.Delta = Delta;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BP_IncreaseSettingValue
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWidget_SettingsSlider_C::BP_IncreaseSettingValue()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "BP_IncreaseSettingValue");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BP_DecreaseSettingValue
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWidget_SettingsSlider_C::BP_DecreaseSettingValue()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "BP_DecreaseSettingValue");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BndEvt__Widget_SettingsSlider_W_Button_Right_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_SettingsSlider_C::BndEvt__Widget_SettingsSlider_W_Button_Right_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "BndEvt__Widget_SettingsSlider_W_Button_Right_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::Widget_SettingsSlider_C_BndEvt__Widget_SettingsSlider_W_Button_Right_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BndEvt__Widget_SettingsSlider_W_Button_Left_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_SettingsSlider_C::BndEvt__Widget_SettingsSlider_W_Button_Left_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "BndEvt__Widget_SettingsSlider_W_Button_Left_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::Widget_SettingsSlider_C_BndEvt__Widget_SettingsSlider_W_Button_Left_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_SettingsSlider.Widget_SettingsSlider_C.BndEvt__Widget_SettingsSlider_Slider_277_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_SettingsSlider_C::BndEvt__Widget_SettingsSlider_Slider_277_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_SettingsSlider_C", "BndEvt__Widget_SettingsSlider_Slider_277_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature");
+
+	Params::Widget_SettingsSlider_C_BndEvt__Widget_SettingsSlider_Slider_277_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

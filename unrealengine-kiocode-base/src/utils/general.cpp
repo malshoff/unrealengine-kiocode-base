@@ -14,6 +14,7 @@ namespace Utility
 		SetConsoleTitle(Config::System::m_cAuthor);
 		FILE* f;
 		freopen_s(&f, "CONOUT$", "w", stdout);
+		freopen_s(&f, "CONOUT$", "w", stderr);
 	}
 
 	SDK::FLinearColor FromImColorToFLinearColor(ImColor color) {

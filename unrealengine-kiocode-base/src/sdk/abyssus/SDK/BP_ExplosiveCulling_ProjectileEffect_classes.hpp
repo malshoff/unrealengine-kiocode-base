@@ -19,11 +19,12 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_ExplosiveCulling_ProjectileEffect.BP_ExplosiveCulling_ProjectileEffect_C
-// 0x0008 (0x00F8 - 0x00F0)
+// 0x0018 (0x0108 - 0x00F0)
 class UBP_ExplosiveCulling_ProjectileEffect_C final : public URGProjectileEffectScript
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<struct FHitResult>                     Hits;                                              // 0x00F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_BP_ExplosiveCulling_ProjectileEffect(int32 EntryPoint);
@@ -40,8 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UBP_ExplosiveCulling_ProjectileEffect_C) == 0x000008, "Wrong alignment on UBP_ExplosiveCulling_ProjectileEffect_C");
-static_assert(sizeof(UBP_ExplosiveCulling_ProjectileEffect_C) == 0x0000F8, "Wrong size on UBP_ExplosiveCulling_ProjectileEffect_C");
+static_assert(sizeof(UBP_ExplosiveCulling_ProjectileEffect_C) == 0x000108, "Wrong size on UBP_ExplosiveCulling_ProjectileEffect_C");
 static_assert(offsetof(UBP_ExplosiveCulling_ProjectileEffect_C, UberGraphFrame) == 0x0000F0, "Member 'UBP_ExplosiveCulling_ProjectileEffect_C::UberGraphFrame' has a wrong offset!");
+static_assert(offsetof(UBP_ExplosiveCulling_ProjectileEffect_C, Hits) == 0x0000F8, "Member 'UBP_ExplosiveCulling_ProjectileEffect_C::Hits' has a wrong offset!");
 
 }
 

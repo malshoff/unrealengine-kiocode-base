@@ -18,22 +18,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_WinFast_Challenge.BP_WinFast_Challenge_C
-// 0x0020 (0x0050 - 0x0030)
+// 0x0010 (0x0040 - 0x0030)
 class UBP_WinFast_Challenge_C final : public URChallengeScript
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0030(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          HasSetTimestamp;                                   // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Timestamp;                                         // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        TimeToCompleteInSeconds;                           // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        TimeToCompleteInSeconds;                           // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_WinFast_Challenge(int32 EntryPoint);
 	void FinalBossKilled();
-	void OnCombatEntered();
 	void OnPlayerRegistered();
-	void OnRunStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -46,11 +41,9 @@ public:
 	}
 };
 static_assert(alignof(UBP_WinFast_Challenge_C) == 0x000008, "Wrong alignment on UBP_WinFast_Challenge_C");
-static_assert(sizeof(UBP_WinFast_Challenge_C) == 0x000050, "Wrong size on UBP_WinFast_Challenge_C");
+static_assert(sizeof(UBP_WinFast_Challenge_C) == 0x000040, "Wrong size on UBP_WinFast_Challenge_C");
 static_assert(offsetof(UBP_WinFast_Challenge_C, UberGraphFrame) == 0x000030, "Member 'UBP_WinFast_Challenge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_WinFast_Challenge_C, HasSetTimestamp) == 0x000038, "Member 'UBP_WinFast_Challenge_C::HasSetTimestamp' has a wrong offset!");
-static_assert(offsetof(UBP_WinFast_Challenge_C, Timestamp) == 0x000040, "Member 'UBP_WinFast_Challenge_C::Timestamp' has a wrong offset!");
-static_assert(offsetof(UBP_WinFast_Challenge_C, TimeToCompleteInSeconds) == 0x000048, "Member 'UBP_WinFast_Challenge_C::TimeToCompleteInSeconds' has a wrong offset!");
+static_assert(offsetof(UBP_WinFast_Challenge_C, TimeToCompleteInSeconds) == 0x000038, "Member 'UBP_WinFast_Challenge_C::TimeToCompleteInSeconds' has a wrong offset!");
 
 }
 

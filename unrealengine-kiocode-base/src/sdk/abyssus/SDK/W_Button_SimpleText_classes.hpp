@@ -12,6 +12,7 @@
 
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CommonInput_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CommonUI_classes.hpp"
 
@@ -20,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass W_Button_SimpleText.W_Button_SimpleText_C
-// 0x0140 (0x14F0 - 0x13B0)
+// 0x0160 (0x1510 - 0x13B0)
 class UW_Button_SimpleText_C final : public UCommonButtonBase
 {
 public:
@@ -38,11 +39,16 @@ public:
 	struct FLinearColor                           TextHoverColor;                                    // 0x14C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              SizeOverride;                                      // 0x14D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PlayConstructAnimation;                            // 0x14E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14E9[0x7];                                     // 0x14E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnPressed;                                         // 0x14F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnReleased;                                        // 0x1500(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void BP_OnClicked();
 	void BP_OnHovered();
+	void BP_OnPressed();
+	void BP_OnReleased();
 	void BP_OnUnhovered();
-	void Construct();
 	void ExecuteUbergraph_W_Button_SimpleText(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void Trans_Disabled();
@@ -62,7 +68,7 @@ public:
 	}
 };
 static_assert(alignof(UW_Button_SimpleText_C) == 0x000010, "Wrong alignment on UW_Button_SimpleText_C");
-static_assert(sizeof(UW_Button_SimpleText_C) == 0x0014F0, "Wrong size on UW_Button_SimpleText_C");
+static_assert(sizeof(UW_Button_SimpleText_C) == 0x001510, "Wrong size on UW_Button_SimpleText_C");
 static_assert(offsetof(UW_Button_SimpleText_C, UberGraphFrame) == 0x0013B0, "Member 'UW_Button_SimpleText_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UW_Button_SimpleText_C, Trans_OnDisabled) == 0x0013B8, "Member 'UW_Button_SimpleText_C::Trans_OnDisabled' has a wrong offset!");
 static_assert(offsetof(UW_Button_SimpleText_C, Trans_OnHover) == 0x0013C0, "Member 'UW_Button_SimpleText_C::Trans_OnHover' has a wrong offset!");
@@ -76,6 +82,8 @@ static_assert(offsetof(UW_Button_SimpleText_C, Translucency) == 0x0014C4, "Membe
 static_assert(offsetof(UW_Button_SimpleText_C, TextHoverColor) == 0x0014C8, "Member 'UW_Button_SimpleText_C::TextHoverColor' has a wrong offset!");
 static_assert(offsetof(UW_Button_SimpleText_C, SizeOverride) == 0x0014D8, "Member 'UW_Button_SimpleText_C::SizeOverride' has a wrong offset!");
 static_assert(offsetof(UW_Button_SimpleText_C, PlayConstructAnimation) == 0x0014E8, "Member 'UW_Button_SimpleText_C::PlayConstructAnimation' has a wrong offset!");
+static_assert(offsetof(UW_Button_SimpleText_C, OnPressed) == 0x0014F0, "Member 'UW_Button_SimpleText_C::OnPressed' has a wrong offset!");
+static_assert(offsetof(UW_Button_SimpleText_C, OnReleased) == 0x001500, "Member 'UW_Button_SimpleText_C::OnReleased' has a wrong offset!");
 
 }
 

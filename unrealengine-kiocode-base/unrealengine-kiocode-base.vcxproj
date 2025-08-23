@@ -237,6 +237,7 @@
     <ClCompile Include="src\sdk\abyssus\SDK\Basic.cpp" />
     <ClCompile Include="src\sdk\abyssus\SDK\CoreUObject_functions.cpp" />
     <ClCompile Include="src\sdk\abyssus\SDK\Engine_functions.cpp" />
+    <ClCompile Include="src\sdk\abyssus\SDK\RGame_functions.cpp" />
     <ClCompile Include="src\sdk\abyssus\SDK\USDClasses_functions.cpp" />
     <ClCompile Include="tests\main_test.cpp" />
     <ClCompile Include="src\utils\dumper.cpp" />

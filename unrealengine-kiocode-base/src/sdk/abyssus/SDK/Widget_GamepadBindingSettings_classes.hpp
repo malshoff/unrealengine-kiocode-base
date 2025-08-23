@@ -26,10 +26,10 @@ public:
 	TArray<class UWidget_Settings_GamepadInput_C*> Widget_Settings_GamepadBindingInputs;             // 0x0398(0x0010)(Edit, BlueprintVisible, ContainsInstancedReference)
 
 public:
-	void BP_GetScrollBoxWidget(class UScrollBox** Result);
-	class UWidget* GetDesiredFocusWidget();
-	void GetInputMappingsPanelWidget(class UPanelWidget** Result);
 	void GetMappableIMCs(TArray<class UInputMappingContext*>* MappableIMCs_0);
+	void GetInputMappingsPanelWidget(class UPanelWidget** Result);
+	class UWidget* GetDesiredFocusWidget();
+	void BP_GetScrollBoxWidget(class UScrollBox** Result);
 
 public:
 	static class UClass* StaticClass()

@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "RGame_structs.hpp"
 #include "RGame_classes.hpp"
 
 

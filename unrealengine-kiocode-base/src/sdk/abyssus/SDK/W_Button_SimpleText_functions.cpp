@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function W_Button_SimpleText.W_Button_SimpleText_C.BP_OnClicked
+// (Event, Protected, BlueprintEvent)
+
+void UW_Button_SimpleText_C::BP_OnClicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_Button_SimpleText_C", "BP_OnClicked");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function W_Button_SimpleText.W_Button_SimpleText_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 
@@ -31,6 +45,34 @@ void UW_Button_SimpleText_C::BP_OnHovered()
 }
 
 
+// Function W_Button_SimpleText.W_Button_SimpleText_C.BP_OnPressed
+// (Event, Protected, BlueprintEvent)
+
+void UW_Button_SimpleText_C::BP_OnPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_Button_SimpleText_C", "BP_OnPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function W_Button_SimpleText.W_Button_SimpleText_C.BP_OnReleased
+// (Event, Protected, BlueprintEvent)
+
+void UW_Button_SimpleText_C::BP_OnReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("W_Button_SimpleText_C", "BP_OnReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function W_Button_SimpleText.W_Button_SimpleText_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 
@@ -40,20 +82,6 @@ void UW_Button_SimpleText_C::BP_OnUnhovered()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("W_Button_SimpleText_C", "BP_OnUnhovered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function W_Button_SimpleText.W_Button_SimpleText_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UW_Button_SimpleText_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_Button_SimpleText_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

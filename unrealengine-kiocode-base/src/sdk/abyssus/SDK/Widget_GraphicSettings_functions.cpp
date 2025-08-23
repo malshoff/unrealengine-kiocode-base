@@ -17,233 +17,231 @@
 namespace SDK
 {
 
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.ApplySettings
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.SetWidgetCurrentValues
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInit                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidget_GraphicSettings_C::ApplySettings()
+void UWidget_GraphicSettings_C::SetWidgetCurrentValues(bool bInit)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "ApplySettings");
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "SetWidgetCurrentValues");
+
+	Params::Widget_GraphicSettings_C_SetWidgetCurrentValues Parms{};
+
+	Parms.bInit = bInit;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.SetupExplicitNavigations
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWidget_GraphicSettings_C::SetupExplicitNavigations()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "SetupExplicitNavigations");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_AA_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.ResetSettings
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWidget_GraphicSettings_C::ResetSettings()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "ResetSettings");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.PreviousWidgetSettingsValue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::PreviousWidgetSettingsValue(class UUserWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "PreviousWidgetSettingsValue");
+
+	Params::Widget_GraphicSettings_C_PreviousWidgetSettingsValue Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.OnNavigationRight
+// (BlueprintCallable, BlueprintEvent)
+
+void UWidget_GraphicSettings_C::OnNavigationRight()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "OnNavigationRight");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.OnNavigationLeft
+// (BlueprintCallable, BlueprintEvent)
+
+void UWidget_GraphicSettings_C::OnNavigationLeft()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "OnNavigationLeft");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.NextWidgetSettingsValue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::NextWidgetSettingsValue(class UUserWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "NextWidgetSettingsValue");
+
+	Params::Widget_GraphicSettings_C_NextWidgetSettingsValue Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.GetFocusedWidget
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget**                     FocusedWidget                                          (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::GetFocusedWidget(class UUserWidget** FocusedWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "GetFocusedWidget");
+
+	Params::Widget_GraphicSettings_C_GetFocusedWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (FocusedWidget != nullptr)
+		*FocusedWidget = Parms.FocusedWidget;
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.Get_TSRSharpness_Visibility
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+ESlateVisibility UWidget_GraphicSettings_C::Get_TSRSharpness_Visibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "Get_TSRSharpness_Visibility");
+
+	Params::Widget_GraphicSettings_C_Get_TSRSharpness_Visibility Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.ExecuteUbergraph_Widget_GraphicSettings
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::ExecuteUbergraph_Widget_GraphicSettings(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "ExecuteUbergraph_Widget_GraphicSettings");
+
+	Params::Widget_GraphicSettings_C_ExecuteUbergraph_Widget_GraphicSettings Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWidget_GraphicSettings_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BP_GetScrollBoxWidget
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UScrollBox**                      Result                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::BP_GetScrollBoxWidget(class UScrollBox** Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BP_GetScrollBoxWidget");
+
+	Params::Widget_GraphicSettings_C_BP_GetScrollBoxWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_VisualEffects_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_AA_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature(int32 Index_0)
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_VisualEffects_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_AA_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature");
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_VisualEffects_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature");
 
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_AA_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_AAQuality_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_AAQuality_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_AAQuality_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_AAQuality_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_ButtonAutomaticQuality_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_ButtonAutomaticQuality_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_ButtonAutomaticQuality_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_ButtonAutomaticQuality_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_DepthOfField_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_DepthOfField_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature(bool State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_DepthOfField_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_DepthOfField_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_EnvDetail_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_EnvDetail_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_EnvDetail_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_EnvDetail_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_GI_K2Node_ComponentBoundEvent_10_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_GI_K2Node_ComponentBoundEvent_10_OnValueChanged__DelegateSignature(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_GI_K2Node_ComponentBoundEvent_10_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_GI_K2Node_ComponentBoundEvent_10_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_MotionBlur_K2Node_ComponentBoundEvent_12_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_MotionBlur_K2Node_ComponentBoundEvent_12_OnValueChanged__DelegateSignature(bool State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_MotionBlur_K2Node_ComponentBoundEvent_12_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_MotionBlur_K2Node_ComponentBoundEvent_12_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_Overall_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_Overall_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_Overall_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_Overall_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_PostProcessQuality_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_PostProcessQuality_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_PostProcessQuality_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_PostProcessQuality_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_Shadows_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_Shadows_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_Shadows_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_Shadows_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_TextDetail_K2Node_ComponentBoundEvent_7_OnValueChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_TextDetail_K2Node_ComponentBoundEvent_7_OnValueChanged__DelegateSignature(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_TextDetail_K2Node_ComponentBoundEvent_7_OnValueChanged__DelegateSignature");
-
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_TextDetail_K2Node_ComponentBoundEvent_7_OnValueChanged__DelegateSignature Parms{};
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_VisualEffects_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature Parms{};
 
 	Parms.Index_0 = Index_0;
 
@@ -273,19 +271,19 @@ void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_TSRSharpness_K2No
 }
 
 
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_VisualEffects_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_TextDetail_K2Node_ComponentBoundEvent_7_OnValueChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_VisualEffects_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature(int32 Index_0)
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_TextDetail_K2Node_ComponentBoundEvent_7_OnValueChanged__DelegateSignature(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_VisualEffects_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature");
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_TextDetail_K2Node_ComponentBoundEvent_7_OnValueChanged__DelegateSignature");
 
-	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_VisualEffects_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature Parms{};
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_TextDetail_K2Node_ComponentBoundEvent_7_OnValueChanged__DelegateSignature Parms{};
 
 	Parms.Index_0 = Index_0;
 
@@ -293,215 +291,217 @@ void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_VisualEffects_K2N
 }
 
 
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BP_GetScrollBoxWidget
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_Shadows_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UScrollBox**                      Result                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidget_GraphicSettings_C::BP_GetScrollBoxWidget(class UScrollBox** Result)
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_Shadows_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "BP_GetScrollBoxWidget");
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_Shadows_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature");
 
-	Params::Widget_GraphicSettings_C_BP_GetScrollBoxWidget Parms{};
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_Shadows_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWidget_GraphicSettings_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.ExecuteUbergraph_Widget_GraphicSettings
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::ExecuteUbergraph_Widget_GraphicSettings(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "ExecuteUbergraph_Widget_GraphicSettings");
-
-	Params::Widget_GraphicSettings_C_ExecuteUbergraph_Widget_GraphicSettings Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.Get_TSRSharpness_Visibility
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_PostProcessQuality_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-ESlateVisibility UWidget_GraphicSettings_C::Get_TSRSharpness_Visibility()
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_PostProcessQuality_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "Get_TSRSharpness_Visibility");
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_PostProcessQuality_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature");
 
-	Params::Widget_GraphicSettings_C_Get_TSRSharpness_Visibility Parms{};
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_PostProcessQuality_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.GetFocusedWidget
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUserWidget**                     FocusedWidget                                          (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::GetFocusedWidget(class UUserWidget** FocusedWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "GetFocusedWidget");
-
-	Params::Widget_GraphicSettings_C_GetFocusedWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FocusedWidget != nullptr)
-		*FocusedWidget = Parms.FocusedWidget;
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.NextWidgetSettingsValue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::NextWidgetSettingsValue(class UUserWidget* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "NextWidgetSettingsValue");
-
-	Params::Widget_GraphicSettings_C_NextWidgetSettingsValue Parms{};
-
-	Parms.Widget = Widget;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.OnNavigationLeft
-// (BlueprintCallable, BlueprintEvent)
-
-void UWidget_GraphicSettings_C::OnNavigationLeft()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "OnNavigationLeft");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.OnNavigationRight
-// (BlueprintCallable, BlueprintEvent)
-
-void UWidget_GraphicSettings_C::OnNavigationRight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "OnNavigationRight");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.PreviousWidgetSettingsValue
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_Overall_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UUserWidget*                      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidget_GraphicSettings_C::PreviousWidgetSettingsValue(class UUserWidget* Widget)
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_Overall_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "PreviousWidgetSettingsValue");
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_Overall_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature");
 
-	Params::Widget_GraphicSettings_C_PreviousWidgetSettingsValue Parms{};
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_Overall_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature Parms{};
 
-	Parms.Widget = Widget;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.ResetSettings
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_MotionBlur_K2Node_ComponentBoundEvent_12_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_MotionBlur_K2Node_ComponentBoundEvent_12_OnValueChanged__DelegateSignature(bool State)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_MotionBlur_K2Node_ComponentBoundEvent_12_OnValueChanged__DelegateSignature");
+
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_MotionBlur_K2Node_ComponentBoundEvent_12_OnValueChanged__DelegateSignature Parms{};
+
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_GI_K2Node_ComponentBoundEvent_10_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_GI_K2Node_ComponentBoundEvent_10_OnValueChanged__DelegateSignature(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_GI_K2Node_ComponentBoundEvent_10_OnValueChanged__DelegateSignature");
+
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_GI_K2Node_ComponentBoundEvent_10_OnValueChanged__DelegateSignature Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_EnvDetail_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_EnvDetail_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_EnvDetail_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature");
+
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_EnvDetail_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_DepthOfField_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_DepthOfField_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature(bool State)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_DepthOfField_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature");
+
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_DepthOfField_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature Parms{};
+
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_ButtonAutomaticQuality_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_ButtonAutomaticQuality_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_ButtonAutomaticQuality_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_ButtonAutomaticQuality_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_AAQuality_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_AAQuality_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_AAQuality_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature");
+
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_AAQuality_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.BndEvt__Widget_GraphicSettings_AA_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidget_GraphicSettings_C::BndEvt__Widget_GraphicSettings_AA_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "BndEvt__Widget_GraphicSettings_AA_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature");
+
+	Params::Widget_GraphicSettings_C_BndEvt__Widget_GraphicSettings_AA_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Widget_GraphicSettings.Widget_GraphicSettings_C.ApplySettings
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWidget_GraphicSettings_C::ResetSettings()
+void UWidget_GraphicSettings_C::ApplySettings()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "ResetSettings");
+		Func = Class->GetFunction("Widget_GraphicSettings_C", "ApplySettings");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.SetupExplicitNavigations
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWidget_GraphicSettings_C::SetupExplicitNavigations()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "SetupExplicitNavigations");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Widget_GraphicSettings.Widget_GraphicSettings_C.SetWidgetCurrentValues
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInit                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidget_GraphicSettings_C::SetWidgetCurrentValues(bool bInit)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Widget_GraphicSettings_C", "SetWidgetCurrentValues");
-
-	Params::Widget_GraphicSettings_C_SetWidgetCurrentValues Parms{};
-
-	Parms.bInit = bInit;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

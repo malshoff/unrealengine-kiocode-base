@@ -92,7 +92,7 @@ void UBP_DronesMod_CharacterMutator_C::OnTurretSpawned(class ABP_Turret_C* Spawn
 
 
 // Function BP_DronesMod_CharacterMutator.BP_DronesMod_CharacterMutator_C.SetTurretFlying_Multicast
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABP_Turret_C*                     Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
